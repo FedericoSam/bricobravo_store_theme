@@ -1,0 +1,236 @@
+{
+  "minicart.v2": {
+    "title": "Minicart",
+    "children": ["minicart-base-content"],
+    "props": {
+      "customPixelEventId": "add-to-cart-button",
+      "MinicartIcon": "icon-cart#minicart-icon",
+      "quantityDisplay": "always"
+    }
+  },
+
+  "icon-cart#minicart-icon": {
+    "title": "Icon: Minicart Header",
+    "props": {
+      "size": 27,
+      "viewBox": "0 0 27 27"
+    }
+  },
+
+  "minicart-base-content": {
+    "title": "Minicart: Conteúdo",
+    "blocks": ["minicart-empty-state"],
+    "children": [
+      "flex-layout.row#cart-container",
+      "flex-layout.row#minicart-still-buying-container",
+      "flex-layout.row#minicart-footer"
+    ]
+  },
+
+  "flex-layout.row#cart-container": {
+    "children": ["minicart-product-list"],
+    "props": {
+      "blockClass": "minicart-products",
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "minicart-product-list": {
+    "title": "Minicart: Lista de produtos",
+    "blocks": ["product-list#minicart"]
+  },
+
+  "product-list#minicart": {
+    "title": "Lista de produtos",
+    "blocks": ["product-list-content-mobile"]
+  },
+
+  // Shared to Desktop
+  "product-list-content-mobile": {
+    "title": "Mobile.Lista de produtos",
+    "children": ["flex-layout.row#cart-summary-container"]
+  },
+
+  "flex-layout.row#cart-summary-container": {
+    "title": "Linha: Container de Produtos do Carrinho",
+    "children": [
+      "flex-layout.col#minicart-product-image",
+      "flex-layout.col#productInfo"
+    ],
+    "props": {
+      "fullWidth": true,
+      "paddingBottom": "5",
+      "paddingTop": "5",
+      "colGap": 0,
+      "colSizing": "auto",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "blockClass": "cartSummary"
+    }
+  },
+
+  "flex-layout.col#minicart-product-image": {
+    "title": "Linha: Container de Imagem de Produtos",
+    "children": ["product-list-image#minicart"],
+    "props": {
+      "blockClass": "minicartProductImage"
+    }
+  },
+
+  "product-list-image#minicart": {
+    "title": "Img: Imagem de Produto",
+    "props": {
+      "width": 64,
+      "blockClass": "minicart-product-image"
+    }
+  },
+
+  "flex-layout.col#productInfo": {
+    "title": "Col: Container de Info. de Produtos",
+    "children": [
+      "flex-layout.row#product-name",
+      "flex-layout.row#product-price-wish"
+    ],
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.row#brand-name": {
+    "title": "Linha: Container Marca de Produto",
+    "children": ["vtex.product-list:product-brand"],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "minicartProductHeader"
+    }
+  },
+
+  "flex-layout.row#product-name": {
+    "title": "Linha: Container de Nome de Produtos",
+    "children": ["vtex.product-list:product-name#minicart"],
+    "props": {
+      "colSizing": "auto",
+      "marginBottom": 4,
+      "blockClass": "minicart-product-name-container"
+    }
+  },
+
+  "vtex.product-list:product-name#minicart": {
+    "props": {
+      "blockClass": "minicart"
+    }
+  },
+
+  "flex-layout.row#product-price-wish": {
+    "title": "Linha: Container de Preço de Produtos",
+    "children": ["quantity-selector", "price#mobile", "remove-button"],
+    "props": {
+      "verticalAlign": "middle",
+      "colSizing": "auto",
+      "blockClass": "bottomInfo",
+      "preserveLayoutOnMobile": "true"
+    }
+  },
+
+  "quantity-selector": {
+    "props": {
+      "quantitySelectorStep": "singleUnit",
+      "mode": "stepper"
+    }
+  },
+
+  "flex-layout.row#minicart-footer": {
+    "title": "Linha: Footer de Minicart",
+    "props": {
+      "blockClass": "minicart-footer",
+      "verticalAlign": "middle",
+      "colSizing": "153px",
+      "preserveLayoutOnMobile": "true"
+    },
+    "children": ["flex-layout.col#minicart-footer"]
+  },
+
+  "flex-layout.col#minicart-footer": {
+    "title": "Col: Footer de Minicart",
+    "children": ["minicart-summary", "minicart-checkout-button"]
+  },
+
+  "minicart-summary": {
+    "title": "Minicart: Summary",
+    "blocks": ["checkout-summary.compact#minicart"]
+  },
+  "flex-layout.row#minicart-still-buying-container": {
+    "children": ["link.product#minicart-still-buying"],
+    "props": {
+      "blockClass": ["minicart-still-buying-container"]
+    }
+  },
+  "link.product#minicart-still-buying": {
+    "title": "Minicart: Stillbuying",
+    "props": {
+      "blockClass": "minicart-still-buying",
+      "href": "/",
+      "label": "Escolher mais produtos"
+    }
+  },
+
+  "checkout-summary.compact#minicart": {
+    "title": "Checkout: Container",
+    "children": ["summary-totalizers#minicart"],
+    "props": {
+      "totalizersToShow": ["Items", "Discounts"]
+    }
+  },
+
+  "summary-totalizers#minicart": {
+    "title": "Checkout: Total da lista",
+    "props": {
+      "showTotal": false,
+      "showDeliveryTotal": false
+    }
+  },
+
+  // Empty
+  "minicart-empty-state": {
+    "title": "Minicart: Container de Carrinho Vazio",
+    "children": ["flex-layout.row#empty-state"]
+  },
+  "flex-layout.row#empty-state": {
+    "title": "Linha: Container de Carrinho Vazio",
+    "children": ["flex-layout.col#empty-state"]
+  },
+  "flex-layout.col#empty-state": {
+    "title": "Col: Container de Carrinho Vazio",
+    "children": [
+      "image#minicart-empty",
+      "rich-text#empty-state-1",
+      "rich-text#empty-state-2"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    }
+  },
+
+  "image#minicart-empty": {
+    "title": "Img: Carrinho vazinho",
+    "props": {
+      "src": "https://balarotiio.vteximg.com.br/arquivos/big-cart.svg",
+      "blockClass": "img-minicart-empty"
+    }
+  },
+  "rich-text#empty-state-1": {
+    "title": "RichText: Mensagem carrinho vazio 1",
+    "props": {
+      "text": "Desculpe, você não tem produtos aqui",
+      "blockClass": "empty-state-1"
+    }
+  },
+  "rich-text#empty-state-2": {
+    "title": "RichText: Mensagem carrinho vazio 2",
+    "props": {
+      "text": "Volte e explore para adicionar produtos no seu carrinho de compras.",
+      "blockClass": "empty-state-2"
+    }
+  }
+}

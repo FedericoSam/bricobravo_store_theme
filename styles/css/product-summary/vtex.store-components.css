@@ -1,0 +1,13 @@
+.discountInsideContainer {
+  left: 0;
+  max-width: 60px;
+  border-radius: 10px 0;
+  font-weight: 700;
+  z-index: 99;
+}
+
+@media screen and (max-width: 1024px) {
+  .discountInsideContainer {
+    top: -12px;
+  }
+}

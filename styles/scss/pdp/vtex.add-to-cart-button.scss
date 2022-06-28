@@ -1,0 +1,9 @@
+.buttonText--product-buy-button {
+  align-items: center;
+  display: flex;
+  padding: 0.3rem 0;
+}
+.buttonText--product-buy-button::before {
+  content: url('https://balarotiio.vteximg.com.br/arquivos/cart-pdp.svg');
+  margin-right: 0.75rem;
+}

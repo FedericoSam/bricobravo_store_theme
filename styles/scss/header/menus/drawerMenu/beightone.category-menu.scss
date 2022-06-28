@@ -1,0 +1,188 @@
+.menuIcon {
+  width: 26px;
+}
+.sidebarDrawerIcon {
+  padding: 0;
+}
+
+.sidebarContainer {
+  @media screen and (max-width: 1024px) {
+    margin-right: 1rem;
+  }
+}
+
+.animation {
+  width: 85%;
+  max-width: 310px;
+  min-width: 300px;
+
+  @media screen and (min-width: 1600px) {
+    max-width: 320px;
+  }
+  @media screen and (min-width: 1990px) {
+    max-width: 650px;
+  }
+}
+.plusIcon,
+.minusIcon {
+  color: #003a75;
+  width: 10px;
+}
+.sidebarHeader {
+  padding: 0;
+}
+.sidebar {
+  background: #f8faff;
+  padding: 2rem;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #e5e5e5;
+    border-radius: 3px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding: 1.5rem 2rem;
+  }
+}
+.sidebarItemClosed {
+  padding: 0;
+}
+.sideBarItemContainer {
+  padding: 0.5rem 0;
+  &:hover {
+    color: #f58220;
+  }
+}
+.categoryTitle {
+  margin-right: 1rem;
+}
+
+.toggleEffectIcon {
+  display: flex;
+}
+.seeAll {
+  padding: 0;
+}
+
+.departmentTitle {
+  width: 100%;
+  margin-left: 1rem;
+  &:hover {
+    background: #fff9ef;
+    color: #f58220;
+  }
+}
+.sidebarItemContainer {
+  padding: 0.5rem 0;
+  justify-content: unset;
+
+  &:hover {
+    background: #fff9ef;
+    color: #f58220;
+    .departmentTitle,
+    .plusIcon,
+    .minusIcon {
+      color: #f58220;
+    }
+  }
+}
+.departmentTitle {
+  font-size: 14px;
+  line-height: 19px;
+
+  text-transform: capitalize;
+  color: #40464d;
+}
+
+.categoryItemListTitle {
+  padding: 0;
+}
+
+.sidebarItemOpen {
+  position: relative;
+}
+
+.hoverList {
+  background-color: #ffffff;
+
+  position: fixed;
+  z-index: 2147483764;
+
+  left: 100%;
+  top: 0;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  width: 100%;
+  min-width: 710px;
+  max-width: 710px;
+  height: 100%;
+
+  padding: 3.75rem 2.625rem;
+}
+
+.hoverListContentContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hoverListTitle {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.hoverListContent {
+  overflow-y: auto;
+  max-height: 715px;
+  width: 245px;
+  @media screen and (max-width: 1366px) {
+    max-height: 600px;
+  }
+  @media screen and (max-width: 1280px) {
+    max-height: 550px;
+  }
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #e5e5e5;
+    border-radius: 3px;
+  }
+  .categoryItemListTitle {
+    margin: 0.875rem 0;
+  }
+}
+
+.hoverImageContainer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100%;
+  max-width: 330px;
+}
+
+.childrenCategoryItemList {
+  .plusIcon,
+  .minusIcon {
+    display: none;
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "drawer#stock-search": {
+    "title": "Drawer-Menu: Consulta de Estoque",
+    "blocks": ["drawer-trigger#stock-search"],
+    "children": ["flex-layout.row#stock-container"],
+    "props": {
+      "slideDirection": "RightToLeft",
+      "blockClass": "stock-search"
+    }
+  },
+  "drawer-trigger#stock-search": {
+    "title": "Drawer-trigger: Consulta de Estoque ",
+    "children": ["rich-text#stock-trigger"],
+    "props": {
+      "blockClass": "search_trigger"
+    }
+  },
+  "rich-text#stock-trigger": {
+    "title": "Texto: Consulta de Estoque",
+    "props": {
+      "text": "CONSULTE ESTOQUE NAS LOJAS",
+      "blockClass": "stock-text-trigger"
+    }
+  },
+  "flex-layout.row#stock-container": {
+    "title": "Linha: Consulta de Estoque",
+    "children": ["flex-layout.col#stock-container"],
+    "props": {
+      "blockClass": "stock-container",
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.col#stock-container": {
+    "title": "Col: Consulta de Estoque",
+    "children": [
+      "rich-text#stock-title",
+      "stock-search",
+      "rich-text#stock-warning"
+    ]
+  },
+  "rich-text#stock-title": {
+    "title": "Titulo Estoque nas lojas",
+    "props": {
+      "blockClass": ["stock-title"],
+      "text": "Estoque nas lojas",
+      "textAlignment": "Left",
+      "textPosition": "Left"
+    }
+  },
+  "rich-text#stock-warning": {
+    "title": "Mensagem de Estoque",
+    "props": {
+      "blockClass": ["stock-warning"],
+      "text": "Estoque sujeito a alteração sem aviso prévio",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  }
+}

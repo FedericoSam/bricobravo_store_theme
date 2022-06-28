@@ -1,0 +1,173 @@
+@charset "UTF-8";
+.inlineRating {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.inlineRating {
+  margin: 5px 0;
+  max-height: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+  .inlineRating {
+    margin-bottom: 0;
+  }
+}
+
+.reviewsBoxEmpty,
+.reviewsContainer {
+  justify-content: flex-start;
+  text-align: initial;
+  border: none;
+  padding: 0;
+}
+
+.reviewsContainer {
+  margin-top: 1rem;
+}
+
+.reviewsEmptyStateTitle {
+  font-weight: 700;
+  font-size: 1.75rem !important;
+  line-height: 2.375rem;
+  color: #f58220 !important;
+}
+
+.questionsAndAnswersPageTitle {
+  font-size: 0 !important;
+}
+
+.questionsAndAnswersPageTitle::before {
+  content: 'Dúvida dos Consumidores';
+  font-weight: 700;
+  font-size: 1.75rem !important;
+  line-height: 2.375rem;
+  color: #f58220 !important;
+}
+
+.emptyReviewMessage,
+.questionsAndAnswersAnswerHelpText {
+  font-size: 16px;
+  line-height: 22px;
+  color: #40464d;
+}
+
+.questionsAndAnswersContainer {
+  margin-top: 4rem;
+  padding: 0;
+}
+
+.questionsAndAnswersContainer :first-child {
+  padding: 0;
+  border: none;
+  font-size: 1rem;
+  line-height: 22px;
+  color: #40464d;
+}
+
+.questionsAndAnswersContainer :global(.vtex-button) {
+  background: #f58220;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.questionsAndAnswersNewQuestionButton :global(.vtex-button) {
+  padding: 0.5rem 2.5rem;
+}
+
+.questionsAndAnswersNewQuestionButton :global(.vtex-button) :global(.vtex-button__label) {
+  display: none;
+}
+
+.questionsAndAnswersNewQuestionButton :global(.vtex-button)::before {
+  content: 'Enviar pergunta';
+  font-weight: 700;
+  color: #ffff;
+}
+
+.emptyReviewButton :global(.vtex-button) {
+  background: #f58220;
+  border-radius: 4px;
+}
+
+.reviewsWriteReviewButton {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 0 0 0;
+}
+
+.reviewsWriteReviewButton :global(.vtex-button) {
+  background: #f58220;
+  border-radius: 4px;
+}
+
+.histogram,
+.reviewsList {
+  color: #40464d;
+}
+
+.reviewItemContainer .reviewsReviewItem {
+  color: #40464d;
+}
+
+.ratingSummary {
+  margin: 0;
+}
+
+.newQuestionInlineFields :global(.vtex-input-prefix__group) {
+  margin: 10px 0;
+}
+
+.newQuestionInlineFields :global(.vtex-styleguide-9-x-input) {
+  border: 1px solid #9e9e9e;
+  padding-left: 10px;
+  width: 300px;
+}
+
+.newQuestionInlineFields :global(.vtex-input__error) {
+  background-color: #ffed1e;
+  color: #233f5f;
+}
+
+.fieldSpacer :global(.vtex-textarea__input) {
+  border: 1px solid #9e9e9e;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .fieldSpacer :global(.vtex-textarea__input) {
+    width: 300px;
+  }
+}
+
+.fieldSpacer :global(.vtex-textarea__error) {
+  background-color: #ffed1e;
+  color: #233f5f;
+}
+
+@media screen and (max-width: 1024px) {
+  .fieldSpacer :global(.vtex-textarea__error) {
+    width: 300px;
+    font-size: 14px;
+  }
+}
+
+.newQuestionForm :global(.vtex-button__label),
+.emptyReviewButton :global(.vtex-button__label) {
+  font-weight: 700;
+  color: #ffff;
+}
+
+@media screen and (max-width: 1024px) {
+  .ratingStarsActive,
+  .ratingStarsInactive {
+    width: 16px !important;
+    height: 16px !important;
+  }
+}
+
+.ratingStarsTotal {
+  display: none;
+}

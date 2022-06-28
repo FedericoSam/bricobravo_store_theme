@@ -1,0 +1,177 @@
+.container {
+  position: relative;
+  min-height: 447px;
+  max-width: 384px !important;
+  transition: all ease-in-out 0.3s;
+  border-radius: 4px;
+}
+
+.container:hover {
+  background: #fafafa;
+}
+
+.container:hover :global(.vtex-flex-layout-0-x-flexRow--add-to-cart-container) {
+  transition: all ease-in-out 0.3s;
+  visibility: visible;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 300px !important;
+    min-width: 280px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 280px !important;
+    min-width: 160px !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 280px;
+  }
+}
+
+.container--simple {
+  max-width: 280px !important;
+  min-width: 280px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container--simple {
+    max-width: 230px !important;
+    min-height: 460px !important;
+    max-height: 460px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container--simple {
+    min-width: 160px;
+    max-width: 160px !important;
+    min-height: 400px !important;
+    max-height: 400px !important;
+  }
+}
+
+.element {
+  padding: 0;
+}
+
+.imageNormal,
+.imageWrapper {
+  max-height: 216px !important;
+  max-width: 216px !important;
+}
+
+.mainImageHovered--main,
+.mainImageHovered--simple {
+  height: 216px;
+}
+
+@media screen and (max-width: 1024px) {
+  :global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf-slider-2) .imageNormal,
+  :global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf-slider-2) .imageWrapper,
+  :global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf-slider-3) .imageNormal,
+  :global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf-slider-3) .imageWrapper,
+  :global(.vtex-flex-layout-0-x-flexRowContent--search-result-product) .imageNormal,
+  :global(.vtex-flex-layout-0-x-flexRowContent--search-result-product) .imageWrapper {
+    max-height: 132px !important;
+    max-width: 132px !important;
+  }
+  :global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf-slider-2) .mainImageHovered--main,
+  :global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf-slider-2) .mainImageHovered--simple,
+  :global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf-slider-3) .mainImageHovered--main,
+  :global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf-slider-3) .mainImageHovered--simple,
+  :global(.vtex-flex-layout-0-x-flexRowContent--search-result-product) .mainImageHovered--main,
+  :global(.vtex-flex-layout-0-x-flexRowContent--search-result-product) .mainImageHovered--simple {
+    height: 132px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nameContainer {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .nameContainer {
+    margin: 12px 0 6px 0;
+    padding: 0;
+    height: 40px;
+  }
+}
+
+.brandName {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  color: #013b82;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  .brandName {
+    font-size: 0.75rem;
+    -webkit-line-clamp: 3;
+    line-height: 16px;
+    height: 48px;
+    margin-top: 5px;
+  }
+}
+
+.containerNormal--customize-search-bar {
+  min-height: auto;
+}
+
+.imageWrapper--imagem-autocomplete {
+  padding: 0 1rem;
+  flex: 0;
+  margin: 0;
+  display: flex;
+}
+
+.imageWrapper--imagem-autocomplete :global(.vtex-store-components-3-x-discountInsideContainer) {
+  display: none;
+}
+
+.image--imagem-autocomplete {
+  width: 3rem;
+}
+
+.element--customize-search-bar {
+  flex-direction: row;
+  align-items: center;
+}
+
+.containerNormal--customize-search-bar {
+  max-width: none !important;
+}
+
+.nameContainer--name-autocomplete {
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  margin: 0;
+}
+
+.imageContainer--imagem-autocomplete {
+  display: flex;
+}
+
+.brandName--name-autocomplete {
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #40464d;
+}

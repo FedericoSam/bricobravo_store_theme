@@ -1,0 +1,11 @@
+.calculateValues {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #004c98;
+}
+.minQuantity::after {
+  content: 'unidades';
+  margin-left: 5px;
+}

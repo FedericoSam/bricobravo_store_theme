@@ -1,0 +1,118 @@
+{
+  "flex-layout.row#payments-items": {
+    "title": "Container de Pagamentos",
+    "children": [
+      "image#payment-1",
+      "image#payment-2",
+      "image#payment-3",
+      "image#payment-4",
+      "image#payment-5",
+      "image#payment-6",
+      "image#payment-7",
+      "image#payment-8",
+      "image#payment-9",
+      "image#payment-10",
+      "image#payment-11",
+      "image#payment-12"
+    ],
+    "props": {
+      "blockClass": ["payments-items"]
+    }
+  },
+  "image#payment-1": {
+    "title": "Pagamento - 1",
+    "props": {
+      "blockClass": ["payment-image"],
+      "maxHeight": 40,
+      "src": "https://balarotiio.vteximg.com.br/arquivos/visa.svg"
+    }
+  },
+  "image#payment-2": {
+    "title": "Pagamento - 2",
+    "props": {
+      "blockClass": ["payment-image"],
+      "maxHeight": 40,
+      "src": "https://balarotiio.vteximg.com.br/arquivos/mastercard.svg"
+    }
+  },
+  "image#payment-3": {
+    "title": "Pagamento - 3",
+    "props": {
+      "blockClass": ["payment-image"],
+      "maxHeight": 40,
+      "src": "https://balarotiio.vteximg.com.br/arquivos/diners.svg"
+    }
+  },
+  "image#payment-4": {
+    "title": "Pagamento - 4",
+    "props": {
+      "blockClass": ["payment-image"],
+      "maxHeight": 40,
+      "src": "https://balarotiio.vteximg.com.br/arquivos/bradescard.svg"
+    }
+  },
+  "image#payment-5": {
+    "title": "Pagamento - 5",
+    "props": {
+      "blockClass": ["payment-image"],
+      "maxHeight": 40,
+      "src": "https://balarotiio.vteximg.com.br/arquivos/bndes.svg"
+    }
+  },
+  "image#payment-6": {
+    "title": "Pagamento - 6",
+    "props": {
+      "blockClass": ["payment-image"],
+      "maxHeight": 40,
+      "src": "https://balarotiio.vteximg.com.br/arquivos/elo.svg"
+    }
+  },
+  "image#payment-7": {
+    "title": "Pagamento - 7",
+    "props": {
+      "blockClass": ["payment-image"],
+      "maxHeight": 40,
+      "src": "https://balarotiio.vteximg.com.br/arquivos/hipercard.svg"
+    }
+  },
+  "image#payment-8": {
+    "title": "Pagamento - 8",
+    "props": {
+      "blockClass": ["payment-image"],
+      "maxHeight": 40,
+      "src": "https://balarotiio.vteximg.com.br/arquivos/picpay.svg"
+    }
+  },
+  "image#payment-9": {
+    "title": "Pagamento - 9",
+    "props": {
+      "blockClass": ["payment-image", "payment-image-9"],
+      "maxHeight": 40,
+      "src": "https://balarotiio.vteximg.com.br/arquivos/pix.svg"
+    }
+  },
+  "image#payment-10": {
+    "title": "Pagamento - 10",
+    "props": {
+      "blockClass": ["payment-image", "payment-image-10"],
+      "maxHeight": 40,
+      "src": "https://balarotiio.vteximg.com.br/arquivos/boleto.svg"
+    }
+  },
+  "image#payment-11": {
+    "title": "Pagamento - 11",
+    "props": {
+      "blockClass": ["payment-image", "payment-image-11"],
+      "maxHeight": 40,
+      "src": "https://balarotiio.vteximg.com.br/arquivos/boletoparcelado.svg"
+    }
+  },
+  "image#payment-12": {
+    "title": "Pagamento - 12",
+    "props": {
+      "blockClass": ["payment-image", "payment-image-12"],
+      "maxHeight": 40,
+      "src": "#"
+    }
+  }
+}

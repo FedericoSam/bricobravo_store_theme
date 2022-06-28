@@ -1,0 +1,120 @@
+.latestPostsBlockContainer {
+  padding: 0;
+}
+
+.latestPostsBlockTitle,
+.latestPostsBlockFlex {
+  margin: 0;
+}
+
+.latestPostsBlockContainer {
+  padding: 0;
+}
+
+.latestPostsBlockFlexItem {
+  @media screen and (min-width: 1024px) {
+    width: 30%;
+  }
+  margin: 0;
+  border-top: 1px solid white;
+}
+
+.latestPostsBlockFlexItem:first-child {
+  padding-left: 0;
+}
+
+.latestPostsBlockFlexItem:last-child {
+  padding-right: 0;
+}
+
+.teaserContainer :global(.vtex-card) {
+  position: relative;
+  box-shadow: none !important;
+}
+.teaserHeader {
+  display: none;
+}
+
+.teaserImageContainer {
+  background: linear-gradient(
+    90deg,
+    rgba(245, 131, 32, 1) 37.71%,
+    rgba(1, 59, 130, 1) 56.15%
+  );
+}
+.teaserImage {
+  max-height: 216px;
+  max-width: 384px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.teaserTitle {
+  min-height: 40px;
+  max-height: 72px;
+  position: absolute;
+  z-index: 99;
+  top: 120px;
+  background: linear-gradient(
+    360deg,
+    #1c1717 7.13%,
+    rgba(28, 23, 23, 0) 92.32%
+  ) !important;
+  margin-top: 25px;
+  text-align: center;
+}
+.teaserTitle,
+.teaserTitleLink,
+.teaserTitleLink:visited {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.25rem;
+
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+}
+.teaserTitleLink:first-child {
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+}
+.teaserBody {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 16px;
+  text-align: center;
+  color: rgba(85, 85, 85, 1);
+}
+
+.teaserBody :first-child {
+  text-align: center;
+  text-transform: capitalize;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 0;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
+  .latestPostsBlockFlex {
+    flex-wrap: inherit;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .latestPostsBlockContainer {
+    overflow-x: scroll;
+  }
+
+  .latestPostsBlockFlex {
+    flex-wrap: nowrap;
+    width: max-content;
+  }
+
+  .latestPostsBlockFlexItem {
+    max-width: 360px !important;
+  }
+}

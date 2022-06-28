@@ -1,0 +1,34 @@
+{
+  "flex-layout.row#blog-posts-container": {
+    "title": "Linha: Container de Posts do Blog",
+    "children": ["flex-layout.col#blog-posts-container"],
+    "props": {
+      "blockClass": ["shelf-container", "blog-post-container"]
+    }
+  },
+  "flex-layout.col#blog-posts-container": {
+    "title": "Col: Container de Posts do Blog",
+    "children": [
+      // "flex-layout.row#blog-title-container"
+      // "flex-layout.row#blog-posts-content"
+      "rich-text#blog-title"
+    ],
+    "props": {
+      "blockClass": "col-shelf-container-blog"
+    }
+  },
+  "flex-layout.row#blog-title-container": {
+    "title": "Linha: Container de título",
+    "children": ["rich-text#blog-title"],
+    "props": {
+      "blockClass": "shelf-title-container"
+    }
+  },
+  "rich-text#blog-title": {
+    "title": "Título da Sessão",
+    "props": {
+      "text": "Blog Balaroti",
+      "blockClass": ["section-title", "blog-container-title"]
+    }
+  }
+}

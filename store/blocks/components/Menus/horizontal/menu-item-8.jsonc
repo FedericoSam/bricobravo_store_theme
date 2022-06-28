@@ -1,0 +1,150 @@
+{
+  "menu-item#header-row-2-item-8": {
+    "props": {
+      "blockClass": "header-row-2",
+      "id": "header-row-2-item-8",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Portas e Janelas",
+        "text": "Portas e Janelas"
+      }
+    },
+    "blocks": ["beightone.menu@0.x:submenu#header-row-2-item-8"]
+  },
+  "beightone.menu@0.x:submenu#header-row-2-item-8": {
+    "props": {
+      "width": "100%",
+      "blockClass": "submenuContent"
+    },
+    "children": ["beightone.menu@0.x:menu#header-row-2-item-8"]
+  },
+  "beightone.menu@0.x:menu#header-row-2-item-8": {
+    "children": ["flex-layout.row#header-row-2-item-8-submenu"]
+  },
+  "flex-layout.row#header-row-2-item-8-submenu": {
+    "props": {
+      "blockClass": "header-row-2-submenu",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "flex-layout.col#header-row-2-item-8-submenu-8",
+      "flex-layout.col#header-row-2-item-8-submenu-2"
+    ]
+  },
+  "flex-layout.col#header-row-2-item-8-submenu-8": {
+    "props": {
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.row#header-submenu-link-item-8",
+      "beightone.menu@0.x:menu#header-row-2-item-8-submenu"
+    ]
+  },
+  "flex-layout.col#header-row-2-item-8-submenu-2": {
+    "props": {
+      "horizontalAlign": "center"
+    },
+    "children": ["image#header-row-2-item-8-submenu-2"]
+  },
+  "flex-layout.row#header-submenu-link-item-8": {
+    "props": {
+      "blockClass": "submenu-main-link"
+    },
+    "children": ["link#title-header-row-2-item-8-submenu"]
+  },
+  "link#title-header-row-2-item-8-submenu": {
+    "props": {
+      "blockClass": "title-header-row-2",
+      "href": "#",
+      "label": "Decoração"
+    }
+  },
+  "image#header-row-2-item-8-submenu-2": {
+    "props": {
+      "src": "https://balarotiio.vteximg.com.br/arquivos/horizontal-demo.jpg"
+    }
+  },
+  "beightone.menu@0.x:menu#header-row-2-item-8-submenu": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-item-tab",
+      "items": [
+        {
+          "id": "header-row-2-item-2",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Link",
+            "text": "Link"
+          }
+        },
+        {
+          "id": "header-row-2-item-3",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Link e Chicletes",
+            "text": "Link"
+          }
+        },
+        {
+          "id": "header-row-2-item-4",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Link",
+            "text": "Link"
+          }
+        },
+        {
+          "id": "header-row-2-item-5",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Link",
+            "text": "Link"
+          }
+        },
+        {
+          "id": "header-row-2-item-6",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Link",
+            "text": "Link"
+          }
+        },
+        {
+          "id": "header-row-2-item-7",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Link",
+            "text": "Link"
+          }
+        }
+      ]
+    }
+  }
+}

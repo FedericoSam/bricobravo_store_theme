@@ -1,0 +1,25 @@
+.flexRowContent--login-container {
+  flex-direction: column;
+}
+
+.flexRowContent--login-container :global(.vtex-login-2-x-container) :global(.vtex-button__label) {
+  padding: 0;
+}
+
+.flexRowContent--login-container :global(.vtex-login-2-x-container) :global(.vtex-button__label) :global(.vtex-login-2-x-label) {
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+}
+
+@media screen and (max-width: 1024px) {
+  .flexRowContent--login-container :global(.vtex-login-2-x-container) :global(.vtex-button__label) :global(.vtex-login-2-x-label) {
+    display: block;
+  }
+}
+
+.flexRowContent--login-container :global(.vtex-login-2-x-container) :global(.vtex-button__label) :global(.vtex-login-2-x-profile) {
+  margin-top: 2rem;
+}

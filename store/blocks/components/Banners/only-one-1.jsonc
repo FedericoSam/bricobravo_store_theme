@@ -1,0 +1,61 @@
+{
+  "flex-layout.row#only-one-1": {
+    "title": "Container de lista de banners",
+    "children": ["list-context.image-list#only-one-1"],
+    "props": {
+      "blockClass": ["only-one"],
+      "marginTop": 9
+    }
+  },
+  "list-context.image-list#only-one-1": {
+    "title": "Lista: Banners Principais",
+    "children": ["slider-layout#only-one-slider"],
+    "props": {
+      "blockClass": "only-one-list-context",
+      "images": [
+        {
+          "description": "Banner 1",
+          "image": "https://balarotiio.vteximg.com.br/arquivos/2-mobile-solo-banner.jpg",
+          "link": "#",
+          "mobileImage": "https://balarotiio.vteximg.com.br/arquivos/2-solo-banner.jpg"
+        }
+      ]
+    }
+  },
+  "flex-layout.row#only-one-2": {
+    "title": "Container de lista de banners 2",
+    "children": ["list-context.image-list#only-one-2"],
+    "props": {
+      "blockClass": ["only-one"],
+      "marginTop": 9
+    }
+  },
+  "list-context.image-list#only-one-2": {
+    "title": "Lista: Banners Principais",
+    "children": ["slider-layout#only-one-slider"],
+    "props": {
+      "blockClass": "only-one-list-context",
+      "images": [
+        {
+          "description": "Banner 2",
+          "image": "https://balarotiio.vteximg.com.br/arquivos/3-solo-banner.jpg",
+          "link": "#",
+          "mobileImage": "https://balarotiio.vteximg.com.br/arquivos/3-mobile-solo-banner.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#only-one-slider": {
+    "title": "Banner solo",
+    "props": {
+      "blockClass": "slider-main-banners",
+      "showPaginationDots": "always",
+      "showNavigationArrows": "always",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      }
+    }
+  }
+}

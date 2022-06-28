@@ -1,0 +1,12 @@
+.link--shelf-link {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.188rem;
+
+  color: #013b82;
+  text-decoration: none;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}

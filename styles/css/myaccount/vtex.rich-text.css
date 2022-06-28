@@ -1,0 +1,10 @@
+.paragraph--wish-list-title {
+  color: #3c3c3b !important;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+  .container--wish-list-title {
+    padding-left: 50px !important;
+  }
+}

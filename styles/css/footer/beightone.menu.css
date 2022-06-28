@@ -1,0 +1,20 @@
+.styledLinkContainer--footer-menu {
+  padding: 0;
+  margin: 0;
+}
+
+.styledLinkContent--footer-menu {
+  padding: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.875rem;
+  color: #40464d !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .menuContainer--footer-menu {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #e6e6e6;
+  }
+}

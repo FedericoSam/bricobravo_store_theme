@@ -1,0 +1,17 @@
+{
+  "store.home": {
+    "blocks": [
+      "flex-layout.row#home-main-banner-container",
+      "slider-layout#category-slider",
+      "flex-layout.row#simple-shelf-container-1",
+      "flex-layout.row#grid-banners-container",
+      "flex-layout.row#simple-shelf-container-2",
+      "flex-layout.row#only-one-1",
+      "flex-layout.row#simple-shelf-container-3",
+      "flex-layout.row#best-brands-container",
+      "flex-layout.row#only-one-2",
+      // "flex-layout.row#blog-posts-container",
+      "flex-layout.row#customer-container"
+    ]
+  }
+}

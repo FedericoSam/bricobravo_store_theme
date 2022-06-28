@@ -1,0 +1,16 @@
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Link Azure DevOps Work Items
+        uses: solidify/github-action-azdo-link@master
+        with:
+          organization: 'b8one'
+          projectName: 'B8one'
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

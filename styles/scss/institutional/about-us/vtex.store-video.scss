@@ -1,0 +1,18 @@
+.videoContainer--about-video {
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.videoElement {
+  border-radius: 8px;
+
+  @media screen and (max-width: 1024px) {
+    max-height: 400px;
+  }
+
+  @media screen and (max-width: 639px) {
+    max-height: 176px;
+  }
+}

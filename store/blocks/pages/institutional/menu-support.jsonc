@@ -1,0 +1,131 @@
+{
+  "beightone.menu@0.x:menu#institucional": {
+    "title": "Menu institucional",
+    "children": [
+      "rich-text#title-menu",
+      "menu-item#inst-menu-1",
+      "menu-item#inst-menu-2",
+      "menu-item#inst-menu-3",
+      "menu-item#inst-menu-4",
+      "menu-item#inst-menu-5",
+      "menu-item#inst-menu-6",
+      "menu-item#inst-menu-7",
+      "menu-item#inst-menu-8"
+    ],
+    "props": {
+      "blockClass": "support-menu"
+    }
+  },
+  "menu-item#inst-menu-1": {
+    "title": "item-1",
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "/atendimento",
+        "noFollow": false,
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
+      },
+      "blockClass": ["item-menu", "item-1"]
+    }
+  },
+
+  "menu-item#inst-menu-2": {
+    "title": "item-2",
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "/informacao-de-pagamento",
+        "noFollow": false,
+        "tagTitle": "Formas de Pagamento",
+        "text": "Formas de Pagamento"
+      },
+      "blockClass": ["item-menu", "item-2"]
+    }
+  },
+  "menu-item#inst-menu-3": {
+    "title": "item-3",
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "/formas-de-entrega",
+        "noFollow": false,
+        "tagTitle": "Formas de Entrega",
+        "text": "Formas de Entrega"
+      },
+      "blockClass": ["item-menu", "item-3"]
+    }
+  },
+
+  "menu-item#inst-menu-4": {
+    "title": "item-4",
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "/trocas-devolucoes",
+        "noFollow": false,
+        "tagTitle": "Trocas e Devoluções",
+        "text": "Trocas e Devoluções"
+      },
+      "blockClass": ["item-menu", "item-4"]
+    }
+  },
+  "menu-item#inst-menu-5": {
+    "title": "item-5",
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "/2via",
+        "noFollow": false,
+        "tagTitle": "2ª Via Boleto",
+        "text": "2ª Via Boleto"
+      },
+      "blockClass": ["item-menu", "item-5"]
+    }
+  },
+  "menu-item#inst-menu-6": {
+    "title": "item-6",
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "/cartao-cetelem",
+        "noFollow": false,
+        "tagTitle": "Cartão Cetelem",
+        "text": "Cartão Cetelem"
+      },
+      "blockClass": ["item-menu", "item-6"]
+    }
+  },
+  "menu-item#inst-menu-7": {
+    "title": "item-7",
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "politica-privacidade",
+        "noFollow": false,
+        "tagTitle": "Política de Privacidade",
+        "text": "Política de Privacidade"
+      },
+      "blockClass": ["item-menu", "item-7"]
+    }
+  },
+  "menu-item#inst-menu-8": {
+    "title": "item-8",
+    "props": {
+      "itemProps": {
+        "type": "internal",
+        "href": "/termos-de-uso",
+        "noFollow": false,
+        "tagTitle": "Termos de Uso",
+        "text": "Termos de Uso"
+      },
+      "blockClass": ["item-menu", "item-8"]
+    }
+  },
+  "rich-text#title-menu": {
+    "props": {
+      "text": "Suporte e Segurança",
+      "blockClass": "title-menu"
+    }
+  }
+}

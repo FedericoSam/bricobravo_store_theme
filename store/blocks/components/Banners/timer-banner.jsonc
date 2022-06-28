@@ -1,0 +1,40 @@
+{
+  "responsive-layout.desktop#timer-banner-desktop": {
+    "children": ["stack-layout#desktop-banner"]
+  },
+
+  "stack-layout#desktop-banner": {
+    "children": ["image#banner-timer-desktop", "timer-banner"],
+    "props": {
+      "blockClass": "desktop"
+    }
+  },
+  "image#banner-timer-desktop": {
+    "title": "Banner desktop do timer",
+    "props": {
+      "src": ""
+    }
+  },
+
+  "responsive-layout.mobile#timer-banner-mobile": {
+    "children": ["stack-layout#mobile-banner"]
+  },
+
+  "stack-layout#mobile-banner": {
+    "children": ["image#banner-timer-mobile", "timer-banner"],
+    "props": {
+      "blockClass": "mobile"
+    }
+  },
+  "image#banner-timer-mobile": {
+    "title": "Banner mobile do timer",
+    "props": {
+      "src": ""
+    }
+  },
+  "timer-banner": {
+    "props": {
+      "promoDate": "14/05/2022"
+    }
+  }
+}

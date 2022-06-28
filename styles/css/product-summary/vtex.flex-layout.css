@@ -1,0 +1,155 @@
+.flexRow--add-to-cart-container {
+  max-height: 36px;
+  visibility: hidden;
+  transition: all ease-in-out 0.3s;
+}
+
+.flexRow--add-to-cart-container :global(.vtex-button) {
+  background: #f58220;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.flexRow--add-to-cart-container :global(.vtex-button) :global(.vtex-button__label) {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.188rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1025px) {
+  .flexRow--add-to-cart-container :global(.vtex-button) :global(.vtex-button__label)::before {
+    content: url("https://balarotiio.vteximg.com.br/arquivos/buy-cart.svg");
+    margin: 4px 8px 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .flexRow--add-to-cart-container {
+    visibility: visible;
+  }
+}
+
+:global(.vtex-search-result-3-x-container--layout)
+.flexRow--search-main-content-container
+.flexRowContent--search-main-content-container {
+  justify-content: flex-start;
+}
+
+.flexRowContent--shelf-content {
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  :global(.vtex-slider-layout-0-x-slide--shelf-slider-2) .flexRowContent--shelf-content,
+  :global(.vtex-slider-layout-0-x-slide--shelf-slider-3) .flexRowContent--shelf-content,
+  :global(.vtex-flex-layout-0-x-flexRowContent--search-result-product) .flexRowContent--shelf-content {
+    max-height: 420px !important;
+    padding: 0;
+  }
+}
+
+.flexRow--product-summary-content {
+  border-radius: 0;
+  height: 100%;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+  .flexRow--product-summary-content {
+    border-radius: 8px 8px 0 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  :global(.vtex-slider-layout-0-x-slide--shelf-slider-1)
+.flexRow--product-summary-content {
+    max-height: 396px;
+    border-radius: 8px 8px 0 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  :global(.vtex-slider-layout-0-x-slide--shelf-slider-2) .flexRow--product-summary-content,
+  :global(.vtex-slider-layout-0-x-slide--shelf-slider-3) .flexRow--product-summary-content,
+  :global(.vtex-flex-layout-0-x-flexRowContent--search-result-product) .flexRow--product-summary-content {
+    max-height: 346px;
+    border-radius: 8px 8px 0 0;
+  }
+}
+
+.flexRowContent--product-summary-content {
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 16px 0;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 1024px) {
+  .flexRowContent--product-summary-content {
+    display: flex;
+    justify-content: start;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  :global(.vtex-slider-layout-0-x-slide--shelf-slider-1) .flexRowContent--product-summary-content {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  :global(.vtex-slider-layout-0-x-slide--shelf-slider-2) .flexRowContent--product-summary-content,
+  :global(.vtex-slider-layout-0-x-slide--shelf-slider-3) .flexRowContent--product-summary-content,
+  :global(.vtex-flex-layout-0-x-flexRowContent--search-result-product) .flexRowContent--product-summary-content {
+    padding: 24px 12px 0;
+  }
+}
+
+.flexRow--price-container {
+  margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .flexRow--price-container {
+    width: 100%;
+    margin-top: 4px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .flexRow--price-container {
+    margin-bottom: 18px;
+  }
+}
+
+.flexColChild--col-price-container {
+  margin: 0.2rem 0;
+}
+
+.flexRow--product-main {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.flexRowContent--shipping-simulator-container {
+  padding: 16px 32px;
+}
+
+.flexRowContent--shipping-simulator-container :global(.vtex-input__suffix) {
+  background-color: #e8f0fe;
+}
+
+.flexRowContent--shipping-simulator-container :global(.vtex-button) {
+  background-color: #013b82;
+  border-radius: 8px;
+  border-color: #013b82;
+  padding: 6px;
+  margin-bottom: 10px;
+}
+
+.flexRowContent--shipping-simulator-container :global(.vtex-button) :global(.vtex-button__label) {
+  color: #fff;
+  padding: 8px;
+}

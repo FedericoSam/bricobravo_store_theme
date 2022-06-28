@@ -1,0 +1,46 @@
+.paragraph--search-title {
+  margin: 0.75rem 0;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 3.438rem;
+  color: #f58220;
+}
+
+.container--section-title {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .container--search-category-title {
+    justify-content: center;
+  }
+}
+
+.paragraph--search-info {
+  font-size: 1rem;
+  line-height: 22px;
+  color: #828282;
+}
+
+@media screen and (max-width: 1024px) {
+  .paragraph--search-info {
+    margin: 0;
+  }
+}
+
+.paragraph--search-category-title {
+  margin: 1.5rem 0 0 0;
+}
+
+.paragraph--filter-text-trigger {
+  margin: 3px 0 0 0;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #f58220;
+  border-radius: 8px;
+}

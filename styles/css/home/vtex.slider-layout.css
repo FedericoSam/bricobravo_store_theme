@@ -1,0 +1,36 @@
+@media screen and (min-width: 1025px) {
+  .sliderLayoutContainer--category-slider {
+    max-width: 1290px;
+    margin: 2rem auto 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sliderLayoutContainer--category-slider {
+    margin: 1rem auto 0;
+  }
+}
+
+.paginationDotsContainer--general-slider {
+  top: 100px;
+}
+
+.paginationDot--general-slider {
+  background: #828282;
+  opacity: 0.4;
+}
+
+.paginationDot--general-slider--isActive {
+  background-color: #f58220;
+  opacity: 100%;
+}
+
+.slideChildrenContainer--best-brands {
+  margin: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .paginationDotsContainer--best-brands {
+    top: 80px;
+  }
+}

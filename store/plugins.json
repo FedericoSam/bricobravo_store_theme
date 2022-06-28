@@ -1,0 +1,4 @@
+{
+  "beightone.my-account:my-account-pages > beightone.my-account:my-account-page": "my-account-page.wishlist-page",
+  "beightone.my-account:my-account-menu > beightone.my-account:my-account-link": "my-account-link.wishlist-link"
+}

@@ -1,0 +1,18 @@
+.container--header-tip-bar {
+  max-width: 100%;
+  @media screen and (max-width: 768px) {
+    margin: 0 auto;
+  }
+}
+.paragraph--header-tip-bar {
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 1rem;
+
+  margin-left: 0.5rem;
+  color: #fafafa;
+}
+
+.paragraph--text {
+  color: pink;
+}

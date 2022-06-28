@@ -1,0 +1,74 @@
+{
+  "flex-layout.row#simple-shelf-container-1": {
+    "title": "Linha: Vitrine 1",
+    "children": ["flex-layout.col#simple-shelf-container-1"],
+    "props": {
+      "blockClass": "shelf-container"
+    }
+  },
+  "flex-layout.col#simple-shelf-container-1": {
+    "title": "Col: Vitrine 1",
+    "children": [
+      "flex-layout.row#simple-shelf-title-container",
+      "flex-layout.row#simple-shelf-slider-container"
+    ],
+    "props": {
+      "blockClass": "col-shelf-container"
+    }
+  },
+  "flex-layout.row#simple-shelf-title-container": {
+    "title": "Linha: Container de título da Shelf",
+    "children": [
+      "rich-text#simple-shelf-section-title",
+      "link#simple-shelf-section-show-all"
+    ],
+    "props": {
+      "blockClass": "shelf-title-container",
+      "preventHorizontalStretch": true
+    }
+  },
+  "rich-text#simple-shelf-section-title": {
+    "title": "RichText: Título da Sessão",
+    "props": {
+      "text": "Ofertas Balaroti",
+      "blockClass": ["section-title", "shelf-title"]
+    }
+  },
+  "link#simple-shelf-section-show-all": {
+    "title": "Link: Ver todos",
+    "props": {
+      "label": "Veja Todos Os Produtos",
+      "href": "#",
+      "blockClass": "shelf-link"
+    }
+  },
+  "flex-layout.row#simple-shelf-slider-container": {
+    "title": "Linha: Container da Shelf",
+    "children": ["list-context.product-list#simple-shelf-list-container-1"],
+    "props": {
+      "blockClass": "shelf-content"
+    }
+  },
+  "list-context.product-list#simple-shelf-list-container-1": {
+    "title": "Lista: Shelf de Produtos - Lançamentos",
+    "blocks": ["product-summary.shelf#main"],
+    "children": ["slider-layout#simple-shelf-slider-1"],
+    "props": {
+      "orderBy": "OrderByBestDiscountDESC"
+    }
+  },
+  "slider-layout#simple-shelf-slider-1": {
+    "title": "Carrosel da Shelf ",
+    "props": {
+      "showPaginationDots": "always",
+      "showNavigationArrows": "always",
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": false,
+      "blockClass": ["shelf-slider", "shelf-slider-1"]
+    }
+  }
+}

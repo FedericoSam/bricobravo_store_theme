@@ -1,0 +1,107 @@
+.sizeDesktop {
+  padding: 0;
+}
+
+.searchBarContainer {
+  width: 360px;
+}
+
+@media screen and (min-width: 768px) {
+  .searchBarContainer {
+    width: 518px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .searchBarContainer .autoCompleteOuterContainer {
+    margin: 0;
+  }
+}
+
+.searchBarContainer .autoCompleteOuterContainer :global(.vtex-input-prefix__group) {
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+}
+
+.searchBarContainer .autoCompleteOuterContainer :global(.vtex-input-prefix__group) :global(.vtex-input__suffix),
+.searchBarContainer .autoCompleteOuterContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+  background: #fafafa;
+}
+
+.searchBarContainer .autoCompleteOuterContainer :global(.vtex-input-prefix__group) :global(.vtex-input__suffix)::placeholder,
+.searchBarContainer .autoCompleteOuterContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder {
+  font-size: 14px;
+  line-height: 19px;
+  color: #40464d;
+}
+
+@media screen and (max-width: 1024px) {
+  .searchBarContainer .autoCompleteOuterContainer {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .searchBarContainer .autoCompleteOuterContainer {
+    width: auto;
+    margin: 0 0.5rem;
+  }
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  height: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  .searchBarContainer {
+    margin: 0 auto;
+  }
+}
+
+.resultsList {
+  max-width: 518px;
+  left: 8%;
+  top: -2px;
+}
+
+.resultsList::-webkit-scrollbar {
+  width: 6px;
+}
+
+.resultsList::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 3px;
+}
+
+.resultsList::-webkit-scrollbar-thumb {
+  background: #013b82;
+  border-radius: 3px;
+}
+
+.resultsList .resultsItem--header-search-bar::first-line {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  color: #f58220;
+}
+
+.resultsList .resultsItemName--header-search-bar {
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 1.188rem;
+  color: #40464d;
+}
+
+@media screen and (max-width: 768px) {
+  .resultsList {
+    max-width: 345px;
+    left: 3%;
+    top: 1px;
+  }
+}
+
+.sizeMobile {
+  padding: 0;
+}

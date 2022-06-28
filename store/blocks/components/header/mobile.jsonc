@@ -1,0 +1,26 @@
+{
+  "header-layout.mobile": {
+    "children": [
+      "flex-layout.row#notification-bar-container",
+      "flex-layout.row#header-mobile-container",
+      "search-bar",
+      "responsive-layout.mobile#timer-banner-mobile"
+    ]
+  },
+
+  "flex-layout.row#header-mobile-container": {
+    "children": [
+      "category-menu",
+      "logo",
+      "flex-layout.col#spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  }
+}

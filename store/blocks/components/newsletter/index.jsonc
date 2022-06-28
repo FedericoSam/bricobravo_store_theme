@@ -1,0 +1,43 @@
+{
+  "flex-layout.row#newsletter": {
+    "title": "Linha: Container de Newsletter ",
+    "children": [
+      "image#newsletter-icon",
+      "rich-text#newsletter-text",
+      "newsletter-form"
+    ],
+    "props": {
+      "blockClass": ["newsletter-container"],
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+
+  "image#newsletter-icon": {
+    "title": "Img: Icone Newsletter",
+    "props": {
+      "blockClass": ["img-newsletter"],
+      "src": "https://balarotiio.vteximg.com.br/arquivos/newsletter.svg"
+    }
+  },
+
+  "rich-text#newsletter-text": {
+    "title": "Texto: Texto de Newsletter",
+    "props": {
+      "blockClass": "text-newsletter",
+      "text": "Assine para receber **promoções** e **novidades!**"
+    }
+  },
+
+  "newsletter-form": {
+    "title": "Newsletter: Formulário",
+    "children": ["newsletter"]
+  },
+
+  "newsletter": {
+    "props": {
+      "placeholder": "Digite seu E-mail",
+      "submit": "Cadastrar"
+    }
+  }
+}

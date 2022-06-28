@@ -1,0 +1,23 @@
+.flexRowContent--header-desk-container,
+.flexRowContent--horizontal,
+.flexRowContent--main-banner-container {
+  margin: 0 auto;
+  align-items: center;
+}
+
+@media screen and (min-width: 1025px) {
+  .flexRowContent--header-desk-container,
+  .flexRowContent--horizontal,
+  .flexRowContent--main-banner-container {
+    max-width: 1216px;
+  }
+}
+
+.flexRowContent--header-desk-container :global(.vtex-login-2-x-profile),
+.flexRowContent--horizontal :global(.vtex-login-2-x-profile),
+.flexRowContent--main-banner-container :global(.vtex-login-2-x-profile) {
+  padding: 0;
+  font-weight: 700;
+  color: #013b82;
+  text-transform: capitalize;
+}

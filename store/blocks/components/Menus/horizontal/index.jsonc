@@ -1,0 +1,30 @@
+{
+  "flex-layout.row#horizontal": {
+    "children": [
+      "category-menu",
+      "link#show-all",
+      "menu-item#header-row-2-item-1",
+      "menu-item#header-row-2-item-2",
+      "menu-item#header-row-2-item-3",
+      "menu-item#header-row-2-item-4",
+      "menu-item#header-row-2-item-5",
+      "menu-item#header-row-2-item-6",
+      "menu-item#header-row-2-item-7",
+      "menu-item#header-row-2-item-8"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "fullWidth": true,
+      "blockClass": "horizontal"
+    },
+    "title": "Menu horizontal"
+  },
+  "link#show-all": {
+    "title": "Link: Ver todos",
+    "props": {
+      "label": "Todos Produtos",
+      "href": "#",
+      "blockClass": "menu-show-all"
+    }
+  }
+}

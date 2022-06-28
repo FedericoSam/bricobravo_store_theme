@@ -1,0 +1,223 @@
+{
+  "search-result-layout#main": {
+    "blocks": [
+      "search-result-layout.desktop#main",
+      "search-result-layout.mobile#main",
+      "search-not-found-layout"
+    ]
+  },
+  // Search Layout Desktop
+  "search-result-layout.desktop#main": {
+    "children": [
+      "flex-layout.row#search-breadcrumb",
+      "list-context.image-list#search-banner-container",
+      "search-title.v2",
+      "flex-layout.row#search-content",
+      "flex-layout.row#search-category",
+      "flex-layout.row#search-content-container"
+    ],
+    "props": {
+      "maxItemsPerPage": 12,
+      "pagination": "show-more",
+      "preventRouteChange": false
+    }
+  },
+  "list-context.image-list#search-banner-container": {
+    "title": "Lista: Banners de busca",
+    "children": ["slider-layout#search-banner-slider"],
+    "props": {
+      "blockClass": "main-list-context",
+      "images": [
+        {
+          "description": "Banner 1",
+          "image": "https://balarotiio.vteximg.com.br/arquivos/category.jpg",
+          "link": "#",
+          "mobileImage": "https://balarotiio.vteximg.com.br/arquivos/category-mobile.jpg"
+        },
+        {
+          "description": "Banner 2",
+          "image": "https://balarotiio.vteximg.com.br/arquivos/category.jpg",
+          "link": "#",
+          "mobileImage": "https://balarotiio.vteximg.com.br/arquivos/category-mobile.jpg"
+        },
+        {
+          "description": "Banner 3",
+          "image": "https://balarotiio.vteximg.com.br/arquivos/category.jpg",
+          "link": "#",
+          "mobileImage": "https://balarotiio.vteximg.com.br/arquivos/category-mobile.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#search-banner-slider": {
+    "title": "Slider: Carrosel dos Banners ",
+    "props": {
+      "blockClass": ["slider-main-banners", "slider-search-banners"],
+      "showPaginationDots": "always",
+      "showNavigationArrows": "always",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false
+    }
+  },
+  "rich-text#search-title": {
+    "title": "Titulo de Departamento",
+    "props": {
+      "blockClass": ["search-title"],
+      "font": "t-body",
+      "text": "Pisos e Revestimentos",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+  "flex-layout.row#search-content": {
+    "children": ["b8-show-more-text#search"],
+    "props": {
+      "blockClass": ["search-content"],
+      "fullWidth": true
+    }
+  },
+
+  "b8-show-more-text#search": {
+    "children": ["rich-text#search-info"]
+  },
+  "rich-text#search-info": {
+    "title": "Texto: Conteúdo de Departamento",
+    "props": {
+      "blockClass": ["search-info"],
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+  },
+  "search-not-found-layout": {
+    "title": "SearchLayout: Busca não encontrada",
+    "children": ["flex-layout.row#not-found"]
+  },
+  "flex-layout.row#not-found": {
+    "title": "Linha: Busca não encontrada",
+    "children": ["flex-layout.col#not-found"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#not-found": {
+    "title": "COL: Busca não encontrada",
+    "children": ["flex-layout.row#search-breadcrumb", "not-found"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+  // Search Layout Mobile
+  "search-result-layout.mobile#main": {
+    "children": [
+      "flex-layout.row#search-breadcrumb",
+      "list-context.image-list#search-banner-container",
+      "search-title.v2",
+      "flex-layout.row#search-content",
+      "flex-layout.row#search-category",
+      "flex-layout.row#mobile-search-content-container"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true
+    }
+  },
+  "flex-layout.row#mobile-search-content-container": {
+    "title": "Mobile.Linha: Conteúdo da Search",
+    "children": ["flex-layout.col#mobile-search-content-container"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "mobile-search-content-container"
+    }
+  },
+  "flex-layout.col#mobile-search-content-container": {
+    "title": "Mobile.Linha: Conteúdo da Search",
+    "children": [
+      "flex-layout.row#mobile-search-orderBy-container",
+      "flex-layout.row#mobile-search-result-container"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "mobile-search-content-container"
+    }
+  },
+  "flex-layout.row#mobile-search-orderBy-container": {
+    "title": "Mobile.Linha: Container título e Total de produtos ",
+    "children": [
+      "search-products-count-per-page",
+      "order-by.v2#mobile",
+      "drawer#filter"
+    ],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "mobile-search-orderBy-container"
+    }
+  },
+
+  "order-by.v2#mobile": {
+    "props": {
+      "showOrderTitle": false,
+      "blockClass": "mobile-order-by"
+    }
+  },
+
+  // Drawer Filter ->
+  "drawer#filter": {
+    "title": "Drawer-Menu: Filter",
+    "children": ["filter-navigator.v3#mobile"],
+    "blocks": ["drawer-trigger#filter"],
+    "props": {
+      "slideDirection": "leftToRight",
+      "blockClass": "filter_drawer"
+    }
+  },
+  "filter-navigator.v3#mobile": {
+    "title": "Drawer: Filter",
+    "props": {
+      "layout": "mobile",
+      "initiallyCollapsed": false,
+      "showClearByFilter": false,
+      "truncateFilters": true,
+      "fullWidthOnMobile": true,
+      "appliedFiltersOverview": "show"
+    },
+    "blocks": ["sidebar-close-button"]
+  },
+  "drawer-trigger#filter": {
+    "title": "Drawer-trigger ",
+    "children": ["rich-text#filter-trigger"],
+    "props": {
+      "blockClass": "filter_toggle"
+    }
+  },
+  "rich-text#filter-trigger": {
+    "title": "Texto: Filtrar",
+    "props": {
+      "text": "Filtrar",
+      "blockClass": "filter-text-trigger"
+    }
+  },
+
+  "flex-layout.row#mobile-search-result-container": {
+    "title": "Linha: Container do conteúdo",
+    "children": ["flex-layout.col#mobile-search-result-container"],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "search-result-container"
+    }
+  },
+  "flex-layout.col#mobile-search-result-container": {
+    "title": "Linha: Container do conteúdo",
+    "children": ["flex-layout.row#products", "flex-layout.row#fetchmore"],
+    "props": {
+      "blockClass": "search-result-container",
+      "fullWidth": true,
+      "preventVerticalStretch": "true"
+    }
+  }
+}

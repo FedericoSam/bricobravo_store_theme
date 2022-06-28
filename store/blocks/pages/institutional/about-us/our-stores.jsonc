@@ -1,0 +1,13 @@
+{
+  "store.custom#our-stores": {
+    "blocks": ["flex-layout.row#our-stores"],
+    "title": "Nossas lojas"
+  },
+
+  "flex-layout.row#our-stores": {
+    "children": ["store-locator"],
+    "props": {
+      "blockClass": "our-stores-container"
+    }
+  }
+}

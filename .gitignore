@@ -1,0 +1,69 @@
+### SublimeText ###
+*.sublime-workspace
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+### Windows ###
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# App specific
+node_modules/
+docs/_book/
+.tmp
+.idea
+npm-debug.log
+.build/
+lib
+*.orig
+react/package-lock.json
+
+# ------
+# Common
+# ------
+*~
+.DS_Store
+.svn
+.cvs
+*.bak
+*.swp
+Thumbs.db
+
+# -----------------------
+# Local Development Tools
+# -----------------------
+/node_modules
+backup
+backup/
+assets/
+.husky
+/npm-debug.log
+
+# ---------------
+# Compiled assets
+# ---------------
+public/*
+dist/*
+temp/*
+!public/assets
+
+backup/
+devcocamar2--cocamarstore.myvtex.com/

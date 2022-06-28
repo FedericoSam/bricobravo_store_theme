@@ -1,0 +1,249 @@
+@charset "UTF-8";
+.sellerMasterContainer {
+  text-align: initial !important;
+  margin: 0 !important;
+}
+
+.simulateShipping {
+  border: none;
+  width: fit-content !important;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 540px) {
+  .simulateShipping {
+    flex-direction: row;
+  }
+}
+
+.simulateShipping :global(.vtex-address-form__postalCode) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.75rem;
+}
+
+.simulateShipping :global(.vtex-address-form__postalCode) :global(.vtex-input__suffix) {
+  display: none;
+}
+
+.simulateShipping :global(.vtex-address-form__postalCode) :global(.vtex-input__label) {
+  display: none;
+  /* CEP */
+}
+
+.simulateShipping :global(.vtex-address-form__postalCode) :global(.vtex-input-prefix__group) {
+  border-radius: 0.25rem 0 0 0.25rem;
+  border-right: 0;
+}
+
+.simulateShipping :global(.vtex-address-form__postalCode) :global(.vtex-input__error) {
+  margin-top: 2px;
+  position: absolute;
+  font-size: 0.8rem;
+}
+
+.simulateShipping :global(.vtex-address-form__postalCode) :global(.vtex-address-form__postalCode-forgottenURL) {
+  align-self: flex-start;
+  padding-top: 1rem;
+}
+
+.simulateShipping :global(.vtex-address-form__postalCode) :global(.vtex-address-form__postalCode-forgottenURL) :first-child {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #9d9d9d;
+}
+
+.simulateShipping :global(.vtex-address-form__postalCode) :global(.vtex-address-form__postalCode-forgottenURL) :global(.vtex__icon-external-link) {
+  display: none;
+}
+
+.simulateShipping :global(.vtex-button) {
+  min-width: 75px;
+  background: none;
+  margin: 0;
+  height: 2.5rem;
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 22px;
+  color: #004c98;
+  border-radius: 0 0.25rem 0.25rem 0;
+  border: 2px solid #e3e4e6;
+  border-left: 0;
+  text-transform: none;
+}
+
+.simulateShipping :global(.vtex-button) :global(.vtex-button__label) {
+  display: none;
+}
+
+.simulateShipping :global(.vtex-button)::before {
+  content: 'Calcular';
+}
+
+.sellerRow {
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+@media screen and (max-width: 639px) {
+  .sellerRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    align-items: start;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .sellerRow {
+    display: block;
+  }
+}
+
+.sellerHead {
+  background: #e6e6e6;
+}
+
+@media screen and (max-width: 319px) {
+  .sellerHead {
+    display: none;
+  }
+}
+
+.sellerHead,
+.sellerList {
+  width: 100%;
+  margin: 0;
+}
+
+.sellerHeadText {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 19px;
+  text-align: left;
+  color: #013b82;
+}
+
+.sellerHeadCell--head-cell-add-cart {
+  width: 25% !important;
+}
+
+.sellerHeadCell--head-cell-add-cart :global(.vtex-seller-selector-0-x-sellerHeadText) {
+  padding-left: 0px;
+}
+
+.sellerName,
+.sellerShipping,
+.sellerPriceShipping,
+.sellerPrice {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 22px;
+  text-align: left;
+  color: #40464d;
+  background: none;
+}
+
+.sellerName::before,
+.sellerShipping::before,
+.sellerPriceShipping::before,
+.sellerPrice::before {
+  font-weight: 700;
+  display: block;
+  background: #fafafa;
+  color: #013b82;
+}
+
+@media screen and (max-width: 639px) {
+  .sellerName,
+  .sellerShipping,
+  .sellerPriceShipping,
+  .sellerPrice {
+    line-height: 37px;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .sellerName::before {
+    content: 'Vendedor';
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .sellerPrice::before {
+    content: 'Preço';
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .sellerShipping::before {
+    content: 'Entrega';
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .sellerPriceShipping::before {
+    content: 'Preço com Entrega';
+  }
+}
+
+.sellerShippingText {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.sellerBuyContainer {
+  width: 25%;
+  padding: 1rem 0 1rem;
+}
+
+.sellerBuyContainer :global(.vtex-button) {
+  background: #fafafa;
+  border: 1px solid #f58220;
+  border-radius: 8px;
+}
+
+.sellerBuyContainer :global(.vtex-button) :global(.vtex-button__label) {
+  padding: 0.8rem 0.875rem !important;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 22px;
+  color: #f58220;
+}
+
+.sellerBuyContainer :global(.vtex-button) :global(.vtex-button__label)::before {
+  content: url("https://balarotiio.vteximg.com.br/arquivos/seller-cart.svg");
+  margin-right: 0.75rem;
+}
+
+@media screen and (max-width: 340px) {
+  .sellerBuyContainer :global(.vtex-button) :global(.vtex-button__label) {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .sellerBuyContainer {
+    width: auto;
+    grid-column: span 2;
+  }
+}
+
+.simulateShippingSpinner {
+  position: absolute;
+  padding-top: 4rem;
+}
+
+.sellerShippingText:nth-child(even),
+.sellerPriceShippingText:nth-child(even) {
+  background-color: transparent !important;
+}

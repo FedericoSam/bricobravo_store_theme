@@ -1,0 +1,29 @@
+.b8CustomShowMoreContainer {
+  font-size: 16px;
+  line-height: 1.25rem;
+  padding-top: 10px;
+
+  color: #828282;
+}
+.b8CustomShowMoreContainer span + span {
+  transition: all 0.2s;
+}
+.b8CustomShowMore,
+.b8CustomShowMore:visited {
+  border: 1px solid #f58220;
+  border-radius: 4px;
+  padding: 1rem;
+
+  background: transparent;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 24px;
+
+  padding: 0.3rem;
+
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+
+  color: #f58220;
+}

@@ -1,0 +1,33 @@
+.flexRowContent--only-one {
+  @media screen and (max-width: 1024px) {
+    padding: 0 0.5rem;
+    margin-top: 36px;
+  }
+}
+
+.flexRowContent--grid-banners-container,
+.flexCol--grid-banners-container,
+.flexRowContent--mini-banners-container {
+  justify-content: space-between;
+}
+
+.flexRowContent--grid-banners-container {
+  @media screen and (max-width: 1024px) {
+    padding: 0 0.5rem;
+    gap: 5px;
+    margin-top: 36px;
+  }
+}
+
+.flexRowContent--mini-banners-container {
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    gap: 0.3rem;
+  }
+}
+
+.flexRow--grid-banners-container {
+  @media screen and (max-width: 1024px) {
+    padding-top: 42px;
+  }
+}

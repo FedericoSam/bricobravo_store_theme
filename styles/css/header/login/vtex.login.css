@@ -1,0 +1,17 @@
+.container :global(.vtex-button) :global(.vtex-button__label) span div:nth-child(2) div {
+  padding-top: 0;
+}
+
+.label {
+  font-family: 'Nunito Sans';
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #013b82;
+  padding: 0;
+  text-transform: capitalize;
+}
+
+.optionsListItem :global(.vtex-button__label) {
+  font-size: 0.75rem;
+}

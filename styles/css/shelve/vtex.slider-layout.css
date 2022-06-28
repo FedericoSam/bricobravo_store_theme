@@ -1,0 +1,14 @@
+@media screen and (min-width: 1025px) {
+  .slide--shelf-slider {
+    width: 100%;
+    /* margin: 0 16px; */
+    max-width: 384px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .slide--shelf-slider-2,
+  .slide--shelf-slider-3 {
+    max-width: 160px;
+  }
+}

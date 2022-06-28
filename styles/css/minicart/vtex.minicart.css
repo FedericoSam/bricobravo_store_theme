@@ -1,0 +1,135 @@
+@media screen and (min-width: 1024px) {
+  .drawer {
+    max-width: 364px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .drawer {
+    height: 100%;
+    overflow: hidden;
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-width: 414px) {
+  .drawer {
+    max-width: 414px !important;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-width: 360px) {
+  .drawer {
+    max-width: 360px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .drawerContent {
+    height: 100%;
+  }
+}
+
+.cartIcon {
+  width: 26px;
+  height: 26px;
+}
+
+.openIconContainer {
+  padding: 0;
+}
+
+.closeIconContainer {
+  padding: 10px 0 8px 12px;
+  background-color: #fafafa;
+}
+
+.closeIconButton {
+  padding: 0;
+  color: #f58220;
+}
+
+.minicartTitle {
+  padding: 0 0 17px 16px;
+  margin: 0;
+  background-color: #fafafa;
+  font-size: 20px;
+}
+
+.minicartEmptyStateContainer {
+  background-color: #fafafa;
+}
+
+.minicartContentContainer {
+  justify-content: flex-start;
+}
+
+.minicartProductListContainer {
+  overflow: hidden;
+  background-color: #fafafa;
+  padding: 0 6px 0 0;
+}
+
+.minicartQuantityBadgeDefault {
+  border-radius: 0px 0.5rem;
+}
+
+.minicartSummary {
+  padding: 20px 20px 24px 20px;
+  max-height: 153px;
+}
+
+@media screen and (max-width: 1024px) {
+  .minicartSummary {
+    padding: 5px 16px 10px;
+  }
+}
+
+.minicartCheckoutButton {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 20px 34px 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .minicartCheckoutButton {
+    padding: 0 16px 14px;
+  }
+}
+
+.minicartCheckoutButton :global(.vtex-button) {
+  max-width: 324px;
+  max-height: 48px;
+  border-radius: 8px;
+  background-color: #f58220;
+}
+
+.minicartCheckoutButton :global(.vtex-button) :global(.vtex-button__label) {
+  padding: 13px 66px !important;
+  white-space: nowrap;
+}
+
+.minicartCheckoutButton :global(.vtex-button):hover {
+  background-color: #d96d10;
+}
+
+.minicartCheckoutButton :global(.vtex-button__label) {
+  font-size: 0;
+}
+
+.minicartCheckoutButton :global(.vtex-button__label)::before {
+  content: url("https://balarotiio.vteximg.com.br/arquivos/cart.svg");
+  background-color: transparent;
+  height: 24px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.minicartCheckoutButton :global(.vtex-button__label)::after {
+  content: 'Finalizar compra';
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 800;
+}

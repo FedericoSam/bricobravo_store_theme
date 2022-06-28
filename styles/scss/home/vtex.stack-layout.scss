@@ -1,0 +1,24 @@
+.stackItem--desktop {
+  right: 150px;
+  left: unset;
+  top: 10px;
+  z-index: 1 !important;
+}
+.stackItem--desktop--first,
+.stackItem--mobile--first {
+  :global(.vtex-store-components-3-x-imageElement) {
+    width: 100%;
+  }
+}
+
+.stackContainer--desktop,
+.stackContainer--mobile {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.stackItem--mobile {
+  top: unset;
+  bottom: 30px;
+  left: 16px;
+}

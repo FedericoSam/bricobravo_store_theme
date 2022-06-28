@@ -1,0 +1,12 @@
+.flexCol--textColumn {
+  @media screen and (max-width: 1024px) {
+    padding: 0 1rem;
+    max-width: 700px;
+  }
+}
+
+.flexRow--about-us-container {
+  @media screen and (max-width: 1024px) {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,15 @@
+.menuContainer--header-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.styledLinkContainer--header-menu-item {
+  margin: 0;
+}
+
+.styledLinkContent--header-menu-item {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #013b82;
+}

@@ -1,0 +1,43 @@
+.tileListList {
+  flex-direction: column !important;
+}
+.biggy-autocomplete-wrapper {
+  @media screen and (max-width: 767px) {
+    width: 360px;
+  }
+  width: 518px;
+}
+
+.biggy-autocomplete {
+  :global(.vtex-search-2-x-priceContainer) {
+    :global(.vtex-search-2-x-listPrice) {
+      display: none;
+    }
+  }
+}
+
+.sellingPrice--hasListPrice {
+  color: #f58220 !important;
+  font-style: normal;
+  font-weight: bold !important;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.productBrand {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #40464d;
+}
+.itemListPrefix {
+  color: #f58220;
+}
+
+.itemListLinkTitle {
+  color: #40464d;
+}
+.itemListSubItemLink {
+  color: #40464d;
+}

@@ -1,0 +1,45 @@
+{
+  "flex-layout.row#seals": {
+    "title": "Linha: Certificados",
+    "children": [
+      "product-specification-group"
+    ],
+    "props": {
+      "blockClass": "certificatesContainer"
+    }
+  },
+  "product-specification-group": {
+    "children": [
+      "product-specification"
+    ],
+    "props": {
+      "filter": {
+        "type": "show",
+        "specificationGroups": [
+          "Selos",
+          "Vídeos",
+          "Selos II",
+          "Selo III"
+        ]
+      }
+    }
+  },
+  "product-specification": {
+    "children": [
+      "product-specification-text#specification",
+      "product-specification-values"
+    ]
+  },
+  "product-specification-values": {
+    "children": [
+      "product-specification-text#value"
+    ]
+  },
+  "product-specification-text#group": {},
+  "product-specification-text#specification": {},
+  "product-specification-text#value": {
+    "props": {
+      "message": "{specificationValue}"
+    }
+  }
+}

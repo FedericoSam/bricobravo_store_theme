@@ -1,0 +1,9 @@
+{
+  "admin-example.navigation.label-group": "Consulte nossas Lojas",
+  "admin-example.navigation.label-table": "Configuração",
+  "admin-example.navigation.search.kws": "teste, mock, fake",
+  "admin-example.navigation.details.search.kws": "detalhe, mock, test, oi",
+  "admin-example.navigation.table.search.kws": "tabela, mock, test, tchau",
+  "admin-example.hello-world": "Consulte nossas Lojas",
+  "admin-example.details": "Admin detalhes"
+}

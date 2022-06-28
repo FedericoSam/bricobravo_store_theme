@@ -1,0 +1,346 @@
+@charset "UTF-8";
+@media screen and (max-width: 1024px) {
+  .container--layout {
+    padding: 0 1rem;
+  }
+}
+
+.galleryTitle--layout {
+  margin: 0.75rem 0;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 3.438rem;
+  color: #f58220;
+}
+
+@media screen and (max-width: 1024px) {
+  .galleryTitle--layout {
+    font-size: 24px;
+    line-height: 2.813rem;
+  }
+}
+
+.gallery--grid {
+  padding-left: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .gallery--grid {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .galleryItem--grid {
+    max-height: 400px;
+    padding: 6px 0;
+  }
+}
+
+.filters--layout {
+  width: 232px;
+}
+
+@media screen and (max-width: 1024px) {
+  .filters--layout {
+    width: 100%;
+  }
+}
+
+.filterTitle {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 22px;
+  color: #013b82;
+}
+
+@media screen and (max-width: 1024px) {
+  .filterTitle {
+    font-size: 0.875rem;
+    line-height: 20px;
+  }
+}
+
+.filterItem :global(.vtex-checkbox__label) {
+  font-size: 0.875rem;
+  line-height: 19px;
+  color: #555555;
+}
+
+.filterIcon {
+  color: #003a75;
+}
+
+.seeMoreButton {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 19px;
+  color: #003a75;
+}
+
+@media screen and (max-width: 1024px) {
+  .showingProducts {
+    max-width: 115px;
+    white-space: break-spaces;
+  }
+}
+
+.showingProductsCount {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 20px;
+  color: #003a75;
+}
+
+.showingProductsCount::after {
+  content: 'Produtos';
+  margin-left: 0.5rem;
+}
+
+.filter__container {
+  margin: 1.5rem 0;
+  padding: 0.75rem;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+  .filter__container {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+  }
+}
+
+.filter__container--title {
+  display: none;
+}
+
+.filterPopupTitle,
+.orderByOptionItem {
+  font-weight: 700;
+  color: #013b82;
+  text-transform: initial;
+}
+
+@media screen and (max-width: 1024px) {
+  .filterPopupTitle {
+    display: none;
+  }
+}
+
+.filterItem :global(.vtex-checkbox__line-container) {
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.filterItem :global(.vtex-checkbox__inner-container) {
+  background: #e5e5e5;
+}
+
+.filterItem--selected :global(.vtex-checkbox__inner-container) {
+  border: none;
+  background: #013b82;
+}
+
+.filterItem :global(.vtex-checkbox__label) {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #414042;
+}
+
+.filterItem :global(.vtex-checkbox__line-container) :global(.vtex__icon-check) {
+  color: #ffffff;
+}
+
+.orderByText {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 20px;
+  color: #828282;
+  text-transform: initial;
+}
+
+.orderByButton--mobile-order-by {
+  padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .filterPopupArrowIcon {
+    padding: 1rem;
+    border: 1px solid #f58220;
+    border-radius: 8px;
+  }
+  .filterPopupArrowIcon::before {
+    content: 'Ordenar';
+    margin-right: 0.5rem;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f58220;
+  }
+  .filterPopupArrowIcon .caretIcon--mobile-order-by {
+    display: none;
+  }
+}
+
+.filterTemplateOverflow :global(.vtex-slider) {
+  margin-bottom: 0.75rem;
+}
+
+.filterTemplateOverflow :global(.vtex-slider__base) {
+  top: 0.9rem !important;
+}
+
+.filterTemplateOverflow :global(.vtex-slider__base-internal) {
+  background: #013b82;
+}
+
+.filterTemplateOverflow
+:global(.vtex-slider__selector-container)
+:global(.vtex-slider__selector) {
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+  height: 20px !important;
+  width: 20px !important;
+}
+
+.filterTemplateOverflow
+:global(.vtex-slider__selector-container)
+:global(.vtex-slider__selector)::before {
+  background: #cccccc;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 6px;
+  width: 6px;
+}
+
+.buttonShowMore :global(.vtex-button) {
+  background: #ffffff;
+  padding: 0.75rem 1rem;
+  border: 1px solid #f58220;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.buttonShowMore :global(.vtex-button) :global(.vtex-button__label) {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 22px;
+  color: #f58220;
+}
+
+.filter__container--selectedFilters {
+  display: none;
+}
+
+.searchNotFound {
+  justify-content: space-evenly;
+  margin: 132px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .searchNotFound {
+    margin: 0;
+  }
+}
+
+.searchNotFoundOops {
+  color: #f58220;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 160px;
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: -0.64px;
+}
+
+@media screen and (max-width: 1024px) {
+  .searchNotFoundOops {
+    font-size: 80px;
+    padding: 35px 16px 32px;
+  }
+}
+
+.searchNotFoundOops::after {
+  content: 'Nenhum produto foi encontrado 😞';
+  font-size: 20px;
+  font-weight: 700;
+  color: #013b82;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.searchNotFoundInfo {
+  font-size: 0;
+  border: 1px solid #f2f2f2;
+  border-left: 2px solid #f58220;
+  border-radius: 4px;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 40px 48px 48px;
+  width: 100%;
+  max-width: 564px;
+}
+
+@media screen and (max-width: 767px) {
+  .searchNotFoundInfo {
+    max-width: 328px;
+    padding: 32px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .searchNotFoundInfo {
+    max-width: 328px;
+    max-height: 240px;
+    padding: 16px;
+  }
+}
+
+.searchNotFoundWhatDoIDo {
+  font-size: 0;
+}
+
+.searchNotFoundWhatDoIDo::after {
+  content: 'O que eu posso fazer ?';
+  font-size: 18px;
+  color: #f58220;
+  margin: 0;
+  font-weight: 700;
+}
+
+.searchNotFoundWhatToDoDotsContainer {
+  font-size: 16px;
+  color: #013b82;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.searchNotFoundWhatToDoDots {
+  margin: 16px 0;
+  display: flex;
+}
+
+.searchNotFoundWhatToDoDots::before {
+  content: '✓';
+  font-size: 20px;
+  margin-right: 10px;
+  color: #139347;
+  background-color: #bfeed5;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,112 @@
+@charset "UTF-8";
+.styleguideInput {
+  padding-bottom: 30px !important;
+}
+
+.styleguideInput :global(.vtex-input__label) {
+  font-family: Nunito Sans;
+  font-size: 16px;
+  color: #3c3c3b;
+}
+
+.styleguideInput :global(.vtex-input-prefix__group) {
+  font-family: Nunito Sans;
+  font-size: 14px;
+  color: #40464d;
+}
+
+.profileContainer :global(.vtex-input-prefix__group) :first-child {
+  border: none;
+  border-radius: 0;
+  padding: 15px 0;
+  width: 500px;
+  font-family: 'Nunito Sans';
+}
+
+@media screen and (max-width: 1024px) {
+  .profileContainer :global(.vtex-input-prefix__group) :first-child {
+    max-width: 300px;
+  }
+}
+
+.profileContainer :global(.vtex-button) {
+  display: flex;
+  justify-content: center;
+  max-width: 338px;
+  max-height: 46px;
+  background-color: #f58220;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+.profileContainer :global(.vtex-button) :global(.vtex-button__label) {
+  text-decoration: none;
+  padding: 12px 20px !important;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
+}
+
+.profileContainer .toggleBusinessButtonWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.profileContainer .toggleBusinessButtonWrapper :global(.vtex-button) {
+  text-decoration: none;
+  border-radius: 8px;
+  max-height: 46px;
+  padding: 12px 20px;
+  white-space: nowrap;
+  font-family: 'Nunito Sans';
+  font-size: 0;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.isNotCorporate :global(.vtex-button) {
+  background-color: #013b82;
+  max-width: 338px;
+}
+
+.isNotCorporate :global(.vtex-button)::after {
+  content: 'incluir pessoa jurídica';
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #fff;
+}
+
+.isCorporate :global(.vtex-button) {
+  background-color: #f34949;
+  max-width: 373px;
+}
+
+.isCorporate :global(.vtex-button)::after {
+  content: 'não incluir pessoa jurídica';
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #fff;
+}
+
+.genderInput :global(.vtex-dropdown__label) {
+  font-size: 16px;
+  font-family: Nunito Sans;
+  color: #3c3c3b;
+}
+
+.genderInput :global(.vtex-dropdown__caption) {
+  font-family: Nunito Sans;
+  color: #40464d;
+}
+
+.genderInput :global(.vtex-dropdown__button) {
+  height: 30px;
+  padding-top: 6px;
+  font-size: 16px;
+}

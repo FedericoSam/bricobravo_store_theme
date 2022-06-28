@@ -1,0 +1,81 @@
+{
+  "seller-table": {
+    "children": [
+      "flex-layout.row#product-main",
+      "flex-layout.row#description",
+      "flex-layout.row#specifications-title",
+      "product-specification-group#table",
+      "product-reviews",
+      "product-questions-and-answers"
+    ]
+  },
+  "flex-layout.row#seller-selector-container": {
+    "children": ["rich-text#more-sellers", "flex-layout.row#seller-content"],
+    "props": {
+      "blockClass": ["seller-selector-container"],
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.row#seller-content": {
+    "children": ["seller-head", "seller-body"],
+    "props": {
+      "blockClass": ["seller-content"],
+      "preventHorizontalStretch": true
+    }
+  },
+  "seller-head": {
+    "children": [
+      "seller-head-cell#Seller",
+      "seller-head-cell#Price",
+      "seller-head-cell#Shipping",
+      "seller-head-cell#PriceWithShipping",
+      "seller-head-cell#BuyButton"
+    ]
+  },
+  "seller-head-cell#Seller": {
+    "title": "Vendedor",
+    "props": {
+      "title": "Vendedor"
+    }
+  },
+  "seller-head-cell#Price": {
+    "title": "Preço",
+    "props": {
+      "title": "Preço"
+    }
+  },
+  "seller-head-cell#Shipping": {
+    "title": "Entrega",
+    "props": {
+      "title": "Entrega"
+    }
+  },
+  "seller-head-cell#PriceWithShipping": {
+    "title": "Preço com entrega",
+    "props": {
+      "title": "Preço com entrega"
+    }
+  },
+  "seller-head-cell#BuyButton": {
+    "title": "Adicionar ao carrinho",
+    "props": {
+      "title": "Adicionar ao carrinho",
+      "blockClass": "head-cell-add-cart"
+    }
+  },
+  "seller-body": {
+    "children": ["seller-row"]
+  },
+  "seller-row": {
+    "children": [
+      "vtex.seller-selector:seller-name",
+      "vtex.seller-selector:seller-price",
+      "vtex.seller-selector:seller-shipping",
+      "vtex.seller-selector:seller-price-with-shipping",
+      "vtex.seller-selector:seller-add-to-cart"
+    ]
+  },
+  "seller-add-to-cart": {
+    "blocks": ["add-to-cart-button#product"]
+  }
+}

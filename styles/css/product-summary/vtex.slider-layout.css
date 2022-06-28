@@ -1,0 +1,61 @@
+.sliderArrows--shelf-slider {
+  border: 1px solid #f58220;
+  background-color: #fafafa !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 -36px;
+}
+
+@media screen and (max-width: 1279px) and (min-width: 1025px) {
+  .sliderArrows--shelf-slider {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sliderArrows--shelf-slider {
+    margin: 4px;
+  }
+}
+
+.caretIcon--shelf-slider {
+  width: 20px;
+  height: 20px;
+  color: #f58220;
+}
+
+.paginationDotsContainer--shelf-slider {
+  bottom: -20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .paginationDotsContainer--shelf-slider-2,
+  .paginationDotsContainer--shelf-slider-3 {
+    bottom: 0;
+  }
+}
+
+.paginationDot--shelf-slider {
+  background: #828282;
+  opacity: 0.4;
+  margin-right: 1.25rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .paginationDot--shelf-slider {
+    margin-right: 0.5rem;
+  }
+}
+
+.paginationDot--shelf-slider--isActive {
+  background-color: #f58220;
+  opacity: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .sliderTrackContainer--shelf-slider-2,
+  .sliderTrackContainer--shelf-slider-3 {
+    margin-left: 16px;
+  }
+}

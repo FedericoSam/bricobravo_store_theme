@@ -1,0 +1,124 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#newsletter",
+      "flex-layout.row#footer-columns-container",
+      "flex-layout.row#footer-payments-container",
+      "flex-layout.row#copyright-container",
+      "flex-layout.row#made-by"
+    ]
+  },
+  "flex-layout.row#footer-columns-container": {
+    "title": "Desk. Container de colunas",
+    "children": [
+      "flex-layout.col#column-1",
+      "flex-layout.col#column-2",
+      "flex-layout.col#column-3",
+      "flex-layout.col#column-4"
+    ],
+    "props": {
+      "blockClass": ["footer-columns-container"],
+      "preventHorizontalStretch": true
+    }
+  },
+  "back-to-top-button": {
+    "props": {
+      "display": "caret-icon"
+    }
+  },
+  "flex-layout.row#footer-payments-container": {
+    "title": "Desk. Container de Pagamentos",
+    "children": [
+      "flex-layout.col#footer-payment-col-1",
+      "flex-layout.col#footer-security-col-1",
+      "back-to-top-button"
+    ],
+    "props": {
+      "blockClass": ["footer-column"],
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.col#footer-payment-col-1": {
+    "title": "Coluna 1",
+    "children": [
+      "rich-text#footer-payment-col-1",
+      "flex-layout.row#payments-items"
+    ],
+    "props": {
+      "blockClass": ["footer-cols","payment-col"],
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#footer-payment-col-1": {
+    "title": "Titulo de Coluna",
+    "props": {
+      "blockClass": "footer-col-title",
+      "text": "**Formas de Pagamento**"
+    }
+  },
+
+  "flex-layout.row#copyright-container": {
+    "children": ["rich-text#copyright"],
+    "props": {
+      "blockClass": ["copyright-container"]
+    }
+  },
+  "rich-text#copyright": {
+    "props": {
+      "blockClass": ["copyright"],
+      "font": "t-body",
+      "text": "**Todos os direitos reservados © 2021 - Balaroti Comércio de Materiais de Construção SA. - CNPJ 77.044.618/0001-88** \n \n Os preços e condições de pagamento são válidos para o dia de hoje e exclusivas via internet. Na divergência de preços fica válido o apresentado no carrinho. Ofertas válidas até o término de nossos estoques. Vendas sujeitas à análise, confirmação de dados e estoque. As imagens são ilustrativas e informações sobre os produtos são resumidas e sujeitas à alteração sem aviso prévio.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#made-by": {
+    "title": "Feito por",
+    "children": [
+      "rich-text#made-by-1",
+      "image#made-by-1",
+      "rich-text#made-by-2",
+      "image#made-by-2"
+    ],
+    "props": {
+      "blockClass": ["made-by"],
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#made-by-1": {
+    "title": "Feito por",
+    "props": {
+      "blockClass": ["made-by"],
+      "text": "Feito por"
+    }
+  },
+  "image#made-by-1": {
+    "title": "Feito por",
+    "props": {
+      "blockClass": ["made-by", "made-by-b8"],
+      "maxHeight": 20,
+      "src": "https://balarotiio.vteximg.com.br/arquivos/b8.svg"
+    }
+  },
+
+  "rich-text#made-by-2": {
+    "title": "Tecnologia",
+    "props": {
+      "blockClass": ["made-by"],
+      "font": "t-body",
+      "text": "Tecnologia"
+    }
+  },
+  "image#made-by-2": {
+    "title": "Feito por",
+    "props": {
+      "blockClass": ["made-by"],
+      "maxHeight": 20,
+      "src": "https://balarotiio.vteximg.com.br/arquivos/vtex-logo.svg"
+    }
+  }
+}

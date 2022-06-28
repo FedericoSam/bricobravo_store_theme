@@ -1,0 +1,20 @@
+.link--link-contact-us {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 22px;
+  color: #f58220;
+  position: relative;
+}
+
+.label--link-contact-us {
+  margin: 10px 0;
+}
+
+.label--link-contact-us::after {
+  content: ' 👆';
+  position: absolute;
+  transform: rotate(304deg);
+  top: 5px;
+  font-size: 18px;
+  color: #f58220;
+}

@@ -1,0 +1,17 @@
+.sliderTrack--search-category {
+  gap: 3.5rem;
+  width: 100%;
+
+  @media screen and (max-width: 1024px) {
+    gap: 0;
+  }
+}
+
+.sliderArrows--slider-search-banners {
+  @media screen and (max-width: 1024px) {
+    width: 24px;
+    height: 24px;
+
+    margin: 0 0.5rem;
+  }
+}
