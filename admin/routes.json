@@ -1,7 +1,0 @@
-{
-    "admin.app.example": {
-      "component": "AdminOurStoresRender",
-      "path": "/admin/app/nossas-lojas"
-    }
-  }
-  

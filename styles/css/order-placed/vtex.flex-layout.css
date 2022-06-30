@@ -1,8 +1,0 @@
-.flexRowContent--confirmationButtons :global(.vtex-button) {
-  background: #013b82;
-  border-radius: 8px;
-  justify-content: center;
-  border: none;
-  text-transform: capitalize;
-  color: white;
-}
