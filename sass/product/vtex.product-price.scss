@@ -1,0 +1,91 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
+
+.savings--savingPercentage {
+  font-size: 0;
+  width: 2.35rem;
+  border: 2px solid #E30613;
+  border-radius: 8px;
+  padding: 3px 5px 3px 3px;
+  position: absolute;
+  top: 16rem;
+  left: 233px;
+  .savingsPercentage {
+    color: #E30613;
+    font-size: var(--cta-medium);
+    font-weight: 600;
+    line-height: 1rem;
+  }
+  &::before {
+    content: '-';
+    display: inline-block;
+    font-size: var(--cta-medium);
+    color: #E30613;
+    font-weight: 600;
+    line-height: 1rem;
+    padding-left: 4px;
+    padding-right: 1px;
+  }
+}
+
+.installments--productMain-installments {
+  font-weight: 300;
+  margin-top: 10px;
+  display: block !important;
+  &::before {
+    content: 'em até ';
+    font-weight: 300;
+    margin-right: 3px;
+  }
+}
+
+.sellingPriceValue--pdp {
+  color: var(--secondary-dark-text);
+  font-size: var(--headline-h1);
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.listPrice--pdp {
+  font-size: var(--paragraph-medium-regular);
+  color: var(--darkgrey-light);
+  line-height: 20px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.savings--pdp {
+  font-size: var(--cta-small);
+  color: var(--system-alert-default);
+  font-weight: 700;
+  background: var(--system-alert-light);
+  padding: 4px;
+  border-radius: 4px;
+}
+.sellerNameContainer {
+  font-size: var(--paragraph-small-medium);
+  font-weight: 500;
+  line-height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--darkgrey-medium);
+
+  @include mobile() {
+    line-height: 2rem;
+  }
+
+  :global(.vtex-product-price-1-x-sellerName) {
+    margin-left: 2px;
+  }
+}
+
+.sellerNameContainer--isDefaultSeller {
+  display: inline-block;
+  line-height: 18px;
+  margin: 1rem 0;
+  .sellerName {
+    color: var(--ily-pink);
+  }
+}

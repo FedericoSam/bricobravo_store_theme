@@ -1,0 +1,5 @@
+{
+    "custom-add-to-cart": {
+        "component": "BuyButton"
+    }
+}

@@ -1,0 +1,92 @@
+.minicartWrapperContainer {
+  :global(.vtex-button) {
+    &:hover {
+      background: none;
+    }
+  }
+  .minicartContainer {
+    .openIconContainer {
+      .minicartIconContainer {
+        display: flex;
+        align-items: center;
+        .cartIcon {
+          bottom: 20%;
+          overflow: visible;
+          position: absolute;
+        }
+
+        .minicartQuantityBadge {
+          top: 0;
+          right: 0;
+          width: 25px;
+          display: flex;
+          font-size: 12px;
+          font-weight: 600;
+          margin-left: 12px;
+          line-height: 1rem;
+          padding: 4px 12px;
+          position: relative;
+          background-color: #e30613;
+          &::after {
+            width: 6px;
+            height: 8px;
+            content: '';
+            margin-left: 10px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('assets/icons/arrow.svg');
+          }
+        }
+      }
+
+      &--minicart-background {
+        padding-inline: 0;
+      
+        :global(.vtex-button__label) {
+          padding-inline: 0;
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+}
+
+.drawerContent--minicart-background {
+  background-color: #f2f2f2;
+}
+
+.minicartCheckoutButton {
+  margin-bottom: 20px;
+
+  :global(.vtex-button) {
+    border-radius: 8px;
+    padding: 12px;
+    :global(.vtex-button__label) {
+      font-size: 0;
+      &::before {
+        text-transform: none;
+        font-size: 16px;
+        color: #ffffff;
+        content: 'Ir para o checkout';
+      }
+    }
+    &:hover {
+      background-color: #bd000b;
+      border-color: transparent;
+    }
+  }
+}
+.minicartTitle {
+  font-size: 0;
+  &::after {
+    content: 'Minhas compras';
+    position: absolute;
+    left: 50px;
+    top: 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #111;
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "flex-layout.row#notificationProduct": {
+    "title": "flex layout product notification",
+    "props": {
+      "fullWidth": true,
+      "blockClass": "notification-box-product"
+    },
+    "children": ["slider-layout#product-notification"]
+  },
+  "slider-layout#product-notification": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+
+      "autoplay": { "timeout": 5000 },
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "infinite": false,
+      "slideTransition": {
+        "speed": 400,
+        "delay": 0
+      },
+      "blockClass": "product-notification"
+    },
+    "children": [
+      "rich-text#notification-product-sales",
+      "rich-text#notification-product-to-send",
+      "rich-text#notification-product-card"
+    ]
+  },
+
+  "rich-text#notification-product-sales": {
+    "props": {
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "text": "![product-sales](assets/icons/product-sales.png)Primeira compra? Cadastre-se e receba R$ 100 de desconto! ",
+      "blockClass": "notification-message"
+    }
+  },
+
+  "rich-text#notification-product-to-send": {
+    "props": {
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "text": "![truck](assets/icons/truck.png)Receba em todo o Brasil! Consulte nossas condições de entrega. ",
+      "blockClass": "notification-message"
+    }
+  },
+
+  "rich-text#notification-product-card": {
+    "props": {
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "text": "![product-card](assets/icons/product-sales.png)Parcele suas compras em até 12x sem juros no cartão.",
+      "blockClass": "notification-message"
+    }
+  }
+}

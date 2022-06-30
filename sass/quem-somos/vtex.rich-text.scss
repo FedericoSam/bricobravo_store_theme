@@ -1,0 +1,83 @@
+@import '../_media-queries.scss';
+@import '../_variables.scss';
+
+.container--quemSomos-title {
+  background-color: var(--secondary-default);
+  width: 100%;
+  height: 50vh;
+  :global(.vtex-rich-text-0-x-wrapper--quemSomos-title) {
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--white);
+    @include breakpoint("mobile"){
+      font-size: 2rem;
+    }
+  }
+}
+
+.container--moreInformations {
+  margin-top: 8px;
+  border: 2px solid #fff;
+  transition: .2s ease-in-out;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #111111;
+
+  &:hover {
+    border: 2px solid #111111 !important
+  }
+
+  .paragraph {
+    margin: 12px 0;
+  }
+}
+
+.container--quemSomos-paragraph {
+  .wrapper--quemSomos-paragraph {
+    font-size: 2rem;
+    font-weight: 300;
+    max-width: 60%;
+    @include breakpoint("mobile"){
+      font-size: 1.5rem;
+      max-width: 90%;
+    }
+  }
+}
+
+.paragraph--quemSomos-historyTitle {
+  font-size: 2rem;
+  font-weight: 300;
+  max-width: 80%;
+  @include breakpoint("mobile"){
+    font-size: 1.5rem;
+  }
+}
+
+.paragraph--quemSomos-historyText {
+  font-size: 1rem;
+}
+
+.paragraph--quemSomos-timelineSubtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 5px 0 10px;
+}
+
+.paragraph--quemSomos-p {
+  display: inline-block;
+  margin: 0;
+  padding-right: 1rem;
+}
+
+.paragraph--quemSomos-carroselTitle {
+  white-space: nowrap;
+  margin-bottom: 5rem;
+  @include breakpoint("mobile"){
+    margin-bottom: 2rem;
+  }
+}

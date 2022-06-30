@@ -1,0 +1,210 @@
+@media screen and (min-width: 64rem) {
+    :global(.vtex-account) {
+        width: 1376px;
+        margin: 0 auto;
+    }
+}
+
+:global(.vtex-account) {
+    .menu {
+        .menuLinks {
+            :global(.vtex-account_menu-link.b--action-primary) {
+                color: #e30613;
+                border-left: 4px solid #e30613;
+            }
+
+            :global(.vtex-account_menu-link.b--transparent) {
+                color: #b9141f;
+            }
+        }
+    }
+
+    .boxContainer {
+        border-radius: 8px;
+    }
+
+    :global(.vtex-account__page) {
+        :global(.vtex-pageHeader__title) {
+            font-weight: 500;
+            color: #e30613;
+        }
+
+        .addressEdit {
+
+            .boxContainerBody {
+                :global(.vtex-input-prefix__group),
+                :global(.vtex-address-form-4-x-container) {
+                    border-radius: 8px;
+                }
+                
+                :global(.vtex-button.bg-action-primary) {
+                    background: #e30613 !important;
+                    border: 2px solid #e30613;
+                    color: #FFF;
+
+                    &:hover {
+                        background: #b9141f !important;
+                        border: 2px solid #b9141f;
+                    }
+                }
+            }
+        }
+
+        :global(.vtex-account__page-body) {
+            .profileBoxContainer {
+                .boxContainerBody {
+                    padding-bottom: 0;
+                }
+            }
+
+            .boxContainerFooter {
+                justify-content: center;
+                padding-bottom: 24px;
+            }
+
+            :global(.vtex-button) {
+                width: 280px;
+                height: 40px;
+                border: 2px solid #fff;
+                transition: .2s ease-in-out;
+                background: transparent;
+                color: #111;
+
+                &:hover {
+                    border: 2px solid #111;
+                    background: #fff;
+                }
+            }
+
+            .newsletterBoxContainer {
+                :global(.vtex-checkbox__inner-container.b--action-primary) {
+                    background: #e30613;
+                    border: 2px solid #e30613;
+                }
+            }
+
+            :global(.vtex_my-authentication_box_container) {
+                border-radius: 8px;
+            }
+        }
+
+        :global(.vtex-account__create-card) { 
+            :global(.vtex-input-prefix__group) {
+                border-radius: 8px;
+            }
+        }
+
+        :global(.vtex-pageHeader-link__container) {
+            :global(.vtex-button) {
+                transition: .1s ease-in-out;
+
+                &:hover {
+                    background: transparent;
+                    color: #b9141f;
+                }
+            }
+        }
+
+        :global(.vtex-pageHeader__children) {
+            :global(.vtex-button) {
+                width: 280px;
+                height: 40px;
+                border-radius: 8px;
+                color: #111;
+                background: transparent;
+                border: 2px solid #fff;
+                transition: .1s ease-in-out; 
+
+                &:hover {
+                    border: 2px solid #111;
+                }
+            }
+        }
+
+        :global(.vtex-account__orders-list) {
+            :global(.vtex-my-orders-app-3-x-orderCard),
+            :global(.vtex-my-orders-app-3-x-collapsedOrder) {
+                border-radius: 8px;
+                
+                :global(.vtex-my-orders-app-3-x-detailsBtn) {
+                    background: transparent;
+                    border: 2px solid #fff;
+                    transition: .1s ease-in-out;
+                    width: 180px;
+
+                    &:hover {
+                        border: 2px solid #111;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 48rem) {
+    .addressCreate {
+        .boxContainerBody {
+            :global(.vtex-button) {
+                width: 100% !important;
+            }
+        }
+    }
+
+    .addressBox {           
+        :global(.flex-none) {
+            width: 100%;
+        }
+    }
+
+    .addressEdit {
+        .boxContainerBody {
+            :global(.vtex-button) {
+                width: 100% !important;
+            }
+        }
+    }
+
+    :global(.vtex-account__page) {
+        :global(.vtex-account__page-body) {
+            :global(.vtex-my-authentication-1-x-loginSessions_box) {
+                width: 100%;
+
+                :global(.vtex_my-authentication_box_container) {
+                    width: 100%;
+                }    
+            }
+        }
+        :global(.vtex-pageHeader__container) {
+            :global(.c-on-base) {
+                justify-content: center;
+        
+                :global(.vtex-pageHeader__title) {
+                    font-size: 30px;
+                }
+                :global(.vtex-pageHeader__children) {
+                    margin-top: 28px;
+
+                    :global(.vtex-button) {
+                        border: 2px solid #CCC;
+                    }
+                }
+            }
+
+            :global(.vtex-pageHeader-link__container) {
+                :global(.vtex__icon-arrow-back) {
+                    width: 14px;
+                }
+    
+                :global(.t-action--small) {
+                    font-size: 14px;
+                }
+            }
+        }
+        
+        :global(.vtex_my-authentication_box_container) {
+            :global(.vtex-my-authentication-1-x-box_footer) {
+                text-align: center;
+            }
+        }
+    }
+}

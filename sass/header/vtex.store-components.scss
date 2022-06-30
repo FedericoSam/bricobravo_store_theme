@@ -1,0 +1,49 @@
+.autoCompleteOuterContainer--desktop-searchbar {
+  :global(.vtex-input-prefix__group) {
+    border: none;
+    flex-direction: row-reverse;
+
+    @media screen and (max-width: 768px) {
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      padding: 8px 30px 8px 0px;
+    }
+
+    :global(.vtex-styleguide-9-x-input) {
+      font-size: 1rem;
+      color: #555;
+      font-weight: 400;
+      line-height: 24px;
+      border-radius: 1px;
+      @media screen and (max-width: 768px) {
+        padding: 0;
+      }
+      &::placeholder {
+        color: #555;
+      }
+    }
+    .searchBarIcon--desktop-searchbar--search {
+      position: relative;
+      .searchIcon--desktop-searchbar {
+        top: 20%;
+        overflow: visible;
+        position: absolute;
+      }
+    }
+  }
+}
+
+.imageElementLink--menu-category-item {
+  .imageElement--menu-category-item {
+    border: 2px solid #fff;
+    &:hover {
+      border-radius: 16px;
+      border: 2px solid #e30613;
+    }
+  }
+}
+
+.imageElement--search-icon-mobile {
+  width: 24px;
+  padding-top: 2px;
+}

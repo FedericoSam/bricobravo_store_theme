@@ -1,0 +1,410 @@
+{
+  "store.custom#quem-somos": {
+    "blocks": ["flex-layout.row#aboutUs"]
+  },
+  "flex-layout.row#aboutUs": {
+    "props": {
+      "width": "100%"
+    },
+    "children": ["flex-layout.row#main-container"]
+  },
+  "flex-layout.row#main-container": {
+    "props": {
+      "blockClass": "quemSomos-main",
+      "width": "100%"
+    },
+    "children": [
+      // "flex-layout.col#spacer",
+      "flex-layout.col#container-about-us"
+    ]
+  },
+  "flex-layout.col#container-about-us": {
+    "children": [
+      "flex-layout.row#about-title",
+      "flex-layout.row#about-banner-and-text",
+      "flex-layout.row#history-timeline",
+      "flex-layout.row#history-referency",
+      "flex-layout.row#history-identity",
+      "flex-layout.row#history-carrosel"
+    ],
+    "props": {
+      "blockClass": "quemSomos-main",
+      "preventVerticalStretch": true,
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#about-title": {
+    "children": ["rich-text#about-title"],
+    "props": {
+      "blockClass": "quemSomos-historyTitleContainer"
+    }
+  },
+  "rich-text#about-title": {
+    "props": {
+      "text": "Aiwa\n Do Japão, para o mundo!",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": "quemSomos-title"
+    }
+  },
+  "flex-layout.row#about-banner-and-text": {
+    "children": ["flex-layout.col#about-banner-and-text"]
+  },
+  "flex-layout.col#about-banner-and-text": {
+    "children": ["rich-text#about-subtitle", "image#about-us"],
+    "props": {
+      "width": "100%",
+      "blockClass": "quemSomos-containerImage"
+    }
+  },
+  "rich-text#about-subtitle": {
+    "props": {
+      "text": "Desde 1951 criamos produtos para consumidores em escala global.",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": "quemSomos-paragraph"
+    }
+  },
+  "image#about-us": {
+    "props": {
+      "src": "https://lojaaiwaqa.vteximg.com.br/arquivos/imgInstitucional1.png",
+      "maxHeight": "800px",
+      "width": "100%"
+    }
+  },
+  // LINHA CRONOLÓGICA
+  "flex-layout.row#history-timeline": {
+    "children": ["flex-layout.col#history-timeline"],
+    "props": {
+      "blockClass": "quemSomos-timelineSection"
+    }
+  },
+  "flex-layout.col#history-timeline": {
+    "props": {
+      "blockClass": "quemSomos-timelineContainer"
+    },
+    "children": ["rich-text#timeline-title", "flex-layout.row#timeline-imgs"]
+  },
+  "rich-text#timeline-title": {
+    "props": {
+      "text": "Um pouco da nossa história",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["quemSomos-historyTitle", "quemSomos-history"]
+    }
+  },
+  "flex-layout.row#timeline-imgs": {
+    "children": [
+      "flex-layout.col#timelinePoint1",
+      "flex-layout.col#timelinePoint2",
+      "flex-layout.col#timelinePoint3",
+      "flex-layout.col#timelinePoint4",
+      "flex-layout.col#timelinePoint5"
+    ],
+    "props": {
+      "blockClass": "quemSomos-containerTimeline"
+    }
+  },
+  "flex-layout.col#timelinePoint1": {
+    "children": [
+      "image#timelinePoint1",
+      "rich-text#timeline-subtitle1",
+      "rich-text#timeline-description1"
+    ],
+    "props": {
+      "blockClass": "quemSomos-timelinePointContainer"
+    }
+  },
+  "image#timelinePoint1": {
+    "props": {
+      "src": "https://lojaaiwaqa.vteximg.com.br/arquivos/timelinePoint.png",
+      "blockClass": "quemSomos-timelinePoint",
+      "width": "25px"
+    }
+  },
+  "rich-text#timeline-subtitle1": {
+    "props": {
+      "text": "1951",
+      "blockClass": "quemSomos-timelineSubtitle"
+    }
+  },
+  "rich-text#timeline-description1": {
+    "props": {
+      "text": "Fomos fundados em 1951, no Japão.",
+      "blockClass": "quemSomos-p"
+    }
+  },
+  "flex-layout.col#timelinePoint2": {
+    "children": [
+      "image#timelinePoint2",
+      "rich-text#timeline-subtitle2",
+      "rich-text#timeline-description2"
+    ],
+    "props": {
+      "blockClass": "quemSomos-timelinePointContainer"
+    }
+  },
+  "image#timelinePoint2": {
+    "props": {
+      "src": "https://lojaaiwaqa.vteximg.com.br/arquivos/timelinePoint.png",
+      "blockClass": "quemSomos-timelinePoint",
+      "width": "25px"
+    }
+  },
+  "rich-text#timeline-subtitle2": {
+    "props": {
+      "text": "1982",
+      "blockClass": "quemSomos-timelineSubtitle"
+    }
+  },
+  "rich-text#timeline-description2": {
+    "props": {
+      "text": "Fomos comprados pela gigante Sony.",
+      "blockClass": "quemSomos-p"
+    }
+  },
+  "flex-layout.col#timelinePoint3": {
+    "children": [
+      "image#timelinePoint3",
+      "rich-text#timeline-subtitle3",
+      "rich-text#timeline-description3"
+    ],
+    "props": {
+      "blockClass": "quemSomos-timelinePointContainer"
+    }
+  },
+  "image#timelinePoint3": {
+    "props": {
+      "src": "https://lojaaiwaqa.vteximg.com.br/arquivos/timelinePoint.png",
+      "blockClass": "quemSomos-timelinePoint",
+      "width": "25px"
+    }
+  },
+  "rich-text#timeline-subtitle3": {
+    "props": {
+      "text": "2006",
+      "blockClass": "quemSomos-timelineSubtitle"
+    }
+  },
+  "rich-text#timeline-description3": {
+    "props": {
+      "text": "Fizemos uma pequena pausa nas atividades.",
+      "blockClass": "quemSomos-p"
+    }
+  },
+  "flex-layout.col#timelinePoint4": {
+    "children": [
+      "image#timelinePoint4",
+      "rich-text#timeline-subtitle4",
+      "rich-text#timeline-description4"
+    ],
+    "props": {
+      "blockClass": "quemSomos-timelinePointContainer"
+    }
+  },
+  "image#timelinePoint4": {
+    "props": {
+      "src": "https://lojaaiwaqa.vteximg.com.br/arquivos/timelinePoint.png",
+      "blockClass": "quemSomos-timelinePoint",
+      "width": "25px"
+    }
+  },
+  "rich-text#timeline-subtitle4": {
+    "props": {
+      "text": "2017",
+      "blockClass": "quemSomos-timelineSubtitle"
+    }
+  },
+  "rich-text#timeline-description4": {
+    "props": {
+      "text": "Voltamos com tudo ao mercado mundial.",
+      "blockClass": "quemSomos-p"
+    }
+  },
+  "flex-layout.col#timelinePoint5": {
+    "children": [
+      "image#timelinePoint5",
+      "rich-text#timeline-subtitle5",
+      "rich-text#timeline-description5"
+    ],
+    "props": {
+      "blockClass": "quemSomos-timelinePointContainer"
+    }
+  },
+  "image#timelinePoint5": {
+    "props": {
+      "src": "https://lojaaiwaqa.vteximg.com.br/arquivos/timelinePoint.png",
+      "blockClass": "quemSomos-timelinePoint",
+      "width": "25px"
+    }
+  },
+  "rich-text#timeline-subtitle5": {
+    "props": {
+      "text": "2020",
+      "blockClass": "quemSomos-timelineSubtitle"
+    }
+  },
+  "rich-text#timeline-description5": {
+    "props": {
+      "text": "Iniciamos a formação da rede global de negócios.",
+      "blockClass": "quemSomos-p"
+    }
+  },
+  // IMAGEM E TEXTO FALANDO DA REFERENCIA DO MERCADO
+  "flex-layout.row#history-referency": {
+    "props": {
+      "blockClass": "quemSomos-referencySection"
+    },
+    "children": ["flex-layout.col#history-referency"]
+  },
+  "flex-layout.col#history-referency": {
+    "props": {
+      "blockClass": "quemSomos-referencyContainer"
+    },
+    "children": [
+      "flex-layout.col#history-referency-text",
+      "image#history-referency"
+    ]
+  },
+  "flex-layout.col#history-referency-text": {
+    "children": [
+      "rich-text#history-referency-title",
+      "rich-text#history-referency-text"
+    ],
+    "props": {
+      "blockClass": "quemSomos-referency-text"
+    }
+  },
+  "rich-text#history-referency-title": {
+    "props": {
+      "text": "Somos referência em produtos para áudio.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": "quemSomos-historyTitle"
+    }
+  },
+  "rich-text#history-referency-text": {
+    "props": {
+      "text": "Na AIWA, Música e Áudio sempre serão nosso foco e nicho. De wearables a alto-falantes portáteis. De toca-discos a alto-falantes de festa de grande desempenho. Nossa gama de áudio completa incorpora a verdadeira essência da engenharia de som e design especializado. Garantimos a entrega da verdadeira experiência de áudio AIWA em todo o mundo, em qualquer faixa de preço.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": "quemSomos-historyText"
+    }
+  },
+  "image#history-referency": {
+    "props": {
+      "src": "https://lojaaiwaqa.vteximg.com.br/arquivos/imginstitucional2.png",
+      "maxHeight": "500px"
+    }
+  },
+  // DESCRIÇÃO DA IDENTIDADE DA EMPRESA
+  "flex-layout.row#history-identity": {
+    "props": {
+      "blockClass": "quemSomos-identitySection"
+    },
+    "children": ["flex-layout.col#history-identify"]
+  },
+  "flex-layout.col#history-identify": {
+    "props": {
+      "blockClass": "quemSomos-identityContainer"
+    },
+    "children": [
+      "image#history-identity",
+      "flex-layout.col#history-identity-text"
+    ]
+  },
+  "image#history-identity": {
+    "props": {
+      "src": "https://lojaaiwaqa.vteximg.com.br/arquivos/imginstitucional3.png",
+      "maxHeight": "500px"
+    }
+  },
+  "flex-layout.col#history-identity-text": {
+    "children": [
+      "rich-text#history-identity-title",
+      "rich-text#history-identity-text"
+    ],
+    "props": {
+      "blockClass": "quemSomos-referency-text"
+    }
+  },
+  "rich-text#history-identity-title": {
+    "props": {
+      "text": "Linha de TVs para renovar a nossa identidade.",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": "quemSomos-historyTitle"
+    }
+  },
+  "rich-text#history-identity-text": {
+    "props": {
+      "text": "Orgulhamo-nos de ser intransigentes, mesmo quando prometemos o valor final para os consumidores. Isso se reflete fortemente em nossa faixa de exibição, onde todas as smart TVs que produzimos são:",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": "quemSomos-historyText"
+    }
+  },
+  // CARROSEL COM OS ITENS CLASSICOS DA EMPRESA
+  "flex-layout.row#history-carrosel": {
+    "props": {
+      "blockClass": "quemSomos-carroselSection"
+    },
+    "children": ["flex-layout.col#history-carrosel"]
+  },
+  "flex-layout.col#history-carrosel": {
+    "props": {
+      "blockClass": "quemSomos-carroselContainer"
+    },
+    "children": ["rich-text#carrosel-title", "slider-layout#classic-products"]
+  },
+  "rich-text#carrosel-title": {
+    "props": {
+      "text": "Clássicos que fizeram história",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": ["quemSomos-historyTitle", "quemSomos-carroselTitle"]
+    }
+  },
+  "slider-layout#classic-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "phone": 1
+      },
+      "centerMode": "Center",
+      "fullWidth": true,
+      "infinite": false,
+      "usePagination": false,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "preventHorizontalStretch": true,
+      "blockClass": "quemSomos-carrosel"
+    },
+    "children": [
+      "image#classic-product1",
+      "image#classic-product2",
+      "image#classic-product3"
+    ]
+  },
+  "image#classic-product1": {
+    "props": {
+      "src": "https://lojaaiwaqa.vteximg.com.br/arquivos/imgInstitucional4.png",
+      "width": "100%",
+      "blockClass": "quemSomos-carrosel--classic-products-image"
+    }
+  },
+  "image#classic-product2": {
+    "props": {
+      "src": "https://lojaaiwaqa.vteximg.com.br/arquivos/imgInstitucional5.png",
+      "width": "100%",
+      "blockClass": "quemSomos-carrosel--classic-products-image"
+    }
+  },
+  "image#classic-product3": {
+    "props": {
+      "src": "assets/images/about-us-classic-product-image3.png",
+      "width": "100%",
+      "blockClass": "quemSomos-carrosel--classic-products-image"
+    }
+  }
+}

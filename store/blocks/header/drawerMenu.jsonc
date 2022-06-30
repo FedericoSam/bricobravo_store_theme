@@ -1,0 +1,235 @@
+{
+  "menu#drawer-desktop": {
+    "title": "Menu Drawer desktop",
+    "children": ["flex-layout.row#header-menu"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "header-drawer-menu",
+      "maxWidth": 364
+    }
+  },
+
+  "flex-layout.row#header-menu": {
+    "title": "Linha: Menu Container",
+    "children": ["flex-layout.col#header-menu"],
+    "props": {
+      "blockClass": "header-drawer-menu",
+      "isFullWidth": true
+    }
+  },
+
+  "flex-layout.col#header-menu": {
+    "title": "COL: Menu Container",
+    "children": [
+      "flex-layout.row#login-container",
+      "challenge-block#header-menu",
+      "rich-text#drawer-menu-departments-heading",
+      "flex-layout.row#drawer-menu-departments"
+    ],
+    "props": {
+      "blockClass": "header-drawer-menu-col"
+    }
+  },
+  "flex-layout.row#login-container": {
+    "title": "Linha: Container de login",
+    "children": ["login#drawer"],
+    "props": {
+      "blockClass": "login-container"
+    }
+  },
+  "login#drawer": {
+    "title": "Login",
+    "props": {
+      "blockClass": "loginDrawer",
+      "iconLabel": "Olá! 👋",
+      "showIconProfile": false,
+      "mirrorTooltipToRight": true
+    }
+  },
+
+  "challenge-block#header-menu": {
+    "title": "Auth: Conteúdo autenticado",
+    "blocks": [
+      "challenge-content#description",
+      "challenge-fallback#description"
+    ],
+    "props": {
+      "blockClass": "challenge-access-block"
+    }
+  },
+
+  "challenge-content#description": {
+    "title": "Auth: Conteúdo autenticado",
+    "children": ["menu#authenticated"]
+  },
+
+  "challenge-fallback#description": {
+    "title": "Auth: Conteúdo sem autenticação",
+    "children": ["menu#unauthenticated"]
+  },
+
+  "menu#unauthenticated": {
+    "title": "Menu: Não autenticado",
+    "children": ["menu-item#login", "menu-item#my-orders"],
+    "props": {
+      "blockClass": "header-menu",
+      "orientation": "vertical"
+    }
+  },
+
+  "menu-item#login": {
+    "title": "Menu-Login: Acesso de conta",
+    "props": {
+      "blockClass": "drawer-menu-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/login",
+        "noFollow": false,
+        "tagTitle": "Entrar",
+        "text": "Entrar"
+      }
+    }
+  },
+
+  "menu-item#my-orders": {
+    "title": "Menu-Login: Criar conta",
+    "props": {
+      "blockClass": "drawer-menu-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/login",
+        "noFollow": false,
+        "tagTitle": "Meus pedidos",
+        "text": "Meus pedidos"
+      }
+    }
+  },
+
+  "menu#authenticated": {
+    "title": "Menu: Autenticado",
+    "props": {
+      "blockClass": "header-menu",
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#account", "menu-item#orders", "menu-item#logout"]
+  },
+
+  "menu-item#orders": {
+    "title": "Menu: Autenticado - Pedidos",
+    "props": {
+      "blockClass": "drawer-menu-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/account#/orders",
+        "noFollow": false,
+        "tagTitle": "Meus Pedidos",
+        "text": "Meus Pedidos"
+      }
+    }
+  },
+
+  "menu-item#account": {
+    "title": "Menu: Autenticado - Conta",
+    "props": {
+      "blockClass": "drawer-menu-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/account",
+        "noFollow": false,
+        "tagTitle": "Minha Conta",
+        "text": "Minha Conta"
+      }
+    }
+  },
+
+  "menu-item#logout": {
+    "title": "Menu: Autenticado - Conta",
+    "props": {
+      "blockClass": "drawer-menu-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/logout",
+        "noFollow": false,
+        "tagTitle": "Sair",
+        "text": "Sair"
+      }
+    }
+  },
+
+  "rich-text#drawer-menu-departments-heading": {
+    "props": {
+      "text": "Explore toda a loja",
+      "blockClass": "drawer-menu-departments-heading"
+    }
+  },
+
+  "flex-layout.row#drawer-menu-departments": {
+    "children": ["flex-layout.col#drawer-menu-departments"],
+    "props": {
+      "blockClass": "drawer-menu-departments"
+    }
+  },
+
+  "flex-layout.col#drawer-menu-departments": {
+    "children": [
+      "image#drawer-menu-departments-item-1",
+      "image#drawer-menu-departments-item-2",
+      "image#drawer-menu-departments-item-3",
+      "image#drawer-menu-departments-item-4"
+    ],
+    "props": {
+      "blockClass": "drawer-menu-departments",
+      "preventVerticalStretch": false
+    }
+  },
+
+  "image#drawer-menu-departments-item-1": {
+    "props": {
+      "src": "assets/images/tab.jpg",
+      "link": {
+        "newTab": false,
+        "url": "/"
+      }
+    }
+  },
+
+  "image#drawer-menu-departments-item-2": {
+    "props": {
+      "src": "assets/images/tab-1.jpg",
+      "link": {
+        "newTab": false,
+        "url": "/"
+      }
+    }
+  },
+
+  "image#drawer-menu-departments-item-3": {
+    "props": {
+      "src": "assets/images/tab-2.jpg",
+      "link": {
+        "newTab": false,
+        "url": "/"
+      }
+    }
+  },
+
+  "image#drawer-menu-departments-item-4": {
+    "props": {
+      "src": "assets/images/tab-3.jpg",
+      "link": {
+        "newTab": false,
+        "url": "/"
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
+.flexRow--searchHeadInfo {
+  background-color: #fafafa;
+  :global(.vtex-store-components-3-x-container) {
+    @include container-main;
+  }
+  .stretchChildrenWidth {
+    width: 100%;
+  }
+}
+
+.flexRow--searchLayout {
+  background-color: var(--lightgrey-lighter);
+  padding: 16px 0;
+  .flexRowContent {
+    @include container-main;
+  }
+  .stretchChildrenWidth {
+    justify-content: initial;
+    margin: 0;
+    padding: 0;
+  }
+}
+.flexColChild--pageContent {
+  .flexCol {
+    padding: 0;
+  }
+}
+
+.flexRowContent--container-seo {
+  @include container-main;
+
+  padding-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+.flexRow--full-banner-search {
+  max-width: 1376px;
+  margin: 0 auto 1.5rem;
+  padding: 0;
+
+  @media (min-width: 400px) and (max-width: 1025px) {
+    margin: 0 0 1.5rem;
+  }
+
+  @include mobile {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .flexRowContent--full-banner-search {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+}
+
+.flexCol--snf-btnback {
+  display: none;
+  @include mobile {
+    display: block;
+  }
+}
+
+// .flexColChild--filterCol {
+// }
+
+.flexRowContent--searchHeadInfo .stretchChildrenWidth:last-child {
+  margin-left: auto;
+}
+
+.flexColChild--productCountCol {
+  display: flex;
+  align-items: center;
+}
+
+.flexRowContent--searchControlsMobile {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    justify-content: space-between;
+  }
+}

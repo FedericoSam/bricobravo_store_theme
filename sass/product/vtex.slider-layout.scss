@@ -1,0 +1,136 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
+// Home main banner start
+
+.sliderLayoutContainer--main-banner {
+  @include breakpoint('mobile') {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 328px;
+  }
+  .sliderTrackContainer--main-banner {
+    border-radius: 16px;
+  }
+  .sliderArrows--main-banner {
+    padding: 0;
+    margin: 0 26px;
+    color: var(--white);
+  }
+  .paginationDotsContainer--main-banner {
+    bottom: 56px;
+  }
+}
+// Home main banner end
+
+// slider category start
+// .sliderLayoutContainer {
+//   border-radius: 16px;
+//   overflow: hidden;
+// }
+
+// Home brands banner start
+
+.sliderLayoutContainer--brands-banners {
+  overflow: visible;
+  .sliderArrows--brands-banners {
+    margin: 0;
+    padding: 0;
+    color: var(--ily-pink);
+
+    &.sliderRightArrow--brands-banners {
+      right: -35px;
+    }
+    &.sliderLeftArrow--brands-banners {
+      left: -35px;
+    }
+  }
+  .paginationDotsContainer--brands-banners {
+    bottom: -25px;
+  }
+}
+
+// Home brands banner end
+
+// ShelfStyle Start
+.sliderLayoutContainer--shelfStyle {
+  margin-bottom: 2rem;
+  padding-bottom: 3rem;
+  overflow: inherit;
+}
+.paginationDot--shelfStyle--isActive {
+  background-color: var(--secondary-default);
+}
+.sliderRightArrow--shelfStyle {
+  right: -3rem;
+}
+.sliderLeftArrow--shelfStyle {
+  left: -3rem;
+}
+.caretIcon--shelfStyle {
+  color: var(--ily-pink);
+}
+// ShelfStyle End
+
+.paginationDotsContainer {
+  bottom: 25px;
+
+  &--home-main-slider-images {
+    display: flex;
+    gap: 12px;
+
+    @media screen and (max-width: 64rem) {
+      transform: translateY(70px);
+    }
+  }
+}
+.paginationDot {
+  background-color: var(--lightgrey-light);
+  border-radius: 500px;
+  height: 4px !important;
+  padding: 0;
+  width: 128px !important;
+}
+.paginationDot--dotsCustom--isActive {
+  background-color: var(--secondary-default);
+}
+.paginationDot--isActive {
+  background-color: var(--secondary-default);
+}
+// slider category End
+
+//PDP Slider Start
+.sliderLayoutContainer--shelfAlsoView {
+  overflow: inherit;
+  padding-bottom: 2rem;
+}
+.paginationDotsContainer--shelfAlsoView {
+  bottom: 0;
+  display: flex;
+  gap: 12px;
+
+  .paginationDot--shelfAlsoView {
+    @include desktop() {
+      width: 128px !important;
+      //margin-inline: 6px;
+    }
+    
+  }
+}
+.sliderLeftArrow--shelfAlsoView {
+  left: -3rem;
+}
+.sliderRightArrow--shelfAlsoView {
+  right: 2px;
+  width: 10px;
+}
+.caretIcon--shelfAlsoView {
+  color: var(--secondary-default);
+  overflow: visible !important;
+  width: 90px !important;
+}
+
+.slide--carrosel-galery {
+  margin-bottom: 2.5rem;
+}
+//PDP Slider End

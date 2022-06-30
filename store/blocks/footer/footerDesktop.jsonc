@@ -1,0 +1,571 @@
+{
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#middleFooterDesktop",
+      "flex-layout.row#newsletter",
+      "flex-layout.row#footerPaymentMethods",
+      "flex-layout.row#bottomFooterDesktop"
+    ]
+  },
+  "flex-layout.row#upperFooterDesktop": {
+    "children": [
+      "flex-layout.col#upperFooterCol1",
+      "flex-layout.col#upperFooterCol2",
+      "flex-layout.col#upperFooterCol3"
+    ],
+    "props": {
+      "blockClass": "upperFooterDesktop"
+    }
+  },
+
+  "flex-layout.col#upperFooterCol1": {
+    "children": ["rich-text#upperFooterTitle"],
+    "props": {
+      "blockClass": "upperFooterCol1",
+      "width": "25%"
+    }
+  },
+
+  "rich-text#upperFooterTitle": {
+    "props": {
+      "text": "## O grande ícone está de volta.",
+      "blockClass": "upperFooterTitle"
+    }
+  },
+
+  "flex-layout.col#upperFooterCol2": {
+    "children": ["rich-text#upperFooterSubtitle"],
+    "props": {
+      "width": "55%",
+      "blockClass": "upperFooterCol2"
+    }
+  },
+
+  "rich-text#upperFooterSubtitle": {
+    "props": {
+      "text": "Here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.",
+      "blockClass": "upperFooterSubtitle"
+    }
+  },
+
+  "flex-layout.col#upperFooterCol3": {
+    "children": ["link#upperFooterCTA"],
+    "props": {
+      "blockClass": "upperFooterCol3"
+    }
+  },
+
+  "link#upperFooterCTA": {
+    "props": {
+      "label": "Conheça AIWA",
+      "href": "#",
+      "blockClass": "upperFooterCTA"
+    }
+  },
+
+  "flex-layout.row#middleFooterDesktop": {
+    "children": ["flex-layout.row#middleFooterContent"],
+    "props": {
+      "blockClass": "middleFooterDesktop"
+    }
+  },
+
+  "flex-layout.row#middleFooterContent": {
+    "children": [
+      "flex-layout.col#middleFooterCol1",
+      "flex-layout.col#middleFooterCol2",
+      "flex-layout.col#middleFooterCol3",
+      "flex-layout.col#middleFooterCol4"
+    ]
+  },
+
+  "flex-layout.col#middleFooterCol1": {
+    "children": [
+      "rich-text#middleFooterCol1Title",
+      "vtex.menu@2.x:menu#footerInstitutional"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "middleFooterCol"
+    }
+  },
+
+  "rich-text#middleFooterCol1Title": {
+    "props": {
+      "text": "Institucional",
+      "blockClass": "footerMenuTitle"
+    }
+  },
+
+  "vtex.menu@2.x:menu#footerInstitutional": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footerMenu",
+      "items": [
+        {
+          "id": "footer-item-1",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Minha Conta",
+            "text": "Minha Conta"
+          }
+        },
+        {
+          "id": "footer-item-2",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Meus Pedidos",
+            "text": "Meus Pedidos"
+          }
+        },
+        {
+          "id": "footer-item-3",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Sobre a Aiwa",
+            "text": "Sobre a Aiwa"
+          }
+        },
+        {
+          "id": "footer-item-4",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Trabalhe Conosco",
+            "text": "Trabalhe Conosco"
+          }
+        },
+        {
+          "id": "footer-item-5",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Fale Conosco",
+            "text": "Fale Conosco"
+          }
+        }
+      ]
+    }
+  },
+
+  "flex-layout.col#middleFooterCol2": {
+    "children": [
+      "rich-text#middleFooterCol2Title",
+      "vtex.menu@2.x:menu#footerProducts"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "middleFooterCol"
+    }
+  },
+
+  "rich-text#middleFooterCol2Title": {
+    "props": {
+      "text": "Produtos",
+      "blockClass": "footerMenuTitle"
+    }
+  },
+
+  "vtex.menu@2.x:menu#footerProducts": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footerMenu",
+      "items": [
+        {
+          "id": "footer-item-1",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Smart TV’s",
+            "text": "Smart TV’s"
+          }
+        },
+        {
+          "id": "footer-item-2",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Speakers",
+            "text": "Speakers"
+          }
+        },
+        {
+          "id": "footer-item-3",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Headphones",
+            "text": "Headphones"
+          }
+        },
+        {
+          "id": "footer-item-4",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Caixas de Som",
+            "text": "Caixas de Som"
+          }
+        },
+        {
+          "id": "footer-item-5",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Tower Sound",
+            "text": "Tower Sound"
+          }
+        },
+        {
+          "id": "footer-item-6",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Som Automotivo",
+            "text": "Som Automotivo"
+          }
+        }
+      ]
+    }
+  },
+
+  "flex-layout.col#middleFooterCol3": {
+    "children": [
+      "rich-text#middleFooterCol3Title",
+      "vtex.menu@2.x:menu#footerHelp"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "middleFooterCol"
+    }
+  },
+
+  "rich-text#middleFooterCol3Title": {
+    "props": {
+      "text": "Ajuda",
+      "blockClass": "footerMenuTitle"
+    }
+  },
+
+  "vtex.menu@2.x:menu#footerHelp": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footerMenu",
+      "items": [
+        {
+          "id": "footer-item-1",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Suporte e Segurança",
+            "text": "Suporte e Segurança"
+          }
+        },
+        {
+          "id": "footer-item-2",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Termos e Devoluções",
+            "text": "Termos e Devoluções"
+          }
+        },
+        {
+          "id": "footer-item-3",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Perguntas Frequentes",
+            "text": "Perguntas Frequentes"
+          }
+        }
+      ]
+    }
+  },
+
+  "flex-layout.col#middleFooterCol4": {
+    "children": [
+      "rich-text#middleFooterCol4Title",
+      "link#attendanceCTA",
+      "link#supportCTA",
+      "rich-text#middleFooterCol4Subtitle"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "middleFooterCol"
+    }
+  },
+
+  "rich-text#middleFooterCol4Title": {
+    "props": {
+      "text": "Atendimento",
+      "blockClass": ["footerMenuTitle", "middleFooterCol4Title"]
+    }
+  },
+
+  "link#attendanceCTA": {
+    "props": {
+      "label": "Falar com atendimento",
+      "href": "#",
+      "blockClass": "attendanceCTA"
+    }
+  },
+
+  "link#supportCTA": {
+    "props": {
+      "label": "Preciso de suporte",
+      "href": "#",
+      "blockClass": "supportCTA"
+    }
+  },
+
+  "rich-text#middleFooterCol4Subtitle": {
+    "props": {
+      "text": "Temos um especialista sempre pronto para te ajudar 😉",
+      "blockClass": "middleFooterSubtitle"
+    }
+  },
+
+  "flex-layout.row#footerPaymentMethods": {
+    "children": [
+      "flex-layout.col#footerPaymentMethods",
+      "flex-layout.col#footerSocialMedia"
+    ],
+    "props": {
+      "blockClass": "footerPaymentMethods"
+    }
+  },
+
+  "flex-layout.col#footerPaymentMethods": {
+    "children": ["rich-text#footerPaymentMethods", "image#paymentMethods"],
+    "props": {
+      "blockClass": "footerPaymentMethods",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#footerPaymentMethods": {
+    "props": {
+      "text": "Pague com ",
+      "blockClass": "paymentMethodText"
+    }
+  },
+
+  "image#paymentMethods": {
+    "props": {
+      "src": "assets/images/payment-methods.png"
+    }
+  },
+
+  "flex-layout.col#footerSocialMedia": {
+    "children": ["rich-text#footerSocialMedia", "social-networks"],
+    "props": {
+      "blockClass": "footerSocialMedia",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#footerSocialMedia": {
+    "props": {
+      "text": "Siga-nos",
+      "blockClass": "paymentMethodText"
+    }
+  },
+
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        {
+          "url": "https://twitter.com/foo",
+          "name": "Instagram"
+        },
+        {
+          "url": "https://facebook.com/foo",
+          "name": "Facebook"
+        },
+        {
+          "url": "https://twitter.com/foo",
+          "name": "Youtube"
+        }
+      ]
+    }
+  },
+
+  "flex-layout.row#bottomFooterDesktop": {
+    "children": [
+      "flex-layout.col#bottomFooter1",
+      "flex-layout.col#bottomFooter2",
+      "flex-layout.col#bottomFooter3"
+    ],
+    "props": {
+      "blockClass": "bottomFooterDesktop",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#bottomFooter1": {
+    "children": ["image#footerLogo"],
+    "props": {
+      "width": "9%",
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle",
+      "blockClass": "bottomFooter1"
+    }
+  },
+
+  "image#footerLogo": {
+    "props": {
+      "src": "assets/images/logo.svg"
+    }
+  },
+
+  "flex-layout.col#bottomFooter2": {
+    "children": ["rich-text#aiwaInfo1", "rich-text#aiwaInfo2"],
+    "props": {
+      "width": "65%",
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle",
+      "blockClass": "bottomFooter2"
+    }
+  },
+
+  "rich-text#aiwaInfo1": {
+    "props": {
+      "text": "2022 @ All Right Reserved to Aiwa Brasil",
+      "blockClass": "aiwaInfoOne"
+    }
+  },
+
+  "rich-text#aiwaInfo2": {
+    "props": {
+      "text": "CNPJ: 07.666.567/0001-40 - Endereço: Estrada da Volta - 1200 - Conceição Do Jacuípe - BA",
+      "blockClass": "aiwaInfoTwo"
+    }
+  },
+
+  "flex-layout.col#bottomFooter3": {
+    "children": ["flex-layout.row#bottomFooter3"],
+    "props": {
+      "width": "18%",
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    }
+  },
+
+  "flex-layout.row#bottomFooter3": {
+    "children": [
+      "flex-layout.col#bottomFooterTechnology",
+      "flex-layout.col#bottomFooterMadeBy"
+    ],
+    "props": {
+      "blockClass": "bottomFooter3"
+    }
+  },
+
+  "flex-layout.col#bottomFooterTechnology": {
+    "children": [
+      "rich-text#bottomFooterTechnologyText",
+      "image#bottomFooterTechnologyImage"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "bottomFooterTechnology"
+    }
+  },
+
+  "rich-text#bottomFooterTechnologyText": {
+    "props": {
+      "text": "Tecnologia",
+      "blockClass": "bottomFooterText"
+    }
+  },
+
+  "image#bottomFooterTechnologyImage": {
+    "props": {
+      "src": "assets/icons/vtexWhiteLogo.svg"
+    }
+  },
+
+  "flex-layout.col#bottomFooterMadeBy": {
+    "children": [
+      "rich-text#bottomFooterMadeByText",
+      "image#bottomFooterMadeByImage"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "bottomFooterTechnology"
+    }
+  },
+
+  "rich-text#bottomFooterMadeByText": {
+    "props": {
+      "text": "Feito por",
+      "blockClass": "bottomFooterText"
+    }
+  },
+
+  "image#bottomFooterMadeByImage": {
+    "props": {
+      "src": "assets/icons/b8oneWhiteLogo.svg"
+    }
+  }
+}

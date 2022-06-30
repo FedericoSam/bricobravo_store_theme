@@ -1,0 +1,35 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
+.paragraph--shippingMenuText {
+  background-color: var(--white) !important;
+  color: black !important;
+}
+
+.paragraph--pdp-galeryTitle {
+  background-color: transparent !important;
+  color: var(--primary-dark) !important;
+  font-size: 30px;
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+.container--notification-message {
+  background-color: #f2f2f2;
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 100vw;
+
+  .paragraph--notification-message {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+
+    color: #111111;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.87rem;
+    line-height: 1rem;
+  }
+}

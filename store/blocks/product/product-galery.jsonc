@@ -1,0 +1,89 @@
+{
+  "flex-layout.row#galery-mobile": {
+    "children": ["flex-layout.col#galery-mobile"]
+  },
+  "flex-layout.col#galery-mobile": {
+    "children": ["rich-text#galery-title", "slider-layout#galery-mobile"]
+  },
+  "slider-layout#galery-mobile": {
+    "props": {
+      "blockClass": "carrosel-galery"
+    },
+    "children": [
+      "image#product1",
+      "image#product2",
+      "image#product3",
+      "image#product4",
+      "image#product5"
+    ]
+  },
+  "flex-layout.row#galery": {
+    "children": ["flex-layout.col#container-galery-images"]
+  },
+  "flex-layout.col#container-galery-images": {
+    "children": [
+      "rich-text#galery-title",
+      "flex-layout.row#product-galery-images"
+    ]
+  },
+  "rich-text#galery-title": {
+    "props": {
+      "text": "Galeria de imagens",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "pdp-galeryTitle"
+    }
+  },
+  "flex-layout.row#product-galery-images": {
+    "children": [
+      "image#product1",
+      "image#product2",
+      "image#product3",
+      "image#product4",
+      "image#product5"
+    ],
+    "props": {
+      "blockClass": "pdp-Containergalery"
+    }
+  },
+  "image#product1": {
+    "props": {
+      "src": "https://lojaaiwaqa.vteximg.com.br/arquivos/galeryImage2.png",
+      "width": "530px",
+      "height": "550px",
+      "blockClass": ["pdp-galeryImage", "imagePrincipal"]
+    }
+  },
+  "image#product2": {
+    "props": {
+      "src": "https://lojaaiwaqa.vteximg.com.br/arquivos/galeryImage1.png",
+      "width": "250px",
+      "height": "250px",
+      "blockClass": "pdp-galeryImage"
+    }
+  },
+  "image#product3": {
+    "props": {
+      "src": "https://lojaaiwaqa.vteximg.com.br/arquivos/galeryImage3.png",
+      "width": "250px",
+      "height": "250px",
+      "blockClass": "pdp-galeryImage"
+    }
+  },
+  "image#product4": {
+    "props": {
+      "src": "https://lojaaiwaqa.vteximg.com.br/arquivos/galeryImage4.png",
+      "width": "250px",
+      "height": "250px",
+      "blockClass": "pdp-galeryImage"
+    }
+  },
+  "image#product5": {
+    "props": {
+      "src": "https://lojaaiwaqa.vteximg.com.br/arquivos/galeryImage5.png",
+      "width": "250px",
+      "height": "250px",
+      "blockClass": "pdp-galeryImage"
+    }
+  }
+}

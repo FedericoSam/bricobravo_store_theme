@@ -1,0 +1,162 @@
+.flexRow {
+  &--header-desktop {
+    margin: 0 auto;
+    max-width: 1376px;
+
+    &::after {
+      width: 100%;
+      content: '';
+      height: 1px;
+      background: #ddd;
+      display: block;
+      margin: 0 auto;
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .flexRowContent--header-desktop {
+      padding: 16.5px 0;
+      justify-content: space-between;
+
+      .flexRow--submenu-category-3 {
+        width: 100%;
+        // max-width: 1440px;
+        max-width: 1376px;
+        // @include container-main;
+
+        .flexRow--submenu-category-title {
+          padding: 0 2rem;
+          margin-top: 3.85rem;
+        }
+
+        .flexRowContent--submenu-category-items {
+          margin-top: 24px;
+          justify-content: space-evenly;
+        }
+
+        .flexRow--submenu-category-cta {
+          margin: 48px;
+          padding: 0 2rem;
+        }
+      }
+    }
+  }
+
+  &--header-mobile {
+    .flexRowContent {
+      &--header-mobile-first-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .stretchChildrenWidth {
+
+          &:first-child {
+            width: auto !important;
+            margin-right: 16px;
+          }
+
+          &:last-child {
+            max-width: max-content;
+          }
+
+          .flexCol--header-logo {
+            min-width: 100px;
+          }
+        }
+      }
+
+      &--header-mobile-second-row {
+        flex-wrap: nowrap;
+        display: flex;
+        width: max-content;
+        overflow-x: scroll;
+        padding: 8px 12px 8px 16px;
+        background-color: #f2f2f2;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &--header-mobile-second-row {
+    max-width: 100%;
+    overflow: scroll;
+  }
+}
+
+.flexRowContent--minicart-footer {
+  background-color: #ffffff;
+}
+
+.flexRowContent--productInfoNameMinicart {
+  display: flex;
+  margin-bottom: 14px;
+  justify-content: space-between;
+}
+
+.flexCol {
+  &--header-logo {
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width:768px) {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+}
+
+.flexColChild--header-drawer-menu-col {
+  margin-bottom: 0;
+
+  :global(.vtex-auth-challenge-1-x-challengeContentWrapper) {
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #f2f2f2;
+  }
+}
+
+.flexColChild--drawer-menu-departments {
+  margin-bottom: 4px;
+}
+
+.flexColChild--minicartProductImage {
+  display: flex;
+  align-items: center;
+}
+
+.flexCol--minicartProductInfo {
+  margin-left: 20px;
+}
+
+:global(.vtex-styleguide-9-x-container) {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+:global(.vtex-checkout-summary-0-x-price) {
+  font-size: 20px;
+  color: #111;
+  font-weight: bold;
+}
+
+:global(.vtex-checkout-summary-0-x-summarySmallDisclaimer) {
+  display: flex;
+  justify-content: center;
+  font-size: 0;
+  font-weight: 300;
+  color: #111;
+
+  &::before {
+    font-size: 14px;
+    content: 'Calcule o frete no checkout!';
+  }
+}
+
+.flexColChild {
+  .flexRow--header-mobile-second-row {
+    background: #f2f2f2;
+  }
+}

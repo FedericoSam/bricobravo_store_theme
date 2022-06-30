@@ -1,0 +1,96 @@
+.link {
+  &--header-institutional-link {
+    font-size: 1rem;
+    color: #111;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #e30613;
+    }
+  }
+
+  &--submenu-category-cta {
+    font-size: 1rem;
+    max-width: 199px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 12px 25px;
+    text-decoration: none;
+    background-color: #e30613;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #bd000b;
+    }
+  }
+
+  &--mobile-menu-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #111;
+    margin-right: 18px;
+  }
+
+  &--tvs {
+    &::before {
+      display: block;
+      content: '';
+      width: 32px;
+      height: 32px;
+      background-image: url('assets/icons/tvs-icon-grey.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin-right: 8px;
+    }
+  }
+  &--headphones {
+    &::before {
+      display: block;
+      content: '';
+      width: 24px;
+      height: 24px;
+      background-image: url('assets/icons/headphone-icon-grey.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin-right: 8px;
+    }
+  }
+  &--audio {
+    &::before {
+      display: block;
+      content: '';
+      width: 24px;
+      height: 24px;
+      background-image: url('assets/icons/audio-icon-grey.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin-right: 8px;
+    }
+  }
+  &--automotive {
+    &::before {
+      display: block;
+      content: '';
+      width: 32px;
+      height: 32px;
+      background-image: url('assets/icons/automotive-icon-grey.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin-right: 8px;
+    }
+  }
+}

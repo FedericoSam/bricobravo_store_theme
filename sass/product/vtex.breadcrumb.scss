@@ -1,0 +1,64 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
+.container {
+  padding: 0;
+}
+
+.arrow {
+  padding: 0;
+  &::before {
+    content: '';
+    display: inline-block;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='svg-triangle' width='100' height='100'%3E%3Cpath d='M40 36 20 60l8-10 12-15-20-25Z' stroke-width='5' stroke='%23000'/%3E%3C/svg%3E");
+    background-size: 15px 15px;
+    background-position-y: 3px;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 13px;
+    margin: 0 10px;
+  }
+  .caretIcon {
+    display: none;
+  }
+}
+
+.homeIcon {
+  display: none;
+  opacity: 0;
+}
+
+.homeLink--default {
+  margin-left: 0.5rem;
+  &::before {
+    content: 'Home';
+    color: var(--darkgrey-light);
+    font-weight: 400;
+    line-height: 16px;
+    font-size: 12px;
+  }
+  &:hover {
+    &::before {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+  }
+}
+
+.link {
+  padding: 0;
+  color: var(--primary-dark);
+  font-weight: 400;
+  line-height: 16px;
+  font-size: 12px;
+  &:hover {
+    color: var(--secondary-dark);
+    text-decoration: underline;
+  }
+}
+
+.termArrow,
+.term {
+  display: none;
+  opacity: 0;
+}

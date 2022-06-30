@@ -1,0 +1,25 @@
+{
+  "search-bar#desktop": {
+    "props": {
+      "placeholder": "Encontre o melhor em áudio e vídeo",
+      "compactMode": false,
+      "openAutocompleteOnFocus": true,
+      "containerMode": "container",
+      "displayMode": "search-button",
+      "blockClass": "desktop-searchbar"
+    }
+  },
+  "search-bar#mobile": {
+    "props": {
+      "compactMode": false,
+      "placeholder": "O que você procura?",
+      "autoFocus": false,
+      "openAutocompleteOnFocus": false,
+      "maxWidth": "100%",
+      "autocompleteAlignment": "center",
+      "autocompleteFullWidth": true,
+      "displayMode": "search-button",
+      "containerMode": "container"
+    }
+  }
+}

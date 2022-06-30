@@ -1,0 +1,88 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
+// Minicart start
+.productBrandName--minicart {
+  display: flex;
+  color: #cc296e;
+  font-weight: 600;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.productName--minicart {
+  font-size: 12px;
+  color: #1c1c1c;
+  max-width: 199px;
+  line-height: 20px;
+  overflow: hidden;
+  max-height: 40px;
+
+  @include breakpoint('mobile') {
+    font-weight: 500;
+    padding: 0 12px 0 0;
+  }
+}
+
+.productPriceContainer--minicart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  @include breakpoint('mobile') {
+    margin-top: 12px;
+  }
+  .productPrice--minicart {
+    font-size: 14px;
+    color: var(--secondary-dark-text);
+    font-weight: 600;
+    text-align: right;
+
+    @include breakpoint('mobile') {
+      margin-left: 85px;
+    }
+  }
+}
+
+.quantityDropdownContainer--minicart,
+.quantityDropdownMobileContainer--minicart {
+  :global(.vtex-dropdown__caption) {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &::before {
+      color: #999;
+      content: '';
+      margin-right: 12px;
+    }
+
+    &::after {
+      content: '';
+      width: 1px;
+      height: 4.6px;
+      margin-left: 20px;
+    }
+  }
+
+  :global(.vtex-dropdown__arrow) {
+    color: #000;
+  }
+
+  :global(.vtex-dropdown__container) {
+    height: 40px;
+    background-color: var(--white);
+    max-width: 80px;
+    @include breakpoint('mobile') {
+      max-width: 69px;
+    }
+  }
+
+  :global(.vtex-dropdown__button) {
+    padding: 12px 10px 12px 10px;
+    @include breakpoint('mobile') {
+      padding: 10px;
+    }
+  }
+}
+// Minicart end

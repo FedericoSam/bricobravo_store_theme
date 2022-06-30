@@ -1,0 +1,78 @@
+{
+  "flex-layout.row#newsletter": {
+    "title": "Newsletter",
+    "children": ["flex-layout.col#newsletter"],
+    "props": {
+      "blockClass": "newsletterRow"
+    }
+  },
+  "flex-layout.col#newsletter": {
+    "children": [
+      "rich-text#newsTitle",
+      "rich-text#newsSubTitle",
+      "newsletter-form#footer"
+    ],
+    "props": {
+      "blockClass": "newsletterCol"
+    }
+  },
+  "newsletter-form#footer": {
+    "children": ["flex-layout.row#newsletter-form"],
+    "props": {
+      "blockClass": "footer-newsletter"
+    }
+  },
+
+  "flex-layout.row#newsletter-form": {
+    "children": [
+      "flex-layout.col#newsletter-input",
+      "flex-layout.col#newsletter-submit"
+    ],
+    "props": {
+      "preventHorizontalStretch": false,
+      "blockClass": "newsletterForm"
+    }
+  },
+
+  "flex-layout.col#newsletter-input": {
+    "children": ["newsletter-input-email"],
+    "props": {
+      "width": "72%"
+    }
+  },
+
+  "flex-layout.col#newsletter-submit": {
+    "children": ["newsletter-submit"],
+    "props": {
+      "width": "25%"
+    }
+  },
+
+  "newsletter-input-email": {
+    "props": {
+      "placeholderText": "Digite seu email",
+      "blockClass": "newsEmailInput"
+    }
+  },
+  "newsletter-submit": {
+    "props": {
+      "submitButtonLabel": "Cadastrar"
+    }
+  },
+  "rich-text#newsTitle": {
+    "props": {
+      "text": "## Saiba primeiro",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": "newsTitle"
+    }
+  },
+  "rich-text#newsSubTitle": {
+    "props": {
+      "text": "Cadastre-se para receber notícias e lançamentos Aiwa.",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": "newsSubTitle"
+    }
+  }
+}

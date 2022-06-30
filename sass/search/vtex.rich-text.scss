@@ -1,0 +1,105 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
+.container--search-instructionRangePrice {
+  padding: 0 28px;
+  position: relative;
+  bottom: 130px;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--primary-default);
+  .strong--search-instructionRangePrice {
+    color: var(--secondary-default);
+    font-weight: 400;
+  }
+}
+
+.wrapper--findYourProduct {
+  margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    margin: 0 auto 16px;
+  }
+}
+.heading--findYourProduct {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.heading--titleSeo {
+  padding: 0 1.5rem 0 2rem;
+  margin-block: 0;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #111;
+  letter-spacing: 0.01em;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: #111;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+  }
+}
+
+.paragraph--textSeo {
+  margin-top: 0;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  color: #555;
+  
+  @media screen and (max-width: 768px) {
+    padding-inline: 2rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #555;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+  }
+}
+
+.paragraph--linkSeo {
+  @media screen and (max-width: 768px) {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    padding: 0 2rem;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.link--linkSeo {
+  @media screen and (max-width: 768px) {
+    text-decoration: none;
+    color: #e30613;
+  }
+}
+
+.paragraph--readCompleteTextLink-seo {
+  margin-block: 0;
+  @media screen and (max-width: 768px) {
+    padding: 0 2rem;
+  }
+}
+
+.link--readCompleteTextLink-seo {
+  text-decoration: none;
+  color: #e30613;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+}

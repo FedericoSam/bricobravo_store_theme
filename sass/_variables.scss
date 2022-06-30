@@ -1,0 +1,57 @@
+:not(:global(.vtex-fake)) {    
+    --white: #fff;
+    --primary-dark: #000;
+    --primary-default: #111;
+    --primary-light: #DDD; 
+    --secondary-default: #E30613;
+    --secondary-dark: #BD000B;
+    --secondary-light: #E30613;
+    --suport-color-01: #5E595A;
+    --suport-color-02: #27292D;
+    --suport-color-03: #B18808;
+    --suport-color-04: #FD4D1E;
+    --suport-color-05: #BB1D64;
+    --suport-color-06: #5C1373;
+    --suport-color-07: #220219;
+    --suport-color-08: #2B6F6D;
+    --system-alert-default: #E32000;
+    --system-alert-light: #FEE7E5;
+    --system-warning-default: #FFE01A;
+    --system-warning-light: #FEFBC1;
+    --system-success-default: #2C5A18;
+    --system-success-light: #E6F6EC;
+    --darkgrey-dark: #111;
+    --darkgrey-medium: #555;
+    --darkgrey-light: #999;
+    --lightgrey-medium: #CCC;
+    --lightgrey-light: #DDD;
+    --lightgrey-lighter: #f2f2f2;
+    --link-default-small: 0.75rem;
+    --link-default-medium: 0.88rem;
+    --link-default-large: 1rem;
+    --link-hover-small: 0.75rem;
+    --link-hover-medium: 0.88rem;
+    --link-hover-large: 1rem;
+    --headline-h1: 2rem;
+    --headline-h2: 1.5rem;
+    --headline-h3: 1.25rem;
+    --headline-h4: 1.12rem;
+    --paragraph-large-bold: 1rem;
+    --paragraph-large-medium: 1rem;
+    --paragraph-large-regular: 1rem;
+    --paragraph-medium-semibold: 0.88rem;
+    --paragraph-medium-medium: 0.88rem;
+    --paragraph-medium-regular: 0.88rem;
+    --paragraph-small-bold: 0.75rem;
+    --paragraph-small-medium: 0.75rem;
+    --paragraph-small-regular: 0.75rem;
+    --cta-large: 1rem;
+    --cta-medium: 0.88rem;
+    --cta-small: 0.69rem;
+    --price-from: 0.75rem;
+    --price-to: 1.12rem;
+    --card-hover: 16px 0 8px rgba(0, 0, 0, 0.08);
+    --card-default: 4px 0 2px rgba(0, 0, 0, 0.04);
+
+    font-family: 'Roboto', sans-serif,
+}

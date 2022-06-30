@@ -1,0 +1,523 @@
+@import '../_media-queries.scss';
+@import '../_variables.scss';
+
+.gallery {
+  padding: 0;
+  margin: 0;
+}
+
+.galleryItem {
+  padding: 0;
+  margin: 0;
+}
+
+.showingProducts {
+  font-size: 0;
+  margin: auto 32px;
+  padding-top: 0;
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+    margin: auto;
+  }
+
+  .showingProductsCount {
+    font-size: 14px;
+    font-weight: 400;
+    color: #111;
+
+    &::before {
+      content: 'Mostrando ';
+      display: inline;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    &::after {
+      content: ' produtos';
+      display: inline;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}
+
+.orderBy--layout {
+  background-color: transparent;
+  min-width: 196px;
+  margin: 16px 0 16px;
+  position: relative;
+
+  &::after {
+    @media screen and (max-width: 768px) {
+      content: '';
+      width: 2px;
+      height: 16px;
+      display: block;
+      background: #ddd;
+      top: 50%;
+      right: 16px;
+      position: absolute;
+      transform: translateY(-50%);
+    }
+  }
+
+  .orderByDropdown {
+    justify-content: flex-end;
+    display: flex;
+  }
+
+  .orderByButton {
+    background-color: transparent;
+    padding: 10px 0 10px;
+    @media screen and (max-width: 768px) {
+      width: auto;
+      margin: 0 30px;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .filterPopupArrowIcon {
+      @media screen and (max-width: 768px) {
+        padding: 0 8px;
+      }
+
+      .caretIcon {
+        @media screen and (max-width: 768px) {
+          background: url('assets/icons/arrowUpAndDown.png');
+          background-size: cover;
+          width: 24px;
+          height: 24px;
+          background-repeat: no-repeat;
+          color: transparent;
+          background-position: center;
+        }
+      }
+    }
+    .filterPopupTitle {
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: none;
+      width: 132px;
+      text-align: left;
+      color: #111;
+
+      @media screen and (max-width: 768px) {
+        font-size: 0;
+        width: auto;
+      }
+
+      .orderByText {
+        margin-right: 60px;
+        color: #414042;
+        position: absolute;
+        text-transform: lowercase;
+        left: -90px;
+        &::first-letter {
+          text-transform: uppercase;
+        }
+      }
+      &::before {
+        border-radius: 8px;
+        border: 2px solid silver;
+        content: '';
+        display: block;
+        height: 40px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 192px;
+
+        @media screen and (max-width: 768px) {
+          content: 'Ordenar';
+          font-size: 14px;
+          line-height: 16px;
+          border: none;
+          position: relative;
+          width: auto;
+          height: auto;
+          border-radius: 0;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.filter__container--selectedFilters {
+  display: none !important;
+}
+
+.filterContent {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.filter__container--priceRange {
+  :global(.vtex-slider__base-internal) {
+    background-color: var(--secondary-default);
+  }
+  :global(.vtex-slider__selector) {
+    background: var(--primary-default);
+    height: 4px !important;
+    width: 4px !important;
+    box-shadow: none !important;
+  }
+  :global(.vtex-slider__selector-container) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border-radius: 30px;
+    height: 20px;
+    margin: -3px 0 0 -3px;
+    width: 20px;
+    border: 1px solid #efefef;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    top: 5.5px !important;
+  }
+  :global(.vtex-slider__values-container) {
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      height: 35px;
+    }
+  }
+  :global(.vtex-slider__dash) {
+    display: none;
+  }
+  &::after {
+    content: 'Arraste a barra vermelha';
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--secondary-default);
+    position: relative;
+    bottom: 35px;
+
+    @media screen and (max-width: 768px) {
+      bottom: 26px;
+      }
+
+    }
+
+    &::before {
+      @media screen and (max-width: 768px) {
+        bottom: 14px;
+        content: "e defina uma faixa de valores para filtrar.";
+        text-indent: 136px;
+        position: absolute;
+        font-weight: 400;
+        font-size: 12px;
+        color: #444;
+    }
+  }
+}
+
+.seeMoreButton {
+  background-color: transparent;
+  color: var(--secondary-default);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.filters--layout {
+  width: 332px;
+  padding: 32px;
+  border-radius: 16px;
+  background: #fff;
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
+
+  .filterItem {
+    margin-bottom: 0.5rem;
+  }
+
+  .filterPopupArrowIcon {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .filterPopupButton {
+    padding: 8px 16px;
+    border: 2px solid #e30613;
+    border-radius: 8px;
+    height: auto;
+  }
+
+  .filterPopupTitle {
+    color: #e30613;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+
+  .filterIcon {
+    padding: 0;
+  }
+
+  .filterTitleSpan {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--primary-default);
+  }
+
+  .filter__container {
+    margin-bottom: 1.2rem;
+  }
+  .filter__container--title {
+    border: 0;
+    &::before {
+      content: 'Facilite sua busca';
+      color: var(--darkgrey-light);
+      font-size: 24px;
+      line-height: 2rem;
+      font-weight: 300;
+      margin-bottom: 8px;
+    }
+    &::after {
+      content: 'Filtre os resultados';
+      font-size: 24px;
+      line-height: 2rem;
+      font-weight: 400;
+      color: var(--darkgrey-dark);
+    }
+    .filterMessage {
+      font-size: 0;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  :global(.vtex-checkbox__label) {
+    color: var(--primary-default);
+    padding-left: 1rem;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  :global(.vtex-checkbox__inner-container) {
+    border-radius: 6px;
+    width: 24px;
+    height: 24px;
+  }
+
+  :global(.vtex-checkbox__box-wrapper) {
+    top: 4px;
+    left: 4px !important;
+  }
+  .filterTemplateOverflow {
+    @include desktop {
+      :global(.vtex-slider__values-container) {
+        padding-bottom: 45px;
+      }
+    }
+  }
+  .filtersWrapper {
+    @include desktop {
+      &:last-child {
+        &::after {
+          content: 'e defina uma faixa de valores para filtrar.';
+          font-size: 12px;
+          font-weight: 400;
+          color: var(--primary-default);
+          position: relative;
+          bottom: 73px;
+          margin-left: 135px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .sidebar {
+    max-width: 312px;
+    min-width: 312px;
+
+    .accordionFilter {
+      padding-bottom: 10rem;
+
+      .filterAccordionBreadcrumbs {
+        margin-top: 3rem;
+        border: none;
+        margin-bottom: 1rem;
+
+        .filterBreadcrumbsText--filterMobile {
+          visibility: hidden;
+          transform: translateX(-66px);
+          font-weight: 300;
+          font-size: 24px;
+          line-height: 32px;
+      
+          &::before {
+            content: "Facilite sua busca";
+            transform: translateX(66px);
+            color: #999;
+            display: block;
+            visibility: visible;
+          }
+      
+          &::after {
+            content: "Filtre os resultados";
+            visibility: visible;
+            color: #111;
+          }
+        }
+
+      }
+
+      .accordionFilterContainer--filterMobile {
+        padding-left: 1rem;
+
+        .accordionFilterItem--filterMobile {
+          border-bottom-style: none;
+        }
+
+        .accordionFilterContent--filterMobile {
+          padding-bottom: 0;
+          border-top: 2px solid #f2f2f2;
+
+          .accordionFilterItemTitle--filterMobile {
+            color: #111;
+            font-size: 1rem;
+            line-height: 24px;
+            font-weight: 400;
+          }
+        }
+      }
+
+      .accordionFilterOpen--filterMobile {
+        transform: translateX(-3rem);
+        padding-bottom: 1rem;
+
+        .filterAccordionItemBox {
+          min-height: 1.5rem;
+          border: none;
+
+          :global(.vtex-checkbox__label) {
+            padding-left: 1.5rem;
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 24px;
+            letter-spacing: 0.01em;
+            color: #111;
+          }
+
+          :global(.vtex-checkbox__inner-container) {
+            border: 2px solid #DDDDDD;
+            border-radius: 6px;
+            height: 24px;
+            width: 24px;
+          }
+
+          :global(.vtex-checkbox__box-wrapper) {
+            border-radius: 6px;
+            height: 24px;
+            width: 24px;
+          }
+
+          :global(.vtex-checkbox__input) {
+            height: 24px;
+            width: 24px;
+          }
+        }
+      }
+
+      .accordionFilterItemOptions {
+        transform: translateX(-46px);
+        padding-right: 0;
+        width: 290px;
+        overflow: visible;
+        //height: 110px;
+
+        .filterAvailable--filterMobile {
+          display: none;
+        }
+      }
+    }
+
+    .filterButtonsBox {
+      height: 9rem;
+      padding-bottom: 43px;
+
+      .filterApplyButtonWrapper--filterMobile {
+        width: 280px;
+        margin-inline: auto;
+        padding: 0;
+        margin-bottom: 8px;
+    
+    
+        :global(.vtex-button) {
+          background: #e30613;
+          border-radius: 8px;
+          padding: 12px 24px;
+          :global(.vtex-button__label) {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            color: #FFF;
+            letter-spacing: 0.005em;
+            text-align: center;
+            visibility: hidden;
+            padding: 0;
+            &::after {
+              content: "Filtrar";
+              visibility: visible;
+              transform: translateX(-30px);
+              text-transform: capitalize;
+            }
+            //background: #e30613;
+          }
+    
+        }
+
+        
+    
+      }
+
+      .filterClearButtonWrapper--filterMobile {
+        order: 2;
+        width: 280px;
+        margin-inline: auto;
+        padding: 0;
+    
+        :global(.vtex-button) {
+    
+          :global(.vtex-button__label) {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.005em;
+            text-align: center;
+            //visibility: hidden;
+            text-transform: capitalize;
+            padding: 0;
+            //transform: translateX(-20px);
+            &::after {
+              content: " Filtros";
+              text-transform: capitalize;
+              transform: translateX(3px);
+            }
+            //background: #e30613;
+          }
+    
+        }
+    
+      }
+    }
+
+  }
+
+  .closeIconButton {
+    transform: translate(-273px, 14px);
+    background: white;
+    padding: 5px 5px 1px;
+    border-radius: 15px;
+  }
+
+}

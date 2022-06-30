@@ -1,0 +1,53 @@
+{
+  "flex-layout.row#shipping": {
+    "children": ["disclosure-layout#shipping"],
+    "props": {
+      "blockClass": "pdp-shippingContainer"
+    }
+  },
+  "disclosure-layout#shipping": {
+    "children": [
+      "disclosure-content#shipping",
+      "disclosure-trigger#shipping",
+      "disclosure-state-indicator#shipping"
+    ],
+    "props": {
+      "blockClass": "containerDisclosureShipping"
+    }
+  },
+  "disclosure-content#shipping": {
+    "children": ["flex-layout.row#shipping-simulator"]
+  },
+  "disclosure-trigger#shipping": {
+    "children": ["rich-text#shipping"],
+    "props": {
+      "blockClass": "containerShippingMenu"
+    }
+  },
+  "rich-text#shipping": {
+    "props": {
+      "text": "Calcule o frete e prazo de entrega",
+      "blockClass": "shippingMenuText"
+    }
+  },
+  "disclosure-state-indicator#shipping": {
+    "props": {
+      "Show": "image#shippingdown",
+      "Hide": "image#shippingup"
+    }
+  },
+  "image#shippingdown": {
+    "props": {
+      "src": "assets/icons/arrow-down.svg",
+      "blockClass": "arrowDown",
+      "width": "20px"
+    }
+  },
+  "image#shippingup": {
+    "props": {
+      "src": "assets/icons/arrow-up.svg",
+      "width": "20px",
+      "blockClass": "arrowUp"
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile-header"]
+  },
+
+  "sticky-layout#mobile-header": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#header-mobile"]
+  },
+
+  "flex-layout.row#header-mobile": {
+    "children": ["flex-layout.col#header-mobile"],
+    "props": {
+      "blockClass": "header-mobile"
+    }
+  },
+
+  "flex-layout.col#header-mobile": {
+    "children": [
+      "flex-layout.row#header-mobile-first-row",
+      "flex-layout.row#header-mobile-second-row"
+    ]
+  },
+
+  "flex-layout.row#header-mobile-first-row": {
+    "children": [
+      "flex-layout.col#header-drawer",
+      "flex-layout.col#header-logo",
+      "disclosure-layout#pre-header-secondCol-search",
+      "flex-layout.col#header-minicart"
+    ],
+    "props": {
+      "blockClass": "header-mobile-first-row"
+    }
+  },
+
+  "disclosure-layout#pre-header-secondCol-search": {
+    "children": [
+      "disclosure-trigger#pre-header-secondCol-search",
+      "disclosure-content#pre-header-secondCol-search"
+    ]
+  },
+
+  "disclosure-trigger#pre-header-secondCol-search": {
+    "children": ["image#search-icon"],
+
+    "props": {
+      "blockClass": "pre-header-secondCol-search"
+    }
+  },
+
+  "image#search-icon": {
+    "props": {
+      "src": "assets/icons/search-icon.svg",
+      "blockClass": "search-icon-mobile"
+    }
+  },
+
+  "disclosure-content#pre-header-secondCol-search": {
+    "children": [
+      "search-bar#desktop",
+      "disclosure-trigger#pre-header-secondCol-search-close"
+    ],
+
+    "props": {
+      "blockClass": "pre-header-secondCol-search"
+    }
+  },
+
+  "disclosure-trigger#pre-header-secondCol-search-close": {
+    "children": ["image#search-icon-close"],
+
+    "props": {
+      "blockClass": "pre-header-secondCol-search-close"
+    }
+  },
+
+  "image#search-icon-close": {
+    "props": {
+      "src": "assets/icons/close-icon.svg"
+    }
+  },
+
+  "flex-layout.row#header-mobile-second-row": {
+    "children": [
+      "link#tvs",
+      "link#headphones",
+      "link#audio",
+      "link#automotive"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "header-mobile-second-row"
+    }
+  },
+
+  "link#tvs": {
+    "props": {
+      "label": "TV’s",
+      "blockClass": ["tvs", "mobile-menu-item"]
+    }
+  },
+  "link#headphones": {
+    "props": {
+      "label": "Fones de Ouvido",
+      "blockClass": ["headphones", "mobile-menu-item"]
+    }
+  },
+  "link#audio": {
+    "props": {
+      "label": "Áudio",
+      "blockClass": ["audio", "mobile-menu-item"]
+    }
+  },
+  "link#automotive": {
+    "props": {
+      "label": "Som Automotivo",
+      "blockClass": ["automotive", "mobile-menu-item"]
+    }
+  }
+}

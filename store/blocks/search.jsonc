@@ -1,0 +1,534 @@
+{
+  "store.search": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "skusFilter": "ALL",
+        "maxItemsPerPage": 12,
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+  "store.search#brand": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 12,
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+  "store.search#department": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 12
+      },
+      "fullWidth": true
+    }
+  },
+  "store.search#category": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 12
+      },
+      "fullWidth": true
+    }
+  },
+  "store.search#subcategory": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 12
+      },
+      "fullWidth": true
+    }
+  },
+  "search-result-layout": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "search-result-layout.desktop": {
+    "children": [
+      "flex-layout.row#searchbread",
+      "flex-layout.row#searchBanner",
+      "flex-layout.row#findYourProduct",
+      "flex-layout.row#mobile-home-section02-showcase-search-search",
+      "flex-layout.row#searchinfo",
+      "flex-layout.row#searchLayout",
+      "flex-layout.row#sectionSeo"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": false,
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "fullWidth": true
+    }
+  },
+
+  "sidebar-close-button": {
+    "props": {
+      "size": 20
+    }
+  },
+  "flex-layout.row#searchLayout": {
+    "children": ["flex-layout.row#filter", "flex-layout.col#pageContent"],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": false,
+      "blockClass": "searchLayout"
+    }
+  },
+  "flex-layout.col#pageContent": {
+    "children": ["flex-layout.col#search-content"],
+    "props": {
+      "blockClass": "pageContent",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "width": "75%"
+    }
+  },
+  "flex-layout.col#search-content": {
+    "children": [
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#products",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "paddingLeft": 5
+    }
+  },
+  "flex-layout.row#searchbread": {
+    "children": ["breadcrumb.search#default"],
+    "props": {
+      "blockClass": ["searchbread"],
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "breadcrumb.search#default": {
+    "props": {
+      "blockClass": ["default"],
+      "showOnMobile": true,
+      "homeIconSize": 18
+    }
+  },
+  "flex-layout.row#searchtitle": {
+    "children": ["search-title.v2"]
+  },
+  "flex-layout.row#sectionSeo": {
+    "children": ["flex-layout.row#sectionSeoContent"]
+  },
+  "flex-layout.row#sectionSeoContent": {
+    "children": [
+      "flex-layout.col#CategoryTitleSeo",
+      "flex-layout.col#CategoryTextSeo"
+    ],
+    "props": {
+      "blockClass": "container-seo"
+    }
+  },
+  "flex-layout.col#CategoryTitleSeo": {
+    "props": {
+      "verticalAlign": "top"
+    },
+    "children": ["rich-text#CategoryTitleSeo"]
+  },
+  "flex-layout.col#CategoryTextSeo": {
+    "props": {
+      "verticalAlign": "top"
+    },
+    "children": [
+      "rich-text#CategoryTextSeo",
+      "rich-text#ReadCompleteTextLinkSeo"] //aqui
+  },
+  "rich-text#CategoryTitleSeo": {
+    "props": {
+      "text": "#### Category Aiwa",
+      "blockClass": "titleSeo"
+    }
+  },
+  "rich-text#CategoryTextSeo": {
+    "props": {
+      "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+      "blockClass": "textSeo"
+    }
+  },
+  "rich-text#ReadCompleteTextLinkSeo": {
+    "props": {
+      "text": "[Ler texto completo](/#)",
+      "blockClass": "readCompleteTextLink-seo"
+    }
+  },
+  "flex-layout.row#filter": {
+    "children": ["flex-layout.col#filter"],
+    "props": {
+      "blockClass": "filterRow"
+    }
+  },
+  "flex-layout.col#filter": {
+    "children": [
+      "filter-navigator.v3"
+      // "rich-text#instructions-range-price"
+    ],
+    "props": {
+      "blockClass": "filterCol"
+    }
+  },
+  "filter-navigator.v3": {
+    "blocks": ["sidebar-close-button"],
+    "props": {
+      "truncateFilters": true
+    }
+  },
+  // "rich-text#instructions-range-price": {
+  //   "props": {
+  //     "text": "**Arraste a barra vermelha** e defina uma faixa de valores para filtrar.",
+  //     "blockClass": "search-instructionRangePrice"
+  //   }
+  // },
+  "flex-layout.row#searchinfo": {
+    "children": ["search-products-count-per-page", "order-by.v2"],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "searchHeadInfo"
+    }
+  },
+  "flex-layout.row#fetchprevious": {
+    "props": {
+      "marginBottom": 3
+    },
+    "children": ["search-fetch-previous"]
+  },
+  "flex-layout.row#fetchmore": {
+    "props": {
+      "marginTop": 7,
+      "blockClass": "fetchmore"
+    },
+    "children": ["search-fetch-more"]
+  },
+  "flex-layout.row#products": {
+    "children": ["search-content"]
+  },
+  "search-content": {
+    "blocks": ["gallery", "not-found"]
+  },
+  "search-content#mobile": {
+    "blocks": ["gallery#mobile", "not-found"]
+  },
+  "search-result-layout.mobile": {
+    "children": [
+      "flex-layout.row#searchbread",
+      "flex-layout.row#searchBanner",
+      "flex-layout.row#findYourProduct",
+      "flex-layout.row#mobile-home-section02-showcase-search-search",
+      "flex-layout.row#searchControlsMobile",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore",
+      "flex-layout.row#CategoryTitleSeoMobile",
+      "flex-layout.row#CategoryTextSeoMobile"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      }
+    }
+  },
+
+  "flex-layout.row#findYourProduct": {
+    "children": ["rich-text#findYourProduct"]
+  },
+
+  "rich-text#findYourProduct": {
+    "props": {
+      "text": "## Encontre sua TV no tamanho ideal",
+      "blockClass": "findYourProduct"
+    }
+  },
+
+  "flex-layout.row#contentmobile": {
+    "children": ["search-content#mobile"],
+    "props": {
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.row#searchControlsMobile": {
+    "children": [
+      "search-products-count-per-page",
+      "order-by.v2",
+      "filter-navigator.v3#mobile"
+    ],
+    "props": {
+      "preventHorizontalStretch": false,
+      "blockClass": "searchControlsMobile"
+    }
+  },
+  "flex-layout.col#orderByMobile": {
+    "children": ["order-by.v2"],
+    "props": {
+      "blockClass": "orderByMobileCol"
+    }
+  },
+  "flex-layout.row#productCountMobile": {
+    "children": ["total-products.v2"],
+    "props": {
+      "blockClass": "productCountMobileRow"
+    }
+  },
+  "flex-layout.col#filterMobile": {
+    "children": ["filter-navigator.v3#mobile"],
+    "props": {
+      "blockClass": "filterMobileCol"
+    }
+  },
+  "filter-navigator.v3#mobile": {
+    "blocks": ["sidebar-close-button"],
+    "props": {
+      "truncateFilters": true,
+      "blockClass": "filterMobile",
+      "navigationTypeOnMobile": "collapsible",
+      "initiallyCollapsed": true,
+      "fullWidthOnMobile": true,
+      "updateOnFilterSelectionOnMobile": true,
+      "preventRouteChange": true
+    }
+  },
+  "search-not-found-layout": {
+    "children": ["flex-layout.row#notfound"]
+  },
+  "flex-layout.row#notfound": {
+    "children": ["flex-layout.col#not-found"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#not-found": {
+    "children": [
+      "responsive-layout.desktop#not-found",
+      "responsive-layout.mobile#not-found"
+    ]
+  },
+  "responsive-layout.desktop#not-found": {
+    "children": ["not-found"]
+  },
+  "responsive-layout.mobile#not-found": {
+    "children": [
+      // "flex-layout.row#btnlink-back",
+      "flex-layout.row#searchbread",
+      "not-found"
+    ]
+  },
+  "breadcrumb": {
+    "props": {
+      "showOnMobile": true
+    }
+  },
+  "gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name": "Desktop",
+          "component": "Desktop",
+          "itemsPerRow": 3
+        }
+      ],
+      "Desktop": "product-summary.shelf#normal"
+    }
+  },
+  "gallery#mobile": {
+    "blocks": ["product-summary.shelf#normal"]
+  },
+  "flex-layout.row#searchBanner": {
+    "props": {
+      "blockClass": "full-banner-search"
+    },
+    "children": ["list-context.image-list#SearchBanners"]
+  },
+  "list-context.image-list#SearchBanners": {
+    "children": ["slider-layout#demo-images-search"],
+    "props": {
+      "height": 528,
+      "images": [
+        {
+          "width": "100%",
+          "image": "https://via.placeholder.com/1376x320/E30613/fff",
+          "mobileImage": "https://via.placeholder.com/328x232/E30613/fff",
+          "description": "something something"
+        },
+        {
+          "width": "100%",
+          "image": "https://via.placeholder.com/1376x320/E30613/fff",
+          "mobileImage": "https://via.placeholder.com/328x232/E30613/fff",
+          "description": "something something"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images-search": {
+    "props": {
+      "blockClass": ["searchBanners", "dotsCustom"],
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false,
+      "showNavigationArrows": "desktopOnly"
+    }
+  },
+  "flex-layout.row#CategoryTitleSeoMobile": {
+    "props": {
+      "verticalAlign": "top"
+    },
+    "children": ["rich-text#CategoryTitleSeoMobile"]
+  },
+  "flex-layout.row#CategoryTextSeoMobile": {
+    "props": {
+      "verticalAlign": "top"
+    },
+    "children": [
+      "rich-text#CategoryTextSeoMobile",
+      "rich-text#CategoryLinkSeoMobile"
+    ]
+  },
+  "rich-text#CategoryTitleSeoMobile": {
+    "props": {
+      "text": "#### PlaceHolder Seo",
+      "blockClass": "titleSeo"
+    }
+  },
+  "rich-text#CategoryTextSeoMobile": {
+    "props": {
+      "text": "Allegra é o antialérgico n1 do mercado trazendo alívio rápido da alergia e não dá sono! indicado para os sintomas da Rinite Alérgica e urticária, tem rápida ação para nariz entupido, coriza, espirro e coceiras nos olhos, nariz, garganta e pele - com eficácia e segurança. Allegra® é um anti-histamínico indicado para uso adulto e pediátrico a partir de 12 anos, sendo destinado ao tratamento das manifestações alérgicas, tais como sintomas de rinite alérgica (incluindo espirros, obstrução nasal, prurido, coriza, conjuntivite alérgica) e urticária (erupção avermelhada e pruriginosa na pele).",
+      "blockClass": "textSeo"
+    }
+  },
+  "rich-text#CategoryLinkSeoMobile": {
+    "props": {
+      "text": "[Ler texto completo](/#)",
+      "blockClass": "readCompleteTextLink-seo"
+    }
+  },
+  "flex-layout.row#mobile-home-section02-showcase-search-search": {
+    "children": [
+      "image#mobile-home-section02-showcase-search-01",
+      "image#mobile-home-section02-showcase-search-02",
+      "image#mobile-home-section02-showcase-search-03",
+      "image#mobile-home-section02-showcase-search-04",
+      "image#mobile-home-section02-showcase-search-05",
+      "image#mobile-home-section02-showcase-search-06",
+      "image#mobile-home-section02-showcase-search-07",
+      "image#mobile-home-section02-showcase-search-08",
+      "image#mobile-home-section02-showcase-search-09"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "blockClass": "category-section02-showcase"
+    }
+  },
+
+  "image#mobile-home-section02-showcase-search-01": {
+    "props": {
+      "blockClass": "category-section02-image",
+      "src": "https://dummyimage.com/130x64/a8a8a8/ffffff.jpg",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "image#mobile-home-section02-showcase-search-02": {
+    "props": {
+      "blockClass": "category-section02-image",
+      "src": "https://dummyimage.com/130x64/a8a8a8/ffffff.jpg",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "image#mobile-home-section02-showcase-search-03": {
+    "props": {
+      "blockClass": "category-section02-image",
+      "src": "https://dummyimage.com/130x64/a8a8a8/ffffff.jpg",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "image#mobile-home-section02-showcase-search-04": {
+    "props": {
+      "blockClass": "category-section02-image",
+      "src": "https://dummyimage.com/130x64/a8a8a8/ffffff.jpg",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "image#mobile-home-section02-showcase-search-05": {
+    "props": {
+      "blockClass": "category-section02-image",
+      "src": "https://dummyimage.com/130x64/a8a8a8/ffffff.jpg",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "image#mobile-home-section02-showcase-search-06": {
+    "props": {
+      "blockClass": "category-section02-image",
+      "src": "https://dummyimage.com/130x64/a8a8a8/ffffff.jpg",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "image#mobile-home-section02-showcase-search-07": {
+    "props": {
+      "blockClass": "category-section02-image",
+      "src": "https://dummyimage.com/130x64/a8a8a8/ffffff.jpg",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "image#mobile-home-section02-showcase-search-08": {
+    "props": {
+      "blockClass": "category-section02-image",
+      "src": "https://dummyimage.com/130x64/a8a8a8/ffffff.jpg",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "image#mobile-home-section02-showcase-search-09": {
+    "props": {
+      "blockClass": "category-section02-image",
+      "src": "https://dummyimage.com/130x64/a8a8a8/ffffff.jpg",
+      "link": {
+        "url": "#"
+      }
+    }
+  }
+}

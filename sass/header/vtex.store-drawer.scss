@@ -1,0 +1,22 @@
+.openIconContainer {
+  .menuIcon {
+    width: 16px;
+    overflow: visible;
+  }
+}
+
+.drawer--drawer-desktop {
+  background: none;
+  .drawerContent--drawer-desktop {
+    padding: 12px 0 24px;
+    background-color: #fff;
+  }
+}
+
+.drawerContent--drawer-desktop {
+  height: 100vh;
+}
+
+.drawerContent--drawer-mobile {
+  height: 100vh;
+}

@@ -1,0 +1,125 @@
+.paragraph {
+  &--paymentMethodText {
+    margin: 0 24px 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111;
+
+    @media screen and (max-width: 768px) {
+      margin: 0 auto;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+  &--upperFooterSubtitle {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #111;
+
+    @media screen and (max-width: 768px) {
+      margin: 0;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &--footerMenuTitle {
+    font-size: 1rem;
+    margin: 0 0 32px;
+    font-weight: 400;
+    color: #111;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &--middleFooterCol4Title {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &--middleFooterSubtitle {
+    margin: 12px 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    line-height: 18px;
+    max-width: 215.16px;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &--newsSubTitle {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+    color: #111;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &--aiwaInfoOne {
+    margin: 0 0 4px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  &--aiwaInfoTwo {
+    margin: 0;
+    font-size: 12px;
+    line-height: 16px;
+    color: #999;
+    font-weight: 400;
+
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &--bottomFooterText {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-right: 12px;
+  }
+}
+
+.heading {
+  &--upperFooterTitle {
+    color: #111;
+    font-size: 40px;
+    font-weight: 300;
+
+    @media screen and (max-width: 768px) {
+      margin: 0;
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+
+  &--newsTitle {
+    font-size: 40px;
+    margin: 0 0 8px;
+    font-weight: 300;
+    color: #111;
+    line-height: 48px;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+}

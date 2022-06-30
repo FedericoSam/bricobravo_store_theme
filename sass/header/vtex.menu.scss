@@ -1,0 +1,91 @@
+.menuContainer {
+  .menuItem {
+    .styledLinkContainer {
+      padding: 0;
+
+      &--drawer-menu-item {
+        margin: 0;
+      }
+
+      .styledLinkContent--menu-item,
+      .styledLinkContent--drawer-menu-item {
+        padding: 0;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 24px;
+        color: #111;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #e30613;
+        }
+      }
+      .styledLinkContent--drawer-menu-item {
+        margin: 0.5rem 0;
+      }
+    }
+
+    &--has-submenu {
+      &--isClosed {
+        .styledLinkContainer {
+          position: relative;
+          &::after {
+            content: '';
+            width: 6px;
+            height: 3px;
+            display: block;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            right: -10px;
+            top: 50%;
+            transform: translateY(-50%) rotate(0);
+            transition: transform 0.3s ease;
+            background-image: url("data:image/svg+xml,%3Csvg width='8' height='6' viewBox='0 0 8 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.00012 1.5L4.00012 4.5L7.00012 1.5' stroke='%23111111' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+          }
+        }
+      }
+
+      &--isOpen {
+        .styledLinkContainer {
+          position: relative;
+          &::after {
+            content: '';
+            width: 6px;
+            height: 3px;
+            display: block;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            right: -10px;
+            top: 50%;
+            transition: transform 0.3s ease;
+            transform: translateY(-50%) rotate(180deg);
+            background-image: url("data:image/svg+xml,%3Csvg width='8' height='6' viewBox='0 0 8 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.00012 1.5L4.00012 4.5L7.00012 1.5' stroke='%23E30613' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+          }
+
+          .styledLinkContent--has-submenu {
+            color: #e30613;
+          }
+        }
+      }
+    }
+
+    .submenuContainer {
+      left: 0;
+      width: 100%;
+      position: absolute;
+
+      .submenuWrapper {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.menuContainerNav--header-drawer-menu {
+  width: 100%;
+  padding: 0 24px;
+}
