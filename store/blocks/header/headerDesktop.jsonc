@@ -6,7 +6,10 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#header-desktop"]
+    "children": [
+      "flex-layout.row#header-desktop", 
+      "flex-layout.row#header-categories"
+    ]
   },
   "flex-layout.row#header-desktop": {
     "props": {
@@ -18,28 +21,10 @@
       "blockClass": "header-desktop"
     },
     "children": [
-      "flex-layout.col#header-drawer",
       "flex-layout.col#header-logo",
-      "flex-layout.col#header-category-menu",
       "flex-layout.col#searchBar",
-      "flex-layout.col#header-institutional-link",
-      "flex-layout.col#header-minicart"
+      "flex-layout.col#header-icons"
     ]
-  },
-
-  "flex-layout.col#header-drawer": {
-    "children": ["drawer#menu-desktop"],
-    "props": {
-      "verticalAlign": "middle"
-    }
-  },
-
-  "drawer#menu-desktop": {
-    "children": ["menu#drawer-desktop"],
-    "props": {
-      "blockClass": "drawer-desktop",
-      "maxWidth": 368
-    }
   },
 
   "flex-layout.col#header-logo": {
@@ -63,239 +48,46 @@
     "title": "Logotipo Header"
   },
 
-  "flex-layout.col#header-category-menu": {
-    "props": {
-      "verticalAlign": "middle",
-      "horizontalAlign": "center",
-      "blockClass": "categoryMenu"
-    },
-    "children": ["vtex.menu@2.x:menu#header-category-menu"],
-    "title": "Menu de categorias desktop"
-  },
 
-  "vtex.menu@2.x:menu#header-category-menu": {
+  "flex-layout.col#searchBar": {
     "children": [
-      "menu-item#category-1",
-      "menu-item#category-2",
-      "menu-item#category-3",
-      "menu-item#category-4"
-    ],
-    "props": {
-      "orientation": "horizontal",
-      "blockClass": "category-menu",
-      "itemProps": {
-        "activeClassName": "active"
-      }
-    }
-  },
-
-  "menu-item#category-1": {
-    "props": {
-      "type": "custom",
-      "blockClass": ["header-category-menu", "menu-item"],
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": true,
-        "tagTitle": "TV",
-        "text": "TV"
-      }
-    }
-  },
-  "menu-item#category-2": {
-    "props": {
-      "type": "custom",
-      "blockClass": ["header-category-menu", "menu-item"],
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": true,
-        "tagTitle": "Fones de Ouvido",
-        "text": "Fones de Ouvido"
-      }
-    }
-  },
-  "menu-item#category-3": {
-    "props": {
-      "type": "custom",
-      "blockClass": ["header-category-menu", "menu-item", "has-submenu"],
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": true,
-        "tagTitle": "Áudio",
-        "text": "Áudio"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu#submenu-category-3"]
-  },
-
-  "vtex.menu@2.x:submenu#submenu-category-3": {
-    "props": {
-      "width": "equal"
-    },
-    "children": ["flex-layout.row#submenu-category-3"]
-  },
-
-  "flex-layout.row#submenu-category-3": {
-    "children": ["flex-layout.col#submenu-category-3"],
-    "props": {
-      "blockClass": "submenu-category-3"
-    }
-  },
-
-  "flex-layout.col#submenu-category-3": {
-    "children": [
-      "flex-layout.row#submenu-category-title",
-      "flex-layout.row#submenu-category-items",
-      "flex-layout.row#submenu-category-cta"
+      "drawer#menu-desktop",
+      "search-bar#desktop"
     ]
   },
 
-  "flex-layout.row#submenu-category-title": {
-    "children": ["rich-text#submenu-category-title"],
-    "props": {
-      "blockClass": "submenu-category-title"
-    }
-  },
-
-  "rich-text#submenu-category-title": {
-    "props": {
-      "text": "Explore Áudio por categoria",
-      "blockClass": "submenu-category-title"
-    }
-  },
-
-  "flex-layout.row#submenu-category-items": {
+  "flex-layout.col#header-icons": {
     "children": [
-      "image#submenu-category-item-01",
-      "image#submenu-category-item-02",
-      "image#submenu-category-item-03",
-      "image#submenu-category-item-04",
-      "image#submenu-category-item-05"
+      "login",
+      "link#wishlist",
+      "minicart.v2"
     ],
     "props": {
-      "blockClass": "submenu-category-items",
-      "preventHorizontalStretch": true
-    }
-  },
-
-  "image#submenu-category-item-01": {
-    "props": {
-      "src": "assets/images/menu-audio-1.jpg",
-      "link": {
-        "newTab": false,
-        "url": "/"
-      },
-      "blockClass": "menu-category-item"
-    }
-  },
-
-  "image#submenu-category-item-02": {
-    "props": {
-      "src": "assets/images/menu-audio-2.jpg",
-      "link": {
-        "newTab": false,
-        "url": "/"
-      },
-      "blockClass": "menu-category-item"
-    }
-  },
-
-  "image#submenu-category-item-03": {
-    "props": {
-      "src": "assets/images/menu-audio-3.jpg",
-      "link": {
-        "newTab": false,
-        "url": "/"
-      },
-      "blockClass": "menu-category-item"
-    }
-  },
-
-  "image#submenu-category-item-04": {
-    "props": {
-      "src": "assets/images/menu-audio-4.jpg",
-      "link": {
-        "newTab": false,
-        "url": "/"
-      },
-      "blockClass": "menu-category-item"
-    }
-  },
-
-  "image#submenu-category-item-05": {
-    "props": {
-      "src": "assets/images/menu-audio.jpg",
-      "link": {
-        "newTab": false,
-        "url": "/"
-      },
-      "blockClass": "menu-category-item"
-    }
-  },
-
-  "flex-layout.row#submenu-category-cta": {
-    "children": ["link#submenu-category-cta"],
-    "props": {
-      "blockClass": "submenu-category-cta",
-      "horizontalAlign": "center"
-    }
-  },
-
-  "link#submenu-category-cta": {
-    "props": {
-      "label": "Ver tudo em Áudio",
-      "link": "#",
-      "blockClass": "submenu-category-cta"
-    }
-  },
-
-  "menu-item#category-4": {
-    "props": {
-      "type": "custom",
-      "blockClass": ["header-category-menu", "menu-item"],
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": true,
-        "tagTitle": "Som Automotivo",
-        "text": "Som Automotivo"
-      }
-    }
-  },
-
-  "flex-layout.col#searchBar": {
-    "children": ["search-bar#desktop"]
-  },
-
-  "flex-layout.col#header-institutional-link": {
-    "children": ["link#header-institutional-link"],
-    "props": {
       "verticalAlign": "middle"
     }
   },
-
-  "link#header-institutional-link": {
+  "login": {
+    "blocks": ["icon-profile#profile"],
     "props": {
-      "href": "#",
-      "label": "Conheça a Aiwa",
-      "blockClass": "header-institutional-link"
+      "emailPlaceholder": "E-mail",
+      "passwordPlaceholder": "Senha",
+      "showPasswordVerificationIntoTooltip": true,
+      "showIconProfile": true,
+      "iconLabel": "Minha conta"
     }
   },
-
-  "flex-layout.col#header-minicart": {
-    "children": ["minicart.v2"],
+  "link#wishlist": {
     "props": {
-      "verticalAlign": "middle"
+      "href": "/account/#/wishlist",
+      "label": "Favoritos",
+      "displayMode": "button",
+      "blockClass": "wishlist-header"
+    }
+  },
+  "flex-layout.row#header-categories": {
+    "children": [],
+    "props": {
+      "blockClass": "header-categories"
     }
   }
 }
