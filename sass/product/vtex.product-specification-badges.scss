@@ -16,7 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid var(--lightgrey-lighter);
+    border: 2px solid $lightgrey-lighter;
     border-radius: 10px;
     padding: 4rem 5rem;
     align-self: center;
@@ -31,7 +31,7 @@
     }
     
     .badgeText--productPage-specificationsBenefits {
-      color: var(--primary-default);
+      color: $primary-default;
       font-size: 30px;
       font-weight: 300;
     }
@@ -41,7 +41,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid var(--lightgrey-lighter);
+    border: 2px solid $lightgrey-lighter;
     border-radius: 10px;
     align-self: center;
     padding: 4rem 5rem;
@@ -58,7 +58,7 @@
     }
     
     .badgeText--productPage-specificationsBenefits {
-      color: var(--primary-default);
+      color: $primary-default;
       font-size: 30px;
       font-weight: 300;
     }
@@ -68,7 +68,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid var(--lightgrey-lighter);
+    border: 2px solid $lightgrey-lighter;
     border-radius: 10px;
     padding: 4rem 5rem;
     align-self: center;
@@ -83,7 +83,7 @@
     }
 
     .badgeText--productPage-specificationsBenefits {
-      color: var(--primary-default);
+      color: $primary-default;
       font-size: 30px;
       font-weight: 300;
     }
@@ -93,7 +93,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid var(--lightgrey-lighter);
+    border: 2px solid $lightgrey-lighter;
     border-radius: 10px;
     padding: 4rem 5rem;
     align-self: center;
@@ -108,14 +108,14 @@
     }
 
     .badgeText--productPage-specificationsBenefits {
-      color: var(--primary-default);
+      color: $primary-default;
       font-size: 30px;
       font-weight: 300;
     }
   }
   .badgeContainer--tamanho:nth-child(even) {
     position: relative;
-    color: var(--darkgrey-medium);
+    color: $darkgrey-medium;
     font-size: 30px;
     max-width: 1px;
     right: 11rem;
@@ -128,7 +128,7 @@
   }
   .badgeContainer--resolucao-maxima:nth-child(even) {
     position: relative;
-    color: var(--darkgrey-medium);
+    color: $darkgrey-medium;
     font-size: 30px;
     max-width: 1px;
     white-space: nowrap;
@@ -142,7 +142,7 @@
   }
   .badgeContainer--hdmi:nth-child(even) {
     position: relative;
-    color: var(--darkgrey-medium);
+    color: $darkgrey-medium;
     font-size: 20px;
     max-width: 1px;
     right: 9.5rem;
@@ -155,7 +155,7 @@
   }
   .badgeContainer--usb:nth-child(even) {
     position: relative;
-    color: var(--darkgrey-medium);
+    color: $darkgrey-medium;
     font-size: 2rem;
     max-width: 1px;
     right: 9rem;

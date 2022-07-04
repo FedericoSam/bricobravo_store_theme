@@ -1,12 +1,14 @@
+@import '../variables';
+
 .link {
   &--upperFooterCTA {
     text-align: center;
-    border: 2px solid var(--secondary-default);
+    border: 2px solid $secondary-default;
     border-radius: 8px;
     max-width: 217px;
     margin: 0 auto;
     padding: 14px 45px;
-    color: var(--secondary-default);
+    color: $secondary-default;
     font-weight: 500;
     text-decoration: none;
     font-size: 18px;
@@ -15,7 +17,7 @@
 
     &:hover {
       color: #fff;
-      background-color: var(--secondary-default);
+      background-color: $secondary-default;
     }
 
     @media screen and (max-width: 768px) {
@@ -68,7 +70,7 @@
 
     &:hover {
       color: #fff;
-      background-color: var(--secondary-default);
+      background-color: $secondary-default;
     }
 
     @media screen and (max-width: 768px) {

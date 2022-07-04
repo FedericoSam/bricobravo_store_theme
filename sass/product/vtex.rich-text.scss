@@ -2,13 +2,13 @@
 @import '../_media-queries.scss';
 
 .paragraph--shippingMenuText {
-  background-color: var(--white) !important;
+  background-color: $white;
   color: black !important;
 }
 
 .paragraph--pdp-galeryTitle {
   background-color: transparent !important;
-  color: var(--primary-dark) !important;
+  color: $primary-dark;
   font-size: 30px;
   font-weight: 300;
   white-space: nowrap;

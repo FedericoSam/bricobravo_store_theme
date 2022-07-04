@@ -11,13 +11,13 @@
   transition: all 0.3s ease;
   .clearLink {
     margin-bottom: 0.7rem;
-    background: var(--white);
+    background: $white;
     border-radius: 16px;
     padding: 24px 24px 36px;
-    border: 1px solid var(--white);
+    border: 1px solid $white;
     transition: all 0.3s ease;
     &:hover {
-      border: 1px solid var(--primary-light);
+      border: 1px solid $primary-light;
       transition: all 0.3s ease;
     }
   }
@@ -55,7 +55,7 @@
   display: block;
   font-size: 0.72rem;
   font-weight: 500;
-  color: var(--darkgrey-light);
+  color: $darkgrey-light;
   text-align: left;
   margin-top: 3px;
 }
@@ -67,11 +67,11 @@
 :global(.vtex-flex-layout-0-x-flexCol--buyButtonContainer)
   :global(.vtex-button) {
   border: none;
-  background-color: var(--primary-default);
+  background-color: $primary-default;
   height: 40px;
   border-radius: 4px;
   font-weight: 700;
-  font-size: var(--paragraph-small-bold);
+  font-size: $paragraph-small-bold;
 }
 
 .priceContainer {
@@ -360,7 +360,7 @@
   flex-direction: column;
   min-height: 43px;
   justify-content: flex-end;
-  color: var(--secondary-dark);
+  color: $secondary-dark;
   font-size: 18px;
   font-weight: 700;
 }
@@ -476,7 +476,7 @@
 }
 
 .element--summaryComplete .price_sellingPrice {
-  font-size: var(--price--to);
+  font-size: $price-to;
 }
 
 .element--summaryComplete .imageWrapper {
@@ -506,10 +506,10 @@
   }
 
   :global(.vtex-product-price-1-x-sellingPrice) {
-    font-size: var(--price-to);
+    font-size: $price-to;
     font-weight: 600;
     line-height: 1.25rem;
-    color: var(--darkgrey-dark);
+    color: $darkgrey-dark;
   }
 
   @include mobile {
