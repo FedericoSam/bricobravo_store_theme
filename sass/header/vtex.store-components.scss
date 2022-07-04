@@ -1,6 +1,8 @@
+@import '../_variables.scss';
+
 .autoCompleteOuterContainer--desktop-searchbar {
-  border: 1px solid black;
-  border-radius: 0 5px 5px 0;
+  border: 1.5px solid $blue-dark;
+  border-radius: 0 4px 4px 0;
   border-left: 0;
   :global(.vtex-input-prefix__group) {
     border: none;
