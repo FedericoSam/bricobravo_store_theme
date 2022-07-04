@@ -1,4 +1,5 @@
 @import '../_media-queries.scss';
+@import '../variables';
 
 .flexRow {
   &--home-page-main-slider {
@@ -19,7 +20,7 @@
 
 
   &--home-section01 {
-    background-color: var(--primary-default);
+    background-color: $primary-default;
     background-image: url('assets/images/section01-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;

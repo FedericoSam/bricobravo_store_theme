@@ -4,8 +4,8 @@
 .lowStockText,
 .lowStockHighlight,
 .highStockText {
-  font-size: var(--paragraph--small--medium);
-  color: var(--system--alert-default);
+  font-size: $paragraph-small-medium;
+  color: $system-alert-default;
   line-height: 1rem;
   font-weight: 600;
 }
