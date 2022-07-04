@@ -19,14 +19,6 @@
       margin: 0 4px;
     }
   }
-  &--home-section-mosaic-image-main {
-    margin: 8px;
-    border-radius: 16px;
-
-    @media screen and (max-width: 768px) {
-      margin: 0 auto;
-    }
-  }
 
   &--home-section-promotional-banner {
     width: 100%;
@@ -39,45 +31,5 @@
   &--mobile-home-section02-image {
     height: 48px;
     margin: auto 1rem;
-  }
-  &--home-section-mosaic-image {
-    padding: 0 40px;
-    @media screen and (max-width: 768px) {
-      padding: 0 20px;
-      height: 86px;
-    }
-
-  }
-}
-
-.imageElementLink {
-  &--home-section-mosaic-image {
-    margin: 5px 8px;
-
-    @media screen and (max-width: 768px) {
-      margin: 2px 4px;
-    }
-  }
-
-  &--home-section-mosaic-image-main {
-    margin: 8px;
-    border-radius: 16px;
-
-    @media screen and (max-width: 768px) {
-      margin: 0 auto;
-    }
-  }
-  .imageElement {
-    &--home-section-mosaic-image {
-      border-radius: 16px;
-      border: 2px solid transparent;
-      transition: border-color 0.3s ease;
-
-      &:hover {
-        overflow: hidden;
-        border-radius: 16px;
-        border-color: #e30613;
-      }
-    }
   }
 }

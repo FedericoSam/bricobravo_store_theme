@@ -2,11 +2,7 @@
   "store.home": {
     "blocks": [
       "flex-layout.row#home-main-slider",
-      "flex-layout.row#home-section01",
       "flex-layout.row#home-section02",
-      "flex-layout.row#home-section03",
-      "flex-layout.row#home-section04",
-      "flex-layout.row#home-section05",
       "flex-layout.row#home-section06",
       "flex-layout.row#home-section07",
       "flex-layout.row#upperFooterDesktop"
@@ -21,7 +17,10 @@
   },
 
   "flex-layout.col#home-main-slider": {
-    "children": ["list-context.image-list#home-main-slider"]
+    "children": ["list-context.image-list#home-main-slider"],
+    "props": {
+      "blockClass": "home-main-slider-col"
+    }
   },
 
   "list-context.image-list#home-main-slider": {
@@ -39,7 +38,8 @@
           "mobileImage": "https://dummyimage.com/360x508/000000/fff.jpg&text=Banner+02",
           "description": "Banner 02"
         }
-      ]
+      ],
+      "blockClass": "home-main-slider"
     }
   },
   "slider-layout#home-main-slider-images": {
@@ -56,74 +56,6 @@
         "timeout": 2000,
         "stopOnHover": true
       }
-    }
-  },
-
-  "flex-layout.row#home-section01": {
-    "children": ["flex-layout.col#home-section01"],
-    "props": {
-      "blockClass": "home-section01"
-    }
-  },
-
-  "flex-layout.col#home-section01": {
-    "children": [
-      "flex-layout.row#home-section01-first",
-      "flex-layout.row#home-section01-second",
-      "flex-layout.row#home-section01-third"
-    ]
-  },
-
-  "flex-layout.row#home-section01-first": {
-    "children": ["flex-layout.col#header-logo"]
-  },
-
-  "flex-layout.row#home-section01-second": {
-    "children": [
-      "flex-layout.col#home-section01-second-col01",
-      "flex-layout.col#home-section01-second-col02"
-    ]
-  },
-
-  "flex-layout.col#home-section01-second-col01": {
-    "children": ["rich-text#home-section01-second-col01"],
-    "props": {
-      "width": "58%",
-      "blockClass": "home-section01-second-col",
-      "preventVerticalStretch": false
-    }
-  },
-
-  "rich-text#home-section01-second-col01": {
-    "props": {
-      "blockClass": "first-section-title",
-      "text": "## Fabricamos produtos de áudio e vídeo com máxima qualidade desde 1951."
-    }
-  },
-  "flex-layout.col#home-section01-second-col02": {
-    "children": ["rich-text#home-section01-second-col02"],
-    "props": {
-      "blockClass": "home-section01-second-col",
-      "preventVerticalStretch": false
-    }
-  },
-
-  "rich-text#home-section01-second-col02": {
-    "props": {
-      "blockClass": "first-section-subtitle",
-      "text": "**Aiwa** é uma das mais **tradicionais e lembradas marcas** de eletroeletrônicos do **mundo.**"
-    }
-  },
-
-  "flex-layout.row#home-section01-third": {
-    "children": [
-      "flex-layout.col#home-section-video01",
-      "flex-layout.col#home-section-video02",
-      "flex-layout.col#home-section-video03"
-    ],
-    "props": {
-      "preventHorizontalStretch": true,
-      "blockClass": "home-section01-third"
     }
   },
 
@@ -723,474 +655,11 @@
     }
   },
 
-  // "image#mobile-home-section02-showcase-02": {
-  //   "props": {
-  //     "blockClass": "home-section02-image",
-  //     "src": "https://dummyimage.com/130x64/a8a8a8/ffffff.jpg",
-  //     "link": {
-  //       "url": "#"
-  //     }
-  //   }
-  // },
-  // "image#mobile-home-section02-showcase-03": {
-  //   "props": {
-  //     "blockClass": "home-section02-image",
-  //     "src": "https://dummyimage.com/130x64/a8a8a8/ffffff.jpg",
-  //     "link": {
-  //       "url": "#"
-  //     }
-  //   }
-  // },
-  // "image#mobile-home-section02-showcase-04": {
-  //   "props": {
-  //     "blockClass": "home-section02-image",
-  //     "src": "https://dummyimage.com/130x64/a8a8a8/ffffff.jpg",
-  //     "link": {
-  //       "url": "#"
-  //     }
-  //   }
-  // },
-  // "image#mobile-home-section02-showcase-05": {
-  //   "props": {
-  //     "blockClass": "home-section02-image",
-  //     "src": "https://dummyimage.com/130x64/a8a8a8/ffffff.jpg",
-  //     "link": {
-  //       "url": "#"
-  //     }
-  //   }
-  // },
-  // "image#mobile-home-section02-showcase-06": {
-  //   "props": {
-  //     "blockClass": "home-section02-image",
-  //     "src": "https://dummyimage.com/130x64/a8a8a8/ffffff.jpg",
-  //     "link": {
-  //       "url": "#"
-  //     }
-  //   }
-  // },
-
   "link#home-section02-cta": {
     "props": {
       "link": "#",
       "label": "Ver todos os tamanhos",
       "blockClass": "home-button-default"
-    }
-  },
-
-  "flex-layout.row#home-section03": {
-    "children": ["flex-layout.col#home-section03"],
-    "props": {
-      "blockClass": "home-section03"
-    }
-  },
-
-  "flex-layout.col#home-section03": {
-    "children": [
-      "rich-text#home-section03-title",
-      "flex-layout.row#home-section03-showcase"
-    ]
-  },
-
-  "rich-text#home-section03-title": {
-    "props": {
-      "blockClass": "home-section-title",
-      "text": "## Smart TVs para todas as ocasiões"
-    }
-  },
-
-  "flex-layout.row#home-section03-showcase": {
-    "children": [
-      "flex-layout.col#home-section03-showcase01",
-      "flex-layout.col#home-section03-showcase02",
-      "flex-layout.col#home-section03-showcase03"
-    ],
-    "props": {
-      "preventHorizontalStretch": true,
-      "horizontalAlign": "center",
-      "blockClass": "home-section03-showcase"
-    }
-  },
-
-  "flex-layout.col#home-section03-showcase01": {
-    "children": [
-      "image#home-section03-showcase-01",
-      "rich-text#home-section03-showcase-01",
-      "responsive-layout.desktop#home-section03-showcase-01-cta",
-      "responsive-layout.mobile#home-section03-showcase-01-cta"
-    ],
-    "props": {
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true
-    }
-  },
-
-  "image#home-section03-showcase-01": {
-    "props": {
-      "src": "assets/images/product-showcase-image.png"
-    }
-  },
-
-  "rich-text#home-section03-showcase-01": {
-    "props": {
-      "blockClass": "home-section03-showcase",
-      "text": "Experiência de cinema\nna sala de casa"
-    }
-  },
-
-  "responsive-layout.desktop#home-section03-showcase-01-cta": {
-    "children": ["link#home-section03-showcase-01"]
-  },
-
-  "responsive-layout.mobile#home-section03-showcase-01-cta": {
-    "children": ["link#mobile-home-section03-showcase-01"]
-  },
-
-  "link#home-section03-showcase-01": {
-    "props": {
-      "blockClass": "home-button-default-02",
-      "label": "SmartTVs com até 65”",
-      "url": "#"
-    }
-  },
-
-  "link#mobile-home-section03-showcase-01": {
-    "props": {
-      "blockClass": "home-button-default-02",
-      "label": "Comprar SmartTVs com até 65",
-      "url": "#"
-    }
-  },
-
-  "flex-layout.col#home-section03-showcase02": {
-    "children": [
-      "image#home-section03-showcase-02",
-      "rich-text#home-section03-showcase-02",
-      "responsive-layout.desktop#home-section03-showcase-02-cta",
-      "responsive-layout.mobile#home-section03-showcase-02-cta"
-    ],
-    "props": {
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true
-    }
-  },
-
-  "image#home-section03-showcase-02": {
-    "props": {
-      "src": "assets/images/product-showcase-image.png"
-    }
-  },
-
-  "rich-text#home-section03-showcase-02": {
-    "props": {
-      "blockClass": "home-section03-showcase",
-      "text": "Games com\nmuuuuito mais FPS"
-    }
-  },
-
-  "responsive-layout.desktop#home-section03-showcase-02-cta": {
-    "children": ["link#home-section03-showcase-02"]
-  },
-
-  "responsive-layout.mobile#home-section03-showcase-02-cta": {
-    "children": ["link#mobile-home-section03-showcase-03"]
-  },
-
-  "link#home-section03-showcase-02": {
-    "props": {
-      "blockClass": "home-button-default-02",
-      "label": "Veja as melhores TVs para Games",
-      "url": "#"
-    }
-  },
-
-  "link#mobile-home-section03-showcase-02": {
-    "props": {
-      "blockClass": "home-button-default-02",
-      "label": "Ver TVs para Games",
-      "url": "#"
-    }
-  },
-
-  "flex-layout.col#home-section03-showcase03": {
-    "children": [
-      "image#home-section03-showcase-03",
-      "rich-text#home-section03-showcase-03",
-      "responsive-layout.desktop#home-section03-showcase-03-cta",
-      "responsive-layout.mobile#home-section03-showcase-03-cta"
-    ],
-    "props": {
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true
-    }
-  },
-
-  "image#home-section03-showcase-03": {
-    "props": {
-      "src": "assets/images/product-showcase-image.png"
-    }
-  },
-
-  "rich-text#home-section03-showcase-03": {
-    "props": {
-      "blockClass": "home-section03-showcase",
-      "text": "Não perca nenhum\nlance do seu time"
-    }
-  },
-
-  "responsive-layout.desktop#home-section03-showcase-03-cta": {
-    "children": ["link#home-section03-showcase-03"]
-  },
-  "responsive-layout.mobile#home-section03-showcase-03-cta": {
-    "children": ["link#mobile-home-section03-showcase-03"]
-  },
-
-  "link#home-section03-showcase-03": {
-    "props": {
-      "blockClass": "home-button-default-02",
-      "label": "Compre e caia na torcida!",
-      "url": "#"
-    }
-  },
-
-  "link#mobile-home-section03-showcase-03": {
-    "props": {
-      "blockClass": "home-button-default-02",
-      "label": "Compre e caia na torcida!",
-      "url": "#"
-    }
-  },
-
-  "flex-layout.row#home-section04": {
-    "children": ["flex-layout.col#home-section04"]
-  },
-
-  "flex-layout.col#home-section04": {
-    "children": [
-      "rich-text#home-section04-title",
-      "flex-layout.row#home-section-04-mosaic"
-    ]
-  },
-
-  "rich-text#home-section04-title": {
-    "props": {
-      "blockClass": "home-section04-title",
-      "text": "## Pra você ouvir no máximo"
-    }
-  },
-
-  "flex-layout.row#home-section-04-mosaic": {
-    "children": [
-      "flex-layout.col#home-section-04-mosaic-first",
-      "flex-layout.col#home-section-04-mosaic-second"
-    ],
-    "props": {
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "blockClass": "home-section04-mosaic"
-    }
-  },
-
-  "flex-layout.col#home-section-04-mosaic-first": {
-    "children": ["image#home-section-04-mosaic-first"],
-    "props": {
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "verticalAlign": "middle",
-      "blockClass": "home-section-04-mosaic-first"
-    }
-  },
-
-  "image#home-section-04-mosaic-first": {
-    "props": {
-      "src": "https://dummyimage.com/680x656/000000/fff.jpg&text=mosaic",
-      "blockClass": "home-section-mosaic-image-main",
-      "link": {
-        "url": "#"
-      }
-    }
-  },
-
-  "flex-layout.col#home-section-04-mosaic-second": {
-    "children": [
-      "flex-layout.row#home-section-04-mosaic-second-01",
-      "flex-layout.row#home-section-04-mosaic-second-02"
-    ],
-    "props": {
-      "preventVerticalStretch": true,
-      "verticalAlign": "middle",
-      "fullWidth": true,
-      "blockClass": "home-section04-mosaic-second"
-    }
-  },
-  "flex-layout.row#home-section-04-mosaic-second-01": {
-    "children": [
-      "flex-layout.col#home-section-04-mosaic-second-01",
-      "flex-layout.col#home-section-04-mosaic-second-02"
-    ],
-    "props": {
-      "blockClass": "mosaic-second-row"
-    }
-  },
-  "flex-layout.col#home-section-04-mosaic-second-01": {
-    "children": [
-      "image#home-section-second-01--image",
-      "rich-text#home-section-second-01--title"
-    ],
-    "props": {
-      "fullWidth": true,
-      "blockClass": "mosaic-second-row-item",
-      "link": {
-        "url": "#"
-      }
-    }
-  },
-  "image#home-section-second-01--image": {
-    "props": {
-      "src": "assets/images/mosaic-1.png",
-      "maxHeight": 176,
-      "blockClass": "home-section-mosaic-image"
-    }
-  },
-  "rich-text#home-section-second-01--title": {
-    "props": {
-      "blockClass": "home-section-mosaic-title",
-      "text": "Speakers"
-    }
-  },
-
-  "flex-layout.col#home-section-04-mosaic-second-02": {
-    "children": [
-      "image#home-section-second-02--image",
-      "rich-text#home-section-second-02--title"
-    ],
-    "props": {
-      "fullWidth": true,
-      "blockClass": "mosaic-second-row-item",
-      "link": {
-        "url": "#"
-      }
-    }
-  },
-  "image#home-section-second-02--image": {
-    "props": {
-      "src": "assets/images/mosaic-2.png",
-      "maxHeight": 176,
-      "blockClass": "home-section-mosaic-image"
-    }
-  },
-  "rich-text#home-section-second-02--title": {
-    "props": {
-      "blockClass": "home-section-mosaic-title",
-      "text": "Caixa de Som"
-    }
-  },
-  "flex-layout.row#home-section-04-mosaic-second-02": {
-    "children": [
-      "flex-layout.col#home-section-04-mosaic-second-03",
-      "flex-layout.col#home-section-04-mosaic-second-04"
-    ],
-    "props": {
-      "blockClass": "mosaic-second-row"
-    }
-  },
-  "flex-layout.col#home-section-04-mosaic-second-03": {
-    "children": [
-      "image#home-section-second-03--image",
-      "rich-text#home-section-second-03--title"
-    ],
-    "props": {
-      "fullWidth": true,
-      "blockClass": "mosaic-second-row-item",
-      "link": {
-        "url": "#"
-      }
-    }
-  },
-  "image#home-section-second-03--image": {
-    "props": {
-      "src": "assets/images/mosaic-3.png",
-      "maxHeight": 176,
-      "blockClass": "home-section-mosaic-image"
-    }
-  },
-  "rich-text#home-section-second-03--title": {
-    "props": {
-      "blockClass": "home-section-mosaic-title",
-      "text": "Tower Sound"
-    }
-  },
-
-  "flex-layout.col#home-section-04-mosaic-second-04": {
-    "children": [
-      "image#home-section-second-04--image",
-      "rich-text#home-section-second-04--title"
-    ],
-    "props": {
-      "fullWidth": true,
-      // "preventHorizontalStretch": true,
-      "blockClass": "mosaic-second-row-item",
-      "link": {
-        "url": "#"
-      }
-    }
-  },
-  "image#home-section-second-04--image": {
-    "props": {
-      "src": "assets/images/mosaic-4.png",
-      "maxHeight": 176,
-      "blockClass": "home-section-mosaic-image"
-    }
-  },
-  "rich-text#home-section-second-04--title": {
-    "props": {
-      "blockClass": "home-section-mosaic-title",
-      "text": "Som Automotivo"
-    }
-  },
-
-  "flex-layout.row#home-section05": {
-    "children": ["flex-layout.col#home-section05"],
-    "props": {
-      "blockClass": "home-section05-promotional-banner"
-    }
-  },
-
-  "flex-layout.col#home-section05": {
-    "children": [
-      "responsive-layout.desktop#home-section05",
-      "responsive-layout.mobile#home-section05"
-    ],
-    "props": {
-      "fullWidth": true
-    }
-  },
-
-  "responsive-layout.desktop#home-section05": {
-    "children": ["image#home-section05-promotional-banner"]
-  },
-
-  "responsive-layout.mobile#home-section05": {
-    "children": ["image#mobile-home-section05-promotional-banner"]
-  },
-
-  "image#home-section05-promotional-banner": {
-    "props": {
-      "src": "assets/images/home-promotional-banner.jpg",
-      "blockClass": "home-section-promotional-banner",
-      "link": {
-        "url": "#"
-      }
-    }
-  },
-
-  "image#mobile-home-section05-promotional-banner": {
-    "props": {
-      "src": "assets/images/mobile-home-promotional-banner.png",
-      "blockClass": "home-section-promotional-banner",
-      "link": {
-        "url": "#"
-      }
     }
   },
 
@@ -1216,54 +685,10 @@
   },
 
   "tab-layout#home-section06-tabs": {
-    "children": ["tab-list#home", "tab-content#home"],
+    "children": ["tab-content#home"],
     "props": {
       "blockClass": "shelf-tab-layout",
       "defaultActiveTabId": "seeAll"
-    }
-  },
-  "tab-list#home": {
-    "children": [
-      "tab-list.item#seeAll",
-      "tab-list.item#tvs",
-      "tab-list.item#headphones",
-      "tab-list.item#audio",
-      "tab-list.item#automotive"
-    ]
-  },
-  "tab-list.item#seeAll": {
-    "props": {
-      "tabId": "seeAll",
-      "label": "Todos",
-      "defaultActiveTab": true
-    }
-  },
-  "tab-list.item#tvs": {
-    "props": {
-      "tabId": "tvs",
-      "label": "TV’s",
-      "blockClass": "tvs"
-    }
-  },
-  "tab-list.item#headphones": {
-    "props": {
-      "tabId": "headphones",
-      "label": "Fones de Ouvido",
-      "blockClass": "headphones"
-    }
-  },
-  "tab-list.item#audio": {
-    "props": {
-      "tabId": "audio",
-      "label": "Áudio",
-      "blockClass": "audio"
-    }
-  },
-  "tab-list.item#automotive": {
-    "props": {
-      "tabId": "automotive",
-      "label": "Som Automotivo",
-      "blockClass": "automotive"
     }
   },
 
@@ -1274,7 +699,10 @@
       "tab-content.item#headphones",
       "tab-content.item#audio",
       "tab-content.item#automotive"
-    ]
+    ],
+    "props": {
+      "blockClass": "shelfContent"
+    }
   },
   "tab-content.item#seeAll": {
     "children": ["list-context.product-list#alsoView"],

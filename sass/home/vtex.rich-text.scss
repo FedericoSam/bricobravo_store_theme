@@ -1,5 +1,5 @@
 .container {
-  &--home-section-title,  &--home-section04-title {
+  &--home-section-title {
     justify-content: center;
   }
   .heading {
@@ -21,7 +21,7 @@
       }
     }
 
-    &--home-section-title, &--home-section04-title {
+    &--home-section-title {
       font-size: 40px;
       line-height: 48px;
       font-weight: 300;
@@ -33,13 +33,6 @@
         font-size: 32px;
         line-height: 40px;
         max-width: 328px;
-      }
-    }
-    &--home-section04-title{
-      @media screen and (max-width: 768px){
-        margin: 80px auto 32px;
-        border-top: 1px solid #ddd;
-        padding-top: 48px;
       }
     }
   }
@@ -65,26 +58,6 @@
         line-height: 24px;
         text-align: center;
         margin: 32px auto 40px;
-      }
-    }
-
-    &--home-section03-showcase {
-      margin: 40px auto 0;
-      font-size: 24px;
-      font-weight: 300;
-      line-height: 32px;
-      max-width: 352px;
-      text-align: center;
-      @media screen and (max-width: 768px) {
-        font-size: 20px;
-        line-height: 28px;
-      }
-    }
-    &--home-section-mosaic-title{
-      font-size: 20px;
-      color: #111;
-      @media screen and (max-width: 768px) {
-        font-size: 16px;
       }
     }
   }
