@@ -36,6 +36,9 @@
     }
   },
 
+  "flex-layout.col#header-drawer": {
+    "children": ["drawer#menu-desktop"]
+  },
   "disclosure-layout#pre-header-secondCol-search": {
     "children": [
       "disclosure-trigger#pre-header-secondCol-search",
@@ -119,5 +122,8 @@
       "label": "Som Automotivo",
       "blockClass": ["automotive", "mobile-menu-item"]
     }
+  },
+  "flex-layout.col#header-minicart": {
+    "children": ["minicart.v2"]
   }
 }

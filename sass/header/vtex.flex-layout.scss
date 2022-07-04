@@ -1,5 +1,5 @@
 .flexRow {
-  &--header-desktop {
+  &--header-desktop-upper {
     margin: 0 auto;
     max-width: 1376px;
 
@@ -42,6 +42,10 @@
           padding: 0 2rem;
         }
       }
+    }
+    .flexCol--header-containerIcons {
+      display: flex;
+      flex-direction: row;
     }
   }
 
@@ -88,7 +92,7 @@
 }
 
 .flexRowContent--minicart-footer {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .flexRowContent--productInfoNameMinicart {
@@ -102,7 +106,7 @@
     align-items: center;
     justify-content: center;
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
       display: flex;
       align-items: flex-start;
     }
@@ -159,4 +163,9 @@
   .flexRow--header-mobile-second-row {
     background: #f2f2f2;
   }
+}
+
+.flexCol--header-containerSearchBar {
+  flex-direction: row;
+  align-items: center;
 }

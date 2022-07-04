@@ -2242,9 +2242,9 @@ braces@^3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-"bricobravo.store-theme@http://bricobravo.vtexassets.com/_v/public/typings/v1/bricobravo.store-theme@1.0.0/public/@types/bricobravo.store-theme":
+"bricobravo.store-theme@https://bricobravotesteanderson--beightone.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@1.0.0+build1656700657/public/@types/bricobravo.store-theme":
   version "1.0.0"
-  resolved "http://bricobravo.vtexassets.com/_v/public/typings/v1/bricobravo.store-theme@1.0.0/public/@types/bricobravo.store-theme#a906dff0088ca3a4d1f74a86f8de53ab474e89e2"
+  resolved "https://bricobravotesteanderson--beightone.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@1.0.0+build1656700657/public/@types/bricobravo.store-theme#14424fce064f4766c710c22bf903c3114426cb53"
 
 browser-process-hrtime@^1.0.0:
   version "1.0.0"

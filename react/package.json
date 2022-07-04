@@ -30,7 +30,7 @@
     "@vtex/test-tools": "^3.4.1",
     "@vtex/tsconfig": "^0.6.0",
     "beightone.buy-together-marketplace": "http://beightone.vtexassets.com/_v/public/typings/v1/beightone.buy-together-marketplace@0.3.0/public/@types/beightone.buy-together-marketplace",
-    "bricobravo.store-theme": "http://bricobravo.vtexassets.com/_v/public/typings/v1/bricobravo.store-theme@1.0.0/public/@types/bricobravo.store-theme",
+    "bricobravo.store-theme": "https://bricobravotesteanderson--beightone.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@1.0.0+build1656700657/public/@types/bricobravo.store-theme",
     "eslint-config-vtex-react": "^8.2.1",
     "typescript": "3.9.7",
     "vtex.add-to-cart-button": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.28.0/public/@types/vtex.add-to-cart-button",

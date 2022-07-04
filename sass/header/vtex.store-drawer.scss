@@ -2,6 +2,12 @@
   .menuIcon {
     width: 16px;
     overflow: visible;
+
+    &::after {
+      content: "|";
+      font-size: 20px;
+      height: 30px;
+    }  
   }
 }
 

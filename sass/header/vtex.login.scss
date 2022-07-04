@@ -1,26 +1,12 @@
 .container {
   :global(.vtex-button) {
     padding: 0;
-
     align-items: flex-end;
     display: flex;
     font-weight: 300;
     font-size: 24px;
     line-height: 32px;
     position: relative;
-    width: 300px;
-
-    &::before {
-      content: 'Faça seu login';
-      color: #111111;
-      display: flex;
-      flex-direction: row;
-      left: -1%;
-      position: absolute;
-      top: 48%;
-      text-transform: initial;
-      width: 300px;
-    }
 
     &:hover {
       background: none;
@@ -29,17 +15,10 @@
 
   :global(.vtex-button__label) {
     padding: 0;
-    margin-bottom: 2rem;
   }
 
   .label {
-    padding: 0;
-    font-size: 24px;
-    font-weight: 300;
-    text-transform: capitalize;
-    @media screen and (max-width: 768px) {
-      display: block;
-    }
+    display: none;
   }
 
   .profile {
@@ -47,5 +26,9 @@
     font-size: 24px;
     font-weight: 300;
     text-transform: capitalize;
+  }
+  :global(.vtex-store-icons-0-x-profileIcon) {
+    width: 30px;
+    height: 30px;
   }
 }

@@ -12,85 +12,30 @@
     }
   }
 
-  &--submenu-category-cta {
-    font-size: 1rem;
-    max-width: 199px;
-    color: #fff;
-    font-weight: 600;
-    line-height: 24px;
-    text-align: center;
-    border-radius: 8px;
-    padding: 12px 25px;
-    text-decoration: none;
-    background-color: #e30613;
-    transition: background-color 0.3s ease;
-
+  &--wishlist-header {
+    background: none;
+    border: none;
+    text-transform: capitalize;
+  
     &:hover {
-      background-color: #bd000b;
+      background: none;
+      border: none;
     }
-  }
-
-  &--mobile-menu-item {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-    text-decoration: none;
-    color: #111;
-    margin-right: 18px;
-  }
-
-  &--tvs {
-    &::before {
-      display: block;
-      content: '';
-      width: 32px;
-      height: 32px;
-      background-image: url('assets/icons/tvs-icon-grey.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      margin-right: 8px;
-    }
-  }
-  &--headphones {
-    &::before {
-      display: block;
-      content: '';
-      width: 24px;
-      height: 24px;
-      background-image: url('assets/icons/headphone-icon-grey.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      margin-right: 8px;
-    }
-  }
-  &--audio {
-    &::before {
-      display: block;
-      content: '';
-      width: 24px;
-      height: 24px;
-      background-image: url('assets/icons/audio-icon-grey.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      margin-right: 8px;
-    }
-  }
-  &--automotive {
-    &::before {
-      display: block;
-      content: '';
-      width: 32px;
-      height: 32px;
-      background-image: url('assets/icons/automotive-icon-grey.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      margin-right: 8px;
+    .label {
+      color: white;
+      font-weight: 700;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+  
+      &::before {
+        content: '';
+        background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m15.2842 6.88284.717.73703.7168-.73714c2.9508-3.03453 8.2191-2.01054 10.2242 1.64114.9677 1.76263 1.2009 4.22813-.2171 7.26753-1.4285 3.0619-4.536 6.6958-10.2316 10.6304l-.4963.3063-.4858-.3044c-5.69798-3.9353-8.80657-7.5699-10.23558-10.6324-1.41824-3.0394-1.18521-5.5049-.21745-7.26743C7.06331 4.87233 12.3322 3.84802 15.2842 6.88284Z' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E");
+        width: 29px;
+        height: 29px;
+        display: block;
+        margin-right: 15px;
+      }
     }
   }
 }
