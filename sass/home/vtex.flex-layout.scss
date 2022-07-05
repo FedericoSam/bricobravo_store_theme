@@ -17,6 +17,13 @@
 
   &--home-categories {
     @include container-main;
+
+    position: relative;
+
+    :global(.vtex-store-components-3-x-container) {
+      position: absolute;
+      top: -7rem;
+    }
   }
 
   &--home-shelf-01 {
@@ -52,8 +59,7 @@
     &--home-categories-showcase,
     &--mobile-home-categories-showcase,
     &--categories-showcase {
-      padding: 0 1rem;
-      justify-content: space-between;
+      justify-content: space-around;
       @media screen and (max-width: 768px) {
         display: flex;
         flex-wrap: nowrap;
@@ -79,13 +85,33 @@
     position: relative;
   }
 
+  &--home-categories-showcase {
+    &:first-child {
+      height: 120px;
+      width: 120px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      background-color: #dde3e9;
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
+
   .flexColChild {
     &--home-categories-showcase,
     &--categories-showcase {
-      width: 216px;
-      height: 266px;
-      padding: 44px;
+      display: flex;
       position: relative;
+
+      :global(.vtex-store-components-3-x-imageElement) {
+        margin: 0 auto;
+      }
+    }
+
+    &--home-categories-showcase {
+      &:last-child {
+        height: 0 !important;
+        width: 10.5rem;
+      }
     }
   }
 }
