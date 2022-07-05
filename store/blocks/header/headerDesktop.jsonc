@@ -43,7 +43,7 @@
   },
   "image#header-logo": {
     "props": {
-      "src": "assets/images/logo.svg"
+      "src": "assets/icons/Logo.svg"
     },
     "title": "Logotipo Header"
   },
@@ -108,24 +108,28 @@
   "link#category1": {
     "props": {
       "href": "#",
+      "blockClass": "header-category1",
       "label": "Lorem ipsum dolor sit amet"
     }
   },
   "link#category2": {
     "props": {
       "href": "#",
+      "blockClass": "header-category2",
       "label": "Lorem ipsum dolor sit amet"
     }
   },
   "link#category3": {
     "props": {
       "href": "#",
+      "blockClass": "header-category3",
       "label": "Lorem ipsum dolor sit amet"
     }
   },
   "link#category4": {
     "props": {
       "href": "#",
+      "blockClass": "header-category4",
       "label": "Lorem ipsum dolor sit amet"
     }
   }

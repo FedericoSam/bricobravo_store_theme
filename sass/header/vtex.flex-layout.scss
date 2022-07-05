@@ -20,31 +20,10 @@
       bottom: 0;
     }
 
-    .flexRowContent--header-desktop {
-      padding: 16.5px 0;
+    .flexRowContent--header-desktop-upper {
       justify-content: space-between;
-
-      .flexRow--submenu-category-3 {
-        width: 100%;
-        // max-width: 1440px;
-        max-width: 1376px;
-        // @include container-main;
-
-        .flexRow--submenu-category-title {
-          padding: 0 2rem;
-          margin-top: 3.85rem;
-        }
-
-        .flexRowContent--submenu-category-items {
-          margin-top: 24px;
-          justify-content: space-evenly;
-        }
-
-        .flexRow--submenu-category-cta {
-          margin: 48px;
-          padding: 0 2rem;
-        }
-      }
+      padding: 15px 20px 10px;
+      box-shadow: 0 4px 7px 0 rgba(0,0,0,0.15);
     }
     .flexCol--header-containerIcons {
       display: flex;
@@ -56,6 +35,71 @@
   &--header-mobile {
     .flexRowContent {
       background-color: $white;
+    }
+  }
+
+  &--header-categories {
+    margin: 0 auto;
+    max-width: 1376px;
+    .flexRowContent--header-categories {
+      justify-content: space-around;
+      padding: 15px 20px 10px;
+      :global(.vtex-store-link-0-x-link--header-category) {
+        display: flex;
+        align-items: center;
+        &1 {
+          text-decoration: none;
+          color: $primary-text-dark;
+          ::before {
+            content: "Icon";
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: $primary-gold; 
+            padding: 10px 10px 0;
+            margin-right: 10px;
+          } 
+        }
+        &2 {
+          text-decoration: none;
+          color: $primary-text-dark;
+          ::before {
+            content: "Icon";
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: $primary-gold; 
+            padding: 10px 10px 0;
+            margin-right: 10px;
+          }
+        }
+        &3 {
+          text-decoration: none;
+          color: $primary-text-dark;
+          ::before {
+            content: "Icon";
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: $primary-gold; 
+            padding: 10px 10px 0;
+            margin-right: 10px;
+          }
+        }
+        &4 {
+          text-decoration: none;
+          color: $primary-text-dark;
+          ::before {
+            content: "Icon";
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: $primary-gold; 
+            padding: 10px 10px 0;
+            margin-right: 10px;
+          }
+        }
+      }
     }
   }
 }
@@ -140,7 +184,7 @@
     :global(.vtex-store-drawer-0-x-openIconContainer--drawer-desktop) {
       display: flex;
       align-items: center;
-      padding: 0.05rem 0 0.05rem 0.5rem;
+      padding: 0;
       border: 1.5px solid $blue-dark;
       border-radius: 4px 0 0 4px;
       border-right: 0;
@@ -150,6 +194,7 @@
         font-weight: 200;
         color: $blue-dark;
         margin-left: 5px;
+        margin-bottom: 1px;
       }
     }
   }

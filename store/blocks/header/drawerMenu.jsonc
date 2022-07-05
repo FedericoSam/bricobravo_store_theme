@@ -20,216 +20,361 @@
 
   "flex-layout.col#header-menu": {
     "title": "COL: Menu Container",
-    "children": [
-      "flex-layout.row#login-container",
-      "challenge-block#header-menu",
-      "rich-text#drawer-menu-departments-heading",
-      "flex-layout.row#drawer-menu-departments"
-    ],
+    "children": ["flex-layout.col#menuLateral"],
     "props": {
       "blockClass": "header-drawer-menu-col"
     }
   },
-  "flex-layout.row#login-container": {
-    "title": "Linha: Container de login",
-    "children": ["login#drawer"],
-    "props": {
-      "blockClass": "login-container"
-    }
-  },
-  "login#drawer": {
-    "title": "Login",
-    "props": {
-      "blockClass": "loginDrawer",
-      "iconLabel": "Olá! 👋",
-      "showIconProfile": false,
-      "mirrorTooltipToRight": true
-    }
-  },
 
-  "challenge-block#header-menu": {
-    "title": "Auth: Conteúdo autenticado",
-    "blocks": [
-      "challenge-content#description",
-      "challenge-fallback#description"
-    ],
-    "props": {
-      "blockClass": "challenge-access-block"
-    }
-  },
-
-  "challenge-content#description": {
-    "title": "Auth: Conteúdo autenticado",
-    "children": ["menu#authenticated"]
-  },
-
-  "challenge-fallback#description": {
-    "title": "Auth: Conteúdo sem autenticação",
-    "children": ["menu#unauthenticated"]
-  },
-
-  "menu#unauthenticated": {
-    "title": "Menu: Não autenticado",
-    "children": ["menu-item#login", "menu-item#my-orders"],
-    "props": {
-      "blockClass": "header-menu",
-      "orientation": "vertical"
-    }
-  },
-
-  "menu-item#login": {
-    "title": "Menu-Login: Acesso de conta",
-    "props": {
-      "blockClass": "drawer-menu-item",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/login",
-        "noFollow": false,
-        "tagTitle": "Entrar",
-        "text": "Entrar"
-      }
-    }
-  },
-
-  "menu-item#my-orders": {
-    "title": "Menu-Login: Criar conta",
-    "props": {
-      "blockClass": "drawer-menu-item",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/login",
-        "noFollow": false,
-        "tagTitle": "Meus pedidos",
-        "text": "Meus pedidos"
-      }
-    }
-  },
-
-  "menu#authenticated": {
-    "title": "Menu: Autenticado",
-    "props": {
-      "blockClass": "header-menu",
-      "orientation": "vertical"
-    },
-    "children": ["menu-item#account", "menu-item#orders", "menu-item#logout"]
-  },
-
-  "menu-item#orders": {
-    "title": "Menu: Autenticado - Pedidos",
-    "props": {
-      "blockClass": "drawer-menu-item",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/account#/orders",
-        "noFollow": false,
-        "tagTitle": "Meus Pedidos",
-        "text": "Meus Pedidos"
-      }
-    }
-  },
-
-  "menu-item#account": {
-    "title": "Menu: Autenticado - Conta",
-    "props": {
-      "blockClass": "drawer-menu-item",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/account",
-        "noFollow": false,
-        "tagTitle": "Minha Conta",
-        "text": "Minha Conta"
-      }
-    }
-  },
-
-  "menu-item#logout": {
-    "title": "Menu: Autenticado - Conta",
-    "props": {
-      "blockClass": "drawer-menu-item",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/logout",
-        "noFollow": false,
-        "tagTitle": "Sair",
-        "text": "Sair"
-      }
-    }
-  },
-
-  "rich-text#drawer-menu-departments-heading": {
-    "props": {
-      "text": "Explore toda a loja",
-      "blockClass": "drawer-menu-departments-heading"
-    }
-  },
-
-  "flex-layout.row#drawer-menu-departments": {
-    "children": ["flex-layout.col#drawer-menu-departments"],
-    "props": {
-      "blockClass": "drawer-menu-departments"
-    }
-  },
-
-  "flex-layout.col#drawer-menu-departments": {
+  "flex-layout.col#menuLateral": {
     "children": [
-      "image#drawer-menu-departments-item-1",
-      "image#drawer-menu-departments-item-2",
-      "image#drawer-menu-departments-item-3",
-      "image#drawer-menu-departments-item-4"
+      "vtex.menu@2.x:menu#categories",
+      "rich-text#titleLinkUtili",
+      "link#storeLocator",
+      "link#doveIlMio",
+      "link#effetuareUnReso",
+      "link#FAQ"
     ],
     "props": {
       "blockClass": "drawer-menu-departments",
       "preventVerticalStretch": false
     }
   },
-
-  "image#drawer-menu-departments-item-1": {
+  "vtex.menu@2.x:menu#categories": {
+    "children": [
+      "menu-item#giardinaggio",
+      "menu-item#piscine&acess",
+      "menu-item#arredoGiar",
+      "menu-item#climatizzazione",
+      "menu-item#casette&box",
+      "menu-item#bricolage",
+      "menu-item#arredoCasa",
+      "menu-item#sport",
+      "menu-item#antinfortunistica",
+      "menu-item#illuminazione",
+      "menu-item#riscaldamento",
+      "menu-item#giocattoli",
+      "menu-item#animali",
+      "menu-item#elettrodomestici",
+      "menu-item#auto"
+    ],
     "props": {
-      "src": "assets/images/tab.jpg",
-      "link": {
-        "newTab": false,
-        "url": "/"
-      }
+      "blockClass": "sidebar-containerMenus"
     }
   },
-
-  "image#drawer-menu-departments-item-2": {
+  "menu-item#giardinaggio": {
     "props": {
-      "src": "assets/images/tab-1.jpg",
-      "link": {
-        "newTab": false,
-        "url": "/"
+      "id": "menu-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "giardinaggio",
+        "text": "Jardinagem"
       }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#giardinaggio"]
+  },
+  "vtex.menu@2.x:submenu#giardinaggio": {
+    "children": ["vtex.menu@2.x:menu#giardinaggio"]
+  },
+  "vtex.menu@2.x:menu#giardinaggio": {},
+  "menu-item#piscine&acess": {
+    "props": {
+      "id": "menu-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Piscina e Acessórios",
+        "text": "Piscina e Acessórios"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#piscine&acess"]
+  },
+  "vtex.menu@2.x:submenu#piscine&acess": {
+    "children": ["vtex.menu@2.x:menu#subPiscine&acess"]
+  },
+  "vtex.menu@2.x:menu#subPiscine&acess": {},
+  "menu-item#arredoGiar": {
+    "props": {
+      "id": "menu-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Arredo giardino",
+        "text": "Móveis de jardim"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#arredoGiar"]
+  },
+  "vtex.menu@2.x:submenu#arredoGiar": {
+    "children": ["vtex.menu@2.x:menu#subArredoGiar"]
+  },
+  "vtex.menu@2.x:menu#subArredoGiar": {},
+  "menu-item#climatizzazione": {
+    "props": {
+      "id": "menu-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Climatizzazione",
+        "text": "Ar condicionado"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#climatizzazione"]
+  },
+  "vtex.menu@2.x:submenu#climatizzazione": {
+    "children": ["vtex.menu@2.x:menu#subClimatizzazione"]
+  },
+  "vtex.menu@2.x:menu#subClimatizzazione": {},
+  "menu-item#casette&box": {
+    "props": {
+      "id": "menu-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "casette e box",
+        "text": "Casas e caixas"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#casette&box"]
+  },
+  "vtex.menu@2.x:submenu#casette&box": {
+    "children": ["vtex.menu@2.x:menu#subCasette&box"]
+  },
+  "vtex.menu@2.x:menu#subCasette&box": {},
+  "menu-item#bricolage": {
+    "props": {
+      "id": "menu-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Bricolage e Fai da te",
+        "text": "Bricolagem e faça você mesmo"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#bricolage"]
+  },
+  "vtex.menu@2.x:submenu#bricolage": {
+    "children": ["vtex.menu@2.x:menu#subBricolage"]
+  },
+  "vtex.menu@2.x:menu#subBricolage": {},
+  "menu-item#arredoCasa": {
+    "props": {
+      "id": "menu-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Arredo casa",
+        "text": "Mobiliário doméstico"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#arredoCasa"]
+  },
+  "vtex.menu@2.x:submenu#arredoCasa": {
+    "children": ["vtex.menu@2.x:menu#subArredoCasa"]
+  },
+  "vtex.menu@2.x:menu#subArredoCasa": {},
+  "menu-item#sport": {
+    "props": {
+      "id": "menu-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Sport e tempo libero",
+        "text": "Esporte e tempo livre"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#sport"]
+  },
+  "vtex.menu@2.x:submenu#sport": {
+    "children": ["vtex.menu@2.x:menu#subSport"]
+  },
+  "vtex.menu@2.x:menu#subSport": {},
+  "menu-item#antinfortunistica": {
+    "props": {
+      "id": "menu-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Antinfortunistica",
+        "text": "prevenção de Acidentes"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#antinfortunistica"]
+  },
+  "vtex.menu@2.x:submenu#antinfortunistica": {
+    "children": ["vtex.menu@2.x:menu#subAntinfortunistica"]
+  },
+  "vtex.menu@2.x:menu#subAntinfortunistica": {},
+  "menu-item#illuminazione": {
+    "props": {
+      "id": "menu-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Illuminazione",
+        "text": "Iluminação"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#illuminazione"]
+  },
+  "vtex.menu@2.x:submenu#illuminazione": {
+    "children": ["vtex.menu@2.x:menu#subIlluminazione"]
+  },
+  "vtex.menu@2.x:menu#subIlluminazione": {},
+  "menu-item#riscaldamento": {
+    "props": {
+      "id": "menu-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "riscaldamento",
+        "text": "Aquecimento"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#riscaldamento"]
+  },
+  "vtex.menu@2.x:submenu#riscaldamento": {
+    "children": ["vtex.menu@2.x:menu#subRiscaldamento"]
+  },
+  "vtex.menu@2.x:menu#subRiscaldamento": {},
+  "menu-item#giocattoli": {
+    "props": {
+      "id": "menu-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Giocattoli",
+        "text": "Brinquedos"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#giocattoli"]
+  },
+  "vtex.menu@2.x:submenu#giocattoli": {
+    "children": ["vtex.menu@2.x:menu#subGiocattoli"]
+  },
+  "vtex.menu@2.x:menu#subGiocattoli": {},
+  "menu-item#animali": {
+    "props": {
+      "id": "menu-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "animali",
+        "text": "Animais"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#animali"]
+  },
+  "vtex.menu@2.x:submenu#animali": {
+    "children": ["vtex.menu@2.x:menu#subAnimali"]
+  },
+  "vtex.menu@2.x:menu#subAnimali": {},
+  "menu-item#elettrodomestici": {
+    "props": {
+      "id": "menu-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Alettrodomestici",
+        "text": "Eletrodoméstico"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#elettrodomestici"]
+  },
+  "vtex.menu@2.x:submenu#elettrodomestici": {
+    "children": ["vtex.menu@2.x:menu#subElettrodomestici"]
+  },
+  "vtex.menu@2.x:menu#subElettrodomestici": {},
+  "menu-item#auto": {
+    "props": {
+      "id": "menu-item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Auto e moto",
+        "text": "Carro e moto"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#auto"]
+  },
+  "vtex.menu@2.x:submenu#auto": {
+    "children": ["vtex.menu@2.x:menu#subAuto"]
+  },
+  "vtex.menu@2.x:menu#subAuto": {},
+  "rich-text#titleLinkUtili": {
+    "props": {
+      "blockClass": "sidebar-TitleLinkUtili",
+      "text": "Link útil"
     }
   },
-
-  "image#drawer-menu-departments-item-3": {
+  "link#storeLocator": {
     "props": {
-      "src": "assets/images/tab-2.jpg",
-      "link": {
-        "newTab": false,
-        "url": "/"
-      }
+      "href": "#",
+      "label": "Localização da loja"
     }
   },
-
-  "image#drawer-menu-departments-item-4": {
+  "link#doveIlMio": {
     "props": {
-      "src": "assets/images/tab-3.jpg",
-      "link": {
-        "newTab": false,
-        "url": "/"
-      }
+      "href": "#",
+      "label": "Onde está o meu pedido ?"
+    }
+  },
+  "link#effetuareUnReso": {
+    "props": {
+      "href": "#",
+      "label": "Devolução"
+    }
+  },
+  "link#FAQ": {
+    "props": {
+      "href": "#",
+      "label": "FAQ e contato"
     }
   }
 }
