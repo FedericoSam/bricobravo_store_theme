@@ -3,10 +3,11 @@
 .flexRow {
   &--home-page-main-slider {
     :global(.vtex-store-components-3-x-container) {
+      @include container-main;
+
       padding: 0;
       width: 100%;
-      margin: 0 auto;
-      max-width: 1440px;
+      max-width: 82rem;
     }
 
     @media screen and (max-width: 64rem) {

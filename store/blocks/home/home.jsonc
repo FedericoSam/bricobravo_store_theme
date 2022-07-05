@@ -30,12 +30,12 @@
       "height": 612,
       "images": [
         {
-          "image": "https://dummyimage.com/1440x612/000/fff.jpg&text=Banner+01",
+          "image": "https://dummyimage.com/1312x483/000/fff.jpg&text=Banner+01",
           "mobileImage": "https://dummyimage.com/360x508/db9600/fff.jpg&text=Banner+01",
           "description": "Banner 01"
         },
         {
-          "image": "https://dummyimage.com/1440x612/db9600/fff.jpg&text=Banner+01",
+          "image": "https://dummyimage.com/1312x483/db9600/fff.jpg&text=Banner+02",
           "mobileImage": "https://dummyimage.com/360x508/000000/fff.jpg&text=Banner+02",
           "description": "Banner 02"
         }
@@ -53,6 +53,7 @@
       "blockClass": "home-main-slider-images",
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
       "autoplay": {
         "timeout": 2000,
         "stopOnHover": true
@@ -508,7 +509,7 @@
   "rich-text#home-shelf-02-title": {
     "props": {
       "blockClass": "home-section-title",
-      "text": "## Bricobravo consiglia"
+      "text": "## Offerta del mese"
     }
   },
 
