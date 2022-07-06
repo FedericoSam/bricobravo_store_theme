@@ -7,9 +7,80 @@
       "blockClass": "sticky-header"
     },
     "children": [
+      "flex-layout.row#header-promotion",
       "flex-layout.row#header-desktop-upper",
       "flex-layout.row#header-categories"
     ]
+  },
+  "flex-layout.row#header-promotion": {
+    "children": [
+      "rich-text#emptySpace",
+      "rich-text#promotion",
+      "flex-layout.col#moreInfoPromotion"
+    ],
+    "props": {
+      "blockClass": "header-containerPromotion"
+    }
+  },
+  "rich-text#emptySpace": {
+    "props": {
+      "text": ""
+    }
+  },
+  "rich-text#promotion": {
+    "props": {
+      "blockClass": "header-titlePromotion",
+      "text": "OFERTA ESPECIAL em produtos para mobiliar o seu jardim"
+    }
+  },
+  "flex-layout.col#moreInfoPromotion": {
+    "children": ["disclosure-layout#moreInfoPromotion"]
+  },
+  "disclosure-layout#moreInfoPromotion": {
+    "children": [
+      "disclosure-trigger#moreInfoPromotion",
+      "disclosure-content#moreInfoPromotion"
+    ]
+  },
+  "disclosure-state-indicator": {
+    "props": {
+      "Show": "image#arrowDown",
+      "Hide": "image#arrowUp"
+    }
+  },
+  "image#arrowDown": {
+    "props": {
+      "src": "assets/icons/arrowDown.svg",
+      "width": "20px"
+    }
+  },
+  "image#arrowUp": {
+    "props": {
+      "src": "assets/icons/arrowUp.svg",
+      "width": "20px"
+    }
+  },
+  "disclosure-trigger#moreInfoPromotion": {
+    "children": ["rich-text#moreInfoPromotion", "disclosure-state-indicator"],
+    "props": {
+      "blockClass": "header-disclosureTrigger"
+    }
+  },
+  "rich-text#moreInfoPromotion": {
+    "props": {
+      "text": "Descubra mais"
+    }
+  },
+  "disclosure-content#moreInfoPromotion": {
+    "children": ["rich-text#InfoPromotion"],
+    "props": {
+      "blockClass": "header-disclosureContent"
+    }
+  },
+  "rich-text#InfoPromotion": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
   },
   "flex-layout.row#header-desktop-upper": {
     "props": {

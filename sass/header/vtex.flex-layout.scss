@@ -2,6 +2,13 @@
 @import '../_variables.scss';
 
 .flexRow {
+  &--header-containerPromotion {
+    margin: 0 auto;
+    max-width: 1376px;
+    .flexRowContent--header-containerPromotion {
+      background-color: $background-blue-black;
+    }
+  }
   &--header-desktop-upper {
     margin: 0 auto;
     max-width: 1376px;
@@ -35,6 +42,7 @@
   &--header-mobile {
     .flexRowContent {
       background-color: $white;
+      padding: 20px 10px 0;
     }
   }
 

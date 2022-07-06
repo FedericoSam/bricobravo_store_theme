@@ -1,3 +1,5 @@
+@import '../_variables.scss';
+
 .paragraph--submenu-category-title {
   margin: 0;
   font-size: 24px;
@@ -20,6 +22,12 @@
 }
 
 .paragraph {
+  &--header-titlePromotion {
+    color: $white;
+    font-size: 1rem;
+    font-weight: 500;
+    width: max-content;
+  }
   &--minicartEmptyTitle {
     display: flex;
     justify-content: center;
