@@ -7,59 +7,11 @@
       "flex-layout.row#bottomFooterDesktop"
     ]
   },
-  "flex-layout.row#upperFooterDesktop": {
-    "children": [
-      "flex-layout.col#upperFooterCol1",
-      "flex-layout.col#upperFooterCol2",
-      "flex-layout.col#upperFooterCol3"
-    ],
-    "props": {
-      "blockClass": "upperFooterDesktop"
-    }
-  },
-
-  "flex-layout.col#upperFooterCol1": {
-    "children": ["rich-text#upperFooterTitle"],
-    "props": {
-      "blockClass": "upperFooterCol1",
-      "width": "25%"
-    }
-  },
 
   "rich-text#upperFooterTitle": {
     "props": {
       "text": "## O grande ícone está de volta.",
       "blockClass": "upperFooterTitle"
-    }
-  },
-
-  "flex-layout.col#upperFooterCol2": {
-    "children": ["rich-text#upperFooterSubtitle"],
-    "props": {
-      "width": "55%",
-      "blockClass": "upperFooterCol2"
-    }
-  },
-
-  "rich-text#upperFooterSubtitle": {
-    "props": {
-      "text": "Here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.",
-      "blockClass": "upperFooterSubtitle"
-    }
-  },
-
-  "flex-layout.col#upperFooterCol3": {
-    "children": ["link#upperFooterCTA"],
-    "props": {
-      "blockClass": "upperFooterCol3"
-    }
-  },
-
-  "link#upperFooterCTA": {
-    "props": {
-      "label": "Conheça AIWA",
-      "href": "#",
-      "blockClass": "upperFooterCTA"
     }
   },
 

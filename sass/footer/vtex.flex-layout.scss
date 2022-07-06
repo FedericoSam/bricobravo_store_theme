@@ -2,19 +2,6 @@
 @import '../media-queries';
 
 .flexRow {
-  &--upperFooterDesktop {
-    background: #fff;
-    margin-top: -60px;
-    z-index: 2;
-    position: relative;
-    border-radius: 16px 16px 0 0;
-
-    @media screen and (max-width: 768px) {
-      margin-top: -20px;
-      padding: 48px 24px;
-    }
-  }
-
   &--upperFooterDesktop,
   &--middleFooterDesktop {
     :global(.vtex-store-components-3-x-container) {
@@ -39,12 +26,21 @@
   &--quemSomos-main {
     margin-bottom: 5rem;
   }
+
+  &--upperFooterDesktop {
+    padding-bottom: 2.5rem;
+    background-color: #f6f6f6;
+
+    @media screen and (max-width: 768px) {
+      margin-top: -20px;
+      padding: 48px 24px;
+    }
+  }
 }
 
 .flexRowContent {
   &--upperFooterDesktop {
     align-items: center;
-    padding-top: 2rem;
   }
 
   &--middleFooterDesktop {
@@ -112,19 +108,12 @@
     }
   }
 
-  &--upperFooterCol1,
-  &--upperFooterCol2 {
+  &--upperFooterCol1 {
     padding: 32px;
 
     @media screen and (max-width: 768px) {
       padding: 0;
       margin-bottom: 24px;
-    }
-  }
-
-  &--upperFooterCol3 {
-    @media screen and (max-width: 768px) {
-      margin-bottom: 0;
     }
   }
 
@@ -157,11 +146,6 @@
   }
 
   .flexColChild {
-    &--upperFooterCol3 {
-      display: flex;
-      justify-content: flex-end;
-    }
-
     &--middleFooterCol {
       display: flex;
       flex-direction: column;

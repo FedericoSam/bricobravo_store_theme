@@ -94,6 +94,24 @@
     line-height: 16px;
     margin-right: 12px;
   }
+
+  &--upperFooterCategoriesMainTitle {
+    height: 33px;
+    color: #332c32;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 33px;
+    margin: 1.25rem 0;
+  }
+
+  &--upperFooterCategoriesTitle {
+    height: 1.5rem;
+    color: #291660;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0 0 0.75rem;
+  }
 }
 
 .heading {
