@@ -8,7 +8,6 @@
 
   "flex-layout.col#upperFooterCol": {
     "children": [
-      "flex-layout.row#upperFooterServices",
       "flex-layout.row#upperFooterBrands",
       "flex-layout.row#upperFooterCategories"
     ],
@@ -18,33 +17,6 @@
     }
   },
 
-  "flex-layout.row#upperFooterServices": {
-    "children": ["flex-layout.col#upperFooterServices"],
-    "props": {
-      "blockClass": "upperFooterServices"
-    }
-  },
-  "flex-layout.col#upperFooterServices": {
-    "children": ["slider-layout#upperFooterServices"],
-    "props": {
-      "blockClass": "upperFooterServices"
-    }
-  },
-  "slider-layout#upperFooterServices": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 6,
-        "tablet": 3,
-        "phone": 3
-      },
-      "showNavigationArrows": "desktopOnly",
-      "showPaginationDots": "never",
-      "autoplay": false,
-      "blockClass": "upperFooterServices"
-    },
-    "children": []
-  },
-
   "flex-layout.row#upperFooterBrands": {
     "children": ["flex-layout.col#upperFooterBrands"],
     "props": {
@@ -52,24 +24,100 @@
     }
   },
   "flex-layout.col#upperFooterBrands": {
-    "children": ["slider-layout#upperFooterBrands"],
+    "children": [
+      "rich-text#upperFooterBrandsTitle",
+      "slider-layout#upperFooterBrands"
+    ],
     "props": {
       "blockClass": "upperFooterBrands"
+    }
+  },
+  "rich-text#upperFooterBrandsTitle": {
+    "props": {
+      "text": "I migliori marchi, a portata di click",
+      "blockClass": "upperFooterBrandsMainTitle"
     }
   },
   "slider-layout#upperFooterBrands": {
     "props": {
       "itemsPerPage": {
-        "desktop": 6,
+        "desktop": 8,
         "tablet": 3,
         "phone": 3
       },
       "showNavigationArrows": "desktopOnly",
       "showPaginationDots": "never",
       "autoplay": false,
+      "infinity": false,
+      "navigationStep": 1,
+      "fullWidth": true,
       "blockClass": "upperFooterBrands"
     },
-    "children": []
+    "children": [
+      "image#upperFooterBrands01",
+      "image#upperFooterBrands02",
+      "image#upperFooterBrands03",
+      "image#upperFooterBrands04",
+      "image#upperFooterBrands05",
+      "image#upperFooterBrands06",
+      "image#upperFooterBrands07",
+      "image#upperFooterBrands08",
+      "image#upperFooterBrands09"
+    ]
+  },
+  "image#upperFooterBrands01": {
+    "props": {
+      "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand01",
+      "blockClass": "upperFooterBrands"
+    }
+  },
+  "image#upperFooterBrands02": {
+    "props": {
+      "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand02",
+      "blockClass": "upperFooterBrands"
+    }
+  },
+  "image#upperFooterBrands03": {
+    "props": {
+      "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand03",
+      "blockClass": "upperFooterBrands"
+    }
+  },
+  "image#upperFooterBrands04": {
+    "props": {
+      "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand04",
+      "blockClass": "upperFooterBrands"
+    }
+  },
+  "image#upperFooterBrands05": {
+    "props": {
+      "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand05",
+      "blockClass": "upperFooterBrands"
+    }
+  },
+  "image#upperFooterBrands06": {
+    "props": {
+      "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand06",
+      "blockClass": "upperFooterBrands"
+    }
+  },
+  "image#upperFooterBrands07": {
+    "props": {
+      "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand07",
+      "blockClass": "upperFooterBrands"
+    }
+  },
+  "image#upperFooterBrands08": {
+    "props": {
+      "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand08",
+      "blockClass": "upperFooterBrands"
+    }
+  },
+  "image#upperFooterBrands09": {
+    "props": {
+      "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand09",
+      "blockClass": "upperFooterBrands"
+    }
   },
 
   "flex-layout.row#upperFooterCategories": {
@@ -80,14 +128,14 @@
   },
   "flex-layout.col#upperFooterCategories": {
     "children": [
-      "rich-text#upperFooterCategories",
+      "rich-text#upperFooterCategoriesTitle",
       "slider-layout#upperFooterCategories"
     ],
     "props": {
       "blockClass": "upperFooterCategories"
     }
   },
-  "rich-text#upperFooterCategories": {
+  "rich-text#upperFooterCategoriesTitle": {
     "props": {
       "text": "Esplora le nostre categorie",
       "blockClass": "upperFooterCategoriesMainTitle"
@@ -103,6 +151,9 @@
       "showNavigationArrows": "desktopOnly",
       "showPaginationDots": "never",
       "autoplay": false,
+      "infinity": false,
+      "navigationStep": 1,
+      "fullWidth": true,
       "blockClass": "upperFooterCategories"
     },
     "children": [
@@ -111,7 +162,8 @@
       "flex-layout.col#upperFooterCategoriesAC",
       "flex-layout.col#upperFooterCategoriesBeach",
       "flex-layout.col#upperFooterCategoriesDIY",
-      "flex-layout.col#upperFooterCategoriesFitness"
+      "flex-layout.col#upperFooterCategoriesFitness",
+      "flex-layout.col#upperFooterCategoriesFitness2"
     ]
   },
 
@@ -576,6 +628,95 @@
     }
   },
   "vtex.menu@2.x:menu#upperFooterCategoriesFitness": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "upperFooterMenu",
+      "items": [
+        {
+          "id": "footer-item-1",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Attrezzi sportivi",
+            "text": "Attrezzi sportivi"
+          }
+        },
+        {
+          "id": "footer-item-2",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Tapis roulant",
+            "text": "Tapis roulant"
+          }
+        },
+        {
+          "id": "footer-item-3",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Cyclette",
+            "text": "Cyclette"
+          }
+        },
+        {
+          "id": "footer-item-4",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Bilancieri e pesi",
+            "text": "Bilancieri e pesi"
+          }
+        },
+        {
+          "id": "footer-item-5",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Panche addominali",
+            "text": "Panche addominali"
+          }
+        }
+      ]
+    }
+  },
+
+  "flex-layout.col#upperFooterCategoriesFitness2": {
+    "children": [
+      "rich-text#upperFooterCategoriesFitness2",
+      "vtex.menu@2.x:menu#upperFooterCategoriesFitness2"
+    ],
+    "props": {
+      "blockClass": "upperFooterCategoriesFitness2"
+    }
+  },
+  "rich-text#upperFooterCategoriesFitness2": {
+    "props": {
+      "text": "Fitness e benessere",
+      "blockClass": "upperFooterCategoriesTitle"
+    }
+  },
+  "vtex.menu@2.x:menu#upperFooterCategoriesFitness2": {
     "props": {
       "orientation": "vertical",
       "blockClass": "upperFooterMenu",
