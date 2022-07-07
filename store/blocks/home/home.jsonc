@@ -6,6 +6,9 @@
       "flex-layout.row#home-shelf-01",
       "flex-layout.row#home-shelf-02",
       "flex-layout.row#home-shelf-03",
+      "flex-layout.row#home-blog",
+      // "flex-layout.row#home-reviews",
+      "flex-layout.row#home-services",
       "flex-layout.row#upperFooterDesktop"
     ]
   },
@@ -114,14 +117,19 @@
 
   "image#home-categories-showcase-01": {
     "props": {
-      "src": "assets/icons/department-shelf/plant.svg"
+      "src": "assets/icons/department-shelf/plant.svg",
+      "link": {
+        "url": "#"
+      },
+      "blockClass": "home-categories-showcase"
     }
   },
 
   "link#home-categories-showcase-01": {
     "props": {
       "label": "Giardinaggio",
-      "blockClass": "home-categories-showcase-cta"
+      "blockClass": "home-categories-showcase-cta",
+      "href": "#"
     }
   },
 
@@ -139,14 +147,19 @@
 
   "image#home-categories-showcase-02": {
     "props": {
-      "src": "assets/icons/department-shelf/fan.svg"
+      "src": "assets/icons/department-shelf/fan.svg",
+      "link": {
+        "url": "#"
+      },
+      "blockClass": "home-categories-showcase"
     }
   },
 
   "link#home-categories-showcase-02": {
     "props": {
       "label": "Climatizzazione",
-      "blockClass": "home-categories-showcase-cta"
+      "blockClass": "home-categories-showcase-cta",
+      "href": "#"
     }
   },
 
@@ -164,14 +177,19 @@
 
   "image#home-categories-showcase-03": {
     "props": {
-      "src": "assets/icons/department-shelf/dumbbell.svg"
+      "src": "assets/icons/department-shelf/dumbbell.svg",
+      "link": {
+        "url": "#"
+      },
+      "blockClass": "home-categories-showcase"
     }
   },
 
   "link#home-categories-showcase-03": {
     "props": {
       "label": "Fitness e benessere",
-      "blockClass": "home-categories-showcase-cta"
+      "blockClass": "home-categories-showcase-cta",
+      "href": "#"
     }
   },
 
@@ -189,14 +207,19 @@
 
   "image#home-categories-showcase-04": {
     "props": {
-      "src": "assets/icons/department-shelf/arredo-giardino.svg"
+      "src": "assets/icons/department-shelf/arredo-giardino.svg",
+      "link": {
+        "url": "#"
+      },
+      "blockClass": "home-categories-showcase"
     }
   },
 
   "link#home-categories-showcase-04": {
     "props": {
       "label": "Arredo giardino",
-      "blockClass": "home-categories-showcase-cta"
+      "blockClass": "home-categories-showcase-cta",
+      "href": "#"
     }
   },
 
@@ -214,14 +237,19 @@
 
   "image#home-categories-showcase-05": {
     "props": {
-      "src": "assets/icons/department-shelf/pool.svg"
+      "src": "assets/icons/department-shelf/pool.svg",
+      "link": {
+        "url": "#"
+      },
+      "blockClass": "home-categories-showcase"
     }
   },
 
   "link#home-categories-showcase-05": {
     "props": {
       "label": "Piscine e accessori",
-      "blockClass": "home-categories-showcase-cta"
+      "blockClass": "home-categories-showcase-cta",
+      "href": "#"
     }
   },
 
@@ -239,14 +267,19 @@
 
   "image#home-categories-showcase-06": {
     "props": {
-      "src": "assets/icons/department-shelf/paint-roller.svg"
+      "src": "assets/icons/department-shelf/paint-roller.svg",
+      "link": {
+        "url": "#"
+      },
+      "blockClass": "home-categories-showcase"
     }
   },
 
   "link#home-categories-showcase-06": {
     "props": {
       "label": "Bricolage e Fai da te",
-      "blockClass": "home-categories-showcase-cta"
+      "blockClass": "home-categories-showcase-cta",
+      "href": "#"
     }
   },
 
@@ -297,7 +330,8 @@
   "link#mobile-home-categories-showcase-01": {
     "props": {
       "label": "32\"",
-      "blockClass": "mobile-home-categories-showcase-cta"
+      "blockClass": "mobile-home-categories-showcase-cta",
+      "href": "#"
     }
   },
 
@@ -331,7 +365,8 @@
   "link#mobile-home-categories-showcase-02": {
     "props": {
       "label": "43\"",
-      "blockClass": "mobile-home-categories-showcase-cta"
+      "blockClass": "mobile-home-categories-showcase-cta",
+      "href": "#"
     }
   },
 
@@ -365,7 +400,8 @@
   "link#mobile-home-categories-showcase-03": {
     "props": {
       "label": "50\"",
-      "blockClass": "mobile-home-categories-showcase-cta"
+      "blockClass": "mobile-home-categories-showcase-cta",
+      "href": "#"
     }
   },
 
@@ -399,7 +435,8 @@
   "link#mobile-home-categories-showcase-04": {
     "props": {
       "label": "55\"",
-      "blockClass": "mobile-home-categories-showcase-cta"
+      "blockClass": "mobile-home-categories-showcase-cta",
+      "href": "#"
     }
   },
 
@@ -433,7 +470,8 @@
   "link#mobile-home-categories-showcase-05": {
     "props": {
       "label": "65\"",
-      "blockClass": "mobile-home-categories-showcase-cta"
+      "blockClass": "mobile-home-categories-showcase-cta",
+      "href": "#"
     }
   },
 
@@ -467,7 +505,8 @@
   "link#mobile-home-categories-showcase-06": {
     "props": {
       "label": "75\"",
-      "blockClass": "mobile-home-categories-showcase-cta"
+      "blockClass": "mobile-home-categories-showcase-cta",
+      "href": "#"
     }
   },
 
@@ -531,6 +570,302 @@
     "props": {
       "blockClass": "home-section-title",
       "text": "## I prodotti più venduti"
+    }
+  },
+
+  "flex-layout.row#home-blog": {
+    "children": [
+      "flex-layout.col#home-blog",
+      "flex-layout.col#home-blog-shelf"
+    ],
+    "props": {
+      "blockClass": "home-blog"
+    }
+  },
+  "flex-layout.col#home-blog": {
+    "children": [
+      "image#home-blog",
+      "rich-text#home-blog-subtitle",
+      "link#home-blog-link"
+    ],
+    "props": {
+      "blockClass": "home-blog",
+      "width": "30%"
+    }
+  },
+  "image#home-blog": {
+    "props": {
+      "src": "https://dummyimage.com/460x100/fff/000&text=troppoBravo",
+      "blockClass": "home-blog-image"
+    }
+  },
+  "rich-text#home-blog-subtitle": {
+    "props": {
+      "blockClass": "home-blog-subtitle",
+      "text": "Qui troverai tante idee creative e ispirazioni, consigli utili, tutorial e molto altro per la tua casa!"
+    }
+  },
+  "link#home-blog-link": {
+    "props": {
+      "label": "Vai al blog",
+      "blockClass": "home-blog-link",
+      "href": "#"
+    }
+  },
+  "flex-layout.col#home-blog-shelf": {
+    "props": {
+      "blockClass": "home-blog-shelf"
+    }
+  },
+
+  "flex-layout.row#home-services": {
+    "children": ["flex-layout.col#home-services"],
+    "props": {
+      "blockClass": "home-services"
+    }
+  },
+  "flex-layout.col#home-services": {
+    "children": [
+      "rich-text#home-services-title",
+      "slider-layout#home-services"
+    ],
+    "props": {
+      "blockClass": "home-services"
+    }
+  },
+  "rich-text#home-services-title": {
+    "props": {
+      "blockClass": "home-section-title",
+      "text": "## I nostri servizi a tua disposizione"
+    }
+  },
+  "slider-layout#home-services": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "autoplay": false,
+      // "infinity": false,
+      "navigationStep": 1,
+      "fullWidth": true,
+      "centerMode": "to-the-left",
+      "blockClass": "home-services"
+    },
+    "children": [
+      "flex-layout.col#home-services-01",
+      "flex-layout.col#home-services-02",
+      "flex-layout.col#home-services-03",
+      "flex-layout.col#home-services-04",
+      "flex-layout.col#home-services-05",
+      "flex-layout.col#home-services-06"
+    ]
+  },
+
+  "flex-layout.col#home-services-01": {
+    "children": [
+      "rich-text#home-services-01-text",
+      "image#home-services-01",
+      "link#home-services-01-cta"
+    ],
+    "props": {
+      "blockClass": "home-services-col",
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#home-services-01-text": {
+    "props": {
+      "blockClass": "home-services-text",
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+    }
+  },
+  "image#home-services-01": {
+    "props": {
+      "src": "https://dummyimage.com/200x140/FFDADA/fff",
+      "blockClass": "home-services-image",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-services-01-cta": {
+    "props": {
+      "blockClass": "home-services-cta",
+      "href": "#",
+      "label": "Scopri di più"
+    }
+  },
+
+  "flex-layout.col#home-services-02": {
+    "children": [
+      "rich-text#home-services-02-text",
+      "image#home-services-02",
+      "link#home-services-02-cta"
+    ],
+    "props": {
+      "blockClass": "home-services-col",
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#home-services-02-text": {
+    "props": {
+      "blockClass": "home-services-text",
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+    }
+  },
+  "image#home-services-02": {
+    "props": {
+      "src": "https://dummyimage.com/200x140/FFDADA/fff",
+      "blockClass": "home-services-image",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-services-02-cta": {
+    "props": {
+      "blockClass": "home-services-cta",
+      "href": "#",
+      "label": "Scopri di più"
+    }
+  },
+
+  "flex-layout.col#home-services-03": {
+    "children": [
+      "rich-text#home-services-03-text",
+      "image#home-services-03",
+      "link#home-services-03-cta"
+    ],
+    "props": {
+      "blockClass": "home-services-col",
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#home-services-03-text": {
+    "props": {
+      "blockClass": "home-services-text",
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+    }
+  },
+  "image#home-services-03": {
+    "props": {
+      "src": "https://dummyimage.com/200x140/FFDADA/fff",
+      "blockClass": "home-services-image",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-services-03-cta": {
+    "props": {
+      "blockClass": "home-services-cta",
+      "href": "#",
+      "label": "Scopri di più"
+    }
+  },
+
+  "flex-layout.col#home-services-04": {
+    "children": [
+      "rich-text#home-services-04-text",
+      "image#home-services-04",
+      "link#home-services-04-cta"
+    ],
+    "props": {
+      "blockClass": "home-services-col",
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#home-services-04-text": {
+    "props": {
+      "blockClass": "home-services-text",
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+    }
+  },
+  "image#home-services-04": {
+    "props": {
+      "src": "https://dummyimage.com/200x140/FFDADA/fff",
+      "blockClass": "home-services-image",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-services-04-cta": {
+    "props": {
+      "blockClass": "home-services-cta",
+      "href": "#",
+      "label": "Scopri di più"
+    }
+  },
+
+  "flex-layout.col#home-services-05": {
+    "children": [
+      "rich-text#home-services-05-text",
+      "image#home-services-05",
+      "link#home-services-05-cta"
+    ],
+    "props": {
+      "blockClass": "home-services-col",
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#home-services-05-text": {
+    "props": {
+      "blockClass": "home-services-text",
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+    }
+  },
+  "image#home-services-05": {
+    "props": {
+      "src": "https://dummyimage.com/200x140/FFDADA/fff",
+      "blockClass": "home-services-image",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-services-05-cta": {
+    "props": {
+      "blockClass": "home-services-cta",
+      "href": "#",
+      "label": "Scopri di più"
+    }
+  },
+
+  "flex-layout.col#home-services-06": {
+    "children": [
+      "rich-text#home-services-06-text",
+      "image#home-services-06",
+      "link#home-services-06-cta"
+    ],
+    "props": {
+      "blockClass": "home-services-col",
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#home-services-06-text": {
+    "props": {
+      "blockClass": "home-services-text",
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+    }
+  },
+  "image#home-services-06": {
+    "props": {
+      "src": "https://dummyimage.com/200x140/FFDADA/fff",
+      "blockClass": "home-services-image",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-services-06-cta": {
+    "props": {
+      "blockClass": "home-services-cta",
+      "href": "#",
+      "label": "Scopri di più"
     }
   }
 }

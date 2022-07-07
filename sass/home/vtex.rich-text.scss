@@ -19,11 +19,12 @@
     }
 
     &--home-section-title {
-      font-size: 40px;
-      line-height: 48px;
-      font-weight: 300;
       text-align: center;
-      margin: 96px 0 32px;
+      height: 1rem;
+      color: #332c32;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 1rem;
 
       @media screen and (max-width: 768px) {
         margin: 64px auto 32px;
@@ -56,6 +57,23 @@
         text-align: center;
         margin: 32px auto 40px;
       }
+    }
+
+    &--home-services-text {
+      height: 2.25rem;
+      max-width: 12.5rem;
+      color: #332c32;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 18px;
+      text-align: center;
+      margin: 1rem 0 0.75rem;
+    }
+  }
+
+  .wrapper {
+    &--home-section-title {
+      margin: 0 auto;
     }
   }
 }

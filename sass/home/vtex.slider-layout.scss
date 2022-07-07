@@ -1,0 +1,26 @@
+.sliderLayoutContainer {
+  .sliderArrows {
+    &.sliderLeftArrow {
+      &--home-services {
+        position: absolute;
+        top: -3rem;
+        right: 2rem;
+        left: auto;
+      }
+    }
+
+    &.sliderRightArrow {
+      &--home-services {
+        position: absolute;
+        top: -3rem;
+      }
+    }
+
+    .caretIcon {
+      &--home-services {
+        height: 16px;
+        color: #4320a8;
+      }
+    }
+  }
+}

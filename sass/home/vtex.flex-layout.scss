@@ -77,6 +77,15 @@
       height: 4rem;
     }
   }
+
+  &--home-services,
+  &--home-blog {
+    @include container-main;
+  }
+
+  &--home-services {
+    margin-bottom: 1.75rem;
+  }
 }
 
 .flexCol {
@@ -93,7 +102,20 @@
       border-radius: 50%;
       background-color: #dde3e9;
       box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+
+      &:hover {
+        opacity: 0.95;
+        transition: ease-in-out 0.2s;
+      }
     }
+  }
+
+  &--home-services-col {
+    height: 15rem;
+    max-width: 15rem;
+    width: 100%;
+    border: 1px solid #ececec;
+    border-radius: 2px;
   }
 
   .flexColChild {
@@ -112,6 +134,11 @@
         height: 0 !important;
         width: 10.5rem;
       }
+    }
+
+    &--home-services-col {
+      max-width: 200px;
+      width: 100%;
     }
   }
 }

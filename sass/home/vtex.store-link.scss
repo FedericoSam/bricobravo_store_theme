@@ -55,7 +55,6 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    border: 2px solid transparent;
     border-radius: 16px;
     font-weight: 500;
     font-size: 18px;
@@ -63,12 +62,11 @@
     text-align: center;
     line-height: 21px;
     color: #332c32;
-    transition: border-color 0.3s ease, color 0.3s ease;
     margin-top: 20px;
 
     &:hover {
-      color: #e30613;
-      border-color: #ddd;
+      color: #332c32;
+      font-weight: 700;
     }
   }
 
@@ -79,5 +77,20 @@
     color: #111;
     line-height: 24px;
     font-weight: 500;
+  }
+
+  &--home-services-cta {
+    height: 1.25rem;
+    max-width: 12.5rem;
+    color: #1b0e41;
+    text-decoration: none;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25rem;
+
+    &:hover {
+      color: #291660;
+    }
   }
 }
