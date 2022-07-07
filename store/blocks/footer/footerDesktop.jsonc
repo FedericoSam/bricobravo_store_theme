@@ -1,8 +1,8 @@
 {
   "footer-layout.desktop": {
     "children": [
+      "flex-layout.row#upperFooterDesktop",
       "flex-layout.row#middleFooterDesktop",
-      "flex-layout.row#newsletter",
       "flex-layout.row#footerPaymentMethods",
       "flex-layout.row#bottomFooterDesktop"
     ]
@@ -19,7 +19,10 @@
   },
 
   "flex-layout.col#upperFooterCol1": {
-    "children": ["rich-text#upperFooterTitle"],
+    "children": [
+      "rich-text#upperFooterTitleCol1",
+      "flex-layout.row#upperFooterLinksCol1"
+    ],
     "props": {
       "blockClass": "upperFooterCol1",
       "width": "25%"
@@ -28,13 +31,95 @@
 
   "rich-text#upperFooterTitle": {
     "props": {
-      "text": "## O grande ícone está de volta.",
+      "text": "## Assistenza clienti",
       "blockClass": "upperFooterTitle"
     }
   },
 
+  "flex-layout.row#upperFooterLinksCol1": {
+    "children": [
+      "flex-layout.col#upperFooterLinksCol1-1",
+      "flex-layout.col#upperFooterLinksCol1-2"
+    ]
+  },
+
+  "flex-layout.col#upperFooterLinksCol1-1": {
+    "children": [
+      "link#upperFooterCol1Link1",
+      "link#upperFooterCol1Link2",
+      "link#upperFooterCol1Link3",
+      "link#upperFooterCol1Link4",
+      "link#upperFooterCol1Link5"
+    ]
+  },
+  "flex-layout.col#upperFooterLinksCol1-2": {
+    "children": [
+      "link#upperFooterCol1Link6",
+      "link#upperFooterCol1Link7",
+      "link#upperFooterCol1Link8",
+      "link#upperFooterCol1Link9"
+    ]
+  },
+  "link#upperFooterCol1Link1": {
+    "props": {
+      "label": "Dov'è il mio ordine?",
+      "href": "#"
+    }
+  },
+  "link#upperFooterCol1Link2": {
+    "props": {
+      "label": "Effettuare un reso",
+      "href": "#"
+    }
+  },
+  "link#upperFooterCol1Link3": {
+    "props": {
+      "label": "Pagamenti",
+      "href": "#"
+    }
+  },
+  "link#upperFooterCol1Link4": {
+    "props": {
+      "label": "Spedizione e consegna",
+      "href": "#"
+    }
+  },
+  "link#upperFooterCol1Link5": {
+    "props": {
+      "label": "FAQ",
+      "href": "#"
+    }
+  },
+  "link#upperFooterCol1Link6": {
+    "props": {
+      "href": "#",
+      "label": "Garanzia legale"
+    }
+  },
+  "link#upperFooterCol1Link7": {
+    "props": {
+      "href": "#",
+      "label": "Condizioni generali di vendita"
+    }
+  },
+  "link#upperFooterCol1Link8": {
+    "props": {
+      "href": "#",
+      "label": "Cookie policy"
+    }
+  },
+  "link#upperFooterCol1Link9": {
+    "props": {
+      "href": "#",
+      "label": "Privacy policy"
+    }
+  },
+
   "flex-layout.col#upperFooterCol2": {
-    "children": ["rich-text#upperFooterSubtitle"],
+    "children": [
+      "rich-text#upperFooterTittleCol2",
+      "flex-layout.col#upperFooterLinksCol2"
+    ],
     "props": {
       "width": "55%",
       "blockClass": "upperFooterCol2"
@@ -43,8 +128,33 @@
 
   "rich-text#upperFooterSubtitle": {
     "props": {
-      "text": "Here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.",
+      "text": "Chi siamo",
       "blockClass": "upperFooterSubtitle"
+    }
+  },
+  "flex-layout.col#upperFooterLinksCol2": {
+    "children": [
+      "link#upperFooterCol2Link1",
+      "link#upperFooterCol2Link2",
+      "link#upperFooterCol2Link3"
+    ]
+  },
+  "link#upperFooterCol2Link1": {
+    "props": {
+      "href": "#",
+      "label": "l´azienda"
+    }
+  },
+  "link#upperFooterCol2Link2": {
+    "props": {
+      "href": "#",
+      "label": "Dove siamo"
+    }
+  },
+  "link#upperFooterCol2Link3": {
+    "props": {
+      "href": "#",
+      "label": "Contatti"
     }
   },
 
