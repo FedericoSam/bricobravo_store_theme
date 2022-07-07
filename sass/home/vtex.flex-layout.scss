@@ -76,11 +76,15 @@
       overflow: scroll;
       height: 4rem;
     }
+
+    &--home-services,
+    &--home-blog {
+      @include container-main;
+    }
   }
 
-  &--home-services,
   &--home-blog {
-    @include container-main;
+    background-color: #f6f6f6;
   }
 
   &--home-services {
@@ -116,6 +120,11 @@
     width: 100%;
     border: 1px solid #ececec;
     border-radius: 2px;
+  }
+
+  &--home-blog {
+    margin: 2rem 0;
+    height: auto;
   }
 
   .flexColChild {

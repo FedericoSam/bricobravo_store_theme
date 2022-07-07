@@ -93,4 +93,18 @@
       color: #291660;
     }
   }
+
+  &--home-blog-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2b126b;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    padding: 0.75rem 4rem;
+    border: 1.5px solid #2b126b;
+    border-radius: 2px;
+    background-color: #fff;
+  }
 }

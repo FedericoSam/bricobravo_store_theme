@@ -579,7 +579,8 @@
       "flex-layout.col#home-blog-shelf"
     ],
     "props": {
-      "blockClass": "home-blog"
+      "blockClass": "home-blog",
+      "preventVerticalStretch": false
     }
   },
   "flex-layout.col#home-blog": {
@@ -590,7 +591,8 @@
     ],
     "props": {
       "blockClass": "home-blog",
-      "width": "30%"
+      "width": "30%",
+      "preventVerticalStretch": false
     }
   },
   "image#home-blog": {
