@@ -127,7 +127,7 @@
   },
 
   "drawer#menu-desktop": {
-    "children": ["menu#drawer-desktop"],
+    "children": ["header-mega-menu"],
     "props": {
       "blockClass": "drawer-desktop",
       "maxWidth": 368
@@ -148,7 +148,7 @@
       "passwordPlaceholder": "Senha",
       "showPasswordVerificationIntoTooltip": true,
       "showIconProfile": true,
-      "iconLabel": "Minha conta"
+      "iconLabel": "."
     }
   },
   "icon-profile#profile": {
@@ -160,9 +160,16 @@
   "link#wishlist": {
     "props": {
       "href": "/account/#/wishlist",
-      "label": "Favoritos",
+      "label": "",
       "displayMode": "button",
       "blockClass": "wishlist-header"
+    },
+    "children": ["image#wishlist"]
+  },
+  "image#wishlist": {
+    "props": {
+      "src": "assets/icons/heartIcon.svg",
+      "width": "50px"
     }
   },
   "flex-layout.row#header-categories": {

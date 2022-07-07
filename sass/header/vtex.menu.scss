@@ -24,11 +24,13 @@
     }
 
     &--isOpen {
+      border: none;
       .styledLinkContainer {
         position: relative;
-
+        border: none;
         .styledLinkContent--has-submenu {
           color: #e30613;
+          border: none;
         }
       }
     }

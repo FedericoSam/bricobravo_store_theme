@@ -16,18 +16,10 @@
     background: transparent;
     border: none;
     text-transform: capitalize;
-  
+    padding: 0 5px 0 15px;
     &:hover {
       background: none;
       border: none;
-    }
-    &::before {
-      content: '';
-      width: 35px;
-      height: 35px;
-      display: block;
-      margin: 0 10px;
-      background-image: url("data:image/svg+xml,%3Csvg xml:space='preserve' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg' width='200' height='200' style='width:100%25;height:100%25;background-size:initial;background-repeat-y:initial;background-repeat-x:initial;background-position-y:initial;background-position-x:initial;background-origin:initial;background-color:initial;background-clip:initial;background-attachment:initial;animation-play-state:paused'%3E%3Cg style='transform-origin:50%25 50%25;transform:rotate(0deg) scale(.8,.8);animation-play-state:paused'%3E%3Cpath d='M87.5 40.4C87.5 68.1 50 87.5 50 87.5S12.5 68.1 12.5 40.4 50 13 50 39.4c0-26 37.5-26.7 37.5 1z' stroke-miterlimit='10' stroke-linejoin='round' stroke-linecap='round' stroke-width='3.5' stroke='%23333435' fill='%23C33837' style='stroke:%23333435;fill:%23fff;animation-play-state:paused' class='ldl-scale'/%3E%3C/g%3E%3C/svg%3E");
     }
     .label {
       display: none;

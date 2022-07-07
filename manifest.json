@@ -19,6 +19,7 @@
   "dependencies": {
     "vtex.store": "2.x",
     "vtex.auth-challenge": "1.x",
+    "vtex.device-detector": "0.x",
     "vtex.store-header": "2.x",
     "vtex.product-summary": "2.x",
     "vtex.product-price": "1.x",
