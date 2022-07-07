@@ -28,6 +28,16 @@
     height: 48px;
     margin: auto 1rem;
   }
+
+  &--home-blog-image {
+    margin: 0 0 1.25rem;
+    max-width: 28.75rem;
+
+    &:hover {
+      opacity: 0.9;
+      transition: all ease-in-out 0.2s;
+    }
+  }
 }
 
 .imageElementLink {

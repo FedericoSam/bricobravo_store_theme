@@ -1,7 +1,8 @@
 .sliderLayoutContainer {
   .sliderArrows {
     &.sliderLeftArrow {
-      &--home-services {
+      &--home-services,
+      &--home-blog {
         position: absolute;
         top: -3rem;
         right: 2rem;
@@ -10,17 +11,26 @@
     }
 
     &.sliderRightArrow {
-      &--home-services {
+      &--home-services,
+      &--home-blog {
         position: absolute;
         top: -3rem;
       }
     }
 
     .caretIcon {
-      &--home-services {
+      &--home-services,
+      &--home-blog {
         height: 16px;
         color: #4320a8;
       }
     }
+  }
+}
+
+.slideChildrenContainer {
+  &--home-blog {
+    max-width: 12.5rem;
+    width: 100%;
   }
 }

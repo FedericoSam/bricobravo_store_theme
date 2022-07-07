@@ -591,7 +591,7 @@
     ],
     "props": {
       "blockClass": "home-blog",
-      "width": "30%",
+      "width": "40%",
       "preventVerticalStretch": false
     }
   },
@@ -615,8 +615,217 @@
     }
   },
   "flex-layout.col#home-blog-shelf": {
+    "children": [
+      "rich-text#home-blog-shelf-title",
+      "slider-layout#home-blog-shelf"
+    ],
     "props": {
       "blockClass": "home-blog-shelf"
+    }
+  },
+  "rich-text#home-blog-shelf-title": {
+    "props": {
+      "blockClass": "home-blog-title",
+      "text": "Gli articoli più recenti"
+    }
+  },
+  "slider-layout#home-blog-shelf": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "autoplay": false,
+      // "infinity": false,
+      "navigationStep": 1,
+      "fullWidth": true,
+      "centerMode": "to-the-left",
+      "blockClass": "home-blog"
+    },
+    "children": [
+      "flex-layout.col#home-blog-01",
+      "flex-layout.col#home-blog-02",
+      "flex-layout.col#home-blog-03",
+      "flex-layout.col#home-blog-04",
+      "flex-layout.col#home-blog-05"
+    ]
+  },
+
+  "flex-layout.col#home-blog-01": {
+    "children": [
+      "image#home-blog-01",
+      "link#home-blog-01-cta",
+      "rich-text#home-blog-01-text"
+    ],
+    "props": {
+      "blockClass": "home-blog-col",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": false
+    }
+  },
+  "rich-text#home-blog-01-text": {
+    "props": {
+      "blockClass": "home-blog-text",
+      "text": "Idee e accessori per ottimizzare gli spazi dell’armadio"
+    }
+  },
+  "image#home-blog-01": {
+    "props": {
+      "src": "https://dummyimage.com/200x160/FFDADA/fff",
+      "blockClass": "home-blog-image",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-blog-01-cta": {
+    "props": {
+      "blockClass": "home-blog-cta",
+      "href": "#",
+      "label": "CASA E DESIGN"
+    }
+  },
+
+  "flex-layout.col#home-blog-02": {
+    "children": [
+      "image#home-blog-02",
+      "link#home-blog-02-cta",
+      "rich-text#home-blog-02-text"
+    ],
+    "props": {
+      "blockClass": "home-blog-col",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": false
+    }
+  },
+  "rich-text#home-blog-02-text": {
+    "props": {
+      "blockClass": "home-blog-text",
+      "text": "Tante idee per arredare e abbellire un gazebo da giardino"
+    }
+  },
+  "image#home-blog-02": {
+    "props": {
+      "src": "https://dummyimage.com/200x160/FFDADA/fff",
+      "blockClass": "home-blog-image",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-blog-02-cta": {
+    "props": {
+      "blockClass": "home-blog-cta",
+      "href": "#",
+      "label": "FAI DA TE"
+    }
+  },
+
+  "flex-layout.col#home-blog-03": {
+    "children": [
+      "image#home-blog-03",
+      "link#home-blog-03-cta",
+      "rich-text#home-blog-03-text"
+    ],
+    "props": {
+      "blockClass": "home-blog-col",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": false
+    }
+  },
+  "rich-text#home-blog-03-text": {
+    "props": {
+      "blockClass": "home-blog-text",
+      "text": "Come funziona il condizionatore portatile e perché sceglierlo"
+    }
+  },
+  "image#home-blog-03": {
+    "props": {
+      "src": "https://dummyimage.com/200x160/FFDADA/fff",
+      "blockClass": "home-blog-image",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-blog-03-cta": {
+    "props": {
+      "blockClass": "home-blog-cta",
+      "href": "#",
+      "label": "GUIDE ALL'ACQUISTO"
+    }
+  },
+
+  "flex-layout.col#home-blog-04": {
+    "children": [
+      "image#home-blog-04",
+      "link#home-blog-04-cta",
+      "rich-text#home-blog-04-text"
+    ],
+    "props": {
+      "blockClass": "home-blog-col",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": false
+    }
+  },
+  "rich-text#home-blog-04-text": {
+    "props": {
+      "blockClass": "home-blog-text",
+      "text": "Come recintare un giardino: idee e consigli"
+    }
+  },
+  "image#home-blog-04": {
+    "props": {
+      "src": "https://dummyimage.com/200x160/FFDADA/fff",
+      "blockClass": "home-blog-image",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-blog-04-cta": {
+    "props": {
+      "blockClass": "home-blog-cta",
+      "href": "#",
+      "label": "FAI DA TE"
+    }
+  },
+
+  "flex-layout.col#home-blog-05": {
+    "children": [
+      "image#home-blog-05",
+      "link#home-blog-05-cta",
+      "rich-text#home-blog-05-text"
+    ],
+    "props": {
+      "blockClass": "home-blog-col",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": false
+    }
+  },
+  "rich-text#home-blog-05-text": {
+    "props": {
+      "blockClass": "home-blog-text",
+      "text": "Come recintare un giardino: idee e consigli"
+    }
+  },
+  "image#home-blog-05": {
+    "props": {
+      "src": "https://dummyimage.com/200x160/FFDADA/fff",
+      "blockClass": "home-blog-image",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-blog-05-cta": {
+    "props": {
+      "blockClass": "home-blog-cta",
+      "href": "#",
+      "label": "FAI DA TE"
     }
   },
 

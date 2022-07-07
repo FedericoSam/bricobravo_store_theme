@@ -107,4 +107,21 @@
     border-radius: 2px;
     background-color: #fff;
   }
+
+  &--home-blog-cta {
+    height: 1rem;
+    color: #232946;
+    font-size: 14px;
+    line-height: 1rem;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 1.25rem 0 0.75rem;
+    width: 100%;
+    max-width: 12.5rem;
+
+    &:hover {
+      color: #291660;
+    }
+  }
 }

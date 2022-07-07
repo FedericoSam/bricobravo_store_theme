@@ -19,6 +19,7 @@
     @include container-main;
 
     position: relative;
+    margin-bottom: 6.5rem;
 
     :global(.vtex-store-components-3-x-container) {
       position: absolute;
@@ -81,6 +82,10 @@
     &--home-blog {
       @include container-main;
     }
+
+    &--home-blog {
+      margin-bottom: 2rem;
+    }
   }
 
   &--home-blog {
@@ -122,7 +127,8 @@
     border-radius: 2px;
   }
 
-  &--home-blog {
+  &--home-blog,
+  &--home-blog-shelf {
     margin: 2rem 0;
     height: auto;
   }
@@ -145,9 +151,14 @@
       }
     }
 
-    &--home-services-col {
+    &--home-services-col,
+    &--home-blog-col {
       max-width: 200px;
       width: 100%;
+    }
+
+    &--home-blog-col {
+      height: auto !important;
     }
   }
 }
