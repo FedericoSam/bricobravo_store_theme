@@ -12,32 +12,19 @@
     }
   }
 
-  &--submenu-category-cta {
-    font-size: 1rem;
-    max-width: 199px;
-    color: #fff;
-    font-weight: 600;
-    line-height: 24px;
-    text-align: center;
-    border-radius: 8px;
-    padding: 12px 25px;
-    text-decoration: none;
-    background-color: #e30613;
-    transition: background-color 0.3s ease;
+  &--wishlist-header {
+    background: transparent;
+    border: none;
+    text-transform: capitalize;
+    padding: 0 5px 0 15px;
 
     &:hover {
-      background-color: #bd000b;
+      background: none;
+      border: none;
     }
-  }
 
-  &--mobile-menu-item {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-    text-decoration: none;
-    color: #111;
-    margin-right: 18px;
+    .label {
+      display: none;
+    }
   }
 }

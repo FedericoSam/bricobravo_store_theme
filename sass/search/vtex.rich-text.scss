@@ -7,9 +7,9 @@
   bottom: 130px;
   font-size: 12px;
   font-weight: 400;
-  color: var(--primary-default);
+  color: $primary-default;
   .strong--search-instructionRangePrice {
-    color: var(--secondary-default);
+    color: $secondary-default;
     font-weight: 400;
   }
 }

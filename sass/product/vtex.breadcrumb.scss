@@ -32,14 +32,14 @@
   margin-left: 0.5rem;
   &::before {
     content: 'Home';
-    color: var(--darkgrey-light);
+    color: $darkgrey-light;
     font-weight: 400;
     line-height: 16px;
     font-size: 12px;
   }
   &:hover {
     &::before {
-      color: var(--primary-dark);
+      color: $primary-dark;
       text-decoration: underline;
     }
   }
@@ -47,12 +47,12 @@
 
 .link {
   padding: 0;
-  color: var(--primary-dark);
+  color: $primary-dark;
   font-weight: 400;
   line-height: 16px;
   font-size: 12px;
   &:hover {
-    color: var(--secondary-dark);
+    color: $secondary-dark;
     text-decoration: underline;
   }
 }

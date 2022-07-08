@@ -1,370 +1,269 @@
 {
   "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#middleFooterDesktop",
-      "flex-layout.row#newsletter",
+      "flex-layout.row#upperFooterDesktop",
       "flex-layout.row#footerPaymentMethods",
       "flex-layout.row#bottomFooterDesktop"
     ]
   },
 
-  "rich-text#upperFooterTitle": {
+  "rich-text#upperFooterTitleCol1": {
     "props": {
-      "text": "## O grande ícone está de volta.",
-      "blockClass": "upperFooterTitle"
+      "text": "Assistenza clienti",
+      "blockClass": "footer-upperFooterTitle"
     }
   },
 
-  "flex-layout.row#middleFooterDesktop": {
-    "children": ["flex-layout.row#middleFooterContent"],
-    "props": {
-      "blockClass": "middleFooterDesktop"
-    }
-  },
-
-  "flex-layout.row#middleFooterContent": {
+  "flex-layout.row#upperFooterLinksCol1": {
     "children": [
-      "flex-layout.col#middleFooterCol1",
-      "flex-layout.col#middleFooterCol2",
-      "flex-layout.col#middleFooterCol3",
-      "flex-layout.col#middleFooterCol4"
+      "flex-layout.col#upperFooterLinksCol1-1",
+      "flex-layout.col#upperFooterLinksCol1-2"
     ]
   },
 
-  "flex-layout.col#middleFooterCol1": {
+  "flex-layout.col#upperFooterLinksCol1-1": {
     "children": [
-      "rich-text#middleFooterCol1Title",
-      "vtex.menu@2.x:menu#footerInstitutional"
-    ],
-    "props": {
-      "preventVerticalStretch": true,
-      "blockClass": "middleFooterCol"
-    }
+      "link#upperFooterCol1Link1",
+      "link#upperFooterCol1Link2",
+      "link#upperFooterCol1Link3",
+      "link#upperFooterCol1Link4",
+      "link#upperFooterCol1Link5"
+    ]
   },
-
-  "rich-text#middleFooterCol1Title": {
-    "props": {
-      "text": "Institucional",
-      "blockClass": "footerMenuTitle"
-    }
-  },
-
-  "vtex.menu@2.x:menu#footerInstitutional": {
-    "props": {
-      "orientation": "vertical",
-      "blockClass": "footerMenu",
-      "items": [
-        {
-          "id": "footer-item-1",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "noFollow": false,
-            "tagTitle": "Minha Conta",
-            "text": "Minha Conta"
-          }
-        },
-        {
-          "id": "footer-item-2",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "noFollow": false,
-            "tagTitle": "Meus Pedidos",
-            "text": "Meus Pedidos"
-          }
-        },
-        {
-          "id": "footer-item-3",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "noFollow": false,
-            "tagTitle": "Sobre a Aiwa",
-            "text": "Sobre a Aiwa"
-          }
-        },
-        {
-          "id": "footer-item-4",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "noFollow": false,
-            "tagTitle": "Trabalhe Conosco",
-            "text": "Trabalhe Conosco"
-          }
-        },
-        {
-          "id": "footer-item-5",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "noFollow": false,
-            "tagTitle": "Fale Conosco",
-            "text": "Fale Conosco"
-          }
-        }
-      ]
-    }
-  },
-
-  "flex-layout.col#middleFooterCol2": {
+  "flex-layout.col#upperFooterLinksCol1-2": {
     "children": [
-      "rich-text#middleFooterCol2Title",
-      "vtex.menu@2.x:menu#footerProducts"
-    ],
+      "link#upperFooterCol1Link6",
+      "link#upperFooterCol1Link7",
+      "link#upperFooterCol1Link8",
+      "link#upperFooterCol1Link9"
+    ]
+  },
+  "link#upperFooterCol1Link1": {
     "props": {
-      "preventVerticalStretch": true,
-      "blockClass": "middleFooterCol"
+      "label": "Dov'è il mio ordine?",
+      "href": "#"
     }
   },
-
-  "rich-text#middleFooterCol2Title": {
+  "link#upperFooterCol1Link2": {
     "props": {
-      "text": "Produtos",
-      "blockClass": "footerMenuTitle"
+      "label": "Effettuare un reso",
+      "href": "#"
     }
   },
-
-  "vtex.menu@2.x:menu#footerProducts": {
+  "link#upperFooterCol1Link3": {
     "props": {
-      "orientation": "vertical",
-      "blockClass": "footerMenu",
-      "items": [
-        {
-          "id": "footer-item-1",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "noFollow": false,
-            "tagTitle": "Smart TV’s",
-            "text": "Smart TV’s"
-          }
-        },
-        {
-          "id": "footer-item-2",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "noFollow": false,
-            "tagTitle": "Speakers",
-            "text": "Speakers"
-          }
-        },
-        {
-          "id": "footer-item-3",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "noFollow": false,
-            "tagTitle": "Headphones",
-            "text": "Headphones"
-          }
-        },
-        {
-          "id": "footer-item-4",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "noFollow": false,
-            "tagTitle": "Caixas de Som",
-            "text": "Caixas de Som"
-          }
-        },
-        {
-          "id": "footer-item-5",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "noFollow": false,
-            "tagTitle": "Tower Sound",
-            "text": "Tower Sound"
-          }
-        },
-        {
-          "id": "footer-item-6",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "noFollow": false,
-            "tagTitle": "Som Automotivo",
-            "text": "Som Automotivo"
-          }
-        }
-      ]
+      "label": "Pagamenti",
+      "href": "#"
     }
   },
-
-  "flex-layout.col#middleFooterCol3": {
-    "children": [
-      "rich-text#middleFooterCol3Title",
-      "vtex.menu@2.x:menu#footerHelp"
-    ],
+  "link#upperFooterCol1Link4": {
     "props": {
-      "preventVerticalStretch": true,
-      "blockClass": "middleFooterCol"
+      "label": "Spedizione e consegna",
+      "href": "#"
     }
   },
-
-  "rich-text#middleFooterCol3Title": {
+  "link#upperFooterCol1Link5": {
     "props": {
-      "text": "Ajuda",
-      "blockClass": "footerMenuTitle"
+      "label": "FAQ",
+      "href": "#"
     }
   },
-
-  "vtex.menu@2.x:menu#footerHelp": {
+  "link#upperFooterCol1Link6": {
     "props": {
-      "orientation": "vertical",
-      "blockClass": "footerMenu",
-      "items": [
-        {
-          "id": "footer-item-1",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "noFollow": false,
-            "tagTitle": "Suporte e Segurança",
-            "text": "Suporte e Segurança"
-          }
-        },
-        {
-          "id": "footer-item-2",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "noFollow": false,
-            "tagTitle": "Termos e Devoluções",
-            "text": "Termos e Devoluções"
-          }
-        },
-        {
-          "id": "footer-item-3",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "noFollow": false,
-            "tagTitle": "Perguntas Frequentes",
-            "text": "Perguntas Frequentes"
-          }
-        }
-      ]
-    }
-  },
-
-  "flex-layout.col#middleFooterCol4": {
-    "children": [
-      "rich-text#middleFooterCol4Title",
-      "link#attendanceCTA",
-      "link#supportCTA",
-      "rich-text#middleFooterCol4Subtitle"
-    ],
-    "props": {
-      "preventVerticalStretch": true,
-      "blockClass": "middleFooterCol"
-    }
-  },
-
-  "rich-text#middleFooterCol4Title": {
-    "props": {
-      "text": "Atendimento",
-      "blockClass": ["footerMenuTitle", "middleFooterCol4Title"]
-    }
-  },
-
-  "link#attendanceCTA": {
-    "props": {
-      "label": "Falar com atendimento",
       "href": "#",
-      "blockClass": "attendanceCTA"
+      "label": "Garanzia legale"
     }
   },
-
-  "link#supportCTA": {
+  "link#upperFooterCol1Link7": {
     "props": {
-      "label": "Preciso de suporte",
       "href": "#",
-      "blockClass": "supportCTA"
+      "label": "Condizioni generali di vendita"
+    }
+  },
+  "link#upperFooterCol1Link8": {
+    "props": {
+      "href": "#",
+      "label": "Cookie policy"
+    }
+  },
+  "link#upperFooterCol1Link9": {
+    "props": {
+      "href": "#",
+      "label": "Privacy policy"
     }
   },
 
-  "rich-text#middleFooterCol4Subtitle": {
+  "flex-layout.col#upperFooterCol2": {
+    "children": [
+      "rich-text#upperFooterTitleCol2",
+      "flex-layout.col#upperFooterLinksCol2"
+    ],
     "props": {
-      "text": "Temos um especialista sempre pronto para te ajudar 😉",
-      "blockClass": "middleFooterSubtitle"
+      "width": "55%",
+      "blockClass": "footer-upperFooterCol2"
+    }
+  },
+
+  "rich-text#upperFooterTitleCol2": {
+    "props": {
+      "text": "Chi siamo",
+      "blockClass": "footer-upperFooterTitle"
+    }
+  },
+  "flex-layout.col#upperFooterLinksCol2": {
+    "children": [
+      "link#upperFooterCol2Link1",
+      "link#upperFooterCol2Link2",
+      "link#upperFooterCol2Link3"
+    ]
+  },
+  "link#upperFooterCol2Link1": {
+    "props": {
+      "href": "#",
+      "label": "l´azienda"
+    }
+  },
+  "link#upperFooterCol2Link2": {
+    "props": {
+      "href": "#",
+      "label": "Dove siamo"
+    }
+  },
+  "link#upperFooterCol2Link3": {
+    "props": {
+      "href": "#",
+      "label": "Contatti"
+    }
+  },
+
+  "flex-layout.col#upperFooterCol3": {
+    "children": ["image#Congratulations1", "image#Congratulations2"],
+    "props": {
+      "blockClass": "footer-upperFooterCol3"
+    }
+  },
+  "image#Congratulations1": {
+    "props": {
+      "src": "",
+      "width": "100px"
+    }
+  },
+  "image#Congratulations2": {
+    "props": {
+      "src": "",
+      "width": "100px"
     }
   },
 
   "flex-layout.row#footerPaymentMethods": {
+    "children": ["flex-layout.col#footerPaymentMethods"],
+    "props": {
+      "blockClass": "footer-PaymentMethods"
+    }
+  },
+  "flex-layout.col#footerPaymentMethods": {
     "children": [
-      "flex-layout.col#footerPaymentMethods",
-      "flex-layout.col#footerSocialMedia"
+      "flex-layout.row#footerPaymentMethodsRow1",
+      "flex-layout.row#footerPaymentMethodsRow2",
+      "flex-layout.row#footerPaymentMethodsRow3"
+    ]
+  },
+
+  "flex-layout.row#footerPaymentMethodsRow1": {
+    "children": ["rich-text#footerPaymentMethodsRow1Title", "image#security"],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "footer-PaymentMethodsRow"
+    }
+  },
+
+  "rich-text#footerPaymentMethodsRow1Title": {
+    "props": {
+      "text": "Pagamenti sicuri",
+      "blockClass": "footer-MenuTitle"
+    }
+  },
+  "image#security": {
+    "props": {
+      "src": "assets/icons/payments/iconlock.svg"
+    }
+  },
+
+  "flex-layout.row#footerPaymentMethodsRow2": {
+    "children": [
+      "image#payment1",
+      "image#payment2",
+      "image#payment3",
+      "image#payment4",
+      "image#payment5",
+      "image#payment6",
+      "image#payment7",
+      "image#payment8"
     ],
     "props": {
-      "blockClass": "footerPaymentMethods"
+      "preventVerticalStretch": true,
+      "blockClass": "footer-PaymentMethodsRow"
+    }
+  },
+  "image#payment1": {
+    "props": {
+      "src": "assets/icons/payments/visa.png",
+      "width": "70px"
+    }
+  },
+  "image#payment2": {
+    "props": {
+      "src": "assets/icons/payments/mastercard.png",
+      "width": "70px"
+    }
+  },
+  "image#payment3": {
+    "props": {
+      "src": "assets/icons/payments/maestro.png",
+      "width": "70px"
+    }
+  },
+  "image#payment4": {
+    "props": {
+      "src": "assets/icons/payments/amex.png",
+      "width": "70px"
+    }
+  },
+  "image#payment5": {
+    "props": {
+      "src": "assets/icons/payments/paypal.png",
+      "width": "70px"
+    }
+  },
+  "image#payment6": {
+    "props": {
+      "src": "assets/icons/payments/postepay.png",
+      "width": "70px"
+    }
+  },
+  "image#payment7": {
+    "props": {
+      "src": "assets/icons/payments/contrassegno.png",
+      "width": "70px"
+    }
+  },
+  "image#payment8": {
+    "props": {
+      "src": "assets/icons/payments/bonifico.png",
+      "width": "70px"
     }
   },
 
-  "flex-layout.col#footerPaymentMethods": {
-    "children": ["rich-text#footerPaymentMethods", "image#paymentMethods"],
+  "flex-layout.row#footerPaymentMethodsRow3": {
     "props": {
-      "blockClass": "footerPaymentMethods",
-      "preventVerticalStretch": true
-    }
+      "blockClass": "footer-PaymentMethodsRow"
+    },
+    "children": ["rich-text#textPaymentMethods"]
   },
-
-  "rich-text#footerPaymentMethods": {
+  "rich-text#textPaymentMethods": {
     "props": {
-      "text": "Pague com ",
-      "blockClass": "paymentMethodText"
-    }
-  },
-
-  "image#paymentMethods": {
-    "props": {
-      "src": "assets/images/payment-methods.png"
+      "text": "Nel 1959 eravamo un negozio di ferramenta a conduzione familiare. Oggi BricoBravo è un punto di riferimento nel settore del bricolage e del fai da te oltre ad essere anche un ecommerce online dove dare sfogo alla tua passione per la casa, la decorazione e il giardinaggio. Qualunque sia il tuo progetto, da noi puoi trovare facilmente ed acquistare online gli strumenti per realizzarlo: dagli utensili, gli oggetti per il fai da te e la manutenzione, fino ai mobili, i complementi per l’arredamento, il riscaldamento con stufe e caminetti e la climatizzazione di piccoli e grandi spazi con condizionatori fissi e portatili. Oltre ad offriti tante idee per gli interni, da BricoBravo ti proponiamo anche soluzioni per attrezzare gli spazi esterni con tutte le comodità che desideri: piscine, gazebo o casette e box. E siccome abbiamo a cuore proprio tutte le tue passioni, qui troverai anche prodotti per prenderti cura della tua auto e della tua moto. Realizza i tuoi progetti con le offerte e le promozioni di BricoBravo e approfitta dei consigli e dell’assistenza dei nostri esperti.",
+      "blockClass": "footer-PaymentMethodsDescription"
     }
   },
 
