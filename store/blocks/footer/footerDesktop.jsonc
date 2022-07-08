@@ -29,7 +29,7 @@
     }
   },
 
-  "rich-text#upperFooterTitle": {
+  "rich-text#upperFooterTitleCol1": {
     "props": {
       "text": "## Assistenza clienti",
       "blockClass": "upperFooterTitle"
@@ -117,7 +117,7 @@
 
   "flex-layout.col#upperFooterCol2": {
     "children": [
-      "rich-text#upperFooterTittleCol2",
+      "rich-text#upperFooterTitleCol2",
       "flex-layout.col#upperFooterLinksCol2"
     ],
     "props": {
@@ -126,7 +126,7 @@
     }
   },
 
-  "rich-text#upperFooterSubtitle": {
+  "rich-text#upperFooterTitleCol2": {
     "props": {
       "text": "Chi siamo",
       "blockClass": "upperFooterSubtitle"
@@ -159,17 +159,21 @@
   },
 
   "flex-layout.col#upperFooterCol3": {
-    "children": ["link#upperFooterCTA"],
+    "children": ["image#Congratulations1", "image#Congratulations2"],
     "props": {
       "blockClass": "upperFooterCol3"
     }
   },
-
-  "link#upperFooterCTA": {
+  "image#Congratulations1": {
     "props": {
-      "label": "Conheça AIWA",
-      "href": "#",
-      "blockClass": "upperFooterCTA"
+      "src": "",
+      "width": "100px"
+    }
+  },
+  "image#Congratulations2": {
+    "props": {
+      "src": "",
+      "width": "100px"
     }
   },
 
