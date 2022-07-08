@@ -2,12 +2,11 @@
 @import '../media-queries';
 
 .flexRow {
-  &--upperFooterDesktop {
-    background: #fff;
+  &--footer-upperFooterDesktop {
+    background: $background-footer;
     margin-top: -60px;
     z-index: 2;
     position: relative;
-    border-radius: 16px 16px 0 0;
 
     @media screen and (max-width: 768px) {
       margin-top: -20px;
@@ -15,16 +14,15 @@
     }
   }
 
-  &--upperFooterDesktop,
-  &--middleFooterDesktop {
+  &--footer-upperFooterDesktop {
     :global(.vtex-store-components-3-x-container) {
       @include container-main;
     }
   }
-  &--footerPaymentMethods {
+  &--footer-footerPaymentMethods {
     margin: 64px auto 0;
     padding: 42px 40px 0 32px;
-    border-top: 1px solid #f2f2f2;
+    background-color: $background-footer;
   }
   &--bottomFooterDesktop {
     background-color: #111;
@@ -42,16 +40,28 @@
 }
 
 .flexRowContent {
-  &--upperFooterDesktop {
+  &--footer-upperFooterDesktop {
     align-items: center;
-    padding-top: 2rem;
-  }
-
-  &--middleFooterDesktop {
-    padding: 0 32px;
-
-    @media screen and (max-width: 768px) {
-      padding: 0 24px;
+    padding: 0 10px 10px;
+    justify-content: space-between;
+    
+    .stretchChildrenWidth {
+      width: max-content !important;
+    }
+    :global(.vtex-store-link-0-x-link) {
+      text-decoration: none;
+      font-family: Roboto;
+      color: $white;
+      font-size: 16px;
+      line-height: 20px;
+      white-space: nowrap;
+      margin-right: 30px;
+      &:active {
+        color: $blue-active
+      }
+      &:hover {
+        color: $blue-hover;
+      }
     }
   }
 
@@ -71,7 +81,7 @@
     justify-content: space-between;
   }
 
-  &--footerPaymentMethods {
+  &--footer-footerPaymentMethods {
     @include container-main;
   }
 
@@ -91,7 +101,7 @@
 }
 
 .flexCol {
-  &--footerPaymentMethods {
+  &--footer-footerPaymentMethods {
     flex-direction: row;
     align-items: center;
 
@@ -112,8 +122,8 @@
     }
   }
 
-  &--upperFooterCol1,
-  &--upperFooterCol2 {
+  &--footer-upperFooterCol1,
+  &--footer-upperFooterCol2 {
     padding: 32px;
 
     @media screen and (max-width: 768px) {
@@ -122,7 +132,7 @@
     }
   }
 
-  &--upperFooterCol3 {
+  &--footer-upperFooterCol3 {
     @media screen and (max-width: 768px) {
       margin-bottom: 0;
     }
@@ -137,10 +147,6 @@
       margin-bottom: 12px;
       justify-content: center;
     }
-  }
-
-  &--middleFooterCol {
-    margin-bottom: 40px;
   }
 
   &--bottomFooter1 {
@@ -162,12 +168,7 @@
       justify-content: flex-end;
     }
 
-    &--middleFooterCol {
-      display: flex;
-      flex-direction: column;
-    }
-
-    &--footerPaymentMethods {
+    &--footer-footerPaymentMethods {
       @media screen and (max-width: 768px) {
         margin-bottom: 12px;
       }
