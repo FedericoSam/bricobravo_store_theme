@@ -20,14 +20,12 @@
     }
   }
   &--footer-PaymentMethods {
-    margin: 64px auto 0;
-    padding: 42px 40px 0 32px;
+    padding: 0 40px 0 32px;
     background-color: $background-footer;
   }
   &--bottomFooterDesktop {
-    background-color: #111;
-    padding: 32px 0;
-    margin-top: 40px;
+    background-color: $background-bottom-footer;
+    padding: 0 20px 0 40px;
 
     @media screen and (max-width: 768px) {
       padding: 32px;
@@ -42,7 +40,7 @@
 .flexRowContent {
   &--footer-upperFooterDesktop {
     align-items: center;
-    padding: 0 10px 10px;
+    padding: 0 10px 5px;
     justify-content: space-between;
     
     .stretchChildrenWidth {
@@ -77,12 +75,12 @@
 
   &--newsletterForm {
     max-width: 564px;
-    margin: 32px auto 0;
     justify-content: space-between;
   }
 
   &--footer-PaymentMethods {
     @include container-main;
+    border-top: 1px solid white
   }
 
   &--bottomFooterDesktop {

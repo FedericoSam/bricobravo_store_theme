@@ -1,9 +1,75 @@
 {
   "footer-layout.mobile": {
     "children": [
-      "flex-layout.row#newsletter",
+      "flex-layout.row#upperFooterMobile",
       "flex-layout.row#footerPaymentMethods",
       "flex-layout.row#bottomFooterDesktop"
     ]
+  },
+  "flex-layout.row#upperFooterMobile": {
+    "children": [
+      "flex-layout.col#upperFooterMobile"
+    ]
+  },
+  "flex-layout.col#upperFooterMobile": {
+    "children": [
+      "flex-layout.row#upperFooterCol3",
+      "flex-layout.row#upperFooterCol2Mobile",
+      "flex-layout.row#upperFooterCol1Mobile"
+    ]
+  },
+  "flex-layout.row#upperFooterCol2Mobile": {
+    "children": [
+      "disclosure-layout#upperFooterCol2Mobile"
+    ]
+  },
+  "disclosure-layout#upperFooterCol2Mobile": {
+    "children": [
+      "disclosure-trigger#upperFooterCol2Mobile",
+      "disclosure-content#upperFooterCol2Mobile"
+    ]
+  },
+  "disclosure-trigger#upperFooterCol2Mobile": {
+    "children": [
+      "rich-text#upperFooterTitleCol1"
+    ],
+    "props": {
+      "blockClass": "footer-disclosureTrigger"
+    }
+  },
+  "disclosure-content#upperFooterCol2Mobile": {
+    "children": [
+      "flex-layout.row#upperFooterLinksCol1"
+    ],
+    "props": {
+      "blockClass": "footer-disclosureContent"
+    }
+  },
+  "flex-layout.row#upperFooterCol1Mobile": {
+    "children": [
+      "disclosure-layout#upperFooterCol1Mobile"
+    ]
+  },
+  "disclosure-layout#upperFooterCol1Mobile": {
+    "children": [
+      "disclosure-trigger#upperFooterCol1Mobile",
+      "disclosure-content#upperFooterCol1Mobile"
+    ]
+  },
+  "disclosure-trigger#upperFooterCol1Mobile": {
+    "children": [
+      "rich-text#upperFooterTitleCol2"
+    ],
+    "props": {
+      "blockClass": "footer-disclosureTrigger"
+    }
+  },
+  "disclosure-content#upperFooterCol1Mobile": {
+    "children": [
+      "flex-layout.col#upperFooterLinksCol2"
+    ],
+    "props": {
+      "blockClass": "footer-disclosureContent"
+    }
   }
 }
