@@ -70,13 +70,8 @@
     "vtex.order-manager": "0.x",
     "vtex.order-items": "0.x",
     "vtex.modal-layout": "0.x",
-<<<<<<< HEAD
-    "vtex.search-graphql": "0.x",
-    "vtex.store-video": "1.x"
-=======
     "vtex.store-video": "1.x",
     "vtex.wish-list": "1.x"
->>>>>>> 18c2490 ([feature/productsummary] product summary structuring)
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

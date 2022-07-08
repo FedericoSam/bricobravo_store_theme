@@ -71,21 +71,32 @@
     "props": {
       "blockClass": "summaryComplete"
     },
-    "children": ["flex-layout.row#stackSavings", "flex-layout.col#summaryInfo"]
+    "children": [
+      "flex-layout.row#summary-discount-wishIcon",
+      "flex-layout.row#stackSavings", 
+      "flex-layout.col#summaryInfo"
+    ]
+  },
+  "flex-layout.row#summary-discount-wishIcon":{
+    "children":[
+      "product-price-savings#discount",
+      "add-to-list-btn"
+    ],
+    "props": {
+      "blockClass": "summaryTop"
+    }
   },
   "flex-layout.col#summaryInfo": {
-    "children": [
-      "add-to-list-btn",
-      "product-price-savings#discount",
-      "product-summary-name",
+    "children": [      
       "flex-layout.col#summary-prices",
-      "flex-layout.row#summaryDescription",
-      "flex-layout.row#product-ratingInline",
+      "product-summary-name",
+      // "flex-layout.row#summaryDescription",
       "product-installments",
       "flex-layout.col#product-buy-button"
     ],
     "props": {
-      "preventVerticalStretch": true
+      "preventVerticalStretch": true,
+      "blockClass": "summaryInfo"
     }
   },
   "flex-layout.col#summary-prices": {
@@ -102,22 +113,14 @@
       "blockClass": "savingPercentage"
     }
   },
-  "flex-layout.row#summaryDescription": {
-    "children": [
-      "flex-layout.row#description"
-    ],
-    "props": {
-      "blockClass": "summaryDescription"
-    }
-  },
-  "flex-layout.row#product-ratingInline":{
-    "children":[
-        "product-rating-summary"
-    ],
-    "props": {
-        "blockClass": "productPage-ratingInline"
-    }
-  },
+  // "flex-layout.row#summaryDescription": {
+  //   "children": [
+  //     "flex-layout.row#description"
+  //   ],
+  //   "props": {
+  //     "blockClass": "summaryDescription"
+  //   }
+  // },
   "flex-layout.col#product-buy-button": {
     "children": [
       "custom-add-to-cart#event-trigger"
@@ -219,12 +222,12 @@
     "props": {
       "showBadge": false,
       "width": {
-        "desktop": 284,
-        "mobile": 136
+        "desktop": 194,
+        "mobile": 194
       },
       "height": {
-        "desktop": 284,
-        "mobile": 136
+        "desktop": 194,
+        "mobile": 194
       },
       "aspectRatio": "1:1.5"
     }

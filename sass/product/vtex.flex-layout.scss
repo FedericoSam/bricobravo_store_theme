@@ -214,12 +214,30 @@
   background-color: transparent;
 }
 
+.flexRowContent--summaryTop{
+  :global(.vtex-wish-list-0-x-wishlistIconContainer) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .vtex-button:hover{
+      background-color: transparent;
+    }
+  }
+
+}
+.flexCol{
+  &--summaryInfo{
+    padding: 10px;
+  }
+  &--buyButtonContainer{
+    padding: 0 4px;
+  }
+}
 .flexRowChild--table-cell,
 .flexColChild--table-cell {
   display: flex;
   align-items: center;
 }
-
 .flexRow {
   &--breadcrumb {
     background-color: $lightgrey-light;

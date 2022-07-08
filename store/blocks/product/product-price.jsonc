@@ -37,7 +37,7 @@
   },
   "product-installments": {
     "props": {
-      "message": "{installmentsNumber}x de {installmentValue}",
+      "message": "{installmentsNumber} rate da {installmentValue}",
       "blockClass": "productMain-installments"
     }
   }
