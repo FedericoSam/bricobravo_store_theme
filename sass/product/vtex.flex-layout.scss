@@ -2,14 +2,13 @@
 @import '../_variables.scss';
 
 .flexRow--cartSummary {
-  border-radius: 8px;
+  border-bottom: 1px solid #D8D8D8;
   margin-bottom: 1rem;
-  padding: 5px 18px;
+  padding: 5px 1px;
   align-items: center;
   background: $white;
   height: 136px;
   display: flex;
-  align-items: center;
 }
 
 .flexRow--cartSummary:last-child {
@@ -769,9 +768,9 @@
       }
       &::after {
         display: block;
-        transform: translate(0px, -23px);
+        transform: translate(0, -23px);
         content: 'Não sabe seu CEP?';
-        color: #555555;
+        color: #555;
         text-align: left;
         font-weight: 400;
         font-size: 12px;
@@ -779,8 +778,8 @@
       }
     }
     :global(.vtex__icon-external-link) {
-      width: 0px;
-      height: 0px;
+      width: 0;
+      height: 0;
     }
     .stretchChildrenWidth {
       display: block;

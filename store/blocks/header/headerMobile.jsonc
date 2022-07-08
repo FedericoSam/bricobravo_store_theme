@@ -20,7 +20,8 @@
   "flex-layout.col#header-mobile": {
     "children": [
       "flex-layout.col#header-logo",
-      "flex-layout.col#header-searchBar"
+      "flex-layout.col#header-searchBar",
+      "minicart.v2#mobile"
     ]
   },
 

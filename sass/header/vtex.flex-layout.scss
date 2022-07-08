@@ -1,5 +1,6 @@
 
 @import '../_variables.scss';
+@import '../_media-queries.scss';
 
 .flexRow {
   &--header-containerPromotion {
@@ -113,11 +114,11 @@
 }
 
 .flexRowContent--minicart-footer {
-  background-color: #fff;
+  background-color: #F4F7FA;
 }
 
 .flexRowContent--productInfoNameMinicart {
-  display: flex;
+  display: block;
   margin-bottom: 14px;
   justify-content: space-between;
 }
@@ -140,10 +141,15 @@
 .flexColChild--minicartProductImage {
   display: flex;
   align-items: center;
+  max-width: 110px;
+
+  @include breakpoint("mobile"){
+    width: 80px;
+  }
 }
 
 .flexCol--minicartProductInfo {
-  margin-left: 20px;
+  margin-right: 16px;
 }
 
 :global(.vtex-styleguide-9-x-container) {
@@ -166,7 +172,7 @@
 
   &::before {
     font-size: 14px;
-    content: 'Calcule o frete no checkout!';
+    content: 'Spese di spedizione calcolate al momento del pagamento!';
   }
 }
 
