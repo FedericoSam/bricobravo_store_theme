@@ -2,7 +2,7 @@
 @import '../_media-queries.scss';
 
 .flexRow--searchHeadInfo {
-  background-color: #fafafa;
+  background-color: white;
   :global(.vtex-store-components-3-x-container) {
     @include container-main;
   }
@@ -12,7 +12,7 @@
 }
 
 .flexRow--searchLayout {
-  background-color: var(--lightgrey-lighter);
+  background-color: white;
   padding: 16px 0;
   .flexRowContent {
     @include container-main;
@@ -70,6 +70,15 @@
   margin-left: auto;
 }
 
+.flexRowContent--searchHeadInfo {
+  //padding-left: 324px;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-top: 1px solid #8E8E8E;
+  border-bottom: 1px solid #8E8E8E;
+  justify-content: center;
+}
+
 .flexColChild--productCountCol {
   display: flex;
   align-items: center;
@@ -83,3 +92,7 @@
     justify-content: space-between;
   }
 }
+
+// .flexRowContent--filterRow {
+//   //transform: translateY(-84px);
+// }

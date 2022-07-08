@@ -22,21 +22,26 @@
   }
 
   .showingProductsCount {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
-    color: #111;
+    color: #332C32;
+    line-height: 19px;
 
     &::before {
       content: 'Mostrando ';
       display: inline;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 400;
+      color: #332C32;
+      line-height: 19px;
     }
     &::after {
       content: ' produtos';
       display: inline;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 400;
+      color: #332C32;
+      line-height: 19px;
     }
   }
 }
@@ -64,11 +69,13 @@
   .orderByDropdown {
     justify-content: flex-end;
     display: flex;
+    margin-right: 16px;
   }
 
   .orderByButton {
     background-color: transparent;
-    padding: 10px 0 10px;
+    padding: 12px 0 12px;
+    border: none;
     @media screen and (max-width: 768px) {
       width: auto;
       margin: 0 30px;
@@ -82,6 +89,8 @@
       }
 
       .caretIcon {
+        width: 20px;
+        height: 20px;
         @media screen and (max-width: 768px) {
           background: url('assets/icons/arrowUpAndDown.png');
           background-size: cover;
@@ -94,12 +103,14 @@
       }
     }
     .filterPopupTitle {
-      font-size: 14px;
+      //visibility: hidden;
+      font-size: 16px;
       font-weight: 400;
+      line-height: 19px;
       text-transform: none;
       width: 132px;
       text-align: left;
-      color: #111;
+      color: transparent;
 
       @media screen and (max-width: 768px) {
         font-size: 0;
@@ -107,18 +118,21 @@
       }
 
       .orderByText {
-        margin-right: 60px;
-        color: #414042;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        color: #332C32;
+        //margin-right: 60px;
         position: absolute;
         text-transform: lowercase;
-        left: -90px;
+        left: 82px;
         &::first-letter {
           text-transform: uppercase;
         }
       }
       &::before {
         border-radius: 8px;
-        border: 2px solid silver;
+        //border: 2px solid silver;
         content: '';
         display: block;
         height: 40px;
@@ -141,6 +155,12 @@
       }
     }
   }
+
+  .orderByOptionsContainer {
+    border: none;
+  }
+
+
 }
 
 .filter__container--selectedFilters {
@@ -154,11 +174,12 @@
 }
 
 .filter__container--priceRange {
-  :global(.vtex-slider__base-internal) {
-    background-color: var(--secondary-default);
-  }
+  // :global(.vtex-slider__base-internal) {
+  //   background-color: var(--secondary-default);
+  // }
   :global(.vtex-slider__selector) {
-    background: var(--primary-default);
+    background: #2B126B;
+    transform: translateY(1px);
     height: 4px !important;
     width: 4px !important;
     box-shadow: none !important;
@@ -167,7 +188,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--white);
+    background-color: #2B126B;
     border-radius: 30px;
     height: 20px;
     margin: -3px 0 0 -3px;
@@ -178,6 +199,7 @@
   }
   :global(.vtex-slider__values-container) {
     justify-content: space-between;
+    transform: translateY(-63px);
 
     @media screen and (max-width: 768px) {
       height: 35px;
@@ -186,19 +208,19 @@
   :global(.vtex-slider__dash) {
     display: none;
   }
-  &::after {
-    content: 'Arraste a barra vermelha';
-    font-size: 12px;
-    font-weight: 400;
-    color: var(--secondary-default);
-    position: relative;
-    bottom: 35px;
+  // &::after {
+  //   content: 'Arraste a barra vermelha';
+  //   font-size: 12px;
+  //   font-weight: 400;
+  //   color: var(--secondary-default);
+  //   position: relative;
+  //   bottom: 35px;
 
-    @media screen and (max-width: 768px) {
-      bottom: 26px;
-      }
+  //   @media screen and (max-width: 768px) {
+  //     bottom: 26px;
+  //     }
 
-    }
+  //   }
 
     &::before {
       @media screen and (max-width: 768px) {
@@ -222,8 +244,8 @@
 
 .filters--layout {
   width: 332px;
-  padding: 32px;
-  border-radius: 16px;
+  padding: 16px;
+  padding-top: 0;
   background: #fff;
 
   @media screen and (max-width: 768px) {
@@ -256,81 +278,88 @@
 
   .filterIcon {
     padding: 0;
+
+    .caretIcon {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   .filterTitleSpan {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    color: var(--primary-default);
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: medium;
+    color: #332C32;
   }
 
   .filter__container {
     margin-bottom: 1.2rem;
   }
   .filter__container--title {
-    border: 0;
-    &::before {
-      content: 'Facilite sua busca';
-      color: var(--darkgrey-light);
-      font-size: 24px;
-      line-height: 2rem;
-      font-weight: 300;
-      margin-bottom: 8px;
-    }
-    &::after {
-      content: 'Filtre os resultados';
-      font-size: 24px;
-      line-height: 2rem;
-      font-weight: 400;
-      color: var(--darkgrey-dark);
-    }
-    .filterMessage {
-      font-size: 0;
-      margin: 0;
-      padding: 0;
-    }
+    display: none;
   }
 
   :global(.vtex-checkbox__label) {
-    color: var(--primary-default);
-    padding-left: 1rem;
-    font-size: 14px;
-    line-height: 26px;
+    color: #332C32;
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 19px;
   }
 
   :global(.vtex-checkbox__inner-container) {
-    border-radius: 6px;
-    width: 24px;
-    height: 24px;
+    border-radius: 2px;
+    width: 20px;
+    height: 20px;
   }
 
   :global(.vtex-checkbox__box-wrapper) {
-    top: 4px;
-    left: 4px !important;
+    width: 20px;
+    height: 20px;
   }
+
+
+  // :global(.vtex-checkbox__box-wrapper) {
+  //   // top: 4px;
+  //   // left: 4px !important;
+  // }
   .filterTemplateOverflow {
     @include desktop {
+      :global(.vtex-slider-container) {
+        transform: translateY(43px);
+
+        :global(.vtex-slider) {
+          width: 282px;
+          transform: translateX(10px);
+        }
+      }
+
       :global(.vtex-slider__values-container) {
         padding-bottom: 45px;
-      }
-    }
-  }
-  .filtersWrapper {
-    @include desktop {
-      &:last-child {
-        &::after {
-          content: 'e defina uma faixa de valores para filtrar.';
-          font-size: 12px;
-          font-weight: 400;
-          color: var(--primary-default);
-          position: relative;
-          bottom: 73px;
-          margin-left: 135px;
+
+        :global(.vtex-slider__left-value), :global(.vtex-slider__right-value) {
+          font-size: 16px;
+          line-height: 19px;
+          color: #332C32;
+          text-decoration: underline;
         }
       }
     }
   }
+  // .filtersWrapper {
+  //   @include desktop {
+  //     &:last-child {
+  //       &::after {
+  //         content: 'e defina uma faixa de valores para filtrar.';
+  //         font-size: 12px;
+  //         font-weight: 400;
+  //         color: var(--primary-default);
+  //         position: relative;
+  //         bottom: 73px;
+  //         margin-left: 135px;
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 @media screen and (max-width: 768px) {
@@ -409,7 +438,7 @@
           }
 
           :global(.vtex-checkbox__inner-container) {
-            border: 2px solid #DDDDDD;
+            border: 2px solid #DDD;
             border-radius: 6px;
             height: 24px;
             width: 24px;
@@ -521,3 +550,5 @@
   }
 
 }
+
+
