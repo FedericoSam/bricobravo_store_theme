@@ -1,5 +1,8 @@
 {
     "custom-add-to-cart": {
         "component": "BuyButton"
+    },
+    "header-mega-menu": {
+        "component": "CustomMegaMenu"
     }
 }
