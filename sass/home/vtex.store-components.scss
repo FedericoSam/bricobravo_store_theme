@@ -1,3 +1,6 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
 .imageElement {
   &--home-categories-image,
   &--categories-image {
@@ -37,6 +40,17 @@
       opacity: 0.9;
       transition: all ease-in-out 0.2s;
     }
+
+    @include breakpoint('mobile') {
+      max-width: 20rem;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &--mobile-home-categories-showcase {
+    height: auto;
+    width: 47px;
   }
 }
 

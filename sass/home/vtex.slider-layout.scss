@@ -33,4 +33,15 @@
     max-width: 12.5rem;
     width: 100%;
   }
+
+  &--mobile-home-categories-showcase {
+    height: 8.5rem;
+    align-items: flex-start;
+  }
+}
+
+.slide {
+  &--mobile-home-categories-showcase {
+    margin: 0;
+  }
 }

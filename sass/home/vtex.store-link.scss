@@ -1,3 +1,6 @@
+@import '../_media-queries.scss';
+@import '../_variables.scss';
+
 .link {
   &--home-button-default {
     font-size: 14px;
@@ -71,12 +74,17 @@
   }
 
   &--mobile-home-categories-showcase-cta {
-    margin-right: 1rem;
     text-decoration: none;
-    font-size: 16px;
-    color: #111;
-    line-height: 24px;
-    font-weight: 500;
+    height: fit-content;
+    color: #332c32;
+    font-size: 14px;
+    line-height: 1rem;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 1rem;
   }
 
   &--home-services-cta {

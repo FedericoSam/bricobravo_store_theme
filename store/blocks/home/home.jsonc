@@ -33,13 +33,13 @@
       "height": 612,
       "images": [
         {
-          "image": "https://dummyimage.com/1312x483/000/fff.jpg&text=Banner+01",
-          "mobileImage": "https://dummyimage.com/360x508/db9600/fff.jpg&text=Banner+01",
+          "image": "https://dummyimage.com/1312x483/FFDADA/fff.jpg&text=Banner+01",
+          "mobileImage": "https://dummyimage.com/360x270/FFDADA/fff.jpg&text=Banner+01",
           "description": "Banner 01"
         },
         {
-          "image": "https://dummyimage.com/1312x483/db9600/fff.jpg&text=Banner+02",
-          "mobileImage": "https://dummyimage.com/360x508/000000/fff.jpg&text=Banner+02",
+          "image": "https://dummyimage.com/1312x483/FFDADA/fff.jpg&text=Banner+02",
+          "mobileImage": "https://dummyimage.com/360x270/FFDADA/fff.jpg&text=Banner+02",
           "description": "Banner 02"
         }
       ],
@@ -82,10 +82,6 @@
     "children": ["flex-layout.row#home-categories-showcase"]
   },
 
-  "responsive-layout.mobile#home-categories-showcase": {
-    "children": ["flex-layout.row#mobile-home-categories-showcase"]
-  },
-
   "flex-layout.row#home-categories-showcase": {
     "children": [
       "flex-layout.col#home-categories-showcase-01",
@@ -111,6 +107,7 @@
     "props": {
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
       "blockClass": "home-categories-showcase"
     }
   },
@@ -141,6 +138,7 @@
     "props": {
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
       "blockClass": "home-categories-showcase"
     }
   },
@@ -171,6 +169,7 @@
     "props": {
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
       "blockClass": "home-categories-showcase"
     }
   },
@@ -201,6 +200,7 @@
     "props": {
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
       "blockClass": "home-categories-showcase"
     }
   },
@@ -231,6 +231,7 @@
     "props": {
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
       "blockClass": "home-categories-showcase"
     }
   },
@@ -261,6 +262,7 @@
     "props": {
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
       "blockClass": "home-categories-showcase"
     }
   },
@@ -279,233 +281,6 @@
     "props": {
       "label": "Bricolage e Fai da te",
       "blockClass": "home-categories-showcase-cta",
-      "href": "#"
-    }
-  },
-
-  "flex-layout.row#mobile-home-categories-showcase": {
-    "children": [
-      "flex-layout.col#mobile-home-categories-showcase-01",
-      "flex-layout.col#mobile-home-categories-showcase-02",
-      "flex-layout.col#mobile-home-categories-showcase-03",
-      "flex-layout.col#mobile-home-categories-showcase-04",
-      "flex-layout.col#mobile-home-categories-showcase-05",
-      "flex-layout.col#mobile-home-categories-showcase-06"
-    ],
-    "props": {
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "blockClass": "mobile-home-categories-showcase"
-    }
-  },
-
-  "flex-layout.col#mobile-home-categories-showcase-01": {
-    "children": ["flex-layout.row#mobile-home-categories-showcase-01"],
-    "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "middle",
-      "preventHorizontalStretch": true,
-      "blockClass": "mobile-home-categories-showcase"
-    }
-  },
-  "flex-layout.row#mobile-home-categories-showcase-01": {
-    "children": [
-      "image#mobile-home-categories-showcase-01",
-      "link#mobile-home-categories-showcase-01"
-    ],
-    "props": {
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "blockClass": "mobile-home-categories"
-    }
-  },
-  "image#mobile-home-categories-showcase-01": {
-    "props": {
-      "src": "assets/icons/tv32.png",
-      "blockClass": "mobile-home-categories-image"
-    }
-  },
-  "link#mobile-home-categories-showcase-01": {
-    "props": {
-      "label": "32\"",
-      "blockClass": "mobile-home-categories-showcase-cta",
-      "href": "#"
-    }
-  },
-
-  "flex-layout.col#mobile-home-categories-showcase-02": {
-    "children": ["flex-layout.row#mobile-home-categories-showcase-02"],
-    "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "middle",
-      "preventHorizontalStretch": true,
-      "blockClass": "mobile-home-categories-showcase"
-    }
-  },
-  "flex-layout.row#mobile-home-categories-showcase-02": {
-    "children": [
-      "image#mobile-home-categories-showcase-02",
-      "link#mobile-home-categories-showcase-02"
-    ],
-    "props": {
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "blockClass": "mobile-home-categories"
-    }
-  },
-  "image#mobile-home-categories-showcase-02": {
-    "props": {
-      "src": "assets/icons/tv43.png",
-      "blockClass": "mobile-home-categories-image"
-    }
-  },
-  "link#mobile-home-categories-showcase-02": {
-    "props": {
-      "label": "43\"",
-      "blockClass": "mobile-home-categories-showcase-cta",
-      "href": "#"
-    }
-  },
-
-  "flex-layout.col#mobile-home-categories-showcase-03": {
-    "children": ["flex-layout.row#mobile-home-categories-showcase-03"],
-    "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "middle",
-      "preventHorizontalStretch": true,
-      "blockClass": "mobile-home-categories-showcase"
-    }
-  },
-  "flex-layout.row#mobile-home-categories-showcase-03": {
-    "children": [
-      "image#mobile-home-categories-showcase-03",
-      "link#mobile-home-categories-showcase-03"
-    ],
-    "props": {
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "blockClass": "mobile-home-categories"
-    }
-  },
-  "image#mobile-home-categories-showcase-03": {
-    "props": {
-      "src": "assets/icons/tv50.png",
-      "blockClass": "mobile-home-categories-image"
-    }
-  },
-  "link#mobile-home-categories-showcase-03": {
-    "props": {
-      "label": "50\"",
-      "blockClass": "mobile-home-categories-showcase-cta",
-      "href": "#"
-    }
-  },
-
-  "flex-layout.col#mobile-home-categories-showcase-04": {
-    "children": ["flex-layout.row#mobile-home-categories-showcase-04"],
-    "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "middle",
-      "preventHorizontalStretch": true,
-      "blockClass": "mobile-home-categories-showcase"
-    }
-  },
-  "flex-layout.row#mobile-home-categories-showcase-04": {
-    "children": [
-      "image#mobile-home-categories-showcase-04",
-      "link#mobile-home-categories-showcase-04"
-    ],
-    "props": {
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "blockClass": "mobile-home-categories"
-    }
-  },
-  "image#mobile-home-categories-showcase-04": {
-    "props": {
-      "src": "assets/icons/tv55.png",
-      "blockClass": "mobile-home-categories-image"
-    }
-  },
-  "link#mobile-home-categories-showcase-04": {
-    "props": {
-      "label": "55\"",
-      "blockClass": "mobile-home-categories-showcase-cta",
-      "href": "#"
-    }
-  },
-
-  "flex-layout.col#mobile-home-categories-showcase-05": {
-    "children": ["flex-layout.row#mobile-home-categories-showcase-05"],
-    "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "middle",
-      "preventHorizontalStretch": true,
-      "blockClass": "mobile-home-categories-showcase"
-    }
-  },
-  "flex-layout.row#mobile-home-categories-showcase-05": {
-    "children": [
-      "image#mobile-home-categories-showcase-05",
-      "link#mobile-home-categories-showcase-05"
-    ],
-    "props": {
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "blockClass": "mobile-home-categories"
-    }
-  },
-  "image#mobile-home-categories-showcase-05": {
-    "props": {
-      "src": "assets/icons/tv65.png",
-      "blockClass": "mobile-home-categories-image"
-    }
-  },
-  "link#mobile-home-categories-showcase-05": {
-    "props": {
-      "label": "65\"",
-      "blockClass": "mobile-home-categories-showcase-cta",
-      "href": "#"
-    }
-  },
-
-  "flex-layout.col#mobile-home-categories-showcase-06": {
-    "children": ["flex-layout.row#mobile-home-categories-showcase-06"],
-    "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "middle",
-      "preventHorizontalStretch": true,
-      "blockClass": "mobile-home-categories-showcase"
-    }
-  },
-  "flex-layout.row#mobile-home-categories-showcase-06": {
-    "children": [
-      "image#mobile-home-categories-showcase-06",
-      "link#mobile-home-categories-showcase-06"
-    ],
-    "props": {
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "blockClass": "mobile-home-categories"
-    }
-  },
-  "image#mobile-home-categories-showcase-06": {
-    "props": {
-      "src": "assets/icons/tv75.png",
-      "blockClass": "mobile-home-categories-image"
-    }
-  },
-  "link#mobile-home-categories-showcase-06": {
-    "props": {
-      "label": "75\"",
-      "blockClass": "mobile-home-categories-showcase-cta",
       "href": "#"
     }
   },

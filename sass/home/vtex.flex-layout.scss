@@ -1,4 +1,5 @@
 @import '../_media-queries.scss';
+@import '../_variables.scss';
 
 .flexRow {
   &--home-page-main-slider {
@@ -10,9 +11,9 @@
       max-width: 82rem;
     }
 
-    @media screen and (max-width: 64rem) {
-      height: 454px;
-    }
+    // @media screen and (max-width: 64rem) {
+    //   height: 454px;
+    // }
   }
 
   &--home-categories {
@@ -21,9 +22,17 @@
     position: relative;
     margin-bottom: 6.5rem;
 
+    @include breakpoint('mobile') {
+      margin-bottom: 2.5rem;
+    }
+
     :global(.vtex-store-components-3-x-container) {
       position: absolute;
       top: -7rem;
+
+      @include breakpoint('mobile') {
+        top: -4rem;
+      }
     }
   }
 
@@ -44,11 +53,6 @@
       overflow: scroll;
       padding-bottom: 12px;
     }
-  }
-
-  &--mobile-home-categories-showcase {
-    padding-bottom: 0.5rem;
-    overflow: scroll;
   }
 
   &--mobile-home-categories {
@@ -98,15 +102,29 @@
 }
 
 .flexCol {
-  &--mobile-home-categories-showcase {
-    margin-right: 0.5rem;
-    position: relative;
-  }
-
   &--home-categories-showcase {
     &:first-child {
-      height: 120px;
-      width: 120px;
+      height: 7.5rem;
+      width: 7.5rem;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      background-color: #dde3e9;
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+
+      &:hover {
+        opacity: 0.95;
+        transition: ease-in-out 0.2s;
+      }
+    }
+  }
+
+  &--mobile-home-categories-showcase {
+    margin: 0;
+    position: relative;
+
+    &:first-child {
+      height: 5rem;
+      width: 5rem;
       border: 2px solid #fff;
       border-radius: 50%;
       background-color: #dde3e9;
@@ -135,7 +153,8 @@
 
   .flexColChild {
     &--home-categories-showcase,
-    &--categories-showcase {
+    &--categories-showcase,
+    &--mobile-home-categories-showcase {
       display: flex;
       position: relative;
 
@@ -145,9 +164,24 @@
     }
 
     &--home-categories-showcase {
+      &:first-child {
+        height: 7.5rem !important;
+      }
       &:last-child {
         height: 0 !important;
         width: 10.5rem;
+      }
+    }
+
+    &--mobile-home-categories-showcase {
+      &:first-child {
+        height: 5rem !important;
+        display: flex;
+        align-items: center;
+      }
+      &:last-child {
+        height: 0 !important;
+        text-align: center;
       }
     }
 
