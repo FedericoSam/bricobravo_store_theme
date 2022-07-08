@@ -30,14 +30,24 @@
 }
 
 .flexRowContent--container-seo {
-  @include container-main;
-
-  padding-top: 6rem;
-  margin-bottom: 4rem;
+  &:first-child{
+    margin-top: 64px;
+  }
 }
 
+.flexRowContent--container-seo,
+.flexRowContent--container-seo2,
+.flexRowContent--container-seo3 {
+  margin: 0 auto;
+  max-width: 1310px;
+  @include mobile {
+    padding: 0 16px;
+  }
+}
+
+
 .flexRow--full-banner-search {
-  max-width: 1376px;
+  max-width: 980px;
   margin: 0 auto 1.5rem;
   padding: 0;
 
@@ -53,6 +63,15 @@
   .flexRowContent--full-banner-search {
     border-radius: 8px;
     overflow: hidden;
+  }
+}
+
+.flexRow--title-container {
+  max-width: 1310px;
+  margin: 0 auto;
+  width: 100%;
+  @include mobile {
+    padding: 0 16px;
   }
 }
 
