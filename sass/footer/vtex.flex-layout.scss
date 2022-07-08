@@ -2,6 +2,17 @@
 @import '../media-queries';
 
 .flexRow {
+  &--footer-upperFooterMobile {
+    background: $background-footer;
+    margin-top: -60px;
+    z-index: 2;
+    position: relative;
+
+    @media screen and (max-width: 768px) {
+      margin-top: -20px;
+      padding: 48px 24px;
+    }
+  }
   &--footer-upperFooterDesktop {
     background: $background-footer;
     margin-top: -60px;
@@ -60,6 +71,15 @@
       &:hover {
         color: $blue-hover;
       }
+    }
+  }
+
+  &--footer-PaymentMethodsRow {
+    @include breakpoint("mobile") {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      max-width: 83vw;
     }
   }
 

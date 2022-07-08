@@ -9,7 +9,10 @@
   "flex-layout.row#upperFooterMobile": {
     "children": [
       "flex-layout.col#upperFooterMobile"
-    ]
+    ],
+    "props": {
+      "blockClass": "footer-upperFooterMobile"
+    }
   },
   "flex-layout.col#upperFooterMobile": {
     "children": [
