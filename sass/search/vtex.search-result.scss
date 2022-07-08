@@ -155,10 +155,10 @@
 
 .filter__container--priceRange {
   :global(.vtex-slider__base-internal) {
-    background-color: var(--secondary-default);
+    background-color: $secondary-default;
   }
   :global(.vtex-slider__selector) {
-    background: var(--primary-default);
+    background: $primary-default;
     height: 4px !important;
     width: 4px !important;
     box-shadow: none !important;
@@ -167,7 +167,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--white);
+    background-color: $white;
     border-radius: 30px;
     height: 20px;
     margin: -3px 0 0 -3px;
@@ -190,7 +190,7 @@
     content: 'Arraste a barra vermelha';
     font-size: 12px;
     font-weight: 400;
-    color: var(--secondary-default);
+    color: $secondary-default;
     position: relative;
     bottom: 35px;
 
@@ -215,7 +215,7 @@
 
 .seeMoreButton {
   background-color: transparent;
-  color: var(--secondary-default);
+  color: $secondary-default;
   font-size: 14px;
   font-weight: 500;
 }
@@ -262,7 +262,7 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    color: var(--primary-default);
+    color: $primary-default;
   }
 
   .filter__container {
@@ -272,7 +272,7 @@
     border: 0;
     &::before {
       content: 'Facilite sua busca';
-      color: var(--darkgrey-light);
+      color: $darkgrey-light;
       font-size: 24px;
       line-height: 2rem;
       font-weight: 300;
@@ -283,7 +283,7 @@
       font-size: 24px;
       line-height: 2rem;
       font-weight: 400;
-      color: var(--darkgrey-dark);
+      color: $darkgrey-dark;
     }
     .filterMessage {
       font-size: 0;
@@ -293,7 +293,7 @@
   }
 
   :global(.vtex-checkbox__label) {
-    color: var(--primary-default);
+    color: $primary-default;
     padding-left: 1rem;
     font-size: 14px;
     line-height: 26px;
@@ -323,7 +323,7 @@
           content: 'e defina uma faixa de valores para filtrar.';
           font-size: 12px;
           font-weight: 400;
-          color: var(--primary-default);
+          color: $primary-default;
           position: relative;
           bottom: 73px;
           margin-left: 135px;

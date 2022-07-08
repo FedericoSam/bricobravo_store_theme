@@ -2,13 +2,13 @@
 @import '../_variables.scss';
 
 .container--quemSomos-title {
-  background-color: var(--secondary-default);
+  background-color: $secondary-default;
   width: 100%;
   height: 50vh;
   :global(.vtex-rich-text-0-x-wrapper--quemSomos-title) {
     font-size: 3rem;
     font-weight: 300;
-    color: var(--white);
+    color: $white;
     @include breakpoint("mobile"){
       font-size: 2rem;
     }

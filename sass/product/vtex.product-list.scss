@@ -34,7 +34,7 @@
   }
   .productPrice--minicart {
     font-size: 14px;
-    color: var(--secondary-dark-text);
+    color: $secondary-dark;
     font-weight: 600;
     text-align: right;
 
@@ -71,7 +71,7 @@
 
   :global(.vtex-dropdown__container) {
     height: 40px;
-    background-color: var(--white);
+    background-color: $white;
     max-width: 80px;
     @include breakpoint('mobile') {
       max-width: 69px;
