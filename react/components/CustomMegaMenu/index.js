@@ -72,7 +72,43 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                 </li>
               )
           })}
+          <div className={`${style["link-utili-container"]}`}>
+            <h3>Link utili</h3>
+            <li>
+              <Link
+                to='#'
+                className={`${style["category-menu-item"]}`}
+              >
+                Store Locator
+              </Link>
+            </li>
+            <li>
+              <Link
+                to='#'
+                className={`${style["category-menu-item"]}`}
+              >
+                Dov'è il mio ordine?
+              </Link>
+            </li>
+            <li>
+              <Link
+                to='#'
+                className={`${style["category-menu-item"]}`}
+              >
+                Effetuare un reso
+              </Link>
+            </li>
+            <li>
+              <Link
+                to='#'
+                className={`${style["category-menu-item"]}`}
+              >
+                FAQ e contatti
+              </Link>
+            </li>
+          </div>
         </ul>
+
 
         {menuFirstLevel?.map(({menuSecondLevel, menuSecondLevelImage}, index) => {
           return isOpen && (
@@ -300,8 +336,8 @@ CustomMegaMenu.defaultProps = {
     },
     {
       link: '#',
-      text: 'Exames Laboratoriais',
-      iconMobile: 'exames-laboratoriais',
+      text: 'Piscine e accessori',
+      iconMobile: 'piscine-acessori',
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -432,8 +468,8 @@ CustomMegaMenu.defaultProps = {
     },
     {
       link: '#',
-      text: 'Medicamentos',
-      iconMobile: 'medicamentos',
+      text: 'Arredo giardino',
+      iconMobile: 'arredo-giardino',
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -564,8 +600,8 @@ CustomMegaMenu.defaultProps = {
     },
     {
       link: '#',
-      text: 'Saúde e Bem-Estar',
-      iconMobile: 'saude-e-bem-estar',
+      text: 'Climatizzazione',
+      iconMobile: 'climatizzazione',
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -696,8 +732,8 @@ CustomMegaMenu.defaultProps = {
     },
     {
       link: '#',
-      text: 'Presentes',
-      iconMobile: 'medicamentos',
+      text: 'Cassette e box',
+      iconMobile: 'cassete-box',
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -828,8 +864,1187 @@ CustomMegaMenu.defaultProps = {
     },
     {
       link: '#',
-      text: 'Descontos e Promoções',
-      iconMobile: 'descontos-e-promocoes',
+      text: 'Bricolage e Fai da te',
+      iconMobile: 'bricolage-fai-da-te',
+      menuSecondLevel: [
+        {
+          title: 'Raccolta olive',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+      ],
+    },
+    {
+      link: '#',
+      text: 'Arredo casa',
+      iconMobile: 'arredo-casa',
+      menuSecondLevel: [
+        {
+          title: 'Raccolta olive',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+      ],
+    },
+    {
+      link: '#',
+      text: 'Sport e tempo libero',
+      iconMobile: 'sport-tempo-libero',
+      menuSecondLevel: [
+        {
+          title: 'Raccolta olive',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+      ],
+    },
+    {
+      link: '#',
+      text: 'Antinfortunistica',
+      iconMobile: 'antinfortunistica',
+      menuSecondLevel: [
+        {
+          title: 'Raccolta olive',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+      ],
+    },
+    {
+      link: '#',
+      text: 'Illuminazione',
+      iconMobile: 'illuminazione',
+      menuSecondLevel: [
+        {
+          title: 'Raccolta olive',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+      ],
+    },
+    {
+      link: '#',
+      text: 'Riscaldamento',
+      iconMobile: 'riscaldamento',
+      menuSecondLevel: [
+        {
+          title: 'Raccolta olive',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+      ],
+    },
+    {
+      link: '#',
+      text: 'Giocattoli',
+      iconMobile: 'giocattoli',
+      menuSecondLevel: [
+        {
+          title: 'Raccolta olive',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+      ],
+    },
+    {
+      link: '#',
+      text: 'Animali',
+      iconMobile: 'Animali',
+      menuSecondLevel: [
+        {
+          title: 'Raccolta olive',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+      ],
+    },
+    {
+      link: '#',
+      text: 'Elettrodomestici',
+      iconMobile: ' elettrodomestici',
+      menuSecondLevel: [
+        {
+          title: 'Raccolta olive',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            },
+            {
+              text: "Lorem ipsum dolor sit amet",
+              link: '#',
+            }
+          ],
+        },
+      ],
+    },
+    {
+      link: '#',
+      text: 'Auto e moto',
+      iconMobile: 'auto-moto',
       menuSecondLevel: [
         {
           title: 'Raccolta olive',

@@ -79,7 +79,7 @@
 
 .submenu-items {
   margin: 0;
-  padding: 73px 50px 40px;
+  padding: 15px 30px 40px;
   display: flex;
   flex-flow: column wrap;
   height: 60vh;
@@ -104,6 +104,14 @@
   font-weight: 600;
   color: #3453ff;
   background-color: #cc296e14;
+}
+
+.link-utili-container {
+  padding: 20px;
+}
+
+.link-utili-container li {
+  list-style: none;
 }
 
 .submenu-item a {
@@ -148,43 +156,14 @@
   background-image: url("data:image/svg+xml,%3Csvg width='7' height='10' viewBox='0 0 7 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.900024 9.5C1.17086 9.75 1.60418 9.75 1.87502 9.5L6.37084 5.35001C6.58751 5.15001 6.58751 4.84999 6.37084 4.64999L1.87502 0.5C1.60418 0.25 1.17086 0.25 0.900024 0.5C0.629191 0.75 0.629191 1.14999 0.900024 1.39999L4.80001 5L0.900024 8.60001C0.629191 8.85001 0.629191 9.25 0.900024 9.5Z' fill='%23FF338A'/%3E%3C/svg%3E%0A");
 }
 
-.menuThirdLevel--inactive {
-  display: none;
-}
 
-.menuThirdLevel--active {
-  top: 0;
-  left: 100%;
-  width: 740px;
-  height: 100%;
-  display: block;
-  position: absolute;
-  padding: 65px 32px 40px;
-  background-color: #f8f8fa;
-}
-
-.menu-third-level-title {
-  font-size: 18px;
-  color: #1c1c1c;
-  font-weight: 600;
-  margin: 0 0 16px;
-  line-height: 24px;
-}
-
-.submenu-items-third-level {
-  padding: 0;
-}
-
-.submenu-item-third-level {
-  margin-bottom: 8px;
-  list-style-type: none;
-}
-
-.menuThirdLevel--active .category-cta {
-  font-size: 12px;
-  color: #cc296e;
-  font-weight: 600;
-  line-height: 32px;
+@media (min-width: 768px) and (max-width: 1200px) {
+  .submenu-items {
+    padding: 10px 10px 20px;
+  }
+  .megamenu--active {
+    width: 65vw;
+  }
 }
 
 @media screen and (max-width: 768px) {
