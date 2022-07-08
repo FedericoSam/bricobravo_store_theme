@@ -192,8 +192,7 @@
 
   "flex-layout.row#footerPaymentMethodsRow1": {
     "children": [
-      "rich-text#footerPaymentMethodsRow1Title",
-      "image#security"
+      "rich-text#footerPaymentMethodsRow1Title"
     ],
     "props": {
       "preventVerticalStretch": true,
@@ -204,12 +203,7 @@
   "rich-text#footerPaymentMethodsRow1Title": {
     "props": {
       "text": "Pagamenti sicuri",
-      "blockClass": "footer-MenuTitle"
-    }
-  },
-  "image#security": {
-    "props": {
-      "src": "assets/icons/payments/iconlock.svg"
+      "blockClass": "footer-PaymentMethodsTitle"
     }
   },
 

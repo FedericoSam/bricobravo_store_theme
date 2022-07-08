@@ -19,7 +19,7 @@
       @include container-main;
     }
   }
-  &--footer-footerPaymentMethods {
+  &--footer-PaymentMethods {
     margin: 64px auto 0;
     padding: 42px 40px 0 32px;
     background-color: $background-footer;
@@ -81,7 +81,7 @@
     justify-content: space-between;
   }
 
-  &--footer-footerPaymentMethods {
+  &--footer-PaymentMethods {
     @include container-main;
   }
 
@@ -101,7 +101,7 @@
 }
 
 .flexCol {
-  &--footer-footerPaymentMethods {
+  &--footer-PaymentMethods {
     flex-direction: row;
     align-items: center;
 
@@ -168,7 +168,7 @@
       justify-content: flex-end;
     }
 
-    &--footer-footerPaymentMethods {
+    &--footer-PaymentMethods {
       @media screen and (max-width: 768px) {
         margin-bottom: 12px;
       }
