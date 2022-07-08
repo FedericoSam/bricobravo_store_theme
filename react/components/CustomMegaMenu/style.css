@@ -50,15 +50,23 @@
 }
 
 .megamenu--active {
-  width: 100%;
   height: auto;
+  max-height: 90vh;
   display: flex;
+  flex-direction: column;
   border-radius: 16px;
   top: 10%;
-  left: 100%;
+  left: 105%;
   position: absolute;
   background: #ffffff;
   transform: translateY(-33px);
+  padding: 20px;
+  width: 70vw;
+}
+
+.bannerSubCategory {
+  width: 100%;
+  height: 300px;
 }
 
 .vtex-render-runtime-8-x-lazyload {
@@ -71,10 +79,10 @@
 
 .submenu-items {
   margin: 0;
-  width: 100%;
-  max-width: 426px;
-  position: relative;
-  padding: 73px 32px 40px;
+  padding: 73px 50px 40px;
+  display: flex;
+  flex-flow: column wrap;
+  height: 60vh;
 }
 
 .submenu-item {
@@ -103,19 +111,15 @@
   text-decoration: none;
 }
 
+.subcategory-container {
+  width: max-content;
+  list-style: none;
+}
+
 .subcategory-item {
-  display: flex;
-  font-size: 14px;
-  font-weight: 500;
-  color: #5c5c5c;
-  line-height: 24px;
-  border-radius: 8px;
-  align-items: center;
-  list-style-type: none;
-  letter-spacing: -0.005em;
-  font-family: 'Open Sans';
-  padding: 8px 15px 8px 12px;
-  justify-content: space-between;
+  text-align: left;
+  padding-right: 50px;
+  list-style: none;
 }
 
 .subcategory-item--active {

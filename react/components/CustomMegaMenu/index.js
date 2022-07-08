@@ -74,29 +74,29 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
           })}
         </ul>
 
-        {menuFirstLevel?.map(({menuSecondLevel}, index) => {
+        {menuFirstLevel?.map(({menuSecondLevel, menuSecondLevelImage}, index) => {
           return isOpen && (
             <div key={index} id="megamenu"  className={`${style["megamenu"]} ${megamenu === index && isOpen ? style['megamenu--active'] : style['megamenu--inactive']}`} onMouseLeave={() => setIsOpen(false)} >
-              {console.log("Entrei")}
+              <img src={menuSecondLevelImage} alt="banner" className={`${style["bannerSubCategory"]}`} />
               <ul className={style['submenu-items']}>
-              {menuSecondLevel?.map(({title, subCategories}, index) => {
-                return (
-                  <li key={index}>
-                    <h5>{ title }</h5>
-                    <ul>
-                    {subCategories?.map(({ text, link }, ind) => {
-                      <li key={ind} className={`${style["subcategory-item"]}`} onMouseOver={() => handleToggleSubmenu(index)}>
-                        <Link
-                          to={link}
-                        >
-                          {text}
-                        </Link>    
-                      </li>
-                    })}
-                    </ul>
-                  </li>
-                )
-              })}
+                {menuSecondLevel?.map(({title, subCategories}, index) => {
+                  return (
+                    <li key={index} className={`${style["subcategory-container"]}`}>
+                      <h5>{ title }</h5>
+                      {subCategories?.map(({ text, link }, ind) => {
+                        return (
+                          <li key={ind} className={`${style["subcategory-item"]}`}>
+                            <Link
+                              to={link}
+                            >
+                              {text}
+                            </Link>    
+                          </li>
+                        )
+                      })}
+                    </li>
+                  )
+                })}
               </ul>
             </div>
           )
@@ -138,7 +138,7 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                   <h5 key={index}>{ title }</h5>
                   {console.log(subCategories)}
                   {subCategories?.map(({ text, link }, ind) => {
-                    <li key={ind} className={`${style["subcategory-item"]}`} onMouseOver={() => handleToggleSubmenu(index)}>
+                    <li key={ind} className={`${style["subcategory-item"]}`}>
                       <Link
                         to={link}
                       >
@@ -295,89 +295,6 @@ CustomMegaMenu.defaultProps = {
             }
           ],
         },
-        {
-          title: 'Accessori giardinaggio',
-          subCategories: [
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            }
-          ],
-        },
-        {
-          title: 'Raccolta olive',
-          subCategories: [
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            }
-          ],
-        },
-        {
-          title: 'Raccolta olive',
-          subCategories: [
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            }
-          ],
-        },
       ],
       menuSecondLevelImage: 'https://dummyimage.com/740x457/94d6f5/ff9d00.jpg',
     },
@@ -496,89 +413,6 @@ CustomMegaMenu.defaultProps = {
         {
           title: 'Accessori giardinaggio',
           subCategories: [
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            }
-          ],
-        },
-        {
-          title: 'Accessori giardinaggio',
-          subCategories: [
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            }
-          ],
-        },
-        {
-          title: 'Raccolta olive',
-          subCategories: [
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            }
-          ],
-        },
-        {
-          title: 'Raccolta olive',
-          subCategories: [
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
             {
               text: "Lorem ipsum dolor sit amet",
               link: '#',
@@ -725,89 +559,6 @@ CustomMegaMenu.defaultProps = {
             }
           ],
         },
-        {
-          title: 'Accessori giardinaggio',
-          subCategories: [
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            }
-          ],
-        },
-        {
-          title: 'Raccolta olive',
-          subCategories: [
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            }
-          ],
-        },
-        {
-          title: 'Raccolta olive',
-          subCategories: [
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            }
-          ],
-        },
       ],
       menuSecondLevelImage: 'https://dummyimage.com/740x457/94d6f5/ff9d00.jpg',
     },
@@ -940,90 +691,6 @@ CustomMegaMenu.defaultProps = {
             }
           ],
         },
-        {
-          title: 'Accessori giardinaggio',
-          subCategories: [
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            }
-          ],
-        },
-        {
-          title: 'Raccolta olive',
-          subCategories: [
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            }
-          ],
-        },
-        {
-          title: 'Raccolta olive',
-          subCategories: [
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            }
-          ],
-        },
-
       ],
       menuSecondLevelImage: 'https://dummyimage.com/740x457/94d6f5/ff9d00.jpg',
     },
@@ -1142,89 +809,6 @@ CustomMegaMenu.defaultProps = {
         {
           title: 'Accessori giardinaggio',
           subCategories: [
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            }
-          ],
-        },
-        {
-          title: 'Accessori giardinaggio',
-          subCategories: [
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            }
-          ],
-        },
-        {
-          title: 'Raccolta olive',
-          subCategories: [
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            }
-          ],
-        },
-        {
-          title: 'Raccolta olive',
-          subCategories: [
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
             {
               text: "Lorem ipsum dolor sit amet",
               link: '#',
@@ -1371,90 +955,6 @@ CustomMegaMenu.defaultProps = {
             }
           ],
         },
-        {
-          title: 'Accessori giardinaggio',
-          subCategories: [
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            }
-          ],
-        },
-        {
-          title: 'Raccolta olive',
-          subCategories: [
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            }
-          ],
-        },
-        {
-          title: 'Raccolta olive',
-          subCategories: [
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            },
-            {
-              text: "Lorem ipsum dolor sit amet",
-              link: '#',
-            }
-          ],
-        },
-
       ],
     },
   ],
