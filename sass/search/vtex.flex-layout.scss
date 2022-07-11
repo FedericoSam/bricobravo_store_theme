@@ -12,7 +12,7 @@
 }
 
 .flexRow--searchLayout {
-  background-color: var(--lightgrey-lighter);
+  background-color: $lightgrey-lighter;
   padding: 16px 0;
   .flexRowContent {
     @include container-main;

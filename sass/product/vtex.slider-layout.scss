@@ -15,7 +15,7 @@
   .sliderArrows--main-banner {
     padding: 0;
     margin: 0 26px;
-    color: var(--white);
+    color: $white;
   }
   .paginationDotsContainer--main-banner {
     bottom: 56px;
@@ -36,7 +36,7 @@
   .sliderArrows--brands-banners {
     margin: 0;
     padding: 0;
-    color: var(--ily-pink);
+    color: $primary-pink;
 
     &.sliderRightArrow--brands-banners {
       right: -35px;
@@ -59,7 +59,7 @@
   overflow: inherit;
 }
 .paginationDot--shelfStyle--isActive {
-  background-color: var(--secondary-default);
+  background-color: $secondary-default;
 }
 .sliderRightArrow--shelfStyle {
   right: -3rem;
@@ -68,7 +68,7 @@
   left: -3rem;
 }
 .caretIcon--shelfStyle {
-  color: var(--ily-pink);
+  color: $primary-pink;
 }
 // ShelfStyle End
 
@@ -85,17 +85,17 @@
   }
 }
 .paginationDot {
-  background-color: var(--lightgrey-light);
+  background-color: $lightgrey-light;
   border-radius: 500px;
   height: 4px !important;
   padding: 0;
   width: 128px !important;
 }
 .paginationDot--dotsCustom--isActive {
-  background-color: var(--secondary-default);
+  background-color: $secondary-default;
 }
 .paginationDot--isActive {
-  background-color: var(--secondary-default);
+  background-color: $secondary-default;
 }
 // slider category End
 
@@ -125,7 +125,7 @@
   width: 10px;
 }
 .caretIcon--shelfAlsoView {
-  color: var(--secondary-default);
+  color: $secondary-default;
   overflow: visible !important;
   width: 90px !important;
 }

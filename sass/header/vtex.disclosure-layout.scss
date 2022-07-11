@@ -1,3 +1,5 @@
+@import '../_variables.scss';
+
 .trigger--pre-header-secondCol-search {
   border: none;
   background: none;
@@ -10,13 +12,40 @@
   }
 }
 
+.trigger--header-disclosureTrigger {
+  border: none;
+  background-color: transparent;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  :global(.vtex-rich-text-0-x-container) {
+    color: $white;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+}
+
+.content--header-disclosureContent {
+  padding: 45px 0;
+  width: 100%;
+  :global(.vtex-rich-text-0-x-container) {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    top: 40px;
+    color: $white;
+    font-size: 14px;
+  }
+}
+
 .content--pre-header-secondCol-search {
   left: 0;
   top: 50%;
   padding: 0 16px;
   max-width: 100%;
   position: absolute;
-  background-color: #ffffff;
+  background-color: #fff;
 
   :global(.vtex-input-prefix__group) {
     flex-direction: row-reverse;

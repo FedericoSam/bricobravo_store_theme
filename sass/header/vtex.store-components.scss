@@ -1,12 +1,16 @@
+@import '../_variables.scss';
+
 .autoCompleteOuterContainer--desktop-searchbar {
+  border: 1.5px solid $blue-dark;
+  border-radius: 0 4px 4px 0;
+  border-left: 0;
   :global(.vtex-input-prefix__group) {
     border: none;
-    flex-direction: row-reverse;
 
     @media screen and (max-width: 768px) {
       border: 2px solid #ccc;
       border-radius: 8px;
-      padding: 8px 30px 8px 0px;
+      padding: 8px 30px 8px 0;
     }
 
     :global(.vtex-styleguide-9-x-input) {
@@ -14,6 +18,7 @@
       color: #555;
       font-weight: 400;
       line-height: 24px;
+      width: 400px;
       border-radius: 1px;
       @media screen and (max-width: 768px) {
         padding: 0;
@@ -25,7 +30,7 @@
     .searchBarIcon--desktop-searchbar--search {
       position: relative;
       .searchIcon--desktop-searchbar {
-        top: 20%;
+        top: 24%;
         overflow: visible;
         position: absolute;
       }

@@ -6,7 +6,7 @@
   margin-bottom: 1rem;
   padding: 5px 18px;
   align-items: center;
-  background: var(--white);
+  background: $white;
   height: 136px;
   display: flex;
   align-items: center;
@@ -129,7 +129,7 @@
 }
 
 .flexRow--assembly-options :global(.vtex-button) {
-  border: 1px solid var(--lines-dark);
+  border: 1px solid $lines-dark;
   margin-top: 0.5rem;
 }
 
@@ -223,7 +223,7 @@
 
 .flexRow {
   &--breadcrumb {
-    background-color: var(--lightgrey--light);
+    background-color: $lightgrey-light;
     padding: 1rem 0;
     @include mobile {
       margin-bottom: 1rem;
@@ -262,7 +262,7 @@
     .flexColChild--assembly-options :global(.vtex-button) {
       width: 100%;
       margin: 0 auto;
-      border-bottom: 1px solid var(--lightgrey--light);
+      border-bottom: 1px solid $lightgrey-light;
       margin-bottom: 1rem;
       margin-top: 1rem;
       text-transform: capitalize;
@@ -284,7 +284,7 @@
   }
 
   .flexRow--assembly-options :global(.vtex-button) {
-    border: 1px solid var(--lines-dark);
+    border: 1px solid $lines-dark;
     margin-top: 0.5rem;
   }
 
@@ -310,9 +310,9 @@
   }
 
   .flexRow--buy-now :global(.vtex-button) {
-    background: var(--secondary-default);
+    background: $secondary-default;
     border: 0;
-    color: var(--white);
+    color: $white;
     height: 48px;
     font-size: 16px;
     border-radius: 10px;
@@ -338,19 +338,19 @@
   }
 
   .flexRow--add-to-cart :global(.vtex-button) {
-    background: var(--white);
-    border: 2px solid var(--secondary-default);
-    color: var(--secondary-dark);
+    background: $white;
+    border: 2px solid $secondary-default;
+    color: $secondary-dark;
     height: 48px;
-    font-size: var(--cta--medium);
+    font-size: $cta-medium;
     border-radius: 10px;
     margin: 4px 0;
     font-weight: 500;
     text-transform: inherit;
 
     :hover {
-      background-color: var(--secondary-default);
-      color: var(--white);
+      background-color: $secondary-default;
+      color: $white;
       border-radius: 4px;
     }
 
@@ -418,7 +418,7 @@
     :global(.vtex-rich-text-0-x-paragraph--specification-title) {
       font-size: 30px;
       font-weight: 300;
-      color: var(--primary-dark);
+      color: $primary-dark;
       margin-left: 3rem;
       @include breakpoint('mobile') {
         text-align: center;
@@ -436,7 +436,7 @@
       }
       &:nth-child(odd) {
         .flexColChild {
-          background-color: var(--lightgrey-lighter);
+          background-color: $lightgrey-lighter;
         }
       }
 
@@ -451,7 +451,7 @@
     }
 
     .flexColChild--specificationNameCol {
-      color: var(--darkgrey-medium);
+      color: $darkgrey-medium;
       @include mobile {
         width: 100%;
       }
@@ -472,11 +472,11 @@
   .flexRowContent--add-to-cart-button {
     :global(.vtex-button) {
       border: none;
-      background-color: var(--primary--default);
+      background-color: $primary-default;
       height: 40px;
       border-radius: 4px;
       font-weight: 700;
-      font-size: var(--paragraph--small--bold);
+      font-size: $paragraph-small-bold;
     }
   }
 
@@ -484,9 +484,9 @@
     .stretchChildrenWidth
     :global(.vtex-store-link-0-x-link--completeDescriptionAnchor) {
     text-decoration: none;
-    color: var(--primary--default);
-    font-size: var(--link--default-small);
-    line-height: var(--link--default-large);
+    color: $primary-default;
+    font-size: $link-default-small;
+    line-height: $link-default-large;
     font-weight: 600;
     text-transform: capitalize;
   }
@@ -546,7 +546,7 @@
       font-weight: 300;
     }
     :global(.vtex-store-link-0-x-link--completeDescriptionAnchor) {
-      color: var(--ily-pink);
+      color: $primary-pink;
       text-decoration: none;
       font-size: 12px;
       margin-top: 1rem;
@@ -569,21 +569,21 @@
   .flexRow--productMain-price {
     :global(.vtex-product-price-1-x-savings--savingPercentage) {
       margin: 0 0 0 5px;
-      background-color: var(--ily-detail);
+      background-color: $primary-default;
       @include mobile {
-        background-color: var(--ily-secondary);
+        background-color: $secondary-default;
       }
       :global(.vtex-product-price-1-x-savingsPercentage) {
-        color: var(--white);
+        color: $white;
         padding-left: 4px;
         @include mobile {
-          color: var(--ily-detail);
+          color: $primary-default;
         }
       }
       &::after {
-        color: var(--white);
+        color: $white;
         @include mobile {
-          color: var(--ily-detail);
+          color: $primary-default;
         }
       }
     }
@@ -602,7 +602,7 @@
   }
 
   .flexColChild--productMain-box {
-    background: var(--white);
+    background: $white;
     padding: 0 1.5rem 1rem;
     border-radius: 16px;
     :global(.vtex-numeric-stepper-container) {
@@ -622,7 +622,7 @@
   }
 
   .flexRow--simulate-shipping-container {
-    background-color: var(--white);
+    background-color: $white;
     border: none;
     border-radius: 10px;
     margin: 0 0 2rem;
@@ -646,13 +646,13 @@
         display: none;
         font-size: 20px;
         font-weight: 500;
-        color: var(--primary-dark);
+        color: $primary-dark;
       }
     }
     .sellerShipping {
       border: none;
       border-radius: 0 0 1.5rem 1.5rem;
-      background-color: var(--white);
+      background-color: $white;
       height: 8rem !important;
       padding-bottom: 10px;
     }
@@ -668,13 +668,13 @@
     :global(.vtex-input-prefix__group) {
       width: 80%;
       height: 48px;
-      border: 1px solid var(--lightgrey-light);
-      background-color: var(--white);
+      border: 1px solid $lightgrey-light;
+      background-color: $white;
       @include breakpoint('mobile') {
         width: 70%;
       }
       :global(.vtex-address-form-4-x-input) {
-        background-color: var(--white);
+        background-color: $white;
       }
       :global(.vtex-input__suffix) {
         display: none;
@@ -686,7 +686,7 @@
       top: 35px;
       right: 32px;
       height: 50px;
-      background-color: var(--secondary-default);
+      background-color: $secondary-default;
       border-radius: 10px;
       border: none;
       @include breakpoint('mobile') {
@@ -698,7 +698,7 @@
           content: 'Ok';
           font-size: 14px;
           font-weight: 600;
-          color: var(--white);
+          color: $white;
         }
       }
     }
@@ -714,10 +714,10 @@
     :global(.vtex-input-prefix__group) {
       width: 70%;
       height: 48px;
-      border: 1px solid var(--lightgrey-light);
-      background-color: var(--white);
+      border: 1px solid $lightgrey-light;
+      background-color: $white;
       :global(.vtex-address-form-4-x-input) {
-        background-color: var(--white);
+        background-color: $white;
       }
       :global(.vtex-input__suffix) {
         display: none;
@@ -729,7 +729,7 @@
       top: 10px;
       right: 0;
       height: 48px;
-      background-color: var(--secondary-default) !important;
+      background-color: $secondary-default !important;
       border-color: #e30613 !important;
       cursor: pointer;
       border-radius: 10px;
@@ -743,7 +743,7 @@
           font-size: 16px;
           line-height: 24px;
           text-align: center;
-          color: var(--white);
+          color: $white;
         }
       }
     }
@@ -807,7 +807,7 @@
       }
       :global(.vtex-rich-text-0-x-paragraph--specification-title) {
         background-color: transparent !important;
-        color: var(--primary-dark);
+        color: $primary-dark;
         font-size: 30px;
         font-weight: 300;
         margin-bottom: 2rem;
@@ -832,19 +832,19 @@
         }
         &:nth-child(even) {
           .flexColChild {
-            background-color: var(--lightgrey-lighter);
+            background-color: $lightgrey-lighter;
           }
         }
       }
 
       .flexColChild--specificationNameCol {
-        color: var(--darkgrey-medium);
+        color: $darkgrey-medium;
         font-size: 14px;
         line-height: 24px;
         font-weight: 400;
       }
       :global(.vtex-product-specifications-1-x-specificationValue--specText) {
-        color: var(--primary--dark);
+        color: $primary-dark;
         font-size: 14px;
         line-height: 24px;
         font-weight: 400;
@@ -854,10 +854,10 @@
 
   .flexRowContent--pdp-Containermanual {
     :global(.vtex-store-link-0-x-link--pdp-manual) {
-      background-color: var(--secondary-default);
+      background-color: $secondary-default;
       border-radius: 10px;
       border: none;
-      color: var(--white);
+      color: $white;
       font-size: 1.1rem;
       padding: 15px;
       text-align: center;
@@ -876,7 +876,7 @@
         padding-left: 1.2rem;
       }
       :global(.vtex-rich-text-0-x-heading--productShelfTitle) {
-        color: var(--primary--dark);
+        color: $primary-dark;
         font-size: 2.2rem;
         font-weight: 300;
         @include breakpoint('mobile') {

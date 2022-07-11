@@ -1,7 +1,6 @@
 {
   "footer-layout.mobile": {
     "children": [
-      "flex-layout.row#middleFooterDesktop",
       "flex-layout.row#newsletter",
       "flex-layout.row#footerPaymentMethods",
       "flex-layout.row#bottomFooterDesktop"
