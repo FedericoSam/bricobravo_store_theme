@@ -173,7 +173,9 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
             {menuSecondLevel?.map(({title, subCategories}, index) => {
               return (
                 <>
-                  <h5 key={index}>{ title }</h5>
+                  <h5 key={index}
+                    className={style["mobile-category-menu-item"]}
+                  >{ title }</h5>
                   {console.log(subCategories)}
                   {subCategories?.map(({ text, link }, ind) => {
                     <li key={ind} className={`${style["subcategory-item"]}`}>
