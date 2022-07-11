@@ -44,6 +44,11 @@
       line-height: 19px;
     }
   }
+
+  @include breakpoint('mobile') {
+    position: absolute;
+    transform: translate(-262px, 24px);
+  }
 }
 
 .orderBy--layout {
@@ -163,9 +168,6 @@
 
 }
 
-.filter__container--selectedFilters {
-  display: none !important;
-}
 
 .filterContent {
   font-size: 16px;
@@ -177,6 +179,9 @@
   // :global(.vtex-slider__base-internal) {
   //   background-color: var(--secondary-default);
   // }
+
+  padding-bottom: 28px;
+  
   :global(.vtex-slider__selector) {
     background: #2B126B;
     transform: translateY(1px);
@@ -288,7 +293,7 @@
   .filterTitleSpan {
     font-size: 18px;
     line-height: 21px;
-    font-weight: medium;
+    font-weight: 500;
     color: #332C32;
   }
 
@@ -305,6 +310,51 @@
     font-size: 16px;
     line-height: 19px;
   }
+
+  .filter__container--selectedFilters {
+    :global(.vtex-checkbox__container) {
+      display: none;
+    }
+
+    :global(.vtex-checkbox__line-container) {
+      &::after {
+        content: url("assets/icons/icon_close.svg");
+        padding-top: 3px;
+        transform: translateX(-22px);
+      }
+    }
+
+    .filterTitleSpan {
+      &::before {
+        visibility: visible;
+        content: "Elimina filtri:";
+        font-size: 14px;
+        line-height: 16px;
+        color: #4320AB;
+        font-weight: 500;
+
+      }
+
+      visibility: hidden;
+    }
+    :global(.vtex-checkbox__label) {
+      font-size: 14px;
+      line-height: 16px;
+      color: #2B126B;
+      font-weight: normal;
+      padding: 4px;
+      padding-right: 26px;
+      width: auto;
+      border: 1px solid;
+
+      
+      // &::after {
+      //   margin-left: 10px;
+      //   content: url("assets/icons/icon_close.svg");
+      // }
+    }
+  }
+  
 
   :global(.vtex-checkbox__inner-container) {
     border-radius: 2px;
@@ -334,7 +384,7 @@
       }
 
       :global(.vtex-slider__values-container) {
-        padding-bottom: 45px;
+        //padding-bottom: 45px;
 
         :global(.vtex-slider__left-value), :global(.vtex-slider__right-value) {
           font-size: 16px;
