@@ -1,3 +1,10 @@
+@import '../_media-queries.scss';
+
+.drawer{
+  &--minicart-background{
+    max-width: 440px !important;
+  }
+}
 .minicartWrapperContainer {
   :global(.vtex-button) {
     &:hover {
@@ -26,7 +33,9 @@
         }
 
         .minicartQuantityBadge {
-          display: none;
+          background-color: #291660;
+          top: -1.3rem;
+          right: -0.6rem;
         }
       }
 
@@ -42,14 +51,18 @@
   }
 }
 
+.minicartProductListContainer{
+  overflow-x: hidden;
+}
 .drawerContent--minicart-background {
-  background-color: #f2f2f2;
+  background-color: #FFF;
 }
 
 .minicartCheckoutButton {
   margin-bottom: 20px;
-
   :global(.vtex-button) {
+    background-color: #291660;
+    border-color: #291660;
     border-radius: 8px;
     padding: 12px;
     :global(.vtex-button__label) {
@@ -58,26 +71,72 @@
         text-transform: none;
         font-size: 16px;
         color: #fff;
-        content: 'Ir para o checkout';
+        content: 'VAI AL CHECKOUT';
       }
     }
     &:hover {
-      background-color: #bd000b;
+      background-color: #1B0E41;
       border-color: transparent;
     }
   }
 }
+.closeIconContainer--minicart-background{
+  justify-content: end;
+}
+
+.closeIconContainer{
+  @include breakpoint("mobile"){
+    justify-content: flex-end;
+  }
+}
+
 .minicartTitle {
   font-size: 0;
   &::after {
-    content: 'Minhas compras';
+    content: 'Carrello';
     position: absolute;
-    left: 50px;
+    left: 20px;
     top: 12px;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 28px;
+    line-height: 33px;
     color: #111;
+  }
+}
+
+//minicart container button
+:global(.vtex-product-list-0-x-item--remove-button-cart){
+  width: 11.2rem !important;
+  display: flex;
+  align-items: center;
+ 
+  @include breakpoint ("mobile"){
+    transform: translateX(-42px);
+  }
+
+   :global(.vtex-product-list-0-x-removeButton--remove-button-cart){
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #291660 !important;
+    &::before{
+      content: "Rimuovi articolo";
+      font-size: 14px;
+      color: #291660;
+      font-weight: bold;
+    }
+
+    :global(.vtex-product-list-0-x-deleteIcon--remove-button-cart){
+     display: none ;
+    }
+   }
+}
+
+:global(.vtex-product-list-0-x-productImage){
+  height: 100px;
+
+  @include breakpoint("mobile"){
+    height: 80px;
   }
 }
