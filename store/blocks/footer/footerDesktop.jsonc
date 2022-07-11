@@ -6,6 +6,7 @@
       "flex-layout.row#bottomFooterDesktop"
     ]
   },
+<<<<<<< HEAD
   "flex-layout.row#upperFooterDesktop": {
     "children": [
       "flex-layout.col#upperFooterCol1",
@@ -27,6 +28,8 @@
       "width": "25%"
     }
   },
+=======
+>>>>>>> d8c6459531f5612fe87e3f3d191af1f005cb2171
 
   "rich-text#upperFooterTitleCol1": {
     "props": {
@@ -193,9 +196,13 @@
   },
 
   "flex-layout.row#footerPaymentMethodsRow1": {
+<<<<<<< HEAD
     "children": [
       "rich-text#footerPaymentMethodsRow1Title"
     ],
+=======
+    "children": ["rich-text#footerPaymentMethodsRow1Title", "image#security"],
+>>>>>>> d8c6459531f5612fe87e3f3d191af1f005cb2171
     "props": {
       "preventVerticalStretch": true,
       "blockClass": "footer-PaymentMethodsRow"
@@ -278,9 +285,7 @@
     "props": {
       "blockClass": "footer-PaymentMethodsRow"
     },
-    "children": [
-      "rich-text#textPaymentMethods"
-    ]
+    "children": ["rich-text#textPaymentMethods"]
   },
   "rich-text#textPaymentMethods": {
     "props": {
