@@ -1,5 +1,7 @@
+@import '../variables';
+
 .paragraph {
-  &--paymentMethodText {
+  &--footer-paymentMethodText {
     margin: 0 24px 0 0;
     font-weight: 400;
     font-size: 16px;
@@ -13,11 +15,10 @@
     }
   }
 
-  &--upperFooterSubtitle {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 28px;
-    color: #111;
+  &--footer-upperFooterTitle {
+    font-size: 20px;
+    font-weight: 500;
+    color: $white;
 
     @media screen and (max-width: 768px) {
       margin: 0;
