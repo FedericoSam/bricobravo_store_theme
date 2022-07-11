@@ -9,7 +9,6 @@
   background: $white;
   height: 136px;
   display: flex;
-  align-items: center;
 }
 
 .flexRow--cartSummary:last-child {
@@ -899,8 +898,7 @@
   .flexRow--productDescription {
     .stretchChildrenWidth {
       @include mobile {
-        padding: 0 0.3rem !important
-
+        padding: 0 0.3rem !important;
       }
     }
   }

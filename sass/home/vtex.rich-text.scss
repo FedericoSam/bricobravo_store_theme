@@ -1,7 +1,4 @@
 .container {
-  &--home-section-title,  &--home-section04-title {
-    justify-content: center;
-  }
   .heading {
     &--first-section-title {
       margin: 64px 0 96px;
@@ -21,25 +18,19 @@
       }
     }
 
-    &--home-section-title, &--home-section04-title {
-      font-size: 40px;
-      line-height: 48px;
-      font-weight: 300;
+    &--home-section-title {
       text-align: center;
-      margin: 96px 0 32px;
+      height: 1rem;
+      color: #332c32;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 1rem;
 
       @media screen and (max-width: 768px) {
         margin: 64px auto 32px;
         font-size: 32px;
         line-height: 40px;
         max-width: 328px;
-      }
-    }
-    &--home-section04-title{
-      @media screen and (max-width: 768px){
-        margin: 80px auto 32px;
-        border-top: 1px solid #ddd;
-        padding-top: 48px;
       }
     }
   }
@@ -68,24 +59,49 @@
       }
     }
 
-    &--home-section03-showcase {
-      margin: 40px auto 0;
-      font-size: 24px;
-      font-weight: 300;
-      line-height: 32px;
-      max-width: 352px;
+    &--home-services-text {
+      height: 2.25rem;
+      max-width: 12.5rem;
+      color: #332c32;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 18px;
       text-align: center;
-      @media screen and (max-width: 768px) {
-        font-size: 20px;
-        line-height: 28px;
-      }
+      margin: 1rem 0 0.75rem;
     }
-    &--home-section-mosaic-title{
+
+    &--home-blog-subtitle {
+      height: 3rem;
+      color: #332c32;
+      font-size: 18px;
+      line-height: 1.5rem;
+      max-width: 25rem;
+      margin: 2rem 0;
+    }
+
+    &--home-blog-title {
+      margin: 0 0 1.25rem 0.5rem;
+      height: 1.5rem;
+      color: #232946;
       font-size: 20px;
-      color: #111;
-      @media screen and (max-width: 768px) {
-        font-size: 16px;
-      }
+      font-weight: 500;
+      line-height: 1.5rem;
+    }
+
+    &--home-blog-text {
+      color: #232946;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      max-width: 12.5rem;
+      width: 100%;
+      margin: 0.75rem 0 0;
+    }
+  }
+
+  .wrapper {
+    &--home-section-title {
+      margin: 0 auto;
     }
   }
 }
