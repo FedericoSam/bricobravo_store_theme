@@ -164,8 +164,10 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
     {menuFirstLevel?.map(({link, text, menuSecondLevel}, index) => {
       return isOpen && index == megamenu ? (
         <div key={index} className={style["mobile-mega-menu"]} >
-          <h2 className={style["mobile-mega-menu-title"]}>
-            {text}
+          <h2 className={style["mobile-mega-menu-title"]}
+            onClick={() => setIsOpen(false)}
+          >
+            {`${text}`}
           </h2>
           <ul className={style["mobile-mega-menu-items"]}>
             {menuSecondLevel?.map(({title, subCategories}, index) => {
