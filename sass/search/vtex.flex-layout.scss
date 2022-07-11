@@ -72,7 +72,7 @@
 
 .flexRowContent--searchHeadInfo {
   //padding-left: 324px;
-  margin-left: 16px;
+  //margin-left: 16px;
   margin-right: 16px;
   border-top: 1px solid #8E8E8E;
   border-bottom: 1px solid #8E8E8E;
@@ -87,17 +87,23 @@
 .flexRowContent--searchControlsMobile {
   @include breakpoint('mobile') {
     display: flex;
-    align-items: center;
-    padding: 0 16px;
+    //align-items: center;
+    padding: 0;
+    padding-top: 10px;
     justify-content: center;
     flex-direction: row-reverse;
+    height: 78px;
 
     .stretchChildrenWidth {
-      width: 50%;
+      width: 50% !important;
+      border: 1px solid #D8D8D8;
+      border-right: none;
+      height: 40px;
     }
 
     .stretchChildrenWidth:first-child {
-      width: 0;
+      width: 0% !important;
+      border: none;
     }
   }
 }
