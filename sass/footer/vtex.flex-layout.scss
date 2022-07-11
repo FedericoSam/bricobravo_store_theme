@@ -49,6 +49,12 @@
 }
 
 .flexRowContent {
+  &--footer-upperFooterCol3 {
+    @include breakpoint("mobile") {
+      margin-bottom: 2rem;
+      display: flex;
+    }
+  }
   &--footer-upperFooterDesktop {
     align-items: center;
     padding: 0 10px 5px;
@@ -74,12 +80,24 @@
     }
   }
 
+  &--footer-containerDisclosure {
+    border-bottom: 1px solid $white;
+    .stretchChildrenWidth {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   &--footer-PaymentMethodsRow {
     @include breakpoint("mobile") {
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
-      max-width: 83vw;
+      max-width: 85vw;
+      .stretchChildrenWidth {
+        width: max-content !important;
+        margin: 1px;
+      }
     }
   }
 
@@ -100,7 +118,9 @@
 
   &--footer-PaymentMethods {
     @include container-main;
-    border-top: 1px solid white
+    @include breakpoint("desktop"){
+      border-top: 1px solid white
+    }
   }
 
   &--bottomFooterDesktop {
@@ -134,7 +154,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    @media screen and (max-width: 768px) {
+    @include breakpoint("mobile") {
       margin-bottom: 12px;
       justify-content: center;
     }
@@ -150,18 +170,12 @@
     }
   }
 
-  &--footer-upperFooterCol3 {
-    @media screen and (max-width: 768px) {
-      margin-bottom: 0;
-    }
-  }
-
   &--bottomFooterTechnology {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
 
-    @media screen and (max-width: 768px) {
+    @include breakpoint("mobile") {
       margin-bottom: 12px;
       justify-content: center;
     }

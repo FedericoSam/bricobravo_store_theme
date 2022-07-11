@@ -24,7 +24,10 @@
   "flex-layout.row#upperFooterCol2Mobile": {
     "children": [
       "disclosure-layout#upperFooterCol2Mobile"
-    ]
+    ],
+    "props": {
+      "blockClass": "footer-containerDisclosure"
+    }
   },
   "disclosure-layout#upperFooterCol2Mobile": {
     "children": [
@@ -34,7 +37,8 @@
   },
   "disclosure-trigger#upperFooterCol2Mobile": {
     "children": [
-      "rich-text#upperFooterTitleCol1"
+      "rich-text#upperFooterTitleCol1",
+      "disclosure-state-indicator#icons"
     ],
     "props": {
       "blockClass": "footer-disclosureTrigger"
@@ -51,7 +55,10 @@
   "flex-layout.row#upperFooterCol1Mobile": {
     "children": [
       "disclosure-layout#upperFooterCol1Mobile"
-    ]
+    ],
+    "props": {
+      "blockClass": "footer-containerDisclosure"
+    }
   },
   "disclosure-layout#upperFooterCol1Mobile": {
     "children": [
@@ -61,7 +68,8 @@
   },
   "disclosure-trigger#upperFooterCol1Mobile": {
     "children": [
-      "rich-text#upperFooterTitleCol2"
+      "rich-text#upperFooterTitleCol2",
+      "disclosure-state-indicator#icons"
     ],
     "props": {
       "blockClass": "footer-disclosureTrigger"
@@ -73,6 +81,24 @@
     ],
     "props": {
       "blockClass": "footer-disclosureContent"
+    }
+  },
+  "disclosure-state-indicator#icons": {
+    "props": {
+      "Show": "image#Icondown",
+      "Hide": "image#IconUp"
+    }
+  },
+  "image#Icondown": {
+    "props": {
+      "src": "assets/icons/arrowDown.svg",
+      "width": "25px"
+    }
+  },
+  "image#IconUp": {
+    "props": {
+      "src": "assets/icons/arrowUp.svg",
+      "width": "25px"
     }
   }
 }

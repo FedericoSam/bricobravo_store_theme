@@ -165,14 +165,14 @@
   },
   "image#Congratulations1": {
     "props": {
-      "src": "https://avatars.githubusercontent.com/u/78617230?s=40&v=4",
+      "src": "",
       "width": "100px",
       "blockClass": "footer-congratulationsImage"
     }
   },
   "image#Congratulations2": {
     "props": {
-      "src": "https://avatars.githubusercontent.com/u/78617230?s=40&v=4",
+      "src": "",
       "width": "100px",
       "blockClass": "footer-congratulationsImage"
     }
