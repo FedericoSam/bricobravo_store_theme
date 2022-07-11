@@ -89,22 +89,11 @@
       &:active {
         color: $blue-active
       }
-      :global(.vtex-store-link-0-x-link) {
-        text-decoration: none;
-        color: $white;
-        font-size: 16px;
-        line-height: 20px;
-        white-space: nowrap;
-        margin-right: 30px;
-        &:active {
-          color: $blue-active;
-        }
-        &:hover {
-          color: $blue-hover;
-        }
+      &:hover {
+        color: $blue-hover;
       }
     }
-
+  }
   &--footer-containerDisclosure {
     border-bottom: 1px solid $white;
     .stretchChildrenWidth {
@@ -148,18 +137,17 @@
     }
   }
 
-    &--bottomFooterDesktop {
-      @include container-main;
+  &--bottomFooterDesktop {
+    @include container-main;
 
-      justify-content: space-between;
-    }
+    justify-content: space-between;
+  }
 
-    &--bottomFooter3 {
-      display: flex;
-      @media screen and (max-width: 768px) {
-        max-width: 75%;
-        margin: 30px auto 0;
-      }
+  &--bottomFooter3 {
+    display: flex;
+    @media screen and (max-width: 768px) {
+      max-width: 75%;
+      margin: 30px auto 0;
     }
   }
 }

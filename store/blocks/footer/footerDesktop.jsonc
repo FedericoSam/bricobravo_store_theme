@@ -1,12 +1,12 @@
 {
   "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#upperFooterDesktop",
+      "flex-layout.row#FooterLinksDesktop",
       "flex-layout.row#footerPaymentMethods",
       "flex-layout.row#bottomFooterDesktop"
     ]
   },
-  "flex-layout.row#upperFooterDesktop": {
+  "flex-layout.row#FooterLinksDesktop": {
     "children": [
       "flex-layout.col#upperFooterCol1",
       "flex-layout.col#upperFooterCol2",
