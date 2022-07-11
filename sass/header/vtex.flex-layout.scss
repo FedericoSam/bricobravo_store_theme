@@ -4,16 +4,14 @@
 
 .flexRow {
   &--header-containerPromotion {
-    margin: 0 auto;
-    max-width: 1376px;
+    background-color: $background-blue-black;
     .flexRowContent--header-containerPromotion {
-      background-color: $background-blue-black;
+      @include container-main;
     }
   }
   &--header-desktop-upper {
-    margin: 0 auto;
-    max-width: 1376px;
-
+    box-shadow: 0 4px 7px 0 rgba(0,0,0,0.15);
+    
     &::after {
       width: 100%;
       content: '';
@@ -29,9 +27,9 @@
     }
 
     .flexRowContent--header-desktop-upper {
+      @include container-main;
       justify-content: space-between;
       padding: 15px 20px 10px;
-      box-shadow: 0 4px 7px 0 rgba(0,0,0,0.15);
     }
     .flexCol--header-containerIcons {
       display: flex;
