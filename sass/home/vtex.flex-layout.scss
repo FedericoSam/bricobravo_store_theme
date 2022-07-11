@@ -151,6 +151,12 @@
     height: auto;
   }
 
+  &--home-blog {
+    @include breakpoint('mobile') {
+      align-items: center;
+    }
+  }
+
   .flexColChild {
     &--home-categories-showcase,
     &--categories-showcase,
