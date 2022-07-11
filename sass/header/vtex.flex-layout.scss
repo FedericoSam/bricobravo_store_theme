@@ -121,6 +121,10 @@
   display: block;
   margin-bottom: 14px;
   justify-content: space-between;
+
+  @include breakpoint("mobile"){
+    margin-bottom: 8px;
+  }
 }
 
 .flexCol {
@@ -150,6 +154,9 @@
 
 .flexCol--minicartProductInfo {
   margin-right: 16px;
+  @include breakpoint("mobile"){
+    margin-left: 4px;
+  }
 }
 
 :global(.vtex-styleguide-9-x-container) {

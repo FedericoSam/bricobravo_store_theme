@@ -30,7 +30,7 @@
   justify-content: flex-end;
 
   @include breakpoint('mobile') {
-    margin-top: 12px;
+    margin-top: 4px;
   }
   .productPrice--minicart {
     font-size: 18px;

@@ -134,9 +134,9 @@
 }
 
 :global(.vtex-product-list-0-x-productImage){
-  height: 80px;
+  height: 100px;
 
   @include breakpoint("mobile"){
-    height: 70px;
+    height: 80px;
   }
 }
