@@ -45,6 +45,13 @@
   }
 }
 
+.flexRowContent--container-seo3 {
+  margin-bottom: 83px;
+  @include mobile {
+    margin-bottom: 44px;
+  }
+}
+
 
 .flexRow--full-banner-search {
   max-width: 980px;
