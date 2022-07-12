@@ -2,7 +2,7 @@
 @import '../_media-queries.scss';
 
 .flexRow--searchHeadInfo {
-  background-color: #fafafa;
+  background-color: white;
   :global(.vtex-store-components-3-x-container) {
     @include container-main;
   }
@@ -12,7 +12,7 @@
 }
 
 .flexRow--searchLayout {
-  background-color: $lightgrey-lighter;
+  background-color: white;
   padding: 16px 0;
   .flexRowContent {
     @include container-main;
@@ -30,14 +30,31 @@
 }
 
 .flexRowContent--container-seo {
-  @include container-main;
-
-  padding-top: 6rem;
-  margin-bottom: 4rem;
+  &:first-child{
+    margin-top: 64px;
+  }
 }
 
+.flexRowContent--container-seo,
+.flexRowContent--container-seo2,
+.flexRowContent--container-seo3 {
+  margin: 0 auto;
+  max-width: 1310px;
+  @include mobile {
+    padding: 0 16px;
+  }
+}
+
+.flexRowContent--container-seo3 {
+  margin-bottom: 83px;
+  @include mobile {
+    margin-bottom: 44px;
+  }
+}
+
+
 .flexRow--full-banner-search {
-  max-width: 1376px;
+  max-width: 980px;
   margin: 0 auto 1.5rem;
   padding: 0;
 
@@ -56,6 +73,15 @@
   }
 }
 
+.flexRow--title-container {
+  max-width: 1310px;
+  margin: 0 auto;
+  width: 100%;
+  @include mobile {
+    padding: 0 16px;
+  }
+}
+
 .flexCol--snf-btnback {
   display: none;
   @include mobile {
@@ -70,16 +96,44 @@
   margin-left: auto;
 }
 
+.flexRowContent--searchHeadInfo {
+  //padding-left: 324px;
+  //margin-left: 16px;
+  margin-right: 16px;
+  border-top: 1px solid #8E8E8E;
+  border-bottom: 1px solid #8E8E8E;
+  justify-content: center;
+}
+
 .flexColChild--productCountCol {
   display: flex;
   align-items: center;
 }
 
 .flexRowContent--searchControlsMobile {
-  @media screen and (max-width: 768px) {
+  @include breakpoint('mobile') {
     display: flex;
-    align-items: center;
-    padding: 0 16px;
-    justify-content: space-between;
+    //align-items: center;
+    padding: 0;
+    padding-top: 10px;
+    justify-content: center;
+    flex-direction: row-reverse;
+    height: 78px;
+
+    .stretchChildrenWidth {
+      width: 50% !important;
+      border: 1px solid #D8D8D8;
+      border-right: none;
+      height: 40px;
+    }
+
+    .stretchChildrenWidth:first-child {
+      width: 0% !important;
+      border: none;
+    }
   }
 }
+
+// .flexRowContent--filterRow {
+//   //transform: translateY(-84px);
+// }
