@@ -246,15 +246,16 @@
 }
 
 .flexRowContent--summaryTop{
-  :global(.vtex-wish-list-0-x-wishlistIconContainer) {
+  :global(.vtex-wish-list-1-x-wishlistIconContainer) {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    .vtex-button:hover{
-      background-color: transparent;
-    }
+    
   }
-
+  :global(.vtex-wish-list-1-x-fill){
+    background:url(https://bricobravo.vtexassets.com/arquivos/ids/155411-22-22?v=637920420622130000&width=22&height=22&aspect=true);
+    padding-right: 14px;
+    padding-bottom: 6px;
+  }
 }
 .flexCol{
   &--summaryInfo{

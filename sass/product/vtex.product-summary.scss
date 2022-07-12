@@ -142,10 +142,11 @@
   position: relative;
 
   .priceContainer {
+    display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 0;
-    min-height: 44.63px;
+    min-height: 54px;
   }
 
   :global(.vtex-flex-layout-0-x-flexRow--productDescription) {
@@ -190,7 +191,7 @@
 
     :global(.vtex-numeric-stepper-wrapper) {
       border-radius: 8px;
-      border: 2px solid #111;
+      border: 1px solid #4320A8;
       margin-top: 0.5rem;
 
       :global(.vtex-numeric-stepper-container) {
@@ -198,7 +199,6 @@
         justify-content: space-between;
 
         :global(.vtex-numeric-stepper__input) {
-          width: 180px;
           font-weight: 600;
           font-size: 14px;
           line-height: 16px;
@@ -216,6 +216,7 @@
         :global(.vtex-numeric-stepper__plus-button),
         :global(.vtex-numeric-stepper__minus-button) {
           border: none !important;
+          background: transparent;
         }
 
         :global(.vtex-numeric-stepper__plus-button__text),

@@ -14,7 +14,8 @@
   },
   "peerDependencies": {
     "beightone.buy-together-marketplace": "0.x",
-    "vtex.location-availability": "0.x"
+    "vtex.location-availability": "0.x",
+    "vtex.wish-list": "1.x"
   },
   "dependencies": {
     "vtex.store": "2.x",
@@ -70,8 +71,7 @@
     "vtex.order-manager": "0.x",
     "vtex.order-items": "0.x",
     "vtex.modal-layout": "0.x",
-    "vtex.store-video": "1.x",
-    "vtex.wish-list": "1.x"
+    "vtex.store-video": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

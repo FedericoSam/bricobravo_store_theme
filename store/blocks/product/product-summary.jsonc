@@ -73,24 +73,20 @@
     },
     "children": [
       "flex-layout.row#summary-discount-wishIcon",
-      "flex-layout.row#stackSavings", 
+      "flex-layout.row#stackSavings",
       "flex-layout.col#summaryInfo"
     ]
   },
-  "flex-layout.row#summary-discount-wishIcon":{
-    "children":[
-      "product-price-savings#discount",
-      "add-to-list-btn"
-    ],
+  "flex-layout.row#summary-discount-wishIcon": {
+    "children": ["product-price-savings#discount", "add-to-list-btn"],
     "props": {
       "blockClass": "summaryTop"
     }
   },
   "flex-layout.col#summaryInfo": {
-    "children": [      
-      "flex-layout.col#summary-prices",
+    "children": [
+      "flex-layout.row#summary-prices",
       "product-summary-name",
-      // "flex-layout.row#summaryDescription",
       "product-installments",
       "flex-layout.col#product-buy-button"
     ],
@@ -99,13 +95,21 @@
       "blockClass": "summaryInfo"
     }
   },
-  "flex-layout.col#summary-prices": {
-    "children": [
-      "product-summary-price"
-      
-    ],
+  "flex-layout.row#summary-prices": {
+    "children": ["product-summary-price", "product-specification-group"],
     "props": {
       "blockClass": "summaryPrices"
+    }
+  },
+  "product-specification-group": {
+    "children": ["product-specification"]
+  },
+  "product-specification": {
+    "children": ["product-specification-text#specification"]
+  },
+  "product-specification-text#specification": {
+    "props": {
+      "message": "{specificationName}"
     }
   },
   "product-price-savings#discount": {
@@ -113,18 +117,8 @@
       "blockClass": "savingPercentage"
     }
   },
-  // "flex-layout.row#summaryDescription": {
-  //   "children": [
-  //     "flex-layout.row#description"
-  //   ],
-  //   "props": {
-  //     "blockClass": "summaryDescription"
-  //   }
-  // },
   "flex-layout.col#product-buy-button": {
-    "children": [
-      "custom-add-to-cart#event-trigger"
-    ],
+    "children": ["custom-add-to-cart#event-trigger"],
     "props": {
       "blockClass": "buyButtonContainer"
     }
@@ -154,12 +148,6 @@
       "onClickBehavior": "add-to-cart"
     }
   },
-  // "product-summary-quantity": {
-  //   "props": {
-  //     "showLabel": false,
-  //     "blockClass": "qtd-shelf"
-  //   }
-  // },
   "product-summary.shelf#trending": {
     "children": ["flex-layout.row#summaryTrending"],
     "props": {
