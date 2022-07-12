@@ -25,6 +25,7 @@
     }
   }
 
+  &--upperFooterDesktop,
   &--footer-upperFooterDesktop {
     :global(.vtex-store-components-3-x-container) {
       @include container-main;
@@ -45,6 +46,20 @@
 
   &--quemSomos-main {
     margin-bottom: 5rem;
+  }
+
+  &--upperFooterDesktop {
+    padding-bottom: 2.5rem;
+    background-color: #f6f6f6;
+
+    @media screen and (max-width: 768px) {
+      margin-top: -20px;
+      padding: 48px 24px;
+    }
+  }
+
+  &--upperFooterBrands {
+    margin-bottom: 1rem;
   }
 }
 
@@ -79,7 +94,6 @@
       }
     }
   }
-
   &--footer-containerDisclosure {
     border-bottom: 1px solid $white;
     .stretchChildrenWidth {
@@ -105,11 +119,11 @@
     margin-top: 72px;
     justify-content: center;
 
-    @media screen and (max-width: 768px) {
-      padding: 0 16px;
-      margin-top: 64px;
+      @media screen and (max-width: 768px) {
+        padding: 0 16px;
+        margin-top: 64px;
+      }
     }
-  }
 
   &--newsletterForm {
     max-width: 564px;
