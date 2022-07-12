@@ -193,9 +193,7 @@
   },
 
   "flex-layout.row#footerPaymentMethodsRow1": {
-    "children": [
-      "rich-text#footerPaymentMethodsRow1Title"
-    ],
+    "children": ["rich-text#footerPaymentMethodsRow1Title"],
     "props": {
       "preventVerticalStretch": true,
       "blockClass": "footer-PaymentMethodsRow"
@@ -331,7 +329,6 @@
       "fullWidth": true
     }
   },
-
 
   "flex-layout.col#bottomFooter1": {
     "children": ["rich-text#bricoBravoInfo1"],
