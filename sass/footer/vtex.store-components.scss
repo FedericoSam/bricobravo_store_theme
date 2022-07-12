@@ -1,0 +1,14 @@
+@import '../variables';
+@import '../media-queries';
+
+.imageElement {
+  &--footer-congratulationsImage {
+    height: 105px;
+    width: 105px;
+    margin: 0 10px;
+    @include breakpoint("mobile") {
+      width: 90px;
+      height: 90px;
+    }
+  }
+}

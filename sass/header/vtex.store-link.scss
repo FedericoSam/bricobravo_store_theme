@@ -17,10 +17,12 @@
     border: none;
     text-transform: capitalize;
     padding: 0 5px 0 15px;
+
     &:hover {
       background: none;
       border: none;
     }
+
     .label {
       display: none;
     }
