@@ -20,8 +20,7 @@
   "flex-layout.col#header-mobile": {
     "children": [
       "flex-layout.col#header-logo",
-      "flex-layout.col#header-searchBar",
-      "drawer#menu-mobile"
+      "flex-layout.col#header-searchBar"
     ]
   },
 
@@ -31,12 +30,12 @@
       "preventHorizontalStretch": true,
       "blockClass": "header-mobile-searchBar"
     }
-  },
-  "drawer#menu-mobile": {
-    "children": ["header-mega-menu"],
-    "props": {
-      "blockClass": "drawer-desktop",
-      "width": "100%"
-    }
   }
+  // "drawer#menu-mobile": {
+  //   "children": ["header-mega-menu"],
+  //   "props": {
+  //     "blockClass": "drawer-desktop",
+  //     "width": "100%"
+  //   }
+  // }
 }
