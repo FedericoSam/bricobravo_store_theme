@@ -31,4 +31,11 @@
       "blockClass": "header-mobile-searchBar"
     }
   }
+  // "drawer#menu-mobile": {
+  //   "children": ["header-mega-menu"],
+  //   "props": {
+  //     "blockClass": "drawer-desktop",
+  //     "width": "100%"
+  //   }
+  // }
 }

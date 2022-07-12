@@ -130,7 +130,7 @@
     "children": ["header-mega-menu"],
     "props": {
       "blockClass": "drawer-desktop",
-      "maxWidth": 368
+      "maxWidth": 400
     }
   },
 

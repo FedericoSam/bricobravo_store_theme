@@ -11,6 +11,7 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
   const { isMobile } = useDevice()
   const [isOpen, setIsOpen] = useState()
   const [megamenu, setMegaMenu] = useState()
+  const [whatSubCategoryIsOpen, setWhatSubCategoryIsOpen] = useState('')
 
   useEffect(() => {
     // add when mounted
@@ -192,29 +193,63 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
         </div>
       </nav>
 
-      {menuFirstLevel?.map(({ link, text, menuSecondLevel }, index) => {
+      {menuFirstLevel?.map(({ text, iconMobile, menuSecondLevel }, index) => {
         return isOpen && index == megamenu ? (
           <div key={index} className={style['mobile-mega-menu']}>
-            <h2 className={style['mobile-mega-menu-title']}>{text}</h2>
+            <h2 className={style['mobile-mega-menu-title']}
+              onClick={() => setIsOpen(false)}
+            >{text}</h2>
             <ul className={style['mobile-mega-menu-items']}>
               {menuSecondLevel?.map(({ title, subCategories }, index) => {
                 return (
                   <>
-                    <h5 key={index}>{title}</h5>
-                    {console.log(subCategories)}
-                    {subCategories?.map(({ text, link }, ind) => {
-                      ;<li key={ind} className={`${style['subcategory-item']}`}>
-                        <Link to={link}>{text}</Link>
+                    <li key={index}
+                      className={style['mobile-menu-header-category']}
+                      onClick={() => setWhatSubCategoryIsOpen(title)}
+                    >
+                      <Icon
+                        id={
+                          whatSubCategoryIsOpen == title && isOpen
+                            ? `${iconMobile}-white`
+                            : iconMobile
+                        }
+                        type="filled"
+                      />
+                      <p className={style['category-menu-item']}>{title}</p>
+                      <i
+                        className={style['category-menu-arrow']}></i>
                       </li>
-                    })}
+                    <div className={whatSubCategoryIsOpen === title ? style['mobile-subcategory-menu-items'] : style['subcategory-hidden']}>
+                      <ul className={style["mobile-subcategory-overflow"]}>
+                        <h5
+                        className={style['mobile-mega-menu-title']}
+                        onClick={() => setWhatSubCategoryIsOpen('')}
+                        >{title}</h5>
+                        {subCategories?.map(({ text, linkSub }, ind) => {
+                          return whatSubCategoryIsOpen && title === whatSubCategoryIsOpen ? (
+                            <>
+                              <li key={ind} className={`${style['mobile-menu-header-subcategory']}`}
+                                onClick={() => {
+                                  setWhatSubCategoryIsOpen('');
+                                  setIsOpen(false)
+                                }}
+                              >
+                                <Icon
+                                  id={
+                                    iconMobile
+                                  }
+                                  type="filled"
+                                />
+                                <Link className={style['category-menu-item']} to={linkSub}>{text}</Link>
+                              </li>
+                            </>
+                          ) : null})}
+                      </ul>
+                    </div>
                   </>
                 )
               })}
             </ul>
-
-            <Link to={link} className={style['mobile-mega-menu-cta']}>
-              Ver Tudo em {text}
-            </Link>
           </div>
         ) : null
       })}
@@ -273,7 +308,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Ferramenta',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -338,7 +373,627 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
+          title: 'Aredo',
+          subCategories: [
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+          ],
+        },
+        {
+          title: 'Raccolta olive',
+          subCategories: [
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+          ],
+        },
+        {
           title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+          ],
+        },
+        {
+          title: 'Ferramenta',
+          subCategories: [
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+          ],
+        },
+        {
+          title: 'Aredo',
+          subCategories: [
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+          ],
+        },
+        {
+          title: 'Raccolta olive',
+          subCategories: [
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+          ],
+        },
+        {
+          title: 'Ferramenta',
+          subCategories: [
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+          ],
+        },
+        {
+          title: 'Aredo',
+          subCategories: [
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+          ],
+        },
+        {
+          title: 'Raccolta olive',
+          subCategories: [
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+          ],
+        },
+        {
+          title: 'Ferramenta',
+          subCategories: [
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+          ],
+        },
+        {
+          title: 'Aredo',
+          subCategories: [
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+          ],
+        },
+        {
+          title: 'Raccolta olive',
+          subCategories: [
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+          ],
+        },
+        {
+          title: 'Ferramenta',
+          subCategories: [
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+          ],
+        },
+        {
+          title: 'Aredo',
+          subCategories: [
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+          ],
+        },
+        {
+          title: 'Raccolta olive',
+          subCategories: [
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+          ],
+        },
+        {
+          title: 'Accessori giardinaggio',
+          subCategories: [
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+          ],
+        },
+        {
+          title: 'Ferramenta',
+          subCategories: [
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+            {
+              text: 'Lorem ipsum dolor sit amet',
+              link: '#',
+            },
+          ],
+        },
+        {
+          title: 'Aredo',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -405,7 +1060,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Ferramenta',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -470,7 +1125,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Aredo',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -537,7 +1192,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Ferramenta',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -602,7 +1257,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Aredo',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -669,7 +1324,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Ferramenta',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -734,7 +1389,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Aredo',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -801,7 +1456,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Ferramenta',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -866,7 +1521,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Aredo',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -933,7 +1588,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Ferramenta',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -998,7 +1653,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Aredo',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -1064,7 +1719,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Ferramenta',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -1129,7 +1784,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Aredo',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -1195,7 +1850,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Ferramenta',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -1260,7 +1915,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Aredo',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -1326,7 +1981,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Ferramenta',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -1391,7 +2046,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Aredo',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -1457,7 +2112,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Ferramenta',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -1522,7 +2177,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Aredo',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -1588,7 +2243,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Ferramenta',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -1653,7 +2308,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Aredo',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -1719,7 +2374,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Ferramenta',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -1784,7 +2439,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Aredo',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -1850,7 +2505,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Ferramenta',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -1915,7 +2570,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Aredo',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -1981,7 +2636,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Ferramenta',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -2046,7 +2701,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Aredo',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -2112,7 +2767,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Ferramenta',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -2177,7 +2832,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
         {
-          title: 'Accessori giardinaggio',
+          title: 'Aredo',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
