@@ -1,6 +1,37 @@
 @import '../_media-queries.scss';
 @import '../_variables.scss';
 
+
+.flexColChild--specificationNameCol{
+
+  [data-specification-name="Premium"]::after{
+    content: url(https://bricobravo.vtexassets.com/arquivos/ids/155413-22-22?v=637920420622130000&width=75&height=15&aspect=true);
+    margin: 24px 0 0 22px;
+    @include mobile {
+      margin: 0;
+      position: relative;
+      top: -30px;
+      left: 120px;
+
+    }
+  }
+  [data-specification-name="Spedizione gratuita"]::after{
+    content: url(https://bricobravo.vtexassets.com/arquivos/ids/155410-22-22?v=637920420622130000&width=75&height=15&aspect=true);
+    position: relative;
+    top: -4px;
+    left: -4px;
+    @include mobile {
+      top: -36px;
+      left: 106px;
+    }
+
+  }
+} 
+.flexRowContent--productSpecificationItem {
+  @include mobile {
+    height: 0;
+  }
+}
 .flexRow--cartSummary {
   border-bottom: 1px solid #D8D8D8;
   margin-bottom: 1rem;

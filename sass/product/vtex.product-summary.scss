@@ -13,6 +13,7 @@
   &:hover{
     height: 486px;
     transition: all 0.3s ease;
+    border-color: #dee7ef;
   }
   .clearLink {
     margin-bottom: 0.7rem;
@@ -30,10 +31,6 @@
   &--minimumSummary {
     padding: 0 0.5rem;
   }
-}
-
-.container--summaryComplete:hover {
-  border-color: #dee7ef;
 }
 
 .container--summaryComplete:hover .buyButtonContainer,
@@ -318,7 +315,7 @@
   :global(.vtex-flex-layout-0-x-flexRow--product-summary-buy-button),
 :global(.vtex-flex-layout-0-x-flexCol--buyButtonContainer)
   :global(.vtex-button) {
-  background-color: #FFFFFF;
+  background-color: #FFF;
   color: #4320A8;
   border-radius: 4px;
   border: 1px solid #4320A8;
@@ -333,11 +330,11 @@
     padding: 0;
     color: #4320A8;
     &:hover {
-      color: #FFFFFF;
+      color: #FFF;
     }
   }
   &:hover {
-    background: #4320A8  !important;
+    background: #4320A8 !important;
   }
 }
 
