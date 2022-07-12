@@ -4,22 +4,21 @@
 
 .container--summaryComplete {
   max-width: 332px !important;
+  height: 360px;
   position: relative;
   border: none;
-  border-radius: 0;
-  // padding: 0 0.3rem;
-  transition: all 0.3s ease;
+  border-radius: 2px;
+  box-shadow: 0 0 0.4em rgba(0,0,0,0.3);
+  transition: all 0.4s ease;
+  &:hover{
+    height: 486px;
+    transition: all 0.3s ease;
+  }
   .clearLink {
     margin-bottom: 0.7rem;
-    background: $white;
-    border-radius: 16px;
-    padding: 24px 24px 36px;
-    border: 1px solid $white;
+    background: var(--white);
+    border: 1px solid var(--white);
     transition: all 0.3s ease;
-    &:hover {
-      border: 1px solid $primary-light;
-      transition: all 0.3s ease;
-    }
   }
 
   @include mobile {
@@ -31,10 +30,6 @@
   &--minimumSummary {
     padding: 0 0.5rem;
   }
-}
-
-.container--summaryComplete:hover {
-  border-color: #dee7ef;
 }
 
 .container--summaryComplete:hover .buyButtonContainer,
@@ -50,14 +45,6 @@
 .container--summaryComplete
   :global(.vtex-store-components-3-x-installmentsPrice) {
   display: none;
-}
-.container--summaryComplete :global(.vtex-product-price-1-x-installments) {
-  display: block;
-  font-size: 0.72rem;
-  font-weight: 500;
-  color: $darkgrey-light;
-  text-align: left;
-  margin-top: 3px;
 }
 
 .container--summaryComplete .buyButton :global(.vtex-button),
@@ -118,20 +105,16 @@
 
 .container--summaryComplete .productNameContainer .brandName {
   width: 100%;
-  text-align: left;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
+  text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 3;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #0f0a0a;
-  min-height: 42px;
-  max-height: 42px;
+  color: #332c32;
   padding-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .container--summaryComplete .buyButtonContainer,
@@ -143,8 +126,8 @@
 }
 
 .container--summaryComplete .image {
+  height: 150px;
   @include mobile {
-    // max-height: 370px !important;
     object-fit: cover !important;
     display: block;
   }
@@ -159,10 +142,11 @@
   position: relative;
 
   .priceContainer {
+    display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 0;
-    min-height: 44.63px;
+    min-height: 54px;
   }
 
   :global(.vtex-flex-layout-0-x-flexRow--productDescription) {
@@ -177,37 +161,37 @@
 
       :global(.vtex-store-components-3-x-productDescriptionText) {
         text-align: left;
-        font-style: normal;
         font-weight: 300;
         font-size: 12px;
-        line-height: 16px;
         display: flex;
         align-items: center;
-        letter-spacing: 0.01em;
-        color: #111;
+        color: #1D1E2C;
         padding-top: 2px;
+        text-transform: lowercase;
       }
     }
   }
 
   :global(.vtex-product-price-1-x-installments--productMain-installments) {
+    display: block;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 16px;
-    color: #111;
+    color: #4320AB;
+    text-align: center;
+    margin: 30px 22px 10px;
 
     &::before {
-      content: none !important;
+      content: 'oppure paga in ';
     }
   }
 
   :global(.vtex-flex-layout-0-x-flexCol--buyButtonContainer) {
-    margin-top: 8px;
 
     :global(.vtex-numeric-stepper-wrapper) {
       border-radius: 8px;
-      border: 2px solid #111;
+      border: 1px solid #4320A8;
       margin-top: 0.5rem;
 
       :global(.vtex-numeric-stepper-container) {
@@ -215,7 +199,6 @@
         justify-content: space-between;
 
         :global(.vtex-numeric-stepper__input) {
-          width: 180px;
           font-weight: 600;
           font-size: 14px;
           line-height: 16px;
@@ -233,6 +216,7 @@
         :global(.vtex-numeric-stepper__plus-button),
         :global(.vtex-numeric-stepper__minus-button) {
           border: none !important;
+          background: transparent;
         }
 
         :global(.vtex-numeric-stepper__plus-button__text),
@@ -318,6 +302,7 @@
 
   :global(.vtex-flex-layout-0-x-flexCol--summaryPrices) {
     position: relative;
+    min-height: 52px;
 
     :global(.vtex-product-price-1-x-savings--savingPercentage) {
       top: 20px !important;
@@ -325,32 +310,31 @@
     }
   }
 }
-
-/* :global(.vtex-slider-layout-0-x-sliderTrackContainer--shelfAlsoView) {
-  :global(.vtex-product-price-1-x-savings--savingPercentage) {
-    left: 176px !important;
-  }
-} */
-
 .element--summaryComplete .buyButtonContainer,
 .element--summaryComplete
   :global(.vtex-flex-layout-0-x-flexRow--product-summary-buy-button),
 :global(.vtex-flex-layout-0-x-flexCol--buyButtonContainer)
   :global(.vtex-button) {
-  background-color: #e30613;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: 600;
+  background-color: #FFF;
+  color: #4320A8;
+  border-radius: 4px;
+  border: 1px solid #4320A8;
   margin-top: 0.5rem;
   transition: all 0.3s ease;
   min-height: 48px;
-  text-transform: inherit;
+  text-transform: uppercase;
 
-  &:hover {
-    background: #b9141f !important;
-  }
   :global(.vtex-button__label) {
+    font-size: 14px;
+    font-weight: 600;
     padding: 0;
+    color: #4320A8;
+    &:hover {
+      color: #FFF;
+    }
+  }
+  &:hover {
+    background: #4320A8 !important;
   }
 }
 
@@ -369,23 +353,31 @@
 .element--summaryComplete .sellingPriceLabel {
   display: none;
 }
+.price_sellingPriceContainer{
+  color: #4320A8;
+}
+:global(.vtex-product-summary-2-x-element--summaryComplete){
+  font-size: 20px;
+  font-weight: 800;
+  color: #4320A8;
+}
 
 .element--summaryComplete .listPrice {
-  color: #999;
-  text-decoration: none;
+  color: #332C32;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 14px;
+  text-decoration: line-through;
 }
 
 .element--summaryComplete .sellingPrice {
   font-style: normal;
   font-weight: 600;
-  font-size: 20px !important;
-  line-height: 24px;
-  letter-spacing: -0.005em;
-  color: #0f0a0a;
+  font-size: 18px !important;
+  line-height: 22px;
+  color: #332C32;
+  padding-bottom: 10px;
 }
 
 /* BEGIN - Popular Shelf */
