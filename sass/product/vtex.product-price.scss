@@ -3,40 +3,22 @@
 
 
 .savings--savingPercentage {
-  font-size: 0;
-  width: 2.35rem;
-  border: 2px solid #E30613;
-  border-radius: 8px;
-  padding: 3px 5px 3px 3px;
   position: absolute;
-  top: 16rem;
-  left: 233px;
-  .savingsPercentage {
-    color: #E30613;
-    font-size: $cta-medium;
-    font-weight: 600;
-    line-height: 1rem;
-  }
-  &::before {
-    content: '-';
-    display: inline-block;
-    font-size: $cta-medium;
-    color: #E30613;
-    font-weight: 600;
-    line-height: 1rem;
-    padding-left: 4px;
-    padding-right: 1px;
-  }
-}
+  top: 6px;
+  left: -1px;
+  font-size: 0;
+  background-color: #4320A8;
+  height: 20px;
+  width: 38px !important;
+  clip-path: polygon(0% 0%, 70% 0, 100% 50%, 70% 100%, 0% 100%);
 
-.installments--productMain-installments {
-  font-weight: 300;
-  margin-top: 10px;
-  display: block !important;
   &::before {
-    content: 'em até ';
-    font-weight: 300;
-    margin-right: 3px;
+    content: '%';
+    display: block;
+    margin: 2px 0 0 7px;
+    color: #FFF;
+    font-weight: 400;
+    font-size: 16px;
   }
 }
 

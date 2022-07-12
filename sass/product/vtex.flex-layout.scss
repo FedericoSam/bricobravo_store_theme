@@ -1,10 +1,41 @@
 @import '../_media-queries.scss';
 @import '../_variables.scss';
 
+
+.flexColChild--specificationNameCol{
+
+  [data-specification-name="Premium"]::after{
+    content: url(https://bricobravo.vtexassets.com/arquivos/ids/155413-22-22?v=637920420622130000&width=75&height=15&aspect=true);
+    margin: 24px 0 0 22px;
+    @include mobile {
+      margin: 0;
+      position: relative;
+      top: -30px;
+      left: 120px;
+
+    }
+  }
+  [data-specification-name="Spedizione gratuita"]::after{
+    content: url(https://bricobravo.vtexassets.com/arquivos/ids/155410-22-22?v=637920420622130000&width=75&height=15&aspect=true);
+    position: relative;
+    top: -4px;
+    left: -4px;
+    @include mobile {
+      top: -36px;
+      left: 106px;
+    }
+
+  }
+} 
+.flexRowContent--productSpecificationItem {
+  @include mobile {
+    height: 0;
+  }
+}
 .flexRow--cartSummary {
-  border-radius: 8px;
+  border-bottom: 1px solid #D8D8D8;
   margin-bottom: 1rem;
-  padding: 5px 18px;
+  padding: 5px 1px;
   align-items: center;
   background: $white;
   height: 136px;
@@ -214,12 +245,31 @@
   background-color: transparent;
 }
 
+.flexRowContent--summaryTop{
+  :global(.vtex-wish-list-1-x-wishlistIconContainer) {
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+  :global(.vtex-wish-list-1-x-fill){
+    background:url(https://bricobravo.vtexassets.com/arquivos/ids/155411-22-22?v=637920420622130000&width=22&height=22&aspect=true);
+    padding-right: 14px;
+    padding-bottom: 6px;
+  }
+}
+.flexCol{
+  &--summaryInfo{
+    padding: 10px;
+  }
+  &--buyButtonContainer{
+    padding: 0 4px;
+  }
+}
 .flexRowChild--table-cell,
 .flexColChild--table-cell {
   display: flex;
   align-items: center;
 }
-
 .flexRow {
   &--breadcrumb {
     background-color: $lightgrey-light;
@@ -768,9 +818,9 @@
       }
       &::after {
         display: block;
-        transform: translate(0px, -23px);
+        transform: translate(0, -23px);
         content: 'Não sabe seu CEP?';
-        color: #555555;
+        color: #555;
         text-align: left;
         font-weight: 400;
         font-size: 12px;
@@ -778,8 +828,8 @@
       }
     }
     :global(.vtex__icon-external-link) {
-      width: 0px;
-      height: 0px;
+      width: 0;
+      height: 0;
     }
     .stretchChildrenWidth {
       display: block;

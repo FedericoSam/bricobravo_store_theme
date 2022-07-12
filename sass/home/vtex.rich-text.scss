@@ -8,6 +8,19 @@
     }
   }
 
+  &--home-section-title,
+  &--home-section04-title {
+    justify-content: center;
+  }
+
+  &--home-section-title {
+    display: flex;
+    justify-content: flex-start;
+    @media screen and (max-width: 768px) {
+      justify-content: center;
+    }
+  }
+
   .heading {
     &--first-section-title {
       margin: 64px 0 96px;
@@ -28,6 +41,18 @@
     }
 
     &--home-section-title {
+      display: flex;
+      justify-content: flex-start;
+      font-size: 40px;
+      line-height: 48px;
+      font-weight: 500;
+      margin: 0;
+      @media screen and (max-width: 768px) {
+        font-size: 28px;
+        line-height: 32px;
+      }
+    }
+    &--home-section04-title {
       text-align: center;
       height: 1rem;
       color: #332c32;

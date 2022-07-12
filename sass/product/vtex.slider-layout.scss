@@ -100,6 +100,13 @@
 // slider category End
 
 //PDP Slider Start
+
+.sliderTrack--shelfAlsoView{
+  display: flex;
+  align-items: flex-start;
+  column-gap: 16px;
+  padding: 20px 0 20px 5px;
+}
 .sliderLayoutContainer--shelfAlsoView {
   overflow: inherit;
   padding-bottom: 2rem;

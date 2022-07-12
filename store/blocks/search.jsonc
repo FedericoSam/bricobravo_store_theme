@@ -67,12 +67,12 @@
   "search-result-layout.desktop": {
     "children": [
       "flex-layout.row#searchbread",
-      "flex-layout.row#searchBanner",
-      "flex-layout.row#findYourProduct",
-      "flex-layout.row#mobile-home-categories-showcase-search-search",
+      "flex-layout.row#searchTitle",
       "flex-layout.row#searchinfo",
       "flex-layout.row#searchLayout",
-      "flex-layout.row#sectionSeo"
+      "flex-layout.row#sectionSeo1",
+      "flex-layout.row#sectionSeo2",
+      "flex-layout.row#sectionSeo3"
     ],
     "props": {
       "pagination": "show-more",
@@ -85,6 +85,32 @@
     }
   },
 
+  "flex-layout.row#searchTitle": {
+    "children": ["flex-layout.col#search-title"],
+    "props": {
+      "blockClass": "title-container"
+    }
+  },
+  "flex-layout.col#search-title": {
+    "children": [
+      "search-title.v2",
+      "rich-text#titleDescription",
+      "rich-text#readCompleteTitleDescription"
+    ]
+  },
+  "rich-text#titleDescription": {
+    "title": "Descrição Busca",
+    "props": {
+      "text": "Nunc magna ex, euismod vitae magna ac, gravida sagittis dolor. Suspendisse vitae risus non quam commodo varius. Maecenas semper iaculis dui ut volutpat. Pellentesque imperdiet egestas dui, vel volutpat lectus laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt..",
+      "blockClass": "description-title-search"
+    }
+  },
+  "rich-text#readCompleteTitleDescription": {
+    "props": {
+      "text": "[Leggi tutto](/#)",
+      "blockClass": "readCompleteTitleDescription"
+    }
+  },
   "sidebar-close-button": {
     "props": {
       "size": 20
@@ -109,6 +135,7 @@
   },
   "flex-layout.col#search-content": {
     "children": [
+      "image#banner-sponsored",
       "flex-layout.row#fetchprevious",
       "flex-layout.row#products",
       "flex-layout.row#fetchmore"
@@ -117,6 +144,15 @@
       "paddingLeft": 5
     }
   },
+  "image#banner-sponsored": {
+    "props": {
+      "src": "https://via.placeholder.com/1376x320/E30613/fff",
+      "alt": "banner-sponsored",
+      "maxWidth": "1312px",
+      "blockClass": "banner-sponsored"
+    }
+  },
+
   "flex-layout.row#searchbread": {
     "children": ["breadcrumb.search#default"],
     "props": {
@@ -132,52 +168,86 @@
       "homeIconSize": 18
     }
   },
-  "flex-layout.row#searchtitle": {
-    "children": ["search-title.v2"]
-  },
-  "flex-layout.row#sectionSeo": {
-    "children": ["flex-layout.row#sectionSeoContent"]
-  },
-  "flex-layout.row#sectionSeoContent": {
-    "children": [
-      "flex-layout.col#CategoryTitleSeo",
-      "flex-layout.col#CategoryTextSeo"
-    ],
+  "flex-layout.row#sectionSeo1": {
+    "children": ["flex-layout.col#CategorySeo1"],
     "props": {
       "blockClass": "container-seo"
     }
   },
-  "flex-layout.col#CategoryTitleSeo": {
-    "props": {
-      "verticalAlign": "top"
-    },
-    "children": ["rich-text#CategoryTitleSeo"]
+  "flex-layout.row#sectionSeoContent1": {
+    "children": ["flex-layout.col#CategorySeo1"]
   },
-  "flex-layout.col#CategoryTextSeo": {
+  "flex-layout.col#CategorySeo1": {
+    "children": ["rich-text#CategoryTitleSeo1", "rich-text#CategoryTextSeo1"],
     "props": {
-      "verticalAlign": "top"
-    },
-    "children": [
-      "rich-text#CategoryTextSeo",
-      "rich-text#ReadCompleteTextLinkSeo"
-    ] //aqui
-  },
-  "rich-text#CategoryTitleSeo": {
-    "props": {
-      "text": "#### Category Aiwa",
-      "blockClass": "titleSeo"
+      "blockClass": "category-seo"
     }
   },
-  "rich-text#CategoryTextSeo": {
+  "rich-text#CategoryTitleSeo1": {
     "props": {
-      "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-      "blockClass": "textSeo"
+      "text": "### Heading two",
+      "blockClass": "titleSeo",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
     }
   },
-  "rich-text#ReadCompleteTextLinkSeo": {
+  "rich-text#CategoryTextSeo1": {
     "props": {
-      "text": "[Ler texto completo](/#)",
-      "blockClass": "readCompleteTextLink-seo"
+      "text": "Nunc magna ex, euismod vitae magna ac, gravida sagittis dolor. Suspendisse vitae risus non quam commodo varius. Maecenas semper iaculis dui ut volutpat. Pellentesque imperdiet egestas dui, vel volutpat lectus laoreet vel. Vivamus dignissim sed purus at blandit. Nam venenatis augue et ipsum interdum mollis nec ut justo. In at tincidunt ligula. Vestibulum eget nisl commodo lacus viverra egestas. Sed congue nibh velit, nec commodo tortor sodales quis. Ut rutrum turpis eu fermentum porttitor. Vestibulum nisi ligula, condimentum eget sagittis eget, faucibus at velit. Proin commodo mauris non tellus blandit imperdiet.",
+      "blockClass": "textSeo",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  // ----------- //
+  "flex-layout.row#sectionSeo2": {
+    "children": ["flex-layout.col#CategorySeo2"],
+    "props": {
+      "blockClass": "container-seo2"
+    }
+  },
+  "flex-layout.col#CategorySeo2": {
+    "children": ["rich-text#CategoryTitleSeo2", "rich-text#CategoryTextSeo2"]
+  },
+  "rich-text#CategoryTitleSeo2": {
+    "props": {
+      "text": "### Heading two",
+      "blockClass": "titleSeo",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#CategoryTextSeo2": {
+    "props": {
+      "text": "Nunc magna ex, euismod vitae magna ac, gravida sagittis dolor. Suspendisse vitae risus non quam commodo varius. Maecenas semper iaculis dui ut volutpat. Pellentesque imperdiet egestas dui, vel volutpat lectus laoreet vel. Vivamus dignissim sed purus at blandit. Nam venenatis augue et ipsum interdum mollis nec ut justo. In at tincidunt ligula. Vestibulum eget nisl commodo lacus viverra egestas. Sed congue nibh velit, nec commodo tortor sodales quis. Ut rutrum turpis eu fermentum porttitor. Vestibulum nisi ligula, condimentum eget sagittis eget, faucibus at velit. Proin commodo mauris non tellus blandit imperdiet.",
+      "blockClass": "textSeo",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  // ----------- //
+  "flex-layout.row#sectionSeo3": {
+    "children": ["flex-layout.col#CategorySeo3"],
+    "props": {
+      "blockClass": "container-seo3"
+    }
+  },
+  "flex-layout.col#CategorySeo3": {
+    "children": ["rich-text#CategoryTitleSeo3", "rich-text#CategoryTextSeo3"]
+  },
+  "rich-text#CategoryTitleSeo3": {
+    "props": {
+      "text": "### Heading two",
+      "blockClass": "titleSeo",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#CategoryTextSeo3": {
+    "props": {
+      "text": "Curabitur ullamcorper viverra nibh, sodales mollis nunc tempus vulputate. Morbi sed augue ante. Pellentesque volutpat ultrices pulvinar. Mauris lacinia sit amet arcu eget pharetra. Integer vel consequat tortor. Donec viverra bibendum dui, sit amet tincidunt leo volutpat et. Integer et sem sapien. Nam luctus pulvinar lectus id malesuada. Sed sit amet pellentesque lacus, vel ornare nibh. Nam id lobortis mi, sed consequat mauris. Curabitur et magna eu nibh euismod condimentum vitae quis nibh. Fusce sapien augue, elementum accumsan libero quis, laoreet euismod orci. Vestibulum pharetra, nisi eleifend luctus egestas, dui dolor aliquam dui, efficitur commodo quam erat eget odio. Donec varius, diam quis pharetra feugiat, turpis metus euismod mi, mattis posuere sem nunc at magna. \\ Sed fringilla nisl a vehicula lobortis. Quisque fringilla mi in purus feugiat, venenatis cursus mi rutrum. Curabitur leo nisi, luctus dignissim mauris id, dapibus feugiat sem. Nullam maximus ligula ac neque aliquam consectetur. Aliquam faucibus condimentum turpis, a pulvinar elit porta sollicitudin. Curabitur venenatis vitae mauris aliquam blandit. Phasellus vehicula sodales mollis. Nulla nisl massa, interdum a massa eget, tincidunt commodo augue. Nunc quis condimentum nisl. Nam quis sodales elit. Vestibulum tortor urna, facilisis a magna quis, vulputate finibus tortor. Nam commodo mi at velit blandit lacinia. Phasellus convallis nulla tempus hendrerit tempor. Cras sit amet lobortis dui. Nullam efficitur lorem mauris, ut finibus justo dapibus facilisis. Mauris fringilla lorem et magna ullamcorper, in.",
+      "blockClass": "textSeo",
+      "textAlignment": "CENTER"
     }
   },
   "flex-layout.row#filter": {
@@ -239,15 +309,15 @@
   "search-result-layout.mobile": {
     "children": [
       "flex-layout.row#searchbread",
-      "flex-layout.row#searchBanner",
-      "flex-layout.row#findYourProduct",
-      "flex-layout.row#mobile-home-categories-showcase-search-search",
+      "flex-layout.row#searchTitle",
       "flex-layout.row#searchControlsMobile",
       "flex-layout.row#fetchprevious",
+      "image#banner-sponsored-mobile",
       "flex-layout.row#contentmobile",
       "flex-layout.row#fetchmore",
-      "flex-layout.row#CategoryTitleSeoMobile",
-      "flex-layout.row#CategoryTextSeoMobile"
+      "flex-layout.row#sectionSeo1",
+      "flex-layout.row#sectionSeo2",
+      "flex-layout.row#sectionSeo3"
     ],
     "props": {
       "pagination": "show-more",
@@ -258,14 +328,12 @@
     }
   },
 
-  "flex-layout.row#findYourProduct": {
-    "children": ["rich-text#findYourProduct"]
-  },
-
-  "rich-text#findYourProduct": {
+  "image#banner-sponsored-mobile": {
     "props": {
-      "text": "## Encontre sua TV no tamanho ideal",
-      "blockClass": "findYourProduct"
+      "src": "https://via.placeholder.com/1376x320/E30613/fff",
+      "alt": "banner-sponsored",
+      "maxWidth": "360px",
+      "blockClass": "banner-sponsored"
     }
   },
 
@@ -360,176 +428,5 @@
   },
   "gallery#mobile": {
     "blocks": ["product-summary.shelf#normal"]
-  },
-  "flex-layout.row#searchBanner": {
-    "props": {
-      "blockClass": "full-banner-search"
-    },
-    "children": ["list-context.image-list#SearchBanners"]
-  },
-  "list-context.image-list#SearchBanners": {
-    "children": ["slider-layout#demo-images-search"],
-    "props": {
-      "height": 528,
-      "images": [
-        {
-          "width": "100%",
-          "image": "https://via.placeholder.com/1376x320/E30613/fff",
-          "mobileImage": "https://via.placeholder.com/328x232/E30613/fff",
-          "description": "something something"
-        },
-        {
-          "width": "100%",
-          "image": "https://via.placeholder.com/1376x320/E30613/fff",
-          "mobileImage": "https://via.placeholder.com/328x232/E30613/fff",
-          "description": "something something"
-        }
-      ]
-    }
-  },
-  "slider-layout#demo-images-search": {
-    "props": {
-      "blockClass": ["searchBanners", "dotsCustom"],
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": false,
-      "showNavigationArrows": "desktopOnly"
-    }
-  },
-  "flex-layout.row#CategoryTitleSeoMobile": {
-    "props": {
-      "verticalAlign": "top"
-    },
-    "children": ["rich-text#CategoryTitleSeoMobile"]
-  },
-  "flex-layout.row#CategoryTextSeoMobile": {
-    "props": {
-      "verticalAlign": "top"
-    },
-    "children": [
-      "rich-text#CategoryTextSeoMobile",
-      "rich-text#CategoryLinkSeoMobile"
-    ]
-  },
-  "rich-text#CategoryTitleSeoMobile": {
-    "props": {
-      "text": "#### PlaceHolder Seo",
-      "blockClass": "titleSeo"
-    }
-  },
-  "rich-text#CategoryTextSeoMobile": {
-    "props": {
-      "text": "Allegra é o antialérgico n1 do mercado trazendo alívio rápido da alergia e não dá sono! indicado para os sintomas da Rinite Alérgica e urticária, tem rápida ação para nariz entupido, coriza, espirro e coceiras nos olhos, nariz, garganta e pele - com eficácia e segurança. Allegra® é um anti-histamínico indicado para uso adulto e pediátrico a partir de 12 anos, sendo destinado ao tratamento das manifestações alérgicas, tais como sintomas de rinite alérgica (incluindo espirros, obstrução nasal, prurido, coriza, conjuntivite alérgica) e urticária (erupção avermelhada e pruriginosa na pele).",
-      "blockClass": "textSeo"
-    }
-  },
-  "rich-text#CategoryLinkSeoMobile": {
-    "props": {
-      "text": "[Ler texto completo](/#)",
-      "blockClass": "readCompleteTextLink-seo"
-    }
-  },
-  "flex-layout.row#mobile-home-categories-showcase-search-search": {
-    "children": [
-      "image#mobile-home-categories-showcase-search-01",
-      "image#mobile-home-categories-showcase-search-02",
-      "image#mobile-home-categories-showcase-search-03",
-      "image#mobile-home-categories-showcase-search-04",
-      "image#mobile-home-categories-showcase-search-05",
-      "image#mobile-home-categories-showcase-search-06",
-      "image#mobile-home-categories-showcase-search-07",
-      "image#mobile-home-categories-showcase-search-08",
-      "image#mobile-home-categories-showcase-search-09"
-    ],
-    "props": {
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "blockClass": "categories-showcase"
-    }
-  },
-
-  "image#mobile-home-categories-showcase-search-01": {
-    "props": {
-      "blockClass": "categories-image",
-      "src": "https://dummyimage.com/130x64/a8a8a8/ffffff.jpg",
-      "link": {
-        "url": "#"
-      }
-    }
-  },
-  "image#mobile-home-categories-showcase-search-02": {
-    "props": {
-      "blockClass": "categories-image",
-      "src": "https://dummyimage.com/130x64/a8a8a8/ffffff.jpg",
-      "link": {
-        "url": "#"
-      }
-    }
-  },
-  "image#mobile-home-categories-showcase-search-03": {
-    "props": {
-      "blockClass": "categories-image",
-      "src": "https://dummyimage.com/130x64/a8a8a8/ffffff.jpg",
-      "link": {
-        "url": "#"
-      }
-    }
-  },
-  "image#mobile-home-categories-showcase-search-04": {
-    "props": {
-      "blockClass": "categories-image",
-      "src": "https://dummyimage.com/130x64/a8a8a8/ffffff.jpg",
-      "link": {
-        "url": "#"
-      }
-    }
-  },
-  "image#mobile-home-categories-showcase-search-05": {
-    "props": {
-      "blockClass": "categories-image",
-      "src": "https://dummyimage.com/130x64/a8a8a8/ffffff.jpg",
-      "link": {
-        "url": "#"
-      }
-    }
-  },
-  "image#mobile-home-categories-showcase-search-06": {
-    "props": {
-      "blockClass": "categories-image",
-      "src": "https://dummyimage.com/130x64/a8a8a8/ffffff.jpg",
-      "link": {
-        "url": "#"
-      }
-    }
-  },
-  "image#mobile-home-categories-showcase-search-07": {
-    "props": {
-      "blockClass": "categories-image",
-      "src": "https://dummyimage.com/130x64/a8a8a8/ffffff.jpg",
-      "link": {
-        "url": "#"
-      }
-    }
-  },
-  "image#mobile-home-categories-showcase-search-08": {
-    "props": {
-      "blockClass": "categories-image",
-      "src": "https://dummyimage.com/130x64/a8a8a8/ffffff.jpg",
-      "link": {
-        "url": "#"
-      }
-    }
-  },
-  "image#mobile-home-categories-showcase-search-09": {
-    "props": {
-      "blockClass": "categories-image",
-      "src": "https://dummyimage.com/130x64/a8a8a8/ffffff.jpg",
-      "link": {
-        "url": "#"
-      }
-    }
   }
 }

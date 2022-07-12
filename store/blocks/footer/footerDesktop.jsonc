@@ -1,9 +1,31 @@
 {
   "footer-layout.desktop": {
     "children": [
+      "flex-layout.row#FooterLinksDesktop",
       "flex-layout.row#footerPaymentMethods",
       "flex-layout.row#bottomFooterDesktop"
     ]
+  },
+  "flex-layout.row#FooterLinksDesktop": {
+    "children": [
+      "flex-layout.col#upperFooterCol1",
+      "flex-layout.col#upperFooterCol2",
+      "flex-layout.row#upperFooterCol3"
+    ],
+    "props": {
+      "blockClass": "footer-upperFooterDesktop"
+    }
+  },
+
+  "flex-layout.col#upperFooterCol1": {
+    "children": [
+      "rich-text#upperFooterTitleCol1",
+      "flex-layout.row#upperFooterLinksCol1"
+    ],
+    "props": {
+      "blockClass": "footer-upperFooterCol1",
+      "width": "25%"
+    }
   },
 
   "rich-text#upperFooterTitleCol1": {
@@ -135,7 +157,7 @@
     }
   },
 
-  "flex-layout.col#upperFooterCol3": {
+  "flex-layout.row#upperFooterCol3": {
     "children": ["image#Congratulations1", "image#Congratulations2"],
     "props": {
       "blockClass": "footer-upperFooterCol3"
@@ -144,13 +166,15 @@
   "image#Congratulations1": {
     "props": {
       "src": "",
-      "width": "100px"
+      "width": "100px",
+      "blockClass": "footer-congratulationsImage"
     }
   },
   "image#Congratulations2": {
     "props": {
       "src": "",
-      "width": "100px"
+      "width": "100px",
+      "blockClass": "footer-congratulationsImage"
     }
   },
 
@@ -169,7 +193,7 @@
   },
 
   "flex-layout.row#footerPaymentMethodsRow1": {
-    "children": ["rich-text#footerPaymentMethodsRow1Title", "image#security"],
+    "children": ["rich-text#footerPaymentMethodsRow1Title"],
     "props": {
       "preventVerticalStretch": true,
       "blockClass": "footer-PaymentMethodsRow"
@@ -179,12 +203,7 @@
   "rich-text#footerPaymentMethodsRow1Title": {
     "props": {
       "text": "Pagamenti sicuri",
-      "blockClass": "footer-MenuTitle"
-    }
-  },
-  "image#security": {
-    "props": {
-      "src": "assets/icons/payments/iconlock.svg"
+      "blockClass": "footer-PaymentMethodsTitle"
     }
   },
 
@@ -303,8 +322,7 @@
   "flex-layout.row#bottomFooterDesktop": {
     "children": [
       "flex-layout.col#bottomFooter1",
-      "flex-layout.col#bottomFooter2",
-      "flex-layout.col#bottomFooter3"
+      "flex-layout.col#bottomFooter2"
     ],
     "props": {
       "blockClass": "bottomFooterDesktop",
@@ -313,23 +331,7 @@
   },
 
   "flex-layout.col#bottomFooter1": {
-    "children": ["image#footerLogo"],
-    "props": {
-      "width": "9%",
-      "preventVerticalStretch": true,
-      "verticalAlign": "middle",
-      "blockClass": "bottomFooter1"
-    }
-  },
-
-  "image#footerLogo": {
-    "props": {
-      "src": "assets/images/logo.svg"
-    }
-  },
-
-  "flex-layout.col#bottomFooter2": {
-    "children": ["rich-text#aiwaInfo1", "rich-text#aiwaInfo2"],
+    "children": ["rich-text#bricoBravoInfo1"],
     "props": {
       "width": "65%",
       "preventVerticalStretch": true,
@@ -337,85 +339,25 @@
       "blockClass": "bottomFooter2"
     }
   },
-
-  "rich-text#aiwaInfo1": {
+  "rich-text#bricoBravoInfo1": {
     "props": {
-      "text": "2022 @ All Right Reserved to Aiwa Brasil",
-      "blockClass": "aiwaInfoOne"
+      "text": "BBO Srl - Sede operativa: Via Galla Placidia 28 - 00159 ROMA (RM) Italia | Capitale sociale versato: 10.000€ | P.Iva IT10135840964 | REA 2508431 | Copyright © 2022. All Rights Reserved",
+      "blockClass": "footer-aboutUs"
     }
   },
 
-  "rich-text#aiwaInfo2": {
+  "flex-layout.col#bottomFooter2": {
+    "children": ["image#bottomFooterTechnologyImage"],
     "props": {
-      "text": "CNPJ: 07.666.567/0001-40 - Endereço: Estrada da Volta - 1200 - Conceição Do Jacuípe - BA",
-      "blockClass": "aiwaInfoTwo"
-    }
-  },
-
-  "flex-layout.col#bottomFooter3": {
-    "children": ["flex-layout.row#bottomFooter3"],
-    "props": {
-      "width": "18%",
+      "width": "9%",
       "preventVerticalStretch": true,
-      "verticalAlign": "middle"
+      "verticalAlign": "middle",
+      "blockClass": "bottomFooter1"
     }
   },
-
-  "flex-layout.row#bottomFooter3": {
-    "children": [
-      "flex-layout.col#bottomFooterTechnology",
-      "flex-layout.col#bottomFooterMadeBy"
-    ],
-    "props": {
-      "blockClass": "bottomFooter3"
-    }
-  },
-
-  "flex-layout.col#bottomFooterTechnology": {
-    "children": [
-      "rich-text#bottomFooterTechnologyText",
-      "image#bottomFooterTechnologyImage"
-    ],
-    "props": {
-      "preventVerticalStretch": true,
-      "blockClass": "bottomFooterTechnology"
-    }
-  },
-
-  "rich-text#bottomFooterTechnologyText": {
-    "props": {
-      "text": "Tecnologia",
-      "blockClass": "bottomFooterText"
-    }
-  },
-
   "image#bottomFooterTechnologyImage": {
     "props": {
       "src": "assets/icons/vtexWhiteLogo.svg"
-    }
-  },
-
-  "flex-layout.col#bottomFooterMadeBy": {
-    "children": [
-      "rich-text#bottomFooterMadeByText",
-      "image#bottomFooterMadeByImage"
-    ],
-    "props": {
-      "preventVerticalStretch": true,
-      "blockClass": "bottomFooterTechnology"
-    }
-  },
-
-  "rich-text#bottomFooterMadeByText": {
-    "props": {
-      "text": "Feito por",
-      "blockClass": "bottomFooterText"
-    }
-  },
-
-  "image#bottomFooterMadeByImage": {
-    "props": {
-      "src": "assets/icons/b8oneWhiteLogo.svg"
     }
   }
 }

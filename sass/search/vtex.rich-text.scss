@@ -1,6 +1,30 @@
 @import '../_variables.scss';
 @import '../_media-queries.scss';
 
+.paragraph--description-title-search {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #111;
+  margin: 0 0 20px;
+
+  @media screen and (max-width: 768px) {
+    max-height: 57px;
+    overflow: hidden;
+    margin: 0 0 12px;
+  }
+}
+.paragraph--readCompleteTitleDescription {
+  margin: 0 0 32px;
+  .link--readCompleteTitleDescription {
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #2B126B;
+  }
+}
+
 .container--search-instructionRangePrice {
   padding: 0 28px;
   position: relative;
@@ -33,39 +57,35 @@
 }
 
 .heading--titleSeo {
-  padding: 0 1.5rem 0 2rem;
   margin-block: 0;
-  font-size: 2.5rem;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 700;
   color: #111;
-  letter-spacing: 0.01em;
+  line-height: 19px;
 
   @media screen and (max-width: 768px) {
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 16px;
     color: #111;
-    font-weight: 300;
-    font-size: 2rem;
-    line-height: 40px;
-    letter-spacing: 0.01em;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 19px;
   }
 }
 
 .paragraph--textSeo {
-  margin-top: 0;
-  line-height: 24px;
-  font-weight: 300;
+  margin-top: 19px;
+  line-height: 19px;
+  font-weight: 400;
   letter-spacing: 0.01em;
-  color: #555;
+  color: #111;
   
   @media screen and (max-width: 768px) {
-    padding-inline: 2rem;
+    font-size: 16px;
     margin-top: 0;
-    margin-bottom: 1.5rem;
-    color: #555;
-    font-weight: 300;
-    line-height: 24px;
-    letter-spacing: 0.01em;
+    margin-bottom: 16px;
+    color: #111;
+    font-weight: 400;
+    line-height: 19px;
   }
 }
 

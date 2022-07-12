@@ -1,0 +1,33 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
+.outline {
+    background: url(https://bricobravo.vtexassets.com/arquivos/ids/155409-22-22?v=637920420622130000&width=22&height=22&aspect=true);
+    background-size: contain;
+    height: 34px;
+    width: 34px;    
+    &:hover{
+        background-image: url(https://bricobravo.vtexassets.com/arquivos/ids/155411-22-22?v=637920420622130000&width=22&height=22&aspect=true);
+        background-repeat: no-repeat; 
+        padding-right: 0;  
+    }
+}
+
+
+.wishlistIconContainer{
+    
+    :global(.vtex-button) {
+        background: none !important;
+        border: none !important;
+    
+        &:hover {
+          background: none !important;
+          border: none !important;
+        }
+        
+    }
+    :global(.vtex-button__label){
+        padding: 0;
+    }
+
+}

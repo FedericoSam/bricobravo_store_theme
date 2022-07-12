@@ -2,6 +2,17 @@
 @import '../media-queries';
 
 .flexRow {
+  &--footer-upperFooterMobile {
+    background: $background-footer;
+    margin-top: -60px;
+    z-index: 2;
+    position: relative;
+
+    @media screen and (max-width: 768px) {
+      margin-top: -20px;
+      padding: 48px 24px;
+    }
+  }
   &--footer-upperFooterDesktop {
     background: $background-footer;
     margin-top: -60px;
@@ -24,16 +35,13 @@
       @include container-main;
     }
   }
-  &--footer-footerPaymentMethods {
-    margin: 64px auto 0;
-    padding: 42px 40px 0 32px;
+  &--footer-PaymentMethods {
+    padding: 0 40px 0 32px;
     background-color: $background-footer;
   }
   &--bottomFooterDesktop {
-    background-color: #111;
-    padding: 32px 0;
-    margin-top: 40px;
-    display: none;
+    background-color: $background-bottom-footer;
+    padding: 0 20px 0 40px;
 
     @media screen and (max-width: 768px) {
       padding: 32px;
@@ -61,79 +69,95 @@
 }
 
 .flexRowContent {
+  &--footer-upperFooterCol3 {
+    @include breakpoint('mobile') {
+      margin-bottom: 2rem;
+      display: flex;
+    }
+  }
   &--footer-upperFooterDesktop {
     align-items: center;
+    padding: 0 10px 5px;
+    justify-content: space-between;
+
+    .stretchChildrenWidth {
+      width: max-content !important;
+    }
+    :global(.vtex-store-link-0-x-link) {
+      text-decoration: none;
+      color: $white;
+      font-size: 16px;
+      line-height: 20px;
+      white-space: nowrap;
+      margin-right: 30px;
+      &:active {
+        color: $blue-active;
+      }
+      &:hover {
+        color: $blue-hover;
+      }
+    }
+  }
+  &--footer-containerDisclosure {
+    border-bottom: 1px solid $white;
+    .stretchChildrenWidth {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
-  &--upperFooter {
-    @include container-main;
-  }
-
-  &--middleFooterDesktop {
-    padding: 0 32px;
-
-    @media screen and (max-width: 768px) {
-      padding: 0 24px;
-      padding: 0 10px 10px;
-      justify-content: space-between;
-
+  &--footer-PaymentMethodsRow {
+    @include breakpoint('mobile') {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      max-width: 85vw;
       .stretchChildrenWidth {
         width: max-content !important;
-      }
-      :global(.vtex-store-link-0-x-link) {
-        text-decoration: none;
-        color: $white;
-        font-size: 16px;
-        line-height: 20px;
-        white-space: nowrap;
-        margin-right: 30px;
-        &:active {
-          color: $blue-active;
-        }
-        &:hover {
-          color: $blue-hover;
-        }
+        margin: 1px;
       }
     }
+  }
 
-    &--newsletterRow {
-      margin-top: 72px;
-      justify-content: center;
+  &--newsletterRow {
+    margin-top: 72px;
+    justify-content: center;
 
-      @media screen and (max-width: 768px) {
-        padding: 0 16px;
-        margin-top: 64px;
-      }
+    @media screen and (max-width: 768px) {
+      padding: 0 16px;
+      margin-top: 64px;
     }
+  }
 
-    &--newsletterForm {
-      max-width: 564px;
-      margin: 32px auto 0;
-      justify-content: space-between;
+  &--newsletterForm {
+    max-width: 564px;
+    justify-content: space-between;
+  }
+
+  &--footer-PaymentMethods {
+    @include container-main;
+    @include breakpoint('desktop') {
+      border-top: 1px solid white;
     }
+  }
 
-    &--footer-footerPaymentMethods {
-      @include container-main;
-    }
+  &--bottomFooterDesktop {
+    @include container-main;
 
-    &--bottomFooterDesktop {
-      @include container-main;
+    justify-content: space-between;
+  }
 
-      justify-content: space-between;
-    }
-
-    &--bottomFooter3 {
-      display: flex;
-      @media screen and (max-width: 768px) {
-        max-width: 75%;
-        margin: 30px auto 0;
-      }
+  &--bottomFooter3 {
+    display: flex;
+    @media screen and (max-width: 768px) {
+      max-width: 75%;
+      margin: 30px auto 0;
     }
   }
 }
 
 .flexCol {
-  &--footer-footerPaymentMethods {
+  &--footer-PaymentMethods {
     flex-direction: row;
     align-items: center;
 
@@ -148,7 +172,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    @media screen and (max-width: 768px) {
+    @include breakpoint('mobile') {
       margin-bottom: 12px;
       justify-content: center;
     }
@@ -164,18 +188,12 @@
     }
   }
 
-  &--footer-upperFooterCol3 {
-    @media screen and (max-width: 768px) {
-      margin-bottom: 0;
-    }
-  }
-
   &--bottomFooterTechnology {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
 
-    @media screen and (max-width: 768px) {
+    @include breakpoint('mobile') {
       margin-bottom: 12px;
       justify-content: center;
     }
@@ -200,7 +218,7 @@
       justify-content: flex-end;
     }
 
-    &--footer-footerPaymentMethods {
+    &--footer-PaymentMethods {
       @media screen and (max-width: 768px) {
         margin-bottom: 12px;
       }

@@ -75,7 +75,7 @@
   },
 
   "flex-layout.row#productInfo__name": {
-    "children": ["vtex.product-list:product-name#minicart", "remove-button"],
+    "children": ["vtex.product-list:product-name#minicart", "price#mobile"],
     "props": {
       "blockClass": "productInfoNameMinicart",
       "preventHorizontalStretch": true
@@ -87,7 +87,7 @@
     }
   },
   "flex-layout.row#bottomInfo": {
-    "children": ["quantity-selector#minicart", "price#mobile"],
+    "children": ["quantity-selector#minicart", "remove-button#desktop"],
     "props": {
       "verticalAlign": "middle",
       "blockClass": "bottomInfo",
@@ -98,6 +98,9 @@
     "props": {
       "blockClass": "minicart"
     }
+  },
+  "remove-button#desktop": {
+    "props": { "blockClass": "remove-button-cart" }
   },
   "price#mobile": {
     "props": {
@@ -159,7 +162,7 @@
   "rich-text#minicart-default-empty-state": {
     "props": {
       "blockClass": "minicartEmptyTitle",
-      "text": "**Para que você ainda não tem produtos por aqui** \n\n Volte, explore nossa loja e encontre um produto Aiwa do seu jeito"
+      "text": "**Para que você ainda não tem produtos por aqui** \n\n Volte, explore nossa loja e encontre um produto Bricobravo do seu jeito"
     }
   }
 }
