@@ -1,7 +1,6 @@
 {
   "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#upperFooterDesktop",
       "flex-layout.row#footerPaymentMethods",
       "flex-layout.row#bottomFooterDesktop"
     ]

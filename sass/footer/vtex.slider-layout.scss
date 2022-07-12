@@ -1,3 +1,6 @@
+@import '../_media-queries.scss';
+@import '../_variables.scss';
+
 .sliderLayoutContainer {
   &--home-main-slider-images {
     border-radius: 0;
@@ -63,6 +66,34 @@
 
       @media screen and (max-width: 64rem) {
         max-width: 2.5rem;
+      }
+    }
+  }
+
+  .slide {
+    &--upperFooterBrandsMobile {
+      @include breakpoint('mobile') {
+        margin: 0 0.625rem !important;
+      }
+    }
+
+    &--upperFooterCategoriesMobile {
+      @include breakpoint('mobile') {
+        margin: 0 2rem !important;
+      }
+    }
+  }
+
+  .sliderTrack {
+    &--upperFooterBrandsMobile {
+      @include breakpoint('mobile') {
+        transform: translate3d(-18.75%, 0, 0) !important;
+      }
+    }
+
+    &--upperFooterCategoriesMobile {
+      @include breakpoint('mobile') {
+        transform: translate3d(-8.6%, 0, 0) !important;
       }
     }
   }

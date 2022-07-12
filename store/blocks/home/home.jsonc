@@ -9,7 +9,7 @@
       "flex-layout.row#home-blog",
       // "flex-layout.row#home-reviews",
       "flex-layout.row#home-services",
-      "flex-layout.row#upperFooterDesktop"
+      "flex-layout.row#upperFooter"
     ]
   },
 
@@ -75,7 +75,10 @@
     "children": [
       "responsive-layout.desktop#home-categories-showcase",
       "responsive-layout.mobile#home-categories-showcase"
-    ]
+    ],
+    "props": {
+      "blockClass": "home-categories"
+    }
   },
 
   "responsive-layout.desktop#home-categories-showcase": {
@@ -851,6 +854,36 @@
       "blockClass": "home-services-cta",
       "href": "#",
       "label": "Scopri di più"
+    }
+  },
+
+  "flex-layout.row#upperFooter": {
+    "children": ["flex-layout.col#upperFooter"],
+    "props": {
+      "blockClass": "upperFooter"
+    }
+  },
+
+  "flex-layout.col#upperFooter": {
+    "children": [
+      "responsive-layout.desktop#upperFooterDesktop",
+      "responsive-layout.mobile#upperFooterMobile"
+    ],
+    "props": {
+      "blockClass": "upperFooter"
+    }
+  },
+
+  "responsive-layout.desktop#upperFooterDesktop": {
+    "children": ["flex-layout.row#upperFooterDesktop"],
+    "props": {
+      "blockClass": "upperFooterDesktop"
+    }
+  },
+  "responsive-layout.mobile#upperFooterMobile": {
+    "children": ["flex-layout.row#upperFooterMobile"],
+    "props": {
+      "blockClass": "upperFooterMobile"
     }
   }
 }

@@ -14,6 +14,10 @@
     }
   }
 
+  &--upperFooter {
+    background: #f6f6f6;
+  }
+
   &--upperFooterDesktop,
   &--footer-upperFooterDesktop {
     :global(.vtex-store-components-3-x-container) {
@@ -43,21 +47,26 @@
   &--upperFooterDesktop {
     padding-bottom: 2.5rem;
     background-color: #f6f6f6;
-
-    @media screen and (max-width: 768px) {
-      margin-top: -20px;
-      padding: 48px 24px;
-    }
   }
 
   &--upperFooterBrands {
     margin-bottom: 1rem;
+  }
+
+  &--upperFooterMobile {
+    @include breakpoint('mobile') {
+      margin: 1.25rem 0 0 1.25rem;
+    }
   }
 }
 
 .flexRowContent {
   &--footer-upperFooterDesktop {
     align-items: center;
+  }
+
+  &--upperFooter {
+    @include container-main;
   }
 
   &--middleFooterDesktop {
@@ -194,6 +203,12 @@
     &--footer-footerPaymentMethods {
       @media screen and (max-width: 768px) {
         margin-bottom: 12px;
+      }
+    }
+
+    &--upperFooterColMobile {
+      @include breakpoint('mobile') {
+        margin-bottom: 2.5rem;
       }
     }
   }
