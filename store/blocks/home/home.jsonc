@@ -635,7 +635,6 @@
       "showNavigationArrows": "desktopOnly",
       "showPaginationDots": "never",
       "autoplay": false,
-      // "infinity": false,
       "navigationStep": 1,
       "fullWidth": true,
       "centerMode": "to-the-left",

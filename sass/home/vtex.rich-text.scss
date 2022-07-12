@@ -35,11 +35,12 @@
       font-weight: 500;
       line-height: 1rem;
 
-      @media screen and (max-width: 768px) {
-        margin: 64px auto 32px;
-        font-size: 32px;
-        line-height: 40px;
-        max-width: 328px;
+      @include breakpoint('mobile') {
+        height: 1.5rem;
+        color: #332c32;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.5rem;
       }
     }
   }
@@ -77,6 +78,11 @@
       line-height: 18px;
       text-align: center;
       margin: 1rem 0 0.75rem;
+
+      @include breakpoint('mobile') {
+        text-align: center;
+        margin: 0 0 0.5rem 0;
+      }
     }
 
     &--home-blog-subtitle {
@@ -120,6 +126,18 @@
   .wrapper {
     &--home-section-title {
       margin: 0 auto;
+
+      @include breakpoint('mobile') {
+        margin: 0 0 0 1rem;
+      }
+    }
+  }
+
+  .headingLevel2 {
+    &--home-section-title {
+      @include breakpoint('mobile') {
+        margin: 0 0 1rem;
+      }
     }
   }
 }

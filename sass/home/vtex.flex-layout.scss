@@ -60,6 +60,18 @@
     border-radius: 0.5rem;
   }
 
+  &--home-blog {
+    background-color: #f6f6f6;
+  }
+
+  &--home-services {
+    margin-bottom: 1.75rem;
+
+    @include breakpoint('mobile') {
+      margin-bottom: 2.5rem;
+    }
+  }
+
   .flexRowContent {
     &--home-categories-showcase,
     &--mobile-home-categories-showcase,
@@ -90,14 +102,6 @@
     &--home-blog {
       margin-bottom: 2rem;
     }
-  }
-
-  &--home-blog {
-    background-color: #f6f6f6;
-  }
-
-  &--home-services {
-    margin-bottom: 1.75rem;
   }
 }
 
@@ -143,6 +147,10 @@
     width: 100%;
     border: 1px solid #ececec;
     border-radius: 2px;
+
+    @include breakpoint('mobile') {
+      padding: 1rem;
+    }
   }
 
   &--home-blog,
