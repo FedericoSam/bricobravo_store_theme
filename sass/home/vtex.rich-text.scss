@@ -2,6 +2,13 @@
   &--home-section-title,  &--home-section04-title {
     justify-content: center;
   }
+  &--home-section-title{
+    display: flex;
+    justify-content: flex-start;
+    @media screen and (max-width: 768px) {
+      justify-content: center;
+    }
+  }
   .heading {
     &--first-section-title {
       margin: 64px 0 96px;

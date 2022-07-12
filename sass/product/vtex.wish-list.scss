@@ -14,3 +14,20 @@
 }
 
 
+.wishlistIconContainer{
+    
+    :global(.vtex-button) {
+        background: none !important;
+        border: none !important;
+    
+        &:hover {
+          background: none !important;
+          border: none !important;
+        }
+        
+    }
+    :global(.vtex-button__label){
+        padding: 0;
+    }
+
+}
