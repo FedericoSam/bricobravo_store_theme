@@ -8,7 +8,6 @@
   "responsive-layout.desktop#product": {
     "children": [
       "flex-layout.row#breadcrumb",
-      "flex-layout.row#notificationProduct",
       "flex-layout.row#productMain",
       "flex-layout.row#productSpecificationBenefits",
       "flex-layout.row#iframeDescription",
