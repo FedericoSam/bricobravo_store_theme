@@ -148,6 +148,9 @@
     .stretchChildrenWidth {
       width: max-content !important;
     }
+    @include breakpoint("mobile") {
+      justify-content: center;
+    }
   }
 
   &--newsletter-containerShareLinks {
