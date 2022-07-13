@@ -20,7 +20,7 @@ type BuyButtonProps = {
 }
 
 const BuyButton: StorefrontFunctionComponent<BuyButtonProps> = ({
-  text = "Comprar agora!",
+  text = "Aggiungi al carrelo",
   onClickEventPropagation = "disabled"
 }) => {
 

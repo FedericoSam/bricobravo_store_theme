@@ -23,6 +23,10 @@
     }
   }
 
+  &--upperFooter {
+    background: #f6f6f6;
+  }
+
   &--upperFooterDesktop,
   &--footer-upperFooterDesktop {
     :global(.vtex-store-components-3-x-container) {
@@ -30,7 +34,7 @@
     }
   }
   &--footer-PaymentMethods {
-    padding: 0 40px 0 32px;
+    padding: 0 30px 0 20px;
     background-color: $background-footer;
   }
   &--bottomFooterDesktop {
@@ -53,21 +57,22 @@
   &--upperFooterDesktop {
     padding-bottom: 2.5rem;
     background-color: #f6f6f6;
-
-    @media screen and (max-width: 768px) {
-      margin-top: -20px;
-      padding: 48px 24px;
-    }
   }
 
   &--upperFooterBrands {
     margin-bottom: 1rem;
   }
+
+  &--upperFooterMobile {
+    @include breakpoint('mobile') {
+      margin: 1.25rem 0 0 1.25rem;
+    }
+  }
 }
 
 .flexRowContent {
   &--footer-upperFooterCol3 {
-    @include breakpoint("mobile") {
+    @include breakpoint('mobile') {
       margin-bottom: 2rem;
       display: flex;
     }
@@ -76,20 +81,19 @@
     align-items: center;
     padding: 0 10px 5px;
     justify-content: space-between;
-    
+
     .stretchChildrenWidth {
       width: max-content !important;
     }
     :global(.vtex-store-link-0-x-link) {
       text-decoration: none;
-      font-family: Roboto;
       color: $white;
       font-size: 16px;
       line-height: 20px;
       white-space: nowrap;
       margin-right: 30px;
       &:active {
-        color: $blue-active
+        color: $blue-active;
       }
       &:hover {
         color: $blue-hover;
@@ -105,7 +109,7 @@
   }
 
   &--footer-PaymentMethodsRow {
-    @include breakpoint("mobile") {
+    @include breakpoint('mobile') {
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
@@ -119,25 +123,44 @@
 
   &--newsletterRow {
     @include container-main;
-    padding: 30px 10px;
-    justify-content: center;
+    padding: 30px 23px;
+    justify-content: space-between;
+    align-items: center;
 
-      @media screen and (max-width: 768px) {
-        padding: 0 16px;
-        margin-top: 0;
-        padding: 20px 10px;
-      }
+    .stretchChildrenWidth {
+      width: max-content !important;
     }
+
+    @media screen and (max-width: 768px) {
+      padding: 0 16px;
+      margin-top: 0;
+      padding: 20px 10px;
+    }
+  }
 
   &--newsletterForm {
     max-width: 564px;
-    justify-content: space-between;
+    display: flex;
+    justify-content: flex-start;
+    .stretchChildrenWidth {
+      width: max-content !important;
+    }
+  }
+
+  &--newsletter-containerShareLinks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .stretchChildrenWidth {
+      width: max-content !important;
+      margin: 0 17px;
+    }
   }
 
   &--footer-PaymentMethods {
     @include container-main;
-    @include breakpoint("desktop"){
-      border-top: 1px solid white
+    @include breakpoint('desktop') {
+      border-top: 1px solid white;
     }
   }
 
@@ -172,7 +195,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    @include breakpoint("mobile") {
+    @include breakpoint('mobile') {
       margin-bottom: 12px;
       justify-content: center;
     }
@@ -181,6 +204,7 @@
   &--footer-upperFooterCol1,
   &--footer-upperFooterCol2 {
     padding: 32px;
+    padding-left: 20px;
 
     @media screen and (max-width: 768px) {
       padding: 0;
@@ -193,7 +217,7 @@
     align-items: center;
     justify-content: flex-end;
 
-    @include breakpoint("mobile") {
+    @include breakpoint('mobile') {
       margin-bottom: 12px;
       justify-content: center;
     }
@@ -221,6 +245,12 @@
     &--footer-PaymentMethods {
       @media screen and (max-width: 768px) {
         margin-bottom: 12px;
+      }
+    }
+
+    &--upperFooterColMobile {
+      @include breakpoint('mobile') {
+        margin-bottom: 2.5rem;
       }
     }
   }

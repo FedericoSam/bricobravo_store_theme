@@ -1,5 +1,5 @@
-@import '../variables';
-@import '../media-queries';
+@import '../_media-queries.scss';
+@import '../_variables.scss';
 
 .paragraph {
   &--footer-paymentMethodText {
@@ -9,7 +9,7 @@
     line-height: 24px;
     color: #111;
 
-    @media screen and (max-width: 768px) {
+    @include breakpoint('mobile') {
       margin: 0 auto;
       font-size: 14px;
       line-height: 24px;
@@ -23,7 +23,7 @@
   }
 
   &--footer-PaymentMethodsDescription {
-    @include breakpoint("mobile"){
+    @include breakpoint('mobile') {
       border-top: 1px solid $white;
     }
   }
@@ -34,7 +34,7 @@
     display: flex;
     align-items: center;
     &::after {
-      content: "";
+      content: '';
       width: 33px;
       height: 33px;
       display: inline-block;
@@ -54,7 +54,7 @@
     font-weight: 500;
     color: $white;
 
-    @media screen and (max-width: 768px) {
+    @include breakpoint('mobile') {
       margin: 0;
       font-size: 16px;
       line-height: 24px;
@@ -69,13 +69,13 @@
     line-height: 24px;
     letter-spacing: 0.01em;
 
-    @media screen and (max-width: 768px) {
+    @include breakpoint('mobile') {
       margin-bottom: 16px;
     }
   }
 
   &--middleFooterCol4Title {
-    @media screen and (max-width: 768px) {
+    @include breakpoint('mobile') {
       display: none;
     }
   }
@@ -88,7 +88,7 @@
     line-height: 18px;
     max-width: 215.16px;
 
-    @media screen and (max-width: 768px) {
+    @include breakpoint('mobile') {
       display: none;
     }
   }
@@ -117,7 +117,7 @@
     color: #999;
     font-weight: 400;
 
-    @media screen and (max-width: 768px) {
+    @include breakpoint('mobile') {
       text-align: center;
     }
   }
@@ -138,6 +138,13 @@
     font-weight: 500;
     line-height: 33px;
     margin: 1.25rem 0;
+
+    @include breakpoint('mobile') {
+      height: 1.5rem;
+      font-size: 20px;
+      line-height: 1.5rem;
+      margin: 0 0 1.5rem;
+    }
   }
 
   &--upperFooterCategoriesTitle {
@@ -156,7 +163,7 @@
     font-size: 40px;
     font-weight: 300;
 
-    @media screen and (max-width: 768px) {
+    @include breakpoint('mobile') {
       margin: 0;
       font-size: 32px;
       line-height: 40px;
@@ -171,7 +178,7 @@
     line-height: 28px;
     text-align: center;
 
-    @media screen and (max-width: 768px) {
+    @include breakpoint('mobile') {
       font-size: 32px;
       line-height: 28px;
     }

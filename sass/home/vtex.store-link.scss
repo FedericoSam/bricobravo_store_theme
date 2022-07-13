@@ -2,6 +2,7 @@
 @import '../_variables.scss';
 
 .link {
+  
   &--home-button-default {
     font-size: 14px;
     line-height: 16px;
@@ -130,6 +131,17 @@
 
     &:hover {
       color: #291660;
+    }
+  }
+  &--home-shelf{
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: #1B0E41;
+    font-weight: 500;
+    padding-right: 2px;
+    @media screen and (max-width: 768px) {
+      display: none;
     }
   }
 }

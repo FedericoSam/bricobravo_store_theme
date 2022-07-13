@@ -46,14 +46,15 @@
   "slider-layout#alsoView": {
     "props": {
       "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 3,
-        "phone": 1
+        "desktop": 6,
+        "tablet": 4,
+        "phone": 1.5
       },
       "infinite": false,
       "fullWidth": true,
       "blockClass": "shelfAlsoView",
-      "showNavigationArrows": "desktopOnly"
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never"
     }
   },
   "flex-layout.row#alsoBougth": {
@@ -103,7 +104,7 @@
       "infinite": false,
       "fullWidth": true,
       "blockClass": "alsoBougth",
-      "showNavigationArrows": "desktopOnly"
+      "showPaginationDots": "never"
     }
   },
   "flex-layout.row#alsoViewMobile": {

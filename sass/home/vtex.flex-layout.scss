@@ -10,10 +10,6 @@
       width: 100%;
       max-width: 82rem;
     }
-
-    // @media screen and (max-width: 64rem) {
-    //   height: 454px;
-    // }
   }
 
   &--home-categories {
@@ -23,7 +19,7 @@
     margin-bottom: 6.5rem;
 
     @include breakpoint('mobile') {
-      margin-bottom: 2.5rem;
+      margin-bottom: 5.5rem;
     }
 
     :global(.vtex-store-components-3-x-container) {
@@ -60,6 +56,18 @@
     border-radius: 0.5rem;
   }
 
+  &--home-blog {
+    background-color: #f6f6f6;
+  }
+
+  &--home-services {
+    margin-bottom: 1.75rem;
+
+    @include breakpoint('mobile') {
+      margin-bottom: 2.5rem;
+    }
+  }
+
   .flexRowContent {
     &--home-categories-showcase,
     &--mobile-home-categories-showcase,
@@ -90,14 +98,11 @@
     &--home-blog {
       margin-bottom: 2rem;
     }
-  }
-
-  &--home-blog {
-    background-color: #f6f6f6;
-  }
-
-  &--home-services {
-    margin-bottom: 1.75rem;
+    &--home-section06-title {
+      display: flex;
+      align-items: center;
+      padding-top: 28px;
+    }
   }
 }
 
@@ -143,12 +148,22 @@
     width: 100%;
     border: 1px solid #ececec;
     border-radius: 2px;
+
+    @include breakpoint('mobile') {
+      padding: 1rem;
+    }
   }
 
   &--home-blog,
   &--home-blog-shelf {
     margin: 2rem 0;
     height: auto;
+  }
+
+  &--home-blog {
+    @include breakpoint('mobile') {
+      align-items: center;
+    }
   }
 
   .flexColChild {

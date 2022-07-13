@@ -1,3 +1,6 @@
+@import '../_media-queries.scss';
+@import '../_variables.scss';
+
 .sliderLayoutContainer {
   .sliderArrows {
     &.sliderLeftArrow {
@@ -43,5 +46,20 @@
 .slide {
   &--mobile-home-categories-showcase {
     margin: 0;
+  }
+
+  &--home-services {
+    @include breakpoint('mobile') {
+      margin: 0 0.625rem !important;
+      width: 240px !important;
+    }
+  }
+}
+
+.sliderTrack {
+  &--home-services {
+    @include breakpoint('mobile') {
+      transform: translate3d(-8.8125%, 0, 0) !important;
+    }
   }
 }

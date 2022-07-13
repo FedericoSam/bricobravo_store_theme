@@ -1,0 +1,117 @@
+{
+  "flex-layout.row#upperFooterMobile": {
+    "children": ["flex-layout.col#upperFooterColMobile"],
+    "props": {
+      "blockClass": "upperFooterMobile"
+    }
+  },
+
+  "flex-layout.col#upperFooterColMobile": {
+    "children": [
+      "flex-layout.row#upperFooterBrandsMobile",
+      "flex-layout.row#upperFooterCategoriesMobile"
+    ],
+    "props": {
+      "blockClass": "upperFooterColMobile",
+      "width": "100%"
+    }
+  },
+
+  "flex-layout.row#upperFooterBrandsMobile": {
+    "children": ["flex-layout.col#upperFooterBrandsMobile"],
+    "props": {
+      "blockClass": "upperFooterBrandsMobile"
+    }
+  },
+  "flex-layout.col#upperFooterBrandsMobile": {
+    "children": [
+      "rich-text#upperFooterBrandsTitleMobile",
+      "slider-layout#upperFooterBrandsMobile"
+    ],
+    "props": {
+      "blockClass": "upperFooterBrandsMobile"
+    }
+  },
+  "rich-text#upperFooterBrandsTitleMobile": {
+    "props": {
+      "text": "I migliori marchi, a portata di click",
+      "blockClass": "upperFooterBrandsMainTitle"
+    }
+  },
+  "slider-layout#upperFooterBrandsMobile": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 8,
+        "tablet": 3,
+        "phone": 3
+      },
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "autoplay": false,
+      "infinity": false,
+      "navigationStep": 1,
+      "fullWidth": true,
+      "centerMode": "to-the-left",
+      "blockClass": "upperFooterBrandsMobile"
+    },
+    "children": [
+      "image#upperFooterBrands01",
+      "image#upperFooterBrands02",
+      "image#upperFooterBrands03",
+      "image#upperFooterBrands04",
+      "image#upperFooterBrands05",
+      "image#upperFooterBrands06",
+      "image#upperFooterBrands07",
+      "image#upperFooterBrands08",
+      "image#upperFooterBrands09"
+    ]
+  },
+
+  "flex-layout.row#upperFooterCategoriesMobile": {
+    "children": ["flex-layout.col#upperFooterCategoriesMobile"],
+    "props": {
+      "blockClass": "upperFooterCategoriesMobile"
+    }
+  },
+  "flex-layout.col#upperFooterCategoriesMobile": {
+    "children": [
+      "rich-text#upperFooterCategoriesTitleMobile",
+      "slider-layout#upperFooterCategoriesMobile"
+    ],
+    "props": {
+      "blockClass": "upperFooterCategoriesMobile"
+    }
+  },
+  "rich-text#upperFooterCategoriesTitleMobile": {
+    "props": {
+      "text": "Esplora le nostre categorie",
+      "blockClass": "upperFooterCategoriesMainTitle"
+    }
+  },
+  "slider-layout#upperFooterCategoriesMobile": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 2,
+        "phone": 1
+      },
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "autoplay": false,
+      "infinity": false,
+      "navigationStep": 1,
+      "fullWidth": true,
+      "centerMode": "to-the-left",
+      "blockClass": "upperFooterCategoriesMobile"
+    },
+    "children": [
+      "flex-layout.col#upperFooterCategoriesPool",
+      "flex-layout.col#upperFooterCategoriesGardenFurniture",
+      "flex-layout.col#upperFooterCategoriesAC",
+      "flex-layout.col#upperFooterCategoriesBeach",
+      "flex-layout.col#upperFooterCategoriesDIY",
+      "flex-layout.col#upperFooterCategoriesFitness",
+      "flex-layout.col#upperFooterCategoriesFitness2"
+    ]
+  }
+}
