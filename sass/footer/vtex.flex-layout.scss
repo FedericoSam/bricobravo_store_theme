@@ -4,23 +4,19 @@
 .flexRow {
   &--footer-upperFooterMobile {
     background: $background-footer;
-    margin-top: -60px;
     z-index: 2;
     position: relative;
 
     @media screen and (max-width: 768px) {
-      margin-top: -20px;
       padding: 48px 24px;
     }
   }
   &--footer-upperFooterDesktop {
     background: $background-footer;
-    margin-top: -60px;
     z-index: 2;
     position: relative;
 
     @media screen and (max-width: 768px) {
-      margin-top: -20px;
       padding: 48px 24px;
     }
   }
@@ -116,12 +112,14 @@
   }
 
   &--newsletterRow {
-    margin-top: 72px;
+    margin: 0;
+    padding: 30px 10px;
     justify-content: center;
 
       @media screen and (max-width: 768px) {
         padding: 0 16px;
-        margin-top: 64px;
+        margin-top: 0;
+        padding: 20px 10px;
       }
     }
 
