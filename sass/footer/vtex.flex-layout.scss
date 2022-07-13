@@ -6,6 +6,7 @@
     background: $background-footer;
     z-index: 2;
     position: relative;
+    margin: 0;
 
     @media screen and (max-width: 768px) {
       padding: 48px 24px;
@@ -15,6 +16,7 @@
     background: $background-footer;
     z-index: 2;
     position: relative;
+    margin: 0;
 
     @media screen and (max-width: 768px) {
       padding: 48px 24px;
@@ -38,6 +40,10 @@
     @media screen and (max-width: 768px) {
       padding: 32px;
     }
+  }
+
+  &--newsletterRow {
+    background-color: $blue-active;
   }
 
   &--quemSomos-main {
@@ -112,7 +118,7 @@
   }
 
   &--newsletterRow {
-    margin: 0;
+    @include container-main;
     padding: 30px 10px;
     justify-content: center;
 

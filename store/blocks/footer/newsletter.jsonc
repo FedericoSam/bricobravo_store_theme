@@ -22,7 +22,7 @@
   },
   "rich-text#newsTitle": {
     "props": {
-      "text": "## Desideri conoscere le ultime novità e offerte?",
+      "text": "Desideri conoscere le ultime novità e offerte?",
       "textPosition": "LEFT",
       "textAlignment": "LEFT",
       "blockClass": "newsTitle"

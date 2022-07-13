@@ -16,18 +16,26 @@
 
   .formSubmitContainer {
     :global(.vtex-button) {
-      background: #fff;
-      border: 2px solid #e30613;
-      padding: 9px 28px;
-      color: #e30613;
-      font-size: 18px;
-      line-height: 24px;
-      border-radius: 8px;
-      text-transform: capitalize;
-      transition: background-color 0.5s ease,color 0.5s ease;
+      background-color: transparent;
+      border: none;
+      padding: 2px;
       &:hover {
-        color: #fff;
-        background-color: $secondary-default;
+        background-color: transparent;
+      }
+      :global(.vtex-button__label) {
+        position: relative;
+        right: 100px;
+        &::before {
+          content: "";
+          width: 30px;
+          height: 30px;
+          background-repeat: no-repeat;
+          background-size: 30px;
+          background-image: url("data:image/svg+xml,%3Csvg width='22' height='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='%232B126B' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cpath d='M1 8.17307646h16'/%3E%3Cpath stroke-linejoin='round' d='m10 15.3846149 8-7.17259295L10 .961538'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        &:hover {
+          background-color: $blue-hover;
+        }
       }
       @media screen and (max-width: 768px) {
         padding: 0;
