@@ -9,8 +9,7 @@
       "flex-layout.row#home-blog",
       // "flex-layout.row#home-reviews",
       "flex-layout.row#home-services",
-      "flex-layout.row#upperFooterDesktop",
-      "flex-layout.row#newsletter"
+      "flex-layout.row#upperFooterDesktop"
     ]
   },
 

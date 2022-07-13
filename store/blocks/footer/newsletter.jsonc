@@ -5,17 +5,13 @@
       "flex-layout.col#newsTitle",
       "flex-layout.col#submit",
       "flex-layout.row#share"
-      
     ],
     "props": {
       "blockClass": "newsletterRow"
     }
   },
   "flex-layout.col#newsTitle": {
-    "children": [
-      "rich-text#newsTitle",
-      "rich-text#newsSubTitle"
-    ],
+    "children": ["rich-text#newsTitle", "rich-text#newsSubTitle"],
     "props": {
       "blockClass": "newsletterCol"
     }
@@ -52,7 +48,6 @@
       "flex-layout.col#newsletter-submit"
     ],
     "props": {
-      "preventHorizontalStretch": false,
       "blockClass": "newsletterForm"
     }
   },
@@ -88,7 +83,10 @@
       "link#instagram",
       "link#youtube",
       "link#linkedin"
-    ]
+    ],
+    "props": {
+      "blockClass": "newsletter-containerShareLinks"
+    }
   },
   "link#facebook": {
     "props": {

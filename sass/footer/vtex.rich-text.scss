@@ -155,20 +155,6 @@
     line-height: 24px;
     margin: 0 0 0.75rem;
   }
-}
-
-.heading {
-  &--upperFooterTitle {
-    color: #111;
-    font-size: 40px;
-    font-weight: 300;
-
-    @include breakpoint('mobile') {
-      margin: 0;
-      font-size: 32px;
-      line-height: 40px;
-    }
-  }
 
   &--newsTitle {
     font-size: 24px;
@@ -181,6 +167,20 @@
     @include breakpoint('mobile') {
       font-size: 32px;
       line-height: 28px;
+    }
+  }
+}
+
+.heading {
+  &--upperFooterTitle {
+    color: #111;
+    font-size: 40px;
+    font-weight: 300;
+
+    @include breakpoint('mobile') {
+      margin: 0;
+      font-size: 32px;
+      line-height: 40px;
     }
   }
 }
