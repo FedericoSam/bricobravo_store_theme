@@ -1,44 +1,44 @@
 {
-  "flex-layout.row#upperFooterDesktop": {
-    "children": ["flex-layout.col#upperFooterCol"],
+  "flex-layout.row#homeBottomSectionDesktop": {
+    "children": ["flex-layout.col#homeBottomSectionCol"],
     "props": {
-      "blockClass": "upperFooterDesktop"
+      "blockClass": "homeBottomSectionDesktop"
     }
   },
 
-  "flex-layout.col#upperFooterCol": {
+  "flex-layout.col#homeBottomSectionCol": {
     "children": [
-      "flex-layout.row#upperFooterBrands",
-      "flex-layout.row#upperFooterCategories"
+      "flex-layout.row#homeBottomSectionBrands",
+      "flex-layout.row#homeBottomSectionCategories"
     ],
     "props": {
-      "blockClass": "upperFooterCol",
+      "blockClass": "homeBottomSectionCol",
       "width": "100%"
     }
   },
 
-  "flex-layout.row#upperFooterBrands": {
-    "children": ["flex-layout.col#upperFooterBrands"],
+  "flex-layout.row#homeBottomSectionBrands": {
+    "children": ["flex-layout.col#homeBottomSectionBrands"],
     "props": {
-      "blockClass": "upperFooterBrands"
+      "blockClass": "homeBottomSectionBrands"
     }
   },
-  "flex-layout.col#upperFooterBrands": {
+  "flex-layout.col#homeBottomSectionBrands": {
     "children": [
-      "rich-text#upperFooterBrandsTitle",
-      "slider-layout#upperFooterBrands"
+      "rich-text#homeBottomSectionBrandsTitle",
+      "slider-layout#homeBottomSectionBrands"
     ],
     "props": {
-      "blockClass": "upperFooterBrands"
+      "blockClass": "homeBottomSectionBrands"
     }
   },
-  "rich-text#upperFooterBrandsTitle": {
+  "rich-text#homeBottomSectionBrandsTitle": {
     "props": {
       "text": "I migliori marchi, a portata di click",
-      "blockClass": "upperFooterBrandsMainTitle"
+      "blockClass": "homeBottomSectionBrandsMainTitle"
     }
   },
-  "slider-layout#upperFooterBrands": {
+  "slider-layout#homeBottomSectionBrands": {
     "props": {
       "itemsPerPage": {
         "desktop": 8,
@@ -51,97 +51,97 @@
       "infinity": false,
       "navigationStep": 1,
       "fullWidth": true,
-      "blockClass": "upperFooterBrands"
+      "blockClass": "homeBottomSectionBrands"
     },
     "children": [
-      "image#upperFooterBrands01",
-      "image#upperFooterBrands02",
-      "image#upperFooterBrands03",
-      "image#upperFooterBrands04",
-      "image#upperFooterBrands05",
-      "image#upperFooterBrands06",
-      "image#upperFooterBrands07",
-      "image#upperFooterBrands08",
-      "image#upperFooterBrands09"
+      "image#homeBottomSectionBrands01",
+      "image#homeBottomSectionBrands02",
+      "image#homeBottomSectionBrands03",
+      "image#homeBottomSectionBrands04",
+      "image#homeBottomSectionBrands05",
+      "image#homeBottomSectionBrands06",
+      "image#homeBottomSectionBrands07",
+      "image#homeBottomSectionBrands08",
+      "image#homeBottomSectionBrands09"
     ]
   },
-  "image#upperFooterBrands01": {
+  "image#homeBottomSectionBrands01": {
     "props": {
       "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand01",
-      "blockClass": "upperFooterBrands"
+      "blockClass": "homeBottomSectionBrands"
     }
   },
-  "image#upperFooterBrands02": {
+  "image#homeBottomSectionBrands02": {
     "props": {
       "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand02",
-      "blockClass": "upperFooterBrands"
+      "blockClass": "homeBottomSectionBrands"
     }
   },
-  "image#upperFooterBrands03": {
+  "image#homeBottomSectionBrands03": {
     "props": {
       "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand03",
-      "blockClass": "upperFooterBrands"
+      "blockClass": "homeBottomSectionBrands"
     }
   },
-  "image#upperFooterBrands04": {
+  "image#homeBottomSectionBrands04": {
     "props": {
       "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand04",
-      "blockClass": "upperFooterBrands"
+      "blockClass": "homeBottomSectionBrands"
     }
   },
-  "image#upperFooterBrands05": {
+  "image#homeBottomSectionBrands05": {
     "props": {
       "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand05",
-      "blockClass": "upperFooterBrands"
+      "blockClass": "homeBottomSectionBrands"
     }
   },
-  "image#upperFooterBrands06": {
+  "image#homeBottomSectionBrands06": {
     "props": {
       "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand06",
-      "blockClass": "upperFooterBrands"
+      "blockClass": "homeBottomSectionBrands"
     }
   },
-  "image#upperFooterBrands07": {
+  "image#homeBottomSectionBrands07": {
     "props": {
       "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand07",
-      "blockClass": "upperFooterBrands"
+      "blockClass": "homeBottomSectionBrands"
     }
   },
-  "image#upperFooterBrands08": {
+  "image#homeBottomSectionBrands08": {
     "props": {
       "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand08",
-      "blockClass": "upperFooterBrands"
+      "blockClass": "homeBottomSectionBrands"
     }
   },
-  "image#upperFooterBrands09": {
+  "image#homeBottomSectionBrands09": {
     "props": {
       "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand09",
-      "blockClass": "upperFooterBrands"
+      "blockClass": "homeBottomSectionBrands"
     }
   },
 
-  "flex-layout.row#upperFooterCategories": {
-    "children": ["flex-layout.col#upperFooterCategories"],
+  "flex-layout.row#homeBottomSectionCategories": {
+    "children": ["flex-layout.col#homeBottomSectionCategories"],
     "props": {
-      "blockClass": "upperFooterCategories"
+      "blockClass": "homeBottomSectionCategories"
     }
   },
-  "flex-layout.col#upperFooterCategories": {
+  "flex-layout.col#homeBottomSectionCategories": {
     "children": [
-      "rich-text#upperFooterCategoriesTitle",
-      "slider-layout#upperFooterCategories"
+      "rich-text#homeBottomSectionCategoriesTitle",
+      "slider-layout#homeBottomSectionCategories"
     ],
     "props": {
-      "blockClass": "upperFooterCategories"
+      "blockClass": "homeBottomSectionCategories"
     }
   },
-  "rich-text#upperFooterCategoriesTitle": {
+  "rich-text#homeBottomSectionCategoriesTitle": {
     "props": {
       "text": "Esplora le nostre categorie",
-      "blockClass": "upperFooterCategoriesMainTitle"
+      "blockClass": "homeBottomSectionCategoriesMainTitle"
     }
   },
-  "slider-layout#upperFooterCategories": {
+  "slider-layout#homeBottomSectionCategories": {
     "props": {
       "itemsPerPage": {
         "desktop": 6,
@@ -154,38 +154,38 @@
       "infinity": false,
       "navigationStep": 1,
       "fullWidth": true,
-      "blockClass": "upperFooterCategories"
+      "blockClass": "homeBottomSectionCategories"
     },
     "children": [
-      "flex-layout.col#upperFooterCategoriesPool",
-      "flex-layout.col#upperFooterCategoriesGardenFurniture",
-      "flex-layout.col#upperFooterCategoriesAC",
-      "flex-layout.col#upperFooterCategoriesBeach",
-      "flex-layout.col#upperFooterCategoriesDIY",
-      "flex-layout.col#upperFooterCategoriesFitness",
-      "flex-layout.col#upperFooterCategoriesFitness2"
+      "flex-layout.col#homeBottomSectionCategoriesPool",
+      "flex-layout.col#homeBottomSectionCategoriesGardenFurniture",
+      "flex-layout.col#homeBottomSectionCategoriesAC",
+      "flex-layout.col#homeBottomSectionCategoriesBeach",
+      "flex-layout.col#homeBottomSectionCategoriesDIY",
+      "flex-layout.col#homeBottomSectionCategoriesFitness",
+      "flex-layout.col#homeBottomSectionCategoriesFitness2"
     ]
   },
 
-  "flex-layout.col#upperFooterCategoriesPool": {
+  "flex-layout.col#homeBottomSectionCategoriesPool": {
     "children": [
-      "rich-text#upperFooterCategoriesPool",
-      "vtex.menu@2.x:menu#upperFooterCategoriesPool"
+      "rich-text#homeBottomSectionCategoriesPool",
+      "vtex.menu@2.x:menu#homeBottomSectionCategoriesPool"
     ],
     "props": {
-      "blockClass": "upperFooterCategoriesPool"
+      "blockClass": "homeBottomSectionCategoriesPool"
     }
   },
-  "rich-text#upperFooterCategoriesPool": {
+  "rich-text#homeBottomSectionCategoriesPool": {
     "props": {
       "text": "Piscine e accessori",
-      "blockClass": "upperFooterCategoriesTitle"
+      "blockClass": "homeBottomSectionCategoriesTitle"
     }
   },
-  "vtex.menu@2.x:menu#upperFooterCategoriesPool": {
+  "vtex.menu@2.x:menu#homeBottomSectionCategoriesPool": {
     "props": {
       "orientation": "vertical",
-      "blockClass": "upperFooterMenu",
+      "blockClass": "homeBottomSectionMenu",
       "items": [
         {
           "id": "footer-item-1",
@@ -256,25 +256,25 @@
     }
   },
 
-  "flex-layout.col#upperFooterCategoriesGardenFurniture": {
+  "flex-layout.col#homeBottomSectionCategoriesGardenFurniture": {
     "children": [
-      "rich-text#upperFooterCategoriesGardenFurniture",
-      "vtex.menu@2.x:menu#upperFooterCategoriesGardenFurniture"
+      "rich-text#homeBottomSectionCategoriesGardenFurniture",
+      "vtex.menu@2.x:menu#homeBottomSectionCategoriesGardenFurniture"
     ],
     "props": {
-      "blockClass": "upperFooterCategoriesGardenFurniture"
+      "blockClass": "homeBottomSectionCategoriesGardenFurniture"
     }
   },
-  "rich-text#upperFooterCategoriesGardenFurniture": {
+  "rich-text#homeBottomSectionCategoriesGardenFurniture": {
     "props": {
       "text": "Arredo giardino",
-      "blockClass": "upperFooterCategoriesTitle"
+      "blockClass": "homeBottomSectionCategoriesTitle"
     }
   },
-  "vtex.menu@2.x:menu#upperFooterCategoriesGardenFurniture": {
+  "vtex.menu@2.x:menu#homeBottomSectionCategoriesGardenFurniture": {
     "props": {
       "orientation": "vertical",
-      "blockClass": "upperFooterMenu",
+      "blockClass": "homeBottomSectionMenu",
       "items": [
         {
           "id": "footer-item-1",
@@ -345,25 +345,25 @@
     }
   },
 
-  "flex-layout.col#upperFooterCategoriesAC": {
+  "flex-layout.col#homeBottomSectionCategoriesAC": {
     "children": [
-      "rich-text#upperFooterCategoriesAC",
-      "vtex.menu@2.x:menu#upperFooterCategoriesAC"
+      "rich-text#homeBottomSectionCategoriesAC",
+      "vtex.menu@2.x:menu#homeBottomSectionCategoriesAC"
     ],
     "props": {
-      "blockClass": "upperFooterCategoriesAC"
+      "blockClass": "homeBottomSectionCategoriesAC"
     }
   },
-  "rich-text#upperFooterCategoriesAC": {
+  "rich-text#homeBottomSectionCategoriesAC": {
     "props": {
       "text": "Climatizzazione",
-      "blockClass": "upperFooterCategoriesTitle"
+      "blockClass": "homeBottomSectionCategoriesTitle"
     }
   },
-  "vtex.menu@2.x:menu#upperFooterCategoriesAC": {
+  "vtex.menu@2.x:menu#homeBottomSectionCategoriesAC": {
     "props": {
       "orientation": "vertical",
-      "blockClass": "upperFooterMenu",
+      "blockClass": "homeBottomSectionMenu",
       "items": [
         {
           "id": "footer-item-1",
@@ -434,25 +434,25 @@
     }
   },
 
-  "flex-layout.col#upperFooterCategoriesBeach": {
+  "flex-layout.col#homeBottomSectionCategoriesBeach": {
     "children": [
-      "rich-text#upperFooterCategoriesBeach",
-      "vtex.menu@2.x:menu#upperFooterCategoriesBeach"
+      "rich-text#homeBottomSectionCategoriesBeach",
+      "vtex.menu@2.x:menu#homeBottomSectionCategoriesBeach"
     ],
     "props": {
-      "blockClass": "upperFooterCategoriesBeach"
+      "blockClass": "homeBottomSectionCategoriesBeach"
     }
   },
-  "rich-text#upperFooterCategoriesBeach": {
+  "rich-text#homeBottomSectionCategoriesBeach": {
     "props": {
       "text": "Mare e spiaggia",
-      "blockClass": "upperFooterCategoriesTitle"
+      "blockClass": "homeBottomSectionCategoriesTitle"
     }
   },
-  "vtex.menu@2.x:menu#upperFooterCategoriesBeach": {
+  "vtex.menu@2.x:menu#homeBottomSectionCategoriesBeach": {
     "props": {
       "orientation": "vertical",
-      "blockClass": "upperFooterMenu",
+      "blockClass": "homeBottomSectionMenu",
       "items": [
         {
           "id": "footer-item-1",
@@ -523,25 +523,25 @@
     }
   },
 
-  "flex-layout.col#upperFooterCategoriesDIY": {
+  "flex-layout.col#homeBottomSectionCategoriesDIY": {
     "children": [
-      "rich-text#upperFooterCategoriesDIY",
-      "vtex.menu@2.x:menu#upperFooterCategoriesDIY"
+      "rich-text#homeBottomSectionCategoriesDIY",
+      "vtex.menu@2.x:menu#homeBottomSectionCategoriesDIY"
     ],
     "props": {
-      "blockClass": "upperFooterCategoriesDIY"
+      "blockClass": "homeBottomSectionCategoriesDIY"
     }
   },
-  "rich-text#upperFooterCategoriesDIY": {
+  "rich-text#homeBottomSectionCategoriesDIY": {
     "props": {
       "text": "Bricolage e Fai da te",
-      "blockClass": "upperFooterCategoriesTitle"
+      "blockClass": "homeBottomSectionCategoriesTitle"
     }
   },
-  "vtex.menu@2.x:menu#upperFooterCategoriesDIY": {
+  "vtex.menu@2.x:menu#homeBottomSectionCategoriesDIY": {
     "props": {
       "orientation": "vertical",
-      "blockClass": "upperFooterMenu",
+      "blockClass": "homeBottomSectionMenu",
       "items": [
         {
           "id": "footer-item-1",
@@ -612,25 +612,25 @@
     }
   },
 
-  "flex-layout.col#upperFooterCategoriesFitness": {
+  "flex-layout.col#homeBottomSectionCategoriesFitness": {
     "children": [
-      "rich-text#upperFooterCategoriesFitness",
-      "vtex.menu@2.x:menu#upperFooterCategoriesFitness"
+      "rich-text#homeBottomSectionCategoriesFitness",
+      "vtex.menu@2.x:menu#homeBottomSectionCategoriesFitness"
     ],
     "props": {
-      "blockClass": "upperFooterCategoriesFitness"
+      "blockClass": "homeBottomSectionCategoriesFitness"
     }
   },
-  "rich-text#upperFooterCategoriesFitness": {
+  "rich-text#homeBottomSectionCategoriesFitness": {
     "props": {
       "text": "Fitness e benessere",
-      "blockClass": "upperFooterCategoriesTitle"
+      "blockClass": "homeBottomSectionCategoriesTitle"
     }
   },
-  "vtex.menu@2.x:menu#upperFooterCategoriesFitness": {
+  "vtex.menu@2.x:menu#homeBottomSectionCategoriesFitness": {
     "props": {
       "orientation": "vertical",
-      "blockClass": "upperFooterMenu",
+      "blockClass": "homeBottomSectionMenu",
       "items": [
         {
           "id": "footer-item-1",
@@ -701,25 +701,25 @@
     }
   },
 
-  "flex-layout.col#upperFooterCategoriesFitness2": {
+  "flex-layout.col#homeBottomSectionCategoriesFitness2": {
     "children": [
-      "rich-text#upperFooterCategoriesFitness2",
-      "vtex.menu@2.x:menu#upperFooterCategoriesFitness2"
+      "rich-text#homeBottomSectionCategoriesFitness2",
+      "vtex.menu@2.x:menu#homeBottomSectionCategoriesFitness2"
     ],
     "props": {
-      "blockClass": "upperFooterCategoriesFitness2"
+      "blockClass": "homeBottomSectionCategoriesFitness2"
     }
   },
-  "rich-text#upperFooterCategoriesFitness2": {
+  "rich-text#homeBottomSectionCategoriesFitness2": {
     "props": {
       "text": "Fitness e benessere",
-      "blockClass": "upperFooterCategoriesTitle"
+      "blockClass": "homeBottomSectionCategoriesTitle"
     }
   },
-  "vtex.menu@2.x:menu#upperFooterCategoriesFitness2": {
+  "vtex.menu@2.x:menu#homeBottomSectionCategoriesFitness2": {
     "props": {
       "orientation": "vertical",
-      "blockClass": "upperFooterMenu",
+      "blockClass": "homeBottomSectionMenu",
       "items": [
         {
           "id": "footer-item-1",
