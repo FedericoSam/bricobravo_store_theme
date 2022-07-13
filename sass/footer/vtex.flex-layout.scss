@@ -123,18 +123,21 @@
 
   &--newsletterRow {
     @include container-main;
+
     padding: 30px 23px;
     justify-content: space-between;
     align-items: center;
 
-    .stretchChildrenWidth {
-      width: max-content !important;
+    @include breakpoint("desktop") {
+      .stretchChildrenWidth {
+        width: max-content !important;
+      }
     }
 
-    @media screen and (max-width: 768px) {
-      padding: 0 16px;
+    @include breakpoint("mobile") {
       margin-top: 0;
-      padding: 20px 10px;
+      padding: 40px 40px;
+      justify-content: center;
     }
   }
 
@@ -154,6 +157,10 @@
     .stretchChildrenWidth {
       width: max-content !important;
       margin: 0 17px;
+    }
+    @include breakpoint("mobile") {
+      justify-content: center;
+      margin-top: 30px;
     }
   }
 

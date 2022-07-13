@@ -1,4 +1,5 @@
 @import '../variables';
+@import '../media-queries';
 
 .newsletterForm {
   &--footer-newsletter {
@@ -8,8 +9,9 @@
       border: 2px solid #ccc;
       width: 350px;
 
-      @media screen and (max-width: 768px) {
+      @include breakpoint("mobile") {
         height: 48px;
+        width: 100%;
       }
       
     }
@@ -41,13 +43,13 @@
           background-color: transparent;
         }
       }
-      @media screen and (max-width: 768px) {
+      @include breakpoint("mobile") {
         padding: 0;
         width: 100%;
       }
     }
 
-    @media screen and (max-width: 768px) {
+    @include breakpoint("mobile") {
       width: 100%;
       height: 40px;
       font-size: 14px;

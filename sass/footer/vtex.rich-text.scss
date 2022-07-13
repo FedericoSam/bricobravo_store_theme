@@ -100,6 +100,10 @@
     color: $white;
     line-height: 21px;
     max-width: 316px;
+    @include breakpoint("mobile") {
+      text-align: center;
+      margin-bottom: 20px
+    }
   }
 
   &--aiwaInfoOne {
@@ -165,8 +169,7 @@
     text-align: center;
 
     @include breakpoint('mobile') {
-      font-size: 32px;
-      line-height: 28px;
+      margin-bottom: 20px;
     }
   }
 }
