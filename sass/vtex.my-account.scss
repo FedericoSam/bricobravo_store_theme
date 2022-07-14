@@ -1,20 +1,50 @@
 @media screen and (min-width: 64rem) {
     :global(.vtex-account) {
-        width: 1376px;
+        width: 1313px;
         margin: 0 auto;
     }
 }
 
 :global(.vtex-account) {
     .menu {
+        padding-left: 0;
         .menuLinks {
             :global(.vtex-account_menu-link.b--action-primary) {
-                color: #e30613;
-                border-left: 4px solid #e30613;
+                color: #402493;
+                border-left: 4px solid #402493;
             }
 
             :global(.vtex-account_menu-link.b--transparent) {
-                color: #b9141f;
+                color: #402493;
+            }
+        }
+    }
+
+    .profileEdit {
+        padding: 0;
+        .boxContainer {
+            border: none;
+            max-width: 394px;
+            .boxContainerBody {
+                padding: 0 0 0 32px;
+
+                :global(.vtex-profile-form-3-x-styleguideInput) {
+                    padding-bottom: 0;
+                }
+                :global(.vtex-input__label) {
+                    opacity: 1;
+                }
+
+                :global(.vtex-profile-form-3-x-genderInput),
+                :global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper) {
+                    display: none;
+                }
+                :global(.vtex-button.bg-action-primary) {
+                    background-color: #8E8E8E;
+                    border-color: #8E8E8E;
+                    margin-top: 25px;
+                    height: 40px;
+                }
             }
         }
     }
@@ -25,8 +55,12 @@
 
     :global(.vtex-account__page) {
         :global(.vtex-pageHeader__title) {
-            font-weight: 500;
-            color: #e30613;
+            color: #332C32;
+            font-family: Roboto;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 0;
+            line-height: 33px;
         }
 
         .addressEdit {
@@ -38,8 +72,8 @@
                 }
                 
                 :global(.vtex-button.bg-action-primary) {
-                    background: #e30613 !important;
-                    border: 2px solid #e30613;
+                    background: #402493 !important;
+                    border: 2px solid #402493;
                     color: #FFF;
 
                     &:hover {
@@ -51,36 +85,76 @@
         }
 
         :global(.vtex-account__page-body) {
+            position: relative;
             .profileBoxContainer {
                 .boxContainerBody {
                     padding-bottom: 0;
+
+                    .genderContainer, 
+                    .dateOfBirthSubContainer {
+                        display: none;
+                    }
+
+                    :global(.c-on-disabled) {
+                        color: #111111;
+                        font-family: Roboto;
+                        font-size: 16px;
+                        line-height: 23px;
+                    }
                 }
+            }
+
+            :global(.flex-row-ns) {
+                flex-direction: column;
             }
 
             .boxContainerFooter {
                 justify-content: center;
                 padding-bottom: 24px;
-            }
-
-            :global(.vtex-button) {
-                width: 280px;
-                height: 40px;
-                border: 2px solid #fff;
-                transition: .2s ease-in-out;
-                background: transparent;
-                color: #111;
-
-                &:hover {
-                    border: 2px solid #111;
-                    background: #fff;
+        
+                :global(.vtex-button) {
+                    padding: 0;
+                    border: none;
+                    background: transparent;
+                    color: #291660;
+                    position: absolute;
+                    top: -60px;
+                    left: 170px;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    line-height: 19px;
+                    font-weight: 500;
+                    text-transform: capitalize;
                 }
             }
-
+            
             .newsletterBoxContainer {
+                :global(.vtex-checkbox__inner-container.b--muted-4),
+                :global(.vtex-checkbox__input),
+                :global(.vtex-checkbox__box-wrapper) {
+                    width: 20px;
+                    height: 20px;
+                }   
+
                 :global(.vtex-checkbox__inner-container.b--action-primary) {
-                    background: #e30613;
-                    border: 2px solid #e30613;
+                    background: #291660;
+                    border: 2px solid #291660;
+                    width: 20px;
+                    height: 20px;
                 }
+                :global(.vtex-my-account-1-x-boxContainer) {
+                    border: none;
+
+                    :global(.vtex-my-account-1-x-boxContainerBody) {
+                        padding-left: 0;
+                        padding-top: 0;
+                    }
+                }
+            }
+
+            .newsletterContainerTitle, 
+            .newsletterContainerMessage {
+                display: none;
             }
 
             :global(.vtex_my-authentication_box_container) {
