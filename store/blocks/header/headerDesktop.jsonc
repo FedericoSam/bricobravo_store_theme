@@ -30,7 +30,7 @@
   "rich-text#promotion": {
     "props": {
       "blockClass": "header-titlePromotion",
-      "text": "OFERTA ESPECIAL em produtos para mobiliar o seu jardim"
+      "text": "OFFERTA SPECIALE sui prodotti per arredare il tuo giardino"
     }
   },
   "flex-layout.col#moreInfoPromotion": {
@@ -68,7 +68,7 @@
   },
   "rich-text#moreInfoPromotion": {
     "props": {
-      "text": "Descubra mais"
+      "text": "Scopri di più"
     }
   },
   "disclosure-content#moreInfoPromotion": {

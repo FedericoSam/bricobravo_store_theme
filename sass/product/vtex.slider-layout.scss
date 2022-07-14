@@ -109,7 +109,9 @@
 }
 .sliderLayoutContainer--shelfAlsoView {
   overflow: inherit;
-  padding-bottom: 2rem;
+  padding-bottom: 0;
+  height: 500px;
+  align-items: baseline;
 }
 .paginationDotsContainer--shelfAlsoView {
   bottom: 0;
