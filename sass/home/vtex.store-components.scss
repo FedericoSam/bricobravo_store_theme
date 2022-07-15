@@ -52,6 +52,16 @@
     height: auto;
     width: 47px;
   }
+
+  &--homeBottomSectionBrands {
+    border: 1px solid #f2f2f2;
+    border-radius: 0.25rem;
+    box-shadow: 1px 3px 4px 0 rgba(0, 0, 0, 0.05);
+
+    @include breakpoint('mobile') {
+      height: 3.75rem;
+    }
+  }
 }
 
 .imageElementLink {

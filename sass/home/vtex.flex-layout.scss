@@ -35,6 +35,12 @@
   &--home-shelf-01 {
     @include container-main;
   }
+  &--home-shelf-02 {
+    @include container-main;
+  }
+  &--home-shelf-03 {
+    @include container-main;
+  }
 
   &--categories-showcase {
     :global(.vtex-store-components-3-x-container) {
@@ -68,6 +74,29 @@
     }
   }
 
+  &--homeBottomSection {
+    background: #f6f6f6;
+  }
+
+  &--quemSomos-main {
+    margin-bottom: 5rem;
+  }
+
+  &--homeBottomSectionDesktop {
+    padding-bottom: 2.5rem;
+    background-color: #f6f6f6;
+  }
+
+  &--homeBottomSectionBrands {
+    margin-bottom: 1rem;
+  }
+
+  &--homeBottomSectionMobile {
+    @include breakpoint('mobile') {
+      margin: 1.25rem 0 0 1.25rem;
+    }
+  }
+
   .flexRowContent {
     &--home-categories-showcase,
     &--mobile-home-categories-showcase,
@@ -91,7 +120,8 @@
     }
 
     &--home-services,
-    &--home-blog {
+    &--home-blog,
+    &--homeBottomSection {
       @include container-main;
     }
 
@@ -208,6 +238,12 @@
 
     &--home-blog-col {
       height: auto !important;
+    }
+
+    &--homeBottomSectionColMobile {
+      @include breakpoint('mobile') {
+        margin-bottom: 2.5rem;
+      }
     }
   }
 }

@@ -7,6 +7,8 @@
     background-color: $background-blue-black;
     .flexRowContent--header-containerPromotion {
       @include container-main;
+
+      position: relative;
     }
   }
   &--header-desktop-upper {
@@ -28,6 +30,7 @@
 
     .flexRowContent--header-desktop-upper {
       @include container-main;
+
       justify-content: space-between;
       padding: 15px 20px 10px;
     }
