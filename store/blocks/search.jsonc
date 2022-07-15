@@ -400,14 +400,31 @@
     ]
   },
   "responsive-layout.desktop#not-found": {
-    "children": ["not-found"]
+    "children": ["flex-layout.row#searchbread", "flex-layout.row#mainNotFound"]
   },
   "responsive-layout.mobile#not-found": {
-    "children": [
-      // "flex-layout.row#btnlink-back",
-      "flex-layout.row#searchbread",
-      "not-found"
-    ]
+    "children": ["flex-layout.row#searchbread", "flex-layout.row#mainNotFound"]
+  },
+  "flex-layout.row#mainNotFound": {
+    "children": ["flex-layout.col#mainNotFound"]
+  },
+  "flex-layout.col#mainNotFound": {
+    "children": ["image#notFound", "not-found", "link#notfoundToHome"],
+    "props": {
+      "blockClass": "notfound-containerMain"
+    }
+  },
+  "image#notFound": {
+    "props": {
+      "src": "assets/images/notfound.svg"
+    }
+  },
+  "link#notfoundToHome": {
+    "props": {
+      "label": "VAI ALLA HOMEPAGE",
+      "href": "/",
+      "blockClass": "notfound-btnLinkBack"
+    }
   },
   "breadcrumb": {
     "props": {

@@ -1,0 +1,14 @@
+@import '../_variables.scss';
+
+.link--notfound-btnLinkBack {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: $white;
+  background-color: $blue-active;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+  width: 300px;
+  padding-bottom: 2rem;
+}
