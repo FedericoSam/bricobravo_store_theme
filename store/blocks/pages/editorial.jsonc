@@ -20,6 +20,7 @@
   },
   "flex-layout.col#container-about-us": {
     "children": [
+      "flex-layout.row#breadcrumb",
       "flex-layout.col#about-title",
       "flex-layout.row#about-banner-2",
       "flex-layout.row#about-banner-3",
