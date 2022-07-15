@@ -10,7 +10,7 @@
 
   &--home-section-title,
   &--home-section04-title {
-    justify-content: center;
+    justify-content: start;
   }
 
   &--home-section-title {
@@ -176,8 +176,6 @@
 
   .wrapper {
     &--home-section-title {
-      margin: 0 auto;
-
       @include breakpoint('mobile') {
         margin: 0 0 0 1rem;
       }
