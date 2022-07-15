@@ -12,13 +12,16 @@
 
     padding: 0 1rem;
     margin-bottom: 2rem;
+    @include breakpoint("mobile") {
+      padding: 0 0.5rem;
+    }
   }
 }
 
 .flexRowContent {
   &--editorial-sectionBanners4and5 {
     .stretchChildrenWidth {
-      width: max-content !important;
+      width: auto !important;
       max-width: 850px;
       min-width: 350px;
       padding: 10px;
@@ -37,6 +40,16 @@
     .flexColChild {
       height: max-content !important;
       padding: 0 0.5rem;
+    }
+    @include breakpoint("mobile") {
+      padding: 0.4rem;
+    }
+  }
+
+  &--editorial-containerTextAboutBanner3 {
+    @include breakpoint("mobile") {
+      display: flex;
+      flex-direction: column-reverse;
     }
   }
 

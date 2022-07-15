@@ -14,7 +14,7 @@
     font-weight: bold;
     text-align: center;
     @include breakpoint('mobile') {
-      font-size: 2rem;
+      font-size: 22px;
     }
   }
   &--editorial-paragraph {
@@ -31,6 +31,9 @@
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
+    @include breakpoint("mobile") {
+      margin-left: 10px;
+    }
   }
   &--editorial-subTitle {
     text-align: center;
@@ -40,11 +43,11 @@
   &--editorial-titleSection {
     font-size: 24px;
     font-weight: 500;
-    color: #1B0E41;
+    color: $blue-dark-text;
     margin-bottom: 1rem;
   }
   &--editorial-labelText {
-    color: #1B0E41;
+    color: $blue-dark-text;
     font-size: 18px;
     margin-bottom: 1rem;
   }
