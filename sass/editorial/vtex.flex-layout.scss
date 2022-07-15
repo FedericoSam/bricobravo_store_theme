@@ -27,6 +27,12 @@
       padding: 10px;
     }
   }
+  &--editorial-containerBanner3 {
+    @include breakpoint("mobile") {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
 }
 
 .flexCol {
@@ -43,13 +49,6 @@
     }
     @include breakpoint("mobile") {
       padding: 0.4rem;
-    }
-  }
-
-  &--editorial-containerTextAboutBanner3 {
-    @include breakpoint("mobile") {
-      display: flex;
-      flex-direction: column-reverse;
     }
   }
 
