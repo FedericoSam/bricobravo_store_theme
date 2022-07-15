@@ -23,6 +23,124 @@
   margin: 0;
 }
 
+.gallery--Desktop {
+  padding: 30px 0 30px 20px;
+
+  :global(.vtex-search-result-3-x-galleryItem) {
+    position: relative;
+    height: 380px;
+  }
+
+  :global(.vtex-product-summary-2-x-container--summaryComplete) {
+    max-width: 300px !important;
+    margin-bottom: 30px;
+    transition: none;
+    
+    &:hover {
+      position: absolute;
+      left: 10px;
+      top: 0;
+      z-index: 7;
+      height: 480px;
+      background: $white;
+      transition: all .3s ease-in-out;
+    }
+
+    :global(.vtex-product-summary-2-x-productNameContainer) {
+      text-align: start;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexColChild--specificationNameCol) {
+      [data-specification-name="Spedizione gratuita"]::after {
+        content: url(https://bricobravo.vtexassets.com/arquivos/ids/155410-22-22?v=637920420622130000&width=140&height=20&aspect=true);
+        margin: 24px 0 0 48px;
+      }
+      [data-specification-name="Premium"]::after {
+        margin: 24px 0 0 60px;
+      }
+    }
+    
+    :global(.vtex-flex-layout-0-x-flexCol--summaryInfo) {
+      padding: 20px;
+      position: relative;
+
+      :global(.vtex-flex-layout-0-x-flexColChild--buyButtonContainer) {
+        text-align: center;
+        position: absolute;
+        top: 154px;
+        left: -4px;
+        width: 100%;
+        :global(.vtex-button) {
+          max-width: 216px;
+        }
+      }
+    }
+  }
+}
+
+.galleryItem--small {
+  :global(.vtex-product-summary-2-x-container--summaryComplete) {
+    &:hover {
+      height: 360px !important;
+    }
+  }
+
+  :global(.vtex-product-price-1-x-savings--savingPercentage) {
+    left: -8px;
+  }
+
+  :global(.vtex-product-summary-2-x-containerNormal--summaryComplete) {
+      max-width: 160px !important;
+      margin-bottom: 20px;
+      background-color: $white;
+
+    :global(.vtex-product-summary-2-x-clearLink--summaryComplete) {
+      max-width: 160px;
+      padding: 5px !important;
+
+      :global(.vtex-flex-layout-0-x-flexCol--summaryInfo) {
+        padding: 5px;
+
+        :global(.vtex-flex-layout-0-x-flexColChild--specificationNameCol) {
+          [data-specification-name="Premium"]::after,
+          [data-specification-name="Spedizione gratuita"]::after{
+            @include mobile {
+              top: -56px;
+              left: 66px;
+            }
+          }
+          
+          [data-specification-name="Spedizione gratuita"]::after {
+            @include mobile {
+            content: url(https://bricobravo.vtexassets.com/arquivos/ids/155415-22-22?v=637920420622130000&width=73&height=20&aspect=true);
+            }
+          }
+        }
+        :global(.vtex-store-components-3-x-sellingPriceValue) {
+          font-size: 14px !important;
+          font-weight: 900;
+        }
+        :global(.vtex-product-summary-2-x-productNameContainer) {
+          text-align: start;
+        }
+
+        :global(.vtex-product-summary-2-x-brandName) {
+          font-size: 14px;
+        }
+      }
+      :global(.vtex-product-summary-2-x-imageWrapper) {
+        margin-bottom: 0;
+      }
+      :global(.vtex-product-price-1-x-installments--productMain-installments) {
+        display: none;
+      }
+      :global(.vtex-flex-layout-0-x-flexColChild--buyButtonContainer) {
+        display: none;
+      }
+    }
+  }
+}
+
 .showingProducts {
   font-size: 0;
   margin: auto 32px;

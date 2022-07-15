@@ -297,15 +297,31 @@
 
   "flex-layout.col#home-shelf-01": {
     "children": [
-      "rich-text#home-shelf-01-title",
+      "flex-layout.row#home-shelf-01-title",
       "list-context.product-list#alsoView"
     ]
   },
 
+  "flex-layout.row#home-shelf-01-title": {
+    "children": [
+      "rich-text#home-shelf-01-title",
+      "link#home-shelf-01-allProducts"
+    ],
+    "props": {
+      "blockClass": "home-shelf-02-title"
+    }
+  },
   "rich-text#home-shelf-01-title": {
     "props": {
       "blockClass": "home-section-title",
       "text": "## Bricobravo consiglia"
+    }
+  },
+  "link#home-shelf-01-allProducts": {
+    "props": {
+      "href": "#",
+      "blockClass": "home-shelf",
+      "label": "Mostra tutto"
     }
   },
 
@@ -318,15 +334,31 @@
 
   "flex-layout.col#home-shelf-02": {
     "children": [
-      "rich-text#home-shelf-02-title",
+      "flex-layout.row#home-shelf-02-title",
       "list-context.product-list#alsoView"
     ]
   },
 
+  "flex-layout.row#home-shelf-02-title": {
+    "children": [
+      "rich-text#home-shelf-02-title",
+      "link#home-shelf-02-allProducts"
+    ],
+    "props": {
+      "blockClass": "home-shelf-02-title"
+    }
+  },
   "rich-text#home-shelf-02-title": {
     "props": {
       "blockClass": "home-section-title",
       "text": "## Offerta del mese"
+    }
+  },
+  "link#home-shelf-02-allProducts": {
+    "props": {
+      "href": "#",
+      "blockClass": "home-shelf",
+      "label": "Mostra tutto"
     }
   },
 
@@ -339,15 +371,31 @@
 
   "flex-layout.col#home-shelf-03": {
     "children": [
-      "rich-text#home-shelf-03-title",
+      "flex-layout.row#home-shelf-03-title",
       "list-context.product-list#alsoView"
     ]
   },
 
+  "flex-layout.row#home-shelf-03-title": {
+    "children": [
+      "rich-text#home-shelf-03-title",
+      "link#home-shelf-03-allProducts"
+    ],
+    "props": {
+      "blockClass": "home-shelf-03-title"
+    }
+  },
   "rich-text#home-shelf-03-title": {
     "props": {
       "blockClass": "home-section-title",
       "text": "## I prodotti più venduti"
+    }
+  },
+  "link#home-shelf-03-allProducts": {
+    "props": {
+      "href": "#",
+      "blockClass": "home-shelf",
+      "label": "Mostra tutto"
     }
   },
 
