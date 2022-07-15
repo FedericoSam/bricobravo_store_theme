@@ -14,14 +14,6 @@
         left: 28px;
         position: absolute;
       }
-
-      &--upperFooterBrands,
-      &--upperFooterCategories {
-        position: absolute;
-        top: -3rem;
-        right: 2rem;
-        left: auto;
-      }
     }
 
     &.sliderRightArrow {
@@ -30,12 +22,6 @@
         bottom: 0;
         right: 50px;
         position: absolute;
-      }
-
-      &--upperFooterBrands,
-      &--upperFooterCategories {
-        position: absolute;
-        top: -3rem;
       }
     }
 
@@ -47,12 +33,6 @@
         height: 16px;
         display: flex;
         overflow: visible;
-      }
-
-      &--upperFooterBrands,
-      &--upperFooterCategories {
-        height: 16px;
-        color: #4320a8;
       }
     }
   }
@@ -66,34 +46,6 @@
 
       @media screen and (max-width: 64rem) {
         max-width: 2.5rem;
-      }
-    }
-  }
-
-  .slide {
-    &--upperFooterBrandsMobile {
-      @include breakpoint('mobile') {
-        margin: 0 0.625rem !important;
-      }
-    }
-
-    &--upperFooterCategoriesMobile {
-      @include breakpoint('mobile') {
-        margin: 0 2rem !important;
-      }
-    }
-  }
-
-  .sliderTrack {
-    &--upperFooterBrandsMobile {
-      @include breakpoint('mobile') {
-        transform: translate3d(-18.75%, 0, 0) !important;
-      }
-    }
-
-    &--upperFooterCategoriesMobile {
-      @include breakpoint('mobile') {
-        transform: translate3d(-8.6%, 0, 0) !important;
       }
     }
   }

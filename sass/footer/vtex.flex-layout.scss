@@ -23,10 +23,6 @@
     }
   }
 
-  &--upperFooter {
-    background: #f6f6f6;
-  }
-
   &--upperFooterDesktop,
   &--footer-upperFooterDesktop {
     :global(.vtex-store-components-3-x-container) {
@@ -128,13 +124,13 @@
     justify-content: space-between;
     align-items: center;
 
-    @include breakpoint("desktop") {
+    @include breakpoint('desktop') {
       .stretchChildrenWidth {
         width: max-content !important;
       }
     }
 
-    @include breakpoint("mobile") {
+    @include breakpoint('mobile') {
       margin-top: 0;
       padding: 40px 40px;
       justify-content: center;
@@ -149,7 +145,7 @@
     .stretchChildrenWidth {
       width: max-content !important;
     }
-    @include breakpoint("mobile") {
+    @include breakpoint('mobile') {
       justify-content: center;
     }
   }
@@ -162,7 +158,7 @@
       width: max-content !important;
       margin: 0 17px;
     }
-    @include breakpoint("mobile") {
+    @include breakpoint('mobile') {
       justify-content: center;
       margin-top: 30px;
     }
@@ -256,12 +252,6 @@
     &--footer-PaymentMethods {
       @media screen and (max-width: 768px) {
         margin-bottom: 12px;
-      }
-    }
-
-    &--upperFooterColMobile {
-      @include breakpoint('mobile') {
-        margin-bottom: 2.5rem;
       }
     }
   }
