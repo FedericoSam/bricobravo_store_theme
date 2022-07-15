@@ -35,6 +35,12 @@
   &--home-shelf-01 {
     @include container-main;
   }
+  &--home-shelf-02 {
+    @include container-main;
+  }
+  &--home-shelf-03 {
+    @include container-main;
+  }
 
   &--categories-showcase {
     :global(.vtex-store-components-3-x-container) {
