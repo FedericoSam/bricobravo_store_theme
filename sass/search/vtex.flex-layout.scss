@@ -136,4 +136,10 @@
 // Notfound
 .flexCol--notfound-containerMain {
   align-items: center;
+  .flexColChild--notfound-containerMain {
+    padding: 10px;
+    &:last-child {
+      padding-bottom: 3rem;
+    }
+  }
 }
