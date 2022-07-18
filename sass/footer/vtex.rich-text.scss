@@ -97,9 +97,13 @@
     margin: 0;
     font-size: 16px;
     font-weight: 300;
-    color: #111;
-    line-height: 24px;
-    text-align: center;
+    color: $white;
+    line-height: 21px;
+    max-width: 316px;
+    @include breakpoint('mobile') {
+      text-align: center;
+      margin-bottom: 20px;
+    }
   }
 
   &--aiwaInfoOne {
@@ -130,30 +134,17 @@
     margin-right: 12px;
   }
 
-  &--upperFooterCategoriesMainTitle,
-  &--upperFooterBrandsMainTitle {
-    height: 33px;
-    color: #332c32;
-    font-size: 28px;
+  &--newsTitle {
+    font-size: 24px;
+    margin: 0 0 8px;
     font-weight: 500;
-    line-height: 33px;
-    margin: 1.25rem 0;
+    color: $white;
+    line-height: 28px;
+    text-align: center;
 
     @include breakpoint('mobile') {
-      height: 1.5rem;
-      font-size: 20px;
-      line-height: 1.5rem;
-      margin: 0 0 1.5rem;
+      margin-bottom: 20px;
     }
-  }
-
-  &--upperFooterCategoriesTitle {
-    height: 1.5rem;
-    color: #291660;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    margin: 0 0 0.75rem;
   }
 }
 
@@ -165,20 +156,6 @@
 
     @include breakpoint('mobile') {
       margin: 0;
-      font-size: 32px;
-      line-height: 40px;
-    }
-  }
-
-  &--newsTitle {
-    font-size: 40px;
-    margin: 0 0 8px;
-    font-weight: 300;
-    color: #111;
-    line-height: 48px;
-    text-align: center;
-
-    @include breakpoint('mobile') {
       font-size: 32px;
       line-height: 40px;
     }

@@ -1,44 +1,44 @@
 {
-  "flex-layout.row#upperFooterMobile": {
-    "children": ["flex-layout.col#upperFooterColMobile"],
+  "flex-layout.row#homeBottomSectionMobile": {
+    "children": ["flex-layout.col#homeBottomSectionColMobile"],
     "props": {
-      "blockClass": "upperFooterMobile"
+      "blockClass": "homeBottomSectionMobile"
     }
   },
 
-  "flex-layout.col#upperFooterColMobile": {
+  "flex-layout.col#homeBottomSectionColMobile": {
     "children": [
-      "flex-layout.row#upperFooterBrandsMobile",
-      "flex-layout.row#upperFooterCategoriesMobile"
+      "flex-layout.row#homeBottomSectionBrandsMobile",
+      "flex-layout.row#homeBottomSectionCategoriesMobile"
     ],
     "props": {
-      "blockClass": "upperFooterColMobile",
+      "blockClass": "homeBottomSectionColMobile",
       "width": "100%"
     }
   },
 
-  "flex-layout.row#upperFooterBrandsMobile": {
-    "children": ["flex-layout.col#upperFooterBrandsMobile"],
+  "flex-layout.row#homeBottomSectionBrandsMobile": {
+    "children": ["flex-layout.col#homeBottomSectionBrandsMobile"],
     "props": {
-      "blockClass": "upperFooterBrandsMobile"
+      "blockClass": "homeBottomSectionBrandsMobile"
     }
   },
-  "flex-layout.col#upperFooterBrandsMobile": {
+  "flex-layout.col#homeBottomSectionBrandsMobile": {
     "children": [
-      "rich-text#upperFooterBrandsTitleMobile",
-      "slider-layout#upperFooterBrandsMobile"
+      "rich-text#homeBottomSectionBrandsTitleMobile",
+      "slider-layout#homeBottomSectionBrandsMobile"
     ],
     "props": {
-      "blockClass": "upperFooterBrandsMobile"
+      "blockClass": "homeBottomSectionBrandsMobile"
     }
   },
-  "rich-text#upperFooterBrandsTitleMobile": {
+  "rich-text#homeBottomSectionBrandsTitleMobile": {
     "props": {
       "text": "I migliori marchi, a portata di click",
-      "blockClass": "upperFooterBrandsMainTitle"
+      "blockClass": "homeBottomSectionBrandsMainTitle"
     }
   },
-  "slider-layout#upperFooterBrandsMobile": {
+  "slider-layout#homeBottomSectionBrandsMobile": {
     "props": {
       "itemsPerPage": {
         "desktop": 8,
@@ -52,43 +52,43 @@
       "navigationStep": 1,
       "fullWidth": true,
       "centerMode": "to-the-left",
-      "blockClass": "upperFooterBrandsMobile"
+      "blockClass": "homeBottomSectionBrandsMobile"
     },
     "children": [
-      "image#upperFooterBrands01",
-      "image#upperFooterBrands02",
-      "image#upperFooterBrands03",
-      "image#upperFooterBrands04",
-      "image#upperFooterBrands05",
-      "image#upperFooterBrands06",
-      "image#upperFooterBrands07",
-      "image#upperFooterBrands08",
-      "image#upperFooterBrands09"
+      "image#homeBottomSectionBrands01",
+      "image#homeBottomSectionBrands02",
+      "image#homeBottomSectionBrands03",
+      "image#homeBottomSectionBrands04",
+      "image#homeBottomSectionBrands05",
+      "image#homeBottomSectionBrands06",
+      "image#homeBottomSectionBrands07",
+      "image#homeBottomSectionBrands08",
+      "image#homeBottomSectionBrands09"
     ]
   },
 
-  "flex-layout.row#upperFooterCategoriesMobile": {
-    "children": ["flex-layout.col#upperFooterCategoriesMobile"],
+  "flex-layout.row#homeBottomSectionCategoriesMobile": {
+    "children": ["flex-layout.col#homeBottomSectionCategoriesMobile"],
     "props": {
-      "blockClass": "upperFooterCategoriesMobile"
+      "blockClass": "homeBottomSectionCategoriesMobile"
     }
   },
-  "flex-layout.col#upperFooterCategoriesMobile": {
+  "flex-layout.col#homeBottomSectionCategoriesMobile": {
     "children": [
-      "rich-text#upperFooterCategoriesTitleMobile",
-      "slider-layout#upperFooterCategoriesMobile"
+      "rich-text#homeBottomSectionCategoriesTitleMobile",
+      "slider-layout#homeBottomSectionCategoriesMobile"
     ],
     "props": {
-      "blockClass": "upperFooterCategoriesMobile"
+      "blockClass": "homeBottomSectionCategoriesMobile"
     }
   },
-  "rich-text#upperFooterCategoriesTitleMobile": {
+  "rich-text#homeBottomSectionCategoriesTitleMobile": {
     "props": {
       "text": "Esplora le nostre categorie",
-      "blockClass": "upperFooterCategoriesMainTitle"
+      "blockClass": "homeBottomSectionCategoriesMainTitle"
     }
   },
-  "slider-layout#upperFooterCategoriesMobile": {
+  "slider-layout#homeBottomSectionCategoriesMobile": {
     "props": {
       "itemsPerPage": {
         "desktop": 6,
@@ -102,16 +102,16 @@
       "navigationStep": 1,
       "fullWidth": true,
       "centerMode": "to-the-left",
-      "blockClass": "upperFooterCategoriesMobile"
+      "blockClass": "homeBottomSectionCategoriesMobile"
     },
     "children": [
-      "flex-layout.col#upperFooterCategoriesPool",
-      "flex-layout.col#upperFooterCategoriesGardenFurniture",
-      "flex-layout.col#upperFooterCategoriesAC",
-      "flex-layout.col#upperFooterCategoriesBeach",
-      "flex-layout.col#upperFooterCategoriesDIY",
-      "flex-layout.col#upperFooterCategoriesFitness",
-      "flex-layout.col#upperFooterCategoriesFitness2"
+      "flex-layout.col#homeBottomSectionCategoriesPool",
+      "flex-layout.col#homeBottomSectionCategoriesGardenFurniture",
+      "flex-layout.col#homeBottomSectionCategoriesAC",
+      "flex-layout.col#homeBottomSectionCategoriesBeach",
+      "flex-layout.col#homeBottomSectionCategoriesDIY",
+      "flex-layout.col#homeBottomSectionCategoriesFitness",
+      "flex-layout.col#homeBottomSectionCategoriesFitness2"
     ]
   }
 }
