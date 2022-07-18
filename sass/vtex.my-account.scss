@@ -28,11 +28,16 @@
             .boxContainerBody {
                 padding: 0 0 0 32px;
 
+                :global(.vtex-profile-form-3-x-personalFields) {
+                    margin-bottom: 25px;
+                }
+
                 :global(.vtex-profile-form-3-x-styleguideInput) {
                     padding-bottom: 0;
                 }
                 :global(.vtex-input__label) {
                     opacity: 1;
+                    margin-top: 10px;
                 }
 
                 :global(.vtex-profile-form-3-x-genderInput),
@@ -42,8 +47,185 @@
                 :global(.vtex-button.bg-action-primary) {
                     background-color: #8E8E8E;
                     border-color: #8E8E8E;
-                    margin-top: 25px;
                     height: 40px;
+                    transition: all ease-in-out .3s;
+
+                    &:hover {
+                        background: #1B0E41
+                    }
+                }
+            }
+        }
+    }
+
+    :global(.vtex-pageHeader__container) {
+        position: relative;
+
+        :global(.vtex-pageHeader__children) {
+            position: absolute;
+            left: 10px;
+            top: 135px;
+            z-index: 20;
+            :global(.newAddressButton) {
+                :global(.vtex-button) {
+                    width: 250px;
+                    height: 200px;
+                    padding: 118px 38px 71px;
+                    border: 1px solid #D8D8D8;
+                    background-image: url("assets/icons/icon-plus-add-addresses.png");
+                    background-size: auto;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    color: #402493;
+                    text-transform: capitalize;
+
+                    &:hover {
+                        border: 1px solid #402493;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .addressList {
+        .addressBox {
+            :global(div.flex-none.pb5.pr5-ns) {
+                &:first-child {
+                padding-left: 266px;
+                }
+                .boxContainer {
+                    max-width: 250px;
+                    max-height: 200px;
+                    .boxContainerBody {
+                        padding: 38px 0 0 17px;
+                        position: relative;
+                        max-height: 150px;
+                        &::before {
+                            content: 'Indirizzo predefinito';
+                            display: block;
+                            position: absolute;
+                            top: 18px;
+                            color: #111111;
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 16px;
+                        }
+                        :global(.address-summary) {
+                            color: #111111;
+                            max-width: 200px;
+                            font-size: 14px;
+                            letter-spacing: 0;
+                            line-height: 18px;
+                        }
+                    }
+                    .boxContainerFooter {
+                        justify-content: flex-start;
+                        padding: 0 0 0 17px;
+                        :global(.vtex-button) {
+                            padding: 0;
+                            margin-bottom: 20px;
+                            border: none;
+                            background: transparent;
+                            color: #291660;
+                            font-size: 16px;
+                            line-height: 19px;
+                            font-weight: 500;
+                            text-transform: capitalize;
+                            :global(.vtex-button__label) {
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .addressCreate {
+        padding: 0;
+        
+        .boxContainer {
+            border: none;
+
+            :global(.c-on-disabled) {
+                background-color: #8E8E8E;
+                height: 40px;
+                width: 360px;   
+            }
+
+            :global(.bg-action-primary) {
+                background-color: #291660;
+                text-transform: capitalize;
+                height: 40px;
+                width: 360px;
+
+                &:hover {
+                    background-color: #1B0E41;
+                }
+            }
+        }
+    }
+
+    .addressEdit {
+        padding: 0;
+        
+        .boxContainer {
+            border: none;
+        }
+    }
+
+    :global(.vtex-my-authentication-1-x-authenticationScreen_container) {
+        max-width: 360px;
+        padding-left: 20px;
+        :global(.vtex_my-authentication_box_container) {
+            border: none;
+            :global(.vtex_my-authentication_box_content) {
+                padding-left: 0;
+            }
+            :global(.vtex_my-authentication_box_footer) {
+                padding-left: 0;
+                :global(.vtex-button) {
+                    height: 40px;
+                    width: 360px;
+                    border-radius: 2px;
+                    background-color: #291660;
+                    color: #FFF;
+
+                    &:hover {
+                        background-color: #1B0E41;
+                    }
+                }
+            }
+        }
+    }
+    
+
+    :global(.vtex-account__cards-list) {
+        :global(.c-on-base) {
+            display: none;
+        }
+    }
+
+    :global(.vtex-pageHeader__container) {
+        :global(.vtex-pageHeader__children) {
+            :global(.vtex-my-cards-1-x-newCardButton) {
+                :global(.vtex-button) {
+                    width: 250px;
+                    height: 200px;
+                    padding: 118px 38px 71px;
+                    border: 1px solid #D8D8D8;
+                    background-image: url("assets/icons/icon-plus-add-addresses.png");
+                    background-size: auto;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    color: #402493;
+                    text-transform: capitalize;
+
+                    &:hover {
+                        border: 1px solid #402493;
+                        
+                    }
                 }
             }
         }
@@ -51,12 +233,13 @@
 
     .boxContainer {
         border-radius: 8px;
+        max-width: 459px;
     }
 
     :global(.vtex-account__page) {
         :global(.vtex-pageHeader__title) {
             color: #332C32;
-            font-family: Roboto;
+        
             font-size: 28px;
             font-weight: bold;
             letter-spacing: 0;
@@ -84,7 +267,7 @@
             }
         }
 
-        :global(.vtex-account__page-body) {
+        .profile {
             position: relative;
             .profileBoxContainer {
                 .boxContainerBody {
@@ -97,7 +280,7 @@
 
                     :global(.c-on-disabled) {
                         color: #111111;
-                        font-family: Roboto;
+                    
                         font-size: 16px;
                         line-height: 23px;
                     }
@@ -120,7 +303,6 @@
                     position: absolute;
                     top: -60px;
                     left: 170px;
-                    font-family: Roboto;
                     font-size: 16px;
                     line-height: 19px;
                     font-weight: 500;
