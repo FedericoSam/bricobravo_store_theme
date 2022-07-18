@@ -20,6 +20,10 @@
         }
     }
 
+    .userImage {
+        display: none;
+    }
+
     .profileEdit {
         padding: 0;
         .boxContainer {
@@ -44,9 +48,7 @@
                 :global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper) {
                     display: none;
                 }
-                :global(.vtex-button.bg-action-primary) {
-                    background-color: #8E8E8E;
-                    border-color: #8E8E8E;
+                :global(.vtex-button) {
                     height: 40px;
                     transition: all ease-in-out .3s;
 
@@ -147,7 +149,10 @@
         
         .boxContainer {
             border: none;
-
+            max-width: 394px;
+            :global(.vtex-my-account-1-x-boxContainerBody) {
+                padding-right: 0;
+            }
             :global(.c-on-disabled) {
                 background-color: #8E8E8E;
                 height: 40px;
@@ -176,12 +181,14 @@
     }
 
     :global(.vtex-my-authentication-1-x-authenticationScreen_container) {
-        max-width: 360px;
+        max-width: 380px;
         padding-left: 20px;
         :global(.vtex_my-authentication_box_container) {
             border: none;
+            width: 100%;
             :global(.vtex_my-authentication_box_content) {
                 padding-left: 0;
+                padding-right: 0;
             }
             :global(.vtex_my-authentication_box_footer) {
                 padding-left: 0;
@@ -196,8 +203,22 @@
                         background-color: #1B0E41;
                     }
                 }
+                :global(.vtex-button.bg-disabled) {
+                    background-color: #8E8E8E;
+                }
+
+                :global(.vtex_my-authentication_currPassInput_container),
+                :global(.vtex_my-authentication_newPassInput_container) {
+                    :global(.vtex-input-prefix__group) {
+                        border: 1px solid #DFDFDF;
+                    }
+                }
             }
         }
+    }
+
+    :global(.vtex_my-authentication_savePassButton_container) {
+        margin: 0;
     }
     
 
@@ -253,6 +274,9 @@
                 :global(.vtex-address-form-4-x-container) {
                     border-radius: 8px;
                 }
+                :global(.vtex-button) {
+                    height: 40px;
+                }
                 
                 :global(.vtex-button.bg-action-primary) {
                     background: #402493 !important;
@@ -260,8 +284,8 @@
                     color: #FFF;
 
                     &:hover {
-                        background: #b9141f !important;
-                        border: 2px solid #b9141f;
+                        background: #1B0E41 !important;
+                        border: 2px solid #1B0E41;
                     }
                 }
             }
@@ -332,6 +356,11 @@
                         padding-top: 0;
                     }
                 }
+                .passwordBox {
+                    :global(.vtex-checkbox__line-container) {
+                    gap: 10px;
+                    }
+                }
             }
 
             .newsletterContainerTitle, 
@@ -356,7 +385,7 @@
 
                 &:hover {
                     background: transparent;
-                    color: #b9141f;
+                    color: #1B0E41;
                 }
             }
         }
@@ -395,72 +424,207 @@
             }
         }
     }
-}
 
-@media screen and (max-width: 48rem) {
-    .addressCreate {
-        .boxContainerBody {
-            :global(.vtex-button) {
-                width: 100% !important;
+
+    @media screen and (max-width: 48rem) {
+        .menu {
+            padding: 4rem 1rem !important;
+            :global(.vtex-account_menu-link) {
+                padding-left: 0;
+                margin: 0;
+                border-bottom: 1px solid #D8D8D8;
+            }
+            .menuLink {
+                padding-left: 0;
+                margin: 0;
+                border-bottom: 1px solid #D8D8D8;
             }
         }
-    }
-
-    .addressBox {           
-        :global(.flex-none) {
-            width: 100%;
-        }
-    }
-
-    .addressEdit {
-        .boxContainerBody {
-            :global(.vtex-button) {
-                width: 100% !important;
-            }
-        }
-    }
-
-    :global(.vtex-account__page) {
-        :global(.vtex-account__page-body) {
-            :global(.vtex-my-authentication-1-x-loginSessions_box) {
-                width: 100%;
-
-                :global(.vtex_my-authentication_box_container) {
-                    width: 100%;
-                }    
-            }
-        }
-        :global(.vtex-pageHeader__container) {
-            :global(.c-on-base) {
-                justify-content: center;
-        
-                :global(.vtex-pageHeader__title) {
-                    font-size: 30px;
+        .profileBoxContainer {
+            .boxContainer {
+                border: 1px solid #D8D8D8;
+                .boxContainerBody {
+                    position: relative;
+                    padding: 20px 10px 0;
+                    .lastNameSubContainer {
+                        position: absolute;
+                        right: 70px;
+                        top: 20px;
+                    }
                 }
-                :global(.vtex-pageHeader__children) {
-                    margin-top: 28px;
-
+                .boxContainerFooter {
                     :global(.vtex-button) {
-                        border: 2px solid #CCC;
+                        top: -45px;
+                        left: 250px;
                     }
                 }
             }
-
-            :global(.vtex-pageHeader-link__container) {
-                :global(.vtex__icon-arrow-back) {
-                    width: 14px;
+        }
+        
+        .profileEdit {
+            .boxContainer {
+                .boxContainerBody {
+                    padding: 0 1rem;
                 }
-    
-                :global(.t-action--small) {
-                    font-size: 14px;
+            }
+        }
+
+        .addressCreate {
+            .boxContainerBody {
+                :global(.vtex-button) {
+                    width: 100% !important;
+                }
+            }
+        }
+
+        .addressList {
+            padding-top: 63px;
+            .addressBox {
+                flex-wrap: wrap;
+                :global(div.flex-none.pb5.pr5-ns) {
+                    width: 100%;
+                    .boxContainer {
+                        max-width: 336px;
+                        border: 1px solid #D8D8D8;
+                    }
+                    &:first-child {
+                        padding-left: 0;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 20px;
+                    }
                 }
             }
         }
         
-        :global(.vtex_my-authentication_box_container) {
-            :global(.vtex-my-authentication-1-x-box_footer) {
-                text-align: center;
+        .addressEdit {
+            .boxContainerBody {
+                padding: 1.5rem 1rem;
+                :global(.vtex-button) {
+                    width: 100% !important;
+                }
+                :global(.vtex-dropdown__button) {
+                    border: none;
+                }
+                :global(.vtex-input-prefix__group) {
+                    border: 1px solid #DFDFDF;
+                }
+                :global(.vtex-button.bg-action-primary) {
+                    height: 40px;
+                    background-color: #291660;
+                }
+                :global(.vtex-button.bg-danger) {
+                    height: 40px;
+                }
             }
         }
+
+        :global(.vtex-account__page) {
+            :global(.vtex-account__cards-list) {
+                min-height: 300px;
+            }
+
+            :global(.vtex-account__page-body) {
+                :global(.vtex-my-authentication-1-x-loginSessions_box) {
+                    width: 100%;
+
+                    :global(.vtex_my-authentication_box_container) {
+                        width: 100%;
+                    }    
+                }
+            }
+            :global(.vtex-pageHeader__container) {
+                :global(.c-on-base) {
+                    justify-content: center;
+            
+                    :global(.vtex-pageHeader__title) {
+                        font-size: 30px;
+                    }
+                    :global(.vtex-pageHeader__children) {
+                        position: absolute;
+                        left: 15px;
+                        top: 105px;
+                        z-index: 20;
+
+                        :global(.vtex-button.bg-action-primary) {
+                            width: 100%;
+                            height: 100%;
+                            padding: 10px;
+                            border: none;
+                            background-image: url("assets/icons/icon-plus-add-addresses.png");
+                            background-size: auto;
+                            background-repeat: no-repeat;
+                            background-position: left;
+                            color: #402493;
+                            text-transform: capitalize;
+                            :global(.vtex-button__label) {
+                                padding-left: 2rem;
+                            }
+                        }
+                    }
+                }
+
+                :global(.vtex-pageHeader-link__container) {
+                    :global(.vtex__icon-arrow-back) {
+                        width: 14px;
+                    }
+        
+                    :global(.t-action--small) {
+                        font-size: 14px;
+                    }
+                }
+            }
+            
+            :global(.vtex_my-authentication_box_container) {
+                :global(.vtex_my-authentication_box_content) {
+                    padding-right: 0;
+
+                    :global(.vtex_my-authentication_box_footer) {
+                        text-align: center;
+                        padding-right: 0;
+                        :global(.vtex-button) {
+                            width: 100%;
+                        }
+
+                    }
+                    :global(.vtex_my-authentication_currPassInput_container),
+                    :global(.vtex_my-authentication_newPassInput_container) {
+                        :global(.vtex-input-prefix__group) {
+                            border: 1px solid #DFDFDF;
+                        }
+                    }
+                }
+                :global(.vtex_my-authentication_box_footer) {
+                    text-align: center;
+                    padding-right: 0;
+                    :global(.vtex-button) {
+                        width: 100%;
+                        background-color: #291660;
+                    }
+                    :global(.vtex-button.bg-disabled) {
+                        background-color: #8E8E8E;
+                    }
+                }
+            }
+        }
+        :global(.vtex-my-authentication-1-x-authenticationScreen_container) {
+            padding-left: 0;
+        }
+        :global(.vtex_my-authentication_savePassButton_container) {
+            margin: 0;
+        }
+        
+    }
+    :global(.bg-disabled) {
+        background-color: #8E8E8E;
+    }
+
+    :global(.hover-b-action-primary) {
+        border-color: #1B0E41;
+    }
+
+    :global(.hover-b--muted-3) {
+        border-color: #8E8E8E;
     }
 }
