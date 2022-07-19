@@ -3266,6 +3266,8 @@ body {
     height: 60px;
   }
   
+@media screen and (min-width: 760px) {
+
   .footer-container {
     width: auto;
     display: flex;
@@ -3292,22 +3294,7 @@ body {
     align-content: center;
     justify-content: flex-start;
     height: 70px;
-  }
-  
-  .footer-upper-text {
-    font-size: 20px;
-    color: #FFFFFF;
-    line-height: 24px;
-    margin-block: auto;
-  }
-  
-  .footer-lock-icon {
-  width: 20px;
-  height: 22px;
-  margin-left: 20px;
-  margin-right: 36px;
-  margin-block: auto;
-  }
+}
   
   .footer-card {
     width: 58px;
@@ -3322,8 +3309,8 @@ body {
     display: flex;
     justify-content: center;
     background: #17171B;
-  }
-  
+}
+
   .footer-content-lower {
     height: 45px;
     max-width: 1440px;
@@ -3334,18 +3321,84 @@ body {
     padding-left: 65px;
     padding-right: 76px;
   }
-  
-  .footer-info {
+
+ .footer-info {
     margin-block: auto;
+  }
+
+}
+
+ .footer-info {
     font-size: 13px;
     line-height: 15px;
     color: #FFFFFF;
   }
-  
-  .footer-vtex-logo {
+
+.footer-vtex-logo {
     margin-top: 12.5px;
     height: 20px;
+    width: 56px;
   }
+
+  .footer-upper-text {
+     font-size: 20px;
+     color: #FFFFFF;
+     line-height: 24px;
+     margin-block: auto;
+  }
+
+.footer-lock-icon {
+   width: 20px;
+   height: 22px;
+   margin-left: 20px;
+  margin-right: 36px;
+  margin-block: auto;
+  }
+
+ @media screen and (max-width: 760px) {
+      .footer-container-lower {
+         height: 115px;
+         background: #17171B;
+     }
+       .footer-content-lower {
+          height: 105px;
+          padding: 10px 14px 0px 16px;
+          display: flex;
+          flex-direction: column;
+      }
+
+     .footer-info {
+        margin: 0;
+      }
+
+    .footer-container-upper {
+      height: 161px;
+      background: #292F33;
+      display: flex;
+      justify-content: center;
+    }
+
+    .footer-content-upper {
+      padding: 15px 0px 15px 16px;
+      box-sizing: border-box;
+      height: 161px;
+    }
+
+    .footer-card-list {
+        padding-top: 15px;
+    }
+
+    .footer-card {
+      margin-bottom: 10px;
+      margin-right: 6px;
+    }
+
+  }
+  
+
+ 
+  
+
 
 .footer {
   text-align: center; }
@@ -4371,9 +4424,6 @@ p.ship-receiverName {
   display: none !important; }
 
 @media screen and (max-width: 46rem) {
-  .header-container {
-    margin: 14px 16px 17px !important;
-    padding-bottom: 14px !important; }
   .summary-template-holder .cart-links-bottom {
     position: inherit !important; }
   .body-cart-vertical .cart-template.full-cart.active .totalizers.summary-totalizers.cart-totalizers {
