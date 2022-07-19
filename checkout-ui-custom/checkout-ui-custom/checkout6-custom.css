@@ -1199,8 +1199,8 @@ h1#cart-title {
     display: flex;
     align-items: center;
     padding: 0;
-    border-radius: 4px;
-    border: 1px solid #8b8b8b !important;
+    border-radius: 3px !important;
+    border: 1.5px solid #DFDFDF !important;
     float: left; }
     .table.cart-items td.quantity input {
       margin: 0;
@@ -1306,7 +1306,14 @@ h1#cart-title {
         border: 1px solid #8E8E8E;
         opacity: 0.8;
         border-radius: 3px;
-        padding: 12px 19px;
+        padding: 6px 19px;
+      }
+      .summary-template-holder .summary-coupon p.coupon-fields span.info::before {
+        content: "Codice promozionale valido";
+        position: absolute;
+        font-size: 10px;
+        top: 40px;
+        color: #27AD18;
       }
         .summary-template-holder .summary-coupon p.coupon-fields span.info > span {
           text-align: left;
@@ -2327,6 +2334,7 @@ svg.pkpmodal-pickup-point-best-marker-image path:not([fill="white"]) {
       position: relative !important;
       max-width: 100%;
       width: 100% !important;
+      margin-top:40px;
       top: 0;
       min-height: initial; }
       @media (min-width: 769px) {
@@ -2462,7 +2470,7 @@ svg.pkpmodal-pickup-point-best-marker-image path:not([fill="white"]) {
         color: #1a73e8; }
     .orderform-template .cart-template.mini-cart .cart {
       margin-bottom: 0;
-      max-height: calc(100vh - 355px);
+      max-height:80px;
       overflow: auto; }
       .orderform-template .cart-template.mini-cart .cart::-webkit-scrollbar {
         width: 6px; }
@@ -3196,7 +3204,7 @@ body.js-vcustom-hideEmailStep .client-pre-email + .client-profile-data .accordio
 
 .orderform-template .cart-template.mini-cart .cart-fixed {
   padding: 17px 24px 24px !important;
-  border: 1px solid #DDDDDD !important;
+  border: 1px solid #8E8E8E !important;
   box-sizing: border-box !important;
   border-radius: 8px !important;
   position: initial !important; }
@@ -3503,7 +3511,7 @@ body {
 }
 
 .table.cart-items tbody tr {
-  border: 1px solid #8E8E8E !important;
+  border: 1px solid #DFDFDF !important;
   border-radius: 3px;
   margin-bottom: 16px; }
 
@@ -3551,8 +3559,8 @@ body {
   border: none !important;
   height: 34px !important; }
 
-.table.cart-items td.quantity .item-quantity-change.item-quantity-change-decrement i:before {
-  content: url(/arquivos/trash-counter.png) !important; }
+/* .table.cart-items td.quantity .item-quantity-change.item-quantity-change-decrement i:before {
+  content: url(/arquivos/trash-counter.png) !important; } */
 
 .table.cart-items i.icon.icon-remove.item-remove-ico:before {
   content: url(/arquivos/trash.png) !important; }
@@ -3825,10 +3833,10 @@ body {
 .cart-more-options .srp-container .ship-postalCode input#ship-postalCode {
   width: 240px;
   background: #fff;
-  border: 2px solid #E30613 !important;
+  border: 1.5px solid #8E8E8E!important;
   box-sizing: border-box !important;
-  border-radius: 8px !important;
-  color: #E30613 !important;
+  border-radius: 3px !important;
+  color: #332C32 !important;
   padding: 12px 24px !important; }
 
 #cart-shipping-calculate {
@@ -3836,10 +3844,10 @@ body {
   font-weight: 500 !important;
   font-size: 0px !important;
   position: absolute !important;
-  color: #E30613 !important;
-  left: 160px !important;
+  color: #332C32 !important;
+  left: 150px !important;
   top: 50%;
-  transform: translateY(-55%); }
+  transform: translateY(-11%); }
 
 #cart-shipping-calculate:hover {
   background: transparent !important; }
@@ -3850,7 +3858,7 @@ body {
 
 #cart-shipping-calculate:before {
   content: 'Consultar';
-  font-size: 12px; }
+  font-size: 15px; }
 
 .srp-data {
   margin: 0 !important; }
@@ -3975,14 +3983,15 @@ body {
   margin-bottom: 16px !important; }
 
 .accordion-toggle-active > span::before {
-  background: #FFD8DA !important;
-  border-color: #FFD8DA !important;
-  color: #E30613 !important; }
+     background: #291660 !important;
+    border-color: #291660 !important;
+    color: #ffff !important;
+   }
 
 body.v-custom-step-profile .client-pre-email.active h3.client-pre-email-h span:before, body.v-custom-step-shipping .client-pre-email.active h3.client-pre-email-h span:before, body.v-custom-step-shipping .client-profile-data.active .accordion-toggle > span:before, body.v-custom-step-payment .client-pre-email.active h3.client-pre-email-h span:before, body.v-custom-step-payment .client-profile-data.active .accordion-toggle > span:before, body.v-custom-step-payment .shipping-data.active .accordion-toggle:before, body.v-custom-step-email .client-pre-email.active h3.client-pre-email-h span:before, body.v-custom-step-profile .client-profile-data.active .accordion-toggle > span:before, body.v-custom-step-shipping .shipping-data.active .accordion-toggle:before, body.v-custom-step-payment .payment-data.active .accordion-toggle > span:not(.payment-edit-link):before, body.js-vcustom-hideEmailStep .client-profile-data.active .accordion-toggle > span:before {
-  background: #FFD8DA !important;
-  border-color: #FFD8DA !important;
-  color: #E30613 !important; }
+  background: #291660 !important;
+    border-color: #291660 !important;
+    color: #ffff !important; }
 
 .payment-data .accordion-toggle > span:not(.payment-edit-link):before {
   background: #DDDDDD;
@@ -4009,7 +4018,7 @@ body.v-custom-step-profile .client-pre-email h3.client-pre-email-h span:before, 
   padding: 24px; }
 
 .step.client-profile-data.active .box-step .form-step[style*="display: block"], .orderform-template-holder #shipping-data .accordion-inner .box-step .vtex-omnishipping-1-x-addressFormPart1 {
-  border-top: 1px solid #f2f2f2 !important;
+  border-top: 1px solid #8E8E8E !important;
   margin-top: 17px; }
 
 .orderform-template-holder .step .input.text label {
@@ -4017,7 +4026,7 @@ body.v-custom-step-profile .client-pre-email h3.client-pre-email-h span:before, 
 
 .vcustom--vtex-omnishipping-1-x-address input, #app-container input[type=text], #app-container input[type=tel], #app-container input[type=email], #app-container select, .orderform-template .summary-note .note-textarea, .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-addressFormPart1.vtex-omnishipping-1-x-geolocation input, .orderform-template-holder #client-profile-data form.client-pre-email input[type=text]:not(.pac-target-input), .orderform-template-holder #client-profile-data form.client-pre-email input[type=tel]:not(.pac-target-input), .orderform-template-holder #client-profile-data form.client-pre-email input[type=email]:not(.pac-target-input), .orderform-template-holder #client-profile-data form.client-pre-email select:not(.pac-target-input), .orderform-template-holder #client-profile-data .step.client-profile-data input[type=text]:not(.pac-target-input), .orderform-template-holder #client-profile-data .step.client-profile-data input[type=tel]:not(.pac-target-input), .orderform-template-holder #client-profile-data .step.client-profile-data input[type=email]:not(.pac-target-input), .orderform-template-holder #client-profile-data .step.client-profile-data select:not(.pac-target-input), .orderform-template-holder #shipping-data input[type=text]:not(.pac-target-input), .orderform-template-holder #shipping-data input[type=tel]:not(.pac-target-input), .orderform-template-holder #shipping-data input[type=email]:not(.pac-target-input), .orderform-template-holder #shipping-data select:not(.pac-target-input), .orderform-template-holder #payment-data input[type=text]:not(.pac-target-input), .orderform-template-holder #payment-data input[type=tel]:not(.pac-target-input), .orderform-template-holder #payment-data input[type=email]:not(.pac-target-input), .orderform-template-holder #payment-data select:not(.pac-target-input), .cart-more-options .srp-container .vtex-shipping-preview-0-x-addressFormPart1.vtex-shipping-preview-0-x-geolocation input, .cart-more-options .srp-container select, .cart-more-options .srp-container input[type=text]:not(.pac-target-input), .summary-template-holder .summary-coupon fieldset.coupon-fieldset input[type=text], .summary-template-holder .summary-coupon fieldset.coupon-fieldset button[type=submit], .table.cart-items tbody tr td .product-service select, .table.cart-items tr.item-attachments-content input, .table.cart-items tr.item-attachments-content select, #vtexIdContainer input {
   border: 2px solid #CCCCCC !important;
-  border-radius: 8px !important;
+  border-radius: 3px !important;
   font-size: 16px !important; }
 
 .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-addressSummaryActive .address-summary {
@@ -4040,7 +4049,7 @@ body.v-custom-step-profile .client-pre-email h3.client-pre-email-h span:before, 
     .client-pre-email .pre-email .client-email .btn-success span {
       font-size: 0; }
       .client-pre-email .pre-email .client-email .btn-success span::before {
-        content: "Avan\E7  ar";
+        content: "Avançar";
         font-size: 16px !important; }
   .client-pre-email .pre-email .client-email .help {
     display: none !important; }
@@ -4072,13 +4081,15 @@ body.v-custom-step-profile .client-profile-data.active .accordion-toggle > span:
   position: absolute; }
 
 body.v-custom-step-payment .client-profile-data .accordion-toggle > span:after {
-  content: "Informa\E7\F5  es de contato";
-  font-size: 20px !important;
+  content: "Informações de contato";
+  font-size: 24px !important;
+  line-height: 28px;
   position: absolute; }
 
 .client-profile-data .accordion-toggle > span:after {
-  content: "Informa\E7\F5  es de contato";
-  font-size: 20px !important;
+  content: "Informações de contato";
+  font-size: 24px !important;
+  line-height: 28px;
   position: absolute; }
 
 .orderform-template-holder #shipping-data .accordion-toggle {
@@ -4104,12 +4115,13 @@ body.v-custom-step-payment .client-profile-data .accordion-toggle > span:after {
 
 .form-step .box-client-info .newsletter #opt-in-newsletter {
   margin-top: 10px;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   margin-right: 10px; }
   .form-step .box-client-info .newsletter #opt-in-newsletter:checked::before {
-    content: "";
-    background: #E30613; }
+    content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='24px' height='24px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EEF9DB415-04D4-4760-93EC-85CD27811887%3C/title%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='D/-7-Cart-&amp;-Checkout-flow-components' transform='translate(-662.000000, -1438.000000)'%3E%3Cg id='icn' transform='translate(662.000000, 1438.000000)'%3E%3Crect id='Rectangle-Copy' stroke='%23291660' fill='%23291660' x='0.5' y='0.5' width='19' height='19' rx='2'%3E%3C/rect%3E%3Cg id='check' transform='translate(4.000000, 6.000000)' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5'%3E%3Cpolyline id='Path-Copy' points='12 0 3.75 8 0 4.36363636'%3E%3C/polyline%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    width: 24px;
+    height: 24px; }
 
 .form-step .box-client-info .newsletter .newsletter-text {
   font-size: 0; }
@@ -4124,7 +4136,7 @@ body.v-custom-step-payment .client-profile-data .accordion-toggle > span:after {
 .form-step .submit.btn-submit-wrapper #go-to-shipping {
   font-size: 0 !important; }
   .form-step .submit.btn-submit-wrapper #go-to-shipping::before {
-    content: "Avan\E7  ar";
+    content: "Avançar";
     font-size: 16px !important; }
 
 .vtex-omnishipping-1-x-addressForm .vtex-omnishipping-1-x-shippingSectionTitle {
@@ -4206,7 +4218,7 @@ p.ship-receiverName {
       color: #fff; }
 
 .orderform-template-holder #client-profile-data .step.client-profile-data {
-  border-radius: 8px !important; }
+  border-radius: 3px !important; }
 
 .box-step .form-step.box-info {
   border-top: 1px solid #f2f2f2;
@@ -4461,7 +4473,7 @@ p.ship-receiverName {
     height: fit-content; }
   .summary-template-holder .cart-links-bottom .btn-success {
     padding: 13px 0 8px !important;
-    border-radius: 8px !important; }
+    border-radius: 3px !important; }
   .table.cart-items tbody tr {
     border: 1px solid #DDDDDD !important;
     border-top: 1px solid #DDDDDD !important;
