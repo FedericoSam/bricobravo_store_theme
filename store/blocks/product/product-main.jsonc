@@ -2,7 +2,7 @@
   "flex-layout.row#productMain": {
     "children": [
       "slider-layout#productMain-image",
-      "flex-layout.col#productMain-infos"
+      "flex-layout.col#product-main-infos"
     ],
     "props": {
       "blockClass": "productMain-content"
@@ -31,23 +31,23 @@
     }
   },
   // INFOS
-  "flex-layout.col#productMain-infos": {
-    "children": [
-      "flex-layout.row#product-name",
-      "product-identifier.product",
-      "product-description",
-      "flex-layout.row#sku-selector",
-      "flex-layout.row#product-price",
-      "condition-layout.product#availability"
-    ],
-    "props": {
-      "blockClass": "productMain-infos",
-      "width": "40%",
-      "preventVerticalStretch": true
-    }
-  },
+  // "flex-layout.col#product-main-infos": {
+  //   "children": [
+  //     "flex-layout.row#product-name",
+  //     "product-identifier.product",
+  //     "product-description",
+  //     "flex-layout.row#sku-selector",
+  //     "flex-layout.row#product-price",
+  //     "condition-layout.product#availability"
+  //   ],
+  //   "props": {
+  //     "blockClass": "product-main-infos",
+  //     "width": "40%",
+  //     "preventVerticalStretch": true
+  //   }
+  // },
   "flex-layout.row#product-name": {
-    "children": ["vtex.store-components:product-name#product-page"],
+    "children": ["vtex.store-components:product-name#pdp"],
     "props": {
       "blockClass": ["product-name"],
       "paddingTop": {
@@ -125,21 +125,19 @@
     "children": [
       "flex-layout.col#productMain-top",
       "slider-layout#productMain-image",
-      "flex-layout.col#productMain-infosMobile"
+      "flex-layout.col#product-main-infosMobile"
     ],
     "props": {
       "blockClass": "productMain-content"
     }
   },
   "flex-layout.col#productMain-top": {
-    "children": [
-      "flex-layout.row#breadcrumb"
-    ],
+    "children": ["flex-layout.row#breadcrumb"],
     "props": {
       "blockClass": "productMain-top"
     }
   },
-  "flex-layout.col#productMain-infosMobile": {
+  "flex-layout.col#product-main-infosMobile": {
     "children": [
       "flex-layout.row#product-name",
       "product-identifier.product",
@@ -148,7 +146,7 @@
       "condition-layout.product#availability"
     ],
     "props": {
-      "blockClass": "productMain-infos",
+      "blockClass": "product-main-infos",
       "preventVerticalStretch": true
     }
   }
