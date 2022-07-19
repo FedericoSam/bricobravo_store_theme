@@ -1181,7 +1181,7 @@ h1#cart-title {
     margin-right: 20px; }
   .table.cart-items td.product-image a,
   .table.cart-items td.product-image img {
-    width: 100px;
+    width: 110px;
     display: block;
     max-width: initial;
     height: auto; }
@@ -1200,7 +1200,7 @@ h1#cart-title {
     align-items: center;
     padding: 0;
     border-radius: 4px;
-    border: 1px solid #cbcbcb;
+    border: 1px solid #8b8b8b !important;
     float: left; }
     .table.cart-items td.quantity input {
       margin: 0;
@@ -2658,6 +2658,7 @@ body.js-vcustom-showNoteField .orderform-template .summary-note {
 body.js-vcustom-showNoteField.v-custom-step-payment .orderform-template .payment-confirmation-wrap .payment-submit-wrap {
   display: block !important; }
 
+
 .summary-coupon fieldset.coupon-fieldset .vcustom-showCustomMsgCoupon {
   border: 1px dashed #ffb100;
   padding: 1px;
@@ -3211,12 +3212,12 @@ body.js-vcustom-hideEmailStep .client-pre-email + .client-profile-data .accordio
   font-size: 16px !important; }
 
 .btn-success {
-  background: #E30613 !important;
+  background: #291660!important;
   border: none !important;
-  border-radius: 8px !important; }
+  border-radius: 3px !important; }
 
 .btn-success:hover {
-  background: #b9141f !important;
+  background: #1B0E41 !important;
   border: none !important; }
 
 .orderform-template .cart-template.mini-cart h2, .orderform-template-holder #client-profile-data form.client-pre-email .accordion-toggle, .orderform-template-holder #client-profile-data .step.client-profile-data .accordion-toggle, .orderform-template-holder #shipping-data .accordion-toggle, .orderform-template-holder #payment-data .accordion-toggle, .client-pre-email h3.client-pre-email-h span:after, .cart-more-options .srp-container .srp-main-title {
@@ -3321,7 +3322,10 @@ body {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
-  font-size: 16px; }
+  line-height: 28px;
+  font-size: 24px;
+  color:#332C32;
+}
 
 .table.cart-items thead tr th.quantity {
   font-size: 0px;
@@ -3333,17 +3337,21 @@ body {
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
-  position: absolute; }
+  position: absolute;
+  color:#332C32;
+ }
 
 .table.cart-items thead tr th.product-price, .table.cart-items thead tr th.quantity-price {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
-  font-size: 16px; }
+  font-size: 16px;
+  color:#332C32;
+}
 
 .table.cart-items tbody tr {
-  border: 1px solid #DDDDDD !important;
-  border-radius: 8px;
+  border: 1px solid #8E8E8E !important;
+  border-radius: 3px;
   margin-bottom: 16px; }
 
 .table.cart-items tbody tr:last-child {
@@ -3401,7 +3409,7 @@ body {
   margin-top: 12px; }
 
 .summary-template-holder .summary-coupon-wrap::after {
-  content: "Apenas 1 c\F3  digo pode ser aplicado por pedido";
+  content: "Apenas 1 codigo pode ser aplicado por pedido";
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -3473,23 +3481,37 @@ body {
   max-width: 328px;
   height: 48px !important;
   width: 100%;
-  border: 2px solid #CCCCCC !important;
-  border-radius: 8px !important;
-  padding: 12px 48px 12px 16px !important; }
+  border: 1px solid #DFDFDF !important;
+  opacity: 0.8;
+  border-radius: 3px !important;
+  padding: 12px 48px 12px 16px !important; 
+}
 
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset .focus-visible {
+  max-width: 328px;
+  height: 48px !important;
+  width: 100%;
+  border: 1px solid #8E8E8E !important;
+  border-radius: 3px !important;
+  padding: 12px 48px 12px 16px !important; 
+}
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset #cart-coupon::placeholder{
+  color: #878787;
+  font-size: 15px;
+} 
 .summary-template-holder .summary-coupon fieldset.coupon-fieldset #cart-coupon-add {
   position: absolute;
   right: 0px;
   font-size: 0 !important;
   border: 0 !important;
   top: 55%;
-  transform: translate(-50%, -50%); }
+  transform: translate(2%, -50%); }
 
 .summary-template-holder .summary-coupon fieldset.coupon-fieldset #cart-coupon-add:hover {
   background: transparent !important; }
 
 .summary-template-holder .summary-coupon fieldset.coupon-fieldset #cart-coupon-add::before {
-  content: url(/arquivos/icon-cupom.png);
+  content: url(/arquivos/arrow_right.svg);
   font-size: 28px; }
 
 .summary-template-holder .summary-coupon p.coupon-fields span {
@@ -3497,13 +3519,20 @@ body {
 
 .summary-template-holder span.link-choose-more-products-wrapper {
   display: block !important;
-  border-radius: 8px;
   padding: 12px 19px;
-  transition: .2s ease-in-out;
-  border: 2px solid #fff; }
+  color: #291660;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 16px;
+  border: 1.5px solid #291660;
+  border-radius: 2px; }
 
 .summary-template-holder span.link-choose-more-products-wrapper:hover {
-  border: 2px solid #111111; }
+  color:#1B0E41;
+  border: 1.5px solid #1B0E41;
+  border-radius: 2px;
+}
 
 .btn-large, .client-pre-email .client-email.input.text .btn-success, .client-pre-email .client-email.input.text .btn-success {
   padding: 13.5px 19px 9.5px !important; }
@@ -3535,11 +3564,11 @@ body {
   text-align: center; }
 
 .link-choose-more-products-wrapper a {
-  color: #000; }
+  color: #291660; }
 
 .link-choose-more-products-wrapper a:hover {
   text-decoration: none;
-  color: #423f3f; }
+  color: #1B0E41; }
 
 .summary-template-holder .cart-links-bottom .btn, .summary-template-holder .cart-links-bottom .summary-coupon fieldset.coupon-fieldset .coupon-data a, .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data .cart-links-bottom a, .summary-template-holder .cart-links-bottom .orderform-template-holder #payment-data .payment-discounts-list table td.action a, .orderform-template-holder #payment-data .payment-discounts-list table td.action .summary-template-holder .cart-links-bottom a, .summary-template-holder .cart-links-bottom .orderform-template-holder #payment-data .payment-discounts-list table td.action a, .orderform-template-holder #payment-data .payment-discounts-list table td.action .summary-template-holder .cart-links-bottom a, .summary-template-holder .cart-links-bottom .summary-coupon fieldset.coupon-fieldset .coupon-data a, .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data .cart-links-bottom a {
   width: 100%;
@@ -3559,9 +3588,9 @@ body {
 
 .summary-template-holder .accordion-inner {
   margin-top: 55px;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #8B8B8B;
   box-sizing: border-box;
-  border-radius: 8px;
+  border-radius: 3px;
   padding: 16px; }
 
 .summary-template-holder tbody td {
@@ -3604,10 +3633,10 @@ body {
 
 #shipping-calculate-link {
   background: #fff;
-  border: 2px solid #E30613;
+  border: 1.5px solid #5A40A4;
   box-sizing: border-box;
-  border-radius: 8px;
-  color: #E30613;
+  border-radius: 2px;
+  color: #291660;
   padding: 12px 24px;
   text-transform: capitalize;
   font-style: normal;
@@ -3616,8 +3645,9 @@ body {
   transition: .2s ease-in-out; }
 
 #shipping-calculate-link:hover {
-  background: #E30613;
-  color: #fff; }
+  color: #1B0E41;
+  border: 1.5px solid #1B0E41;
+}
 
 #shipping-calculate-link:before {
   content: "Consultar";
