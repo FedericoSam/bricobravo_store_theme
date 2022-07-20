@@ -5,7 +5,25 @@
     }
 }
 
+:global(.vtex-radioGroup__radioLabel) {
+    max-width: 400px;
+}
+
+:global(.mt5) {
+    :global(.vtex-button.b--transparent.c-action-primary) {
+        text-transform: capitalize;
+        color: #291660;
+
+        &:hover {
+            background: none;
+            color: #1B0E41;
+        }
+    }
+}
+
 :global(.vtex-account) {
+    
+
     .menu {
         padding-left: 0;
         .menuLinks {
@@ -146,13 +164,50 @@
 
     .addressCreate {
         padding: 0;
+        :global(.flex-auto) {
+            max-width: 870px;
+        }
         
         .boxContainer {
             border: none;
-            max-width: 394px;
+            max-width: 870px;
             :global(.vtex-my-account-1-x-boxContainerBody) {
                 padding-right: 0;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+                width: 100%;
             }
+
+            :global(.vtex-address-form__country),
+            :global(.vtex-address-form__postalCode) {
+                width: 45%;
+            }
+            
+            :global(.vtex-address-form__container) {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0 15px;
+            }
+
+            :global(.vtex-address-form__street),
+            :global(.vtex-address-form__receiverName) {
+                width: 40%;
+            }
+
+            :global(.vtex-address-form__number) {
+                width: 20%;
+            }
+
+            :global(.vtex-address-form__complement) {
+                width: 28%;
+            }
+
+            :global(.vtex-address-form__city),
+            :global(.vtex-address-form__state) {
+                width: 24%;
+            }
+
             :global(.c-on-disabled) {
                 background-color: #8E8E8E;
                 height: 40px;
@@ -174,9 +229,55 @@
 
     .addressEdit {
         padding: 0;
-        
+        :global(.flex-auto) {
+            max-width: 870px;
+        }
         .boxContainer {
             border: none;
+            max-width: 870px;
+            .boxContainerBody {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+
+                :global(.vtex-address-form__country), 
+                :global(.vtex-address-form__postalCode) {
+                    width: 45%;
+                }
+                :global(.address-summary-ITA) {
+                    margin-right: 138px
+                }
+                :global(.vtex-address-form__container) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 15px;
+                    
+                    :global(.vtex-address-form__street),
+                    :global(.vtex-address-form__receiverName) {
+                        width: 40%;
+                    }
+
+                    :global(.vtex-address-form__number) {
+                        width: 20%;
+                    }
+
+                    :global(.vtex-address-form__complement) {
+                        width: 28%;
+                    }
+
+                    :global(.vtex-address-form__city),
+                    :global(.vtex-address-form__state) {
+                        width: 24%;
+                    }
+                }
+                :global(.vtex-button) {
+                    max-width: 360px;
+                }
+
+                :global(.mt5) {
+                    width: 100%;
+                }
+            }
         }
     }
 
@@ -373,7 +474,9 @@
             }
         }
 
-        :global(.vtex-account__create-card) { 
+        :global(.vtex-account__create-card) {  
+            padding-left: 2rem;
+
             :global(.vtex-input-prefix__group) {
                 border-radius: 8px;
             }
@@ -424,7 +527,90 @@
             }
         }
     }
+    
+    :global(.wish-list) {
+        :global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf) {
+            align-items: flex-start;
+            padding-top: 10px;
 
+            :global(.vtex-product-summary-2-x-element) {
+                padding: 0 5px 5px;
+            }
+            
+            :global(.vtex-product-summary-2-x-containerNormal) {
+                max-width: 332px!important;
+                height: 360px;
+                position: relative;
+                border: none;
+                border-radius: 2px;
+                box-shadow: 0 0 0.4em rgba(0,0,0,0.3);
+                transition: all 0.4s ease;
+                &:hover{
+                    height: 470px;
+                    transition: all 0.3s ease;
+                }
+                :global(.vtex-store-components-3-x-priceContainer) {
+                    height: 40px;
+                    justify-content: end;
+                    :global(.vtex-store-components-3-x-sellingPrice) {
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #332C32;
+                        padding-bottom: 10px;
+                    }
+                    :global(.vtex-store-components-3-x-listPriceLabel) {
+                        display: none;
+                    }
+                }
+                
+                :global(.vtex-product-price-1-x-installments--productMain-installments) {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #4320AB;
+                    text-align: center;
+                    margin-bottom: 0;
+                    margin-top: 1rem;
+                }
+                :global(.vtex-product-summary-2-x-nameContainer) {
+                    justify-content: center;
+                    padding-top: 0;
+                    padding-bottom: 2rem;
+
+                    :global(.vtex-product-summary-2-x-brandName) {
+                        width: 100%;
+                        text-align: center;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #332c32;
+                        padding-bottom: 10px;
+                        margin-bottom: 15px;
+                    }
+                }
+                :global(.vtex-button.bg-action-primary) {
+                    color: #4320A8;
+                    border-radius: 4px;
+                    border: 1px solid #4320A8;
+                    margin-top: 0.5rem;
+                    transition: all 0.3s ease;
+                    min-height: 48px;
+                    text-transform: uppercase;
+                    background-color: transparent;
+                    &:hover {
+                        background: #4320A8!important;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        
+    }
 
     @media screen and (max-width: 48rem) {
         .menu {
@@ -470,10 +656,29 @@
         }
 
         .addressCreate {
-            .boxContainerBody {
-                :global(.vtex-button) {
-                    width: 100% !important;
+             .boxContainer {
+                 .boxContainerBody {
+                    padding: 1rem;
+                    display: block !important;
+                    :global(.vtex-button) {
+                        width: 100% !important;
+                    }
+                 }
+    
+                :global(.vtex-address-form__country),
+                :global(.vtex-address-form__postalCode),
+                :global(.vtex-address-form__street),
+                :global(.vtex-address-form__receiverName),
+                :global(.vtex-address-form__number),
+                :global(.vtex-address-form__complement),
+                :global(.vtex-address-form__city),
+                :global(.vtex-address-form__state) {
+                     width: 100% !important;
                 }
+                
+                :global(.vtex-address-form__container) {
+                    display: block !important;
+                }              
             }
         }
 
@@ -500,7 +705,27 @@
         
         .addressEdit {
             .boxContainerBody {
+                display: block !important;
                 padding: 1.5rem 1rem;
+
+                :global(.vtex-address-form__country), 
+                :global(.vtex-address-form__postalCode),
+                :global(.vtex-address-form__street),
+                :global(.vtex-address-form__receiverName),
+                :global(.vtex-address-form__number),
+                :global(.vtex-address-form__complement),
+                :global(.vtex-address-form__city),
+                :global(.vtex-address-form__state) {
+                    width: 100% !important;
+                }
+                :global(.address-summary-ITA) {
+                    margin-right: 0;
+                }
+
+                :global(.vtex-address-form__container) {
+                    display: block !important;
+                }
+
                 :global(.vtex-button) {
                     width: 100% !important;
                 }
@@ -613,6 +838,34 @@
         }
         :global(.vtex_my-authentication_savePassButton_container) {
             margin: 0;
+        }
+
+        :global(.wish-list) {
+            :global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf) {
+                :global(.vtex-product-summary-2-x-containerNormal) {
+                    &:hover {
+                        height: 360px !important;
+                        border: 1px solid red;
+                    }
+                }
+            }
+
+            :global(.vtex-flex-layout-0-x-flexColChild--specificationNameCol [data-specification-name="Premium"]),
+            :global(.vtex-flex-layout-0-x-flexColChild--specificationNameCol [data-specification-name="Spedizione gratuita"]) {
+                &::after {
+                    top: -73px;
+                    left: 66px;
+                }
+            }
+
+            :global(.vtex-product-summary-2-x-priceContainer) {
+                align-items: start;
+                :global(.vtex-product-summary-2-x-price_sellingPrice) {
+                    :global(.vtex-product-summary-2-x-currencyContainer) {
+                        font-size: 15px;
+                    }
+                }
+            }
         }
         
     }
