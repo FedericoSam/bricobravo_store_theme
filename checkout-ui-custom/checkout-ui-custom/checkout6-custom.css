@@ -1,5 +1,26 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700);
 
+@font-face {
+  font-family: "Roboto";
+  src: url("https://bricobravo.vteximg.com.br/arquivos/Roboto-Regular.ttf.css") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+ src: url("https://bricobravo.vteximg.com.br/arquivos/Roboto-Medium.ttf.css") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("https://bricobravo.vteximg.com.br/arquivos/Roboto-Bold.ttf.css") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+} 
+* {
+  font-family: 'Roboto',sans-serif;
+}
 input, select, button {
   outline: none !important; }
 
@@ -4193,7 +4214,7 @@ p.ship-receiverName {
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
-      color: #E30613; }
+      color: #5A40A4; }
     .shipping-container .box-step.box-info .vtex-omnishipping-1-x-SummaryItemGroup .vtex-omnishipping-1-x-SummaryItemInfo {
       border: none; }
       .shipping-container .box-step.box-info .vtex-omnishipping-1-x-SummaryItemGroup .vtex-omnishipping-1-x-SummaryItemInfo .vtex-omnishipping-1-x-SummaryItemPrice {
@@ -4204,22 +4225,21 @@ p.ship-receiverName {
         color: #E30613; }
   .shipping-container .box-step.box-info .link-change-shipping.vtex-omnishipping-1-x-summaryChange {
     background: #fff;
-    border: 2px solid #E30613;
+    border: 2px solid #1B0E41;
     box-sizing: border-box;
     border-radius: 8px;
     width: auto;
-    color: #E30613;
+    color: #1B0E41;
     padding: 13.5px 46px 9.5px;
     font-weight: 500;
     font-size: 0;
     transition: .2s ease-in-out;
     text-decoration: none; }
     .shipping-container .box-step.box-info .link-change-shipping.vtex-omnishipping-1-x-summaryChange::before {
-      content: "Editar op\E7\F5  es de envio";
+      content: "Editar opções de envio";
       font-size: 16px !important; }
     .shipping-container .box-step.box-info .link-change-shipping.vtex-omnishipping-1-x-summaryChange:hover {
-      background: #E30613;
-      color: #fff; }
+      color: #1B0E41; }
 
 .orderform-template-holder #client-profile-data .step.client-profile-data {
   border-radius: 3px !important; }
@@ -4292,13 +4312,16 @@ p.ship-receiverName {
     background: #fff !important;
     border: 2px solid #fff !important;
     transition: .2s ease-in-out !important;
-    border-radius: 8px !important;
+    border-radius: 3px !important;
     box-shadow: none !important;
     margin: 0 !important; }
     .payment-group-list-btn .payment-group-item:hover {
-      border: 2px solid #111111 !important; }
+      border:1.5px solid #1B0E41 ;
+      color:#1B0E41; }
     .payment-group-list-btn .payment-group-item.active {
-      border: 2px solid #E30613 !important; }
+      border: 1.5px solid #291660!important; 
+      color:#291660 !important;
+    }
 
 .payment-method .payment-group-item-cards {
   left: 50%;
