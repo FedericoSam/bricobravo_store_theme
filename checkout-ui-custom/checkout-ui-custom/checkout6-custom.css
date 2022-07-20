@@ -1061,10 +1061,10 @@ h1#cart-title {
         .table.cart-items tbody tr td.product-price {
           display: block !important; }
         .table.cart-items tbody tr td .field-help {
-          background: #1a73e8;
-          border-color: #1a73e8; }
+          background: #291660;
+          border-color: #291660; }
         .table.cart-items tbody tr td i.icon-question-sign {
-          color: #1a73e8; }
+          color: #291660; }
         .table.cart-items tbody tr td .add-item-attachment-container,
         .table.cart-items tbody tr td .clone-item,
         .table.cart-items tbody tr td p.clone-item-container {
@@ -2140,12 +2140,17 @@ svg.pkpmodal-pickup-point-best-marker-image path:not([fill="white"]) {
     .orderform-template-holder .step {
       width: 100%; } }
   .orderform-template-holder .step .box-info {
-    color: #323232; }
+    color: #332C32;
+    font-size: 14px;
+  }
     .orderform-template-holder .step .box-info[style*="display: block"] {
       margin-top: 10px; }
   .orderform-template-holder .step .form-step fieldset {
     width: 100%;
-    float: none; }
+    float: none; 
+    font-size: 18px;
+    color: #332C32;
+  }
     .orderform-template-holder .step .form-step fieldset p {
       position: relative; }
       @media (max-width: 690px) {
@@ -2351,8 +2356,8 @@ svg.pkpmodal-pickup-point-best-marker-image path:not([fill="white"]) {
       width: auto;
       height: 10px;
       display: inline-block;
-      background: #f1f7ff;
-      color: #1a73e8; }
+      background: #291660;
+      color: #fff; }
     .orderform-template .cart-template.mini-cart .summary-template-holder {
       width: 100%;
       background: none;
@@ -2741,11 +2746,11 @@ body.js-vcustom-showNoteField.v-custom-step-payment .orderform-template .payment
   background: #FFF;
   color: #323232;
   padding: 1px 4px;
-  border-radius: 4px;
+  border-radius: 3px !important;
   display: inline-block;
   align-items: center;
   font-size: 11px;
-  border: 1px solid #cbcbcb; }
+  border: 1.5px solid #DFDFDF; }
   .v-custom-addLabels-active-flag:before {
     content: "";
     display: inline-block;
@@ -3953,6 +3958,7 @@ body {
     color: #111111; }
 
 .summary-coupon fieldset.coupon-fieldset .vcustom-showCustomMsgCoupon {
+  display: none !important;
   border-radius: 0; }
 
 .v-custom-addLabels-active-flag {
@@ -3976,8 +3982,8 @@ body {
 #client-profile-data .client-profile-data,
 #shipping-data,
 #payment-data {
-  border: 2px solid #F2F2F2 !important;
-  border-radius: 8px !important;
+  border: 1.5px solid #DFDFDF !important;
+  border-radius: 3px !important;
   margin-bottom: 16px !important; }
 
 .accordion-toggle-active > span::before {
@@ -4023,9 +4029,9 @@ body.v-custom-step-profile .client-pre-email h3.client-pre-email-h span:before, 
   color: #111111; }
 
 .vcustom--vtex-omnishipping-1-x-address input, #app-container input[type=text], #app-container input[type=tel], #app-container input[type=email], #app-container select, .orderform-template .summary-note .note-textarea, .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-addressFormPart1.vtex-omnishipping-1-x-geolocation input, .orderform-template-holder #client-profile-data form.client-pre-email input[type=text]:not(.pac-target-input), .orderform-template-holder #client-profile-data form.client-pre-email input[type=tel]:not(.pac-target-input), .orderform-template-holder #client-profile-data form.client-pre-email input[type=email]:not(.pac-target-input), .orderform-template-holder #client-profile-data form.client-pre-email select:not(.pac-target-input), .orderform-template-holder #client-profile-data .step.client-profile-data input[type=text]:not(.pac-target-input), .orderform-template-holder #client-profile-data .step.client-profile-data input[type=tel]:not(.pac-target-input), .orderform-template-holder #client-profile-data .step.client-profile-data input[type=email]:not(.pac-target-input), .orderform-template-holder #client-profile-data .step.client-profile-data select:not(.pac-target-input), .orderform-template-holder #shipping-data input[type=text]:not(.pac-target-input), .orderform-template-holder #shipping-data input[type=tel]:not(.pac-target-input), .orderform-template-holder #shipping-data input[type=email]:not(.pac-target-input), .orderform-template-holder #shipping-data select:not(.pac-target-input), .orderform-template-holder #payment-data input[type=text]:not(.pac-target-input), .orderform-template-holder #payment-data input[type=tel]:not(.pac-target-input), .orderform-template-holder #payment-data input[type=email]:not(.pac-target-input), .orderform-template-holder #payment-data select:not(.pac-target-input), .cart-more-options .srp-container .vtex-shipping-preview-0-x-addressFormPart1.vtex-shipping-preview-0-x-geolocation input, .cart-more-options .srp-container select, .cart-more-options .srp-container input[type=text]:not(.pac-target-input), .summary-template-holder .summary-coupon fieldset.coupon-fieldset input[type=text], .summary-template-holder .summary-coupon fieldset.coupon-fieldset button[type=submit], .table.cart-items tbody tr td .product-service select, .table.cart-items tr.item-attachments-content input, .table.cart-items tr.item-attachments-content select, #vtexIdContainer input {
-  border: 2px solid #CCCCCC !important;
+  border: 1.5px solid #CCCCCC !important;
   border-radius: 3px !important;
-  font-size: 16px !important; }
+  font-size: 15px !important; }
 
 .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-addressSummaryActive .address-summary {
   background: none;
@@ -4230,7 +4236,7 @@ p.ship-receiverName {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #E30613; }
+  color: #291660; }
 
 .orderform-template-holder #client-profile-data .step.client-profile-data .link-box-edit {
   padding: inherit; }
@@ -4238,7 +4244,7 @@ p.ship-receiverName {
 .vtex-omnishipping-1-x-submitPaymentButton .btn-go-to-payment {
   font-size: 0 !important; }
   .vtex-omnishipping-1-x-submitPaymentButton .btn-go-to-payment::before {
-    content: "Avan\E7  ar";
+    content: "Avançar";
     font-weight: 600;
     font-size: 16px !important; }
 
@@ -4576,7 +4582,7 @@ span.error {
   white-space: nowrap; }
 
 .client-pre-email .pre-email .client-email .btn-success span::before {
-  content: "Avan\E7  ar" !important; }
+  content: "Avançar" !important; }
 
 .orderform-template-holder #payment-data .payment-group-item:first-child:nth-last-child(n + 4),
 .orderform-template-holder #payment-data .payment-group-item:first-child:nth-last-child(n + 4) ~ .payment-group-item {
