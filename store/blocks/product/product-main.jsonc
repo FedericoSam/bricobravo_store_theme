@@ -1,51 +1,28 @@
 {
   "flex-layout.row#productMain": {
     "children": [
-      "slider-layout#productMain-image",
+      "product-images#desktop",
       "flex-layout.col#product-main-infos"
     ],
     "props": {
       "blockClass": "productMain-content"
     }
   },
-  // IMAGE
-  "slider-layout#productMain-image": {
-    "children": ["product-images#desktop"],
-    "props": {
-      "itemsPerPage": 1,
-      "fullWidth": true,
-      "infinite": false,
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "productMain-image"
-    }
-  },
+
   "product-images#desktop": {
     "props": {
       "blockClass": "pdp",
-      "aspectRatio": "1:1",
-      "thumbnailAspectRatio": "1:1",
-      "showNavigationArrows": "desktopOnly",
+      "aspectRatio": "3:4",
+      "thumbnailAspectRatio": "3:4",
+      "thumbnailsOrientation": "horizontal",
+      "displayThumbnailsArrows": true,
+      "showNavigationArrows": false,
+      "showPaginationDots": false,
       "zoomMode": "disabled",
-      "thumbnailVisibility": "hidden",
-      "width": 300
+      "maxHeight": 400
     }
   },
-  // INFOS
-  // "flex-layout.col#product-main-infos": {
-  //   "children": [
-  //     "flex-layout.row#product-name",
-  //     "product-identifier.product",
-  //     "product-description",
-  //     "flex-layout.row#sku-selector",
-  //     "flex-layout.row#product-price",
-  //     "condition-layout.product#availability"
-  //   ],
-  //   "props": {
-  //     "blockClass": "product-main-infos",
-  //     "width": "40%",
-  //     "preventVerticalStretch": true
-  //   }
-  // },
+
   "flex-layout.row#product-name": {
     "children": ["vtex.store-components:product-name#pdp"],
     "props": {
@@ -113,18 +90,12 @@
       "preventVerticalStretch": true
     }
   },
-  // "product-quantity": {
-  //   "props": {
-  //     "warningQuantityThreshold": 9999999,
-  //     "showUnit": true
-  //   }
-  // },
 
   // Mobile
   "flex-layout.row#productMainMobile": {
     "children": [
       "flex-layout.col#productMain-top",
-      "slider-layout#productMain-image",
+      "product-images#desktop",
       "flex-layout.col#product-main-infosMobile"
     ],
     "props": {
