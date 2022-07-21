@@ -1,15 +1,14 @@
 {
   "footer-layout.mobile": {
     "children": [
+      "flex-layout.row#newsletter",
       "flex-layout.row#upperFooterMobile",
       "flex-layout.row#footerPaymentMethods",
       "flex-layout.row#bottomFooterDesktop"
     ]
   },
   "flex-layout.row#upperFooterMobile": {
-    "children": [
-      "flex-layout.col#upperFooterMobile"
-    ],
+    "children": ["flex-layout.col#upperFooterMobile"],
     "props": {
       "blockClass": "footer-upperFooterMobile"
     }
@@ -22,9 +21,7 @@
     ]
   },
   "flex-layout.row#upperFooterCol2Mobile": {
-    "children": [
-      "disclosure-layout#upperFooterCol2Mobile"
-    ],
+    "children": ["disclosure-layout#upperFooterCol2Mobile"],
     "props": {
       "blockClass": "footer-containerDisclosure"
     }
@@ -45,17 +42,13 @@
     }
   },
   "disclosure-content#upperFooterCol2Mobile": {
-    "children": [
-      "flex-layout.row#upperFooterLinksCol1"
-    ],
+    "children": ["flex-layout.row#upperFooterLinksCol1"],
     "props": {
       "blockClass": "footer-disclosureContent"
     }
   },
   "flex-layout.row#upperFooterCol1Mobile": {
-    "children": [
-      "disclosure-layout#upperFooterCol1Mobile"
-    ],
+    "children": ["disclosure-layout#upperFooterCol1Mobile"],
     "props": {
       "blockClass": "footer-containerDisclosure"
     }
@@ -76,9 +69,7 @@
     }
   },
   "disclosure-content#upperFooterCol1Mobile": {
-    "children": [
-      "flex-layout.col#upperFooterLinksCol2"
-    ],
+    "children": ["flex-layout.col#upperFooterLinksCol2"],
     "props": {
       "blockClass": "footer-disclosureContent"
     }
