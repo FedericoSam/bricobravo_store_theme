@@ -2,7 +2,6 @@
   "flex-layout.row#specification": {
     "children": ["flex-layout.col#specification"],
     "props": {
-      "text": "Especificações",
       "blockClass": "specBox"
     }
   },
@@ -50,10 +49,16 @@
     "children": ["product-specification-text#specification"]
   },
   "flex-layout.col#spec-value": {
-    "children": ["product-specification-values"]
+    "children": ["product-specification-values"],
+    "props": {
+      "blockClass": "specificationValueCol"
+    }
   },
   "product-specification-values": {
-    "children": ["product-specification-text#value"]
+    "children": ["product-specification-text#value"],
+    "props": {
+      "blockClass": "specificationValue"
+    }
   },
   "product-specification-text#specification": {
     "props": {
@@ -69,7 +74,7 @@
   },
   "rich-text#spec-title": {
     "props": {
-      "text": "Especificações",
+      "text": "Specifiche tecniche",
       "blockClass": ["specification-title"]
     }
   }

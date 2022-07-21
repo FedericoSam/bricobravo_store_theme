@@ -286,7 +286,7 @@
     "children": ["rich-text#product-info-title", "disclosure-state-indicator"]
   },
   "disclosure-content#product-info": {
-    "children": ["product-description#pdp"]
+    "children": ["product-description#pdp", "link#pdp-disclosure-see-more"]
   },
   "rich-text#product-info-title": {
     "props": {
@@ -319,9 +319,18 @@
       "text": "Consegna stimata entro il **25/08/2022**<br/>Spedizione **Gratuita**<br/>Reso gratuito entro **60 giorni**<br/>Garanzia **2 anni sul prodotto**<br/>Venduto e spedito da #nomeseller#"
     }
   },
+
   "product-description#pdp": {
     "props": {
-      "blockClass": "pdp"
+      "blockClass": "pdp",
+      "colapseContent": true
+    }
+  },
+  "link#pdp-disclosure-see-more": {
+    "props": {
+      "label": "Vedi altri dettagli sul prodotto",
+      "href": "#",
+      "blockClass": "pdp-disclosure-see-more"
     }
   },
 

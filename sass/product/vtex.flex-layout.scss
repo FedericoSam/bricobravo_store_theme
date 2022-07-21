@@ -60,6 +60,10 @@
         }
       }
     }
+
+    .flexCol--specificationValueCol {
+      display: none;
+    }
   }
 
   &--assembly-options :first-child {
@@ -74,6 +78,20 @@
   &--product-availability-and-quantity {
     @include mobile {
       width: 280px;
+    }
+  }
+
+  &--specificationValueCol {
+    text-align: end;
+    padding: 0.5rem 1.25rem 0.5rem;
+    background-color: #f6f6f6;
+
+    :global(.vtex-product-specifications-1-x-specificationValue--specText) {
+      color: $primary-dark;
+      height: 22px;
+      font-size: $paragraph-large-regular;
+      font-weight: 500;
+      line-height: 22px;
     }
   }
 }
@@ -428,6 +446,10 @@
           border-bottom: none;
         }
       }
+
+      :global(.vtex-disclosure-layout-1-x-content) {
+        margin-bottom: 1.25rem;
+      }
     }
 
     &--pdp-faq-disclousure-layout {
@@ -437,6 +459,14 @@
       .stretchChildrenWidth {
         display: flex;
         flex-direction: column;
+      }
+    }
+
+    &--summaryPrices {
+      :global(.vtex-flex-layout-0-x-flexRow--productSpecificationItem) {
+        :global(.vtex-flex-layout-0-x-flexCol--specificationValueCol) {
+          display: none;
+        }
       }
     }
   }
@@ -626,8 +656,10 @@
       }
 
       .flexColChild {
-        padding: 0.5rem 1.25rem;
-        background-color: #f6f6f6;
+        &--specificationNameCol {
+          padding: 0.5rem 0 0.5rem 1.25rem;
+          background-color: #f6f6f6;
+        }
       }
 
       @media (max-width: 1025px) {
@@ -638,7 +670,14 @@
     }
 
     .flexColChild--specificationNameCol {
-      color: $darkgrey-medium;
+      :global(.vtex-product-specifications-1-x-specificationName--specText) {
+        height: 22px;
+        color: $primary-default;
+        font-size: $paragraph-large-regular;
+        font-weight: 400;
+        line-height: 22px;
+      }
+
       @include mobile {
         width: 100%;
       }
@@ -1017,13 +1056,6 @@
 
       .flexColChild--specificationNameCol {
         color: $darkgrey-medium;
-        font-size: 14px;
-        line-height: 24px;
-        font-weight: 400;
-      }
-
-      :global(.vtex-product-specifications-1-x-specificationValue--specText) {
-        color: $primary-dark;
         font-size: 14px;
         line-height: 24px;
         font-weight: 400;

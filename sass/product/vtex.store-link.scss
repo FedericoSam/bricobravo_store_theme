@@ -13,4 +13,14 @@
     line-height: 1.25rem;
     margin-bottom: 2rem;
   }
+
+  &--pdp-disclosure-see-more {
+    text-decoration: none;
+    height: 1.25rem;
+    color: #1b0e41;
+    font-size: $cta-medium;
+    font-weight: 500;
+    line-height: 1.25rem;
+    margin-bottom: 2rem;
+  }
 }

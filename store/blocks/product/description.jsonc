@@ -65,8 +65,8 @@
   },
   "product-description": {
     "props": {
-      "title": "Mais informações",
-      "collapseContent": false
+      "title": "Descrizione",
+      "blockClass": "pdp"
     }
   }
 }

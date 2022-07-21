@@ -19,7 +19,6 @@
   "responsive-layout.mobile#product": {
     "children": [
       "flex-layout.row#product-main-mobile",
-      "flex-layout.row#descriptionSpecification",
       "flex-layout.row#related-products",
       "flex-layout.row#also-view",
       "flex-layout.row#descriptionSpecification",

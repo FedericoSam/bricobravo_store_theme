@@ -82,7 +82,7 @@
     font-size: $headline-h3;
     font-weight: 500;
     line-height: 1.5rem;
-    margin: 2rem 0 1.25rem;
+    margin: 0 0 1.25rem;
 
     @include breakpoint('mobile') {
       text-align: center;
