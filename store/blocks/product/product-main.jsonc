@@ -1,11 +1,11 @@
 {
-  "flex-layout.row#productMain": {
+  "flex-layout.row#product-main": {
     "children": [
       "product-images#desktop",
       "flex-layout.col#product-main-infos"
     ],
     "props": {
-      "blockClass": "productMain-content"
+      "blockClass": "product-main-content"
     }
   },
 
@@ -67,11 +67,7 @@
     }
   },
   "flex-layout.col#box-buy": {
-    "children": [
-      "flex-layout.row#box",
-      "flex-layout.row#shipping",
-      "flex-layout.row#availability"
-    ]
+    "children": ["flex-layout.row#box", "flex-layout.row#availability"]
   },
   "flex-layout.row#box": {
     "children": ["flex-layout.col#box"],
@@ -92,20 +88,20 @@
   },
 
   // Mobile
-  "flex-layout.row#productMainMobile": {
+  "flex-layout.row#product-main-mobile": {
     "children": [
-      "flex-layout.col#productMain-top",
+      "flex-layout.col#product-main-top",
       "product-images#desktop",
       "flex-layout.col#product-main-infosMobile"
     ],
     "props": {
-      "blockClass": "productMain-content"
+      "blockClass": "product-main-content"
     }
   },
-  "flex-layout.col#productMain-top": {
+  "flex-layout.col#product-main-top": {
     "children": ["flex-layout.row#breadcrumb"],
     "props": {
-      "blockClass": "productMain-top"
+      "blockClass": "product-main-top"
     }
   },
   "flex-layout.col#product-main-infosMobile": {

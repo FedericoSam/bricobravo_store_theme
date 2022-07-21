@@ -1,20 +1,14 @@
 @import '../_variables.scss';
 @import '../_media-queries.scss';
 
+.container {
+  &--pdp-faq-title,
+  &--pdp-faq-ask-more {
+    justify-content: center;
+  }
+}
+
 .paragraph {
-  &--shippingMenuText {
-    background-color: $white;
-    color: $primary-dark !important;
-  }
-
-  &--pdp-galeryTitle {
-    background-color: transparent !important;
-    color: $primary-dark;
-    font-size: 30px;
-    font-weight: 300;
-    white-space: nowrap;
-  }
-
   &--pdp-secure-payment {
     height: 1rem;
     color: $blue-active;
@@ -71,5 +65,64 @@
         font-weight: 500;
       }
     }
+  }
+
+  &--product-details {
+    height: 1.75rem;
+    color: $primary-default;
+    font-size: $headline-h2;
+    font-weight: 500;
+    line-height: 1.75rem;
+    margin: 0 0 2rem;
+  }
+
+  &--specification-title {
+    height: 1.5rem;
+    color: $primary-default;
+    font-size: $headline-h3;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin: 2rem 0 1.25rem;
+
+    @include breakpoint('mobile') {
+      text-align: center;
+    }
+  }
+
+  &--pdp-faq-ask-more {
+    height: 1.5rem;
+    color: $primary-default;
+    font-size: $headline-h4;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 0 0 0.5rem;
+  }
+
+  &--pdp-faq-content {
+    color: $primary-default;
+    font-size: $paragraph-large-regular;
+    line-height: 1.5rem;
+    margin-top: 0;
+  }
+}
+
+.heading {
+  &--productShelfTitle {
+    margin: 0 0 1.25rem;
+    height: 1.75rem;
+    color: $primary-default;
+    font-size: $headline-h2;
+    font-weight: 500;
+    line-height: 1.75rem;
+  }
+
+  &--pdp-faq-title {
+    margin: 1.25rem 0;
+    height: 1.75rem;
+    color: $primary-default;
+    font-size: $headline-h2;
+    font-weight: 500;
+    line-height: 1.75rem;
+    text-align: center;
   }
 }

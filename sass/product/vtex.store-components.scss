@@ -1,18 +1,6 @@
 @import '../_variables.scss';
 @import '../_media-queries.scss';
 
-.imageElement--arrowDown,
-.imageElement--arrowUp {
-  position: relative;
-  left: 24.2rem;
-  top: 2.3rem;
-  height: 24px;
-  width: 24px;
-  @include breakpoint('mobile') {
-    left: 18rem;
-  }
-}
-
 .swiperCaret {
   background-color: $lightgrey-lighter;
   border-radius: 1.1rem;
@@ -68,16 +56,9 @@
 .flexRowContent--boxLine {
   flex-direction: column;
 }
-.flexCol--productMain-image {
+.flexCol--product-main-image {
   @include mobile {
     margin-bottom: 1rem;
-  }
-}
-
-.imageElement--pdp-galeryImage {
-  @include breakpoint('mobile') {
-    height: 100% !important;
-    width: 100% !important;
   }
 }
 
@@ -218,6 +199,12 @@
   }
 }
 
+.productBrandContainer {
+  &--pdp {
+    margin-bottom: 0.5rem;
+  }
+}
+
 .content {
   &--pdp {
     color: $primary-default;
@@ -229,6 +216,12 @@
 }
 
 .productDescriptionText {
+  color: $primary-default;
+  font-size: $paragraph-medium-regular;
+  line-height: 1.25rem;
+  width: 100;
+  max-width: 40rem;
+
   &--pdp {
     margin: 0 0 1.25rem;
   }
@@ -295,4 +288,13 @@
       }
     }
   }
+}
+
+.productDescriptionTitle {
+  height: 1.5rem;
+  color: $primary-default;
+  font-size: $headline-h3;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin-bottom: 1.25rem;
 }

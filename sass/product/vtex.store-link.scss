@@ -1,0 +1,16 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
+.link {
+  &--pdp-faq-ask-more {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    height: 1.25rem;
+    color: #1b0e41;
+    font-size: $headline-h4;
+    font-weight: 500;
+    line-height: 1.25rem;
+    margin-bottom: 2rem;
+  }
+}

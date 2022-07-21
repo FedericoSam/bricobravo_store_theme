@@ -298,7 +298,7 @@
   "flex-layout.col#home-shelf-01": {
     "children": [
       "rich-text#home-shelf-01-title",
-      "list-context.product-list#alsoView"
+      "list-context.product-list#also-view"
     ]
   },
 
@@ -319,7 +319,7 @@
   "flex-layout.col#home-shelf-02": {
     "children": [
       "rich-text#home-shelf-02-title",
-      "list-context.product-list#alsoView"
+      "list-context.product-list#also-view"
     ]
   },
 
@@ -340,7 +340,7 @@
   "flex-layout.col#home-shelf-03": {
     "children": [
       "rich-text#home-shelf-03-title",
-      "list-context.product-list#alsoView"
+      "list-context.product-list#also-view"
     ]
   },
 
