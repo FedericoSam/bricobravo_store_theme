@@ -1,11 +1,18 @@
 {
   "flex-layout.row#product-main": {
     "children": [
-      "product-images#desktop",
+      "flex-layout.col#product-images",
       "flex-layout.col#product-main-infos"
     ],
     "props": {
       "blockClass": "product-main-content"
+    }
+  },
+  "flex-layout.col#product-images": {
+    "children": ["product-price-savings#discount", "product-images#desktop"],
+    "props": {
+      "blockClass": "product-images",
+      "preventVerticalStretch": true
     }
   },
 
