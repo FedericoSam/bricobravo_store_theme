@@ -48,10 +48,7 @@
   },
   "flex-layout.col#spec-name": {
     "props": {
-      "width": {
-        "mobile": "50%",
-        "desktop": "25%"
-      },
+      "width": "40%",
       "blockClass": "specificationNameCol"
     },
     "children": ["product-specification-text#specification"]
@@ -59,7 +56,8 @@
   "flex-layout.col#spec-value": {
     "children": ["product-specification-values"],
     "props": {
-      "blockClass": "specificationValueCol"
+      "blockClass": "specificationValueCol",
+      "width": "60%"
     }
   },
   "product-specification-values": {

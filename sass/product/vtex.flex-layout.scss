@@ -406,6 +406,14 @@
       }
     }
 
+    &--productSpecificationItem {
+      :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        &:last-child {
+          width: 60% !important;
+        }
+      }
+    }
+
     &--product-main-content {
       @include container-main;
     }
@@ -506,10 +514,6 @@
           display: none;
         }
       }
-    }
-
-    &--productSpecificationItem {
-      background-color: #f6f6f6;
     }
   }
 
