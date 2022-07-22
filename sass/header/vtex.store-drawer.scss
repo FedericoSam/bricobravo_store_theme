@@ -17,6 +17,10 @@
     height: 41px;
     padding-left: 2px;
     margin-right: -10px;
+
+    @media screen and (max-width: 760px) {
+      display: none;
+    }
   }  
   .menuIcon {
     display: none;
@@ -37,4 +41,43 @@
 
 .drawerContent--drawer-mobile {
   height: 100vh;
+}
+
+
+@media screen and (max-width: 760px) {
+  .openIconContainer--filterMobileDrawer {
+    &::before {
+      visibility: visible;
+      content: url("assets/icons/icon_filter.svg");
+      padding-right: 8px;
+      display: inline-block;
+      background: none;
+      padding-top: 10px;
+    }
+  }
+
+  .opened--filterMobileDrawer {
+    width: 100% !important;
+  }
+
+  .closeIconButton--filterMobileDrawer {
+    padding: 0px;
+    border-radius: 100px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  .closeIcon--filterMobileDrawer {
+    height: 48px;
+    width: 48px;
+  }
+
+  // .childrenContainer--filterMobileDrawer {
+  //   margin-top: 40px;
+  // }
+
+  .drawerContent--filterMobileDrawer {
+    margin-top: 50px
+  }
 }
