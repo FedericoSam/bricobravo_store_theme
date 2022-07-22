@@ -185,6 +185,9 @@
 
   @include breakpoint("mobile") {
     margin-block: auto;
+    //width: auto;
+    //margin: 0 30px;
+    //margin-right: 34px;
   }
   // &::after {
   //   @media screen and (max-width: 768px) {
@@ -221,8 +224,9 @@
     padding: 12px 0 12px;
     border: none;
     @include breakpoint('mobile') {
-      width: auto;
+      //width: auto;
       //margin: 0 30px;
+      margin-right: 34px;
       display: flex;
       flex-direction: row;
     }
@@ -264,13 +268,13 @@
 
       &::after {
         @include breakpoint('mobile') {
-          content: "Sort by";
+          content: "Ordina per";
           font-size: 16px;
           font-weight: 400;
           line-height: 19px;
           color: #332C32;
           position: absolute;
-          left: 55px;
+          left: 50px;
           top: 10px;
         }
       }
@@ -413,17 +417,25 @@
 }
 
 .filters--layout {
-  width: 332px;
+  //width: 332px;
   padding: 16px;
   padding-top: 0;
   background: #fff;
 
   @media screen and (max-width: 768px) {
     padding: 0;
+    margin-right: 64px;
   }
 
   .filterItem {
     margin-bottom: 0.5rem;
+    // &--premium::after{
+    //   content: url(https://bricobravo.vtexassets.com/arquivos/ids/155413-22-22?v=637920420622130000&width=75&height=15&aspect=true);
+    //   position: relative;
+    //   top: -18px;
+    //   left: 30px;
+    //   background-color: #fff;
+    // }
   }
 
   .filterPopupArrowIcon {
@@ -483,15 +495,19 @@
 
   .filter__container {
     margin-bottom: 1.2rem;
-    order: 3;
+    order: 4;
   }
 
-  .filter__container--selectedFilters, .filter__container--category-2, .filter__container--spedizione {
+  .filter__container--selectedFilters, .filter__container--clearAllFilters {
     order: 1;
   }
 
-  .filter__container--priceRange {
+  .filter__container--category-2, .filter__container--spedizione {
     order: 2;
+  }
+
+  .filter__container--priceRange {
+    order: 3;
   }
 
   .filter__container--title {
@@ -503,6 +519,7 @@
     padding-left: 10px;
     font-size: 16px;
     line-height: 19px;
+    font-weight: 400;
   }
 
   .filter__container--selectedFilters {
@@ -512,32 +529,40 @@
       color: #0b1658;
       font-weight: normal;
       padding: 6px;
-      padding-right: 26px;
+      //padding-right: 26px;
       width: auto;
       border: 1px solid;
       background-color: #F6F6F6;
       text-transform: capitalize;
+      display: flex;
+      flex-direction: row-reverse;
+      
+
+      &::before {
+        content: url("assets/icons/icon_close.svg");
+        padding-left: 10px;//visibility: hidden;
+      }
   }
 
     :global(.vtex-checkbox__container) {
       display: none;
     }
 
-    :global(.vtex-checkbox__line-container) {
-      &::after {
-        content: url("assets/icons/icon_close.svg");
-        padding-top: 5px;
-        transform: translateX(-22px);
-      }
-    }
+    // :global(.vtex-checkbox__line-container) {
+    //   &::after {
+    //     content: url("assets/icons/icon_close.svg");
+    //     padding-top: 5px;
+    //     transform: translateX(-22px);
+    //   }
+    // }
 
     .filterTitleSpan {
       &::before {
-        visibility: visible;
+        visibility: hidden;
         content: "Elimina filtri:";
         font-size: 14px;
         line-height: 16px;
-        color: #4320AB;
+        color: #4320A8;
         font-weight: 500;
 
       }
@@ -547,12 +572,15 @@
     :global(.vtex-checkbox__label) {
       font-size: 14px;
       line-height: 16px;
-      color: #2B126B;
-      font-weight: normal;
-      padding: 4px;
-      padding-right: 26px;
+      color: #1B0E41;
+      font-weight: 400;
+      padding: 6px 4px 2px 4px;
+      //padding-right: 26px;
       width: auto;
       border: 1px solid;
+      display: flex;
+      flex-direction: row-reverse;
+      line-height: 18px;
 
       
       // &::after {
@@ -579,7 +607,7 @@
   //   // top: 4px;
   //   // left: 4px !important;
   // }
-  .filterTemplateOverflow {
+  .filterTemplateOverflow {    
     @include desktop {
       :global(.vtex-slider-container) {
         transform: translateY(43px);
@@ -601,10 +629,13 @@
         }
       }
     }
+
+
   }
 
   .filtersWrapperMobile--filterMobile {
     height: 40px;
+    margin-right: 26px;
   }
 
   .filtersWrapper {
@@ -886,3 +917,95 @@
   }
 }
 
+.filter__container--clearAllFilters {
+  position: absolute;
+  order: 1;
+  border: none;
+
+  :global(.vtex-button) {
+    border: none;
+    background-color: white;
+
+    @include mobile {
+      transform: translateY(-7px);
+    }
+
+    :global(.vtex-button__label) {
+
+      &::before {
+        content: "Elimina filtri";
+        text-transform: none;
+        color: #4320A8;
+        transform: translateX(-24px);
+        font-size: 14px;
+        font-weight:500;
+        
+      }
+      content:"";
+      padding-right: 0;
+
+      &::after {
+        content: url("assets/icons/icon_close.svg");
+        transform: translateX(-145px);
+      }
+    }
+  }
+}
+
+@include mobile {
+
+  .filter__container {  
+    border-color: #D8D8D8;
+
+  }
+  .filter__container--priceRange {
+    :global(.vtex-slider) {
+      max-width: 95%;
+      transform: translate(11px, 51px);
+    }
+
+    :global(.vtex-slider__values-container) {
+      transform: translate(-1px, -22px);
+
+      :global(.vtex-slider__left-value) {
+        border-bottom: 1px solid;
+      }
+
+      :global(.vtex-slider__right-value) {
+        border-bottom: 1px solid;
+      }
+    }
+  }
+
+  
+}
+
+.filter__container--selectedFilters {
+  .filterItem--premium {
+    :global(.vtex-checkbox__label) {
+      color: #F6F6F6;
+      border-color: #1B0E41;
+      &::after {
+        content: url(https://bricobravo.vtexassets.com/arquivos/ids/155413-22-22?v=637920420622130000&width=75&height=15&aspect=true);
+          width: 30px;
+          padding-top: 2px;
+        }
+    }
+  }
+}
+
+.filter__container--spedizione {
+  .filterItem--premium {
+    :global(.vtex-checkbox__label) {
+      color: #F6F6F6;
+      border-color: #1B0E41;
+      &::after {
+        content: url(https://bricobravo.vtexassets.com/arquivos/ids/155413-22-22?v=637920420622130000&width=75&height=15&aspect=true);
+          width: 30px;
+          padding-top: 2px;
+          transform: translateX(-54px);
+          display: inline-block;
+      }
+    }
+  }
+}

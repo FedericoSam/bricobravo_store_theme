@@ -72,7 +72,8 @@
       "flex-layout.row#searchLayout",
       "flex-layout.row#sectionSeo1",
       "flex-layout.row#sectionSeo2",
-      "flex-layout.row#sectionSeo3"
+      "flex-layout.row#sectionSeo3",
+      "back-to-top-button"
     ],
     "props": {
       "pagination": "show-more",
@@ -82,6 +83,12 @@
         "mode2": "normal"
       },
       "fullWidth": true
+    }
+  },
+  "back-to-top-button":{
+    "props":{    
+      "displayThreshold": 600,
+      "display": "caret-icon"
     }
   },
 
@@ -268,7 +275,8 @@
   "filter-navigator.v3": {
     "blocks": ["sidebar-close-button"],
     "props": {
-      "truncateFilters": true
+      "truncateFilters": true,
+      "showClearAllFiltersOnDesktop": true
     }
   },
   // "rich-text#instructions-range-price": {
@@ -317,7 +325,8 @@
       "flex-layout.row#fetchmore",
       "flex-layout.row#sectionSeo1",
       "flex-layout.row#sectionSeo2",
-      "flex-layout.row#sectionSeo3"
+      "flex-layout.row#sectionSeo3",
+      "back-to-top-button"
     ],
     "props": {
       "pagination": "show-more",
@@ -353,7 +362,8 @@
     ],
     "blocks": ["drawer-trigger"],
     "props": {
-      "blockClass": "filterMobileDrawer"
+      "blockClass": "filterMobileDrawer",
+      "slideDirection": "rightToLeft"
       //"backdropMode": "none"
     }
   },
@@ -422,11 +432,12 @@
       "layout": "desktop",
       "truncateFilters": true,
       "blockClass": "filterMobile",
-      "navigationTypeOnMobile": "page",
+      "navigationTypeOnMobile": "collapsible",
       "initiallyCollapsed": false,
       "fullWidthOnMobile": true,
       "updateOnFilterSelectionOnMobile": false,
-      "preventRouteChange": true
+      "preventRouteChange": true,
+      "showClearAllFiltersOnDesktop": true
     }
   },
   "search-not-found-layout": {
