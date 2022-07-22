@@ -21,6 +21,10 @@
         font-size: $headline-h4;
         font-weight: 400;
         line-height: 1.25rem;
+
+        @include breakpoint('mobile') {
+          font-size: $paragraph-large-regular;
+        }
       }
     }
 
@@ -31,6 +35,16 @@
         font-size: $headline-h4;
         font-weight: 500;
         line-height: 1.25rem;
+
+        @include breakpoint('mobile') {
+          font-size: $paragraph-large-regular;
+        }
+      }
+    }
+
+    :global(.vtex-store-components-3-x-imageElement) {
+      @include breakpoint('mobile') {
+        width: auto !important;
       }
     }
   }

@@ -30,16 +30,6 @@
     }
   },
 
-  "flex-layout.row#product-name": {
-    "children": ["vtex.store-components:product-name#pdp"],
-    "props": {
-      "blockClass": ["product-name"],
-      "paddingTop": {
-        "desktop": 5,
-        "mobile": 0
-      }
-    }
-  },
   "product-identifier.product": {
     "props": {
       "label": "custom",
@@ -61,7 +51,7 @@
       "blockClass": "completeDescriptionAnchor"
     }
   },
-  // BUY
+
   "condition-layout.product#availability": {
     "props": {
       "conditions": [
@@ -69,59 +59,8 @@
           "subject": "isProductAvailable"
         }
       ],
-      "Then": "flex-layout.col#box-buy",
+      "Then": "flex-layout.row#pdp-quantity-and-add-to-cart",
       "Else": "flex-layout.row#availability"
-    }
-  },
-  "flex-layout.col#box-buy": {
-    "children": ["flex-layout.row#box", "flex-layout.row#availability"]
-  },
-  "flex-layout.row#box": {
-    "children": ["flex-layout.col#box"],
-    "props": {
-      "blockClass": ["box"],
-      "width": "100%"
-    }
-  },
-  "flex-layout.col#box": {
-    "children": [
-      // "product-quantity",
-      "flex-layout.row#buy-buttons"
-    ],
-    "props": {
-      "blockClass": ["box"],
-      "preventVerticalStretch": true
-    }
-  },
-
-  // Mobile
-  "flex-layout.row#product-main-mobile": {
-    "children": [
-      "flex-layout.col#product-main-top",
-      "product-images#desktop",
-      "flex-layout.col#product-main-infosMobile"
-    ],
-    "props": {
-      "blockClass": "product-main-content"
-    }
-  },
-  "flex-layout.col#product-main-top": {
-    "children": ["flex-layout.row#breadcrumb"],
-    "props": {
-      "blockClass": "product-main-top"
-    }
-  },
-  "flex-layout.col#product-main-infosMobile": {
-    "children": [
-      "flex-layout.row#product-name",
-      "product-identifier.product",
-      "flex-layout.row#sku-selector",
-      "flex-layout.row#product-price",
-      "condition-layout.product#availability"
-    ],
-    "props": {
-      "blockClass": "product-main-infos",
-      "preventVerticalStretch": true
     }
   }
 }

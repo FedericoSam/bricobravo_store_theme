@@ -3,6 +3,10 @@
 
 .container {
   padding: 0;
+
+  @include breakpoint('mobile') {
+    margin-left: 1rem;
+  }
 }
 
 .arrow {

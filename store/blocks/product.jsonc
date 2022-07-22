@@ -18,6 +18,7 @@
   },
   "responsive-layout.mobile#product": {
     "children": [
+      "flex-layout.row#breadcrumb",
       "flex-layout.row#product-main-mobile",
       "flex-layout.row#related-products",
       "flex-layout.row#also-view",

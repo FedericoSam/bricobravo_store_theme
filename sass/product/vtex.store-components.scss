@@ -53,9 +53,6 @@
   background-color: $secondary-default;
 }
 
-.flexRowContent--boxLine {
-  flex-direction: column;
-}
 .flexCol--product-main-image {
   @include mobile {
     margin-bottom: 1rem;
@@ -94,58 +91,6 @@
   font-size: 12px;
 }
 
-.skuSelectorContainer {
-  margin-bottom: 1rem;
-  .skuSelectorName {
-    font-size: 0;
-    &::before {
-      content: 'Selecione o tamanho';
-      font-size: 14px;
-      font-weight: 500;
-      color: $primary-dark;
-    }
-  }
-  .skuSelectorInternalBox {
-    border: none;
-  }
-  .skuSelectorItem {
-    margin-right: 0.3rem;
-    height: 40px;
-    z-index: 0;
-    .skuSelectorInternalBox {
-      border: 2px solid $secondary-dark;
-      border-radius: 10px;
-      .skuSelectorItemTextValue {
-        font-size: 14px;
-        font-weight: 600;
-      }
-    }
-    &--selected {
-      .frameAround {
-        border: none;
-      }
-      .skuSelectorInternalBox {
-        background-color: #e30613;
-        border-radius: 12px;
-        border: 1px solid #e30613 !important;
-        .skuSelectorItemTextValue {
-          color: $white;
-        }
-      }
-    }
-    .diagonalCross {
-      margin: 4px;
-    }
-    .valueWrapper--unavailable {
-      color: $lightgrey-medium;
-    }
-  }
-}
-.skuSelectorOptionsList {
-  @include mobile {
-    margin-left: -4px;
-  }
-}
 .subscriberContainer {
   .form {
     .content {
@@ -181,10 +126,18 @@
   &--pdp {
     height: 1.5rem;
     color: #1b0e41;
-    font-size: 18px;
+    font-size: $headline-h4;
     font-weight: 500;
     line-height: 1.5rem;
     margin-bottom: 0.5rem;
+
+    @include breakpoint('mobile') {
+      height: 1.25rem;
+      color: #2b126b;
+      font-size: $paragraph-large-regular;
+      font-weight: 500;
+      line-height: 1.25rem;
+    }
   }
 }
 
@@ -196,6 +149,11 @@
     font-weight: 500;
     line-height: 2rem;
     margin-bottom: 1.25rem;
+
+    @include breakpoint('mobile') {
+      font-size: $headline-h3;
+      line-height: 1.5rem;
+    }
   }
 }
 
@@ -238,7 +196,16 @@
     margin: 0 0 0 1rem;
 
     .thumbImg {
-      height: 80;
+      height: 5rem;
+      overflow: hidden;
+    }
+  }
+
+  &--pdp-mobile {
+    margin: 0 0.25rem 0;
+
+    .thumbImg {
+      height: 2.5rem;
       overflow: hidden;
     }
   }
@@ -247,6 +214,10 @@
 .productImagesContainer {
   &--pdp--carousel {
     padding-right: 7.75rem;
+
+    @include breakpoint('mobile') {
+      padding-right: 0;
+    }
   }
 }
 
@@ -297,6 +268,12 @@
   font-weight: 500;
   line-height: 1.5rem;
   margin-bottom: 1.25rem;
+
+  @include breakpoint('mobile') {
+    height: 1.25rem;
+    font-size: $headline-h4;
+    line-height: 1.25rem;
+  }
 }
 
 .fadeBottom {
