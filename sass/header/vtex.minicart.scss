@@ -42,6 +42,8 @@
 
       &--minicart-background {
         padding-inline: 0;
+        padding-top: 11px;
+        padding-bottom: 0;
       
         :global(.vtex-button__label) {
           padding-inline: 0;
