@@ -1,6 +1,6 @@
 {
   "header-layout.mobile": {
-    "children": ["sticky-layout#mobile-header"]
+    "children": ["sticky-layout#mobile-header", "flex-layout.row#menu-mobile"]
   },
 
   "sticky-layout#mobile-header": {
@@ -30,7 +30,54 @@
       "preventHorizontalStretch": true,
       "blockClass": "header-mobile-searchBar"
     }
+  },
+  "flex-layout.row#menu-mobile": {
+    "children": ["flex-layout.col#menu-mobile"],
+    "props": {
+      "blockClass": "header-menu-mobile"
+    }
+  },
+  "flex-layout.col#menu-mobile": {
+    "children": [
+      "drawer#menu-desktop",
+      "link#personal-shopper",
+      "link#home-mobile",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "menu-container-icons"
+    }
+  },
+  "link#home-mobile": {
+    "children": ["image#menu-mobile-home"],
+    "props": {
+      "blockClass": "menu-header-mobile-home",
+      "href": "/"
+    }
+  },
+  "image#menu-mobile-home": {
+    "props": {
+      "alt": "menu iniziale",
+      "src": "assets/icons/menu-mobile/icon-home.svg",
+      "blockClass": "icon-menu-home-mobile"
+    }
+  },
+  "link#personal-shopper": {
+    "children": ["image#menu-mobile-personalShopper"],
+    "props": {
+      "blockClass": "menu-header-mobile-personalShopper",
+      "href": "#"
+    }
+  },
+  "image#menu-mobile-personalShopper": {
+    "props": {
+      "alt": "menu iniziale",
+      "src": "assets/icons/menu-mobile/icon-personal-shopper.svg",
+      "blockClass": "icon-menu-shopper-mobile"
+    }
   }
+
   // "drawer#menu-mobile": {
   //   "children": ["header-mega-menu"],
   //   "props": {

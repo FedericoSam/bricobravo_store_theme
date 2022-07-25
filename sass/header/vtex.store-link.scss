@@ -16,7 +16,7 @@
     background: transparent;
     border: none;
     text-transform: capitalize;
-    padding: 0 5px 0 15px;
+    padding: 4px 5px 0 15px;
 
     &:hover {
       background: none;
@@ -26,5 +26,9 @@
     .label {
       display: none;
     }
+  }
+
+  &--menu-header-mobile-home {
+    z-index: 1000;
   }
 }

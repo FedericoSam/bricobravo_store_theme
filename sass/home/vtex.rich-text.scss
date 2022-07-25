@@ -16,9 +16,6 @@
   &--home-section-title {
     display: flex;
     justify-content: flex-start;
-    @media screen and (max-width: 768px) {
-      justify-content: center;
-    }
   }
 
   .heading {
@@ -176,8 +173,14 @@
 
   .wrapper {
     &--home-section-title {
+      margin: 1rem auto;
+      
       @include breakpoint('mobile') {
-        margin: 0 0 0 1rem;
+        margin: 0 1rem;
+
+        .heading--home-section-title {
+          font-size: 20px;
+        }
       }
     }
   }

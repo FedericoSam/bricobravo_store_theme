@@ -146,6 +146,7 @@
     "props": {
       "emailPlaceholder": "E-mail",
       "passwordPlaceholder": "Senha",
+      "logInButtonBehavior": "link",
       "showPasswordVerificationIntoTooltip": true,
       "showIconProfile": true,
       "iconLabel": "."

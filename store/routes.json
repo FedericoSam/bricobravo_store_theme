@@ -1,5 +1,5 @@
 {
-  "store.custom#quem-somos": {
-    "path": "/quem-somos"
+  "store.custom#editorial": {
+    "path": "/editorial"
   }
 }

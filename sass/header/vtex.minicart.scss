@@ -1,4 +1,5 @@
 @import '../_media-queries.scss';
+@import '../_variables.scss';
 
 .drawer{
   &--minicart-background{
@@ -41,6 +42,8 @@
 
       &--minicart-background {
         padding-inline: 0;
+        padding-top: 11px;
+        padding-bottom: 0;
       
         :global(.vtex-button__label) {
           padding-inline: 0;
@@ -75,7 +78,7 @@
       }
     }
     &:hover {
-      background-color: #1B0E41;
+      background-color: $blue-dark-text;
       border-color: transparent;
     }
   }
@@ -98,7 +101,7 @@
     left: 20px;
     top: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 28px;
     line-height: 33px;
     color: #111;
@@ -119,11 +122,11 @@
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
-    color: #291660 !important;
+    color: #5A40A4 !important;
     &::before{
       content: "Rimuovi articolo";
       font-size: 14px;
-      color: #291660;
+      color: #5A40A4 !important ;
       font-weight: bold;
     }
 
