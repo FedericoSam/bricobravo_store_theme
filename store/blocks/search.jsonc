@@ -72,7 +72,8 @@
       "flex-layout.row#searchLayout",
       "flex-layout.row#sectionSeo1",
       "flex-layout.row#sectionSeo2",
-      "flex-layout.row#sectionSeo3"
+      "flex-layout.row#sectionSeo3",
+      "back-to-top-button"
     ],
     "props": {
       "pagination": "show-more",
@@ -82,6 +83,12 @@
         "mode2": "normal"
       },
       "fullWidth": true
+    }
+  },
+  "back-to-top-button":{
+    "props":{    
+      "displayThreshold": 600,
+      "display": "caret-icon"
     }
   },
 
@@ -268,7 +275,8 @@
   "filter-navigator.v3": {
     "blocks": ["sidebar-close-button"],
     "props": {
-      "truncateFilters": true
+      "truncateFilters": true,
+      "showClearAllFiltersOnDesktop": true
     }
   },
   // "rich-text#instructions-range-price": {
@@ -317,7 +325,8 @@
       "flex-layout.row#fetchmore",
       "flex-layout.row#sectionSeo1",
       "flex-layout.row#sectionSeo2",
-      "flex-layout.row#sectionSeo3"
+      "flex-layout.row#sectionSeo3",
+      "back-to-top-button"
     ],
     "props": {
       "pagination": "show-more",
@@ -343,11 +352,56 @@
       "preserveLayoutOnMobile": true
     }
   },
+
+
+
+
+  "drawer": {
+    "children": [
+      "menu#drawer"
+    ],
+    "blocks": ["drawer-trigger"],
+    "props": {
+      "blockClass": "filterMobileDrawer",
+      "slideDirection": "rightToLeft"
+      //"backdropMode": "none"
+    }
+  },
+  
+  "drawer-trigger": {
+    "children": ["rich-text#filtra"],
+    "props": {
+      "blockClass": "filterMobileDrawer"
+    }
+  },
+  
+  "rich-text#filtra": {
+    "props": {
+      "text": "Filtri",
+      "blockClass": "filterMobileDrawer"
+    }
+  }, 
+  
+  "menu#drawer": {
+    "children": [
+      "filter-navigator.v3#mobile"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "filterMobileDrawer"
+    }
+  },
+
+
+
+
+
   "flex-layout.row#searchControlsMobile": {
     "children": [
       "search-products-count-per-page",
       "order-by.v2",
-      "filter-navigator.v3#mobile"
+      "drawer"
+      // "filter-navigator.v3#mobile"
     ],
     "props": {
       "preventHorizontalStretch": false,
@@ -375,13 +429,15 @@
   "filter-navigator.v3#mobile": {
     "blocks": ["sidebar-close-button"],
     "props": {
+      "layout": "desktop",
       "truncateFilters": true,
       "blockClass": "filterMobile",
       "navigationTypeOnMobile": "collapsible",
-      "initiallyCollapsed": true,
+      "initiallyCollapsed": false,
       "fullWidthOnMobile": true,
-      "updateOnFilterSelectionOnMobile": true,
-      "preventRouteChange": true
+      "updateOnFilterSelectionOnMobile": false,
+      "preventRouteChange": true,
+      "showClearAllFiltersOnDesktop": true
     }
   },
   "search-not-found-layout": {
@@ -400,14 +456,31 @@
     ]
   },
   "responsive-layout.desktop#not-found": {
-    "children": ["not-found"]
+    "children": ["flex-layout.row#searchbread", "flex-layout.row#mainNotFound"]
   },
   "responsive-layout.mobile#not-found": {
-    "children": [
-      // "flex-layout.row#btnlink-back",
-      "flex-layout.row#searchbread",
-      "not-found"
-    ]
+    "children": ["flex-layout.row#searchbread", "flex-layout.row#mainNotFound"]
+  },
+  "flex-layout.row#mainNotFound": {
+    "children": ["flex-layout.col#mainNotFound"]
+  },
+  "flex-layout.col#mainNotFound": {
+    "children": ["image#notFound", "not-found", "link#notfoundToHome"],
+    "props": {
+      "blockClass": "notfound-containerMain"
+    }
+  },
+  "image#notFound": {
+    "props": {
+      "src": "assets/images/notfound.svg"
+    }
+  },
+  "link#notfoundToHome": {
+    "props": {
+      "label": "VAI ALLA HOMEPAGE",
+      "href": "/",
+      "blockClass": "notfound-btnLinkBack"
+    }
   },
   "breadcrumb": {
     "props": {

@@ -2,18 +2,18 @@
   "footer-layout.mobile": {
     "children": [
       "flex-layout.row#newsletter",
-      "flex-layout.row#upperFooterMobile",
+      "flex-layout.row#FooterLinksMobile",
       "flex-layout.row#footerPaymentMethods",
       "flex-layout.row#bottomFooterDesktop"
     ]
   },
-  "flex-layout.row#upperFooterMobile": {
-    "children": ["flex-layout.col#upperFooterMobile"],
+  "flex-layout.row#FooterLinksMobile": {
+    "children": ["flex-layout.col#FooterLinksMobile"],
     "props": {
       "blockClass": "footer-upperFooterMobile"
     }
   },
-  "flex-layout.col#upperFooterMobile": {
+  "flex-layout.col#FooterLinksMobile": {
     "children": [
       "flex-layout.row#upperFooterCol3",
       "flex-layout.row#upperFooterCol2Mobile",

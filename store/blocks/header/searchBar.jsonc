@@ -1,7 +1,7 @@
 {
   "search-bar#desktop": {
     "props": {
-      "placeholder": "Encontre o melhor em áudio e vídeo",
+      "placeholder": "Cerca prodotto, brand…",
       "compactMode": false,
       "openAutocompleteOnFocus": true,
       "containerMode": "container",
@@ -12,14 +12,15 @@
   "search-bar#mobile": {
     "props": {
       "compactMode": false,
-      "placeholder": "O que você procura?",
+      "placeholder": "Cerca prodotto, brand…",
       "autoFocus": false,
       "openAutocompleteOnFocus": false,
       "maxWidth": "100%",
       "autocompleteAlignment": "center",
       "autocompleteFullWidth": true,
       "displayMode": "search-button",
-      "containerMode": "container"
+      "containerMode": "container",
+      "blockClass": "mobile-searchbar"
     }
   }
 }

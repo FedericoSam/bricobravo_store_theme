@@ -48,6 +48,18 @@
     }
   }
 
+  &--header-menu-mobile {
+    position: fixed;
+    bottom: 0;
+    background: $white;
+    width: 100%;
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
+    padding: 0 15px;
+    height: 60px;
+    transition: all ease-in-out;
+    z-index: 1000;
+  }
+
   &--header-categories {
     margin: 0 auto;
     max-width: 1376px;
@@ -132,6 +144,60 @@
   &--header-logo {
     align-items: center;
     justify-content: center;
+  }
+
+  &--menu-container-icons {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    :global(.vtex-store-drawer-0-x-openIconContainer--drawer-desktop) {
+      padding-top: 6px;
+      &::after {
+        display: none;
+      }
+    }
+  
+    :global(.vtex-login-2-x-profile) {
+      color: transparent;
+      width: 1px;
+      margin: 8px 20px;
+      visibility: hidden;
+      
+      &::after {
+        width: 40px !important;
+        left: -98px;
+        top: -1px;
+        background-position: 4px 1px !important;
+        visibility: visible;
+        transform: translateX(82px);
+        background-size: 50px !important;
+      }
+    }
+    :global(.vtex-login-2-x-label) {
+      color: transparent;
+      width: 40px;
+      visibility: hidden;
+      &::after {
+        position: absolute;
+        left: 0;
+        visibility: visible;
+        background-size: 46px !important;
+      }
+    }
+    :global(.vtex-minicart-2-x-minicartContainer--minicart-background) {
+      :global(.vtex-minicart-2-x-openIconContainer--minicart-background) {
+        padding-top: 20px;
+        &::before {
+          background-size: 26px 26px !important;
+        }
+        :global(.vtex-minicart-2-x-minicartIconContainer--minicart-background) {
+          :global(.vtex-minicart-2-x-minicartQuantityBadge) {
+            top: -1.2rem;
+            right: -0.4rem;
+          }
+        }
+      }
+    }
   }
 }
 

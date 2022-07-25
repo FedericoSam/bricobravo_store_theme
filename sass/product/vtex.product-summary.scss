@@ -51,7 +51,7 @@
 .container--summaryComplete
   :global(.vtex-flex-layout-0-x-flexRow--product-summary-buy-button)
   :global(.vtex-button),
-:global(.vtex-flex-layout-0-x-flexCol--buyButtonContainer)
+:global(.vtex-flex-layout-0-x-flexRow--buyButtonContainer)
   :global(.vtex-button) {
   border: none;
   background-color: $primary-default;
@@ -165,7 +165,7 @@
         font-size: 12px;
         display: flex;
         align-items: center;
-        color: #1D1E2C;
+        color: $primary-text-dark;
         padding-top: 2px;
         text-transform: lowercase;
       }
@@ -178,58 +178,12 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    color: #4320AB;
+    color: $blue-dark;
     text-align: center;
-    margin: 30px 22px 10px;
+    margin: 10px 22px;
 
     &::before {
       content: 'oppure paga in ';
-    }
-  }
-
-  :global(.vtex-flex-layout-0-x-flexCol--buyButtonContainer) {
-
-    :global(.vtex-numeric-stepper-wrapper) {
-      border-radius: 8px;
-      border: 1px solid #4320A8;
-      margin-top: 0.5rem;
-
-      :global(.vtex-numeric-stepper-container) {
-        height: 44px;
-        justify-content: space-between;
-
-        :global(.vtex-numeric-stepper__input) {
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 16px;
-          text-align: center;
-          letter-spacing: 0.005em;
-          color: #111;
-          margin-top: 2px;
-
-          &:focus {
-            border: none !important;
-          }
-        }
-
-        :global(.vtex-numeric-stepper__input),
-        :global(.vtex-numeric-stepper__plus-button),
-        :global(.vtex-numeric-stepper__minus-button) {
-          border: none !important;
-          background: transparent;
-        }
-
-        :global(.vtex-numeric-stepper__plus-button__text),
-        :global(.vtex-numeric-stepper__minus-button__text) {
-          font-weight: 600;
-          font-size: 18px;
-          line-height: 16px;
-          text-align: center;
-          letter-spacing: 0.005em;
-          color: #111;
-          padding-top: 3px;
-        }
-      }
     }
   }
 
@@ -251,7 +205,7 @@
   .SKUSelectorContainer {
     min-height: 51px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid $lightgrey-lighter;
     min-width: auto !important;
 
     :global(.vtex-store-components-3-x-skuSelectorContainer) {
@@ -313,12 +267,12 @@
 .element--summaryComplete .buyButtonContainer,
 .element--summaryComplete
   :global(.vtex-flex-layout-0-x-flexRow--product-summary-buy-button),
-:global(.vtex-flex-layout-0-x-flexCol--buyButtonContainer)
+ :global(.vtex-flex-layout-0-x-flexRow--buyButtonContainer)
   :global(.vtex-button) {
   background-color: #FFF;
-  color: #4320A8;
+  color: $blue-dark;
   border-radius: 4px;
-  border: 1px solid #4320A8;
+  border: 1px solid $blue-dark;
   margin-top: 0.5rem;
   transition: all 0.3s ease;
   min-height: 48px;
@@ -328,13 +282,13 @@
     font-size: 14px;
     font-weight: 600;
     padding: 0;
-    color: #4320A8;
+    color: $blue-dark;
     &:hover {
       color: #FFF;
     }
   }
   &:hover {
-    background: #4320A8 !important;
+    background: $blue-dark !important;
   }
 }
 
@@ -354,12 +308,7 @@
   display: none;
 }
 .price_sellingPriceContainer{
-  color: #4320A8;
-}
-:global(.vtex-product-summary-2-x-element--summaryComplete){
-  font-size: 20px;
-  font-weight: 800;
-  color: #4320A8;
+  color: $blue-dark;
 }
 
 .element--summaryComplete .listPrice {
@@ -378,6 +327,9 @@
   line-height: 22px;
   color: #332C32;
   padding-bottom: 10px;
+}
+.element--summaryComplete .sellingPrice:nth-child(even) {
+  color: $blue-dark;
 }
 
 /* BEGIN - Popular Shelf */

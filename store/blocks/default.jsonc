@@ -18,6 +18,9 @@
     "props": {
       "isInitialScreenOptionOnly": false,
       "defaultOption": 1,
+      "emailPlaceholder": "Indirizzo e-mail",
+      "emailAndPasswordTitle": "Accedi",
+      "passwordPlaceholder": "Password",
       "showPasswordVerificationIntoTooltip": true
     }
   },

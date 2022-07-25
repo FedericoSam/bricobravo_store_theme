@@ -96,7 +96,7 @@
   },
   "image#facebook": {
     "props": {
-      "src": ""
+      "src": "assets/icons/social/Facebook.svg"
     }
   },
   "link#instagram": {

@@ -2,12 +2,12 @@
 @import '../_media-queries.scss';
 
 .outline {
-    background: url(https://bricobravo.vtexassets.com/arquivos/ids/155409-22-22?v=637920420622130000&width=22&height=22&aspect=true);
+    background: url(https://bricobravo.vteximg.com.br/arquivos/heartIcon.svg);
     background-size: contain;
     height: 34px;
     width: 34px;    
     &:hover{
-        background-image: url(https://bricobravo.vtexassets.com/arquivos/ids/155411-22-22?v=637920420622130000&width=22&height=22&aspect=true);
+        background-image: url(https://bricobravo.vteximg.com.br/arquivos/heartIconSolid.svg);
         background-repeat: no-repeat; 
         padding-right: 0;  
     }
