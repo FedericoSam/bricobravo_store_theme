@@ -58,3 +58,15 @@
     width: 290px;
   }
 }
+
+
+@media screen and (max-width:760px) {
+  .container--filterMobileDrawer,  .wrapper--filterMobileDrawer {
+    height: 40px;
+  }
+
+  .paragraph--filterMobileDrawer {
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+}
