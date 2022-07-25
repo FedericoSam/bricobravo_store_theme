@@ -5,7 +5,6 @@
       "flex-layout.row#pdp-rating-and-whishlist",
       "flex-layout.row#pdp-price-and-installments",
       "condition-layout.product#availability",
-      "flex-layout.row#pdp-shipping",
       "flex-layout.row#pdp-product-and-shipping-description"
     ],
     "props": {
@@ -76,7 +75,8 @@
   "flex-layout.col#pdp-quantity-and-add-to-cart": {
     "children": [
       "product-separator",
-      "flex-layout.row#pdp-quantity-and-add-to-cart-children"
+      "flex-layout.row#pdp-quantity-and-add-to-cart-children",
+      "flex-layout.row#pdp-shipping"
     ],
     "props": {
       "blockClass": "pdp-quantity-and-add-to-cart",

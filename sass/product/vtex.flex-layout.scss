@@ -317,6 +317,12 @@
       padding-left: 0.25rem;
     }
   }
+
+  &--availability-subscriber {
+    @include breakpoint('mobile') {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .flexRowChild--table-cell,
@@ -512,6 +518,25 @@
       :global(.vtex-flex-layout-0-x-flexRow--productSpecificationItem) {
         :global(.vtex-flex-layout-0-x-flexCol--specificationValueCol) {
           display: none;
+        }
+      }
+    }
+
+    &--availability-subscriber {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 1.75rem;
+      padding-top: 1rem;
+      border-top: 1px solid #d8d8d8;
+
+      @include breakpoint('mobile') {
+        flex-direction: column;
+      }
+
+      .stretchChildrenWidth {
+        @include breakpoint('mobile') {
+          width: 100% !important;
         }
       }
     }

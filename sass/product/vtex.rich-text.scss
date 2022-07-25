@@ -142,6 +142,31 @@
       line-height: 1.25rem;
     }
   }
+
+  &--availability-modal-title {
+    height: 1.25rem;
+    color: $primary-default;
+    font-size: $paragraph-large-bold;
+    font-weight: bold;
+    line-height: 1.25rem;
+    margin: 0 0 1rem;
+
+    @include breakpoint('mobile') {
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  &--availability-modal-description {
+    height: 1rem;
+    color: $primary-default;
+    font-size: $paragraph-medium-regular;
+    line-height: 1rem;
+    margin: 0 0 0.75rem;
+
+    @include breakpoint('mobile') {
+      height: 1.5rem;
+    }
+  }
 }
 
 .heading {
