@@ -849,6 +849,33 @@
 
 }
 
+.searchNotFound {
+  height: 150px;
+}
+
+.searchNotFoundOops {
+  font-size: 0;
+}
+
+.searchNotFoundInfo {
+  font-size: 0;
+  padding: 0 20px;
+  &::before {
+    content: "Ops… siamo spiacenti";
+    color: #332C32;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-left: -5rem;
+  }
+  &::after {
+    content: "Non abbiamo trovato la pagina che cerchi, però possiamo aiutarti a cercare qualcos’altro per te e la tua casa";
+    color: #332C32;
+    font-size: 16px;
+    text-align: center;
+  }
+}
 
 .caretIcon--filterMobile {
   @include breakpoint('mobile') {
