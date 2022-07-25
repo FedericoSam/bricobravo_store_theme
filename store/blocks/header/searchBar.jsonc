@@ -19,7 +19,8 @@
       "autocompleteAlignment": "center",
       "autocompleteFullWidth": true,
       "displayMode": "search-button",
-      "containerMode": "container"
+      "containerMode": "container",
+      "blockClass": "mobile-searchbar"
     }
   }
 }
