@@ -26,7 +26,7 @@
   },
   "rich-text#newsSubTitle": {
     "props": {
-      "text": "Ti basterà inserire il tuo indirizzo email e riceverai 5€ di sconto sul tuo primo ordine.",
+      "text": "Ti basterà inserire il tuo indirizzo email e riceverai **5€ di sconto** sul tuo primo ordine.",
       "textPosition": "LEFT",
       "textAlignment": "LEFT",
       "blockClass": "newsSubTitle"
