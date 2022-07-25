@@ -43,6 +43,11 @@
       "custom-add-to-cart#event-trigger"
     ]
   },
+  "custom-add-to-cart#event-trigger": {
+    "props": {
+      "blockClass": "event-trigger"
+    }
+  },
   "slider-layout#wishlist": {
     "props": {
       "itemsPerPage": {

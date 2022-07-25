@@ -4,12 +4,23 @@
 
 .container--summaryComplete {
   max-width: 332px !important;
-  height: 360px;
+  height: 380px;
   position: relative;
   border: none;
   border-radius: 2px;
   box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.3);
   transition: all 0.4s ease;
+  background: $white;
+
+  :global(.vtex-product-price-1-x-installments) {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 0 0.8rem;
+    margin: 12px;
+    text-align: center;
+    display: inline-block;
+  }
+
   &:hover {
     height: 486px;
     transition: all 0.3s ease;

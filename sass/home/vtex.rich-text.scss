@@ -40,10 +40,9 @@
     &--home-section-title {
       display: flex;
       justify-content: flex-start;
-      font-size: 40px;
-      line-height: 48px;
+      font-size: 24px;
       font-weight: 500;
-      margin: 0;
+      margin: 0 0 20px;
       @media screen and (max-width: 768px) {
         font-size: 28px;
         line-height: 32px;
@@ -173,7 +172,6 @@
 
   .wrapper {
     &--home-section-title {
-      margin: 1rem auto;
       
       @include breakpoint('mobile') {
         margin: 0 1rem;

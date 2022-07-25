@@ -28,11 +28,12 @@
 
   :global(.vtex-search-result-3-x-galleryItem) {
     position: relative;
-    height: 380px;
+    height: 400px;
   }
 
   :global(.vtex-product-summary-2-x-container--summaryComplete) {
-    max-width: 300px !important;
+    max-width: 300px;
+    width: 300px;
     margin-bottom: 30px;
     transition: none;
 
