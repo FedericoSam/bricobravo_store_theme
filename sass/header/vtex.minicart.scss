@@ -101,7 +101,7 @@
     left: 20px;
     top: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 28px;
     line-height: 33px;
     color: #111;
@@ -122,11 +122,11 @@
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
-    color: #291660 !important;
+    color: #5A40A4 !important;
     &::before{
       content: "Rimuovi articolo";
       font-size: 14px;
-      color: #291660;
+      color: #5A40A4 !important ;
       font-weight: bold;
     }
 
