@@ -4,29 +4,23 @@
 .flexRow {
   &--footer-upperFooterMobile {
     background: $background-footer;
-    margin-top: -60px;
     z-index: 2;
     position: relative;
+    margin: 0;
 
     @media screen and (max-width: 768px) {
-      margin-top: -20px;
       padding: 48px 24px;
     }
   }
   &--footer-upperFooterDesktop {
     background: $background-footer;
-    margin-top: -60px;
     z-index: 2;
     position: relative;
+    margin: 0;
 
     @media screen and (max-width: 768px) {
-      margin-top: -20px;
       padding: 48px 24px;
     }
-  }
-
-  &--upperFooter {
-    background: #f6f6f6;
   }
 
   &--upperFooterDesktop,
@@ -36,7 +30,7 @@
     }
   }
   &--footer-PaymentMethods {
-    padding: 0 40px 0 32px;
+    padding: 0 30px 0 20px;
     background-color: $background-footer;
   }
   &--bottomFooterDesktop {
@@ -46,6 +40,10 @@
     @media screen and (max-width: 768px) {
       padding: 32px;
     }
+  }
+
+  &--newsletterRow {
+    background-color: $blue-active;
   }
 
   &--quemSomos-main {
@@ -120,18 +118,50 @@
   }
 
   &--newsletterRow {
-    margin-top: 72px;
-    justify-content: center;
+    @include container-main;
 
-    @media screen and (max-width: 768px) {
-      padding: 0 16px;
-      margin-top: 64px;
+    padding: 30px 23px;
+    justify-content: space-between;
+    align-items: center;
+
+    @include breakpoint('desktop') {
+      .stretchChildrenWidth {
+        width: max-content !important;
+      }
+    }
+
+    @include breakpoint('mobile') {
+      margin-top: 0;
+      padding: 40px 40px;
+      justify-content: center;
     }
   }
 
   &--newsletterForm {
     max-width: 564px;
-    justify-content: space-between;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 20px;
+    .stretchChildrenWidth {
+      width: max-content !important;
+    }
+    @include breakpoint('mobile') {
+      justify-content: center;
+    }
+  }
+
+  &--newsletter-containerShareLinks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .stretchChildrenWidth {
+      width: max-content !important;
+      margin: 0 17px;
+    }
+    @include breakpoint('mobile') {
+      justify-content: center;
+      margin-top: 30px;
+    }
   }
 
   &--footer-PaymentMethods {
@@ -181,6 +211,7 @@
   &--footer-upperFooterCol1,
   &--footer-upperFooterCol2 {
     padding: 32px;
+    padding-left: 20px;
 
     @media screen and (max-width: 768px) {
       padding: 0;
@@ -221,12 +252,6 @@
     &--footer-PaymentMethods {
       @media screen and (max-width: 768px) {
         margin-bottom: 12px;
-      }
-    }
-
-    &--upperFooterColMobile {
-      @include breakpoint('mobile') {
-        margin-bottom: 2.5rem;
       }
     }
   }

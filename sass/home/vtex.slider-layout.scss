@@ -5,7 +5,9 @@
   .sliderArrows {
     &.sliderLeftArrow {
       &--home-services,
-      &--home-blog {
+      &--home-blog,
+      &--homeBottomSectionBrands,
+      &--homeBottomSectionCategories {
         position: absolute;
         top: -3rem;
         right: 2rem;
@@ -15,7 +17,9 @@
 
     &.sliderRightArrow {
       &--home-services,
-      &--home-blog {
+      &--home-blog,
+      &--homeBottomSectionBrands,
+      &--homeBottomSectionCategories {
         position: absolute;
         top: -3rem;
       }
@@ -23,7 +27,9 @@
 
     .caretIcon {
       &--home-services,
-      &--home-blog {
+      &--home-blog,
+      &--homeBottomSectionBrands,
+      &--homeBottomSectionCategories {
         height: 16px;
         color: $blue-dark;
       }
@@ -54,12 +60,36 @@
       width: 240px !important;
     }
   }
+
+  &--homeBottomSectionBrandsMobile {
+    @include breakpoint('mobile') {
+      margin: 0 0.625rem !important;
+    }
+  }
+
+  &--homeBottomSectionCategoriesMobile {
+    @include breakpoint('mobile') {
+      margin: 0 2rem !important;
+    }
+  }
 }
 
 .sliderTrack {
   &--home-services {
     @include breakpoint('mobile') {
       transform: translate3d(-8.8125%, 0, 0) !important;
+    }
+  }
+
+  &--homeBottomSectionBrandsMobile {
+    @include breakpoint('mobile') {
+      transform: translate3d(-18.75%, 0, 0) !important;
+    }
+  }
+
+  &--homeBottomSectionCategoriesMobile {
+    @include breakpoint('mobile') {
+      transform: translate3d(-8.6%, 0, 0) !important;
     }
   }
 }

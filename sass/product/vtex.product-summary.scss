@@ -477,6 +477,7 @@
 @media screen and (max-width: 48rem) {
   :global(.vtex-search-result-3-x-gallery) {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     background: #f2f2f2;
     padding-top: 8px !important;
 
@@ -484,12 +485,12 @@
       max-width: 100% !important;
 
       .container--summaryComplete {
-        max-width: 344px !important;
+        max-width: 344px;
         width: 100%;
 
         .clearLink--summaryComplete {
           width: 344px !important;
-          padding: 24px !important;
+          padding: 24px;
 
           :global(.vtex-flex-layout-0-x-flexRowContent--summaryDescription) {
             :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {

@@ -9,7 +9,7 @@
       "flex-layout.row#home-blog",
       // "flex-layout.row#home-reviews",
       "flex-layout.row#home-services",
-      "flex-layout.row#upperFooter"
+      "flex-layout.row#homeBottomSection"
     ]
   },
 
@@ -297,36 +297,68 @@
 
   "flex-layout.col#home-shelf-01": {
     "children": [
-      "rich-text#home-shelf-01-title",
-      "list-context.product-list#also-view"
+      "flex-layout.row#home-shelf-01-title",
+      "list-context.product-list#alsoView"
     ]
   },
 
+  "flex-layout.row#home-shelf-01-title": {
+    "children": [
+      "rich-text#home-shelf-01-title",
+      "link#home-shelf-01-allProducts"
+    ],
+    "props": {
+      "blockClass": "home-shelf-02-title"
+    }
+  },
   "rich-text#home-shelf-01-title": {
     "props": {
       "blockClass": "home-section-title",
       "text": "## Bricobravo consiglia"
     }
   },
+  "link#home-shelf-01-allProducts": {
+    "props": {
+      "href": "#",
+      "blockClass": "home-shelf",
+      "label": "Mostra tutto"
+    }
+  },
 
   "flex-layout.row#home-shelf-02": {
     "children": ["flex-layout.col#home-shelf-02"],
     "props": {
-      "blockClass": "Offerta del mese"
+      "blockClass": "home-shelf-02"
     }
   },
 
   "flex-layout.col#home-shelf-02": {
     "children": [
-      "rich-text#home-shelf-02-title",
-      "list-context.product-list#also-view"
+      "flex-layout.row#home-shelf-02-title",
+      "list-context.product-list#alsoView"
     ]
   },
 
+  "flex-layout.row#home-shelf-02-title": {
+    "children": [
+      "rich-text#home-shelf-02-title",
+      "link#home-shelf-02-allProducts"
+    ],
+    "props": {
+      "blockClass": "home-shelf-02-title"
+    }
+  },
   "rich-text#home-shelf-02-title": {
     "props": {
       "blockClass": "home-section-title",
       "text": "## Offerta del mese"
+    }
+  },
+  "link#home-shelf-02-allProducts": {
+    "props": {
+      "href": "#",
+      "blockClass": "home-shelf",
+      "label": "Mostra tutto"
     }
   },
 
@@ -339,15 +371,31 @@
 
   "flex-layout.col#home-shelf-03": {
     "children": [
-      "rich-text#home-shelf-03-title",
-      "list-context.product-list#also-view"
+      "flex-layout.row#home-shelf-03-title",
+      "list-context.product-list#alsoView"
     ]
   },
 
+  "flex-layout.row#home-shelf-03-title": {
+    "children": [
+      "rich-text#home-shelf-03-title",
+      "link#home-shelf-03-allProducts"
+    ],
+    "props": {
+      "blockClass": "home-shelf-03-title"
+    }
+  },
   "rich-text#home-shelf-03-title": {
     "props": {
       "blockClass": "home-section-title",
       "text": "## I prodotti più venduti"
+    }
+  },
+  "link#home-shelf-03-allProducts": {
+    "props": {
+      "href": "#",
+      "blockClass": "home-shelf",
+      "label": "Mostra tutto"
     }
   },
 
@@ -857,33 +905,33 @@
     }
   },
 
-  "flex-layout.row#upperFooter": {
-    "children": ["flex-layout.col#upperFooter"],
+  "flex-layout.row#homeBottomSection": {
+    "children": ["flex-layout.col#homeBottomSection"],
     "props": {
-      "blockClass": "upperFooter"
+      "blockClass": "homeBottomSection"
     }
   },
 
-  "flex-layout.col#upperFooter": {
+  "flex-layout.col#homeBottomSection": {
     "children": [
-      "responsive-layout.desktop#upperFooterDesktop",
-      "responsive-layout.mobile#upperFooterMobile"
+      "responsive-layout.desktop#homeBottomSectionDesktop",
+      "responsive-layout.mobile#homeBottomSectionMobile"
     ],
     "props": {
-      "blockClass": "upperFooter"
+      "blockClass": "homeBottomSection"
     }
   },
 
-  "responsive-layout.desktop#upperFooterDesktop": {
-    "children": ["flex-layout.row#upperFooterDesktop"],
+  "responsive-layout.desktop#homeBottomSectionDesktop": {
+    "children": ["flex-layout.row#homeBottomSectionDesktop"],
     "props": {
-      "blockClass": "upperFooterDesktop"
+      "blockClass": "homeBottomSectionDesktop"
     }
   },
-  "responsive-layout.mobile#upperFooterMobile": {
-    "children": ["flex-layout.row#upperFooterMobile"],
+  "responsive-layout.mobile#homeBottomSectionMobile": {
+    "children": ["flex-layout.row#homeBottomSectionMobile"],
     "props": {
-      "blockClass": "upperFooterMobile"
+      "blockClass": "homeBottomSectionMobile"
     }
   }
 }

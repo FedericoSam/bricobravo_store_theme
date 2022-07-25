@@ -146,7 +146,7 @@
   },
   "image#banner-sponsored": {
     "props": {
-      "src": "https://via.placeholder.com/1376x320/E30613/fff",
+      "src": "https://via.placeholder.com/980x221/ccc/fff",
       "alt": "banner-sponsored",
       "maxWidth": "1312px",
       "blockClass": "banner-sponsored"
@@ -330,7 +330,7 @@
 
   "image#banner-sponsored-mobile": {
     "props": {
-      "src": "https://via.placeholder.com/1376x320/E30613/fff",
+      "src": "https://via.placeholder.com/360x281/ccc/fff",
       "alt": "banner-sponsored",
       "maxWidth": "360px",
       "blockClass": "banner-sponsored"
