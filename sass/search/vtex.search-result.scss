@@ -9,7 +9,7 @@
 .galleryTitle--layout {
   font-size: 28px;
   line-height: 33px;
-  color: #332C32;
+  color: #332c32;
   margin: 20px 0 10px;
   @media screen and (max-width: 768px) {
     font-size: 24px;
@@ -35,7 +35,7 @@
     max-width: 300px !important;
     margin-bottom: 30px;
     transition: none;
-    
+
     &:hover {
       position: absolute;
       left: 10px;
@@ -43,7 +43,7 @@
       z-index: 7;
       height: 480px;
       background: $white;
-      transition: all .3s ease-in-out;
+      transition: all 0.3s ease-in-out;
     }
 
     :global(.vtex-product-summary-2-x-productNameContainer) {
@@ -51,15 +51,15 @@
     }
 
     :global(.vtex-flex-layout-0-x-flexColChild--specificationNameCol) {
-      [data-specification-name="Spedizione gratuita"]::after {
+      [data-specification-name='Spedizione gratuita']::after {
         content: url(https://bricobravo.vtexassets.com/arquivos/ids/155410-22-22?v=637920420622130000&width=140&height=20&aspect=true);
         margin: 24px 0 0 48px;
       }
-      [data-specification-name="Premium"]::after {
+      [data-specification-name='Premium']::after {
         margin: 24px 0 0 60px;
       }
     }
-    
+
     :global(.vtex-flex-layout-0-x-flexCol--summaryInfo) {
       padding: 20px;
       position: relative;
@@ -90,9 +90,9 @@
   }
 
   :global(.vtex-product-summary-2-x-containerNormal--summaryComplete) {
-      max-width: 160px !important;
-      margin-bottom: 20px;
-      background-color: $white;
+    max-width: 160px !important;
+    margin-bottom: 20px;
+    background-color: $white;
 
     :global(.vtex-product-summary-2-x-clearLink--summaryComplete) {
       max-width: 160px;
@@ -102,17 +102,17 @@
         padding: 5px;
 
         :global(.vtex-flex-layout-0-x-flexColChild--specificationNameCol) {
-          [data-specification-name="Premium"]::after,
-          [data-specification-name="Spedizione gratuita"]::after{
+          [data-specification-name='Premium']::after,
+          [data-specification-name='Spedizione gratuita']::after {
             @include mobile {
               top: -56px;
               left: 66px;
             }
           }
-          
-          [data-specification-name="Spedizione gratuita"]::after {
+
+          [data-specification-name='Spedizione gratuita']::after {
             @include mobile {
-            content: url(https://bricobravo.vtexassets.com/arquivos/ids/155415-22-22?v=637920420622130000&width=73&height=20&aspect=true);
+              content: url(https://bricobravo.vtexassets.com/arquivos/ids/155415-22-22?v=637920420622130000&width=73&height=20&aspect=true);
             }
           }
         }
@@ -149,7 +149,7 @@
   .showingProductsCount {
     font-size: 16px;
     font-weight: 400;
-    color: #332C32;
+    color: #332c32;
     line-height: 19px;
 
     // &::before {
@@ -183,7 +183,7 @@
   margin: 16px 0 16px;
   position: relative;
 
-  @include breakpoint("mobile") {
+  @include breakpoint('mobile') {
     margin-block: auto;
     //width: auto;
     //margin: 0 30px;
@@ -212,7 +212,7 @@
     @include breakpoint('mobile') {
       justify-content: center;
       height: 40px;
-      border: 1px solid #D8D8D8;
+      border: 1px solid #d8d8d8;
       border-left: none;
       transform: translateY(-1px);
       z-index: 3;
@@ -268,11 +268,11 @@
 
       &::after {
         @include breakpoint('mobile') {
-          content: "Ordina per";
+          content: 'Ordina per';
           font-size: 16px;
           font-weight: 400;
           line-height: 19px;
-          color: #332C32;
+          color: #332c32;
           position: absolute;
           left: 50px;
           top: 10px;
@@ -283,12 +283,11 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 19px;
-        color: #332C32;
+        color: #332c32;
         //margin-right: 60px;
         position: absolute;
         text-transform: lowercase;
         left: 82px;
-        
 
         @include breakpoint('mobile') {
           left: unset;
@@ -329,10 +328,7 @@
   .orderByOptionsContainer {
     border: none;
   }
-
-
 }
-
 
 .filterContent {
   font-size: 16px;
@@ -352,7 +348,7 @@
   }
 
   :global(.vtex-slider__selector) {
-    background: #2B126B;
+    background: #2b126b;
     transform: translateY(1px);
     height: 4px !important;
     width: 4px !important;
@@ -362,7 +358,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #2B126B;
+    background-color: #2b126b;
     border-radius: 30px;
     height: 20px;
     margin: -3px 0 0 -3px;
@@ -444,7 +440,7 @@
 
       &::after {
         visibility: visible;
-        content: url("assets/icons/icon_filter.svg");
+        content: url('assets/icons/icon_filter.svg');
         padding-right: 8px;
       }
     }
@@ -469,7 +465,7 @@
     line-height: 16px;
 
     @include breakpoint('mobile') {
-      color:#332C32;
+      color: #332c32;
       font-size: 16px;
       font-weight: 400;
       line-height: 19px;
@@ -490,7 +486,7 @@
     font-size: 18px;
     line-height: 21px;
     font-weight: 500;
-    color: #332C32;
+    color: #332c32;
   }
 
   .filter__container {
@@ -498,11 +494,13 @@
     order: 4;
   }
 
-  .filter__container--selectedFilters, .filter__container--clearAllFilters {
+  .filter__container--selectedFilters,
+  .filter__container--clearAllFilters {
     order: 1;
   }
 
-  .filter__container--category-2, .filter__container--spedizione {
+  .filter__container--category-2,
+  .filter__container--spedizione {
     order: 2;
   }
 
@@ -515,7 +513,7 @@
   }
 
   :global(.vtex-checkbox__label) {
-    color: #332C32;
+    color: #332c32;
     padding-left: 10px;
     font-size: 16px;
     line-height: 19px;
@@ -523,26 +521,24 @@
   }
 
   .filter__container--selectedFilters {
-    :global( .vtex-checkbox__label) {
+    :global(.vtex-checkbox__label) {
       font-size: 14px;
       line-height: 16px;
       color: #0b1658;
       font-weight: normal;
       padding: 6px;
-      //padding-right: 26px;
       width: auto;
       border: 1px solid;
-      background-color: #F6F6F6;
+      background-color: #f6f6f6;
       text-transform: capitalize;
       display: flex;
       flex-direction: row-reverse;
-      
 
       &::before {
-        content: url("assets/icons/icon_close.svg");
-        padding-left: 10px;//visibility: hidden;
+        content: url('assets/icons/icon_close.svg');
+        padding-left: 10px; //visibility: hidden;
       }
-  }
+    }
 
     :global(.vtex-checkbox__container) {
       display: none;
@@ -559,37 +555,16 @@
     .filterTitleSpan {
       &::before {
         visibility: hidden;
-        content: "Elimina filtri:";
+        content: 'Elimina filtri:';
         font-size: 14px;
         line-height: 16px;
-        color: #4320A8;
+        color: #4320a8;
         font-weight: 500;
-
       }
 
       visibility: hidden;
     }
-    :global(.vtex-checkbox__label) {
-      font-size: 14px;
-      line-height: 16px;
-      color: #1B0E41;
-      font-weight: 400;
-      padding: 6px 4px 2px 4px;
-      //padding-right: 26px;
-      width: auto;
-      border: 1px solid;
-      display: flex;
-      flex-direction: row-reverse;
-      line-height: 18px;
-
-      
-      // &::after {
-      //   margin-left: 10px;
-      //   content: url("assets/icons/icon_close.svg");
-      // }
-    }
   }
-  
 
   :global(.vtex-checkbox__inner-container) {
     border-radius: 2px;
@@ -602,12 +577,7 @@
     height: 20px;
   }
 
-
-  // :global(.vtex-checkbox__box-wrapper) {
-  //   // top: 4px;
-  //   // left: 4px !important;
-  // }
-  .filterTemplateOverflow {    
+  .filterTemplateOverflow {
     @include desktop {
       :global(.vtex-slider-container) {
         transform: translateY(43px);
@@ -621,16 +591,15 @@
       :global(.vtex-slider__values-container) {
         //padding-bottom: 45px;
 
-        :global(.vtex-slider__left-value), :global(.vtex-slider__right-value) {
+        :global(.vtex-slider__left-value),
+        :global(.vtex-slider__right-value) {
           font-size: 16px;
           line-height: 19px;
-          color: #332C32;
+          color: #332c32;
           text-decoration: underline;
         }
       }
     }
-
-
   }
 
   .filtersWrapperMobile--filterMobile {
@@ -660,7 +629,6 @@
 }
 
 @include breakpoint('mobile') {
-
   .sidebar {
     //max-width: 312px;
     min-width: 312px;
@@ -679,7 +647,7 @@
       }
 
       &::-webkit-scrollbar-track {
-        background-color: #B8B8B8;
+        background-color: #b8b8b8;
         border-radius: 3px;
       }
 
@@ -688,13 +656,11 @@
         border-radius: 3px;
       }
 
-
       :global(.vtex-slider-container) {
         transform: translateY(38px);
         height: 10px;
       }
-          
-        
+
       .filterAccordionBreadcrumbs {
         //margin-top: 3rem;
         border: none;
@@ -711,22 +677,21 @@
           font-weight: 300;
           font-size: 24px;
           line-height: 32px;
-      
+
           &::before {
-            content: "Facilite sua busca";
+            content: 'Facilite sua busca';
             transform: translateX(66px);
             color: #999;
             display: block;
             visibility: visible;
           }
-      
+
           &::after {
-            content: "Filtre os resultados";
+            content: 'Filtre os resultados';
             visibility: visible;
             color: #111;
           }
         }
-
       }
 
       .accordionFilterContainer--filterMobile {
@@ -742,7 +707,7 @@
           border-top: 2px solid #f2f2f2;
 
           .accordionFilterItemTitle--filterMobile {
-            color: #332C32;
+            color: #332c32;
             font-size: 18px;
             line-height: 21px;
             font-weight: 500;
@@ -764,7 +729,7 @@
             font-weight: 400;
             line-height: 19px;
             // letter-spacing: 0.01em;
-            color: #332C32;
+            color: #332c32;
           }
 
           :global(.vtex-checkbox__inner-container) {
@@ -803,10 +768,11 @@
         transform: translateX(10px);
       }
 
-      :global(.vtex-slider__left-value), :global(.vtex-slider__right-value) {
+      :global(.vtex-slider__left-value),
+      :global(.vtex-slider__right-value) {
         font-size: 16px;
         line-height: 19px;
-        color: #332C32;
+        color: #332c32;
         border-bottom: 1px solid;
       }
     }
@@ -814,7 +780,7 @@
     .filterButtonsBox {
       height: 9rem;
       padding-bottom: 43px;
-      border-top: 1px solid #CCC;
+      border-top: 1px solid #ccc;
 
       .filterApplyButtonWrapper--filterMobile {
         width: 280px;
@@ -822,34 +788,29 @@
         padding: 0;
         padding-top: 10px;
         margin-bottom: 8px;
-    
-    
+
         :global(.vtex-button) {
-          background: #2B126B;
+          background: #2b126b;
           border-radius: 4px;
           padding: 12px 24px;
           :global(.vtex-button__label) {
             font-weight: 500;
             font-size: 14px;
             line-height: 16px;
-            color: #FFF;
+            color: #fff;
             //letter-spacing: 0.005em;
             text-align: center;
             visibility: hidden;
             padding: 0;
             &::after {
-              content: "VEDI I RISULTATI";
+              content: 'VEDI I RISULTATI';
               visibility: visible;
               transform: translateX(-30px);
               text-transform: uppercase;
             }
             //background: #e30613;
           }
-    
         }
-
-        
-    
       }
 
       .filterClearButtonWrapper--filterMobile {
@@ -857,9 +818,8 @@
         width: 280px;
         margin-inline: auto;
         padding: 0;
-    
+
         :global(.vtex-button) {
-    
           :global(.vtex-button__label) {
             font-weight: 600;
             font-size: 14px;
@@ -871,21 +831,15 @@
             padding: 0;
             //transform: translateX(-20px);
             &::after {
-              content: " Filtros";
+              content: ' Filtros';
               text-transform: capitalize;
               transform: translateX(3px);
             }
             //background: #e30613;
           }
-    
         }
-    
       }
-
-
-
     }
-
   }
 
   .closeIconButton {
@@ -905,8 +859,6 @@
     //   content: url("assets/icons/icon_close.svg")
     // }
   }
-
-
 }
 
 .searchNotFound {
@@ -921,8 +873,8 @@
   font-size: 0;
   padding: 0 20px;
   &::before {
-    content: "Ops… siamo spiacenti";
-    color: #332C32;
+    content: 'Ops… siamo spiacenti';
+    color: #332c32;
     font-size: 24px;
     font-weight: 500;
     text-align: center;
@@ -930,8 +882,8 @@
     margin-left: -5rem;
   }
   &::after {
-    content: "Non abbiamo trovato la pagina che cerchi, però possiamo aiutarti a cercare qualcos’altro per te e la tua casa";
-    color: #332C32;
+    content: 'Non abbiamo trovato la pagina che cerchi, però possiamo aiutarti a cercare qualcos’altro per te e la tua casa';
+    color: #332c32;
     font-size: 16px;
     text-align: center;
   }
@@ -958,21 +910,20 @@
     }
 
     :global(.vtex-button__label) {
-
       &::before {
-        content: "Elimina filtri";
+        content: 'Elimina filtri';
         text-transform: none;
-        color: #4320A8;
+        color: #4320a8;
         transform: translateX(-24px);
         font-size: 14px;
-        font-weight:500;
-        
+        font-weight: 500;
       }
-      content:"";
+
+      content: '';
       padding-right: 0;
 
       &::after {
-        content: url("assets/icons/icon_close.svg");
+        content: url('assets/icons/icon_close.svg');
         transform: translateX(-145px);
       }
     }
@@ -980,10 +931,8 @@
 }
 
 @include mobile {
-
-  .filter__container {  
-    border-color: #D8D8D8;
-
+  .filter__container {
+    border-color: #d8d8d8;
   }
   .filter__container--priceRange {
     :global(.vtex-slider) {
@@ -1003,20 +952,18 @@
       }
     }
   }
-
-  
 }
 
 .filter__container--selectedFilters {
   .filterItem--premium {
     :global(.vtex-checkbox__label) {
-      color: #F6F6F6;
-      border-color: #1B0E41;
+      color: #f6f6f6;
+      border-color: #1b0e41;
       &::after {
         content: url(https://bricobravo.vtexassets.com/arquivos/ids/155413-22-22?v=637920420622130000&width=75&height=15&aspect=true);
-          width: 30px;
-          padding-top: 2px;
-        }
+        width: 30px;
+        padding-top: 2px;
+      }
     }
   }
 }
@@ -1024,14 +971,14 @@
 .filter__container--spedizione {
   .filterItem--premium {
     :global(.vtex-checkbox__label) {
-      color: #F6F6F6;
-      border-color: #1B0E41;
+      color: #f6f6f6;
+      border-color: #1b0e41;
       &::after {
         content: url(https://bricobravo.vtexassets.com/arquivos/ids/155413-22-22?v=637920420622130000&width=75&height=15&aspect=true);
-          width: 30px;
-          padding-top: 2px;
-          transform: translateX(-54px);
-          display: inline-block;
+        width: 30px;
+        padding-top: 2px;
+        transform: translateX(-54px);
+        display: inline-block;
       }
     }
   }

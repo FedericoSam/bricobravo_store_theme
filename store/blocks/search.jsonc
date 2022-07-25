@@ -85,8 +85,8 @@
       "fullWidth": true
     }
   },
-  "back-to-top-button":{
-    "props":{    
+  "back-to-top-button": {
+    "props": {
       "displayThreshold": 600,
       "display": "caret-icon"
     }
@@ -353,13 +353,8 @@
     }
   },
 
-
-
-
   "drawer": {
-    "children": [
-      "menu#drawer"
-    ],
+    "children": ["menu#drawer"],
     "blocks": ["drawer-trigger"],
     "props": {
       "blockClass": "filterMobileDrawer",
@@ -367,34 +362,28 @@
       //"backdropMode": "none"
     }
   },
-  
+
   "drawer-trigger": {
     "children": ["rich-text#filtra"],
     "props": {
       "blockClass": "filterMobileDrawer"
     }
   },
-  
+
   "rich-text#filtra": {
     "props": {
       "text": "Filtri",
       "blockClass": "filterMobileDrawer"
     }
-  }, 
-  
+  },
+
   "menu#drawer": {
-    "children": [
-      "filter-navigator.v3#mobile"
-    ],
+    "children": ["filter-navigator.v3#mobile"],
     "props": {
       "orientation": "vertical",
       "blockClass": "filterMobileDrawer"
     }
   },
-
-
-
-
 
   "flex-layout.row#searchControlsMobile": {
     "children": [

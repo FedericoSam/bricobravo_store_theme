@@ -8,59 +8,23 @@
   "responsive-layout.desktop#product": {
     "children": [
       "flex-layout.row#breadcrumb",
-      "flex-layout.row#notificationProduct",
-      "flex-layout.row#productMain",
-      "flex-layout.row#productSpecificationBenefits",
-      "flex-layout.row#iframeDescription",
+      "flex-layout.row#product-main",
+      "flex-layout.row#related-products",
+      "flex-layout.row#also-view",
       "flex-layout.row#descriptionSpecification",
-      "flex-layout.row#manual",
-      "flex-layout.row#galery",
-      "flex-layout.row#alsoView"
+      "flex-layout.row#faq",
+      "flex-layout.row#sponsored-products"
     ]
   },
   "responsive-layout.mobile#product": {
     "children": [
-      "flex-layout.row#productMainMobile",
-      "flex-layout.row#productSpecificationBenefits",
-      "flex-layout.row#iframeDescription",
+      "flex-layout.row#breadcrumb",
+      "flex-layout.row#product-main-mobile",
+      "flex-layout.row#related-products",
+      "flex-layout.row#also-view",
       "flex-layout.row#descriptionSpecification",
-      "flex-layout.row#manual",
-      "flex-layout.row#galery-mobile",
-      "flex-layout.row#alsoView"
+      "flex-layout.row#faq",
+      "flex-layout.row#sponsored-products"
     ]
-  },
-  "flex-layout.row#product": {
-    "children": ["flex-layout.col#product"],
-    "props": {
-      "blockClass": "productRow"
-    }
-  },
-  "flex-layout.col#product": {
-    "children": [
-      "flex-layout.row#product-details",
-      "flex-layout.row#buy-together"
-    ]
-  },
-  "flex-layout.row#descriptionSpecification": {
-    "children": [
-      "flex-layout.row#description",
-      "flex-layout.row#specification"
-    ],
-    "props": {
-      "blockClass": "productMain-descSpec"
-    }
-  },
-  "flex-layout.row#manual": {
-    "children": ["link#manual"],
-    "props": {
-      "blockClass": "pdp-Containermanual"
-    }
-  },
-  "link#manual": {
-    "props": {
-      "href": "",
-      "label": "Baixar manual do produto",
-      "blockClass": "pdp-manual"
-    }
   }
 }

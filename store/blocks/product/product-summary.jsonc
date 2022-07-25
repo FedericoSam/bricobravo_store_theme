@@ -108,11 +108,6 @@
   "product-specification": {
     "children": ["product-specification-text#specification"]
   },
-  "product-specification-text#specification": {
-    "props": {
-      "message": "{specificationName}"
-    }
-  },
   "product-price-savings#discount": {
     "props": {
       "blockClass": "savingPercentage"
