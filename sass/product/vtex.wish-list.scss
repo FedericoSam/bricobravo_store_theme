@@ -2,7 +2,7 @@
 @import '../_media-queries.scss';
 
 .outline {
-  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='36px' height='33px' viewBox='0 0 36 33' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E86A4999B-454A-4B89-8A0D-9C631617B9C3%3C/title%3E%3Cdefs%3E%3Cpath d='M6.06867925,1 C3.27320755,1 1,3.34143339 1,6.21920306 C1,12.4870521 9.45132075,17.1916203 11,18 C12.5479245,17.1916203 21,12.4870521 21,6.21920306 C21,3.34143339 18.7260377,1 15.930566,1 C14.0883019,1 12.3886792,2.02229416 11.4935849,3.66773046 C11.2943396,4.03588037 10.7056604,4.03588037 10.5056604,3.66773046 C9.61056604,2.02229416 7.9109434,1 6.06867925,1 M11,19 C10.9179661,19 10.836678,18.9817753 10.7613559,18.9453259 C10.3221017,18.7349826 0,13.7019304 0,6.25258783 C0,2.80508373 2.74888136,0 6.12718644,0 C8.05274576,0 9.8500339,0.91730946 11,2.44210863 C12.1492203,0.91730946 13.9465085,0 15.8720678,0 C19.2511186,0 22,2.80508373 22,6.25258783 C22,13.7019304 11.6771525,18.7349826 11.2378983,18.9453259 C11.1625763,18.9817753 11.0812881,19 11,19' id='path-1'%3E%3C/path%3E%3Cfilter x='-50.0%25' y='-52.6%25' width='200.0%25' height='215.8%25' filterUnits='objectBoundingBox' id='filter-2'%3E%3CfeOffset dx='0' dy='1' in='SourceAlpha' result='shadowOffsetOuter1'%3E%3C/feOffset%3E%3CfeGaussianBlur stdDeviation='3.5' in='shadowOffsetOuter1' result='shadowBlurOuter1'%3E%3C/feGaussianBlur%3E%3CfeColorMatrix values='0 0 0 0 0.529411765 0 0 0 0 0.529411765 0 0 0 0 0.529411765 0 0 0 0.382932009 0' type='matrix' in='shadowBlurOuter1'%3E%3C/feColorMatrix%3E%3C/filter%3E%3C/defs%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='D/-3.0-PDP' transform='translate(-887.000000, -289.000000)'%3E%3Cg id='icon-/-wishlist' transform='translate(894.000000, 295.000000)'%3E%3Cuse fill='black' fill-opacity='1' filter='url(%23filter-2)' xlink:href='%23path-1'%3E%3C/use%3E%3Cuse fill='%23291660' fill-rule='evenodd' xlink:href='%23path-1'%3E%3C/use%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("assets/icons/icon-wishlist.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -10,7 +10,7 @@
   width: 32px;
 
   &:hover {
-    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='36px' height='33px' viewBox='0 0 36 33' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E86A4999B-454A-4B89-8A0D-9C631617B9C3%3C/title%3E%3Cdefs%3E%3Cpath d='M6.06867925,1 C3.27320755,1 1,3.34143339 1,6.21920306 C1,12.4870521 9.45132075,17.1916203 11,18 C12.5479245,17.1916203 21,12.4870521 21,6.21920306 C21,3.34143339 18.7260377,1 15.930566,1 C14.0883019,1 12.3886792,2.02229416 11.4935849,3.66773046 C11.2943396,4.03588037 10.7056604,4.03588037 10.5056604,3.66773046 C9.61056604,2.02229416 7.9109434,1 6.06867925,1 M11,19 C10.9179661,19 10.836678,18.9817753 10.7613559,18.9453259 C10.3221017,18.7349826 0,13.7019304 0,6.25258783 C0,2.80508373 2.74888136,0 6.12718644,0 C8.05274576,0 9.8500339,0.91730946 11,2.44210863 C12.1492203,0.91730946 13.9465085,0 15.8720678,0 C19.2511186,0 22,2.80508373 22,6.25258783 C22,13.7019304 11.6771525,18.7349826 11.2378983,18.9453259 C11.1625763,18.9817753 11.0812881,19 11,19' id='path-1'%3E%3C/path%3E%3Cfilter x='-50.0%25' y='-52.6%25' width='200.0%25' height='215.8%25' filterUnits='objectBoundingBox' id='filter-2'%3E%3CfeOffset dx='0' dy='1' in='SourceAlpha' result='shadowOffsetOuter1'%3E%3C/feOffset%3E%3CfeGaussianBlur stdDeviation='3.5' in='shadowOffsetOuter1' result='shadowBlurOuter1'%3E%3C/feGaussianBlur%3E%3CfeColorMatrix values='0 0 0 0 0.529411765 0 0 0 0 0.529411765 0 0 0 0 0.529411765 0 0 0 0.382932009 0' type='matrix' in='shadowBlurOuter1'%3E%3C/feColorMatrix%3E%3C/filter%3E%3C/defs%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='D/-3.0-PDP' transform='translate(-887.000000, -289.000000)'%3E%3Cg id='icon-/-wishlist' transform='translate(894.000000, 295.000000)'%3E%3Cuse fill='%23291660' fill-opacity='1' filter='url(%23filter-2)' xlink:href='%23path-1'%3E%3C/use%3E%3Cuse fill='%23291660' fill-rule='evenodd' xlink:href='%23path-1'%3E%3C/use%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("assets/icons/icon-wishlist.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -20,7 +20,17 @@
   }
 }
 
+.fill {
+  background-image: url('assets/icons/icon-wishlist-solid.svg');
+}
+
 .wishlistIconContainer {
+  &--pdp {
+    .iconSize {
+      width: 30px;
+      height: 30px;
+    }
+  }
   :global(.vtex-button) {
     background: none !important;
     border: none !important;
@@ -53,6 +63,13 @@
 
       &:hover {
         color: #291660;
+      }
+    }
+
+      @include mobile {
+        &::after {
+        content: '';
+        width: 0;
       }
     }
   }
