@@ -1281,8 +1281,7 @@ h1#cart-title {
   .summary-template-holder .summary-totalizers,
   .summary-template-holder .summary-coupon-wrap {
     width: 100% !important; }
-  .summary-template-holder .cart-more-options {
-    display: none !important; }
+
   .summary-template-holder .summary-coupon {
     text-align: center;
     margin: 0 auto !important;
@@ -1476,7 +1475,7 @@ h1#cart-title {
     .cart-more-options .srp-container button.shp-open-options {
       border-color: #1d63be; }
     .cart-more-options .srp-container .onda-v1 .blue {
-      color: #1a73e8;
+      color: #291660 !important;
       outline: none; }
     .cart-more-options .srp-container .onda-v1 .b--blue {
       border-color: #1a73e8;
@@ -3814,7 +3813,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #E30613; }
+    color: #291660; }
 
 #shipping-calculate-link {
   background: #fff;
@@ -4401,8 +4400,7 @@ p.ship-receiverName {
 .cart-template.mini-cart {
   margin-top: 160px !important; }
 
-.summary-template-holder .row-fluid .cart-more-options {
-  display: none !important; }
+
 
 .orderform-template .cart-template.mini-cart .summary-totalizers {
   max-width: 382px;
@@ -4652,3 +4650,8 @@ body.debug-on > *:not(.container-main):not(.main-header):not(.main-footer):not(#
   display: block;
   line-height: 10px;
 }
+
+#shipping-preview-container .loading-img {
+  display: none;
+} 
+
