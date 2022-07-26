@@ -253,7 +253,8 @@
   "link#pdp-disclosure-see-more": {
     "props": {
       "label": "Vedi altri dettagli sul prodotto",
-      "href": "#",
+      "href": "#completeDescription",
+      "scrollTo": "completeDescription",
       "blockClass": "pdp-disclosure-see-more"
     }
   },
