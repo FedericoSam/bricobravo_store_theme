@@ -22,7 +22,7 @@
 
 .menu-header-category {
   list-style-type: none;
-  width: 100%;
+  width: 90%;
 }
 
 .category-menu-item {
@@ -53,17 +53,18 @@
 }
 
 .megamenu--active {
-  height: auto;
-  max-height: 90vh;
+  height: 100%;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
-  top: 15%;
+  top: 44px;
   left: 95%;
   position: absolute;
   background: #ffffff;
-  transform: translateY(-33px);
+  transform: translate(0px,-45px);
   padding: 10px;
-  width: 68vw;
+  width: 77.5vw;
+  overflow: auto;
 }
 
 .bannerSubCategory {
@@ -81,12 +82,10 @@
 
 .submenu-items {
   margin: 0;
-  padding: 15px 30px 40px;
-  display: flex;
-  flex-flow: column wrap;
-  height: 63vh;
-  width: 65vw;
-  overflow: auto;
+  padding: 15px 10px 40px;
+  width: 100%;
+  columns: 6 200px;
+  column-gap: 3rem;
 }
 
 .submenu-item {
@@ -124,8 +123,11 @@
 }
 
 .subcategory-container {
+  height: max-content;
   width: max-content;
   list-style: none;
+  display: inline-block;
+  padding: 0 10px;
 }
 
 .subcategory-item {

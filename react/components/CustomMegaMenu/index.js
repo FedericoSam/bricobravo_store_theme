@@ -55,7 +55,7 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
     <nav className={style['top-navigation']}>
       <div className={style['container']}>
         <ul className={style['menu-department']}>
-          {menuFirstLevel?.map(({ link, text }, index) => {
+          {menuFirstLevel?.map(({ link, text, iconMobile }, index) => {
             return (
               <li
                 ref={node}
@@ -72,7 +72,7 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                   <div className={`${style['col1']}`}>
                     <img
                       style={{ marginRight: '20px' }}
-                      src={IconPlanta}
+                      src={iconMobile}
                       alt=""
                     />
                     {text}
@@ -263,7 +263,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Giardinaggio',
-      iconMobile: 'giardinaggio',
+      iconMobile: IconPlanta,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1010,12 +1010,12 @@ CustomMegaMenu.defaultProps = {
           ],
         },
       ],
-      menuSecondLevelImage: 'https://dummyimage.com/740x457/94d6f5/ff9d00.jpg',
+      menuSecondLevelImage: 'https://dummyimage.com/1300x100.jpg',
     },
     {
       link: '#',
       text: 'Piscine e accessori',
-      iconMobile: 'piscine-acessori',
+      iconMobile: IconPlanta,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1142,12 +1142,12 @@ CustomMegaMenu.defaultProps = {
           ],
         },
       ],
-      menuSecondLevelImage: 'https://dummyimage.com/740x457/94d6f5/ff9d00.jpg',
+      menuSecondLevelImage: 'https://dummyimage.com/1300x100.jpg',
     },
     {
       link: '#',
       text: 'Arredo giardino',
-      iconMobile: 'arredo-giardino',
+      iconMobile: IconPlanta,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1274,12 +1274,12 @@ CustomMegaMenu.defaultProps = {
           ],
         },
       ],
-      menuSecondLevelImage: 'https://dummyimage.com/740x457/94d6f5/ff9d00.jpg',
+      menuSecondLevelImage: 'https://dummyimage.com/1300x100.jpg',
     },
     {
       link: '#',
       text: 'Climatizzazione',
-      iconMobile: 'climatizzazione',
+      iconMobile: IconPlanta,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1406,12 +1406,12 @@ CustomMegaMenu.defaultProps = {
           ],
         },
       ],
-      menuSecondLevelImage: 'https://dummyimage.com/740x457/94d6f5/ff9d00.jpg',
+      menuSecondLevelImage: 'https://dummyimage.com/1300x100.jpg',
     },
     {
       link: '#',
       text: 'Cassette e box',
-      iconMobile: 'cassete-box',
+      iconMobile: IconPlanta,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1538,12 +1538,12 @@ CustomMegaMenu.defaultProps = {
           ],
         },
       ],
-      menuSecondLevelImage: 'https://dummyimage.com/740x457/94d6f5/ff9d00.jpg',
+      menuSecondLevelImage: 'https://dummyimage.com/1300x100.jpg',
     },
     {
       link: '#',
       text: 'Bricolage e Fai da te',
-      iconMobile: 'bricolage-fai-da-te',
+      iconMobile: IconPlanta,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1670,11 +1670,12 @@ CustomMegaMenu.defaultProps = {
           ],
         },
       ],
+      menuSecondLevelImage: 'https://dummyimage.com/1300x100.jpg',
     },
     {
       link: '#',
       text: 'Arredo casa',
-      iconMobile: 'arredo-casa',
+      iconMobile: IconPlanta,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1801,11 +1802,12 @@ CustomMegaMenu.defaultProps = {
           ],
         },
       ],
+      menuSecondLevelImage: 'https://dummyimage.com/1300x100.jpg',
     },
     {
       link: '#',
       text: 'Sport e tempo libero',
-      iconMobile: 'sport-tempo-libero',
+      iconMobile: IconPlanta,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1932,11 +1934,12 @@ CustomMegaMenu.defaultProps = {
           ],
         },
       ],
+      menuSecondLevelImage: 'https://dummyimage.com/1300x100.jpg',
     },
     {
       link: '#',
       text: 'Antinfortunistica',
-      iconMobile: 'antinfortunistica',
+      iconMobile: IconPlanta,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2063,11 +2066,12 @@ CustomMegaMenu.defaultProps = {
           ],
         },
       ],
+      menuSecondLevelImage: 'https://dummyimage.com/1300x100.jpg',
     },
     {
       link: '#',
       text: 'Illuminazione',
-      iconMobile: 'illuminazione',
+      iconMobile: IconPlanta,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2194,11 +2198,12 @@ CustomMegaMenu.defaultProps = {
           ],
         },
       ],
+      menuSecondLevelImage: 'https://dummyimage.com/1300x100.jpg',
     },
     {
       link: '#',
       text: 'Riscaldamento',
-      iconMobile: 'riscaldamento',
+      iconMobile: IconPlanta,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2325,11 +2330,12 @@ CustomMegaMenu.defaultProps = {
           ],
         },
       ],
+      menuSecondLevelImage: 'https://dummyimage.com/1300x100.jpg',
     },
     {
       link: '#',
       text: 'Giocattoli',
-      iconMobile: 'giocattoli',
+      iconMobile: IconPlanta,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2456,11 +2462,12 @@ CustomMegaMenu.defaultProps = {
           ],
         },
       ],
+      menuSecondLevelImage: 'https://dummyimage.com/1300x100.jpg',
     },
     {
       link: '#',
       text: 'Animali',
-      iconMobile: 'Animali',
+      iconMobile: IconPlanta,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2587,11 +2594,12 @@ CustomMegaMenu.defaultProps = {
           ],
         },
       ],
+      menuSecondLevelImage: 'https://dummyimage.com/1300x100.jpg',
     },
     {
       link: '#',
       text: 'Elettrodomestici',
-      iconMobile: ' elettrodomestici',
+      iconMobile: IconPlanta,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2718,11 +2726,12 @@ CustomMegaMenu.defaultProps = {
           ],
         },
       ],
+      menuSecondLevelImage: 'https://dummyimage.com/1300x100.jpg',
     },
     {
       link: '#',
       text: 'Auto e moto',
-      iconMobile: 'auto-moto',
+      iconMobile: IconPlanta,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2849,6 +2858,7 @@ CustomMegaMenu.defaultProps = {
           ],
         },
       ],
+      menuSecondLevelImage: 'https://dummyimage.com/1300x100.jpg',
     },
   ],
 }
