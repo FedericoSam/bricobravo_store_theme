@@ -167,6 +167,17 @@
       height: 1.5rem;
     }
   }
+
+  &--pdp-premium-shipping {
+    margin: 0.25rem 1rem 1.5rem;
+    color: $primary-default;
+    font-size: $paragraph-large-regular;
+    line-height: 1.25rem;
+
+    @include breakpoint('mobile') {
+      margin: 0.25rem 0 1.25rem;
+    }
+  }
 }
 
 .heading {

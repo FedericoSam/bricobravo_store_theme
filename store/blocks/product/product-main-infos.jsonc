@@ -145,14 +145,64 @@
       "width": "100%"
     }
   },
+
   "flex-layout.col#pdp-shipping-type": {
-    "children": ["product-specification-group"],
+    "children": ["flex-layout.row#pdp-shipping-type"],
     "props": {
       "blockClass": "pdp-shipping-type",
       "preventVerticalStretch": true,
       "width": "100%"
     }
   },
+  "flex-layout.row#pdp-shipping-type": {
+    "children": ["modal-trigger#pdp-premium-shipping"],
+    "props": {
+      "blockClass": "pdp-premium-shipping",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "modal-trigger#pdp-premium-shipping": {
+    "props": {
+      "blockClass": "pdp-premium-shipping"
+    },
+    "children": [
+      "product-specification-group",
+      "modal-layout#pdp-premium-shipping"
+    ]
+  },
+
+  "modal-layout#pdp-premium-shipping": {
+    "children": [
+      "modal-header#availability",
+      "modal-content#pdp-premium-shipping"
+    ],
+    "props": {
+      "blockClass": "pdp-premium-shipping"
+    }
+  },
+  "modal-content#pdp-premium-shipping": {
+    "children": ["rich-text#pdp-premium-shipping", "modal-actions.close#close"],
+    "props": {
+      "blockClass": "pdp-premium-shipping"
+    }
+  },
+  "rich-text#pdp-premium-shipping": {
+    "props": {
+      "text": "Tutti i prodotti contrassegnati dal logo **Premium** vengono consegnati in 24 ore lavorative (lun-ven) se acquistati entro le ore 12:00, in 48 ore lavorative (lun-ven) se l’ordine viene effettuato oltre le ore 12:00 in tutta Italia. <br/> <br/> Per Calabria e Isole i tempi potrebbero allungarsi di ulteriori 24 ore.",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "blockClass": "pdp-premium-shipping"
+    }
+  },
+  "modal-actions.close#close": {
+    "props": {
+      "blockClass": "modal-close",
+      "label": "CHIUDI"
+    }
+  },
+
   "product-specification-group": {
     "children": ["product-specification"]
   },
