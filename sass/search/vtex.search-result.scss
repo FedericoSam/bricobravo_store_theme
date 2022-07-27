@@ -427,7 +427,7 @@
   .filterItem {
     margin-bottom: 0.5rem;
     // &--premium::after{
-    //   content: url(https://bricobravo.vtexassets.com/arquivos/ids/155413-22-22?v=637920420622130000&width=75&height=15&aspect=true);
+    //   content: url('assets/images/premium.png');
     //   position: relative;
     //   top: -18px;
     //   left: 30px;
@@ -961,7 +961,7 @@
       color: #f6f6f6;
       border-color: #1b0e41;
       &::after {
-        content: url(https://bricobravo.vtexassets.com/arquivos/ids/155413-22-22?v=637920420622130000&width=75&height=15&aspect=true);
+        content: url('assets/images/premium.png');
         width: 30px;
         padding-top: 2px;
       }
@@ -975,7 +975,7 @@
       color: #f6f6f6;
       border-color: #1b0e41;
       &::after {
-        content: url(https://bricobravo.vtexassets.com/arquivos/ids/155413-22-22?v=637920420622130000&width=75&height=15&aspect=true);
+        content: url('assets/images/premium.png');
         width: 30px;
         padding-top: 2px;
         transform: translateX(-54px);

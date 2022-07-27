@@ -2,21 +2,12 @@
 @import '../_media-queries.scss';
 
 .outline {
-  background-image: url("assets/icons/icon-wishlist.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 32px;
-  width: 32px;
+  background-image: url(/arquivos/heartIcon.svg);
+  padding-right: 14px;
+  padding-bottom: 6px;
 
   &:hover {
-    background-image: url("assets/icons/icon-wishlist.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 32px;
-    width: 32px;
-    padding-right: 0;
+    background-image: url(/arquivos/heartIconSolid.svg);
   }
 }
 
