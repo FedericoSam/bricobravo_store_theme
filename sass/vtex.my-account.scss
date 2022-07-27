@@ -1,5 +1,5 @@
-@import '../_media-queries.scss';
-@import '../_variables.scss';
+@import '_media-queries.scss';
+@import '_variables.scss';
 
 @media screen and (min-width: 64rem) {
   :global(.vtex-account) {
