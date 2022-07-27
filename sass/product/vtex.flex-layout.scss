@@ -2,6 +2,26 @@
 @import '../_variables.scss';
 
 .flexColChild {
+  &--spec-group {
+    .flexRowContent--productSpecificationItem {
+      [data-specification-name='Spedizione gratuita']::after {
+        top: -22px;
+        left: 170px;
+      }
+      @include breakpoint('mobile') {
+        display: flex;
+        border: 1px solid transparent;
+        [data-specification-name='Premium']::after {
+            top: -20px;
+            left: 214px;
+        }
+        [data-specification-name='Spedizione gratuita']::after {
+            top: -38px;
+            left: 183px;
+        }
+      }
+    }
+  }
   &--specificationNameCol {
     [data-specification-name='Premium']::after {
       content: url('assets/images/premium.png');
@@ -346,7 +366,7 @@
     justify-content: flex-end;
   }
   :global(.vtex-wish-list-1-x-fill) {
-    background: url(https://bricobravo.vtexassets.com/arquivos/heartIconSolid.svg);
+    background: url('assets/icons/icon-wishlist-solid.svg');
     padding-right: 14px;
     padding-bottom: 6px;
   }
@@ -807,6 +827,8 @@
           padding: 0.5rem 0 0.5rem 1.25rem;
           background-color: #f6f6f6;
         }
+
+
       }
 
       @media (max-width: 1025px) {
@@ -1192,14 +1214,17 @@
         .flexColChild {
           border-radius: 4px;
           padding: 1rem;
+          }
         }
 
         &:nth-child(even) {
           .flexColChild {
             background-color: $lightgrey-lighter;
-          }
+          
         }
       }
+
+
 
       .flexColChild--specificationNameCol {
         color: $darkgrey-medium;

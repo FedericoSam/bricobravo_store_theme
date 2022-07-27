@@ -11,8 +11,17 @@
   }
 }
 
+.fill {
+  background-image: url('assets/icons/icon-wishlist-solid.svg');
+}
 
 .wishlistIconContainer {
+  &--pdp {
+    .iconSize {
+      width: 30px;
+      height: 30px;
+    }
+  }
   :global(.vtex-button) {
     background: none !important;
     border: none !important;
@@ -45,6 +54,13 @@
 
       &:hover {
         color: #291660;
+      }
+    }
+
+      @include mobile {
+        &::after {
+        content: '';
+        width: 0;
       }
     }
   }

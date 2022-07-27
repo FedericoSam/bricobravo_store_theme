@@ -25,7 +25,7 @@
   "flex-layout.col#product-images-mobile": {
     "children": [
       "product-price-savings#discount",
-      "add-to-list-btn",
+      "add-to-list-btn#pdp",
       "product-images#mobile"
     ],
     "props": {
