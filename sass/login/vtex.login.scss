@@ -246,19 +246,19 @@
       }
 
       .dontHaveAccount {
-        font-size: 18px;
+        font-size: 16px;
         color: white;
-        background: antiquewhite;
         padding: 18px;
         position: absolute;
-        top: 170px;
-        right: 294px;
+        // top: 170px;
+        // right: 294px;
+        transform: translate(417px, -151px);
         box-sizing: border-box;
         height: 40px;
         width: 360px;
         border: 1.5px solid #291660;
         border-radius: 2px;
-        background-color: #FFFFFF;
+        background-color: #FFFFFF !important;
 
         &::after{
             content: "registrati";
@@ -275,7 +275,7 @@
                 bottom: 10px;
                 left: 144px;
                 text-transform: uppercase;
-
+                background-color: #FFFFFF !important;
                 @include breakpoint("mobile"){
                     transform: translateX(-48px);
                 }
