@@ -178,6 +178,11 @@
       }
     }
   }
+
+  &--pdp-add-to-cart {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .flexRow--cartSummary {
@@ -346,6 +351,7 @@
     padding-bottom: 6px;
   }
 }
+
 .flexCol {
   &--summaryInfo {
     padding: 0 10px 10px;
@@ -444,6 +450,16 @@
 
   &--pdp-rating-mobile {
     margin-bottom: 0.5rem;
+  }
+
+  &--pdp-payment-providers {
+    width: 100%;
+    max-width: 18.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  &--pdp-payment-providers-line {
+    margin-bottom: 1.25rem;
   }
 
   .flexRowContent {
@@ -581,6 +597,18 @@
         @include breakpoint('mobile') {
           width: 100% !important;
         }
+      }
+    }
+
+    &--pdp-payment-providers,
+    &--pdp-payment-providers-line {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+
+      :global(.vtex-store-components-3-x-imageElement) {
+        max-width: 3.75rem;
+        width: 100%;
       }
     }
   }

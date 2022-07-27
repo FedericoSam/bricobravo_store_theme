@@ -112,13 +112,100 @@
   },
 
   "flex-layout.col#pdp-add-to-cart": {
-    "children": ["rich-text#pdp-secure-payment", "add-to-cart-button"],
+    "children": ["modal-trigger#pdp-secure-payment", "add-to-cart-button#pdp"],
     "props": {
       "blockClass": "pdp-add-to-cart",
       "preventVerticalStretch": true,
       "width": "50%"
     }
   },
+
+  "modal-trigger#pdp-secure-payment": {
+    "props": {
+      "blockClass": "pdp-secure-payment"
+    },
+    "children": [
+      "rich-text#pdp-secure-payment",
+      "modal-layout#pdp-secure-payment"
+    ]
+  },
+
+  "modal-layout#pdp-secure-payment": {
+    "children": [
+      "modal-header#availability",
+      "modal-content#pdp-secure-payment"
+    ],
+    "props": {
+      "blockClass": "pdp-secure-payment"
+    }
+  },
+  "modal-content#pdp-secure-payment": {
+    "children": [
+      "rich-text#pdp-secure-payment-modal",
+      "flex-layout.row#pdp-payment-providers",
+      "modal-actions.close#close"
+    ],
+    "props": {
+      "blockClass": "pdp-secure-payment"
+    }
+  },
+  "rich-text#pdp-secure-payment-modal": {
+    "props": {
+      "blockClass": "pdp-secure-payment-modal",
+      "text": "Pagamenti sicuri con",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#pdp-payment-providers": {
+    "children": ["flex-layout.col#pdp-payment-providers"],
+    "props": {
+      "blockClass": "pdp-payment-providers",
+      "preventVerticalStretch": true,
+      "width": "100%"
+    }
+  },
+
+  "flex-layout.col#pdp-payment-providers": {
+    "children": [
+      "flex-layout.row#pdp-payment-providers-1",
+      "flex-layout.row#pdp-payment-providers-2"
+    ],
+    "props": {
+      "blockClass": "pdp-payment-providers",
+      "preventVerticalStretch": true,
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#pdp-payment-providers-1": {
+    "children": [
+      "image#payment1",
+      "image#payment2",
+      "image#payment3",
+      "image#payment4"
+    ],
+    "props": {
+      "blockClass": "pdp-payment-providers-line",
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#pdp-payment-providers-2": {
+    "children": [
+      "image#payment5",
+      "image#payment6",
+      "image#payment7",
+      "image#payment8"
+    ],
+    "props": {
+      "blockClass": "pdp-payment-providers-line",
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "width": "100%"
+    }
+  },
+
   "rich-text#pdp-secure-payment": {
     "props": {
       "text": "Pagamenti sicuri",
@@ -127,7 +214,7 @@
       "blockClass": "pdp-secure-payment"
     }
   },
-  "add-to-cart-button": {
+  "add-to-cart-button#pdp": {
     "props": {
       "blockClass": "pdp"
     }
