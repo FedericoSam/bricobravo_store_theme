@@ -57,7 +57,7 @@
     padding: 0 15px;
     height: 60px;
     transition: all ease-in-out;
-    z-index: 1000;
+    z-index: 5;
   }
 
   &--header-categories {
@@ -160,7 +160,7 @@
     :global(.vtex-login-2-x-profile) {
       color: transparent;
       width: 1px;
-      margin: 8px 20px;
+      margin: 8px 1px;
       visibility: hidden;
       
       &::after {
