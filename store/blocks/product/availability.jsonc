@@ -60,7 +60,7 @@
     }
   },
   "modal-content#availability": {
-    "children": ["availability-subscriber", "modal-actions.close"],
+    "children": ["availability-subscriber", "modal-actions.close#availability"],
     "props": {
       "blockClass": "availability-modal-content"
     }
