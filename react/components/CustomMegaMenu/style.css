@@ -82,10 +82,10 @@
 
 .submenu-items {
   margin: 0;
-  padding: 15px 26px 40px;
+  padding: 15px 10px 40px;
   width: 100%;
   columns: 6 200px;
-  column-gap: 0.5rem;
+  column-gap: 3rem;
 }
 
 .submenu-item {
