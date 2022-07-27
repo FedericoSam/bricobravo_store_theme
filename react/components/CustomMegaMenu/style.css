@@ -22,7 +22,7 @@
 
 .menu-header-category {
   list-style-type: none;
-  width: 100%;
+  width: 90%;
 }
 
 .category-menu-item {
@@ -64,6 +64,7 @@
   transform: translate(0px,-45px);
   padding: 10px;
   width: 77.5vw;
+  overflow: auto;
 }
 
 .bannerSubCategory {
@@ -82,11 +83,9 @@
 .submenu-items {
   margin: 0;
   padding: 15px 26px 40px;
-  display: flex;
-  flex-flow: wrap;
-  height: 100%;
   width: 100%;
-  overflow: auto;
+  columns: 6 200px;
+  column-gap: 0.5rem;
 }
 
 .submenu-item {
@@ -127,6 +126,8 @@
   height: max-content;
   width: max-content;
   list-style: none;
+  display: inline-block;
+  padding: 0 10px;
 }
 
 .subcategory-item {
