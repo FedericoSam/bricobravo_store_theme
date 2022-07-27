@@ -124,6 +124,7 @@
 }
 
 .subcategory-container {
+  height: max-content;
   width: max-content;
   list-style: none;
 }
