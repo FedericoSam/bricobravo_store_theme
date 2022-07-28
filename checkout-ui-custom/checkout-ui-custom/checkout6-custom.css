@@ -4249,7 +4249,7 @@ p.ship-receiverName {
   padding-top: 24px; }
 
 .icon-edit:before {
-  content: "Editar" !important;
+  content: "Modifica" !important;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -4650,4 +4650,8 @@ body.debug-on > *:not(.container-main):not(.main-header):not(.main-footer):not(#
   line-height: 10px;
 }
 
+/* Loader Resume Order */
 
+#shipping-preview-container .loading-img {
+  display: none;
+} 
