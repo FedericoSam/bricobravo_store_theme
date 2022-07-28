@@ -12,12 +12,12 @@
         display: flex;
         border: 1px solid transparent;
         [data-specification-name='Premium']::after {
-            top: -20px;
-            left: 214px;
+          top: -20px;
+          left: 214px;
         }
         [data-specification-name='Spedizione gratuita']::after {
-            top: -38px;
-            left: 183px;
+          top: -38px;
+          left: 183px;
         }
       }
     }
@@ -202,6 +202,13 @@
   &--pdp-add-to-cart {
     display: flex;
     justify-content: center;
+  }
+
+  &--pdp-faq {
+    &:last-child {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
 
@@ -827,8 +834,6 @@
           padding: 0.5rem 0 0.5rem 1.25rem;
           background-color: #f6f6f6;
         }
-
-
       }
 
       @media (max-width: 1025px) {
@@ -1214,17 +1219,14 @@
         .flexColChild {
           border-radius: 4px;
           padding: 1rem;
-          }
-        }
-
-        &:nth-child(even) {
-          .flexColChild {
-            background-color: $lightgrey-lighter;
-          
         }
       }
 
-
+      &:nth-child(even) {
+        .flexColChild {
+          background-color: $lightgrey-lighter;
+        }
+      }
 
       .flexColChild--specificationNameCol {
         color: $darkgrey-medium;

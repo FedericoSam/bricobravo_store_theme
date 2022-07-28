@@ -8,7 +8,7 @@
       "rich-text#pdp-faq-title",
       "flex-layout.row#pdp-faq-disclousure-layout",
       "rich-text#pdp-faq-ask-more",
-      "link#pdp-faq-ask-more"
+      "modal-trigger#pdp-faq"
     ],
     "props": { "blockClass": "pdp-faq" }
   },
@@ -30,8 +30,7 @@
   "link#pdp-faq-ask-more": {
     "props": {
       "label": "Fai una domanda",
-      "blockClass": "pdp-faq-ask-more",
-      "href": "#"
+      "blockClass": "pdp-faq-ask-more"
     }
   },
 
@@ -192,6 +191,73 @@
     "props": {
       "src": "assets/icons/faq-up.svg",
       "width": "16px"
+    }
+  },
+
+  "modal-trigger#pdp-faq": {
+    "props": {
+      "blockClass": "pdp-faq"
+    },
+    "children": ["link#pdp-faq-ask-more", "modal-layout#pdp-faq"]
+  },
+
+  "modal-layout#pdp-faq": {
+    "children": ["modal-header#availability", "modal-content#pdp-faq"],
+    "props": {
+      "blockClass": "pdp-faq"
+    }
+  },
+  "modal-content#pdp-faq": {
+    "children": [
+      "rich-text#pdp-faq",
+      "flex-layout.row#faq-form",
+      "modal-actions.close#close"
+    ],
+    "props": {
+      "blockClass": "pdp-faq"
+    }
+  },
+  "rich-text#pdp-faq": {
+    "props": {
+      "text": "Fai una domanda su questo prodotto",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "pdp-faq"
+    }
+  },
+  "flex-layout.row#faq-form": {
+    "children": ["flex-layout.col#faq-form"],
+    "props": {
+      "blockClass": "pdp-faq-form"
+    }
+  },
+  "flex-layout.col#faq-form": {
+    "children": ["form#pdp-faq"],
+    "props": {
+      "blockClass": "pdp-faq-form"
+    }
+  },
+  "form#pdp-faq": {
+    "children": [
+      "form-input.dropdown#pdp-faq-topic",
+      "form-input.text#pdp-faq-question"
+    ],
+    "props": {
+      "blockClass": "pdp-faq-form",
+      "entity": "FrequentlyAskedQuestions",
+      "schema": "FrequentlyAskedQuestions"
+    }
+  },
+  "form-input.dropdown#pdp-faq-topic": {
+    "props": {
+      "pointer": "#/properties/topic",
+      "label": "topic"
+    }
+  },
+  "form-input.text#pdp-faq-question": {
+    "props": {
+      "pointer": "#/properties/question",
+      "label": "question"
     }
   }
 }
