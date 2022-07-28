@@ -3739,7 +3739,7 @@ body {
   font-size: 0; }
 
 .summary-template-holder .cart-links-bottom .btn-success:before {
-  content: 'Finalizar compra';
+  content: 'Acquista ora';
   font-size: 16px; }
 
 .link-choose-more-products-wrapper {
@@ -3834,7 +3834,7 @@ body {
 }
 
 #shipping-calculate-link:before {
-  content: "Consultar";
+  content: "Consultare";
   font-size: 16px; }
 
 .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc .btn, .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a, .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc a, .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc .orderform-template-holder #payment-data .payment-discounts-list table td.action a, .orderform-template-holder #payment-data .payment-discounts-list table td.action .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc a, .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc .orderform-template-holder #payment-data .payment-discounts-list table td.action a, .orderform-template-holder #payment-data .payment-discounts-list table td.action .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc a, .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a, .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data .cart-more-options .srp-container .vtex-shipping-preview-0-x-pc a {
@@ -3880,7 +3880,7 @@ body {
   margin-top: 0 !important; }
 
 #cart-shipping-calculate:before {
-  content: 'Consultar';
+  content: 'Consultare';
   font-size: 15px; }
 
 .srp-data {
