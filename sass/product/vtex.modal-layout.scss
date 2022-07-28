@@ -2,7 +2,8 @@
 @import '../_media-queries.scss';
 
 .paper {
-  &--availability-modal {
+  &--availability-modal,
+  &--pdp-faq {
     width: 100%;
     max-width: 40rem;
 

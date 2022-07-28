@@ -210,6 +210,36 @@
       justify-content: center;
     }
   }
+
+  &--pdp-faq-form {
+    :global(.vtex-styleguide-9-x-container) {
+      border: 1px solid #8e8e8e;
+      border-radius: 3px;
+      margin-bottom: 1.25rem;
+    }
+
+    :global(.vtex-input__label) {
+      color: $primary-dark;
+      font-size: $paragraph-medium-regular;
+      line-height: 1rem;
+    }
+
+    :global(.vtex-input-prefix__group) {
+      margin-bottom: 1.5rem;
+      border: 1px solid #8e8e8e;
+      border-radius: 3px;
+      height: 6.25rem;
+      display: flex;
+      align-items: flex-start;
+
+      :global(.vtex-styleguide-9-x-input) {
+        font-size: $paragraph-large-regular;
+        line-height: 1.25rem;
+        padding: 0.25rem 0.5rem;
+        line-break: normal;
+      }
+    }
+  }
 }
 
 .flexRow--cartSummary {
@@ -1260,5 +1290,10 @@
       display: flex;
       justify-content: flex-start;
     }
+  }
+
+  &--pdp-faq-form {
+    width: 100%;
+    max-width: 26.75rem;
   }
 }

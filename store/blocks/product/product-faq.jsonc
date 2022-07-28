@@ -248,18 +248,21 @@
   "form-input.dropdown#pdp-faq-topic": {
     "props": {
       "pointer": "#/properties/topic",
-      "label": "topic"
+      "label": "",
+      "blockClass": "pdp-faq"
     }
   },
   "form-input.text#pdp-faq-question": {
     "props": {
       "pointer": "#/properties/question",
-      "label": "question"
+      "label": "Inserisci qui la tua domanda",
+      "blockClass": "pdp-faq"
     }
   },
   "form-submit#faq-question": {
     "props": {
-      "label": "submit"
+      "label": "CONFERMA",
+      "blockClass": "pdp-faq"
     }
   }
 }
