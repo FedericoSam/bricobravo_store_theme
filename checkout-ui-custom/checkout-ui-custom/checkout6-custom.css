@@ -3225,7 +3225,7 @@ body.js-vcustom-hideEmailStep .client-pre-email + .client-profile-data .accordio
 .srp-summary-result .info {
   font-size: 0 !important; }
   .srp-summary-result .info::before {
-    content: "Frete";
+    content: "Spedizione";
     font-size: 14px !important; }
 
 .orderform-template .cart-template.mini-cart .cart-fixed {
@@ -3593,7 +3593,7 @@ body {
   margin-top: 12px; }
 
 .summary-template-holder .summary-coupon-wrap::after {
-  content: "Apenas 1 codigo pode ser aplicado por pedido";
+  content: "Può essere applicato solo 1 codice per ordine";
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -3968,7 +3968,7 @@ body {
   margin: 0 !important;
   padding: 0 !important; }
   .custom-cart-template-wrap h2::before {
-    content: "Resumo";
+    content: "Riepilogo";
     font-style: normal;
     font-weight: 300;
     font-size: 20px !important;
@@ -4073,14 +4073,14 @@ body.v-custom-step-profile .client-pre-email h3.client-pre-email-h span:before, 
     .client-pre-email .pre-email .client-email .btn-success span {
       font-size: 0; }
       .client-pre-email .pre-email .client-email .btn-success span::before {
-        content: "Avançar";
+        content: "Continua";
         font-size: 16px !important; }
   .client-pre-email .pre-email .client-email .help {
     display: none !important; }
   .client-pre-email .pre-email .client-email input {
     margin-top: 8px; }
   .client-pre-email .pre-email .client-email::before {
-    content: "Insira seu e-mail";
+    content: "Inserisci il tuo indirizzo email";
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
@@ -4100,18 +4100,18 @@ body.v-custom-step-profile .client-pre-email h3.client-pre-email-h span:before, 
   font-size: 0 !important; }
 
 body.v-custom-step-profile .client-profile-data.active .accordion-toggle > span:after {
-  content: "Informa\E7\F5  es de contato";
+  content: "Informazioni sui contatti";
   font-size: 20px !important;
   position: absolute; }
 
 body.v-custom-step-payment .client-profile-data .accordion-toggle > span:after {
-  content: "Informações de contato";
+  content: "Informazioni personale";
   font-size: 24px !important;
   line-height: 28px;
   position: absolute; }
 
 .client-profile-data .accordion-toggle > span:after {
-  content: "Informações de contato";
+  content: "Informazioni sui contatti";
   font-size: 24px !important;
   line-height: 28px;
   position: absolute; }
@@ -4120,7 +4120,7 @@ body.v-custom-step-payment .client-profile-data .accordion-toggle > span:after {
   font-size: 0px !important; }
 
 .shipping-data .accordion-toggle:after {
-  content: "Envio";
+  content: "Spedizione";
   font-size: 20px !important;
   position: absolute;
   top: 7px; }
@@ -4150,7 +4150,7 @@ body.v-custom-step-payment .client-profile-data .accordion-toggle > span:after {
 .form-step .box-client-info .newsletter .newsletter-text {
   font-size: 0; }
   .form-step .box-client-info .newsletter .newsletter-text::after {
-    content: "Envie-me ofertas exclusivas, produtos em alta, guias de compras com curadoria e muito mais!";
+    content: "Inviami offerte esclusive, prodotti interessanti, guide per lo shopping curate e altro ancora!";
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
@@ -4160,7 +4160,7 @@ body.v-custom-step-payment .client-profile-data .accordion-toggle > span:after {
 .form-step .submit.btn-submit-wrapper #go-to-shipping {
   font-size: 0 !important; }
   .form-step .submit.btn-submit-wrapper #go-to-shipping::before {
-    content: "Avançar";
+    content: "Continua";
     font-size: 16px !important; }
 
 .vtex-omnishipping-1-x-addressForm .vtex-omnishipping-1-x-shippingSectionTitle {
@@ -4235,7 +4235,7 @@ p.ship-receiverName {
     transition: .2s ease-in-out;
     text-decoration: none; }
     .shipping-container .box-step.box-info .link-change-shipping.vtex-omnishipping-1-x-summaryChange::before {
-      content: "Editar opções de envio";
+      content: "Modifica le opzioni di spedizione";
       font-size: 16px !important; }
     .shipping-container .box-step.box-info .link-change-shipping.vtex-omnishipping-1-x-summaryChange:hover {
       color: #1B0E41; }
@@ -4249,7 +4249,7 @@ p.ship-receiverName {
   padding-top: 24px; }
 
 .icon-edit:before {
-  content: "Editar" !important;
+  content: "Modifica" !important;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -4263,7 +4263,7 @@ p.ship-receiverName {
 .vtex-omnishipping-1-x-submitPaymentButton .btn-go-to-payment {
   font-size: 0 !important; }
   .vtex-omnishipping-1-x-submitPaymentButton .btn-go-to-payment::before {
-    content: "Avançar";
+    content: "Continua";
     font-weight: 600;
     font-size: 16px !important; }
 
@@ -4321,7 +4321,6 @@ p.ship-receiverName {
       border: 1.5px solid #291660!important; 
       color:#291660 !important;
     }
-
 .payment-method .payment-group-item-cards {
   left: 50%;
   transform: translate(-50%); }
@@ -4603,7 +4602,7 @@ span.error {
   white-space: nowrap; }
 
 .client-pre-email .pre-email .client-email .btn-success span::before {
-  content: "Avançar" !important; }
+  content: "Continua" !important; }
 
 .orderform-template-holder #payment-data .payment-group-item:first-child:nth-last-child(n + 4),
 .orderform-template-holder #payment-data .payment-group-item:first-child:nth-last-child(n + 4) ~ .payment-group-item {
@@ -4651,7 +4650,8 @@ body.debug-on > *:not(.container-main):not(.main-header):not(.main-footer):not(#
   line-height: 10px;
 }
 
+/* Loader Resume Order */
+
 #shipping-preview-container .loading-img {
   display: none;
 } 
-
