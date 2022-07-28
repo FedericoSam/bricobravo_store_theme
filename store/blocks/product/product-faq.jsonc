@@ -6,9 +6,10 @@
   "flex-layout.col#faq": {
     "children": [
       "rich-text#pdp-faq-title",
-      "flex-layout.row#pdp-faq-disclousure-layout",
-      "rich-text#pdp-faq-ask-more",
-      "modal-trigger#pdp-faq"
+      "flex-layout.row#pdp-faq-disclousure-layout"
+      // As próximas duas linhas estão comentadas porque a app custom que utiliza elas será implementada no futuro.
+      // "rich-text#pdp-faq-ask-more",
+      // "modal-trigger#pdp-faq"
     ],
     "props": { "blockClass": "pdp-faq" }
   },
