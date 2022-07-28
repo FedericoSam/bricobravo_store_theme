@@ -208,11 +208,7 @@
     }
   },
   "modal-content#pdp-faq": {
-    "children": [
-      "rich-text#pdp-faq",
-      "flex-layout.row#faq-form",
-      "modal-actions.close#close"
-    ],
+    "children": ["rich-text#pdp-faq", "flex-layout.row#faq-form"],
     "props": {
       "blockClass": "pdp-faq"
     }
@@ -240,7 +236,8 @@
   "form#pdp-faq": {
     "children": [
       "form-input.dropdown#pdp-faq-topic",
-      "form-input.text#pdp-faq-question"
+      "form-input.text#pdp-faq-question",
+      "form-submit#faq-question"
     ],
     "props": {
       "blockClass": "pdp-faq-form",
@@ -258,6 +255,11 @@
     "props": {
       "pointer": "#/properties/question",
       "label": "question"
+    }
+  },
+  "form-submit#faq-question": {
+    "props": {
+      "label": "submit"
     }
   }
 }

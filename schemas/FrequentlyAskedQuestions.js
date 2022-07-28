@@ -23,7 +23,6 @@ fetch(
       },
       required: ['topic', 'question'],
       'v-security': {
-        allowGetAll: false,
         publicWrite: ['topic', 'question'],
         publicJsonSchema: true,
       },
