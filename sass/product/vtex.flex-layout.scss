@@ -12,12 +12,12 @@
         display: flex;
         border: 1px solid transparent;
         [data-specification-name='Premium']::after {
-            top: -20px;
-            left: 214px;
+          top: -20px;
+          left: 214px;
         }
         [data-specification-name='Spedizione gratuita']::after {
-            top: -38px;
-            left: 183px;
+          top: -38px;
+          left: 183px;
         }
       }
     }
@@ -202,6 +202,44 @@
   &--pdp-add-to-cart {
     display: flex;
     justify-content: center;
+  }
+
+  // As próximas duas linhas estão comentadas porque a app custom que utiliza elas será implementada no futuro.
+  // &--pdp-faq {
+  //   &:last-child {
+  //     display: flex;
+  //     justify-content: center;
+  //   }
+  // }
+
+  &--pdp-faq-form {
+    :global(.vtex-styleguide-9-x-container) {
+      border: 1px solid #8e8e8e;
+      border-radius: 3px;
+      margin-bottom: 1.25rem;
+    }
+
+    :global(.vtex-input__label) {
+      color: $primary-dark;
+      font-size: $paragraph-medium-regular;
+      line-height: 1rem;
+    }
+
+    :global(.vtex-input-prefix__group) {
+      margin-bottom: 1.5rem;
+      border: 1px solid #8e8e8e;
+      border-radius: 3px;
+      height: 6.25rem;
+      display: flex;
+      align-items: flex-start;
+
+      :global(.vtex-styleguide-9-x-input) {
+        font-size: $paragraph-large-regular;
+        line-height: 1.25rem;
+        padding: 0.25rem 0.5rem;
+        line-break: normal;
+      }
+    }
   }
 }
 
@@ -827,8 +865,6 @@
           padding: 0.5rem 0 0.5rem 1.25rem;
           background-color: #f6f6f6;
         }
-
-
       }
 
       @media (max-width: 1025px) {
@@ -1214,17 +1250,14 @@
         .flexColChild {
           border-radius: 4px;
           padding: 1rem;
-          }
-        }
-
-        &:nth-child(even) {
-          .flexColChild {
-            background-color: $lightgrey-lighter;
-          
         }
       }
 
-
+      &:nth-child(even) {
+        .flexColChild {
+          background-color: $lightgrey-lighter;
+        }
+      }
 
       .flexColChild--specificationNameCol {
         color: $darkgrey-medium;
@@ -1258,5 +1291,10 @@
       display: flex;
       justify-content: flex-start;
     }
+  }
+
+  &--pdp-faq-form {
+    width: 100%;
+    max-width: 26.75rem;
   }
 }

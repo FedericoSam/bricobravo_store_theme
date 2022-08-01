@@ -183,7 +183,8 @@
     }
   }
 
-  &--pdp-secure-payment-modal {
+  &--pdp-secure-payment-modal,
+  &--pdp-faq {
     margin: 0.25rem 0 1.25rem;
     color: $primary-default;
     font-size: $headline-h4;
