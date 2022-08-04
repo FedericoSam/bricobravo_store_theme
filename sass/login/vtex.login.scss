@@ -9,7 +9,7 @@
   &--emailVerification {
     flex-direction: row-reverse;
     @include breakpoint("mobile"){
-        display: block;
+        flex-direction: column-reverse;
       }
   }
 
@@ -41,7 +41,7 @@
             align-items: center;
             justify-content: center;
             @include breakpoint("mobile"){
-                transform: translateX(-50px);
+                transform: translateX(0px);
             }
             &::after {
                 content: "Non hai ancora un account?";
@@ -79,7 +79,7 @@
                 .emailPasswordOptionBtn,
                 .accessCodeOptionBtn {
 
-                    &::after{
+                    &::after {
                          content: "Maecenas efficitur feugiat orci, sit amet ullamcorper leo. Sed sit amet felis id ex ornare dignissim faucibus sed mi.";
                          height: 60px;
                          width: 360px;
@@ -91,7 +91,8 @@
                          position: absolute;
                          transform: translateY(-8px);
                          @include breakpoint("mobile"){
-                            transform: translateX(-232px);
+                            transform: translateX(0px);
+                            position: static;
                          }
                     }
                     :global(.vtex-button) {
