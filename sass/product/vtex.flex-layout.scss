@@ -463,6 +463,10 @@
   }
 
   &--pdp-quantity-and-add-to-cart-fixed {
+    position: fixed;
+    z-index: 10;
+    bottom: 60px;
+    left: 0;
     background-color: $white;
     border-bottom: 1px solid #D8D8D8;
     border-top: 1px solid #D8D8D8;

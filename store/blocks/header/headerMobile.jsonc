@@ -32,10 +32,7 @@
     }
   },
   "flex-layout.row#menu-mobile": {
-    "children": [
-      "flex-layout.row#pdp-quantity-and-add-to-cart-fixed",
-      "flex-layout.col#menu-mobile"
-    ],
+    "children": ["flex-layout.col#menu-mobile"],
     "props": {
       "blockClass": "header-menu-mobile"
     }
