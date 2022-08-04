@@ -9,6 +9,7 @@
   &--emailVerification {
     flex-direction: row-reverse;
     @include breakpoint("mobile"){
+        padding: 0;
         flex-direction: column-reverse;
       }
   }
@@ -16,6 +17,9 @@
   .loginOptionsContainer,
   .contentForm {
     padding: 24px 60px;
+    @include breakpoint("mobile") {
+        padding: 24px 0;
+    }
   }
 
   .loginOptionsContainer {
@@ -24,7 +28,8 @@
     border-radius: 4px;
     background-color: #F4F7FA;
     @include breakpoint("mobile"){
-        margin-top: 40px;    
+        margin-top: 40px;
+        width: 100%;
     }
     .optionsSticky {
         .formTitle {
@@ -93,6 +98,7 @@
                          @include breakpoint("mobile"){
                             transform: translateX(0px);
                             position: static;
+                            display: inline-block;
                          }
                     }
                     :global(.vtex-button) {
@@ -290,8 +296,8 @@
            
         }
         @include breakpoint("mobile"){
-            width: 292px;
-            transform: translateX(0px);
+            width: 279px;
+            transform: translateX(-5px);
           }
       }
 
@@ -448,32 +454,8 @@
 
 //login account 
 
-// .formLinkContainer{
-//     position: absolute;
-//     top: 10px;
-//     right: 246px;
-//     width: 427px;
-//     height: 240px;
-//     background: #F4F7FA;
-
-//     .dontHaveAccount{
-//         width: 240px;
-//         color: white;
-//         height: 40px;
-//         margin-top: 169px;
-//         background: white;
-//         &::after{
-//            content: "registrati";
-//            text-transform: uppercase;
-//            color: #291660;
-//            font-family: Roboto;
-//            font-size: 14px;
-//            font-weight: 500;
-//            letter-spacing: 0;
-//            line-height: 16px;
-//            text-align: center;
-//            position: absolute;
-//            transform: translatey(-5px);
-//         }
-//     }
-// }
+.formLinkContainer {
+    @include breakpoint("mobile") {
+        justify-content: center;
+    }
+}
