@@ -463,7 +463,7 @@
   },
   "image#home-blog": {
     "props": {
-      "src": "https://dummyimage.com/460x100/fff/000&text=troppoBravo",
+      "src": "assets/icons/blog/blogTitle.svg",
       "blockClass": "home-blog-image"
     }
   },
