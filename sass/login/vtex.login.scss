@@ -23,9 +23,9 @@
     max-width: 427px;
     border-radius: 4px;
     background-color: #F4F7FA;
-    // @include breakpoint("mobile"){
-    //     width: ;
-    //   }
+    @include breakpoint("mobile"){
+        margin-top: 40px;    
+    }
     .optionsSticky {
         .formTitle {
             // text-align: left;
@@ -291,7 +291,7 @@
         }
         @include breakpoint("mobile"){
             width: 292px;
-            transform: translateX(260px);
+            transform: translateX(0px);
           }
       }
 
