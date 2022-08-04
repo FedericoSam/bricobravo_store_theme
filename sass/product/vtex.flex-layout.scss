@@ -462,6 +462,28 @@
     margin: 0.5rem 0 1rem;
   }
 
+  &--pdp-quantity-and-add-to-cart-fixed {
+    background-color: $white;
+    border-bottom: 1px solid #D8D8D8;
+    border-top: 1px solid #D8D8D8;
+    box-shadow: inset -2px -23px 24px -23px rgba(0,0,0,0.44);
+    .flexRow--pdp-shipping {
+      display: none
+    }
+    .flexCol--pdp-quantity-and-add-to-cart {
+      .flexColChild--pdp-quantity-and-add-to-cart:first-child {
+        display: none;
+      }
+    }
+    .flexRow--pdp-quantity-and-add-to-cart-children {
+      margin: 0;
+      padding: 10px 10px 10px;
+    }
+    :global(.vtex-modal-layout-0-x-triggerContainer--pdp-secure-payment) {
+      display: none
+    }
+  }
+
   &Content {
     &--breadcrumb {
       @include container-main;

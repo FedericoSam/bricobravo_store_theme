@@ -54,8 +54,7 @@
     background: $white;
     width: 100%;
     box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
-    padding: 0 15px;
-    height: 60px;
+    padding: 0;
     transition: all ease-in-out;
     z-index: 5;
   }
@@ -150,6 +149,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 0 15px;
     :global(.vtex-store-drawer-0-x-openIconContainer--drawer-desktop) {
       padding-top: 6px;
       &::after {
