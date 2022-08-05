@@ -42,6 +42,8 @@
   }
 
   &--header-mobile {
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.3);
+
     .flexRowContent {
       background-color: $white;
       padding: 20px 10px 0;
@@ -63,6 +65,9 @@
   &--header-categories {
     margin: 0 auto;
     max-width: 1376px;
+    @include breakpoint("mobile"){
+      display: none;
+    }
     .flexRowContent--header-categories {
       justify-content: space-around;
       padding: 15px 20px 10px;
