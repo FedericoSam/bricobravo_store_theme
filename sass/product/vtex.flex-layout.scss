@@ -274,6 +274,12 @@
   margin-bottom: 0;
 }
 
+/*format Reviews*/
+:global(.vtex-reviews-and-ratings-3-x-star--empty){
+  color: #d8d8d8;
+  font-size: 30px;
+  font-weight: normal;
+}
 /* Product Page */
 
 .flexRow--product-name {
@@ -545,6 +551,7 @@
       :global(.vtex-reviews-and-ratings-3-x-star) {
         margin-right: 0.25rem;
         color: #e3c963;
+        font-weight: bold;
       }
 
       :global(.vtex-reviews-and-ratings-3-x-stars) {
