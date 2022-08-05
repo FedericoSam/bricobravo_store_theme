@@ -40,6 +40,10 @@
   }
 }
 
+.sliderLayoutContainer--mobile-home-categories-showcase-slider {
+  transform: translateY(-12px);
+}
+
 .slideChildrenContainer {
   &--home-blog {
     max-width: 12.5rem;
@@ -94,5 +98,9 @@
     @include breakpoint('mobile') {
       transform: translate3d(-8.6%, 0, 0) !important;
     }
+  }
+
+  &--mobile-home-categories-showcase-slider {
+    height: 170px;
   }
 }

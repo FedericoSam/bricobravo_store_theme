@@ -797,6 +797,7 @@
         }
       }
       :global(.vtex-pageHeader__container) {
+        padding-top: 16px;
         :global(.c-on-base) {
           justify-content: center;
 
@@ -940,4 +941,8 @@
   :global(.vtex-product-summary-2-x-priceContainer) {
     padding: 10px 0 0;
   }
+}
+
+:global(.vtex-my-account-1-x-addressBox){
+  transform: translateY(26px);
 }
