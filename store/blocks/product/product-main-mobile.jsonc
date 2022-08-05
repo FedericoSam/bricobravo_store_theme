@@ -14,7 +14,8 @@
       "flex-layout.row#pdp-rating-mobile",
       "flex-layout.row#pdp-price-and-installments",
       "condition-layout.product#availability",
-      "flex-layout.row#pdp-product-and-shipping-description"
+      "flex-layout.row#pdp-product-and-shipping-description",
+      "flex-layout.row#pdp-quantity-and-add-to-cart-fixed"
     ],
     "props": {
       "blockClass": "product-main-infos",

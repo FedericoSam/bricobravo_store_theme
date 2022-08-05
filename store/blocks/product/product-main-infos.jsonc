@@ -63,6 +63,12 @@
     }
   },
 
+  "flex-layout.row#pdp-quantity-and-add-to-cart-fixed": {
+    "children": ["flex-layout.row#pdp-quantity-and-add-to-cart"],
+    "props": {
+      "blockClass": "pdp-quantity-and-add-to-cart-fixed"
+    }
+  },
   "flex-layout.row#pdp-quantity-and-add-to-cart": {
     "children": ["flex-layout.col#pdp-quantity-and-add-to-cart"],
     "props": {
