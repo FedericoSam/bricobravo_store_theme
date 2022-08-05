@@ -41,26 +41,11 @@
       "disclosure-content#moreInfoPromotion"
     ]
   },
-  "disclosure-state-indicator": {
-    "props": {
-      "Show": "image#arrowDown",
-      "Hide": "image#arrowUp"
-    }
-  },
-  "image#arrowDown": {
-    "props": {
-      "src": "assets/icons/arrowDown.svg",
-      "width": "20px"
-    }
-  },
-  "image#arrowUp": {
-    "props": {
-      "src": "assets/icons/arrowUp.svg",
-      "width": "20px"
-    }
-  },
   "disclosure-trigger#moreInfoPromotion": {
-    "children": ["rich-text#moreInfoPromotion", "disclosure-state-indicator"],
+    "children": [
+      "rich-text#moreInfoPromotion",
+      "disclosure-state-indicator#moreInfoPromotion"
+    ],
     "props": {
       "blockClass": "header-disclosureTrigger"
     }
@@ -68,6 +53,24 @@
   "rich-text#moreInfoPromotion": {
     "props": {
       "text": "Scopri di più"
+    }
+  },
+  "disclosure-state-indicator#moreInfoPromotion": {
+    "props": {
+      "Show": "image#arrowDown",
+      "Hide": "image#arrowUp"
+    }
+  },
+  "image#arrowDown": {
+    "props": {
+      "src": "assets/icons/chevron-down.svg",
+      "width": "20px"
+    }
+  },
+  "image#arrowUp": {
+    "props": {
+      "src": "assets/icons/chevron-up.svg",
+      "width": "20px"
     }
   },
   "disclosure-content#moreInfoPromotion": {
