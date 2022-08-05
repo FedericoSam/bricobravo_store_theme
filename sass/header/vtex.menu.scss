@@ -14,9 +14,9 @@
         font-size: 1rem;
         color: #111;
 
-        &:hover {
-          color: #e30613;
-        }
+        // &:hover {
+        //   color: #e30613;
+        // }
       }
       .styledLinkContent--drawer-menu-item {
         margin: 0.5rem 0;
@@ -28,10 +28,10 @@
       .styledLinkContainer {
         position: relative;
         border: none;
-        .styledLinkContent--has-submenu {
-          color: #e30613;
-          border: none;
-        }
+        // .styledLinkContent--has-submenu {
+        //   color: #e30613;
+        //   border: none;
+        // }
       }
     }
 
