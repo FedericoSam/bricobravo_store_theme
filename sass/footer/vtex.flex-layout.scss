@@ -88,12 +88,6 @@
       line-height: 20px;
       white-space: nowrap;
       margin-right: 30px;
-      &:active {
-        color: $blue-active;
-      }
-      &:hover {
-        color: $blue-hover;
-      }
     }
   }
   &--footer-containerDisclosure {
