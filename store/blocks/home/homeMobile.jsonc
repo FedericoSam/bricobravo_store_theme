@@ -9,7 +9,7 @@
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "blockClass": "mobile-home-categories-showcase"
+      "blockClass": "mobile-home-categories-showcase-main"
     }
   },
 
@@ -20,12 +20,12 @@
         "tablet": 3,
         "phone": 3
       },
-      // "infinite": true,
+      "infinite": true,
       "showNavigationArrows": "never",
       "showPaginationDots": "never",
-      // "fullWidth": true,
-      "centerMode": "to-the-left",
-      "blockClass": "mobile-home-categories-showcase"
+      "fullWidth": true,
+      // "centerMode": "to-the-left",
+      "blockClass": "mobile-home-categories-showcase-slider"
     },
     "children": [
       "flex-layout.col#mobile-home-categories-showcase-01",
