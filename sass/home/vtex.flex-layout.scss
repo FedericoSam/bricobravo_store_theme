@@ -1,6 +1,5 @@
 @import '../_media-queries.scss';
 @import '../_variables.scss';
-
 .flexRow {
   &--home-page-main-slider {
     :global(.vtex-store-components-3-x-container) {
@@ -19,7 +18,7 @@
     margin-bottom: 6.5rem;
 
     @include breakpoint('mobile') {
-      margin-bottom: 5.5rem;
+      margin-bottom: 8.5rem;
     }
 
     :global(.vtex-store-components-3-x-container) {
@@ -202,6 +201,7 @@
     &--mobile-home-categories-showcase {
       display: flex;
       position: relative;
+      transform: translateY(14px);
 
       :global(.vtex-store-components-3-x-imageElement) {
         margin: 0 auto;
@@ -225,7 +225,8 @@
         align-items: center;
       }
       &:last-child {
-        height: 0 !important;
+        //height: 0 !important;
+        transform: translateY(25px);
         text-align: center;
       }
     }

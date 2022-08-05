@@ -99,6 +99,14 @@
   }
 
   &--footer-PaymentMethodsRow {
+    .stretchChildrenWidth {
+      width: auto !important;
+
+      :global(.vtex-store-components-3-x-imageElement) {
+        margin-left: 15px;
+      }
+
+    }
     @include breakpoint('mobile') {
       display: flex;
       justify-content: center;
