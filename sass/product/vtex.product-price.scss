@@ -4,7 +4,7 @@
 .savings {
   &--savingPercentage {
     position: absolute;
-    top: 6px;
+    top: 8px;
     left: -1px;
     font-size: 0;
     background-color: $blue-dark;
@@ -15,7 +15,7 @@
     &::before {
       content: '%';
       display: block;
-      margin: 0.125rem 0 0 0.5rem;
+      margin: 0.125rem 0.3rem 0 0.1rem;
       color: $white;
       font-weight: 400;
       font-size: 16px;

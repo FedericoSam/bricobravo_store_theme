@@ -4,7 +4,7 @@
 .outline {
   background-image: url(/arquivos/heartIcon.svg);
   padding-right: 14px;
-  padding-bottom: 6px;
+  padding-bottom: 10px;
 
   &:hover {
     background-image: url(/arquivos/heartIconSolid.svg);
@@ -18,8 +18,8 @@
 .wishlistIconContainer {
   &--pdp {
     .iconSize {
-      width: 30px;
-      height: 30px;
+      width: 28px;
+      height: 28px;
     }
   }
   :global(.vtex-button) {
