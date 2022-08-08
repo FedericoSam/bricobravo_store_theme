@@ -390,7 +390,7 @@
   },
   "rich-text#home-shelf-02-title": {
     "props": {
-      "blockClass": "home-section-title",
+      "blockClass": "title-2-test home-section-title",
       "text": "## Offerta del mese"
     }
   },

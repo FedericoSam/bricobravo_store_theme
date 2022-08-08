@@ -184,6 +184,7 @@
   }
 
   .headingLevel2 {
+    margin: 26px 0 0;
     &--home-section-title {
       @include breakpoint('mobile') {
         margin: 0 0 1rem;
