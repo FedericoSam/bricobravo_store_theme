@@ -84,7 +84,8 @@
         :global(.vtex-button) {
           height: 40px;
           transition: all ease-in-out 0.3s;
-
+          background-color:#8E8E8E !important;
+          border-color: #8E8E8E;
           &:hover {
             background: $blue-dark-text;
           }
@@ -471,6 +472,18 @@
         :global(.vtex-checkbox__label){
           font-size: 14px;
           line-height: 16px;
+          color: #fff;
+          &::after{
+            content: "Voglio restare aggiornato sulle offerte e promozioni in corso";
+            color: #332C32;
+            font-size: 14px;
+            letter-spacing: 0;
+            line-height: 16px;
+            max-width: 374px;
+            width: 100%;
+            transform: translate(-176px, -2px);
+            position: absolute;
+          }
         }
         .passwordBox {
           :global(.vtex-checkbox__line-container) {
