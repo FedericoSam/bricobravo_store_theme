@@ -31,7 +31,7 @@
         margin: 0;
         position: relative;
         top: -30px;
-        left: 120px;
+        left: 60px;
       }
     }
     [data-specification-name='Spedizione gratuita']::after {
@@ -42,7 +42,7 @@
 
       @include breakpoint('mobile') {
         top: -36px;
-        left: 106px;
+        left: 50px;
       }
     }
   }
@@ -274,12 +274,13 @@
   margin-bottom: 0;
 }
 
-/*format Reviews*/
+/* format Reviews */
 :global(.vtex-reviews-and-ratings-3-x-star--empty){
   color: #d8d8d8;
   font-size: 30px;
   font-weight: normal;
 }
+
 /* Product Page */
 
 .flexRow--product-name {
