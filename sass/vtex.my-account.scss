@@ -8,6 +8,18 @@
   }
 }
 
+.menu {
+  width: 15%;
+  padding-right: 0;
+}
+
+:global(.vtex-account__page-body) {
+  padding-inline: 0;
+  :global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf) {
+    height: 472px;
+  }
+}
+
 :global(.vtex-radioGroup__radioLabel) {
   max-width: 400px;
 }
@@ -371,8 +383,12 @@
     border-color: #d8d8d8;
   }
 
+  
+
   :global(.vtex-account__page) {
     width: 100%;
+
+
     :global(.vtex-pageHeader__title) {
       color: $primary-default;
       font-size: 28px;
@@ -581,7 +597,7 @@
         box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.3);
         transition: all 0.4s ease;
         &:hover {
-          height: 470px;
+          height: 454px;
           transition: all 0.3s ease;
         }
         :global(.vtex-store-components-3-x-priceContainer) {
@@ -592,7 +608,7 @@
             font-size: 18px;
             line-height: 22px;
             color: $primary-default;
-            padding-bottom: 10px;
+            //padding-bottom: 10px;
           }
           :global(.vtex-store-components-3-x-sellingPrice:nth-child(even)) {
             color:$blue-dark;
