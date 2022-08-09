@@ -33,7 +33,7 @@
       "itemsPerPage": {
         "desktop": 6,
         "tablet": 4,
-        "phone": 2
+        "phone": 1.5
       },
       "infinite": false,
       "fullWidth": true,
@@ -83,7 +83,7 @@
       "itemsPerPage": {
         "desktop": 6,
         "tablet": 3,
-        "phone": 2
+        "phone": 1.5
       },
       "infinite": false,
       "fullWidth": true,
@@ -127,7 +127,7 @@
       "itemsPerPage": {
         "desktop": 6,
         "tablet": 4,
-        "phone": 2
+        "phone": 1.5
       },
       "infinite": false,
       "fullWidth": true,

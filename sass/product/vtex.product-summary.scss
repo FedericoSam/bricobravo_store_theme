@@ -21,10 +21,11 @@
     display: inline-block;
     color: #4320A8;
   }
-
-  &:hover {
-    height: 486px;
-    transition: all 0.3s ease;
+  @include desktop {
+    &:hover {
+      height: 486px;
+      transition: all 0.3s ease;
+    }
   }
   .clearLink {
     margin-bottom: 0.7rem;
