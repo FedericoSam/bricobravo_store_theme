@@ -81,13 +81,22 @@
   "flex-layout.col#pdp-quantity-and-add-to-cart": {
     "children": [
       "product-separator",
-      "flex-layout.row#pdp-quantity-and-add-to-cart-children",
+      "flex-layout.col#pdp-quantity-and-add-to-cart-children",
       "flex-layout.row#pdp-shipping"
     ],
     "props": {
       "blockClass": "pdp-quantity-and-add-to-cart",
       "preventVerticalStretch": true,
       "width": "100%"
+    }
+  },
+  "flex-layout.col#pdp-quantity-and-add-to-cart-children": {
+    "children": [
+      "modal-trigger#pdp-secure-payment",
+      "flex-layout.row#pdp-quantity-and-add-to-cart-children"
+    ],
+    "props": {
+      "blockClass": "container-pdp-quantity-and-add-to-cart"
     }
   },
   "flex-layout.row#pdp-quantity-and-add-to-cart-children": {
@@ -118,7 +127,7 @@
   },
 
   "flex-layout.col#pdp-add-to-cart": {
-    "children": ["modal-trigger#pdp-secure-payment", "add-to-cart-button#pdp"],
+    "children": ["add-to-cart-button#pdp"],
     "props": {
       "blockClass": "pdp-add-to-cart",
       "preventVerticalStretch": true,

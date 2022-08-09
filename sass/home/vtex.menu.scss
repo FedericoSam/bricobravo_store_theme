@@ -1,17 +1,19 @@
-.styledLinkContainer {
-  &--homeBottomSectionMenu {
-    margin: 0;
-  }
-}
+.menuItem {
+  .styledLinkContainer {
+    &--homeBottomSectionMenu {
+      margin: 0;
+    }
 
-.styledLinkContent {
-  &--homeBottomSectionMenu {
-    color: #332c32;
-    font-size: 16px;
-    line-height: 24px;
+    .styledLinkContent {
+      &--homeBottomSectionMenu {
+        color: #332c32;
+        font-size: 16px;
+        line-height: 24px;
 
-    &:hover {
-      color: #291660;
+        &:hover {
+          color: #291660;
+        }
+      }
     }
   }
 }

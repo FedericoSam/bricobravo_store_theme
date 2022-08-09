@@ -13,6 +13,7 @@
     border: 1px solid $blue-active;
     border-radius: 0.25rem;
     width: 11.25rem;
+    background-color: $white;
 
     @include breakpoint('mobile') {
       margin-right: 0.25rem;
