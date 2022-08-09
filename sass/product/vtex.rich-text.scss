@@ -97,7 +97,7 @@
     font-size: $headline-h2;
     font-weight: 500;
     line-height: 1.75rem;
-    margin: 0 0 2rem;
+    margin: 1rem 0 2rem;
 
     @include breakpoint('mobile') {
       height: 1.5rem;
@@ -197,7 +197,7 @@
 .heading {
   &--productShelfTitle,
   &--product-shelf-title {
-    margin: 0 0 1.25rem;
+    margin: 1.25rem 0;
     height: 1.75rem;
     color: $primary-default;
     font-size: $headline-h2;
