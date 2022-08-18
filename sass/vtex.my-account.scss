@@ -683,6 +683,7 @@
   @media screen and (max-width: 48rem) {
     .menu {
       padding: 4rem 1rem !important;
+      width: 100%;
       :global(.vtex-account_menu-link) {
         padding: 14px 0;
         border-bottom: 1px solid #d8d8d8;
