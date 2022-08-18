@@ -637,7 +637,7 @@
     min-width: 312px;
 
     .accordionFilter {
-      margin-bottom: 10rem;
+      margin-bottom: 5rem;
       margin-right: 16px;
       margin-top: 64px;
       overflow-y: auto;
@@ -781,7 +781,7 @@
     }
 
     .filterButtonsBox {
-      height: 9rem;
+      //height: 9rem;
       padding-bottom: 43px;
       border-top: 1px solid #ccc;
 
@@ -1025,8 +1025,8 @@
 
 .filterTotalProducts--filterMobile {
   color: white;
-  transform: translate(234px, -49px);
-  max-width: 135px;
+  transform: translate(234px, -42px);
+  max-width: 136px;
   font-weight: 500;
 
   &::after {
@@ -1044,6 +1044,21 @@
 }
 
 @include mobile {
+  .filterAccordionItemBox--premio {
+    :global(.vtex-checkbox__label) {
+        visibility: hidden;
+        padding-left: 16px;
+        &::after {
+          visibility: visible;
+          content: url('assets/images/premium.png');
+          width: 30px;
+          padding-top: 2px;
+          transform: translateX(-54px);
+          display: inline-block;
+        }
+    }
+  }
+
   .filter__container {
     border: none;
   }
