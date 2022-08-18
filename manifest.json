@@ -1,7 +1,7 @@
 {
   "vendor": "bricobravo",
   "name": "store-theme",
-  "version": "2.0.9",
+  "version": "2.0.14",
   "builders": {
     "react": "3.x",
     "assets": "0.x",
@@ -72,7 +72,8 @@
     "vtex.order-manager": "0.x",
     "vtex.order-items": "0.x",
     "vtex.modal-layout": "0.x",
-    "vtex.store-video": "1.x"
+    "vtex.store-video": "1.x",
+    "bricobravo.custom-checkout-fields": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
