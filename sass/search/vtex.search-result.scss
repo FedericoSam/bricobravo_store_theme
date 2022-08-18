@@ -186,6 +186,7 @@
 
   @include breakpoint('mobile') {
     margin-block: auto;
+    min-width: 180px;
     //width: auto;
     //margin: 0 30px;
     //margin-right: 34px;
@@ -234,7 +235,7 @@
 
     .filterPopupArrowIcon {
       @include breakpoint('mobile') {
-        padding: 0 8px;
+        padding: 0;
         padding-top: 2px;
       }
 
@@ -275,7 +276,7 @@
           line-height: 19px;
           color: #332c32;
           position: absolute;
-          left: 50px;
+          left: 36px;
           top: 10px;
         }
       }
@@ -421,7 +422,7 @@
 
   @media screen and (max-width: 768px) {
     padding: 0;
-    margin-right: 64px;
+    //margin-right: 64px;
   }
 
   .filterItem {
@@ -524,12 +525,13 @@
   .filter__container--selectedFilters {
     :global(.vtex-checkbox__label) {
       font-size: 14px;
-      line-height: 16px;
+      line-height: 17px;
       color: #0b1658;
       font-weight: normal;
-      padding: 6px;
+      padding: 6px 5px 3px 5px;
       width: auto;
       border: 1px solid;
+      border-radius: 2px;
       background-color: #f6f6f6;
       text-transform: capitalize;
       display: flex;
@@ -808,6 +810,11 @@
               visibility: visible;
               transform: translateX(-30px);
               text-transform: uppercase;
+              
+              @include mobile {
+                content: 'VEDI I RISULTATI (';
+                transform: translateX(-34px);
+              }
             }
             //background: #e30613;
           }
@@ -944,6 +951,10 @@
     :global(.vtex-slider__values-container) {
       transform: translate(-1px, -22px);
 
+      @include mobile {
+        transform: translate(-1px,-69px);
+      }
+
       :global(.vtex-slider__left-value) {
         border-bottom: 1px solid;
       }
@@ -980,6 +991,86 @@
         padding-top: 2px;
         transform: translateX(-54px);
         display: inline-block;
+      }
+    }
+  }
+}
+
+.filterSelected--filterMobile {
+  display: none;
+}
+
+.filter__container--filterMobile--clearAllFilters {
+  position: relative;
+  padding-left: 1rem;
+ 
+  // :global(.vtex-button) {
+  //   margin-left: 1rem !important;
+  // }
+}
+
+.filterItem--filterMobile--selected {
+  :global(.vtex-checkbox__container) {
+    display: none;
+  }
+}
+
+.filterTemplateOverflow--filterMobile {
+  padding-bottom: 0;
+}
+
+.filterClearButtonWrapper--filterMobile {
+  display: none;
+}
+
+.filterTotalProducts--filterMobile {
+  color: white;
+  transform: translate(234px, -49px);
+  max-width: 135px;
+  font-weight: 500;
+
+  &::after {
+    content: ")";
+    text-align: left;
+    background: #2b126b;
+    transform: translate(-51px, 0);
+    width: 70px;
+    font-weight: 500;
+  }
+}
+
+.accordionFilterItemTag--filterMobile {
+  display: none;
+}
+
+@include mobile {
+  .filter__container {
+    border: none;
+  }
+
+  .filter__container--selectedFilters {
+    :global(.vtex-checkbox__line-container) {
+      margin-left: 1rem;
+      margin-bottom: 10px;
+    }
+
+    :global(.vtex-checkbox__label) {
+      font-size: 14px;
+      line-height: 17px;
+      color: #0b1658;
+      font-weight: normal;
+      padding: 6px 5px 3px 5px;
+      width: auto;
+      border: 1px solid;
+      border-radius: 2px;
+      background-color: #f6f6f6;
+      text-transform: capitalize;
+      display: flex;
+      flex-direction: row-reverse;
+
+      &::before {
+        content: url('assets/icons/icon_close.svg');
+        padding-left: 10px; //visibility: hidden;
       }
     }
   }
