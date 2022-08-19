@@ -231,6 +231,7 @@
   },
   "add-to-cart-button#pdp": {
     "props": {
+      "text": "Aggiungi",
       "blockClass": "pdp"
     }
   },
