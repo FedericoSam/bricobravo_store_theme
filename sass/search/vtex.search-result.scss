@@ -80,12 +80,6 @@
 }
 
 .galleryItem--small {
-  :global(.vtex-product-summary-2-x-container--summaryComplete) {
-    &:hover {
-      height: 360px !important;
-    }
-  }
-
   :global(.vtex-product-price-1-x-savings--savingPercentage) {
     left: -8px;
   }
@@ -94,6 +88,9 @@
     max-width: 160px !important;
     margin-bottom: 20px;
     background-color: $white;
+    @include mobile {
+      padding: 0;
+    }
 
     :global(.vtex-product-summary-2-x-clearLink--summaryComplete) {
       max-width: 160px;
@@ -107,7 +104,7 @@
           [data-specification-name='Spedizione gratuita']::after {
             @include mobile {
               top: -56px;
-              left: 66px;
+              left: 33px;
             }
           }
 
@@ -123,10 +120,15 @@
         }
         :global(.vtex-product-summary-2-x-productNameContainer) {
           text-align: start;
+          height: 40px;
+          overflow: hidden;
         }
 
         :global(.vtex-product-summary-2-x-brandName) {
           font-size: 14px;
+          @include mobile {
+            height: 20px;
+          }
         }
       }
       :global(.vtex-product-summary-2-x-imageWrapper) {

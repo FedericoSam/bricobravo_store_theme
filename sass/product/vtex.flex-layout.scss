@@ -1355,3 +1355,9 @@
     max-width: 26.75rem;
   }
 }
+
+.flexRow--productSpecificationItem {
+  @include mobile {
+    max-height: 0;
+  }
+}
