@@ -1888,15 +1888,16 @@ svg.pkpmodal-pickup-point-best-marker-image path:not([fill="white"]) {
   width: 100%; }
   .orderform-template-holder #payment-data p.link.link-gift-card.active,
   .orderform-template-holder #payment-data .payment-group-item.active {
-    background: #FFF; }
+    background: #291660!important;; }
     .orderform-template-holder #payment-data p.link.link-gift-card.active span,
     .orderform-template-holder #payment-data .payment-group-item.active span {
-      color: #000000; }
+      color: white }
   .orderform-template-holder #payment-data p.link.link-gift-card.active, .orderform-template-holder #payment-data p.link.link-gift-card:hover,
   .orderform-template-holder #payment-data .payment-group-item.active,
   .orderform-template-holder #payment-data .payment-group-item:hover {
-    box-shadow: 0 0 6px #cbcbcb;
-    border: 1px solid #1a73e8; }
+    box-shadow: 0 0 6px #cbcbcb !important;
+    color: #1B0E41 !important;
+    border: 1px solid #1B0E41 !important; }
 
 .orderform-template-holder #payment-data p.link.link-gift-card,
 .orderform-template-holder #payment-data fieldset.payment-group {
@@ -1946,7 +1947,9 @@ svg.pkpmodal-pickup-point-best-marker-image path:not([fill="white"]) {
     width: calc(50% - 3px); }
   .orderform-template-holder #payment-data .payment-group-item:first-child:nth-last-child(n + 3),
   .orderform-template-holder #payment-data .payment-group-item:first-child:nth-last-child(n + 3) ~ .payment-group-item {
-    width: calc(33.3% - 4px); }
+    width: calc(75% - 4px);
+   /*obs antes era 33.3% -4px*/
+  }
   .orderform-template-holder #payment-data .payment-group-item:first-child:nth-last-child(n + 4),
   .orderform-template-holder #payment-data .payment-group-item:first-child:nth-last-child(n + 4) ~ .payment-group-item {
     width: calc(25% - 4.8px); }
@@ -1967,7 +1970,8 @@ svg.pkpmodal-pickup-point-best-marker-image path:not([fill="white"]) {
   .orderform-template-holder #payment-data .payment-group-item:hover {
     position: relative;
     background: #FFF;
-    top: -2px; }
+    top: 0px !important;
+     }
   .orderform-template-holder #payment-data .payment-group-item.active:after, .orderform-template-holder #payment-data .payment-group-item.active:before {
     content: '';
     display: block;
@@ -2240,8 +2244,8 @@ svg.pkpmodal-pickup-point-best-marker-image path:not([fill="white"]) {
   .orderform-template-holder .step.shipping-data .vtex-pickup-points-modal-3-x-pickupViewOptionActive:focus,
   .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-deliveryChannelsTogglePickup,
   .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-deliveryChannelsOption.vtex-omnishipping-1-x-deliveryOptionActive {
-    background: #1a73e8;
-    border-color: #1a73e8;
+    background: #291660;
+    border-color: #291660;
     border-radius: 4px; }
   .orderform-template-holder .step.shipping-data .vtex-pickup-points-modal-3-x-pickupViewOptionInctive {
     color: #1a73e8;
@@ -3298,7 +3302,6 @@ body.js-vcustom-hideEmailStep .client-pre-email + .client-profile-data .accordio
 
 #vtexIdContainer .vtexIdUI .btn, #vtexIdContainer .vtexIdUI .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a, .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data #vtexIdContainer .vtexIdUI a, #vtexIdContainer .vtexIdUI .orderform-template-holder #payment-data .payment-discounts-list table td.action a, .orderform-template-holder #payment-data .payment-discounts-list table td.action #vtexIdContainer .vtexIdUI a, #vtexIdContainer .vtexIdUI .orderform-template-holder #payment-data .payment-discounts-list table td.action a, .orderform-template-holder #payment-data .payment-discounts-list table td.action #vtexIdContainer .vtexIdUI a, #vtexIdContainer .vtexIdUI .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data a, .summary-template-holder .summary-coupon fieldset.coupon-fieldset .coupon-data #vtexIdContainer .vtexIdUI a {
   font-size: 16px !important; }
-
 body {
   background: #fff;
   font-size: 16px !important;
@@ -3758,7 +3761,9 @@ body {
 
 .btn-place-order-wrapper {
   order: 1;
-  width: 328px; }
+  width: 328px; 
+  margin-top: 16px;
+}
 
 .summary-template-holder .cart-links-bottom .btn-success {
   font-size: 0; }
@@ -4154,8 +4159,8 @@ body.v-custom-step-payment .client-profile-data .accordion-toggle > span:after {
   display: grid !important; }
   .box-client-info-pf > p > label::after {
     content: "*"; }
-  .box-client-info-pf .client-email.input.text.required {
-    display: none !important; }
+  /*.box-client-info-pf .client-email.input.text.required {
+    display: none !important; }*/
   .box-client-info-pf p.input {
     width: 100% !important; }
 
@@ -4214,7 +4219,7 @@ p.ship-receiverName {
   align-items: center;
   color: #111111 !important; }
   .vtex-omnishipping-1-x-deliveryGroup .vtex-omnishipping-1-x-shippingSectionTitle::before {
-    content: "Selecione a forma de entrega";
+    content: "Seleziona il metodo di consegna";
     font-size: 14px !important; }
 
 .vtex-omnishipping-1-x-deliveryGroup .vtex-omnishipping-1-x-shippingSectionTitle:before {
@@ -4249,7 +4254,7 @@ p.ship-receiverName {
         color: #E30613; }
   .shipping-container .box-step.box-info .link-change-shipping.vtex-omnishipping-1-x-summaryChange {
     background: #fff;
-    border: 2px solid #1B0E41;
+    border: 1.5px solid #1B0E41;
     box-sizing: border-box;
     border-radius: 8px;
     width: auto;
@@ -4263,7 +4268,10 @@ p.ship-receiverName {
       content: "Modifica le opzioni di spedizione";
       font-size: 16px !important; }
     .shipping-container .box-step.box-info .link-change-shipping.vtex-omnishipping-1-x-summaryChange:hover {
-      color: #1B0E41; }
+      box-shadow: 0 0 6px #cbcbcb !important;
+    color: #1B0E41 !important;
+    border: 1.5px solid #1B0E41 !important;
+    }
 
 .orderform-template-holder #client-profile-data .step.client-profile-data {
   border-radius: 3px !important; }
@@ -4274,7 +4282,7 @@ p.ship-receiverName {
   padding-top: 24px; }
 
 .icon-edit:before {
-  content: "Modifica" !important;
+  content: "modificare" !important;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -4486,9 +4494,23 @@ p.ship-receiverName {
 .vtex-omnishipping-1-x-buttonEditAddress,
 .vtex-omnishipping-1-x-buttonCreateAddress,
 .vtex-omnishipping-1-x-backToAddressList {
-  border: 1px solid #CCCCCC !important;
-  color: #111111 !important; }
+  border: 1.5px solid #1B0E41 !important;
+  color: #1B0E41 !important;
+  font-size: 14px !important;
+  line-height: 24px;
+}
 
+.vtex-omnishipping-1-x-buttonCreateAddress:hover{
+  border: 1.5px solid #291660 !important;
+  color: #1B0E41 !important;
+  box-shadow: 0 0 6px #cbcbcb !important;
+}
+
+.vtex-omnishipping-1-x-buttonEditAddress:hover{
+  border: 1.5px solid #291660 !important;
+  color: #1B0E41 !important;
+  box-shadow: 0 0 6px #cbcbcb !important;
+}
 .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-addressItemOption:hover {
   background: #ccccccc0; }
 
@@ -4650,7 +4672,6 @@ span.error {
   position: absolute;
   top: 40px;
   left: 86px; }
-
 a#payment-group-picPayPaymentGroup {
   display: none !important; }
 
