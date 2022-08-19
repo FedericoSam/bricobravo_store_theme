@@ -36,6 +36,11 @@
   }
 }
 
+:global(.vtex-pageHeader__title
+[data-specification-name='Indirizzi']){
+  border: 1px solid red;
+}
+
 :global(.vtex-account) {
   .menu {
     :global(.vtex-account_menu-link) {
@@ -51,7 +56,6 @@
       color: $primary-default;
     }
     .menuLinks {
-
       
       :global(.vtex-account_menu-link.b--action-primary) {
         color: #402493;
@@ -71,6 +75,23 @@
 
   .profileEdit {
     padding: 0;
+    &::before {
+      content: '/ Modifica Profilo';
+      transform: translateY(-149px) translateX(-168px);
+      position: absolute;
+      color: #332C32;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0;
+      padding: 2px 0 0 20px;
+      line-height: 14px;
+      background-image: url('assets/icons/home.svg');
+      background-repeat: no-repeat;
+      @media screen and (max-width: 48rem) { 
+        display: none;
+      }
+    }
     .boxContainer {
       border: none;
       max-width: 394px;
@@ -108,11 +129,11 @@
 
   :global(.vtex-pageHeader__container) {
     position: relative;
-    padding: 0 20px 20px;
+    padding: 16px 20px 20px;
     :global(.vtex-pageHeader__children) {
       position: absolute;
       left: 10px;
-      top: 135px;
+      top: 151px;
       z-index: 20;
 
       :global(.vtex-my-cards-1-x-newCardButton) {
@@ -159,6 +180,23 @@
   }
 
   .addressList {
+    &::before {
+      content: '/ Indirizzi';
+      transform: translateY(-162px) translateX(-168px);
+      position: absolute;
+      color: #332C32;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0;
+      padding: 2px 0 0 20px;
+      line-height: 14px;
+      background-image: url('assets/icons/home.svg');
+      background-repeat: no-repeat;
+      @media screen and (max-width: 48rem) { 
+        display: none;
+      }
+    }
     .addressBox {
       :global(div.flex-none.pb5.pr5-ns) {
         &:first-child {
@@ -214,6 +252,24 @@
 
   .addressCreate {
     padding: 0;
+    &::before {
+      content: '/ Aggiungi indirizzo';
+      transform: translateY(-149px) translateX(-168px);
+      position: absolute;
+      color: #332C32;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0;
+      padding: 2px 0 0 20px;
+      line-height: 14px;
+      background-image: url('assets/icons/home.svg');
+      background-repeat: no-repeat;
+      @media screen and (max-width: 48rem) { 
+        display: none;
+      }
+    }
+
     :global(.flex-auto) {
       max-width: 870px;
     }
@@ -331,9 +387,46 @@
     }
   }
 
+  :global(.vtex-account__cards-list) {
+    &::before {
+      content: '/ Carte di credito';
+      transform: translateY(-162px) translateX(-168px);
+      position: absolute;
+      color: #332C32;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0;
+      padding: 2px 0 0 20px;
+      line-height: 14px;
+      background-image: url('assets/icons/home.svg');
+      background-repeat: no-repeat;
+      @media screen and (max-width: 48rem) { 
+        display: none;
+      }
+    }
+  }
+
   :global(.vtex-my-authentication-1-x-authenticationScreen_container) {
     max-width: 380px;
     padding-left: 20px;
+    &::before {
+      content: '/ Autenticazione';
+      transform: translateY(-162px) translateX(-190px);
+      position: absolute;
+      color: #332C32;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0;
+      padding: 2px 0 0 20px;
+      line-height: 14px;
+      background-image: url('assets/icons/home.svg');
+      background-repeat: no-repeat;
+      @media screen and (max-width: 48rem) { 
+        display: none;
+      }
+    }
     :global(.vtex_my-authentication_box_container) {
       border: none;
       width: 100%;
@@ -422,6 +515,23 @@
     }
 
     .profile {
+      &::before {
+        content: '/ Profilo';
+        transform: translateY(-165px) translateX(-168px);
+        position: absolute;
+        color: #332C32;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0;
+        padding: 2px 0 0 20px;
+        line-height: 14px;
+        background-image: url('assets/icons/home.svg');
+        background-repeat: no-repeat;
+        @media screen and (max-width: 48rem) { 
+          display: none;
+        }
+      }
       position: relative;
       .profileBoxContainer {
         .boxContainerBody {
@@ -521,6 +631,23 @@
 
     :global(.vtex-account__create-card) {
       padding-left: 2rem;
+      &::before {
+        content: '/ Nuova carta';
+        transform: translateY(-161px) translateX(-200px);
+        position: absolute;
+        color: #332C32;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0;
+        padding: 2px 0 0 20px;
+        line-height: 14px;
+        background-image: url('assets/icons/home.svg');
+        background-repeat: no-repeat;
+        @media screen and (max-width: 48rem) { 
+          display: none;
+        }
+      }
 
       :global(.vtex-input-prefix__group) {
         border-radius: 8px;
@@ -528,6 +655,15 @@
     }
 
     :global(.vtex-pageHeader-link__container) {
+      :global(.vtex__icon-arrow-back) {
+        color: #291660;
+      }
+
+      :global(.t-action--small) {
+        text-transform: capitalize;
+        color: #291660;
+      }
+
       :global(.vtex-button) {
         transition: 0.1s ease-in-out;
 
@@ -555,6 +691,24 @@
     }
 
     :global(.vtex-account__orders-list) {
+      &::before {
+        content: '/ Ordini';
+        transform: translateY(-161px) translateX(-168px);
+        position: absolute;
+        color: #332C32;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0;
+        padding: 2px 0 0 20px;
+        line-height: 14px;
+        background-image: url('assets/icons/home.svg');
+        background-repeat: no-repeat;
+        @media screen and (max-width: 48rem) { 
+          display: none;
+        }
+      }
+
       :global(.vtex-my-orders-app-3-x-orderCard),
       :global(.vtex-my-orders-app-3-x-collapsedOrder) {
         border-radius: 8px;
@@ -573,7 +727,45 @@
     }
   }
 
+  :global(.legacy-orders) {
+    &::before {
+      content: '/ Legacy Orders';
+      transform: translateY(-162px) translateX(-168px);
+      position: absolute;
+      color: #332C32;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0;
+      padding: 2px 0 0 20px;
+      line-height: 14px;
+      background-image: url('assets/icons/home.svg');
+      background-repeat: no-repeat;
+      @media screen and (max-width: 48rem) { 
+          display: none;
+      }
+    }
+    
+  }
+
   :global(.wish-list) {
+    &::before {
+      content: '/ La mia lista dei desideri';
+      transform: translateY(-162px) translateX(-168px);
+      position: absolute;
+      color: #332C32;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0;
+      padding: 2px 0 0 20px;
+      line-height: 14px;
+      background-image: url('assets/icons/home.svg');
+      background-repeat: no-repeat;
+      @media screen and (max-width: 48rem) { 
+        display: none;
+      }
+    }
     :global(.vtex-slider-layout-0-x-sliderLeftArrow--shelf) {
       left: -36px;
     }
@@ -691,6 +883,22 @@
       .menuLink {
         padding-left: 0;
         border-bottom: 1px solid #d8d8d8;
+      }
+      .menuLinks {
+        &::before {
+          content: '/ Il mio profilo';
+          transform: translateY(-126px);
+          position: absolute;
+          color: #332C32;
+          font-family: Roboto;
+          font-size: 12px;
+          font-weight: 500;
+          letter-spacing: 0;
+          padding: 2px 0 0 20px;
+          line-height: 14px;
+          background-image: url('assets/icons/home.svg');
+          background-repeat: no-repeat;
+        }
       }
     }
     .profileBoxContainer {
