@@ -34,12 +34,12 @@
   :global(.vtex-product-summary-2-x-container--summaryComplete) {
     max-width: 300px;
     width: 300px;
-    margin-bottom: 30px;
+    margin: 0 0 30px 0;
     transition: none;
 
     &:hover {
       position: absolute;
-      left: 10px;
+      left: 0 !important;
       top: 0;
       z-index: 7;
       height: 480px;
@@ -183,7 +183,6 @@
 .orderBy--layout {
   background-color: transparent;
   min-width: 196px;
-  margin: 16px 0 16px;
   position: relative;
 
   @include breakpoint('mobile') {
