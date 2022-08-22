@@ -286,7 +286,7 @@
   //   }
   // },
   "flex-layout.row#searchinfo": {
-    "children": ["search-products-count-per-page", "order-by.v2"],
+    "children": ["hide-filter", "search-products-count-per-page", "order-by.v2"],
     "props": {
       "colSizing": "auto",
       "blockClass": "searchHeadInfo"

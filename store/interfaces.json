@@ -4,5 +4,8 @@
     },
     "header-mega-menu": {
         "component": "CustomMegaMenu"
+    },
+    "hide-filter": {
+        "component": "HideFilter"
     }
 }
