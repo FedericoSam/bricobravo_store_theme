@@ -1,0 +1,215 @@
+{
+  "store.storelocator": {
+    "blocks": [
+      "flex-layout.row#titleStoreLocator",
+      "flex-layout.row#containerStoreLocator"
+    ],
+    "props": {
+      "blockClass": "storeLocator"
+    }
+  },
+  "flex-layout.row#titleStoreLocator": {
+    "children": ["flex-layout.col#titleStoreLocator"],
+    "props": {
+      "blockClass": "storeLocator"
+    }
+  },
+  "flex-layout.row#containerStoreLocator": {
+    "children": ["flex-layout.col#shopperLocation"],
+    "props": {
+      "blockClass": "storeLocator"
+    }
+  },
+  "flex-layout.col#shopperLocation": {
+    "children": [
+      "shopper-location",
+      /*"user-address","change-location",*/ "store-list"
+    ]
+  },
+  "rich-text#address-header": {
+    "props": {
+      "text": "### Change Location"
+    }
+  },
+
+  "shopper-location": {
+    "children": [
+      /*"user-address","flex-layout.col#address-header",*/ "change-location"
+    ],
+    "props": {
+      "autofill": [
+        /*"city", "country", "neighborhood", "number",*/ "postalCode" /*, "state", "street"*/
+      ]
+    }
+  },
+  // //   "modal-trigger#address": {
+  // //     "children": ["user-address", "modal-layout#address"]
+  // //   },
+  //   "user-address": {
+  //     "props": {
+  //       //"variation": "bar",
+  //       "showStreet": false,
+  //       "showCityAndState": true,
+  //       "showPostalCode": true,
+  //       "showPrefix": false,
+  //       "showIfEmpty": true
+  //     }
+  //   },
+  // //   "modal-layout#address": {
+  // //     "children": ["modal-header#address", "modal-content#address"]
+  // //   },
+  // //   "modal-header#address": {
+  // //     "children": ["flex-layout.col#address-header"]
+  // //   },
+  //   "flex-layout.col#address-header": {
+  //     "children": ["rich-text#address-header"],
+  //     "props": {
+  //       "paddingLeft": 5
+  //     }
+  //   },
+  //   "rich-text#address-header": {
+  //     "props": {
+  //       "text": "### Change Location"
+  //     }
+  //   },
+  // //   "modal-content#address": {
+  // //     "children": ["change-location"]
+  // //   },
+  "change-location": {
+    "props": {
+      "postalCode": "first",
+      "autocomplete": true,
+      "hideFields": [
+        "complement",
+        "neighborhood",
+        "receiverName",
+        "reference",
+        "street",
+        "number",
+        "city",
+        "state"
+      ]
+    }
+  },
+  "flex-layout.col#titleStoreLocator": {
+    "children": [
+      "rich-text#titleStoreLocator",
+      "rich-text#subHeaderStoreLocator"
+    ],
+    "props": {
+      "blockClass": "title",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#titleStoreLocator": {
+    "props": {
+      "text": "## Trova lo store più vicino a te",
+      "blockClass": "titleStoreLocator"
+    }
+  },
+  "rich-text#subHeaderStoreLocator": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "blockClass": "subHeaderStoreLocator"
+    }
+  },
+  "store.storedetail": {
+    "blocks": ["flex-layout.row#titleStore", "store-group"]
+  },
+  "store-group": {
+    "children": ["rich-text#address-header", "flex-layout.row#containerStore"],
+    "props": {
+      "title": "{storeName} Store"
+    }
+  },
+  "flex-layout.row#titleStore": {
+    "children": ["flex-layout.col#titleStore"]
+  },
+  "flex-layout.row#containerStore": {
+    "children": ["flex-layout.col#detailStore", "flex-layout.col#store"]
+  },
+  "flex-layout.col#titleStore": {
+    "children": ["rich-text#titleStore"],
+    "props": {
+      "blockClass": "title",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#titleStore": {
+    "props": {
+      "text": "## Store Detail"
+    }
+  },
+  "flex-layout.col#detailStore": {
+    "children": [
+      "store-back-link",
+      "store-map",
+      "store-address",
+      "store-hours",
+      "store-instructions"
+    ],
+    "props": {
+      "width": "30%",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#store": {
+    "children": ["store-name"],
+    "props": {
+      "width": "70%"
+    }
+  },
+  "store-hours": {
+    "props": {
+      "label": "Business hours:",
+      "format": "12h",
+      "businessHours": [
+        {
+          "dayOfWeek": "Sunday",
+          "openingTime": "11:00am",
+          "closingTime": "5:00pm"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "openingTime": "11:00am",
+          "closingTime": "6:00pm"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "openingTime": "11:00am",
+          "closingTime": "6:00pm"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "openingTime": "11:00am",
+          "closingTime": "6:00pm"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "openingTime": "11:00am",
+          "closingTime": "6:00pm"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "openingTime": "11:00am",
+          "closingTime": "6:00pm"
+        },
+        {
+          "dayOfWeek": "Saturday",
+          "openingTime": "11:00am",
+          "closingTime": "5:00pm"
+        }
+      ]
+    }
+  },
+  "store-back-link": {
+    "props": {
+      "label": "Back to all stores"
+    }
+  },
+  "store-instructions": {
+    "props": {
+      "label": ""
+    }
+  }
+}
