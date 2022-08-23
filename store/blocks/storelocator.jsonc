@@ -1,12 +1,24 @@
 {
   "store.storelocator": {
     "blocks": [
+      "flex-layout.row#breadcrumbStoreLocator",
       "flex-layout.row#titleStoreLocator",
       "flex-layout.row#containerStoreLocator",
       "flex-layout.row#seeAllStores"
     ],
     "props": {
       "blockClass": "storeLocator"
+    }
+  },
+  "flex-layout.row#breadcrumbStoreLocator":{
+    "children":["rich-text#breadcrumb"],
+    "props":{"blockClass":"breadcrumb-container"}
+  },
+  "rich-text#breadcrumb":{
+    "props": {
+      "text": "Visit our [help](https://developers.vtex.com/vtex-developer-docs/docs/welcome) section",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
     }
   },
   "flex-layout.row#titleStoreLocator": {
