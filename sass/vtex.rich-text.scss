@@ -23,6 +23,9 @@
 
 .container--seeAllStores {
     max-width: 1202px;
+    @include mobile {
+        justify-content: center;
+      }
 }
 
 .link--seeAllStores {

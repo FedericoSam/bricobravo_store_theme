@@ -1359,6 +1359,16 @@
 .flexRow--storeLocator {
   max-width: 1260px;
   margin-inline: auto;
+
+  @include mobile {
+    padding: 0 16px 0 16px;
+  }
+}
+
+.flexRow--storeLocator-container{
+  &::before{
+    content: "/ Store locator";
+  }
 }
 
 // .flexRowContent--storeLocator {
