@@ -106,18 +106,22 @@
     }
   },
   "flex-layout.col#titleStore": {
-    "children": ["rich-text#titleStore", "store-back-link"],
+    "children": [
+      "rich-text#titleStoreLocator",
+      "rich-text#subHeaderStoreLocator",
+      "store-back-link"
+    ],
     "props": {
       "blockClass": "colTitleStore",
       "preventVerticalStretch": true
     }
   },
-  "rich-text#titleStore": {
-    "props": {
-      "text": "## Store Detail",
-      "blockClass": "headTitleStore"
-    }
-  },
+  // "rich-text#titleStore": {
+  //   "props": {
+  //     "text": "## Store Detail",
+  //     "blockClass": "headTitleStore"
+  //   }
+  // },
   "flex-layout.row#detailStore": {
     "children": ["flex-layout.col#map", "flex-layout.col#moreInfo"],
     "props": {
@@ -201,8 +205,8 @@
   },
   "store-back-link": {
     "props": {
-      "blockClass": "storeBackLink",
-      "label": "Back to all stores"
+      "blockClass": "storeBackLink"
+      //"label": "Back to all stores"
     }
   },
   "store-instructions": {

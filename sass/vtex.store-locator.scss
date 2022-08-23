@@ -82,32 +82,39 @@
     color: #332c32;
 }
 
-.addressLabel {
-    display: none;
-}
-
-.addressLink {
-    align-items: center;
-    text-align: center;
-    display: flex;
-    flex-wrap: nowrap;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #332c32;
-}
-
-.addressStoreAddressGroupA {
-    margin-right: 5px;
-    transform: translateY(12px);
-    display: block;
-    text-align: end;
-
-    &::after {
-        content: ","
+:global(.vtex-flex-layout-0-x-flexColChild--moreInfo) {
+    .addressLabel {
+        display: none;
     }
+    
+    .addressLink {
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #332c32;
+    }
+    
+    .addressStoreAddressGroupA {
+        margin-right: 5px;
+        transform: translateY(12px);
+        display: block;
+        text-align: end;
+    
+        &::after {
+            content: ","
+        }
+    }
+
 }
 
+
+.hoursContainer--storeHours {
+    height: 222px;
+}
 .hoursLabel {
     display: none;
 }
@@ -118,4 +125,14 @@
     line-height: 24px;
     font-weight: 400;
     color: #332c32;
+}
+
+.backlink--storeBackLink {
+    visibility: hidden;
+    
+    &::after {
+        display: flex;
+        visibility: visible;
+        content: url("assets/icons/back.svg");
+    }
 }
