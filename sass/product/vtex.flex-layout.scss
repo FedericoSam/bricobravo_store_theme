@@ -1388,4 +1388,8 @@
   max-width: 1260px;
 }
 
- //.vtex-flex-layout-0-x-flexColChild--storeMap
+.flexRow--productSpecificationItem {
+  @include mobile {
+    max-height: 0;
+  }
+}

@@ -1,15 +1,19 @@
 @import '../_media-queries.scss';
+@import '../_variables.scss';
+
 .content {
   margin-top: 10px;
   justify-content: center;
   max-width: 1440px;
   width: auto;
+  padding: 0 0 8rem 0;
 
   &--emailAndPassword,
   &--emailVerification {
     flex-direction: row-reverse;
     @include breakpoint("mobile"){
         padding: 0;
+        align-items: center;
         flex-direction: column-reverse;
       }
   }
@@ -29,7 +33,7 @@
     border-radius: 4px;
     background-color: #F4F7FA;
     @include breakpoint("mobile"){
-        margin-top: 40px;
+        margin-top: 5rem;
         width: 100%;
     }
     .optionsSticky {
@@ -59,13 +63,10 @@
 
             .optionsListItem {
                 :global(.vtex-button) {
-                    border-radius: 8px;
-                    font-style: normal;
-                    font-weight: 500;
                     font-size: 14px;
                     width: 280px;
-                    height: 48px;
-                    text-transform: initial;
+                    height: 40px;
+                    border-radius: 0px;
                     transition: .2s ease-in-out;
 
                     :global(.vtex-button__label) {
@@ -154,6 +155,16 @@
               }
           }
 
+          .forgotPasswordLink {
+            font-size: 0px;
+            &::after {
+                content: 'Password dimenticata?';
+                font-size: 14px;
+                color: $blue-active;
+                font-weight: 600;
+            }
+          }
+
           .formFooter {
               :global(.t-small) {
                   font-size: 0;
@@ -230,7 +241,6 @@
                   border: none;
                   width: 100%;
                   height: 48px;
-                  border-radius: 8px;
                   font-style: normal;
                   font-weight: 500;
                   font-size: 14px;
@@ -305,8 +315,9 @@
         }
         @include breakpoint("mobile"){
             width: 279px;
-            transform: translateX(-5px);
-          }
+            transform: translateY(-2rem);
+            bottom: 0;
+        }
       }
 
   }
@@ -358,11 +369,12 @@
 
 .facebookOptionBtn {
   :global(.vtex-button) {
-      background: #3578EA;
-      border: 2px solid #3578EA;
+      background-color: #FFF;
+      border: 2px solid #2B126B;
+      transition: background-color 0.2s ease-in;
 
       &:hover {
-          background: #fff;
+          filter: brightness(0.9);
 
           :global(.vtex-button__label) {
 
@@ -375,14 +387,14 @@
               }
 
               .oauthLabel::before {
-                  color: #3578EA !important;
+                  color: #2B126B !important;
               }
           }
       }
 
       :global(.vtex-button__label) {
           svg {
-              width: 0;
+              width: 10px;
           }
 
           &::before {
@@ -395,14 +407,14 @@
               font-size: 0;
 
               &::before {
-                  content: "Faça login com Facebook";
+                  content: "Accedi con Facebook";
                   font-style: normal;
-                  font-weight: 500;
+                  font-weight: 600;
                   font-size: 14px !important;
                   line-height: 100%;
                   text-align: center;
-                  color: #FFF;
-                  text-transform: initial;
+                  color: #2B126B;
+                  text-transform: uppercase;
 
               }
           }
@@ -412,14 +424,17 @@
 
 .googleOptionBtn {
   :global(.vtex-button) {
-      border: 2px solid #E30613;
+      border: 2px solid #2B126B;
+      transition: background-color 0.2s ease-in;
+
 
       &:hover {
-          background: #E30613;
+        background-color: #FFF;
+        filter: brightness(0.9);
           
           :global(.vtex-button__label) {
               .oauthLabel::before {
-                  color: #fff !important;
+                  color: #2B126B !important;
               }
           }
       }
@@ -429,14 +444,14 @@
               font-size: 0;
 
               &::before {
-                  content: "Faça login com Google";
+                  content: "Accedi con Google";
                   font-style: normal;
-                  font-weight: 500;
+                  font-weight: 600;
                   font-size: 14px !important;
                   line-height: 100%;
                   text-align: center;
-                  color: #111;
-                  text-transform: initial;
+                  color: #2B126B;
+                  text-transform: uppercase;
 
               }
           }
@@ -458,6 +473,28 @@
 
 .arrowUp {
   margin-right: 1.5rem;
+}
+
+.facebookOptionBtn, .googleOptionBtn {
+    position: absolute;
+    left: 50%;
+    transform: translateX( calc(-50% - 214px));
+    bottom: 90px;
+
+    @include breakpoint("mobile") {
+        top: calc(50% + 1rem);
+        transform: translate(-50%, -50%);
+        bottom: inherit;
+        left: 50%;
+    }
+}
+.googleOptionBtn {
+    bottom: 40px;
+
+    @include breakpoint("mobile") {
+        top: calc(50% + 4rem);
+        bottom: inherit;
+    }
 }
 
 //login account 
