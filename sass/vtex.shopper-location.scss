@@ -21,6 +21,10 @@
     flex-direction: column-reverse;
     width: 30%;
     transform: translateY(-31px);
+
+    @include mobile {
+        width: 90%;
+    }
 }
 
 .changeLocationSubmitContainer {
