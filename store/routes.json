@@ -1,5 +1,8 @@
 {
   "store.custom#editorial": {
     "path": "/editorial"
+  },
+  "store.custom#our-stores": {
+    "path": "/our-stores"
   }
 }

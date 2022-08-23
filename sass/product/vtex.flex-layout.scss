@@ -1356,6 +1356,38 @@
   }
 }
 
+.flexRow--storeLocator {
+  max-width: 1260px;
+  margin-inline: auto;
+}
+
+// .flexRowContent--storeLocator {
+//   margin-top: -248px;
+// }
+
+.flexRow--seeAllStores {
+  border-top: 1px solid #d8d8d8;
+}
+
+.flexCol--moreInfo {
+  margin-right: auto;
+  width: 52% !important;
+}
+
+// .flexColChild--moreInfo {
+  
+// }
+
+.flexCol--storeMap {
+  margin-left: auto;
+  width: 60% !important;
+  margin-right: 14px;
+}
+
+.flexCol--colTitleStore {
+  max-width: 1260px;
+}
+
 .flexRow--productSpecificationItem {
   @include mobile {
     max-height: 0;

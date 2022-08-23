@@ -1,0 +1,232 @@
+{
+  "store.storelocator": {
+    "blocks": [
+      "flex-layout.row#titleStoreLocator",
+      "flex-layout.row#containerStoreLocator",
+      "flex-layout.row#seeAllStores"
+    ],
+    "props": {
+      "blockClass": "storeLocator"
+    }
+  },
+  "flex-layout.row#titleStoreLocator": {
+    "children": ["flex-layout.col#titleStoreLocator"],
+    "props": {
+      "blockClass": "storeLocator"
+    }
+  },
+  "flex-layout.row#containerStoreLocator": {
+    "children": ["flex-layout.col#shopperLocation"],
+    "props": {
+      "blockClass": "storeLocator"
+    }
+  },
+  "flex-layout.col#shopperLocation": {
+    "children": ["shopper-location", "store-list"]
+  },
+  "rich-text#address-header": {
+    "props": {
+      "text": "### Change Location"
+    }
+  },
+  "store-list": {
+    "props": {
+      "icon": "assets/icons/icon_placeholder_map.svg"
+    }
+  },
+  "shopper-location": {
+    "children": ["change-location"],
+    "props": {
+      "autofill": ["postalCode"],
+      "blockClass": "shopperLocation"
+    }
+  },
+  "change-location": {
+    "props": {
+      "postalCode": "last",
+      "autocomplete": true,
+      "hideFields": [
+        "complement",
+        "neighborhood",
+        "receiverName",
+        "reference",
+        "street",
+        "number",
+        "city",
+        "state"
+      ],
+      "blockClass": "changeLocation"
+    }
+  },
+  "flex-layout.col#titleStoreLocator": {
+    "children": [
+      "rich-text#titleStoreLocator",
+      "rich-text#subHeaderStoreLocator"
+    ],
+    "props": {
+      "blockClass": "title",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#titleStoreLocator": {
+    "props": {
+      "text": "## Trova lo store più vicino a te",
+      "blockClass": "titleStoreLocator"
+    }
+  },
+  "rich-text#subHeaderStoreLocator": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "blockClass": "subHeaderStoreLocator"
+    }
+  },
+  "store.storedetail": {
+    "blocks": ["flex-layout.row#titleStore", "store-group"],
+    "props": {
+      "blockClass": "storeDetail"
+    }
+  },
+  "store-group": {
+    "children": ["rich-text#address-header", "flex-layout.row#containerStore"],
+    "props": {
+      "title": "{storeName} Store",
+      "blockClass": "storeGroup"
+    }
+  },
+  "flex-layout.row#titleStore": {
+    "children": ["flex-layout.col#titleStore"],
+    "props": {
+      "blockClass": "rowTitleStore"
+    }
+  },
+  "flex-layout.row#containerStore": {
+    "children": ["flex-layout.row#detailStore"],
+    "props": {
+      "blockClass": "containerStore"
+    }
+  },
+  "flex-layout.col#titleStore": {
+    "children": [
+      "rich-text#titleStoreLocator",
+      "rich-text#subHeaderStoreLocator",
+      "store-back-link"
+    ],
+    "props": {
+      "blockClass": "colTitleStore",
+      "preventVerticalStretch": true
+    }
+  },
+  // "rich-text#titleStore": {
+  //   "props": {
+  //     "text": "## Store Detail",
+  //     "blockClass": "headTitleStore"
+  //   }
+  // },
+  "flex-layout.row#detailStore": {
+    "children": ["flex-layout.col#map", "flex-layout.col#moreInfo"],
+    "props": {
+      //"width": "60%",
+      "preventVerticalStretch": true,
+      "blockClass": "detailStore"
+    }
+  },
+  "flex-layout.col#map": {
+    "children": ["store-map"],
+    "props": {
+      "blockClass": "storeMap"
+    }
+  },
+  "store-map": {
+    "props": {
+      "blockClass": "storeMap"
+    }
+  },
+  "flex-layout.col#moreInfo": {
+    "children": [
+      "store-name",
+      "store-address",
+      "store-hours",
+      "store-instructions"
+    ],
+    "props": {
+      "blockClass": "moreInfo"
+    }
+  },
+  // "flex-layout.col#store": {
+  //   "children": ["store-name"],
+  //   "props": {
+  //     "width": "70%",
+  //     "blockClass": "colStoreName"
+  //   }
+  // },
+  "store-hours": {
+    "props": {
+      "blockClass": "storeHours",
+      "label": "Business hours:",
+      "format": "12h",
+      "businessHours": [
+        {
+          "dayOfWeek": "Sunday",
+          "openingTime": "11:00am",
+          "closingTime": "5:00pm"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "openingTime": "11:00am",
+          "closingTime": "6:00pm"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "openingTime": "11:00am",
+          "closingTime": "6:00pm"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "openingTime": "11:00am",
+          "closingTime": "6:00pm"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "openingTime": "11:00am",
+          "closingTime": "6:00pm"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "openingTime": "11:00am",
+          "closingTime": "6:00pm"
+        },
+        {
+          "dayOfWeek": "Saturday",
+          "openingTime": "11:00am",
+          "closingTime": "5:00pm"
+        }
+      ]
+    }
+  },
+  "store-back-link": {
+    "props": {
+      "blockClass": "storeBackLink"
+      //"label": "Back to all stores"
+    }
+  },
+  "store-instructions": {
+    "props": {
+      "blockClass": "storeInstructions",
+      "label": ""
+    }
+  },
+
+  "flex-layout.row#seeAllStores": {
+    "children": ["rich-text#seeAllStores"],
+    "props": {
+      "blockClass": "seeAllStores"
+    }
+  },
+
+  "rich-text#seeAllStores": {
+    "props": {
+      "text": "[Vedi tutti gli store](/our-stores)",
+      "blockClass": "seeAllStores"
+    }
+  }
+}

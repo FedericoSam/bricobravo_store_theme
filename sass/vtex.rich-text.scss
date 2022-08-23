@@ -1,0 +1,38 @@
+@import '_variables.scss';
+@import '_media-queries.scss';
+
+.wrapper--titleStoreLocator {
+    text-align: center;
+    width: 100%;
+}
+
+.container--subHeaderStoreLocator {
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #332C32;
+}
+
+.heading--titleStoreLocator{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #332C32;
+}
+
+.container--seeAllStores {
+    max-width: 1202px;
+}
+
+.link--seeAllStores {
+    font-size: 14px;
+    color: #291660;
+    text-decoration: none;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.heading-level-3 {
+    display: none;
+}
