@@ -1394,6 +1394,26 @@
   margin-right: 14px;
 }
 
+@include mobile {
+
+  .flexRowContent--rowTitleStore {
+    width: auto;
+  }
+
+  .flexRowContent--detailStore {
+    .flexCol--storeMap {
+      width: 100% !important;
+      margin-inline: 16px;
+      margin-bottom: 20px;
+    }
+    .flexCol--moreInfo {
+        width: 100% !important;
+        margin-inline: 16px;
+    }
+  }
+  
+}
+
 .flexCol--colTitleStore {
   max-width: 1260px;
 }
@@ -1401,5 +1421,11 @@
 .flexRow--productSpecificationItem {
   @include mobile {
     max-height: 0;
+  }
+}
+
+.flexRowContent--rowTitleStore {
+  @include mobile {
+    margin-inline: 16px;
   }
 }

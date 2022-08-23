@@ -156,6 +156,7 @@
     &::after {
         display: flex;
         visibility: visible;
+        transform: translateY(-20px);
         content: url("assets/icons/back.svg");
     }
 }
