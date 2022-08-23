@@ -9,7 +9,7 @@
 .changeLocationContainer {
     width: 100% !important;
     display: block;
-    transform: translateY(-181px);
+    transform: translateY(-100px);
 }
 
 .changeLocationMapContainer {
@@ -36,7 +36,7 @@
 
 .changeLocationGeoContainer {
     background: transparent;
-    transform: translateY(34px);
+    transform: translateY(-50px);
     :global(.vtex-button) {
         background-color: transparent;
         border: none;

@@ -1429,3 +1429,28 @@
     margin-inline: 16px;
   }
 }
+
+.flexRow--breadcrumb-container {
+  margin-inline: auto;
+  max-width: 1335px;
+  margin-bottom: -20px;
+}
+
+.flexRowContent--breadcrumb-container {
+  @include mobile {
+    margin-bottom: -57px;
+  }
+} 
+
+
+  .flexRow--breadcrumb-detail {
+    :global(.vtex-rich-text-0-x-container--breadcrumb1) {
+      margin-left: -55px;
+    }
+    @include mobile {
+      visibility: hidden;
+      transform: translateY(-50px);
+    }
+  }
+
+

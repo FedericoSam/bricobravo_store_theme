@@ -10,22 +10,22 @@
       "blockClass": "storeLocator"
     }
   },
-  "flex-layout.row#breadcrumbStoreLocator":{
-    "children":["rich-text#breadcrumb","rich-text#breadcrumb1"],
-    "props":{"blockClass":"breadcrumb-container"}
+  "flex-layout.row#breadcrumbStoreLocator": {
+    "children": ["rich-text#breadcrumb", "rich-text#breadcrumb1"],
+    "props": { "blockClass": "breadcrumb-container" }
   },
-  "rich-text#breadcrumb":{
+  "rich-text#breadcrumb": {
     "props": {
-      "text": "Visit our [help](https://developers.vtex.com/vtex-developer-docs/docs/welcome) section",
-      "font": "t-heading-5",
-      "blockClass": "help-message"
+      "text": "[HOME](https://www.bricobravo.com)",
+      //"font": "t-heading-5",
+      "blockClass": "breadcrumb1"
     }
   },
-  "rich-text#breadcrumb1":{
+  "rich-text#breadcrumb1": {
     "props": {
-      "text": "Visit our [help](https://developers.vtex.com/vtex-developer-docs/docs/welcome) section",
-      "font": "t-heading-5",
-      "blockClass": "help-message"
+      "text": "[/ Store Locator](https://www.bricobravo.com/stores)",
+      //"font": "t-heading-5",
+      "blockClass": "breadcrumb2"
     }
   },
   "flex-layout.row#titleStoreLocator": {
@@ -126,8 +126,9 @@
   },
   "flex-layout.col#titleStore": {
     "children": [
-      "rich-text#titleStoreLocator",
-      "rich-text#subHeaderStoreLocator",
+      "flex-layout.row#breadcrumbStoreDetail",
+      "rich-text#titleStoreDetail",
+      "rich-text#subHeaderStoreDetail",
       "store-back-link"
     ],
     "props": {
@@ -135,16 +136,25 @@
       "preventVerticalStretch": true
     }
   },
-  // "rich-text#titleStore": {
-  //   "props": {
-  //     "text": "## Store Detail",
-  //     "blockClass": "headTitleStore"
-  //   }
-  // },
+  "flex-layout.row#breadcrumbStoreDetail": {
+    "children": ["rich-text#breadcrumb", "rich-text#breadcrumb1"],
+    "props": { "blockClass": ["breadcrumb-container", "breadcrumb-detail"] }
+  },
+  "rich-text#titleStoreDetail": {
+    "props": {
+      "text": "## Trova lo store più vicino a te",
+      "blockClass": ["titleStoreLocator", "titleStoreDetail"]
+    }
+  },
+  "rich-text#subHeaderStoreDetail": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "blockClass": ["subHeaderStoreLocator", "subHeaderDetail"]
+    }
+  },
   "flex-layout.row#detailStore": {
     "children": ["flex-layout.col#map", "flex-layout.col#moreInfo"],
     "props": {
-      //"width": "60%",
       "preventVerticalStretch": true,
       "blockClass": "detailStore"
     }
@@ -171,13 +181,6 @@
       "blockClass": "moreInfo"
     }
   },
-  // "flex-layout.col#store": {
-  //   "children": ["store-name"],
-  //   "props": {
-  //     "width": "70%",
-  //     "blockClass": "colStoreName"
-  //   }
-  // },
   "store-hours": {
     "props": {
       "blockClass": "storeHours",
@@ -185,39 +188,39 @@
       "format": "12h",
       "businessHours": [
         {
-          "dayOfWeek": "Sunday",
-          "openingTime": "11:00am",
-          "closingTime": "5:00pm"
+          "dayOfWeek": "Lunedì",
+          "openingTime": "09:00",
+          "closingTime": "20:30"
         },
         {
-          "dayOfWeek": "Monday",
-          "openingTime": "11:00am",
-          "closingTime": "6:00pm"
+          "dayOfWeek": "Martedì",
+          "openingTime": "09:00",
+          "closingTime": "20:30"
         },
         {
-          "dayOfWeek": "Tuesday",
-          "openingTime": "11:00am",
-          "closingTime": "6:00pm"
+          "dayOfWeek": "Mercoledì",
+          "openingTime": "09:00",
+          "closingTime": "20:30"
         },
         {
-          "dayOfWeek": "Wednesday",
-          "openingTime": "11:00am",
-          "closingTime": "6:00pm"
+          "dayOfWeek": "Giovedì",
+          "openingTime": "09:00",
+          "closingTime": "20:30"
         },
         {
-          "dayOfWeek": "Thursday",
-          "openingTime": "11:00am",
-          "closingTime": "6:00pm"
+          "dayOfWeek": "Venerdì",
+          "openingTime": "09:00",
+          "closingTime": "20:30"
         },
         {
-          "dayOfWeek": "Friday",
-          "openingTime": "11:00am",
-          "closingTime": "6:00pm"
+          "dayOfWeek": "Sabato",
+          "openingTime": "09:00",
+          "closingTime": "20:30"
         },
         {
-          "dayOfWeek": "Saturday",
-          "openingTime": "11:00am",
-          "closingTime": "5:00pm"
+          "dayOfWeek": "Domenica",
+          "openingTime": "09:00",
+          "closingTime": "20:30"
         }
       ]
     }
@@ -225,7 +228,6 @@
   "store-back-link": {
     "props": {
       "blockClass": "storeBackLink"
-      //"label": "Back to all stores"
     }
   },
   "store-instructions": {
