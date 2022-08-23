@@ -1,10 +1,15 @@
 @import '_variables.scss';
 @import '_media-queries.scss';
 
+
+.changeLocationAddressContainer {
+    visibility: hidden;
+}
+
 .changeLocationContainer {
     width: 100% !important;
     display: block;
-    transform: translateY(-132px);
+    transform: translateY(-181px);
 }
 
 .changeLocationMapContainer {
@@ -15,9 +20,11 @@
     display: flex;
     flex-direction: column-reverse;
     width: 30%;
+    transform: translateY(-31px);
 }
 
 .changeLocationSubmitContainer {
+    visibility: hidden;
     :global(.vtex-button) {
         transform: translate(224px, 95px);
     }
@@ -25,6 +32,7 @@
 
 .changeLocationGeoContainer {
     background: transparent;
+    transform: translateY(34px);
     :global(.vtex-button) {
         background-color: transparent;
         border: none;
@@ -35,11 +43,13 @@
             content: url("assets/icons/icon_location.svg");
         }
         &::before {
+            position: absolute;
             color: #291660;
+            margin-left: 40px;
             font-size: 14px;
             font-weight: 400;
             content: "Utilizza la tua posizione attuale";
-            text-decoration: none;
+            text-transform: none;
         }
     }
 }
