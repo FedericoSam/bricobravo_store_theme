@@ -11,10 +11,17 @@
     }
   },
   "flex-layout.row#breadcrumbStoreLocator":{
-    "children":["rich-text#breadcrumb"],
+    "children":["rich-text#breadcrumb","rich-text#breadcrumb1"],
     "props":{"blockClass":"breadcrumb-container"}
   },
   "rich-text#breadcrumb":{
+    "props": {
+      "text": "Visit our [help](https://developers.vtex.com/vtex-developer-docs/docs/welcome) section",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  },
+  "rich-text#breadcrumb1":{
     "props": {
       "text": "Visit our [help](https://developers.vtex.com/vtex-developer-docs/docs/welcome) section",
       "font": "t-heading-5",
