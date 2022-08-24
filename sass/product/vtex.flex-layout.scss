@@ -1359,6 +1359,16 @@
 .flexRow--storeLocator {
   max-width: 1260px;
   margin-inline: auto;
+
+  @include mobile {
+    padding: 0 16px 0 16px;
+  }
+}
+
+.flexRow--storeLocator-container{
+  &::before{
+    content: "/ Store locator";
+  }
 }
 
 // .flexRowContent--storeLocator {
@@ -1384,6 +1394,26 @@
   margin-right: 14px;
 }
 
+@include mobile {
+
+  .flexRowContent--rowTitleStore {
+    width: auto;
+  }
+
+  .flexRowContent--detailStore {
+    .flexCol--storeMap {
+      width: 100% !important;
+      margin-inline: 16px;
+      margin-bottom: 20px;
+    }
+    .flexCol--moreInfo {
+        width: 100% !important;
+        margin-inline: 16px;
+    }
+  }
+  
+}
+
 .flexCol--colTitleStore {
   max-width: 1260px;
 }
@@ -1393,3 +1423,34 @@
     max-height: 0;
   }
 }
+
+.flexRowContent--rowTitleStore {
+  @include mobile {
+    margin-inline: 16px;
+  }
+}
+
+.flexRow--breadcrumb-container {
+  margin-inline: auto;
+  max-width: 1335px;
+  margin-bottom: -20px;
+}
+
+.flexRowContent--breadcrumb-container {
+  @include mobile {
+    margin-bottom: -57px;
+  }
+} 
+
+
+  .flexRow--breadcrumb-detail {
+    :global(.vtex-rich-text-0-x-container--breadcrumb1) {
+      margin-left: -55px;
+    }
+    @include mobile {
+      visibility: hidden;
+      transform: translateY(-50px);
+    }
+  }
+
+
