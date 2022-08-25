@@ -4,5 +4,11 @@
   },
   "store.custom#our-stores": {
     "path": "/our-stores"
+  },
+  "store.custom#rich-text": {
+    "path": "/rich-text"
+  },
+  "store.custom#sandbox": {
+    "path": "/sandbox"
   }
 }
