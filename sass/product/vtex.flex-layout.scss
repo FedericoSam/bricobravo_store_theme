@@ -454,16 +454,20 @@
           position: absolute;
           height: 4500px !important;
           top: 25px;
-          left: 0;
+          left: -19px;
           pointer-events: none;
-          width: 105%;
+          width: 112%;
           z-index: 4;
-          margin: -10px;
         }
         .flexRow--pdp-quantity-and-add-to-cart-children {
           position: sticky;
           top: calc(100% - 110px);
           pointer-events: fill;
+          padding: 0.5rem 0 0.6rem;
+          padding-inline: 8px;
+          background: white;
+          border-top: 2px solid #DFDFDF;
+    transform: translateY(-11px);
         }
       }
     }

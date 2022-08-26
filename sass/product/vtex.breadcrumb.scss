@@ -6,6 +6,7 @@
 
   @include breakpoint('mobile') {
     margin-left: 1rem;
+    margin-top: 12px;
   }
 }
 
@@ -72,4 +73,10 @@
 .term {
   display: none;
   opacity: 0;
+}
+
+.link--default--1 {
+  @include breakpoint('mobile') {
+    color: #8E8E8E ;
+  }
 }
