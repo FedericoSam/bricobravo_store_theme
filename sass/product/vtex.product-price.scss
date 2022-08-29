@@ -10,6 +10,10 @@
     height: 20px;
     width: 38px !important;
 
+    @include mobile {
+      left: -3px;
+    }
+
     &::before {
       content: url("assets/icons/icon_tag_saving.svg");
       display: block;
