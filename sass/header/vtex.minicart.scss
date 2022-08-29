@@ -143,3 +143,9 @@
     height: 80px;
   }
 }
+
+.minicartEmptyStateContainer {
+  @include mobile {
+    justify-content: flex-start;
+  }
+}
