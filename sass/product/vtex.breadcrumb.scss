@@ -70,12 +70,12 @@
 
 .termArrow,
 .term {
-  display: none;
-  opacity: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #1D1E2C;
 }
 
-.link--default--1 {
-  @include breakpoint('mobile') {
-    color: #8E8E8E ;
-  }
+.link--default {
+  color: #8E8E8E ;
 }
