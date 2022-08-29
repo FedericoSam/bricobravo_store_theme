@@ -4,18 +4,15 @@
 .savings {
   &--savingPercentage {
     position: absolute;
-    top: 8px;
-    left: -1px;
+    top: 7px;
+    left: 1px;
     font-size: 0;
-    background-color: $blue-dark;
     height: 20px;
     width: 38px !important;
-    clip-path: polygon(0% 0%, 70% 0, 100% 50%, 70% 100%, 0% 100%);
 
     &::before {
-      content: '%';
+      content: url("assets/icons/icon_tag_saving.svg");
       display: block;
-      margin: 0.125rem 0.3rem 0 0.1rem;
       color: $white;
       font-weight: 400;
       font-size: 16px;

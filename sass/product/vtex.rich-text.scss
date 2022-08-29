@@ -2,6 +2,15 @@
 @import '../_media-queries.scss';
 
 .container {
+
+  &--pdp-secure-payment {
+    width: 308px;
+  }
+
+  &--pdp-faq-title {
+    margin-bottom: 40px;
+  }
+
   &--pdp-faq-title,
   &--pdp-faq-ask-more {
     justify-content: center;
@@ -23,7 +32,7 @@
     font-size: $paragraph-medium-regular;
     font-weight: 500;
     line-height: 1rem;
-    margin: 0.5rem 2.25rem 1rem 0;
+    margin: 0.75rem 2.25rem 0.5rem 0;
 
     @include breakpoint('mobile') {
       margin-right: 1.25rem;
