@@ -11,6 +11,7 @@
     "children": [
       "flex-layout.col#upperFooterCol1",
       "flex-layout.col#upperFooterCol2",
+      "flex-layout.col#upperFooterCol4",
       "flex-layout.row#upperFooterCol3"
     ],
     "props": {
@@ -176,6 +177,25 @@
       "src": "",
       "width": "100px",
       "blockClass": "footer-congratulationsImage"
+    }
+  },
+
+  "flex-layout.col#upperFooterCol4": {
+    "children": ["link#upperFooterCol4Link1", "link#upperFooterCol4Link2"],
+    "props": {
+      "blockClass": "footer-upperFooterCol4"
+    }
+  },
+  "link#upperFooterCol4Link1": {
+    "props": {
+      "href": "/rich-text",
+      "label": "rich-text"
+    }
+  },
+  "link#upperFooterCol4Link2": {
+    "props": {
+      "href": "/sandbox",
+      "label": "sandbox"
     }
   },
 

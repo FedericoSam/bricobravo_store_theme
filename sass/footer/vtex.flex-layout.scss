@@ -275,3 +275,16 @@
     }
   }
 }
+
+@include mobile {
+  .flexCol--footer-upperFooterCol4 {
+    :global(.vtex-store-link-0-x-link) {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding-left: 7px;
+      margin-top: 10px;
+      font-weight: 500;
+    }
+  } 
+}

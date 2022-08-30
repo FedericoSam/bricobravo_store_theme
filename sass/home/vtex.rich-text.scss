@@ -180,6 +180,7 @@
         margin: 0 1rem;
         .heading--home-section-title {
           font-size: 24px;
+          color: #332c32;
         }
       }
     }
@@ -192,5 +193,17 @@
         margin: 20px 0;
       }
     }
+  }
+}
+
+.headingLevel2--product-shelf-1-title,
+.headingLevel2--product-shelf-2-title,
+.headingLevel2--product-shelf-3-title {
+  font-size: 24px;
+
+  @include mobile {
+    font-size: 20px;
+    margin-left: 16px !important;
+    margin-bottom: 30px !important;
   }
 }

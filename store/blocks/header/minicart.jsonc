@@ -162,7 +162,7 @@
   "rich-text#minicart-default-empty-state": {
     "props": {
       "blockClass": "minicartEmptyTitle",
-      "text": "**Para que você ainda não tem produtos por aqui** \n\n Volte, explore nossa loja e encontre um produto Bricobravo do seu jeito"
+      "text": "**Il tuo carrello è vuoto**"
     }
   }
 }

@@ -17,7 +17,8 @@
     "children": [
       "flex-layout.row#upperFooterCol3",
       "flex-layout.row#upperFooterCol2Mobile",
-      "flex-layout.row#upperFooterCol1Mobile"
+      "flex-layout.row#upperFooterCol1Mobile",
+      "flex-layout.col#upperFooterCol4"
     ]
   },
   "flex-layout.row#upperFooterCol2Mobile": {
@@ -92,4 +93,22 @@
       "width": "13px"
     }
   }
+  // "flex-layout.col#upperFooterCol4Mobile": {
+  //   "children": [
+  //     "link#upperFooterCol4Link1",
+  //     "link#upperFooterCol4Link2"
+  //   ]
+  // }
+  // "link#upperFooterCol4Link1Mobile": {
+  //   "props": {
+  //     "href": "/rich-text",
+  //     "label": "rich-text"
+  //   }
+  // },
+  // "link#upperFooterCol4Link2Mobile": {
+  //   "props": {
+  //     "href": "/sandbox",
+  //     "label": "sandbox"
+  //   }
+  // }
 }

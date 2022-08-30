@@ -4701,3 +4701,24 @@ body.debug-on > *:not(.container-main):not(.main-header):not(.main-footer):not(#
 #shipping-preview-container .loading-img {
   display: none;
 }
+
+.payment-paypal-title-logo{
+  display: inline-block !important;
+}
+.payment-paypal-title-short-logo {
+  background: url(/arquivos/cartbrico.jpg) no-repeat;
+  height: 49px;
+  width: 372px;
+}
+
+@media (max-width: 690px) {
+  .payment-paypal-title-short-logo {
+    background: url(/arquivos/mobilecartao.jpg) no-repeat;
+    height: 49px;
+    width: 372px;
+  }
+}
+#payment-group-creditCardPaymentGroup {
+  display: none!important;
+}
+

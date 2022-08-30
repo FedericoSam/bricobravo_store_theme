@@ -54,6 +54,9 @@
   }
   &--home-shelf-03 {
     @include container-main;
+    @include mobile {
+      margin-top: 30px;
+    }
   }
 
   &--categories-showcase {
@@ -112,6 +115,7 @@
   }
 
   .flexRowContent {
+
     &--home-categories-showcase,
     &--mobile-home-categories-showcase,
     &--categories-showcase {
@@ -277,6 +281,22 @@
       @include breakpoint('mobile') {
         margin-bottom: 2.5rem;
       }
+    }
+  }
+}
+
+.flexRowContent--home-shelf-02-title {
+  :global(.vtex-rich-text-0-x-headingLevel2) {
+    font-size: 40px;
+    font-weight: 500;
+    @include mobile {
+      font-size: 28px;
+      color: #291660;
+    }
+  }
+  :global(.vtex-rich-text-0-x-container) {
+    @include mobile {
+      justify-content: center;
     }
   }
 }

@@ -1,9 +1,13 @@
 @import '../_media-queries.scss';
 @import '../_variables.scss';
 
-.buttonText--pdp::after {
-    content: ' al carrelo';
+.buttonText--pdp {
+    font-size: 14px;
+    &::after {
+        content: ' al carrello';
+    }
 }
+
 @include breakpoint('mobile') {
     .buttonText--pdp::after {
         content: url('assets/icons/cart-buy-button-icon.svg');
