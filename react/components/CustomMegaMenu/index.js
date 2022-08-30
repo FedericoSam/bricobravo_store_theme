@@ -235,14 +235,14 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                       className={style['mobile-menu-header-category']}
                       onClick={() => setWhatSubCategoryIsOpen(title)}
                     >
-                      <Icon
+                      {/* <Icon
                         id={
                           whatSubCategoryIsOpen == title && isOpen
                             ? `${iconMobile}-white`
                             : iconMobile
                         }
                         type="filled"
-                      />
+                      /> */}
                       <p className={style['category-menu-item']}>{title}</p>
                       <i
                         className={style['category-menu-arrow']}></i>
