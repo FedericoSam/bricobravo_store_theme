@@ -444,7 +444,7 @@
     .flexColChild--container-pdp-quantity-and-add-to-cart {
       &:first-child {
         margin-left: auto;
-        margin-right: 60px;
+        //margin-right: 60px;
         @include breakpoint("mobile") {
           margin-right: 20px;
         }
