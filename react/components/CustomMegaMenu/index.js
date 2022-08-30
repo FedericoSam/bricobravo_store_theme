@@ -4,7 +4,9 @@ import { Link } from 'vtex.render-runtime'
 import { useDevice } from 'vtex.device-detector'
 import { Icon } from 'vtex.store-icons'
 import arrowRight from '../../../assets/icons/arrowRightGray.svg'
+import IconIcn from '../../../assets/icons/icnIcon.svg'
 import IconPlanta from '../../../assets/icons/vasoDePlanta.svg'
+
 
 const CustomMegaMenu = ({ menuFirstLevel }) => {
   const node = useRef()
@@ -110,7 +112,6 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
             </li>
           </div>
         </ul>
-
         {menuFirstLevel?.map(
           ({ menuSecondLevel, menuSecondLevelImage }, index) => {
             return (
@@ -122,8 +123,8 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                     megamenu === index && isOpen
                       ? style['megamenu--active']
                       : style['megamenu--inactive']
-                  }`}
-                  onMouseLeave={() => setIsOpen(false)}>
+                  }`}>
+                  {/* onMouseLeave={() => setIsOpen(false)}> */}
                   <img
                     src={menuSecondLevelImage}
                     alt="banner"
@@ -135,7 +136,7 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                         <li
                           key={index}
                           className={`${style['subcategory-container']}`}>
-                          <h5>{title}</h5>
+                          <h5 className={`${style['subcategory-title']}`}>{title}</h5>
                           {subCategories?.map(({ text, link }, ind) => {
                             return (
                               <li
@@ -159,6 +160,7 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
   ) : (
     <>
       <nav className={style['mobile-top-navigation']}>
+        <h2 className={style['mobile-title-name']}>Prodotti</h2>
         <div className={style['container']}>
           <ul className={style['mobile-menu-department']}>
             {menuFirstLevel?.map(({ text, iconMobile }, index) => {
@@ -171,15 +173,17 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                       : style['']
                   }`}
                   onClick={() => mobileHandleToggleMenu(index)}>
-                  <Icon
-                    id={
+                    <div className={style['mobile-menu-icon-container']}>
+                  <img
+                    src={
                       megamenu == index && isOpen
-                        ? `${iconMobile}-white`
+                        ? `${iconMobile}`
                         : iconMobile
                     }
-                    type="filled"
+                   
                   />
                   <p className={style['category-menu-item']}>{text}</p>
+                  </div>
                   <i
                     className={`${style['category-menu-arrow']} ${
                       megamenu == index && isOpen
@@ -189,6 +193,29 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                 </li>
               )
             })}
+            <div className={`${style['link-utili-container']}`}>
+            <h3>Link utili</h3>
+            <li>
+              <Link to="#" className={`${style['category-menu-item']}`}>
+                Store Locator
+              </Link>
+            </li>
+            <li>
+              <Link to="#" className={`${style['category-menu-item']}`}>
+                Dov'è il mio ordine?
+              </Link>
+            </li>
+            <li>
+              <Link to="#" className={`${style['category-menu-item']}`}>
+                Effetuare un reso
+              </Link>
+            </li>
+            <li>
+              <Link to="#" className={`${style['category-menu-item']}`}>
+                FAQ e contatti
+              </Link>
+            </li>
+          </div>
           </ul>
         </div>
       </nav>
@@ -207,14 +234,14 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                       className={style['mobile-menu-header-category']}
                       onClick={() => setWhatSubCategoryIsOpen(title)}
                     >
-                      <Icon
+                      {/* <Icon
                         id={
                           whatSubCategoryIsOpen == title && isOpen
                             ? `${iconMobile}-white`
                             : iconMobile
                         }
                         type="filled"
-                      />
+                      /> */}
                       <p className={style['category-menu-item']}>{title}</p>
                       <i
                         className={style['category-menu-arrow']}></i>
@@ -1015,7 +1042,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Piscine e accessori',
-      iconMobile: IconPlanta,
+      iconMobile: IconIcn,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1147,7 +1174,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Arredo giardino',
-      iconMobile: IconPlanta,
+      iconMobile: IconIcn,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1279,7 +1306,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Climatizzazione',
-      iconMobile: IconPlanta,
+      iconMobile: IconIcn,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1411,7 +1438,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Cassette e box',
-      iconMobile: IconPlanta,
+      iconMobile: IconIcn,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1543,7 +1570,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Bricolage e Fai da te',
-      iconMobile: IconPlanta,
+      iconMobile: IconIcn,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1675,7 +1702,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Arredo casa',
-      iconMobile: IconPlanta,
+      iconMobile: IconIcn,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1807,7 +1834,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Sport e tempo libero',
-      iconMobile: IconPlanta,
+      iconMobile: IconIcn,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1939,7 +1966,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Antinfortunistica',
-      iconMobile: IconPlanta,
+      iconMobile: IconIcn,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2071,7 +2098,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Illuminazione',
-      iconMobile: IconPlanta,
+      iconMobile: IconIcn,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2203,7 +2230,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Riscaldamento',
-      iconMobile: IconPlanta,
+      iconMobile: IconIcn,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2335,7 +2362,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Giocattoli',
-      iconMobile: IconPlanta,
+      iconMobile: IconIcn,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2467,7 +2494,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Animali',
-      iconMobile: IconPlanta,
+      iconMobile: IconIcn,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2599,7 +2626,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Elettrodomestici',
-      iconMobile: IconPlanta,
+      iconMobile: IconIcn,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2731,7 +2758,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Auto e moto',
-      iconMobile: IconPlanta,
+      iconMobile: IconIcn,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2927,6 +2954,13 @@ CustomMegaMenu.getSchema = () => {
                 },
               },
             },
+            menuSecondLevelImage:{
+              type: 'string',
+              title: 'Banner subCategoria',
+              widget: {
+                "ui:widget": "image-uploader",
+              },
+            }
           },
         },
       },
