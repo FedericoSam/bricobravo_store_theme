@@ -3658,11 +3658,8 @@ body {
       content: url(/arquivos/icon-cupom.png);
       font-size: 10px; }
 
-#payment-data-submit .icon-lock {
+#payment-data-submit .icon-lock,  #render-checkout-buttons{
   display: none; }
-
-.summary-template-holder .cart-more-options {
-  display: block !important; }
 
 .summary-template-holder .summary-coupon fieldset.coupon-fieldset #cart-coupon {
   max-width: 328px;
@@ -3727,11 +3724,11 @@ body {
 .summary-template-holder .cart-links-bottom {
   display: flex !important;
   flex-direction: column;
+  position: absolute;
   right: -50px;
-  top: 295px;
+  top: 234px;
   max-width: 328px;
   margin: 0 0 0 auto;
-  margin-top: -140px;
 }
 
 .summary-template-holder .row-fluid {
@@ -3761,7 +3758,7 @@ body {
 
 .btn-place-order-wrapper {
   order: 1;
-  width: 328px; 
+  width: 328px;
   margin-top: 16px;
 }
 
@@ -3770,7 +3767,9 @@ body {
 
 .summary-template-holder .cart-links-bottom .btn-success:before {
   content: 'Acquista ora';
-  font-size: 16px; }
+  font-size: 16px;
+  text-transform: uppercase;
+}
 
 .link-choose-more-products-wrapper {
   order: 2;
@@ -3778,7 +3777,8 @@ body {
   text-align: center; }
 
 .link-choose-more-products-wrapper a {
-  color: #291660; }
+  color: #291660;
+  text-transform: uppercase;}
 
 .link-choose-more-products-wrapper a:hover {
   text-decoration: none;
