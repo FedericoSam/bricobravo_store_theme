@@ -177,6 +177,9 @@
   .dataEntryLabel{
     font-size: 12px;
     font-weight: 600;
+    @include mobile {
+      margin-bottom: 1px;
+    }
   }
 
   .addressList {
