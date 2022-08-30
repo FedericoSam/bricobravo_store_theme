@@ -112,7 +112,6 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
             </li>
           </div>
         </ul>
-
         {menuFirstLevel?.map(
           ({ menuSecondLevel, menuSecondLevelImage }, index) => {
             return (
@@ -2955,6 +2954,13 @@ CustomMegaMenu.getSchema = () => {
                 },
               },
             },
+            menuSecondLevelImage:{
+              type: 'string',
+              title: 'Banner subCategoria',
+              widget: {
+                "ui:widget": "image-uploader",
+              },
+            }
           },
         },
       },
