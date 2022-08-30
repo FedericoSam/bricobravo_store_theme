@@ -382,7 +382,10 @@
     "children": ["rich-text#shipping-info-title", "disclosure-state-indicator"]
   },
   "disclosure-content#shipping-info": {
-    "children": ["rich-text#shipping-info-content"]
+    "children": [
+      "rich-text#shipping-info-content",
+      "product-seller-name#sellerName"
+    ]
   },
   "rich-text#shipping-info-title": {
     "props": {
@@ -393,10 +396,14 @@
   "rich-text#shipping-info-content": {
     "props": {
       "blockClass": "pdp-shipping-info",
-      "text": "Consegna stimata entro il **25/08/2022**<br/>Spedizione **Gratuita**<br/>Reso gratuito entro **60 giorni**<br/>Garanzia **2 anni sul prodotto**<br/>Venduto e spedito da #nomeseller#"
+      "text": "Consegna stimata entro il **25/08/2022**<br/>Spedizione **Gratuita**<br/>Reso gratuito entro **30 giorni**<br/>Garanzia **2 anni sul prodotto**<br/>"
     }
   },
-
+  "product-seller-name#sellerName": {
+    "props": {
+      "message": "Venduto e spedito da {sellerName}"
+    }
+  },
   "product-description#pdp": {
     "props": {
       "blockClass": "pdp",
