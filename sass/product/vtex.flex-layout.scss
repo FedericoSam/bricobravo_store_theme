@@ -544,6 +544,7 @@
 
   &--pdp-faq {
     background-color: #f6f6f6;
+    display: none;
 
     @include breakpoint('mobile') {
       margin-bottom: 2.5rem;
