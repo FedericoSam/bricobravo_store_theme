@@ -4,16 +4,15 @@
 .newsletterForm {
   &--footer-newsletter {
     :global(.vtex-input-prefix__group) {
-      height: 56px;
+      height: 44px;
       border-radius: 8px;
       border: 2px solid #ccc;
       width: 350px;
 
       @include breakpoint("mobile") {
-        height: 48px;
-        width: 100%;
+        width: 232px;
       }
-      
+
     }
   }
 

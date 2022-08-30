@@ -275,9 +275,13 @@
 }
 
 /* format Reviews */
+:global(.vtex-reviews-and-ratings-3-x-stars){
+  height: 22px;
+  padding-bottom: 14px;
+}
 :global(.vtex-reviews-and-ratings-3-x-star--empty){
   color: #d8d8d8;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: normal;
 }
 
@@ -404,7 +408,9 @@
 .flexCol--table-row:nth-child(odd) .flexRow--table-heading {
   background-color: transparent;
 }
-
+.flexRow--summaryTop{
+  z-index: 1;
+}
 .flexRowContent--summaryTop {
   :global(.vtex-wish-list-1-x-wishlistIconContainer) {
     display: flex;
@@ -1391,7 +1397,7 @@
 }
 
 // .flexColChild--moreInfo {
-  
+
 // }
 
 .flexCol--storeMap {
@@ -1417,7 +1423,7 @@
         margin-inline: 16px;
     }
   }
-  
+
 }
 
 .flexCol--colTitleStore {
@@ -1446,7 +1452,7 @@
   @include mobile {
     margin-bottom: -57px;
   }
-} 
+}
 
 
   .flexRow--breadcrumb-detail {

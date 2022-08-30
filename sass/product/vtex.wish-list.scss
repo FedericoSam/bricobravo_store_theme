@@ -7,12 +7,16 @@
   padding-bottom: 10px;
 
   &:hover {
-    background-image: url(/arquivos/heartIconSolid.svg);
+    background-image: url('assets/icons/icon-wishlist-solid.svg');
+    padding-right: 12px;
+    padding-bottom: 4px;
   }
 }
 
 .fill {
   background-image: url('assets/icons/icon-wishlist-solid.svg');
+  padding-right: 12px !important;
+  padding-bottom: 4px !important;
 }
 
 .wishlistIconContainer {

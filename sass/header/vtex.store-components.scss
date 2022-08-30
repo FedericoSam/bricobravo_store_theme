@@ -28,8 +28,10 @@
       }
     }
     .searchBarIcon--desktop-searchbar--search {
-      position: relative;
+      position: absolute;
       padding: 0;
+      top: 10px;
+      right:10px;
       &::before {
         content: "";
         width: 1.2rem;
@@ -49,6 +51,12 @@
     }
   }
 }
+@media screen and (min-width: 1312px) {
+  .searchBarInnerContainer--desktop-searchbar{
+    width: 720px;
+  }
+}
+
 
 .imageElementLink--menu-category-item {
   .imageElement--menu-category-item {

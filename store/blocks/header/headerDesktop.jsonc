@@ -172,8 +172,8 @@
   },
   "image#wishlist": {
     "props": {
-      "src": "assets/icons/heartIcon.svg",
-      "width": "50px"
+      "src": "assets/icons/heart-icon.svg",
+      "width": "40px"
     }
   }
 }

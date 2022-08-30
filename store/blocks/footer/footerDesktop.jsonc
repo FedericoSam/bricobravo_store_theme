@@ -241,7 +241,7 @@
     ],
     "props": {
       "preventVerticalStretch": true,
-      "blockClass": "footer-PaymentMethodsRow"
+      "blockClass": ["footer-PaymentImagesRow"]
     }
   },
   "image#payment1": {
@@ -354,7 +354,7 @@
   "flex-layout.col#bottomFooter1": {
     "children": ["rich-text#bricoBravoInfo1"],
     "props": {
-      "width": "65%",
+      "width": "85%",
       "preventVerticalStretch": true,
       "verticalAlign": "middle",
       "blockClass": "bottomFooter2"
