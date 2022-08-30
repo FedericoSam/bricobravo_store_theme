@@ -93,6 +93,21 @@
   }
 }
 
+:global(.vtex-store-drawer-0-x-closeIconContainer){
+  @include breakpoint ("mobile"){
+    justify-content: end;
+  }
+  :global(.vtex-store-drawer-0-x-closeIconButton--drawer-desktop){
+    &::before{
+      content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='25px' height='26px' viewBox='0 0 25 26' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E1AE18E47-FE1D-4628-94D0-DEEC550C1F6A%3C/title%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='M/-1.2-Menu' transform='translate(-320.000000, -19.000000)' stroke='%23332C32'%3E%3Cg id='icon-/-close' transform='translate(320.500000, 20.000000)'%3E%3Cpath d='M0,0 L24,24 M24,0 L0,24' id='close'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+  }
+
+  :global(.vtex-store-drawer-0-x-closeIcon){
+    display: none;
+  }
+}
+
 .minicartTitle {
   font-size: 0;
   &::after {

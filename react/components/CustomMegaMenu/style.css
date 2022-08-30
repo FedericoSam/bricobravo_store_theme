@@ -44,7 +44,7 @@
 }
 
 .col2 {
-  width: 20px;
+  width: 10px;
 }
 
 .category-menu-item--active {
@@ -130,10 +130,18 @@
   padding: 0 10px;
 }
 
+.subcategory-title{
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 19px;
+  color: #332C32;
+}
 .subcategory-item {
   text-align: left;
   padding-right: 50px;
   list-style: none;
+  margin-bottom: 8px;
 }
 
 .subcategory-item--active {
@@ -143,8 +151,10 @@
 }
 
 .subcategory-item a {
-  color: inherit;
+  color: #332C32;
   text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .submenu-item-third-level a {
@@ -173,10 +183,15 @@
 }
 
 @media screen and (max-width: 768px) {
+  .container{
+    display: flex;
+    justify-content: center;
+  }
   .mobile-menu-department {
     display: flex;
     flex-direction: column;
     padding: 0;
+    width: 280px;
   }
 
   .mobile-menu-header-category {
@@ -187,6 +202,15 @@
     justify-content: space-between;
     transition: background-color 250ms linear;
     min-width: 100%;
+    height: 50px;
+   border-bottom: 1px solid #D8D8D8;
+  }
+
+  .mobile-menu-icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
   }
 
   .mobile-menu-header-subcategory {
@@ -204,6 +228,9 @@
     text-align: center;
   }
 
+  .category-menu-item{
+    padding:0 ;
+  }
   .mobile-menu-header-category--active .category-menu-item {
     color: #ffffff;
   }
@@ -212,20 +239,17 @@
     top: 6px;
     left: 22px;
     overflow: visible;
-    position: absolute;
   }
 
   .category-menu-arrow {
-    height: 8px;
-    width: 14px;
-    margin: 0 21px 0 12px;
+    height: 20px;
+    width: 25px;
+    transform: translate(9px,6px);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transform: rotate(-90deg);
-    background-image: url("data:image/svg+xml,%3Csvg width='16' height='9' viewBox='0 0 16 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.25 0.400009C0.875 0.775009 0.875 1.375 1.25 1.75L7.47499 7.97499C7.77499 8.27499 8.22501 8.27499 8.52501 7.97499L14.75 1.75C15.125 1.375 15.125 0.775009 14.75 0.400009C14.375 0.0250091 13.775 0.0250091 13.4 0.400009L8 5.8L2.59999 0.400009C2.22499 0.0250086 1.625 0.0250086 1.25 0.400009Z' fill='%23CC296E'/%3E%3C/svg%3E%0A");
+    background-image: url("../../../assets/icons/arrowRight.svg");
   }
-
   .mobile-mega-menu {
     top: 0;
     z-index: 2;

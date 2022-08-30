@@ -6,6 +6,7 @@ import { Icon } from 'vtex.store-icons'
 import arrowRight from '../../../assets/icons/arrowRightGray.svg'
 import IconPlanta from '../../../assets/icons/vasoDePlanta.svg'
 
+
 const CustomMegaMenu = ({ menuFirstLevel }) => {
   const node = useRef()
   const { isMobile } = useDevice()
@@ -122,8 +123,8 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                     megamenu === index && isOpen
                       ? style['megamenu--active']
                       : style['megamenu--inactive']
-                  }`}
-                  onMouseLeave={() => setIsOpen(false)}>
+                  }`}>
+                  {/* onMouseLeave={() => setIsOpen(false)}> */}
                   <img
                     src={menuSecondLevelImage}
                     alt="banner"
@@ -135,7 +136,7 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                         <li
                           key={index}
                           className={`${style['subcategory-container']}`}>
-                          <h5>{title}</h5>
+                          <h5 className={`${style['subcategory-title']}`}>{title}</h5>
                           {subCategories?.map(({ text, link }, ind) => {
                             return (
                               <li
@@ -171,15 +172,17 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                       : style['']
                   }`}
                   onClick={() => mobileHandleToggleMenu(index)}>
-                  <Icon
-                    id={
+                    <div className={style['mobile-menu-icon-container']}>
+                  <img
+                    src={
                       megamenu == index && isOpen
-                        ? `${iconMobile}-white`
+                        ? `${iconMobile}`
                         : iconMobile
                     }
-                    type="filled"
+                   
                   />
                   <p className={style['category-menu-item']}>{text}</p>
+                  </div>
                   <i
                     className={`${style['category-menu-arrow']} ${
                       megamenu == index && isOpen
