@@ -83,13 +83,13 @@
   "image#Icondown": {
     "props": {
       "src": "assets/icons/arrowDown.svg",
-      "width": "25px"
+      "width": "13px"
     }
   },
   "image#IconUp": {
     "props": {
       "src": "assets/icons/arrowUp.svg",
-      "width": "25px"
+      "width": "13px"
     }
   }
 }

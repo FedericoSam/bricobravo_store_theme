@@ -16,6 +16,10 @@
   &--home-section-title {
     display: flex;
     justify-content: flex-start;
+    @include breakpoint('mobile') {
+      justify-content: center;
+    }
+
   }
 
   .heading {
@@ -40,9 +44,8 @@
     &--home-section-title {
       display: flex;
       justify-content: flex-start;
-      font-size: 24px;
+      font-size: 32px;
       font-weight: 500;
-      margin: 0 0 20px;
       @media screen and (max-width: 768px) {
         font-size: 28px;
         line-height: 32px;
@@ -99,7 +102,6 @@
       line-height: 18px;
       text-align: center;
       margin: 1rem 0 0.75rem;
-
       @include breakpoint('mobile') {
         text-align: center;
         margin: 0 0 0.5rem 0;
@@ -113,7 +115,6 @@
       line-height: 1.5rem;
       max-width: 25rem;
       margin: 2rem 0;
-
       @include breakpoint('mobile') {
         margin: 0 1rem;
         text-align: center;
@@ -167,27 +168,28 @@
       font-weight: 500;
       line-height: 24px;
       margin: 0 0 0.75rem;
+      @include breakpoint('mobile') {
+        font-size: 18px;
+      }
     }
   }
 
   .wrapper {
     &--home-section-title {
-      
       @include breakpoint('mobile') {
         margin: 0 1rem;
-
         .heading--home-section-title {
-          font-size: 20px;
+          font-size: 24px;
         }
       }
     }
   }
 
   .headingLevel2 {
-    margin: 26px 0 0;
+    margin: 26px 0 20px;
     &--home-section-title {
       @include breakpoint('mobile') {
-        margin: 0 0 1rem;
+        margin: 20px 0;
       }
     }
   }

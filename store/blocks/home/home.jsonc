@@ -348,7 +348,7 @@
       "link#home-shelf-01-allProducts"
     ],
     "props": {
-      "blockClass": "home-shelf-02-title"
+      "blockClass": "home-shelf-01-title"
     }
   },
   "rich-text#home-shelf-01-title": {
@@ -361,7 +361,7 @@
     "props": {
       "href": "#",
       "blockClass": "home-shelf",
-      "label": "Mostra tutto"
+      "label": ""
     }
   },
 
@@ -391,14 +391,14 @@
   "rich-text#home-shelf-02-title": {
     "props": {
       "blockClass": "title-2-test home-section-title",
-      "text": "## Offerta del mese"
+      "text": "Offert del mese"
     }
   },
   "link#home-shelf-02-allProducts": {
     "props": {
       "href": "#",
       "blockClass": "home-shelf",
-      "label": "Mostra tutto"
+      "label": ""
     }
   },
 
@@ -435,7 +435,7 @@
     "props": {
       "href": "#",
       "blockClass": "home-shelf",
-      "label": "Mostra tutto"
+      "label": ""
     }
   },
 
