@@ -192,6 +192,7 @@
     flex-direction: column;
     padding: 0;
     width: 280px;
+    margin-top: 6px;
   }
 
   .mobile-menu-header-category {
@@ -204,6 +205,15 @@
     min-width: 100%;
     height: 50px;
    border-bottom: 1px solid #D8D8D8;
+  }
+
+  .mobile-title-name{
+    color: #332C32;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+    margin-left: 16px;
   }
 
   .mobile-menu-icon-container{
@@ -224,10 +234,12 @@
 
   .category-menu-item {
     font-size: 18px;
-    line-height: 2px;
     text-align: center;
   }
 
+  .link-utili-container{
+    padding: 0;
+  }
   .category-menu-item{
     padding:0 ;
   }
