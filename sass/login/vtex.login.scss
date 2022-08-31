@@ -6,7 +6,6 @@
   justify-content: center;
   max-width: 1440px;
   width: auto;
-  padding: 0 0 8rem 0;
 
   &--emailAndPassword,
   &--emailVerification {
@@ -20,10 +19,7 @@
 
   .loginOptionsContainer,
   .contentForm {
-    padding: 24px 60px;
-    @include breakpoint("mobile") {
-        padding: 24px 0;
-    }
+    padding: 0;
   }
 
   .loginOptionsContainer {
@@ -34,7 +30,7 @@
     background-color: #F4F7FA;
     @include breakpoint("mobile"){
         margin-top: 5rem;
-        width: 100%;
+        max-width: 324px;
     }
     .optionsSticky {
         .formTitle {
@@ -56,6 +52,9 @@
                     line-height: 24px;
                   
             }
+            @include breakpoint("mobile"){
+                    transform: translateX(-53px);
+                  }
         }
 
         .optionsList {
@@ -64,7 +63,7 @@
             .optionsListItem {
                 :global(.vtex-button) {
                     font-size: 14px;
-                    width: 280px;
+                    width: 319px;
                     height: 40px;
                     border-radius: 0px;
                     transition: .2s ease-in-out;
@@ -89,7 +88,7 @@
                          position: absolute;
                          transform: translateY(-8px);
                          @include breakpoint("mobile"){
-                            transform: translateX(0px);
+                            transform: translateX(-80px);
                             position: static;
                             display: inline-block;
                          }
@@ -110,7 +109,7 @@
     }
  }
   .contentForm {
-
+    min-width: 15.125rem;
       .emailForm .inputContainerEmail {
           :global(.vtex-input-prefix__group) {
               margin: 0 auto;
@@ -196,7 +195,7 @@
       .inputContainer {
           :global(.vtex-input-prefix__group) {
               border: none;
-              width: 280px !important;
+              width: 319px !important;
               height: 48px !important;
 
               :global(.vtex-styleguide-9-x-input) {
@@ -204,7 +203,7 @@
                   border: 1px solid #CCC;
                   box-sizing: border-box;
                   border-radius: 3px;
-                  width: 280px;
+                  width: 319px;
                   height: 48px;
               }
           }
@@ -229,7 +228,7 @@
           text-align: center;
           padding: 0;
           border: none;
-          width: 280px;
+          width: 319px;
           margin: 16px auto 0;
 
           .sendButton {
@@ -237,7 +236,7 @@
 
               :global(.vtex-button) {
                 border-radius: 2px;
-                background-color: #291660;
+                background-color: #8E8E8E;
                   border: none;
                   width: 100%;
                   height: 48px;
@@ -248,7 +247,7 @@
                   transition: .2s ease-in-out;
   
                   &:hover {
-                      background: #1B0E41;
+                      background: #8E8E8E;
                   }
               }
           }
@@ -277,7 +276,7 @@
         color: white;
         padding: 18px;
         position: absolute;
-        transform: translate(417px, -151px);
+        transform: translate(437px,-125px);
         box-sizing: border-box;
         height: 40px;
         width: 360px;
@@ -503,4 +502,13 @@
     @include breakpoint("mobile") {
         justify-content: center;
     }
+}
+.emailVerification {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+ @include breakpoint("mobile") {
+    margin-bottom: 24px;
+ }
 }
