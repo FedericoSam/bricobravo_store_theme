@@ -91,16 +91,17 @@
   "slider-layout#homeBottomSectionCategoriesMobile": {
     "props": {
       "itemsPerPage": {
-        "desktop": 6,
+        "desktop": 3,
         "tablet": 2,
         "phone": 1
       },
       "showNavigationArrows": "desktopOnly",
       "showPaginationDots": "never",
       "autoplay": false,
-      "infinity": false,
+      //"usePagination": false,
+      //"infinity": false,
       "navigationStep": 1,
-      "fullWidth": true,
+      //"fullWidth": true,
       "centerMode": "to-the-left",
       "blockClass": "homeBottomSectionCategoriesMobile"
     },
