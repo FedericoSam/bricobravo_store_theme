@@ -150,6 +150,7 @@
       },
       "showNavigationArrows": "desktopOnly",
       "showPaginationDots": "never",
+      //"usePagination": false,
       "autoplay": false,
       "infinity": false,
       "navigationStep": 1,

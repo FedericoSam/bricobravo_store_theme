@@ -13,8 +13,13 @@ const InfiniteScroll = () => {
                 autoClick();
             }
         }, { rootMargin: '500px',threshold: [0] });
+
+        var observed = document.querySelector('.vtex-search-result-3-x-buttonShowMore .vtex-button');
         
-        observer.observe(document.querySelector('.vtex-search-result-3-x-buttonShowMore .vtex-button'));
+        if (observed) {
+            observer.observe(observed);
+        }
+        
     }
 
     const timer1 = setInterval(() => autoClick , 4000);
@@ -22,7 +27,11 @@ const InfiniteScroll = () => {
 
     useEffect(() => {
 
-        autoClick();
+        var observed = document.querySelector('.vtex-search-result-3-x-buttonShowMore .vtex-button');
+        if (observed) {
+            autoClick();
+        } 
+        
 
     },[]);    
 

@@ -726,7 +726,8 @@
       "showNavigationArrows": "desktopOnly",
       "showPaginationDots": "never",
       "autoplay": false,
-      "navigationStep": 1,
+      "navigationStep": "page",
+      //"infinite": true,
       "fullWidth": true,
       "centerMode": "to-the-left",
       "blockClass": "home-services"
@@ -755,13 +756,14 @@
   "rich-text#home-services-01-text": {
     "props": {
       "blockClass": "home-services-text",
-      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+      "text": "Lorem ipsum dolor sit amet consectetur "
     }
   },
   "image#home-services-01": {
     "props": {
       "src": "https://dummyimage.com/200x140/4320A8/ffffff",
       "blockClass": "home-services-image",
+      "width": 200,
       "link": {
         "url": "#"
       }
@@ -789,13 +791,14 @@
   "rich-text#home-services-02-text": {
     "props": {
       "blockClass": "home-services-text",
-      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+      "text": "Lorem ipsum dolor sit amet consectetur "
     }
   },
   "image#home-services-02": {
     "props": {
       "src": "https://dummyimage.com/200x140/4320A8/ffffff",
       "blockClass": "home-services-image",
+      "width": 200,
       "link": {
         "url": "#"
       }
@@ -823,13 +826,14 @@
   "rich-text#home-services-03-text": {
     "props": {
       "blockClass": "home-services-text",
-      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+      "text": "Lorem ipsum dolor sit amet consectetur "
     }
   },
   "image#home-services-03": {
     "props": {
       "src": "https://dummyimage.com/200x140/4320A8/ffffff",
       "blockClass": "home-services-image",
+      "width": 200,
       "link": {
         "url": "#"
       }
@@ -857,13 +861,14 @@
   "rich-text#home-services-04-text": {
     "props": {
       "blockClass": "home-services-text",
-      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+      "text": "Lorem ipsum dolor sit amet consectetur "
     }
   },
   "image#home-services-04": {
     "props": {
       "src": "https://dummyimage.com/200x140/4320A8/ffffff",
       "blockClass": "home-services-image",
+      "width": 200,
       "link": {
         "url": "#"
       }
@@ -891,13 +896,14 @@
   "rich-text#home-services-05-text": {
     "props": {
       "blockClass": "home-services-text",
-      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+      "text": "Lorem ipsum dolor sit amet consectetur "
     }
   },
   "image#home-services-05": {
     "props": {
       "src": "https://dummyimage.com/200x140/4320A8/ffffff",
       "blockClass": "home-services-image",
+      "width": 200,
       "link": {
         "url": "#"
       }
@@ -925,13 +931,14 @@
   "rich-text#home-services-06-text": {
     "props": {
       "blockClass": "home-services-text",
-      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+      "text": "Lorem ipsum dolor sit amet consectetur "
     }
   },
   "image#home-services-06": {
     "props": {
       "src": "https://dummyimage.com/200x140/4320A8/ffffff",
       "blockClass": "home-services-image",
+      "width": 200,
       "link": {
         "url": "#"
       }
