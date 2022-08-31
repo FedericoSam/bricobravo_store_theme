@@ -4,7 +4,7 @@
 
 .container--summaryComplete {
   max-width: 332px !important;
-  height: 380px;
+  height: 360px;
   position: relative;
   border: none;
   border-radius: 2px;
@@ -15,16 +15,18 @@
   :global(.vtex-product-price-1-x-installments) {
     font-size: 14px;
     font-weight: 500;
-    padding: 0 0.8rem;
-    margin: 12px;
+    max-width: 140px;
     text-align: center;
-    display: inline-block;
+    display: none;
     color: #4320A8;
   }
   @include desktop {
     &:hover {
-      height: 486px;
+      height: 444px;
       transition: all 0.3s ease;
+      :global(.vtex-product-price-1-x-installments){
+        display: inline-block;
+      }
     }
   }
   .clearLink {
@@ -56,6 +58,9 @@
 }
 
 .container--summaryComplete
+:global(.vtex-stack-layout-0-x-stackContainer--savingsStack){
+  height: 164px;
+}
   :global(.vtex-store-components-3-x-installmentsPrice) {
   display: none;
 }
@@ -119,6 +124,9 @@
 .container--summaryComplete .productNameContainer .brandName {
   width: 100%;
   text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   font-style: normal;
@@ -126,8 +134,7 @@
   font-size: 16px;
   line-height: 20px;
   color: #332c32;
-  padding-bottom: 10px;
-  margin-bottom: 15px;
+  height: 40px;
 }
 
 .container--summaryComplete .buyButtonContainer,
@@ -139,7 +146,9 @@
 }
 
 .container--summaryComplete .image {
-  height: 150px;
+  position: relative;
+  top: -24px;
+  z-index: 0;
   @include mobile {
     object-fit: cover !important;
     display: block;
@@ -153,6 +162,7 @@
 .element--summaryComplete {
   padding: 0;
   position: relative;
+
 
   .priceContainer {
     display: flex;
@@ -390,14 +400,10 @@
   font-size: 18px !important;
   line-height: 22px;
   color: #332c32;
-  //padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
-.element--summaryComplete {
-  .price_sellingPrice {
-    padding-bottom: 10px;
-  }
-}  
+
 
 .element--wishlistProductItem {
   .price_sellingPrice {
@@ -412,7 +418,7 @@
   :global(.vtex-flex-layout-0-x-flexRow--buyButtonContainer) {
     padding-bottom: 24px;
   }
-}  
+}
 
 
 .element--summaryComplete .sellingPrice:nth-child(even) {
@@ -511,7 +517,6 @@
 }
 
 .element--summaryComplete .imageWrapper {
-  margin-bottom: 0.75rem;
   max-width: 100%;
   width: 100%;
 

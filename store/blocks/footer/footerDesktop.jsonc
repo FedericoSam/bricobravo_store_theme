@@ -11,6 +11,7 @@
     "children": [
       "flex-layout.col#upperFooterCol1",
       "flex-layout.col#upperFooterCol2",
+      "flex-layout.col#upperFooterCol4",
       "flex-layout.row#upperFooterCol3"
     ],
     "props": {
@@ -179,6 +180,25 @@
     }
   },
 
+  "flex-layout.col#upperFooterCol4": {
+    "children": ["link#upperFooterCol4Link1", "link#upperFooterCol4Link2"],
+    "props": {
+      "blockClass": "footer-upperFooterCol4"
+    }
+  },
+  "link#upperFooterCol4Link1": {
+    "props": {
+      "href": "/rich-text",
+      "label": "rich-text"
+    }
+  },
+  "link#upperFooterCol4Link2": {
+    "props": {
+      "href": "/sandbox",
+      "label": "sandbox"
+    }
+  },
+
   "flex-layout.row#footerPaymentMethods": {
     "children": ["flex-layout.col#footerPaymentMethods"],
     "props": {
@@ -221,7 +241,7 @@
     ],
     "props": {
       "preventVerticalStretch": true,
-      "blockClass": "footer-PaymentMethodsRow"
+      "blockClass": ["footer-PaymentImagesRow"]
     }
   },
   "image#payment1": {
@@ -334,7 +354,7 @@
   "flex-layout.col#bottomFooter1": {
     "children": ["rich-text#bricoBravoInfo1"],
     "props": {
-      "width": "65%",
+      "width": "85%",
       "preventVerticalStretch": true,
       "verticalAlign": "middle",
       "blockClass": "bottomFooter2"

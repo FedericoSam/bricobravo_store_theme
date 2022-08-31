@@ -20,19 +20,29 @@
   &--footer-PaymentMethodsDescription {
     color: $white;
     padding: 10px 15px 10px;
+    @include breakpoint('mobile') {
+      padding-left: 0;
+    }
   }
 
   &--footer-PaymentMethodsDescription {
+    font-size: 13px;
     @include breakpoint('mobile') {
       border-top: 1px solid $white;
+      padding-top: 20px;
     }
   }
+
 
   &--footer-PaymentMethodsTitle {
     font-size: 20px;
     font-weight: 500;
     display: flex;
     align-items: center;
+
+    @include breakpoint('mobile') {
+      margin: 0 0 5px;
+    }
     &::after {
       content: '';
       width: 33px;
@@ -47,6 +57,7 @@
 
   &--footer-aboutUs {
     color: $white;
+    font-size: 13px;
   }
 
   &--footer-upperFooterTitle {

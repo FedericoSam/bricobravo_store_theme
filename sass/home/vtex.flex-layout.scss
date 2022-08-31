@@ -44,7 +44,7 @@
 
     @include breakpoint('mobile') {
       background-image: url(assets/images/bg-home-section2-mobile.svg);
-      height: 586px;
+      height: 554px;
       max-width: 100vw;
     }
     :global(.vtex-store-components-3-x-container){
@@ -54,6 +54,9 @@
   }
   &--home-shelf-03 {
     @include container-main;
+    @include mobile {
+      margin-top: 30px;
+    }
   }
 
   &--categories-showcase {
@@ -112,6 +115,7 @@
   }
 
   .flexRowContent {
+
     &--home-categories-showcase,
     &--mobile-home-categories-showcase,
     &--categories-showcase {
@@ -146,6 +150,21 @@
       display: flex;
       align-items: center;
       padding-top: 28px;
+    }
+    &--home-shelf-02-title{
+      :global(.vtex-rich-text-0-x-container){
+        @include breakpoint('mobile'){
+          justify-content: center;
+        }
+      }
+      :global(.vtex-rich-text-0-x-headingLevel2) {
+        color: $background-blue-black;
+        font-weight: 500;
+        font-size: 40px;
+        @include breakpoint('mobile') {
+          font-size: 28px;
+        }
+      }
     }
   }
 }
@@ -216,7 +235,9 @@
     &--mobile-home-categories-showcase {
       display: flex;
       position: relative;
-      transform: translateY(14px);
+      @include breakpoint('mobile') {
+        transform: translateY(14px);
+      }
 
       :global(.vtex-store-components-3-x-imageElement) {
         margin: 0 auto;
@@ -240,7 +261,6 @@
         align-items: center;
       }
       &:last-child {
-        //height: 0 !important;
         transform: translateY(25px);
         text-align: center;
       }
@@ -254,12 +274,31 @@
 
     &--home-blog-col {
       height: auto !important;
+      @include breakpoint('mobile'){
+        max-height: 178px;
+      }
     }
 
-    &--homeBottomSectionColMobile {
+    &--homeBottomSectionColMobile:nth-child(odd) {
       @include breakpoint('mobile') {
         margin-bottom: 2.5rem;
       }
+    }
+  }
+}
+
+.flexRowContent--home-shelf-02-title {
+  :global(.vtex-rich-text-0-x-headingLevel2) {
+    font-size: 40px;
+    font-weight: 500;
+    @include mobile {
+      font-size: 28px;
+      color: #291660;
+    }
+  }
+  :global(.vtex-rich-text-0-x-container) {
+    @include mobile {
+      justify-content: center;
     }
   }
 }

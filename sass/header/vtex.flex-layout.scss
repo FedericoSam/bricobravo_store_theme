@@ -13,7 +13,7 @@
   }
   &--header-desktop-upper {
     box-shadow: 0 4px 7px 0 rgba(0,0,0,0.15);
-    
+
     &::after {
       width: 100%;
       content: '';
@@ -32,7 +32,7 @@
       @include container-main;
 
       justify-content: space-between;
-      padding: 15px 20px 10px;
+      padding: 15px 0 10px;
     }
     .flexCol--header-containerIcons {
       display: flex;
@@ -43,7 +43,7 @@
 
   &--header-mobile {
     box-shadow: 0 1px 6px 0 rgba(0,0,0,0.3);
-    
+
     .flexRowContent {
       background-color: $white;
       padding: 20px 10px 0;
@@ -63,14 +63,17 @@
   }
 
   &--header-categories {
-    margin: 0 auto;
-    max-width: 1376px;
+    background-color: #F4F7FA;
     @include breakpoint("mobile"){
       display: none;
     }
     .flexRowContent--header-categories {
-      justify-content: space-around;
-      padding: 15px 20px 10px;
+      justify-content: space-between;
+      display: flex;
+      padding: 15px 20px 10px 0;
+      max-width: 1376px;
+      margin: 0 auto;
+      text-align: center;
       :global(.vtex-store-link-0-x-link--header-category) {
         display: flex;
         align-items: center;
@@ -82,10 +85,10 @@
             display: inline-block;
             width: 30px;
             height: 30px;
-            background-color: $primary-gold; 
+            background-color: $primary-gold;
             padding: 10px 10px 0;
             margin-right: 10px;
-          } 
+          }
         }
         &2 {
           text-decoration: none;
@@ -95,7 +98,7 @@
             display: inline-block;
             width: 30px;
             height: 30px;
-            background-color: $primary-gold; 
+            background-color: $primary-gold;
             padding: 10px 10px 0;
             margin-right: 10px;
           }
@@ -108,7 +111,7 @@
             display: inline-block;
             width: 30px;
             height: 30px;
-            background-color: $primary-gold; 
+            background-color: $primary-gold;
             padding: 10px 10px 0;
             margin-right: 10px;
           }
@@ -121,7 +124,7 @@
             display: inline-block;
             width: 30px;
             height: 30px;
-            background-color: $primary-gold; 
+            background-color: $primary-gold;
             padding: 10px 10px 0;
             margin-right: 10px;
           }
@@ -161,13 +164,13 @@
         display: none;
       }
     }
-  
+
     :global(.vtex-login-2-x-profile) {
       color: transparent;
       width: 1px;
       margin: 8px 1px;
       visibility: hidden;
-      
+
       &::after {
         width: 40px !important;
         left: -98px;

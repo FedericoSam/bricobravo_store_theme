@@ -1,7 +1,7 @@
 {
   "vendor": "bricobravo",
   "name": "store-theme",
-  "version": "3.0.1",
+  "version": "3.0.3",
   "builders": {
     "react": "3.x",
     "assets": "0.x",
@@ -49,6 +49,7 @@
     "vtex.store-newsletter": "1.x",
     "vtex.flex-layout": "0.x",
     "vtex.rich-text": "0.x",
+    "vtex.sandbox": "0.x",
     "vtex.store-drawer": "0.x",
     "vtex.store-link": "0.x",
     "vtex.locale-switcher": "0.x",

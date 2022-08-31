@@ -35,6 +35,9 @@
   &--home-blog-image {
     margin: 0 0 1.25rem;
     max-width: 28.75rem;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 4px;
+    }
 
     &:hover {
       opacity: 0.9;

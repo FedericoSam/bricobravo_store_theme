@@ -275,9 +275,13 @@
 }
 
 /* format Reviews */
+:global(.vtex-reviews-and-ratings-3-x-stars){
+  height: 22px;
+  padding-bottom: 14px;
+}
 :global(.vtex-reviews-and-ratings-3-x-star--empty){
   color: #d8d8d8;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: normal;
 }
 
@@ -404,7 +408,9 @@
 .flexCol--table-row:nth-child(odd) .flexRow--table-heading {
   background-color: transparent;
 }
-
+.flexRow--summaryTop{
+  z-index: 1;
+}
 .flexRowContent--summaryTop {
   :global(.vtex-wish-list-1-x-wishlistIconContainer) {
     display: flex;
@@ -444,7 +450,7 @@
     .flexColChild--container-pdp-quantity-and-add-to-cart {
       &:first-child {
         margin-left: auto;
-        margin-right: 60px;
+        //margin-right: 60px;
         @include breakpoint("mobile") {
           margin-right: 20px;
         }
@@ -454,16 +460,20 @@
           position: absolute;
           height: 4500px !important;
           top: 25px;
-          left: 0;
+          left: -19px;
           pointer-events: none;
-          width: 105%;
+          width: 112%;
           z-index: 4;
-          margin: -10px;
         }
         .flexRow--pdp-quantity-and-add-to-cart-children {
           position: sticky;
           top: calc(100% - 110px);
           pointer-events: fill;
+          padding: 0.5rem 0 0.6rem;
+          padding-inline: 8px;
+          background: white;
+          border-top: 2px solid #DFDFDF;
+    transform: translateY(-11px);
         }
       }
     }
@@ -544,6 +554,7 @@
 
   &--pdp-faq {
     background-color: #f6f6f6;
+    display: none;
 
     @include breakpoint('mobile') {
       margin-bottom: 2.5rem;
@@ -1386,7 +1397,7 @@
 }
 
 // .flexColChild--moreInfo {
-  
+
 // }
 
 .flexCol--storeMap {
@@ -1412,7 +1423,7 @@
         margin-inline: 16px;
     }
   }
-  
+
 }
 
 .flexCol--colTitleStore {
@@ -1441,7 +1452,7 @@
   @include mobile {
     margin-bottom: -57px;
   }
-} 
+}
 
 
   .flexRow--breadcrumb-detail {
@@ -1452,6 +1463,13 @@
       visibility: hidden;
       transform: translateY(-50px);
     }
+  }
+
+  .flexRowContent--product-shelf-1-title, 
+  .flexRowContent--product-shelf-2-title, 
+  .flexRowContent--product-shelf-3-title {
+    margin-inline: auto;
+    max-width: 1294px;
   }
 
 
