@@ -541,6 +541,10 @@
 
 :global(.vtex-login-2-x-content--accountOptions){
    padding-bottom: 0 !important;
+
+   .contentFormVisible{
+    padding: 0px !important;
+   }
 }
 
 
