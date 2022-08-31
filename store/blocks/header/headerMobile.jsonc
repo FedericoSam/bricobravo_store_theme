@@ -20,10 +20,21 @@
   "flex-layout.col#header-mobile": {
     "children": [
       "flex-layout.col#header-logo",
-      "flex-layout.col#header-searchBar"
-    ]
+      "flex-layout.row#header-logo-mobile"
+    ],
+    "props": {
+      "blockClass": "header-mobile"
+    }
   },
-
+  "flex-layout.row#header-logo-mobile":{
+    "children": [
+      "header-mobile",
+      "flex-layout.col#header-searchBar"
+    ],
+    "props": {
+      "blockClass": "header-mobile-teste"
+    }
+  },
   "flex-layout.col#header-searchBar": {
     "children": ["search-bar#mobile"],
     "props": {
