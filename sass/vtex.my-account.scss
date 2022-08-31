@@ -77,7 +77,7 @@
     padding: 0;
     &::before {
       content: '/ Modifica Profilo';
-      transform: translateY(-149px) translateX(-168px);
+      transform: translateY(-159px) translateX(-168px);
       position: absolute;
       color: #332C32;
       font-family: Roboto;
@@ -185,7 +185,7 @@
   .addressList {
     &::before {
       content: '/ Indirizzi';
-      transform: translateY(-162px) translateX(-168px);
+      transform: translateY(-171px) translateX(-168px);
       position: absolute;
       color: #332C32;
       font-family: Roboto;
@@ -256,8 +256,8 @@
   .addressCreate {
     padding: 0;
     &::before {
-      content: '/ Aggiungi indirizzo';
-      transform: translateY(-149px) translateX(-168px);
+      content: '/ Aggiungi nuovo indirizzo';
+      transform: translateY(-160px) translateX(-69px);
       position: absolute;
       color: #332C32;
       font-family: Roboto;
@@ -266,55 +266,110 @@
       letter-spacing: 0;
       padding: 2px 0 0 20px;
       line-height: 14px;
-      background-image: url('assets/icons/home.svg');
+      // background-image: url('assets/icons/home.svg');
       background-repeat: no-repeat;
       @media screen and (max-width: 48rem) { 
         display: none;
       }
     }
+    
+    :global(.vtex-my-account-1-x-boxContainer) {
+      &::before {
+        content: '/ I miei indirizzi';
+        transform: translateY(-160px) translateX(-168px);
+        position: absolute;
+        color: #8E8E8E;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0;
+        padding: 2px 0 0 20px;
+        line-height: 14px;
+        background-image: url('assets/icons/home.svg');
+        background-repeat: no-repeat;
+        @media screen and (max-width: 48rem) { 
+          display: none;
+        }
+      }
+    }
 
+    :global(.vtex-address-form-4-x-input),
+    :global(.vtex-input-prefix__group),
+    :global(.vtex-address-form-4-x-container) {
+      border-color: #DFDFDF;
+    }
+    
     :global(.flex-auto) {
-      max-width: 870px;
+      max-width: 920px;
+    }
+
+    :global(.vtex-input__label),
+    :global(.vtex-dropdown__label) {
+      color: #878787;
     }
 
     .boxContainer {
       border: none;
-      max-width: 870px;
+      max-width: 920px;
       :global(.vtex-my-account-1-x-boxContainerBody) {
         padding-right: 0;
         display: flex;
         flex-wrap: wrap;
         gap: 15px;
         width: 100%;
+        &::before {
+          content: 'Aggiungi nuovo indirizzo';
+          color: #332C32;
+          font-family: Roboto;
+          font-size: 28px;
+          font-weight: bold;
+          letter-spacing: 0;
+          line-height: 33px;
+          position: absolute;
+          transform: translateY(-84px) translateX(-12px);
+          background-color: white;
+          @media screen and (max-width: 48rem) { 
+            transform: translateY(-65px) translateX(4px);
+            font-size: 24px;
+          }
+        }
       }
 
       :global(.vtex-address-form__country),
       :global(.vtex-address-form__postalCode) {
-        width: 45%;
+        width: 49%;
+        padding-bottom: 0;
       }
 
       :global(.vtex-address-form__container) {
         display: flex;
         flex-wrap: wrap;
         gap: 0 15px;
+        padding-bottom: 0;
       }
 
       :global(.vtex-address-form__street),
+      :global(.vtex-address-form__city) {
+        width: 49%;
+        padding-bottom: 0;
+      }
       :global(.vtex-address-form__receiverName) {
-        width: 40%;
+        width: 24%;
+        padding-bottom: 0;
       }
 
       :global(.vtex-address-form__number) {
-        width: 20%;
+        width: 23%;
+        padding-bottom: 12px;
       }
 
       :global(.vtex-address-form__complement) {
-        width: 28%;
+        width: 24%;
+        padding-bottom: 0;
       }
 
-      :global(.vtex-address-form__city),
       :global(.vtex-address-form__state) {
-        width: 24%;
+        width: 23%;
       }
 
       :global(.c-on-disabled) {
@@ -361,7 +416,7 @@
           flex-wrap: wrap;
           gap: 15px;
 
-          :global(.vtex-address-form__street),
+          :global(.vtex-address-form__street) 
           :global(.vtex-address-form__receiverName) {
             width: 40%;
           }
@@ -393,7 +448,7 @@
   :global(.vtex-account__cards-list) {
     &::before {
       content: '/ Carte di credito';
-      transform: translateY(-162px) translateX(-168px);
+      transform: translateY(-171px) translateX(-168px);
       position: absolute;
       color: #332C32;
       font-family: Roboto;
@@ -415,7 +470,7 @@
     padding-left: 20px;
     &::before {
       content: '/ Autenticazione';
-      transform: translateY(-162px) translateX(-190px);
+      transform: translateY(-171px) translateX(-187px);
       position: absolute;
       color: #332C32;
       font-family: Roboto;
@@ -520,7 +575,7 @@
     .profile {
       &::before {
         content: '/ Profilo';
-        transform: translateY(-165px) translateX(-168px);
+        transform: translateY(-174px) translateX(-168px);
         position: absolute;
         color: #332C32;
         font-family: Roboto;
@@ -636,7 +691,7 @@
       padding-left: 2rem;
       &::before {
         content: '/ Nuova carta';
-        transform: translateY(-161px) translateX(-200px);
+        transform: translateY(-171px) translateX(-200px);
         position: absolute;
         color: #332C32;
         font-family: Roboto;
@@ -696,7 +751,7 @@
     :global(.vtex-account__orders-list) {
       &::before {
         content: '/ Ordini';
-        transform: translateY(-161px) translateX(-168px);
+        transform: translateY(-171px) translateX(-168px);
         position: absolute;
         color: #332C32;
         font-family: Roboto;
@@ -733,7 +788,7 @@
   :global(.legacy-orders) {
     &::before {
       content: '/ Legacy Orders';
-      transform: translateY(-162px) translateX(-168px);
+      transform: translateY(-171px) translateX(-168px);
       position: absolute;
       color: #332C32;
       font-family: Roboto;
@@ -754,7 +809,7 @@
   :global(.wish-list) {
     &::before {
       content: '/ La mia lista dei desideri';
-      transform: translateY(-162px) translateX(-168px);
+      transform: translateY(-171px) translateX(-168px);
       position: absolute;
       color: #332C32;
       font-family: Roboto;
@@ -940,6 +995,7 @@
           display: block !important;
           :global(.vtex-button) {
             width: 100% !important;
+            margin-top: 50px;
           }
         }
 
@@ -952,6 +1008,7 @@
         :global(.vtex-address-form__city),
         :global(.vtex-address-form__state) {
           width: 100% !important;
+          padding-bottom: 10px;
         }
 
         :global(.vtex-address-form__container) {
