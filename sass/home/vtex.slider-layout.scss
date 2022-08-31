@@ -64,41 +64,41 @@
   &--home-services {
     @include breakpoint('mobile') {
       margin: 0 0.625rem !important;
-      width: 240px !important;
+      min-width: 224px;
     }
   }
 
-  &--homeBottomSectionBrandsMobile {
-    @include breakpoint('mobile') {
-      margin: 0 0.625rem !important;
-    }
-  }
+//   &--homeBottomSectionBrandsMobile {
+//     @include breakpoint('mobile') {
+//       margin: 0 0.625rem !important;
+//     }
+//   }
 
-  &--homeBottomSectionCategoriesMobile {
-    @include breakpoint('mobile') {
-      margin: 0 2rem !important;
-    }
-  }
+//   &--homeBottomSectionCategoriesMobile {
+//     @include breakpoint('mobile') {
+//       margin: 0 2rem !important;
+//     }
+//   }
 }
 
 .sliderTrack {
-  &--home-services {
-    @include breakpoint('mobile') {
-      transform: translate3d(-8.8125%, 0, 0) !important;
-    }
-  }
+  // &--home-services {
+  //   @include breakpoint('mobile') {
+  //     transform: translate3d(-8.8125%, 0, 0) !important;
+  //   }
+  // }
 
-  &--homeBottomSectionBrandsMobile {
-    @include breakpoint('mobile') {
-      transform: translate3d(-18.75%, 0, 0) !important;
-    }
-  }
+  // &--homeBottomSectionBrandsMobile {
+  //   @include breakpoint('mobile') {
+  //     transform: translate3d(-18.75%, 0, 0) !important;
+  //   }
+  // }
 
-  &--homeBottomSectionCategoriesMobile {
-    @include breakpoint('mobile') {
-      transform: translate3d(-8.6%, 0, 0) !important;
-    }
-  }
+  // &--homeBottomSectionCategoriesMobile {
+  //   @include breakpoint('mobile') {
+  //     transform: translate3d(-8.6%, 0, 0) !important;
+  //   }
+  // }
 
   &--mobile-home-categories-showcase-slider {
     height: 170px;
