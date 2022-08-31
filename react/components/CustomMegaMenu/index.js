@@ -7,7 +7,6 @@ import arrowRight from '../../../assets/icons/arrowRightGray.svg'
 import IconIcn from '../../../assets/icons/icnIcon.svg'
 import IconPlanta from '../../../assets/icons/vasoDePlanta.svg'
 
-
 const CustomMegaMenu = ({ menuFirstLevel }) => {
   const node = useRef()
   const { isMobile } = useDevice()
