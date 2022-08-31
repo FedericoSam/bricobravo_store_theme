@@ -1,14 +1,19 @@
 {
-    "custom-add-to-cart": {
-        "component": "BuyButton"
-    },
-    "header-mega-menu": {
-        "component": "CustomMegaMenu"
-    },
-    "hide-filter": {
-        "component": "HideFilter"
-    },
-    "infinite-scroll": {
-        "component": "InfiniteScroll"
-    }
+  "custom-add-to-cart": {
+    "component": "BuyButton"
+  },
+  "header-mega-menu": {
+    "component": "CustomMegaMenu"
+  },
+  "hide-filter": {
+    "component": "HideFilter"
+  },
+  "infinite-scroll": {
+    "component": "InfiniteScroll"
+  },
+  "collapse-text": {
+    "component": "CollapseText",
+    "composition": "children",
+    "allowed": "*"
+  }
 }

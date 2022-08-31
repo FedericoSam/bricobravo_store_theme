@@ -1,13 +1,14 @@
 .container {
-    width: 100%;
-    max-width: 100%;
-    padding: 0 8px;
-    @media screen and (max-width: 48rem) {
-        padding: 0;
-    }
+  width: 100%;
+  max-width: 100%;
+  padding: 0 8px;
+  @media screen and (max-width: 48rem) {
+    padding: 0;
+  }
 }
 
 .backToTopButtonActive {
+  transform: translateY(-40px);
 
     :global(.vtex-button) {
         height: 45px;
