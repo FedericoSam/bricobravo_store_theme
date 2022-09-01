@@ -32,9 +32,17 @@
   .drawerContent--drawer-desktop {
     padding: 12px 0 24px;
     background-color: #fff;
+    position: relative;
   }
 }
 
+.closeIconButton--drawer-desktop{
+  position: absolute;
+}
+
+.childrenContainer--drawer-desktop{
+   margin-top: 42px;
+}
 .drawerContent--drawer-desktop {
   height: 100vh;
 }
