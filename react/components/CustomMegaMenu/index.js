@@ -7,7 +7,6 @@ import arrowRight from '../../../assets/icons/arrowRightGray.svg'
 import IconIcn from '../../../assets/icons/icnIcon.svg'
 import IconPlanta from '../../../assets/icons/vasoDePlanta.svg'
 
-
 const CustomMegaMenu = ({ menuFirstLevel }) => {
   const node = useRef()
   const { isMobile } = useDevice()
@@ -247,11 +246,11 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                         className={style['category-menu-arrow']}></i>
                       </li>
                     <div className={whatSubCategoryIsOpen === title ? style['mobile-subcategory-menu-items'] : style['subcategory-hidden']}>
-                      <ul className={style["mobile-subcategory-overflow"]}>
-                        <h5
+                    <h5
                         className={style['mobile-mega-menu-title']}
                         onClick={() => setWhatSubCategoryIsOpen('')}
                         >{title}</h5>
+                       <ul className={style["mobile-subcategory-overflow"]}>
                         {subCategories?.map(({ text, linkSub }, ind) => {
                           return whatSubCategoryIsOpen && title === whatSubCategoryIsOpen ? (
                             <>

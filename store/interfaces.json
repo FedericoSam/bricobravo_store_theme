@@ -1,19 +1,22 @@
 {
-  "custom-add-to-cart": {
-    "component": "BuyButton"
-  },
-  "header-mega-menu": {
-    "component": "CustomMegaMenu"
-  },
-  "hide-filter": {
-    "component": "HideFilter"
-  },
-  "infinite-scroll": {
-    "component": "InfiniteScroll"
-  },
-  "collapse-text": {
-    "component": "CollapseText",
-    "composition": "children",
-    "allowed": "*"
-  }
+    "custom-add-to-cart": {
+        "component": "BuyButton"
+    },
+    "header-mega-menu": {
+        "component": "CustomMegaMenu"
+    },
+    "hide-filter": {
+        "component": "HideFilter"
+    },
+    "infinite-scroll": {
+        "component": "InfiniteScroll"
+    },
+    "header-mobile": {
+        "component": "HeaderMobile"
+    },
+    "collapse-text": {
+      "component": "CollapseText",
+      "composition": "children",
+      "allowed": "*"
+    }
 }

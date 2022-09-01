@@ -122,7 +122,7 @@
     }
 
     &--home-blog-title {
-      margin: 0 0 1.25rem 0.5rem;
+      margin: 1rem 0 0 0.5rem;
       height: 1.5rem;
       color: #232946;
       font-size: 20px;
@@ -187,10 +187,10 @@
   }
 
   .headingLevel2 {
-    margin: 26px 0 20px;
+    margin: 26px 0 40px;
     &--home-section-title {
       @include breakpoint('mobile') {
-        margin: 20px 0;
+        margin: 20px 0 40px;
       }
     }
   }
