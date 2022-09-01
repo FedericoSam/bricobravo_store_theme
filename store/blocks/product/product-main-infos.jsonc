@@ -323,7 +323,7 @@
   },
   "rich-text#estimate-shipping": {
     "props": {
-      "text": "Consegna gratuita stimata entro il 25/08",
+      "text": "Consegna stimata entro 3 giorni lavorativi",
       "blockClass": "pdp-estimate-shipping"
     }
   },
@@ -396,7 +396,7 @@
   "rich-text#shipping-info-content": {
     "props": {
       "blockClass": "pdp-shipping-info",
-      "text": "Consegna stimata entro il **25/08/2022**<br/>Spedizione **Gratuita**<br/>Reso gratuito entro **30 giorni**<br/>Garanzia **2 anni sul prodotto**<br/>"
+      "text": "Consegna stimata entro **3 giorni lavorativi**<br/>Spedizione **calcolata al momento del checkout**<br/>Reso **30 giorni**<br/>Garanzia **2 anni sul prodotto**<br/>"
     }
   },
   "product-seller-name#sellerName": {
