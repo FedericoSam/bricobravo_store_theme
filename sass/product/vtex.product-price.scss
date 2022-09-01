@@ -120,9 +120,14 @@
   &--isDefaultSeller {
     display: inline-block;
     line-height: 18px;
-    margin: 1rem 0;
+    //@debug: 1rem 0;
+    font-weight: 300;
+    margin: 0;
+    font-size: 14px;
+    color: #33232c;
     .sellerName {
-      color: $primary-pink;
+      //color: $primary-pink;
+      font-weight: 500;
     }
   }
 }
