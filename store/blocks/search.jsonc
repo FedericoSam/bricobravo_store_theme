@@ -122,23 +122,15 @@
     }
   },
   "flex-layout.col#search-title": {
-    "children": [
-      "search-title.v2",
-      "rich-text#titleDescription",
-      "rich-text#readCompleteTitleDescription"
-    ]
+    "children": ["search-title.v2", "collapse-text"]
   },
-  "rich-text#titleDescription": {
-    "title": "Descrição Busca",
+  "collapse-text": {
     "props": {
-      "text": "Nunc magna ex, euismod vitae magna ac, gravida sagittis dolor. Suspendisse vitae risus non quam commodo varius. Maecenas semper iaculis dui ut volutpat. Pellentesque imperdiet egestas dui, vel volutpat lectus laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt..",
-      "blockClass": "description-title-search"
-    }
-  },
-  "rich-text#readCompleteTitleDescription": {
-    "props": {
-      "text": "[Leggi tutto](/#)",
-      "blockClass": "readCompleteTitleDescription"
+      "htmlId": "Category text seo",
+      "text": "magna ac, gravida sagittis dolor. Suspendisse vitae risus non quam commodo varius. Maecenas semper iaculis dui ut volutpat. Pellentesque imperdiet egestas dui, vel volutpat lectus laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.Nunc magna ex, euismod vitae magna ac, gravida sagittis dolor. Suspendisse vitae risus non quam commodo varius. Maecenas semper iaculis dui ut volutpat. Pellentesque imperdiet egestas dui, vel volutpat lectus laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt..",
+      "expandText": "Leggi tutto",
+      "contractText": "Leggi meno",
+      "collapseLength": 300
     }
   },
   "sidebar-close-button": {

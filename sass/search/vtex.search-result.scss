@@ -89,6 +89,7 @@
     margin-bottom: 20px;
     background-color: $white;
     @include mobile {
+      max-width: 170px !important;
       padding: 0;
     }
 
@@ -150,10 +151,10 @@
   padding-top: 0;
 
   .showingProductsCount {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     color: #332c32;
-    line-height: 19px;
+    line-height: 25px;
 
     // &::before {
     //   content: 'Mostrando ';
@@ -166,7 +167,6 @@
     &::after {
       // content: ' produtos';
       // display: inline;
-      // font-size: 16px;
       // font-weight: 400;
       // color: #332C32;
       // line-height: 19px;
@@ -243,15 +243,6 @@
       .caretIcon {
         width: 20px;
         height: 20px;
-        // @media screen and (max-width: 768px) {
-        //   background: url('assets/icons/arrowUpAndDown.png');
-        //   background-size: cover;
-        //   width: 24px;
-        //   height: 24px;
-        //   background-repeat: no-repeat;
-        //   color: transparent;
-        //   background-position: center;
-        // }
       }
     }
     .filterPopupTitle {
@@ -462,16 +453,18 @@
   }
 
   .filterPopupTitle {
-    color: #e30613;
-    font-size: 14px;
+    font-size: 0;
     font-weight: 500;
-    line-height: 16px;
 
-    @include breakpoint('mobile') {
-      color: #332c32;
+    &::before {
+      content: "Filtri";
       font-size: 16px;
       font-weight: 400;
-      line-height: 19px;
+    }
+
+    @include breakpoint('mobile') {
+      font-size: 0;
+      color: #332c32;
       text-transform: capitalize;
     }
   }
@@ -732,7 +725,6 @@
             font-size: 1rem;
             font-weight: 400;
             line-height: 19px;
-            // letter-spacing: 0.01em;
             color: #332c32;
           }
 
@@ -752,6 +744,14 @@
           :global(.vtex-checkbox__input) {
             height: 24px;
             width: 24px;
+          }
+        }
+        .filterAccordionItemBox--premium {
+          :global(.vtex-checkbox__label) {
+            font-size: 0;
+            &::after {
+              content: url('https://bricobravo.vtexassets.com/assets/vtex/assets-builder/bricobravo.store-theme/3.0.1/images/premium___0433135b6d9f13ad3bbe256289336452.png');
+            }
           }
         }
       }
@@ -811,9 +811,9 @@
               visibility: visible;
               transform: translateX(-30px);
               text-transform: uppercase;
-              
+
               @include mobile {
-                content: 'VEDI I RISULTATI (';
+                content: 'VEDI I RISULTATI ( ';
                 transform: translateX(-34px);
               }
             }
@@ -1004,7 +1004,7 @@
 .filter__container--filterMobile--clearAllFilters {
   position: relative;
   padding-left: 1rem;
- 
+
   // :global(.vtex-button) {
   //   margin-left: 1rem !important;
   // }
