@@ -149,6 +149,10 @@
 }
 
 .flexCol {
+  &--active {
+    display: none;
+  }
+
   &--header-logo {
     align-items: center;
     justify-content: center;

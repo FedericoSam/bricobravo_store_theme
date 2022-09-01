@@ -10,5 +10,8 @@
     },
     "infinite-scroll": {
         "component": "InfiniteScroll"
+    },
+    "header-mobile": {
+        "component": "HeaderMobile"
     }
 }
