@@ -1,6 +1,6 @@
 {
   "header-layout.mobile": {
-    "children": ["sticky-layout#mobile-header", "flex-layout.row#menu-mobile"]
+    "children": ["sticky-layout#mobile-header", "flex-layout.row#menu-mobile","header-mobile"]
   },
 
   "sticky-layout#mobile-header": {
@@ -28,11 +28,32 @@
   },
   "flex-layout.row#header-logo-mobile":{
     "children": [
-      "header-mobile",
+      "flex-layout.col#header-small-logo",
       "flex-layout.col#header-searchBar"
     ],
     "props": {
       "blockClass": "header-mobile-teste"
+    }
+  },
+  "flex-layout.col#header-small-logo": {
+    "children": ["link#header-small-logo"],
+    "props": {
+      "blockClass": "header-small-logo"
+      //"colSizing": "0%"
+    }
+  },
+  "link#header-small-logo": {
+    "children": ["image#header-small-logo"],
+    "props": {
+      "blockClass": "header-small-logo",
+      "href": "/"
+    }
+  },
+  "image#header-small-logo": {
+    "props": {
+      "alt": "menu iniziale",
+      "src": "assets/icons/logoHeaderMobile.svg",
+      "blockClass": "icon-menu-home-mobile"
     }
   },
   "flex-layout.col#header-searchBar": {
@@ -40,6 +61,7 @@
     "props": {
       "preventHorizontalStretch": true,
       "blockClass": "header-mobile-searchBar"
+      //"colSizing": "100%"
     }
   },
   "flex-layout.row#menu-mobile": {
