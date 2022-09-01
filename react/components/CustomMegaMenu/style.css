@@ -190,8 +190,8 @@
   .mobile-menu-department {
     display: flex;
     flex-direction: column;
-    padding: 0;
-    width: 280px;
+    padding: 0 10px;
+    width: 100%;
     margin-top: 6px;
   }
 
@@ -229,7 +229,8 @@
     list-style-type: none;
     background-color: #ffffff;
     min-width: 100%;
-    padding: 18px 0;
+    padding: 6px 0;
+    border-bottom: 1px solid #D8D8D8;
   }
 
   .category-menu-item {
@@ -264,10 +265,11 @@
   }
   .mobile-mega-menu {
     top: 50px;
+    left: 0;
     z-index: 2;
+    width: 100%;
     height: 100vh;
     position: absolute;
-    padding: 0 0 101px 24px;
     background-color: #ffffff;
   }
 
@@ -278,6 +280,7 @@
     display: flex;
     align-items: center;
     margin-top: 0;
+    padding-left: 11px;
   }
 
   .mobile-subcategory-overflow {
@@ -298,11 +301,9 @@
   }
 
   .mobile-mega-menu-items {
-    padding: 0;
+    padding: 0 11px;
     overflow-y: auto;
     max-height: 100vh;
-    width: 278px;
-    transform: translateX(-7px);
   }
 
   .mobile-mega-menu-items--item {
@@ -331,13 +332,14 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 200vh;
     background-color: white;
     z-index: 5;
-    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
   }
-
+  
   .subcategory-hidden {
     display: none;
   }

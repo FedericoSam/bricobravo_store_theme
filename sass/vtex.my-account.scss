@@ -547,6 +547,7 @@
       font-weight: bold;
       letter-spacing: 0;
       line-height: 50px;
+      transform: translateX(-22px);
     }
 
     .addressEdit {
@@ -575,7 +576,7 @@
     .profile {
       &::before {
         content: '/ Profilo';
-        transform: translateY(-174px) translateX(-168px);
+        transform: translateY(-147px) translateX(-168px);
         position: absolute;
         color: #332C32;
         font-family: Roboto;
@@ -591,6 +592,7 @@
         }
       }
       position: relative;
+      transform: translateY(-27px);
       .profileBoxContainer {
         .boxContainerBody {
           padding-bottom: 0;
@@ -622,8 +624,7 @@
           background: transparent;
           color: $blue-active;
           position: absolute;
-          top: -60px;
-          left: 170px;
+          transform: translate(-55px,-303px);
           font-size: 16px;
           line-height: 19px;
           font-weight: 500;
@@ -1243,4 +1244,11 @@
 
 :global(.vtex-my-account-1-x-addressBox){
   transform: translateY(26px);
+}
+
+.addressList{
+  :global(.t-heading-4){
+    position: absolute;
+    transform: translateY(123px);
+  }
 }
