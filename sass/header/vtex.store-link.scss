@@ -1,4 +1,9 @@
 .link {
+  &--header-small-logo {
+    display: block;
+    padding-top: 18px;
+  }
+
   &--header-institutional-link {
     font-size: 1rem;
     color: #111;

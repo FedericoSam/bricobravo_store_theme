@@ -1,4 +1,5 @@
 @import '../_variables.scss';
+@import '../_media-queries.scss';
 
 .autoCompleteOuterContainer--desktop-searchbar {
   border: 1.5px solid $blue-dark;
@@ -97,5 +98,11 @@
       position: absolute;
       display: none;
     }
+  }
+}
+
+.searchBarContainer {
+  @include mobile {
+    padding-block: 10px;
   }
 }
