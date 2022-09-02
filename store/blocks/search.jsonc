@@ -95,12 +95,11 @@
       "flex-layout.row#searchTitle",
       "flex-layout.row#searchinfo",
       "flex-layout.row#searchLayout",
-      "back-to-top-button",
-      "infinite-scroll"
+      "back-to-top-button"
     ],
     "props": {
-      "pagination": "show-more",
-      "preventRouteChange": false,
+      "pagination": "infiniteScroll",
+      "preventRouteChange": true,
       "mobileLayout": {
         "mode1": "small",
         "mode2": "normal"
