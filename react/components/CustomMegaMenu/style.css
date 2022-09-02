@@ -72,6 +72,12 @@
   height: 100px;
 }
 
+@media only screen and (max-width: 1480px) and (min-width: 1210px) {
+  .bannerSubCategory, .submenu-items{
+    width: 92%;
+  }
+}
+
 .vtex-render-runtime-8-x-lazyload {
   background-color: #fff;
 }
@@ -339,7 +345,7 @@
     display: flex;
     flex-direction: column;
   }
-  
+
   .subcategory-hidden {
     display: none;
   }

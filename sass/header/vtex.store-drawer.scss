@@ -1,3 +1,6 @@
+@import 'sass/_media-queries.scss';
+
+
 .openIconContainer {
   display: flex;
   align-items: center;
@@ -21,7 +24,7 @@
     @media screen and (max-width: 760px) {
       display: none;
     }
-  }  
+  }
   .menuIcon {
     display: none;
   }
@@ -32,12 +35,16 @@
   .drawerContent--drawer-desktop {
     padding: 12px 0 24px;
     background-color: #fff;
-    position: relative;
+    @include mobile {
+      position: relative;
+    }
   }
 }
 
 .closeIconButton--drawer-desktop{
-  position: absolute;
+  @include mobile {
+    position: absolute;
+  }
 }
 
 .childrenContainer--drawer-desktop{
