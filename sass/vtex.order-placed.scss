@@ -4,7 +4,10 @@
     width: 100% !important;
     max-width: 1200px;
     margin: 0 auto;
-    
+
+}
+.orderPlacedWrapper{
+  padding: 4rem 0.8rem 0;
 }
 
 .orderPlacedMainWrapper,
@@ -15,21 +18,49 @@
     margin-bottom: 32px;
 
 }
+@media screen and (max-width: 760px)  {
+  :global(.vtex-flex-layout-0-x-flexRowContent--confirmationButtons){
+    display: flex;
+}
+
+
+}
 
 .orderPlacedHeader {
-    :global(.vtex-button) {
-        background: #291660;
-        border: none;
-        color: #fff;
-        transition: .2s ease-in-out;
-        font-size: 14px;
-        text-transform: none;
-        padding: 12px 20px;
+  :global(.vtex-button) {
+      background: #291660;
+      border: none;
+      color: #fff;
+      transition: .2s ease-in-out;
+      font-size: 14px;
+      text-transform: none;
+      padding: 12px 20px;
 
-        &:hover {
-            background: #1B0E41;
-        }
-    }
+      &:hover {
+          background: #1B0E41;
+      }
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--order-notices) {
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #ccc;
+    background: #FFF;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 32px;
+  }
+  :global(.vtex-store-components-3-x-container){
+    padding: 0;
+  }
+  :global(.vtex-rich-text-0-x-container--order-placed-message-border) {
+    border-bottom: 1px solid #8e8e8e;
+  }
+  :global(.vtex-rich-text-0-x-container--order-placed-message) {
+    min-width: 50vw;
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .section--notices {
@@ -48,7 +79,6 @@
         }
     }
 }
-
 .section--bank-invoice {
     text-align: center;
 
@@ -67,7 +97,7 @@
 
     .bankInvoiceEmbedWrapper {
         border: none;
-        
+
         :global(.vtex-button) {
             background: #fff;
             color: #111;
@@ -160,7 +190,7 @@
                 font-size: 24px;
                 line-height: 32px;
                 letter-spacing: 0.01em;
-                text-transform: capitalize;                
+                text-transform: capitalize;
                 color: #111;
             }
 
