@@ -1,3 +1,6 @@
+@import 'sass/_media-queries.scss';
+
+
 .openIconContainer {
   display: flex;
   align-items: center;
@@ -21,7 +24,7 @@
     @media screen and (max-width: 760px) {
       display: none;
     }
-  }  
+  }
   .menuIcon {
     display: none;
   }
@@ -32,12 +35,16 @@
   .drawerContent--drawer-desktop {
     padding: 12px 0 24px;
     background-color: #fff;
-    position: relative;
+    @include mobile {
+      position: relative;
+    }
   }
 }
 
 .closeIconButton--drawer-desktop{
-  position: absolute;
+  @include mobile {
+    position: absolute;
+  }
 }
 
 .childrenContainer--drawer-desktop{
@@ -45,6 +52,20 @@
 }
 .drawerContent--drawer-desktop {
   height: 100vh;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 3px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #B8B8B8;
+    border-radius: 3px;
+  }
 }
 
 .drawerContent--drawer-mobile {
@@ -89,20 +110,11 @@
     margin-top: 50px;
     overflow-x: hidden;
     margin-right: 16px;
-
-    &::-webkit-scrollbar {
-      width: 6px;
-      border-radius: 3px;
-    }
-
-    &::-webkit-scrollbar-track {
-      background-color: #B8B8B8;
-      border-radius: 3px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background-color: #291660;
-      border-radius: 3px;
+    @include mobile {
+      &::-webkit-scrollbar-thumb {
+        background-color: #291660;
+        border-radius: 3px;
+      }
     }
   }
 }
