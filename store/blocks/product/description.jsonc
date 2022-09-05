@@ -1,5 +1,6 @@
 {
   "flex-layout.row#descriptionSpecification": {
+    "title":"Descrizione",
     "children": ["flex-layout.col#descriptionSpecification"],
     "props": {
       "blockClass": "product-main-descSpec"
@@ -24,6 +25,7 @@
     }
   },
   "rich-text#product-details": {
+    "title":"Descrizione nome",
     "props": {
       "text": "Dettagli del prodotto",
       "blockClass": "product-details"
