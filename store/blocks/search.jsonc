@@ -90,6 +90,7 @@
     }
   },
   "search-result-layout.desktop": {
+     "title":"Categoria Desktop",
     "children": [
       "flex-layout.row#searchbread",
       "flex-layout.row#searchTitle",
@@ -146,6 +147,7 @@
     }
   },
   "flex-layout.col#pageContent": {
+    "title":"Categoria Prodotto",
     "children": ["flex-layout.col#search-content"],
     "props": {
       "blockClass": "pageContent",
@@ -166,6 +168,7 @@
     }
   },
   "image#banner-sponsored": {
+    "title":"Categoria Banner",
     "props": {
       "src": "https://via.placeholder.com/980x221/ccc/fff",
       "alt": "banner-sponsored",
@@ -190,6 +193,7 @@
     }
   },
   "flex-layout.row#sectionSeo1": {
+    "title":"Categoria seo testo 1",
     "children": ["flex-layout.col#CategorySeo1"],
     "props": {
       "blockClass": "container-seo"
@@ -222,6 +226,7 @@
 
   // ----------- //
   "flex-layout.row#sectionSeo2": {
+    "title":"Categoria seo testo 2",
     "children": ["flex-layout.col#CategorySeo2"],
     "props": {
       "blockClass": "container-seo2"
@@ -248,6 +253,7 @@
 
   // ----------- //
   "flex-layout.row#sectionSeo3": {
+    "title":"Categoria seo testo 3",
     "children": ["flex-layout.col#CategorySeo3"],
     "props": {
       "blockClass": "container-seo3"
@@ -333,6 +339,7 @@
     "blocks": ["gallery#mobile", "not-found"]
   },
   "search-result-layout.mobile": {
+  "title":"Categoria Mobile",
     "children": [
       "flex-layout.row#searchbread",
       "flex-layout.row#searchTitle",
@@ -472,6 +479,7 @@
     "children": ["flex-layout.col#mainNotFound"]
   },
   "flex-layout.col#mainNotFound": {
+    "title":"pagina non trovata",
     "children": ["image#notFound", "not-found", "link#notfoundToHome"],
     "props": {
       "blockClass": "notfound-containerMain"
