@@ -3321,7 +3321,10 @@ body {
   }
 
   p.client-phone label::after,
-  p.ship-postalCode label::after {
+  p.ship-postalCode label::after,
+  p.ship-street label::after,
+  p.ship-city label::after,
+  p.ship-state label::after {
     content: "*";
   }
 
