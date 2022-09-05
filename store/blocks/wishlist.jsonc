@@ -41,7 +41,7 @@
       "flex-layout.row#stackSavings",
       "flex-layout.row#summary-prices",
       "product-summary-name",
-      "flex-layout.row#productReviews",
+      // "flex-layout.row#productReviews",
       "product-installments",
       "flex-layout.row#add-to-cart"
     ],

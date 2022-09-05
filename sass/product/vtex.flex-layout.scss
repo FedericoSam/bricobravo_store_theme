@@ -894,6 +894,10 @@
     @include container-main;
 
     margin: 0 auto 2.5rem;
+    @include breakpoint('desktop'){
+      padding-top: 150px;
+      margin-top: -150px;
+    }
 
     @include breakpoint('mobile') {
       margin: 0 1rem 2.5rem;
@@ -1465,8 +1469,8 @@
     }
   }
 
-  .flexRowContent--product-shelf-1-title, 
-  .flexRowContent--product-shelf-2-title, 
+  .flexRowContent--product-shelf-1-title,
+  .flexRowContent--product-shelf-2-title,
   .flexRowContent--product-shelf-3-title {
     margin-inline: auto;
     max-width: 1294px;
