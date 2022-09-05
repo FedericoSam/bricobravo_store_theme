@@ -5,13 +5,19 @@
       "flex-layout.row#FooterLinksMobile",
       "flex-layout.row#footerPaymentMethods",
       "flex-layout.row#bottomFooterDesktop"
-    ]
+    ],
+    "props": {
+      "htmlId": "Footer layout Mobile"
+    },
+    "title": "Footer layout Mobile"
   },
   "flex-layout.row#FooterLinksMobile": {
     "children": ["flex-layout.col#FooterLinksMobile"],
     "props": {
-      "blockClass": "footer-upperFooterMobile"
-    }
+      "blockClass": "footer-upperFooterMobile",
+      "htmlId": "Footer links"
+    },
+    "title": "Footer links"
   },
   "flex-layout.col#FooterLinksMobile": {
     "children": [
@@ -24,8 +30,10 @@
   "flex-layout.row#upperFooterCol2Mobile": {
     "children": ["disclosure-layout#upperFooterCol2Mobile"],
     "props": {
-      "blockClass": "footer-containerDisclosure"
-    }
+      "blockClass": "footer-containerDisclosure",
+      "htmlId": "Footer colonna superiore 2"
+    },
+    "title": "Footer colonna superiore 2"
   },
   "disclosure-layout#upperFooterCol2Mobile": {
     "children": [
@@ -51,8 +59,10 @@
   "flex-layout.row#upperFooterCol1Mobile": {
     "children": ["disclosure-layout#upperFooterCol1Mobile"],
     "props": {
-      "blockClass": "footer-containerDisclosure"
-    }
+      "blockClass": "footer-containerDisclosure",
+      "htmlId": "Footer colonna superiore 1"
+    },
+    "title": "Footer colonna superiore 1"
   },
   "disclosure-layout#upperFooterCol1Mobile": {
     "children": [
@@ -84,31 +94,13 @@
   "image#Icondown": {
     "props": {
       "src": "assets/icons/arrowDown.svg",
-      "width": "13px"
+      "width": "25px"
     }
   },
   "image#IconUp": {
     "props": {
       "src": "assets/icons/arrowUp.svg",
-      "width": "13px"
+      "width": "25px"
     }
   }
-  // "flex-layout.col#upperFooterCol4Mobile": {
-  //   "children": [
-  //     "link#upperFooterCol4Link1",
-  //     "link#upperFooterCol4Link2"
-  //   ]
-  // }
-  // "link#upperFooterCol4Link1Mobile": {
-  //   "props": {
-  //     "href": "/rich-text",
-  //     "label": "rich-text"
-  //   }
-  // },
-  // "link#upperFooterCol4Link2Mobile": {
-  //   "props": {
-  //     "href": "/sandbox",
-  //     "label": "sandbox"
-  //   }
-  // }
 }

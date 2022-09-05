@@ -6,8 +6,10 @@
       "MinicartIcon": "icon-cart#minicart-icon",
       "quantityDisplay": "always",
       "itemCountMode": "totalAvailable",
-      "blockClass": "minicart-background"
-    }
+      "blockClass": "minicart-background",
+      "htmlId": "Minicart"
+    },
+    "title": "Minicart"
   },
   "minicart.v2#mobile": {
     "children": ["minicart-base-content"],
@@ -48,8 +50,10 @@
       "preventHorizontalStretch": false,
       "preventVerticalStretch": true,
       "preserveLayoutOnMobile": true,
-      "blockClass": "cartSummary"
-    }
+      "blockClass": "cartSummary",
+      "htmlId": "Cart Summary"
+    },
+    "title": "Cart Summary"
   },
   "flex-layout.col#minicart-product-image": {
     "children": ["product-list-image#minicart"],
@@ -78,8 +82,10 @@
     "children": ["vtex.product-list:product-name#minicart", "price#mobile"],
     "props": {
       "blockClass": "productInfoNameMinicart",
-      "preventHorizontalStretch": true
-    }
+      "preventHorizontalStretch": true,
+      "htmlId": "Informazioni sul prodotto - nome"
+    },
+    "title": "Informazioni sul prodotto - nome"
   },
   "vtex.product-list:product-name#minicart": {
     "props": {
@@ -91,8 +97,10 @@
     "props": {
       "verticalAlign": "middle",
       "blockClass": "bottomInfo",
-      "preserveLayoutOnMobile": "true"
-    }
+      "preserveLayoutOnMobile": "true",
+      "htmlId": "Informazioni di fondo"
+    },
+    "title": "Informazioni di fondo"
   },
   "quantity-selector#minicart": {
     "props": {
@@ -110,9 +118,11 @@
   },
   "flex-layout.row#minicart-footer": {
     "props": {
-      "blockClass": "minicart-footer"
+      "blockClass": "minicart-footer",
+      "htmlId": "Minicart Footer"
     },
-    "children": ["flex-layout.col#minicart-footer"]
+    "children": ["flex-layout.col#minicart-footer"],
+    "title": "Minicart Footer"
   },
   "flex-layout.col#minicart-footer": {
     "children": ["minicart-summary", "minicart-checkout-button"]
@@ -136,7 +146,11 @@
     "children": ["flex-layout.row#empty-state"]
   },
   "flex-layout.row#empty-state": {
-    "children": ["flex-layout.col#empty-state"]
+    "children": ["flex-layout.col#empty-state"],
+    "props": {
+      "htmlId": "Stato vuoto"
+    },
+    "title": "Stato vuoto"
   },
   "flex-layout.col#empty-state": {
     "children": [
@@ -162,7 +176,9 @@
   "rich-text#minicart-default-empty-state": {
     "props": {
       "blockClass": "minicartEmptyTitle",
-      "text": "**Il tuo carrello è vuoto**"
-    }
+      "text": "**Il tuo carrello è vuoto**",
+      "htmlId": "Stato vuoto predefinito di minicart"
+    },
+    "title": "Stato vuoto predefinito di minicart"
   }
 }

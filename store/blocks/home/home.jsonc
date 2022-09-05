@@ -21,8 +21,10 @@
       "flex-layout.row#category4"
     ],
     "props": {
-      "blockClass": "header-categories"
-    }
+      "blockClass": "header-categories",
+      "htmld": "Sottomenu categorie"
+    },
+    "title": "Sottomenu categorie"
   },
   "flex-layout.row#category1": {
     "children": [
@@ -111,8 +113,10 @@
   "flex-layout.row#home-main-slider": {
     "children": ["flex-layout.col#home-main-slider"],
     "props": {
-      "blockClass": "home-page-main-slider"
-    }
+      "blockClass": "home-page-main-slider",
+      "htmlId": "Cursore principale"
+    },
+    "title": "Cursore principale"
   },
 
   "flex-layout.col#home-main-slider": {
@@ -162,8 +166,10 @@
   "flex-layout.row#home-categories": {
     "children": ["flex-layout.col#home-categories"],
     "props": {
-      "blockClass": "home-categories"
-    }
+      "blockClass": "home-categories",
+      "htmlId": "Menu di categoria"
+    },
+    "title": "Menu di categoria"
   },
 
   "flex-layout.col#home-categories": {
@@ -177,7 +183,11 @@
   },
 
   "responsive-layout.desktop#home-categories-showcase": {
-    "children": ["flex-layout.row#home-categories-showcase"]
+    "children": ["flex-layout.row#home-categories-showcase"],
+    "props": {
+      "htmlId": "Categorie showcase Desktop"
+    },
+    "title": "Categorie showcase Desktop"
   },
 
   "flex-layout.row#home-categories-showcase": {
@@ -193,8 +203,10 @@
       "horizontalAlign": "around",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "blockClass": "home-categories-showcase"
-    }
+      "blockClass": "home-categories-showcase",
+      "htmlId": "Categorie showcase"
+    },
+    "title": "Categorie showcase"
   },
 
   "flex-layout.col#home-categories-showcase-01": {
@@ -386,8 +398,10 @@
   "flex-layout.row#home-shelf-01": {
     "children": ["flex-layout.col#home-shelf-01"],
     "props": {
-      "blockClass": "home-shelf-01"
-    }
+      "blockClass": "home-shelf-01",
+      "htmlId": "Vetrina 1"
+    },
+    "title": "Vetrina 1"
   },
 
   "flex-layout.col#home-shelf-01": {
@@ -403,14 +417,18 @@
       "link#home-shelf-01-allProducts"
     ],
     "props": {
-      "blockClass": "home-shelf-01-title"
-    }
+      "blockClass": "home-shelf-01-title",
+      "htmlId": "Linha de titolo vetrina 1"
+    },
+    "title": "Linha de titolo vetrina 1"
   },
   "rich-text#home-shelf-01-title": {
     "props": {
       "blockClass": "home-section-title",
-      "text": "## Bricobravo consiglia"
-    }
+      "text": "## Bricobravo consiglia",
+      "htmlId": "Titolo vetrina 1"
+    },
+    "title": "Titolo vetrina 1"
   },
   "link#home-shelf-01-allProducts": {
     "props": {
@@ -423,8 +441,10 @@
   "flex-layout.row#home-shelf-02": {
     "children": ["flex-layout.col#home-shelf-02"],
     "props": {
-      "blockClass": "home-shelf-02"
-    }
+      "blockClass": "home-shelf-02",
+      "htmlId": "Vetrina 2"
+    },
+    "title": "Vetrina 2"
   },
 
   "flex-layout.col#home-shelf-02": {
@@ -440,14 +460,18 @@
       "link#home-shelf-02-allProducts"
     ],
     "props": {
-      "blockClass": "home-shelf-02-title"
-    }
+      "blockClass": "home-shelf-02-title",
+      "htmlId": "Linha de titolo vetrina 2"
+    },
+    "title": "Linha de titolo vetrina 2"
   },
   "rich-text#home-shelf-02-title": {
     "props": {
       "blockClass": "title-2-test home-section-title",
-      "text": "Offert del mese"
-    }
+      "text": "Offert del mese",
+      "htmlId": "Titolo vetrina 2"
+    },
+    "title": "Titolo vetrina 2"
   },
   "link#home-shelf-02-allProducts": {
     "props": {
@@ -460,8 +484,10 @@
   "flex-layout.row#home-shelf-03": {
     "children": ["flex-layout.col#home-shelf-03"],
     "props": {
-      "blockClass": "home-shelf-03"
-    }
+      "blockClass": "home-shelf-03",
+      "htmlId": "Vetrina 3"
+    },
+    "title": "Vetrina 3"
   },
 
   "flex-layout.col#home-shelf-03": {
@@ -477,14 +503,18 @@
       "link#home-shelf-03-allProducts"
     ],
     "props": {
-      "blockClass": "home-shelf-03-title"
-    }
+      "blockClass": "home-shelf-03-title",
+      "htmlId": "Linha de titolo vetrina 3"
+    },
+    "title": "Linha de titolo vetrina 3"
   },
   "rich-text#home-shelf-03-title": {
     "props": {
       "blockClass": "home-section-title",
-      "text": "## I prodotti più venduti"
-    }
+      "text": "## I prodotti più venduti",
+      "htmlId": "Titolo vetrina 3"
+    },
+    "title": "Titolo vetrina 3"
   },
   "link#home-shelf-03-allProducts": {
     "props": {
@@ -501,8 +531,10 @@
     ],
     "props": {
       "blockClass": "home-blog",
-      "preventVerticalStretch": false
-    }
+      "preventVerticalStretch": false,
+      "htmlId": "Blog"
+    },
+    "title": "Blog"
   },
   "flex-layout.col#home-blog": {
     "children": [
@@ -525,8 +557,10 @@
   "rich-text#home-blog-subtitle": {
     "props": {
       "blockClass": "home-blog-subtitle",
-      "text": "Qui troverai tante idee creative e ispirazioni, consigli utili, tutorial e molto altro per la tua casa!"
-    }
+      "text": "Qui troverai tante idee creative e ispirazioni, consigli utili, tutorial e molto altro per la tua casa!",
+      "htmlId": "Sottotitolo del blog"
+    },
+    "title": "Sottotitolo del blog"
   },
   "link#home-blog-link": {
     "props": {
@@ -547,8 +581,10 @@
   "rich-text#home-blog-shelf-title": {
     "props": {
       "blockClass": "home-blog-title",
-      "text": "Gli articoli più recenti"
-    }
+      "text": "Gli articoli più recenti",
+      "htmlId": "Titolo di vetrina del blog"
+    },
+    "title": "Titolo di vetrina del blog"
   },
   "slider-layout#home-blog-shelf": {
     "props": {
@@ -753,8 +789,10 @@
   "flex-layout.row#home-services": {
     "children": ["flex-layout.col#home-services"],
     "props": {
-      "blockClass": "home-services"
-    }
+      "blockClass": "home-services",
+      "htmlId": "Servizi"
+    },
+    "title": "Servizi"
   },
   "flex-layout.col#home-services": {
     "children": [
@@ -768,8 +806,10 @@
   "rich-text#home-services-title": {
     "props": {
       "blockClass": "home-section-title",
-      "text": "## I nostri servizi a tua disposizione"
-    }
+      "text": "## I nostri servizi a tua disposizione",
+      "htmlId": "Titolo dei servizi"
+    },
+    "title": "Titolo dei servizi"
   },
   "slider-layout#home-services": {
     "props": {
@@ -1010,8 +1050,10 @@
   "flex-layout.row#homeBottomSection": {
     "children": ["flex-layout.col#homeBottomSection"],
     "props": {
-      "blockClass": "homeBottomSection"
-    }
+      "blockClass": "homeBottomSection",
+      "htmlId": "Sezione inferiore"
+    },
+    "title": "Sezione inferiore"
   },
 
   "flex-layout.col#homeBottomSection": {
@@ -1027,13 +1069,17 @@
   "responsive-layout.desktop#homeBottomSectionDesktop": {
     "children": ["flex-layout.row#homeBottomSectionDesktop"],
     "props": {
-      "blockClass": "homeBottomSectionDesktop"
-    }
+      "blockClass": "homeBottomSectionDesktop",
+      "htmlId": "Sezione inferiore Desktop"
+    },
+    "title": "Sezione inferiore Desktop"
   },
   "responsive-layout.mobile#homeBottomSectionMobile": {
     "children": ["flex-layout.row#homeBottomSectionMobile"],
     "props": {
-      "blockClass": "homeBottomSectionMobile"
-    }
+      "blockClass": "homeBottomSectionMobile",
+      "htmlId": "Sezione inferiore Mobile"
+    },
+    "title": "Sezione inferiore Mobile"
   }
 }
