@@ -14,7 +14,11 @@
     "blocks": ["flex-layout.row#top", "list-context.wishlist"]
   },
   "flex-layout.row#top": {
-    "children": ["flex-layout.col#title"]
+    "children": ["flex-layout.col#title"],
+    "props": {
+      "htmlId": "Superiore"
+    },
+    "title": "Superiore"
   },
   "flex-layout.col#title": {
     "children": ["rich-text#title"],
@@ -25,8 +29,10 @@
   },
   "rich-text#title": {
     "props": {
-      "text": "### Wishlist"
-    }
+      "text": "### Wishlist",
+      "htmlId": "Titolo"
+      },
+    "title": "Titolo"
   },
   "list-context.wishlist": {
     "blocks": ["product-summary.shelf#wishlist"],
