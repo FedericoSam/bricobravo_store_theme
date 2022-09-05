@@ -241,7 +241,9 @@
 
   .category-menu-item {
     font-size: 18px;
-    text-align: center;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .link-utili-container{
