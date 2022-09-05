@@ -4,8 +4,7 @@ import { Link } from 'vtex.render-runtime'
 import { useDevice } from 'vtex.device-detector'
 import { Icon } from 'vtex.store-icons'
 import arrowRight from '../../../assets/icons/arrowRightGray.svg'
-import IconIcn from '../../../assets/icons/icnIcon.svg'
-import IconPlanta from '../../../assets/icons/vasoDePlanta.svg'
+import IconExample from '../../../assets/icons/iconExample.svg'
 
 const CustomMegaMenu = ({ menuFirstLevel }) => {
   const node = useRef()
@@ -72,9 +71,9 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                   }`}>
                   <div className={`${style['col1']}`}>
                     <img
-                      style={{ marginRight: '20px' }}
+                      className={style['category-menu-item-icon']}
                       src={iconMobile}
-                      alt=""
+                      alt="icon"
                     />
                     {text}
                   </div>
@@ -174,12 +173,8 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                   onClick={() => mobileHandleToggleMenu(index)}>
                     <div className={style['mobile-menu-icon-container']}>
                   <img
-                    src={
-                      megamenu == index && isOpen
-                        ? `${iconMobile}`
-                        : iconMobile
-                    }
-                   
+                    src={iconMobile}
+                    className={style['category-menu-item-icon']  }
                   />
                   <p className={style['category-menu-item']}>{text}</p>
                   </div>
@@ -289,7 +284,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Giardinaggio',
-      iconMobile: IconPlanta,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1041,7 +1036,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Piscine e accessori',
-      iconMobile: IconIcn,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1173,7 +1168,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Arredo giardino',
-      iconMobile: IconIcn,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1305,7 +1300,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Climatizzazione',
-      iconMobile: IconIcn,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1437,7 +1432,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Cassette e box',
-      iconMobile: IconIcn,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1569,7 +1564,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Bricolage e Fai da te',
-      iconMobile: IconIcn,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1701,7 +1696,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Arredo casa',
-      iconMobile: IconIcn,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1833,7 +1828,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Sport e tempo libero',
-      iconMobile: IconIcn,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1965,7 +1960,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Antinfortunistica',
-      iconMobile: IconIcn,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2097,7 +2092,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Illuminazione',
-      iconMobile: IconIcn,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2229,7 +2224,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Riscaldamento',
-      iconMobile: IconIcn,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2361,7 +2356,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Giocattoli',
-      iconMobile: IconIcn,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2493,7 +2488,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Animali',
-      iconMobile: IconIcn,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2625,7 +2620,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Elettrodomestici',
-      iconMobile: IconIcn,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2757,7 +2752,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Auto e moto',
-      iconMobile: IconIcn,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
