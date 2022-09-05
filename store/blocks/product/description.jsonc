@@ -1,9 +1,11 @@
 {
   "flex-layout.row#descriptionSpecification": {
-    "title":"Descrizione",
+    "title": "Descrizione",
     "children": ["flex-layout.col#descriptionSpecification"],
     "props": {
-      "blockClass": "product-main-descSpec"
+      // "blockClass": "product-main-descSpec"
+      "htmlId": "descriptionSpecification",
+      "blockClass": ["anchorDescriptionSpecification", "product-main-descSpec"]
     }
   },
   "flex-layout.col#descriptionSpecification": {
@@ -25,7 +27,7 @@
     }
   },
   "rich-text#product-details": {
-    "title":"Descrizione nome",
+    "title": "Descrizione nome",
     "props": {
       "text": "Dettagli del prodotto",
       "blockClass": "product-details"

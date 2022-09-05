@@ -28,7 +28,7 @@
 
   :global(.vtex-search-result-3-x-galleryItem) {
     position: relative;
-    height: 400px;
+    height: 350px;
   }
 
   :global(.vtex-product-summary-2-x-container--summaryComplete) {
@@ -42,7 +42,7 @@
       left: 0 !important;
       top: 0;
       z-index: 7;
-      height: 480px;
+      height: 420px;
       background: $white;
       transition: all 0.3s ease-in-out;
     }
@@ -62,7 +62,7 @@
     }
 
     :global(.vtex-flex-layout-0-x-flexCol--summaryInfo) {
-      padding: 20px;
+      padding: 10px 20px;
       position: relative;
 
       :global(.vtex-flex-layout-0-x-flexColChild--buyButtonContainer) {

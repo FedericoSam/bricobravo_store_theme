@@ -87,7 +87,7 @@
     "children": [
       "flex-layout.row#summary-prices",
       "product-summary-name",
-      "flex-layout.row#productReviews",
+      // "flex-layout.row#productReviews",
       "product-installments",
       "flex-layout.row#add-to-cart"
     ],
@@ -114,12 +114,12 @@
     }
   },
 
-  "flex-layout.row#productReviews": {
-    "children": ["product-reviews"],
-    "props": {
-      "blockClass": ["productReviews", "productReviews-reviews"]
-    }
-  },
+  // "flex-layout.row#productReviews": {
+  //   "children": ["product-reviews"],
+  //   "props": {
+  //     "blockClass": ["productReviews", "productReviews-reviews"]
+  //   }
+  // },
   "flex-layout.row#add-to-cart": {
     "children": ["add-to-cart-button#productSummary"],
     "props": {

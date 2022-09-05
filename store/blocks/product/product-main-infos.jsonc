@@ -1,6 +1,6 @@
 {
   "flex-layout.col#product-main-infos": {
-    "title":"acquistare prodotti",
+    "title": "acquistare prodotti",
     "children": [
       "flex-layout.row#pdp-product-name",
       "flex-layout.row#pdp-rating-and-whishlist",
@@ -335,7 +335,7 @@
   },
 
   "flex-layout.row#pdp-product-and-shipping-description": {
-    "title":"Informazioni sul prodotto",
+    "title": "Informazioni sul prodotto",
     "children": ["disclosure-layout-group#pdp"],
     "props": {
       "blockClass": "pdp-product-and-shipping-description",
@@ -356,7 +356,7 @@
   },
 
   "disclosure-layout#product-info": {
-    "title":"informazione",
+    "title": "informazione",
     "children": [
       "disclosure-trigger#product-info",
       "disclosure-content#product-info"
@@ -369,7 +369,7 @@
     "children": ["product-description#pdp", "link#pdp-disclosure-see-more"]
   },
   "rich-text#product-info-title": {
-    "title":"Riga del titulo",
+    "title": "Riga del titulo",
     "props": {
       "text": "Informazioni sul prodotto",
       "blockClass": "pdp-product-info"
@@ -386,7 +386,7 @@
     "children": ["rich-text#shipping-info-title", "disclosure-state-indicator"]
   },
   "disclosure-content#shipping-info": {
-    "title":"Riga del titulo spedizione",
+    "title": "Riga del titulo spedizione",
     "children": [
       "rich-text#shipping-info-content",
       "product-seller-name#sellerName"
@@ -418,8 +418,8 @@
   "link#pdp-disclosure-see-more": {
     "props": {
       "label": "Vedi altri dettagli sul prodotto",
-      "href": "#completeDescription",
-      "scrollTo": "completeDescription",
+      "href": "#descriptionSpecification",
+      "scrollTo": "#descriptionSpecification",
       "blockClass": "pdp-disclosure-see-more"
     }
   },

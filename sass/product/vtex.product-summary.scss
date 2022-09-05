@@ -4,7 +4,7 @@
 
 .container--summaryComplete {
   max-width: 332px !important;
-  height: 360px;
+  height: 320px;
   position: relative;
   border: none;
   border-radius: 2px;
@@ -22,7 +22,7 @@
   }
   @include desktop {
     &:hover {
-      height: 444px;
+      height: 430px;
       transition: all 0.3s ease;
       :global(.vtex-product-price-1-x-installments){
         display: inline-block;
@@ -135,6 +135,7 @@
   line-height: 20px;
   color: #332c32;
   height: 40px;
+  margin-bottom: 10px;
 }
 
 .container--summaryComplete .buyButtonContainer,
@@ -342,7 +343,7 @@
   color: $blue-dark;
   border-radius: 4px;
   border: 1px solid $blue-dark;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   transition: all 0.3s ease;
   min-height: 48px;
   text-transform: uppercase;
