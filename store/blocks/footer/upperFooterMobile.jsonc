@@ -2,8 +2,10 @@
   "flex-layout.row#homeBottomSectionMobile": {
     "children": ["flex-layout.col#homeBottomSectionColMobile"],
     "props": {
-      "blockClass": "homeBottomSectionMobile"
-    }
+      "blockClass": "homeBottomSectionMobile",
+      "htmlId": "Sezione inferiore"
+    },
+    "title": "Sezione inferiore"
   },
 
   "flex-layout.col#homeBottomSectionColMobile": {
@@ -20,8 +22,10 @@
   "flex-layout.row#homeBottomSectionBrandsMobile": {
     "children": ["flex-layout.col#homeBottomSectionBrandsMobile"],
     "props": {
-      "blockClass": "homeBottomSectionBrandsMobile"
-    }
+      "blockClass": "homeBottomSectionBrandsMobile",
+      "htmlId": "Vetrina del brands"
+    },
+    "title": "Vetrina del brands"
   },
   "flex-layout.col#homeBottomSectionBrandsMobile": {
     "children": [
@@ -35,8 +39,10 @@
   "rich-text#homeBottomSectionBrandsTitleMobile": {
     "props": {
       "text": "I migliori marchi, a portata di click",
-      "blockClass": "homeBottomSectionBrandsMainTitle"
-    }
+      "blockClass": "homeBottomSectionBrandsMainTitle",
+      "htmlId": "Titolo di vetrina del brands"
+    },
+    "title": "Titolo di vetrina del brands"
   },
   "slider-layout#homeBottomSectionBrandsMobile": {
     "props": {
@@ -70,8 +76,10 @@
   "flex-layout.row#homeBottomSectionCategoriesMobile": {
     "children": ["flex-layout.col#homeBottomSectionCategoriesMobile"],
     "props": {
-      "blockClass": "homeBottomSectionCategoriesMobile"
-    }
+      "blockClass": "homeBottomSectionCategoriesMobile",
+      "htmlId": "Vetrina di categorie"
+    },
+    "title": "Vetrina di categorie"
   },
   "flex-layout.col#homeBottomSectionCategoriesMobile": {
     "children": [
@@ -85,8 +93,10 @@
   "rich-text#homeBottomSectionCategoriesTitleMobile": {
     "props": {
       "text": "Esplora le nostre categorie",
-      "blockClass": "homeBottomSectionCategoriesMainTitle"
-    }
+      "blockClass": "homeBottomSectionCategoriesMainTitle",
+      "htmlId": "Titolo di vetrina di categorie"
+    },
+    "title": "Titolo di vetrina di categorie"
   },
   "slider-layout#homeBottomSectionCategoriesMobile": {
     "props": {

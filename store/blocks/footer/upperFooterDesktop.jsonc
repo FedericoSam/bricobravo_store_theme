@@ -2,8 +2,10 @@
   "flex-layout.row#homeBottomSectionDesktop": {
     "children": ["flex-layout.col#homeBottomSectionCol"],
     "props": {
-      "blockClass": "homeBottomSectionDesktop"
-    }
+      "blockClass": "homeBottomSectionDesktop",
+      "htmlId": "Sezione inferiore"
+    },
+    "title": "Sezione inferiore"
   },
 
   "flex-layout.col#homeBottomSectionCol": {
@@ -20,8 +22,10 @@
   "flex-layout.row#homeBottomSectionBrands": {
     "children": ["flex-layout.col#homeBottomSectionBrands"],
     "props": {
-      "blockClass": "homeBottomSectionBrands"
-    }
+      "blockClass": "homeBottomSectionBrands",
+      "htmlId": "Vetrina del brands"
+    },
+    "title": "Vetrina del brands"
   },
   "flex-layout.col#homeBottomSectionBrands": {
     "children": [
@@ -35,8 +39,10 @@
   "rich-text#homeBottomSectionBrandsTitle": {
     "props": {
       "text": "I migliori marchi, a portata di click",
-      "blockClass": "homeBottomSectionBrandsMainTitle"
-    }
+      "blockClass": "homeBottomSectionBrandsMainTitle",
+      "htmlId": "Titolo di vetrina del brands"
+    },
+    "title": "Titolo di vetrina del brands"
   },
   "slider-layout#homeBottomSectionBrands": {
     "props": {
@@ -123,8 +129,10 @@
   "flex-layout.row#homeBottomSectionCategories": {
     "children": ["flex-layout.col#homeBottomSectionCategories"],
     "props": {
-      "blockClass": "homeBottomSectionCategories"
-    }
+      "blockClass": "homeBottomSectionCategories",
+      "htmlId": "Vetrina di categorie"
+    },
+    "title": "Vetrina di categorie"
   },
   "flex-layout.col#homeBottomSectionCategories": {
     "children": [
@@ -138,8 +146,10 @@
   "rich-text#homeBottomSectionCategoriesTitle": {
     "props": {
       "text": "Esplora le nostre categorie",
-      "blockClass": "homeBottomSectionCategoriesMainTitle"
-    }
+      "blockClass": "homeBottomSectionCategoriesMainTitle",
+      "htmlId": "Titolo di vetrina di categorie"
+    },
+    "title": "Titolo di vetrina di categorie"
   },
   "slider-layout#homeBottomSectionCategories": {
     "props": {
