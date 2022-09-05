@@ -12,41 +12,55 @@
   },
   "flex-layout.row#breadcrumbStoreLocator": {
     "children": ["rich-text#breadcrumb", "rich-text#breadcrumb1"],
-    "props": { "blockClass": "breadcrumb-container" }
+    "props": { 
+      "blockClass": "breadcrumb-container",
+      "htmlId": "Riga del breadcrumb"
+    },
+    "title": "Riga del breadcrumb"
   },
   "rich-text#breadcrumb": {
     "props": {
       "text": "[HOME](https://www.bricobravo.com)",
       //"font": "t-heading-5",
-      "blockClass": "breadcrumb1"
-    }
+      "blockClass": "breadcrumb1",
+      "htmlId": "Breadcrumb 1"
+    },
+    "title": "Breadcrumb 1"
   },
   "rich-text#breadcrumb1": {
     "props": {
       "text": "[/ Store Locator](https://www.bricobravo.com/stores)",
       //"font": "t-heading-5",
-      "blockClass": "breadcrumb2"
-    }
+      "blockClass": "breadcrumb2",
+      "htmlId": "Breadcrumb 2"
+    },
+    "title": "Breadcrumb 2"
   },
   "flex-layout.row#titleStoreLocator": {
     "children": ["flex-layout.col#titleStoreLocator"],
     "props": {
-      "blockClass": "storeLocator"
-    }
+      "blockClass": "storeLocator",
+      "htmlId": "Riga di titolo"
+    },
+    "title": "Riga di titolo"
   },
   "flex-layout.row#containerStoreLocator": {
     "children": ["flex-layout.col#shopperLocation"],
     "props": {
-      "blockClass": "storeLocator"
-    }
+      "blockClass": "storeLocator",
+      "htmlId": "Contenitore"
+    },
+    "title": "Contenitore"
   },
   "flex-layout.col#shopperLocation": {
     "children": ["shopper-location", "store-list"]
   },
   "rich-text#address-header": {
     "props": {
-      "text": "### Change Location"
-    }
+      "text": "### Change Location",
+      "htmlId": "Indirizzo header"
+    },
+    "title": "Indirizzo header"
   },
   "store-list": {
     "props": {
@@ -90,14 +104,18 @@
   "rich-text#titleStoreLocator": {
     "props": {
       "text": "## Trova lo store più vicino a te",
-      "blockClass": "titleStoreLocator"
-    }
+      "blockClass": "titleStoreLocator",
+      "htmlId": "Titolo"
+    },
+    "title": "Titolo"
   },
   "rich-text#subHeaderStoreLocator": {
     "props": {
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "blockClass": "subHeaderStoreLocator"
-    }
+      "blockClass": "subHeaderStoreLocator",
+      "htmlId": "Subheader"
+    },
+    "title": "Subheader"
   },
   "store.storedetail": {
     "blocks": ["flex-layout.row#titleStore", "store-group"],
@@ -115,14 +133,18 @@
   "flex-layout.row#titleStore": {
     "children": ["flex-layout.col#titleStore"],
     "props": {
-      "blockClass": "rowTitleStore"
-    }
+      "blockClass": "rowTitleStore",
+      "htmlId": "Riga di titolo negozio"
+    },
+    "title": "Riga di titolo negozio"
   },
   "flex-layout.row#containerStore": {
     "children": ["flex-layout.row#detailStore"],
     "props": {
-      "blockClass": "containerStore"
-    }
+      "blockClass": "containerStore",
+      "htmlId": "Contenitore negozio"
+    },
+    "title": "Contenitore negozio"
   },
   "flex-layout.col#titleStore": {
     "children": [
@@ -138,26 +160,36 @@
   },
   "flex-layout.row#breadcrumbStoreDetail": {
     "children": ["rich-text#breadcrumb", "rich-text#breadcrumb1"],
-    "props": { "blockClass": ["breadcrumb-container", "breadcrumb-detail"] }
+    "props": { 
+      "blockClass": ["breadcrumb-container", "breadcrumb-detail"],
+      "htmlId": "Dettaglio del negozio - breadcrumb"
+    },
+    "title": "Dettaglio del negozio - breadcrumb"
   },
   "rich-text#titleStoreDetail": {
     "props": {
       "text": "## Trova lo store più vicino a te",
-      "blockClass": ["titleStoreLocator", "titleStoreDetail"]
-    }
+      "blockClass": ["titleStoreLocator", "titleStoreDetail"],
+      "htmlId": "Dettaglio del negozio - titolo"
+    },
+    "title": "Dettaglio del negozio - titolo"
   },
   "rich-text#subHeaderStoreDetail": {
     "props": {
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "blockClass": ["subHeaderStoreLocator", "subHeaderDetail"]
-    }
+      "blockClass": ["subHeaderStoreLocator", "subHeaderDetail"],
+      "htmlId": "Dettaglio del negozio - subheader"
+    },
+    "title": "Dettaglio del negozio - subheader"
   },
   "flex-layout.row#detailStore": {
     "children": ["flex-layout.col#map", "flex-layout.col#moreInfo"],
     "props": {
       "preventVerticalStretch": true,
-      "blockClass": "detailStore"
-    }
+      "blockClass": "detailStore",
+      "htmlId": "Riga di mappa e informazioni"
+    },
+    "title": "Riga di mappa e informazioni"
   },
   "flex-layout.col#map": {
     "children": ["store-map"],
@@ -240,14 +272,18 @@
   "flex-layout.row#seeAllStores": {
     "children": ["rich-text#seeAllStores"],
     "props": {
-      "blockClass": "seeAllStores"
-    }
+      "blockClass": "seeAllStores",
+      "htmlId": "Vedi tutti i negozzi - Riga"
+    },
+    "title": "Vedi tutti i negozzi - Riga"
   },
 
   "rich-text#seeAllStores": {
     "props": {
       "text": "[Vedi tutti gli store](/our-stores)",
-      "blockClass": "seeAllStores"
-    }
-  }
+      "blockClass": "seeAllStores",
+      "htmlId": "Vedi tutti i negozzi"
+    },
+    "title": "Vedi tutti i negozzi"
+  },
 }
