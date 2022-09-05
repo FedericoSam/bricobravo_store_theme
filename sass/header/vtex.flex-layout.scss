@@ -62,66 +62,22 @@
       display: none;
     }
     .flexRowContent--header-categories {
-      justify-content: space-between;
       display: flex;
-      padding: 15px 20px 10px 0;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 10px 10px;
       max-width: 1376px;
       margin: 0 auto;
-      text-align: center;
+      .stretchChildrenWidth {
+        max-width: max-content;
+      }
       :global(.vtex-store-link-0-x-link--header-category) {
+        text-decoration: none;
+        white-space: nowrap;
+        color: $primary-text-dark;
         display: flex;
-        align-items: center;
-        &1 {
-          text-decoration: none;
-          color: $primary-text-dark;
-          ::before {
-            content: "Icon";
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            background-color: $primary-gold;
-            padding: 10px 10px 0;
-            margin-right: 10px;
-          }
-        }
-        &2 {
-          text-decoration: none;
-          color: $primary-text-dark;
-          ::before {
-            content: "Icon";
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            background-color: $primary-gold;
-            padding: 10px 10px 0;
-            margin-right: 10px;
-          }
-        }
-        &3 {
-          text-decoration: none;
-          color: $primary-text-dark;
-          ::before {
-            content: "Icon";
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            background-color: $primary-gold;
-            padding: 10px 10px 0;
-            margin-right: 10px;
-          }
-        }
-        &4 {
-          text-decoration: none;
-          color: $primary-text-dark;
-          ::before {
-            content: "Icon";
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            background-color: $primary-gold;
-            padding: 10px 10px 0;
-            margin-right: 10px;
-          }
+        :global(.vtex-store-link-0-x-label--header-category) {
+          padding: 10px;
         }
       }
     }
