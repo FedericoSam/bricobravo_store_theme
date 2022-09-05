@@ -4744,3 +4744,17 @@ body.debug-on > *:not(.container-main):not(.main-header):not(.main-footer):not(#
   display: none!important;
 }
 
+.vtexIdUI-providers-list button.vtexIdUI-send-email span,
+.vtexIdUI-providers-list button.vtexIdUI-others-send-email span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 370px;
+  border-radius: 30px !important;
+}
+
+.vtexIdUI-providers-list button.vtexIdUI-send-email,
+.vtexIdUI-providers-list button.vtexIdUI-others-send-email {
+  border-radius: 30px !important;
+}

@@ -5,7 +5,11 @@
       "flex-layout.row#FooterLinksDesktop",
       "flex-layout.row#footerPaymentMethods",
       "flex-layout.row#bottomFooterDesktop"
-    ]
+    ],
+    "props": {
+      "htmlId": "Footer layout Desktop"
+    },
+    "title": "Footer layout Desktop"
   },
   "flex-layout.row#FooterLinksDesktop": {
     "children": [
@@ -15,8 +19,10 @@
       "flex-layout.row#upperFooterCol3"
     ],
     "props": {
-      "blockClass": "footer-upperFooterDesktop"
-    }
+      "blockClass": "footer-upperFooterDesktop",
+      "htmlId": "Footer links"
+    },
+    "title": "Footer links"
   },
 
   "flex-layout.col#upperFooterCol1": {
@@ -202,8 +208,10 @@
   "flex-layout.row#footerPaymentMethods": {
     "children": ["flex-layout.col#footerPaymentMethods"],
     "props": {
-      "blockClass": "footer-PaymentMethods"
-    }
+      "blockClass": "footer-PaymentMethods",
+      "htmlId": "Footer modalità di pagamento"
+    },
+    "title": "Footer modalità di pagamento"
   },
   "flex-layout.col#footerPaymentMethods": {
     "children": [
@@ -317,8 +325,10 @@
   "rich-text#footerSocialMedia": {
     "props": {
       "text": "Siga-nos",
-      "blockClass": "paymentMethodText"
-    }
+      "blockClass": "paymentMethodText",
+      "htmlId": "Social Media"
+    },
+    "title": "Social Media"
   },
 
   "social-networks": {
@@ -347,8 +357,10 @@
     ],
     "props": {
       "blockClass": "bottomFooterDesktop",
-      "fullWidth": true
-    }
+      "fullWidth": true,
+      "htmlId": "Footer inferiore"
+    },
+    "title": "Footer inferiore"
   },
 
   "flex-layout.col#bottomFooter1": {
