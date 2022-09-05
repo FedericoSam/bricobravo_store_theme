@@ -167,7 +167,7 @@
   },
   "image#banner-sponsored": {
     "props": {
-      "src": "https://via.placeholder.com/980x221/ccc/fff",
+      "src": "https://via.placeholder.com/1273x200/ccc/fff",
       "alt": "banner-sponsored",
       "blockClass": "banner-sponsored"
     }

@@ -163,7 +163,7 @@
 .imageElement--banner-sponsored {
   width: 97%;
   margin-left: 18px;
-  height: 200px;
+  height: auto;
   @include mobile {
     margin: 20px 8px;
   }
