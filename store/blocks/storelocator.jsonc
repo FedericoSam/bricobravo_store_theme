@@ -12,7 +12,7 @@
   },
   "flex-layout.row#breadcrumbStoreLocator": {
     "children": ["rich-text#breadcrumb", "rich-text#breadcrumb1"],
-    "props": { 
+    "props": {
       "blockClass": "breadcrumb-container",
       "htmlId": "Riga del breadcrumb"
     },
@@ -160,7 +160,7 @@
   },
   "flex-layout.row#breadcrumbStoreDetail": {
     "children": ["rich-text#breadcrumb", "rich-text#breadcrumb1"],
-    "props": { 
+    "props": {
       "blockClass": ["breadcrumb-container", "breadcrumb-detail"],
       "htmlId": "Dettaglio del negozio - breadcrumb"
     },
@@ -285,5 +285,5 @@
       "htmlId": "Vedi tutti i negozzi"
     },
     "title": "Vedi tutti i negozzi"
-  },
+  }
 }
