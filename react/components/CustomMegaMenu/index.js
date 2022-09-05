@@ -174,12 +174,8 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                   onClick={() => mobileHandleToggleMenu(index)}>
                     <div className={style['mobile-menu-icon-container']}>
                   <img
-                    src={
-                      megamenu == index && isOpen
-                        ? `${iconMobile}`
-                        : iconMobile
-                    }
-                   
+                    src={iconMobile}
+                    className={style['category-menu-item-icon']  }
                   />
                   <p className={style['category-menu-item']}>{text}</p>
                   </div>
