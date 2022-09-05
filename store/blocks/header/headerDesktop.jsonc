@@ -165,7 +165,7 @@
       "logInButtonBehavior": "link",
       "showPasswordVerificationIntoTooltip": true,
       "showIconProfile": true,
-      "iconLabel": ".",
+      "iconLabel": " ",
       "blockClass": "login"
     }
   },

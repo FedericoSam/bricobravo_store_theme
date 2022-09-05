@@ -413,10 +413,14 @@ body {
   padding: 0;
   background: #f4f2f2;
   padding-bottom: 40px !important;
-  min-height: 93vh;
+  min-height: 100vh;
   position: relative;
   font-size: 12px;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ }
   body a {
     color: #1a73e8; }
     body a:hover {
@@ -3316,19 +3320,31 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.3);
-    margin-bottom: 40px;
     height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background: #fff;
+  }
+
+  p.client-phone label::after,
+  p.ship-postalCode label::after,
+  p.ship-street label::after,
+  p.ship-city label::after,
+  p.ship-state label::after {
+    content: "*";
   }
 
 @media screen and (min-width: 760px) {
 
   .footer-container {
-    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    bottom: 0;
   }
 
   .footer-container-upper {
@@ -3495,7 +3511,13 @@ body {
     display: none; }
 
 .container-main {
-  max-width: 980px; }
+  max-width: 980px;
+ }
+
+   .container-main {
+     margin-top: 100px;
+   }
+
 
 .checkout-container .orderform-template,
 .checkout-container .cart-template {
@@ -3726,7 +3748,7 @@ body {
   flex-direction: column;
   position: absolute;
   right: -50px;
-  top: 234px;
+  bottom: 40px;
   max-width: 328px;
   margin: 0 0 0 auto;
 }
@@ -4110,7 +4132,7 @@ body.v-custom-step-profile .client-pre-email h3.client-pre-email-h span:before, 
   .client-pre-email .pre-email .client-email input {
     margin-top: 8px; }
   .client-pre-email .pre-email .client-email::before {
-    content: "Inserisci il tuo indirizzo email";
+    content: "Inserisci il tuo indirizzo email*";
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;

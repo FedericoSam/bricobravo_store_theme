@@ -1,7 +1,7 @@
 {
   "vendor": "bricobravo",
   "name": "store-theme",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "builders": {
     "react": "3.x",
     "assets": "0.x",

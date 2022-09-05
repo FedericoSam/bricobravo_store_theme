@@ -1,3 +1,25 @@
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FFF;
+  border-radius: 30px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b8b8b8; 
+  border-radius: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b8b8b8;
+}
+
 .top-navigation {
   width: 100%
 }
@@ -57,25 +79,25 @@
   max-height: 100vh;
   display: flex;
   flex-direction: column;
-  top: 44px;
-  left: 95%;
+  top: 45px;
+  left: 300px;
   position: absolute;
   background: #ffffff;
   transform: translate(0px,-45px);
-  padding: 10px;
-  width: 77.5vw;
+  padding: 10px 60px 10px 10px;
+  width: calc(100vw - 302px);
   overflow: auto;
 }
 
 .bannerSubCategory {
   width: 100%;
-  height: 100px;
+  height: auto;
 }
 
-@media only screen and (max-width: 1480px) and (min-width: 1210px) {
-  .bannerSubCategory, .submenu-items{
-    width: 92%;
-  }
+.category-menu-item-icon {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
 }
 
 .vtex-render-runtime-8-x-lazyload {
@@ -90,7 +112,7 @@
   margin: 0;
   padding: 15px 10px 40px;
   width: 100%;
-  columns: 6 200px;
+  columns: 3 200px;
   column-gap: 3rem;
 }
 
@@ -129,11 +151,13 @@
 }
 
 .subcategory-container {
+  display: block;
   height: max-content;
-  width: max-content;
   list-style: none;
-  display: inline-block;
-  padding: 0 10px;
+  padding-bottom: 2rem;
+  padding-right: 20px;
+  width: 100%;
+  width: max-content;
 }
 
 .subcategory-title{
@@ -142,10 +166,11 @@
   letter-spacing: 0;
   line-height: 19px;
   color: #332C32;
+  max-width: 240px;
+  margin-top: 0;
 }
 .subcategory-item {
   text-align: left;
-  padding-right: 50px;
   list-style: none;
   margin-bottom: 8px;
 }
@@ -162,7 +187,9 @@
   font-size: 14px;
   line-height: 20px;
 }
-
+.subcategory-item a:hover {
+text-decoration: underline;
+}
 .submenu-item-third-level a {
   color: #5c5c5c;
 }
@@ -180,12 +207,12 @@
 
 
 @media (min-width: 768px) and (max-width: 1200px) {
-  .submenu-items {
+  /* .submenu-items {
     padding: 10px 10px 20px;
-  }
-  .megamenu--active {
+  } */
+  /* .megamenu--active {
     width: 65vw;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
@@ -239,10 +266,12 @@
     border-bottom: 1px solid #D8D8D8;
   }
 
-  .category-menu-item {
-    font-size: 18px;
-    text-align: center;
+.category-menu-item {
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
   }
+
 
   .link-utili-container{
     padding: 0;
@@ -250,9 +279,7 @@
   .category-menu-item{
     padding:0 ;
   }
-  .mobile-menu-header-category--active .category-menu-item {
-    color: #ffffff;
-  }
+
   .mobile-menu-header-category svg,
   .mobile-menu-header-subcategory svg {
     top: 6px;
@@ -261,38 +288,41 @@
   }
 
   .category-menu-arrow {
-    height: 20px;
-    width: 25px;
-    transform: translate(9px,6px);
-    background-size: cover;
+    height: 15px;
+    width: 15px;
+    transform: translate(3px,1px);
+    background-size: 9px 13px;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("../../../assets/icons/arrowRight.svg");
+    background-image: url("../../../assets/icons/arrowRightMenu.svg");
   }
   .mobile-mega-menu {
-    top: 50px;
+    top: 0;
     left: 0;
     z-index: 2;
     width: 100%;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     background-color: #ffffff;
   }
 
   .mobile-mega-menu-title {
+    padding-top: 20px;
     font-size: 18px;
-    color: #5A40A4;
-    font-weight: 600;
+    color: #291660;
+    font-weight: 500;
     display: flex;
     align-items: center;
     margin-top: 0;
     padding-left: 11px;
+    padding-right: 60px;
   }
 
   .mobile-subcategory-overflow {
     max-height: 100vh;
     overflow-y: auto;
     padding: 0;
+    padding-bottom: 70px;
   }
 
   .mobile-mega-menu-title:before {
@@ -301,7 +331,7 @@
     height: 18px;
     display: inline-block;
     background-size: 15px;
-    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='18px' height='17px' viewBox='0 0 18 17' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EF4B0CE16-5F14-4A75-B791-C49388F4B52C%3C/title%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cg id='M/-1.3-Menu-2' transform='translate(-16.000000, -71.000000)' stroke='%23291660'%3E%3Cg id='icon-/-arrow-left' transform='translate(16.500000, 72.000000)'%3E%3Cg id='icon-/-arrow-right' transform='translate(8.500000, 7.500000) scale(-1, 1) translate(-8.500000, -7.500000) '%3E%3Cline x1='0' y1='7.5' x2='16' y2='7.5' id='Path'%3E%3C/line%3E%3Cpolyline id='Path-Copy' stroke-linejoin='round' points='9 15 17 7.54050331 9 0'%3E%3C/polyline%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("../../../assets/icons/arrowLeftMenu.svg");
     background-repeat: no-repeat;
     margin-right: 5px;
   }
