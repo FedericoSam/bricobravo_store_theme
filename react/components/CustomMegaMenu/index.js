@@ -4,8 +4,7 @@ import { Link } from 'vtex.render-runtime'
 import { useDevice } from 'vtex.device-detector'
 import { Icon } from 'vtex.store-icons'
 import arrowRight from '../../../assets/icons/arrowRightGray.svg'
-import IconIcn from '../../../assets/icons/icnIcon.svg'
-import IconPlanta from '../../../assets/icons/vasoDePlanta.svg'
+import IconExample from '../../../assets/icons/iconExample.svg'
 
 const CustomMegaMenu = ({ menuFirstLevel }) => {
   const node = useRef()
@@ -74,7 +73,7 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                     <img
                       className={style['category-menu-item-icon']}
                       src={iconMobile}
-                      alt="Category icon"
+                      alt="icon"
                     />
                     {text}
                   </div>
@@ -285,7 +284,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Giardinaggio',
-      iconMobile: IconPlanta,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1037,7 +1036,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Piscine e accessori',
-      iconMobile: IconPlanta,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1169,7 +1168,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Arredo giardino',
-      iconMobile: IconPlanta,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1301,7 +1300,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Climatizzazione',
-      iconMobile: IconPlanta,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1433,7 +1432,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Cassette e box',
-      iconMobile: IconPlanta,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1565,7 +1564,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Bricolage e Fai da te',
-      iconMobile: IconPlanta,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1697,7 +1696,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Arredo casa',
-      iconMobile: IconPlanta,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1829,7 +1828,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Sport e tempo libero',
-      iconMobile: IconPlanta,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -1961,7 +1960,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Antinfortunistica',
-      iconMobile: IconPlanta,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2093,7 +2092,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Illuminazione',
-      iconMobile: IconPlanta,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2225,7 +2224,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Riscaldamento',
-      iconMobile: IconPlanta,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2357,7 +2356,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Giocattoli',
-      iconMobile: IconPlanta,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2489,7 +2488,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Animali',
-      iconMobile: IconPlanta,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2621,7 +2620,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Elettrodomestici',
-      iconMobile: IconPlanta,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
@@ -2753,7 +2752,7 @@ CustomMegaMenu.defaultProps = {
     {
       link: '#',
       text: 'Auto e moto',
-      iconMobile: IconPlanta,
+      iconMobile: IconExample,
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
