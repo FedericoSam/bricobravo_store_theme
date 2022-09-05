@@ -266,6 +266,7 @@
           .sendButtonActive {
             :global(.vtex-button) {
                 background-color: #291660;
+                transition: 1s;
             }
           }
 
