@@ -1,5 +1,6 @@
 {
   "flex-layout.row#faq": {
+    "title":"FAQ",
     "children": ["flex-layout.col#faq"],
     "props": { "blockClass": "pdp-faq" }
   },

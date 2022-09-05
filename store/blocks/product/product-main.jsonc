@@ -9,6 +9,7 @@
     }
   },
   "flex-layout.col#product-images": {
+    "title":"immagine prodotta",
     "children": ["product-price-savings#discount", "product-images#desktop"],
     "props": {
       "blockClass": "product-images",
