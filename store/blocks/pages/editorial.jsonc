@@ -4,15 +4,19 @@
   },
   "flex-layout.row#editorial": {
     "props": {
-      "width": "100%"
+      "width": "100%",
+      "htmlId": "Editorial"
     },
+    "title": "Editorial",
     "children": ["flex-layout.row#main-container"]
   },
   "flex-layout.row#main-container": {
     "props": {
       "blockClass": "editorial-main",
-      "width": "100%"
+      "width": "100%",
+      "htmlId": "Contenitore principale"
     },
+    "title": "Contenitore principale",
     "children": [
       // "flex-layout.col#spacer",
       "flex-layout.col#container-about-us"
@@ -55,22 +59,28 @@
       "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit",
       "textPosition": "CENTER",
       "textAlignment": "CENTER",
-      "blockClass": "editorial-title"
-    }
+      "blockClass": "editorial-title",
+      "htmlId": "Circa - titolo"
+    },
+    "title": "Circa - titolo"
   },
   "rich-text#about-subTitle": {
     "props": {
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis bibendum venenatis vulputate. Nam sed velit felis. Cras ultricies congue mauris id scelerisque. Maecenas ut scelerisque quam. In hac habitasse platea dictumst. Nullam a urna a lorem imperdiet eleifend quis a nunc.Fusce eget magna a eros pulvinar commodo. Proin aliquam, velit quis tempus congue, felis ipsum lobortis purus, a maximus turpis tortor ut ipsum. Curabitur congue quam sit amet dui posuere, at feugiat leo feugiat. Nunc eu sagittis odio. Sed non libero dolor. Sed lobortis sem sed mauris sollicitudin consectetur. Maecenas eu nulla et odio ultricies consequat eu vulputate neque. Mauris vitae lacus vestibulum, placerat lectus vitae, volutpat ipsum.",
       "textPosition": "CENTER",
       "textAlignment": "CENTER",
-      "blockClass": "editorial-subTitle"
-    }
+      "blockClass": "editorial-subTitle",
+      "htmlId": "Circa - sottotitolo"
+    },
+    "title": "Circa - sottotitolo"
   },
   "flex-layout.row#about-banner-2": {
     "children": ["image#about-banner-2", "flex-layout.col#about-banner2"],
     "props": {
-      "blockClass": "editorial-containerBanner2"
-    }
+      "blockClass": "editorial-containerBanner2",
+      "htmlId": "Circa - banner 2"
+    },
+    "title": "Circa - banner 2"
   },
   "image#about-banner-2": {
     "props": {
@@ -94,16 +104,20 @@
       "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit",
       "textAlignment": "LEFT",
       "textPosition": "LEFT",
-      "blockClass": "editorial-titleSection"
-    }
+      "blockClass": "editorial-titleSection",
+      "htmlId": "Circa - banner 2 - titolo"
+    },
+    "title": "Circa - banner 2 - titolo"
   },
   "rich-text#about-banner2-description": {
     "props": {
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis bibendum venenatis vulputate. Nam sed velit felis. Cras ultricies congue mauris id scelerisque. Maecenas ut scelerisque quam. In hac habitasse platea dictumst. Nullam a urna a lorem imperdiet eleifend quis a nunc.",
       "textAlignment": "LEFT",
       "textPosition": "LEFT",
-      "blockClass": "editorial-paragraph"
-    }
+      "blockClass": "editorial-paragraph",
+      "htmlId": "Circa - banner 2 - descrizione"
+    },
+    "title": "Circa - banner 2 - descrizione"
   },
   "flex-layout.row#about-banner-3": {
     "children": ["flex-layout.col#about-banner-3", "image#about-banner-3"],
