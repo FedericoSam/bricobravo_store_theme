@@ -32,12 +32,29 @@
 
 .drawer--drawer-desktop {
   background: none;
+  top: 145px;
+  width: 100% !important;
+  max-width: 100% !important;
+  @include mobile {
+    top: 0;
+    max-width: 100% !important;
+  }
   .drawerContent--drawer-desktop {
+    width: 300px !important;
     padding: 12px 0 24px;
     background-color: #fff;
     @include mobile {
       position: relative;
+      width: 100% !important;
     }
+  }
+}
+.closeIconContainer--drawer-desktop {
+  position: absolute;
+  right: 10px;
+  z-index: 999;
+  @include mobile {
+    top: 0;
   }
 }
 
@@ -47,9 +64,6 @@
   }
 }
 
-.childrenContainer--drawer-desktop{
-   margin-top: 42px;
-}
 .drawerContent--drawer-desktop {
   height: 100vh;
 
@@ -116,5 +130,14 @@
         border-radius: 3px;
       }
     }
+  }
+}
+
+.overlay--drawer-desktop {
+  background-color: white !important;
+  opacity: 100%;
+  top: 145px;
+  @include mobile {
+    top: 0;
   }
 }
