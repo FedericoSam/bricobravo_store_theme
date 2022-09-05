@@ -3726,7 +3726,7 @@ body {
   flex-direction: column;
   position: absolute;
   right: -50px;
-  top: 234px;
+  bottom: 40px;
   max-width: 328px;
   margin: 0 0 0 auto;
 }
