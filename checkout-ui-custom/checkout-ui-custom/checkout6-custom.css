@@ -413,10 +413,14 @@ body {
   padding: 0;
   background: #f4f2f2;
   padding-bottom: 40px !important;
-  min-height: 93vh;
+  min-height: 100vh;
   position: relative;
   font-size: 12px;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ }
   body a {
     color: #1a73e8; }
     body a:hover {
@@ -3324,15 +3328,23 @@ body {
     background: #fff;
   }
 
+  p.client-phone label::after,
+  p.ship-postalCode label::after,
+  p.ship-street label::after,
+  p.ship-city label::after,
+  p.ship-state label::after {
+    content: "*";
+  }
+
 @media screen and (min-width: 760px) {
 
   .footer-container {
-    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    bottom: 0;
   }
 
   .footer-container-upper {
@@ -4120,7 +4132,7 @@ body.v-custom-step-profile .client-pre-email h3.client-pre-email-h span:before, 
   .client-pre-email .pre-email .client-email input {
     margin-top: 8px; }
   .client-pre-email .pre-email .client-email::before {
-    content: "Inserisci il tuo indirizzo email";
+    content: "Inserisci il tuo indirizzo email*";
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;

@@ -35,11 +35,12 @@
         "tablet": 4,
         "phone": 1.5
       },
-      "infinite": false,
+      "infinite": true,
       "fullWidth": true,
       "blockClass": "shelf-also-view",
       "showPaginationDots": "never",
-      "showNavigationArrows": "desktopOnly"
+      "showNavigationArrows": "desktopOnly",
+      "navigationStep": 1
     }
   },
 
@@ -85,11 +86,12 @@
         "tablet": 3,
         "phone": 1.5
       },
-      "infinite": false,
+      "infinite": true,
       "fullWidth": true,
       "blockClass": "shelf-also-view",
       "showPaginationDots": "never",
-      "showNavigationArrows": "desktopOnly"
+      "showNavigationArrows": "desktopOnly",
+      "navigationStep": 1
     }
   },
 
@@ -129,11 +131,12 @@
         "tablet": 4,
         "phone": 1.5
       },
-      "infinite": false,
+      "infinite": true,
       "fullWidth": true,
       "blockClass": "shelf-also-view",
       "showPaginationDots": "never",
-      "showNavigationArrows": "desktopOnly"
+      "showNavigationArrows": "desktopOnly",
+      "navigationStep": 1
     }
   },
 
