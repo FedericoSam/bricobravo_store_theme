@@ -161,10 +161,11 @@
 }
 
 .imageElement--banner-sponsored {
-  width: 100%;
+  width: 97%;
+  margin-left: 18px;
   height: 200px;
   @include mobile {
-    margin: 20px 0;
+    margin: 20px 8px;
   }
 }
 
