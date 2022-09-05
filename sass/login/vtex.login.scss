@@ -227,6 +227,11 @@
                       }
                   }
               }
+              .sendButtonActive {
+                :global(.vtex-button) {
+                    background-color: #291660;
+                }
+              }
           }
       }
 
@@ -256,6 +261,12 @@
                       background: #8E8E8E;
                   }
               }
+          }
+
+          .sendButtonActive {
+            :global(.vtex-button) {
+                background-color: #291660;
+            }
           }
 
           .backButton {
