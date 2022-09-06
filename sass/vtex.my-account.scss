@@ -1,16 +1,13 @@
 @import '_media-queries.scss';
 @import '_variables.scss';
 
-@media screen and (min-width: 64rem) {
-  :global(.vtex-account) {
-    width: 1313px;
-    margin: 0 auto;
-  }
-}
 
-.menu {
-  width: 15%;
-  padding-right: 0;
+:global(.vtex-account) {
+  width: 100%;
+  max-width: 1313px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
 
 :global(.vtex-account__page-body) {
@@ -77,7 +74,7 @@
     padding: 0;
     &::before {
       content: '/ Modifica Profilo';
-      transform: translateY(-159px) translateX(-168px);
+      transform: translateY(-159px) translateX(-226px);
       position: absolute;
       color: #332C32;
       font-family: Roboto;
@@ -616,20 +613,19 @@
 
       .boxContainerFooter {
         justify-content: center;
-        padding-bottom: 24px;
-
-        :global(.vtex-button) {
-          padding: 0;
-          border: none;
-          background: transparent;
-          color: $blue-active;
-          position: absolute;
-          transform: translate(-55px,-303px);
-          font-size: 16px;
-          line-height: 19px;
-          font-weight: 500;
-          text-transform: capitalize;
-        }
+        padding-bottom: 24px;        
+          :global(.vtex-button) {
+            padding: 0;
+            border: none;
+            background: transparent;
+            color: $blue-active;
+            position: absolute;
+            transform: translate(-85px,-348px);
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 500;
+            text-transform: capitalize;
+          }
       }
 
       .newsletterBoxContainer {
