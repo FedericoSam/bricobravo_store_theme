@@ -347,11 +347,11 @@
       "image#banner-sponsored-mobile",
       "flex-layout.row#contentmobile",
       "flex-layout.row#fetchmore",
-      "back-to-top-button",
-      "infinite-scroll"
+      "back-to-top-button"
+      //"infinite-scroll"
     ],
     "props": {
-      "pagination": "show-more",
+      "pagination": "infiniteScroll",
       "mobileLayout": {
         "mode1": "small",
         "mode2": "normal"
