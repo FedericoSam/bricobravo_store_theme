@@ -1675,7 +1675,7 @@ h1#cart-title {
 body:not(.v-custom-step-email) .client-pre-email span.help.error {
   display: none !important; }
 
-.payment-group-item-cards .card-flag {
+/* .payment-group-item-cards .card-flag {
   width: 32px !important;
   background-size: auto 20px;
   min-width: auto;
@@ -1719,7 +1719,7 @@ body:not(.v-custom-step-email) .client-pre-email span.help.error {
   background-position: -352px 0; }
 
 .payment-group-item-cards .card-flag.Credz {
-  background-position: -384px 0; }
+  background-position: -384px 0; } */
 
 .orderform-template-holder .step .input.text label, .vcustom--vtex-omnishipping-1-x-address label {
   margin: 10px 0 5px 0;
@@ -1913,15 +1913,12 @@ svg.pkpmodal-pickup-point-best-marker-image path:not([fill="white"]) {
   margin: 0; }
 
 .orderform-template-holder #payment-data #iframe-placeholder-creditCardPaymentGroup {
-  padding-top: 32px; }
-  .orderform-template-holder #payment-data #iframe-placeholder-creditCardPaymentGroup > .payment-group-item-cards {
-    display: block;
-    overflow: hidden;
-    position: absolute;
-    right: 0;
-    top: 0; }
-    .orderform-template-holder #payment-data #iframe-placeholder-creditCardPaymentGroup > .payment-group-item-cards .card-flag {
-      opacity: 1; }
+padding-top: 32px; }
+.orderform-template-holder #payment-data #iframe-placeholder-creditCardPaymentGroup > .payment-group-item-cards {
+  display: block;
+}
+.orderform-template-holder #payment-data #iframe-placeholder-creditCardPaymentGroup > .payment-group-item-cards .card-flag {
+opacity: 1; }
 
 .orderform-template-holder #payment-data p.link.link-gift-card {
   margin-bottom: 10px;
@@ -4377,12 +4374,10 @@ p.ship-receiverName {
       color:#291660 !important;
     }
 .payment-method .payment-group-item-cards {
-  left: 50%;
-  transform: translate(-50%); }
+  left: 40%;
+}
   .payment-method .payment-group-item-cards::after {
     content: url(/arquivos/payment-logos.png); }
-  .payment-method .payment-group-item-cards span {
-    display: none; }
 
 .ChangeNumberOfPayments {
   display: none; }
@@ -4740,10 +4735,6 @@ body.debug-on > *:not(.container-main):not(.main-header):not(.main-footer):not(#
     width: 372px;
   }
 }
-#payment-group-creditCardPaymentGroup {
-  display: none!important;
-}
-
 .vtexIdUI-providers-list button.vtexIdUI-send-email span,
 .vtexIdUI-providers-list button.vtexIdUI-others-send-email span {
   position: absolute;
@@ -4757,4 +4748,17 @@ body.debug-on > *:not(.container-main):not(.main-header):not(.main-footer):not(#
 .vtexIdUI-providers-list button.vtexIdUI-send-email,
 .vtexIdUI-providers-list button.vtexIdUI-others-send-email {
   border-radius: 30px !important;
+}
+
+/* Opacity CEP */
+
+.summary-template-holder .cart-more-options {
+  display: block;
+}
+.summary-template-holder .cart-more-options  #shipping-preview-container h2,
+.summary-template-holder .cart-more-options  #shipping-preview-container p{
+  font-size: 0px !important;
+}
+#shipping-calculate-link {
+  opacity: 0;
 }
