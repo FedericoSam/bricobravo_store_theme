@@ -14,6 +14,21 @@
       "blockClass": "also-view"
     }
   },
+  "flex-layout.row#also-view-mobile": {
+    "children": ["flex-layout.col#also-view-mobile"],
+    "props": {
+      "blockClass": ["relative", "bg-base", "z-998", "also-view"]
+    }
+  },
+  "flex-layout.col#also-view-mobile": {
+    "children": [
+      "rich-text#also-viewTitle",
+      "list-context.product-list#also-view-mobile"
+    ],
+    "props": {
+      "blockClass": "also-view"
+    }
+  },
   "rich-text#also-viewTitle": {
     "props": {
       "text": "### Potrebbe interessarti anche",
