@@ -227,6 +227,11 @@
                       }
                   }
               }
+              .sendButtonActive {
+                :global(.vtex-button) {
+                    background-color: #291660;
+                }
+              }
           }
       }
 
@@ -251,11 +256,21 @@
                   font-size: 14px;
                   text-transform: initial;
                   transition: .2s ease-in-out;
-  
+
                   &:hover {
-                      background: #8E8E8E;
-                  }
+                    background: #8E8E8E;
+                }
               }
+          }
+
+          .sendButtonActive {
+            :global(.vtex-button) {
+                background-color: #291660;
+                transition: 1s;
+                &:hover {
+                    background: #1B0E41;
+                }
+            }
           }
 
           .backButton {
