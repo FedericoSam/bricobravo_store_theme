@@ -31,18 +31,47 @@
   "slider-layout#also-view": {
     "props": {
       "itemsPerPage": {
-        "desktop": 6,
-        "tablet": 4,
-        "phone": 1.5
+        "desktop": 6
       },
-      "infinite": false,
+      "infinite": true,
       "fullWidth": true,
       "blockClass": "shelf-also-view",
       "showPaginationDots": "never",
       "showNavigationArrows": "desktopOnly",
-      "navigationStep": 1
+      "navigationStep": 1,
+      "autoplay": {
+        "timeout": 2000,
+        "stopOnHover": true
+      }
       //"centerMode": "to-the-left"
-
+    }
+  },
+  "list-context.product-list#also-view-mobile": {
+    "children": ["slider-layout#also-view-mobile"],
+    "blocks": ["product-summary.shelf#normal"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "maxItems": 12
+    }
+  },
+  "slider-layout#also-view-mobile": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 4,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf-also-view",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "desktopOnly",
+      "navigationStep": 1,
+      "centerMode": "to-the-left",
+      "autoplay": {
+        "timeout": 2000,
+        "stopOnHover": true
+      }
     }
   },
 

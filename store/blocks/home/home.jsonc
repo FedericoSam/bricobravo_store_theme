@@ -407,7 +407,8 @@
   "flex-layout.col#home-shelf-01": {
     "children": [
       "flex-layout.row#home-shelf-01-title",
-      "list-context.product-list#also-view"
+      "responsive-layout.desktop#shelf-also-view",
+      "responsive-layout.mobile#shelf-also-view"
     ]
   },
 
@@ -437,7 +438,12 @@
       "label": ""
     }
   },
-
+  "responsive-layout.desktop#shelf-also-view": {
+    "children": ["list-context.product-list#also-view"]
+  },
+  "responsive-layout.mobile#shelf-also-view": {
+    "children": ["list-context.product-list#also-view-mobile"]
+  },
   "flex-layout.row#home-shelf-02": {
     "children": ["flex-layout.col#home-shelf-02"],
     "props": {
@@ -450,7 +456,8 @@
   "flex-layout.col#home-shelf-02": {
     "children": [
       "flex-layout.row#home-shelf-02-title",
-      "list-context.product-list#also-view"
+      "responsive-layout.desktop#shelf-also-view",
+      "responsive-layout.mobile#shelf-also-view"
     ]
   },
 
@@ -493,7 +500,8 @@
   "flex-layout.col#home-shelf-03": {
     "children": [
       "flex-layout.row#home-shelf-03-title",
-      "list-context.product-list#also-view"
+      "responsive-layout.desktop#shelf-also-view",
+      "responsive-layout.mobile#shelf-also-view"
     ]
   },
 
