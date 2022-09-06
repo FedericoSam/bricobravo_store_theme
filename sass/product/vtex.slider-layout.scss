@@ -104,9 +104,13 @@
 .sliderTrack {
   &--shelf-also-view {
     display: flex;
-    align-items: flex-start;
     column-gap: 16px;
+    align-items: flex-start;
     padding: 5px 5px 20px 5px;
+
+    @include breakpoint("desktop") {
+      column-gap: 16px;
+    }
   }
 }
 
@@ -145,6 +149,12 @@
   &--shelf-also-view {
     height: 16px;
     color: $blue-dark;
+  }
+}
+
+.slide--shelf-also-view {
+  @include breakpoint("mobile") {
+    margin-inline: 2px;
   }
 }
 //PDP Slider End

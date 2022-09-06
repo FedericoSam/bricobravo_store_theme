@@ -35,12 +35,14 @@
         "tablet": 4,
         "phone": 1.5
       },
-      "infinite": true,
+      "infinite": false,
       "fullWidth": true,
       "blockClass": "shelf-also-view",
       "showPaginationDots": "never",
       "showNavigationArrows": "desktopOnly",
       "navigationStep": 1
+      //"centerMode": "to-the-left"
+
     }
   },
 
@@ -86,12 +88,13 @@
         "tablet": 3,
         "phone": 1.5
       },
-      "infinite": true,
+      "infinite": false,
       "fullWidth": true,
       "blockClass": "shelf-also-view",
       "showPaginationDots": "never",
       "showNavigationArrows": "desktopOnly",
       "navigationStep": 1
+      //"centerMode": "to-the-left"
     }
   },
 
@@ -131,12 +134,13 @@
         "tablet": 4,
         "phone": 1.5
       },
-      "infinite": true,
+      "infinite": false,
       "fullWidth": true,
       "blockClass": "shelf-also-view",
       "showPaginationDots": "never",
       "showNavigationArrows": "desktopOnly",
       "navigationStep": 1
+      //"centerMode": "to-the-left"
     }
   },
 
