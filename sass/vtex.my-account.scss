@@ -148,6 +148,7 @@
           background-position: center;
           color: #402493;
           text-transform: capitalize;
+          transform: translateY(-26px);
 
           &:hover {
             border: 1px solid #402493;
@@ -690,6 +691,9 @@
 
     :global(.vtex-account__create-card) {
       padding-left: 2rem;
+      @media screen and (max-width: 48rem) {
+        padding-inline: 1rem;
+      }
       &::before {
         content: '/ Nuova carta';
         transform: translateY(-171px) translateX(-200px);
@@ -1084,6 +1088,8 @@
     :global(.vtex-account__page) {
       :global(.vtex-account__cards-list) {
         min-height: 300px;
+        padding-inline: 1rem;
+        transform: translateY(58px);
       }
 
       :global(.vtex-account__page-body) {
@@ -1104,6 +1110,7 @@
             font-size: 30px;
             line-height: 20px;
             padding-top: 24px;
+            padding-left: 1rem;
           }
           :global(.vtex-pageHeader__children) {
             position: absolute;
@@ -1250,5 +1257,11 @@
   :global(.t-heading-4){
     position: absolute;
     transform: translateY(123px);
+  }
+}
+
+:global(.vtex-my-cards-1-x-paymentsList) {
+  @include breakpoint("desktop") {
+    padding-left: 280px;
   }
 }
