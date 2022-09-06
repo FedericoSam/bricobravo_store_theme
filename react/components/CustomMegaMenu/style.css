@@ -160,7 +160,9 @@
   width: max-content;
 }
 
+.subcategory-container a,
 .subcategory-title{
+  text-decoration: none;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0;
@@ -173,6 +175,9 @@
   text-align: left;
   list-style: none;
   margin-bottom: 8px;
+}
+.subcategory-container a:hover {
+  text-decoration: underline;
 }
 
 .subcategory-item--active {
