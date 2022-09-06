@@ -64,7 +64,7 @@
   "image#header-small-logo": {
     "props": {
       "alt": "menu iniziale",
-      "src": "assets/icons/logoHeaderMobile.svg",
+      "src": "assets/icons/logoHeaderMobile2.svg",
       "blockClass": "icon-menu-home-mobile"
     }
   },
