@@ -54,6 +54,13 @@
     height: 8.5rem;
     align-items: flex-start;
   }
+  &--shelf-also-view {
+    :global(.vtex-product-summary-2-x-container--summaryComplete) {
+      @include breakpoint("mobile") {
+        min-width: 200px;
+      }
+    }
+  }
 }
 
 .slide {
