@@ -258,7 +258,7 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                         {title}
                       </h5>
                       <ul className={style['mobile-subcategory-overflow']}>
-                        {subCategories?.map(({ text, linkSub }, ind) => {
+                        {subCategories?.map(({ text, link }, ind) => {
                           return whatSubCategoryIsOpen &&
                             title === whatSubCategoryIsOpen ? (
                             <>
@@ -272,7 +272,7 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                                 <Icon id={iconMobile} type="filled" />
                                 <Link
                                   className={style['category-menu-item']}
-                                  to={linkSub}>
+                                  to={link}>
                                   {text}
                                 </Link>
                               </li>
