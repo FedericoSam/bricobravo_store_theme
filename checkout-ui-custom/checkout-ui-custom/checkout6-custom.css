@@ -4165,6 +4165,17 @@ body.v-custom-step-payment .client-profile-data .accordion-toggle > span:after {
   line-height: 28px;
   position: absolute; }
 
+  @media screen and (max-width: 48rem) {
+    body.v-custom-step-payment .client-profile-data .accordion-toggle > span:after,
+    .client-profile-data .accordion-toggle > span:after,
+    #shipping-data .shipping-data .accordion-toggle:after,
+    .client-pre-email h3.client-pre-email-h span:after,
+    #payment-data .accordion-group .accordion-heading#payments-title .accordion-toggle > span  {
+      font-size: 18px !important;
+    }
+
+  }
+
 .orderform-template-holder #shipping-data .accordion-toggle {
   font-size: 0px !important; }
 
