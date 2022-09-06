@@ -3540,7 +3540,7 @@ body {
   position: relative; }
 
 .table.cart-items thead tr th.quantity::before {
-  content: "Qtd.";
+  content: "Qtà.";
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
