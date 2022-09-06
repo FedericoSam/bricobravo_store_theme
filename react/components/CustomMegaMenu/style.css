@@ -1,5 +1,5 @@
-img[src=""],
-img:not([src]) {
+:global(.vtex-store-components-3-x-imageElement--banner-sponsored)[src=""],
+:global(.vtex-store-components-3-x-imageElement--banner-sponsored):not([src]){
   display: none;
 }
 
