@@ -2322,9 +2322,9 @@ braces@^3.0.2:
   version "1.0.1"
   resolved "http://bricobravo.vtexassets.com/_v/public/typings/v1/bricobravo.custom-checkout-fields@1.0.1/public/@types/bricobravo.custom-checkout-fields#fed87b51c8ec493a8fc11d76635632514cf54294"
 
-"bricobravo.store-theme@http://bricobravo.vtexassets.com/_v/public/typings/v1/bricobravo.store-theme@3.0.4/public/@types/bricobravo.store-theme":
-  version "3.0.4"
-  resolved "http://bricobravo.vtexassets.com/_v/public/typings/v1/bricobravo.store-theme@3.0.4/public/@types/bricobravo.store-theme#f867d65cc3d110489e18e1b6de2a8c835850ac22"
+"bricobravo.store-theme@http://bricobravo.vtexassets.com/_v/public/typings/v1/bricobravo.store-theme@3.0.9/public/@types/bricobravo.store-theme":
+  version "3.0.9"
+  resolved "http://bricobravo.vtexassets.com/_v/public/typings/v1/bricobravo.store-theme@3.0.9/public/@types/bricobravo.store-theme#d5e344d6dc9494b5f86c0a7b71e9c1cb1b6d128f"
 
 browser-process-hrtime@^1.0.0:
   version "1.0.0"
@@ -6773,9 +6773,9 @@ verror@1.10.0:
   version "2.127.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store@2.127.0/public/@types/vtex.store#d78eafaef1ea6f4e87cbc7adc869bff44e437329"
 
-"vtex.styleguide@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.1/public/@types/vtex.styleguide":
-  version "9.146.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.1/public/@types/vtex.styleguide#66db40ca1b78ad77ce4beedabecee320e1ef2ead"
+"vtex.styleguide@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.2/public/@types/vtex.styleguide":
+  version "9.146.2"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.2/public/@types/vtex.styleguide#b0f097f3fef06316a916d6782cf077349bb34a3b"
 
 "vtex.tab-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.tab-layout@0.4.3/public/@types/vtex.tab-layout":
   version "0.4.3"

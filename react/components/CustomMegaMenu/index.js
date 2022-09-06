@@ -134,7 +134,9 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                         <li
                           key={index}
                           className={`${style['subcategory-container']}`}>
-                          <h5 className={`${style['subcategory-title']}`}>{title}</h5>
+                          <h5 className={`${style['subcategory-title']}`}>
+                            {title}
+                          </h5>
                           {subCategories?.map(({ text, link }, ind) => {
                             return (
                               <li
@@ -171,12 +173,12 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                       : style['']
                   }`}
                   onClick={() => mobileHandleToggleMenu(index)}>
-                    <div className={style['mobile-menu-icon-container']}>
-                  <img
-                    src={iconMobile}
-                    className={style['category-menu-item-icon']  }
-                  />
-                  <p className={style['category-menu-item']}>{text}</p>
+                  <div className={style['mobile-menu-icon-container']}>
+                    <img
+                      src={iconMobile}
+                      className={style['category-menu-item-icon']}
+                    />
+                    <p className={style['category-menu-item']}>{text}</p>
                   </div>
                   <i
                     className={`${style['category-menu-arrow']} ${
@@ -188,28 +190,28 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
               )
             })}
             <div className={`${style['link-utili-container']}`}>
-            <h3>Link utili</h3>
-            <li>
-              <Link to="#" className={`${style['category-menu-item']}`}>
-                Store Locator
-              </Link>
-            </li>
-            <li>
-              <Link to="#" className={`${style['category-menu-item']}`}>
-                Dov'è il mio ordine?
-              </Link>
-            </li>
-            <li>
-              <Link to="#" className={`${style['category-menu-item']}`}>
-                Effetuare un reso
-              </Link>
-            </li>
-            <li>
-              <Link to="#" className={`${style['category-menu-item']}`}>
-                FAQ e contatti
-              </Link>
-            </li>
-          </div>
+              <h3>Link utili</h3>
+              <li>
+                <Link to="#" className={`${style['category-menu-item']}`}>
+                  Store Locator
+                </Link>
+              </li>
+              <li>
+                <Link to="#" className={`${style['category-menu-item']}`}>
+                  Dov'è il mio ordine?
+                </Link>
+              </li>
+              <li>
+                <Link to="#" className={`${style['category-menu-item']}`}>
+                  Effetuare un reso
+                </Link>
+              </li>
+              <li>
+                <Link to="#" className={`${style['category-menu-item']}`}>
+                  FAQ e contatti
+                </Link>
+              </li>
+            </div>
           </ul>
         </div>
       </nav>
@@ -217,54 +219,62 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
       {menuFirstLevel?.map(({ text, iconMobile, menuSecondLevel }, index) => {
         return isOpen && index == megamenu ? (
           <div key={index} className={style['mobile-mega-menu']}>
-            <h2 className={style['mobile-mega-menu-title']}
-              onClick={() => setIsOpen(false)}
-            >{text}</h2>
+            <h2
+              className={style['mobile-mega-menu-title']}
+              onClick={() => setIsOpen(false)}>
+              {text}
+            </h2>
             <ul className={style['mobile-mega-menu-items']}>
-              {menuSecondLevel?.map(({ title, subCategories }, index) => {
+              {menuSecondLevel?.map(({ title, link, subCategories }, index) => {
                 return (
                   <>
-                    <li key={index}
+                    <li
+                      key={index}
                       className={style['mobile-menu-header-category']}
-                      onClick={() => setWhatSubCategoryIsOpen(title)}
-                    >
-                      {/* <Icon
-                        id={
-                          whatSubCategoryIsOpen == title && isOpen
-                            ? `${iconMobile}-white`
-                            : iconMobile
-                        }
-                        type="filled"
-                      /> */}
-                      <p className={style['category-menu-item']}>{title}</p>
-                      <i
-                        className={style['category-menu-arrow']}></i>
-                      </li>
-                    <div className={whatSubCategoryIsOpen === title ? style['mobile-subcategory-menu-items'] : style['subcategory-hidden']}>
-                    <h5
+                      onClick={() => setWhatSubCategoryIsOpen(title)}>
+                      {link ? (
+                        <a alt={title} title={title} href={link}>
+                          {title}
+                        </a>
+                      ) : (
+                        <p className={style['category-menu-item']}>{title}dd</p>
+                      )}
+
+                      <i className={style['category-menu-arrow']}></i>
+                    </li>
+                    <div
+                      className={
+                        whatSubCategoryIsOpen === title
+                          ? style['mobile-subcategory-menu-items']
+                          : style['subcategory-hidden']
+                      }>
+                      <h5
                         className={style['mobile-mega-menu-title']}
-                        onClick={() => setWhatSubCategoryIsOpen('')}
-                        >{title}</h5>
-                       <ul className={style["mobile-subcategory-overflow"]}>
+                        onClick={() => setWhatSubCategoryIsOpen('')}>
+                        {title}
+                      </h5>
+                      <ul className={style['mobile-subcategory-overflow']}>
                         {subCategories?.map(({ text, linkSub }, ind) => {
-                          return whatSubCategoryIsOpen && title === whatSubCategoryIsOpen ? (
+                          return whatSubCategoryIsOpen &&
+                            title === whatSubCategoryIsOpen ? (
                             <>
-                              <li key={ind} className={`${style['mobile-menu-header-subcategory']}`}
+                              <li
+                                key={ind}
+                                className={`${style['mobile-menu-header-subcategory']}`}
                                 onClick={() => {
-                                  setWhatSubCategoryIsOpen('');
+                                  setWhatSubCategoryIsOpen('')
                                   setIsOpen(false)
-                                }}
-                              >
-                                <Icon
-                                  id={
-                                    iconMobile
-                                  }
-                                  type="filled"
-                                />
-                                <Link className={style['category-menu-item']} to={linkSub}>{text}</Link>
+                                }}>
+                                <Icon id={iconMobile} type="filled" />
+                                <Link
+                                  className={style['category-menu-item']}
+                                  to={linkSub}>
+                                  {text}
+                                </Link>
                               </li>
                             </>
-                          ) : null})}
+                          ) : null
+                        })}
                       </ul>
                     </div>
                   </>
@@ -288,6 +298,7 @@ CustomMegaMenu.defaultProps = {
       menuSecondLevel: [
         {
           title: 'Raccolta olive',
+          link: '#',
           subCategories: [
             {
               text: 'Lorem ipsum dolor sit amet',
@@ -2925,6 +2936,11 @@ CustomMegaMenu.getSchema = () => {
                     title: 'Texto de exibição',
                     default: null,
                   },
+                  link: {
+                    type: 'string',
+                    title: 'Link',
+                    default: null,
+                  },
                   subCategories: {
                     type: 'array',
                     title: 'Subcategories',
@@ -2948,13 +2964,13 @@ CustomMegaMenu.getSchema = () => {
                 },
               },
             },
-            menuSecondLevelImage:{
+            menuSecondLevelImage: {
               type: 'string',
               title: 'Banner subCategoria',
               widget: {
-                "ui:widget": "image-uploader",
+                'ui:widget': 'image-uploader',
               },
-            }
+            },
           },
         },
       },

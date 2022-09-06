@@ -130,7 +130,7 @@
   },
   "image#header-logo": {
     "props": {
-      "src": "assets/icons/Logo.svg"
+      "src": ""
     },
     "title": "Logotipo Header"
   },
