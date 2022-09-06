@@ -4762,3 +4762,9 @@ body.debug-on > *:not(.container-main):not(.main-header):not(.main-footer):not(#
 #shipping-calculate-link {
   opacity: 0;
 }
+
+@media (max-width: 690px) {
+  .summary-template-holder {
+    display:none;
+  }
+}
