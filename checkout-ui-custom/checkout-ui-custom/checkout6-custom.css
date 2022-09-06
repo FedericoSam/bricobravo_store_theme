@@ -4753,7 +4753,7 @@ body.debug-on > *:not(.container-main):not(.main-header):not(.main-footer):not(#
 /* Opacity CEP */
 
 .summary-template-holder .cart-more-options {
-  display: block;
+  display: block !important;
 }
 .summary-template-holder .cart-more-options  #shipping-preview-container h2,
 .summary-template-holder .cart-more-options  #shipping-preview-container p{
