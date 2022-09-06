@@ -129,26 +129,37 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                     className={`${style['bannerSubCategory']}`}
                   />
                   <ul className={style['submenu-items']}>
-                    {menuSecondLevel?.map(({ title, subCategories }, index) => {
-                      return (
-                        <li
-                          key={index}
-                          className={`${style['subcategory-container']}`}>
-                          <h5 className={`${style['subcategory-title']}`}>
-                            {title}
-                          </h5>
-                          {subCategories?.map(({ text, link }, ind) => {
-                            return (
-                              <li
-                                key={ind}
-                                className={`${style['subcategory-item']}`}>
-                                <Link to={link}>{text}</Link>
-                              </li>
-                            )
-                          })}
-                        </li>
-                      )
-                    })}
+                    {menuSecondLevel?.map(
+                      ({ title, link, subCategories }, index) => {
+                        return (
+                          <li
+                            key={index}
+                            className={`${style['subcategory-container']}`}>
+                            {link ? (
+                              <a alt={title} title={title} href={link}>
+                                <h5 className={`${style['subcategory-title']}`}>
+                                  {title}
+                                </h5>
+                              </a>
+                            ) : (
+                              <h5 className={`${style['subcategory-title']}`}>
+                                {title}
+                              </h5>
+                            )}
+
+                            {subCategories?.map(({ text, link }, ind) => {
+                              return (
+                                <li
+                                  key={ind}
+                                  className={`${style['subcategory-item']}`}>
+                                  <Link to={link}>{text}</Link>
+                                </li>
+                              )
+                            })}
+                          </li>
+                        )
+                      }
+                    )}
                   </ul>
                 </div>
               )
@@ -232,14 +243,7 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                       key={index}
                       className={style['mobile-menu-header-category']}
                       onClick={() => setWhatSubCategoryIsOpen(title)}>
-                      {link ? (
-                        <a alt={title} title={title} href={link}>
-                          {title}
-                        </a>
-                      ) : (
-                        <p className={style['category-menu-item']}>{title}dd</p>
-                      )}
-
+                      <p className={style['category-menu-item']}>{title}</p>
                       <i className={style['category-menu-arrow']}></i>
                     </li>
                     <div
