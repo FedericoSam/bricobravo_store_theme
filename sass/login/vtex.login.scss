@@ -33,29 +33,34 @@
     border-radius: 4px;
     background-color: #F4F7FA;
     @include breakpoint("mobile"){
-        margin-top: 8rem;
-        width: 100%;
-        max-width: 344px;
+			margin-top: 8rem;
+			width: 100%;
+			max-width: 344px;
+			padding: 2rem 1rem;
     }
     .optionsSticky {
         .formTitle {
             display: flex;
             align-items: center;
             justify-content: center;
+						font-size: 0;
+
             @include breakpoint("mobile"){
                 transform: translateX(0px);
             }
+
             &::after {
-                content: "Non hai ancora un account?";
-                    height: 24px;
-                    width: 250px;
-                    color: #332C32;
-                    font-family: Roboto;
-                    font-size: 20px;
-                    font-weight: 500;
-                    letter-spacing: 0;
-                    line-height: 24px;
-                  
+							content: "Non hai ancora un account?";
+							display: block;
+							height: 24px;
+							width: 250px;
+							color: #332C32;
+							font-family: Roboto;
+							font-size: 20px;
+							font-weight: 500;
+							letter-spacing: 0;
+							line-height: 24px;
+							margin-bottom: 1rem;
             }
       
         }
