@@ -5,6 +5,7 @@ import { useDevice } from 'vtex.device-detector'
 import { Icon } from 'vtex.store-icons'
 import arrowRight from '../../../assets/icons/arrowRightGray.svg'
 import IconExample from '../../../assets/icons/iconExample.svg'
+import { usePixel } from 'vtex.pixel-manager/PixelContext'
 
 const CustomMegaMenu = ({ menuFirstLevel }) => {
   const node = useRef()
@@ -12,6 +13,7 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
   const [isOpen, setIsOpen] = useState()
   const [megamenu, setMegaMenu] = useState()
   const [whatSubCategoryIsOpen, setWhatSubCategoryIsOpen] = useState('')
+  const { push } = usePixel()
 
   useEffect(() => {
     // add when mounted
@@ -33,12 +35,22 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
     setIsSubmenuOpen(false)
   }
 
-  const handleToggleMenu = (index) => {
+  const handleToggleMenu = (index, text) => {
+    push({
+      event: 'menu_selection',
+      menu_item: text,
+    })
+
     setIsOpen(true)
     setMegaMenu(index)
   }
 
-  const mobileHandleToggleMenu = (index) => {
+  const mobileHandleToggleMenu = (index, text) => {
+    push({
+      event: 'menu_selection',
+      menu_item: text,
+    })
+
     if (isOpen && megamenu == index) {
       setIsOpen(false)
       setMegaMenu()
@@ -63,7 +75,7 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                 className={style['menu-header-category']}>
                 <Link
                   to={link}
-                  onMouseOver={() => handleToggleMenu(index)}
+                  onMouseOver={() => handleToggleMenu(index, text)}
                   className={`${style['category-menu-item']} ${
                     megamenu === index && isOpen
                       ? style['category-menu-item--active']
@@ -183,7 +195,7 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                       ? style['mobile-menu-header-category--active']
                       : style['']
                   }`}
-                  onClick={() => mobileHandleToggleMenu(index)}>
+                  onClick={() => mobileHandleToggleMenu(index, text)}>
                   <div className={style['mobile-menu-icon-container']}>
                     <img
                       src={iconMobile}
