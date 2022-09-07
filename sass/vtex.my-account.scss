@@ -1261,3 +1261,7 @@
     padding-left: 280px;
   }
 }
+
+:global(.vtex-my-orders-app-3-x-cancelBtn) {
+  display: none!important;
+}
