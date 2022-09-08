@@ -16,7 +16,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #b8b8b8; 
+  background: #b8b8b8;
   border-radius: 30px;
 }
 
@@ -323,11 +323,16 @@ text-decoration: underline;
     font-weight: 500;
     display: flex;
     align-items: center;
-    margin-top: 0;
-    padding-left: 11px;
-    padding-right: 60px;
+    margin: 0;
+    padding: 20px 60px 20px 11px;
   }
-
+  .mobile-mega-menu-link{
+    font-size: 14px;
+    color: #291660;
+    font-weight: 500;
+    padding: 0 0 0 14px;
+    text-decoration: none;
+  }
   .mobile-subcategory-overflow {
     max-height: 100vh;
     overflow-y: auto;
@@ -345,6 +350,7 @@ text-decoration: underline;
     background-repeat: no-repeat;
     margin-right: 5px;
   }
+
 
   .mobile-mega-menu-items {
     padding: 0 11px;

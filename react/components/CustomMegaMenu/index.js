@@ -239,7 +239,7 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
         </div>
       </nav>
 
-      {menuFirstLevel?.map(({ text, iconMobile, menuSecondLevel }, index) => {
+      {menuFirstLevel?.map(({ link, text, iconMobile, menuSecondLevel }, index) => {
         return isOpen && index == megamenu ? (
           <div key={index} className={style['mobile-mega-menu']}>
             <h2
@@ -247,6 +247,7 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
               onClick={() => setIsOpen(false)}>
               {text}
             </h2>
+            <Link to={link} className={style['mobile-mega-menu-link']}>Vedi tutti i prodotti</Link>
             <ul className={style['mobile-mega-menu-items']}>
               {menuSecondLevel?.map(({ title, link, subCategories }, index) => {
                 return (
@@ -269,10 +270,11 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                         onClick={() => setWhatSubCategoryIsOpen('')}>
                         {title}
                       </h5>
+                      <Link to={link} className={style['mobile-mega-menu-link']}>Vedi tutti i prodotti</Link>
                       <ul className={style['mobile-subcategory-overflow']}>
                         {subCategories?.map(({ text, link }, ind) => {
                           return whatSubCategoryIsOpen &&
-                            title === whatSubCategoryIsOpen ? (
+                          title === whatSubCategoryIsOpen ? (
                             <>
                               <li
                                 key={ind}
