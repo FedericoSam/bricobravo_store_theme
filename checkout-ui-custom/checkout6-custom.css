@@ -3745,7 +3745,7 @@ body {
 
 .summary-template-holder .cart-links-bottom {
 position: relative;
-top: -130px;
+top: 130px;
 right: 0;
   display: flex !important;
   flex-direction: column;
@@ -4749,6 +4749,16 @@ body.debug-on > *:not(.container-main):not(.main-header):not(.main-footer):not(#
     width: 100px;
   }
 }
+
+.PaymentInstallments,
+.BillingAddress,
+.ChangeNumberOfPayments {
+  display: none;
+}
+
+
+
+
 .vtexIdUI-providers-list button.vtexIdUI-send-email span,
 .vtexIdUI-providers-list button.vtexIdUI-others-send-email span {
   position: absolute;
