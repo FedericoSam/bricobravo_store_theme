@@ -4803,6 +4803,16 @@ body.debug-on > *:not(.container-main):not(.main-header):not(.main-footer):not(#
     width: 100px;
   }
 }
+
+.PaymentInstallments,
+.BillingAddress,
+.ChangeNumberOfPayments {
+  display: none;
+}
+
+
+
+
 .vtexIdUI-providers-list button.vtexIdUI-send-email span,
 .vtexIdUI-providers-list button.vtexIdUI-others-send-email span {
   position: absolute;
