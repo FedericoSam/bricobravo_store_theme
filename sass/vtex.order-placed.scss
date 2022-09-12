@@ -126,6 +126,7 @@
             }
 
             .cancelOrderButton {
+                display: none;//remove button  Annulla L´ordine
                 :global(.vtex-button) {
                     background: #fff;
                     border: 2px solid #fff;
