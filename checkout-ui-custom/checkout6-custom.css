@@ -944,7 +944,7 @@ h1#cart-title {
         @media (max-width: 690px) {
           .table.cart-items tbody tr .v-custom-product-item-wrap {
             display: block;
-            padding: 10px 0; 
+            padding: 10px 0;
             max-width: 87vw;
           }
             .table.cart-items tbody tr .v-custom-product-item-wrap:after {
@@ -1474,7 +1474,7 @@ h1#cart-title {
   padding: 0;
   min-height: 0 !important;
   display: flex !important;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   opacity: 0!important;
   visibility: hidden!important;
 }
@@ -3651,7 +3651,7 @@ body {
   top: 50px;
   left: 50%;
   transform: translate(-50%);
-  width: 250px; 
+  width: 250px;
 }
 
 @media (max-width: 690px) {
@@ -3998,7 +3998,7 @@ body {
   position: absolute;
   top: 35px;
   right: -50px;
-  max-width: 328px; 
+  max-width: 328px;
 }
 
 @media (max-width: 690px) {
@@ -4424,26 +4424,30 @@ p.ship-receiverName {
 .payment-group-list-btn {
     @media screen and (max-width: 46rem) {
         .payment-group-list-btn {
-            grid-template-columns: 1fr 1fr; 
+            grid-template-columns: 1fr 1fr;
         }
     }
-  .payment-group-list-btn .payment-group-item {
-    background: #fff !important;
-    border: 2px solid #fff !important;
-    transition: .2s ease-in-out !important;
-    border-radius: 3px !important;
-    box-shadow: none !important;
-    margin: 0 !important; }
+}
+    .payment-group-list-btn .payment-group-item {
+      background: #fff !important;
+      border: 2px solid #fff !important;
+      transition: .2s ease-in-out !important;
+      border-radius: 3px !important;
+      box-shadow: none !important;
+      margin: 0 !important;
+    }
     .payment-group-list-btn .payment-group-item:hover {
       border:1.5px solid #1B0E41 ;
-      color:#1B0E41; }
+      color:#1B0E41;
+    }
     .payment-group-list-btn .payment-group-item.active {
       border: 1.5px solid #291660!important;
       color:#291660 !important;
     }
-.payment-method .payment-group-item-cards {
-  left: 40%;
-}
+    .payment-method .payment-group-item-cards {
+      left: 40%;
+    }
+
   .payment-method .payment-group-item-cards::after {
     content: url(/arquivos/payment-logos.png); }
 
@@ -4467,23 +4471,30 @@ p.ship-receiverName {
       font-weight: 300;
       font-size: 14px;
       line-height: 18px;
-      color: #111111; }
+      color: #111111; 
+    }
+
     .CardForm > div .PaymentCardDueDate {
       position: absolute;
-      top: 185px; }
-      .CardForm > div .PaymentCardDueDate label {
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 100%;
-        color: #111111; }
-      .CardForm > div .PaymentCardDueDate .payment-card-lash {
+      top: 155px; 
+    }
+
+    .CardForm > div .PaymentCardDueDate label {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 100%;
+      color: #111111; 
+    }
+
+    .CardForm > div .PaymentCardDueDate .payment-card-lash {
         margin: 13px 12px;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 100%;
-        color: #111111; }
+        color: #111111; 
+    }
     .CardForm > div:nth-child(1) {
       order: 1; }
     .CardForm > div:nth-child(2) {
@@ -4804,13 +4815,11 @@ body.debug-on > *:not(.container-main):not(.main-header):not(.main-footer):not(#
   }
 }
 
-.PaymentInstallments,
-.BillingAddress,
-.ChangeNumberOfPayments {
+.CardForm .PaymentInstallments,
+.CardForm .BillingAddress,
+.CardForm .ChangeNumberOfPayments {
   display: none;
 }
-
-
 
 
 .vtexIdUI-providers-list button.vtexIdUI-send-email span,
@@ -4843,15 +4852,4 @@ body.debug-on > *:not(.container-main):not(.main-header):not(.main-footer):not(#
   .summary-totalizers.cart-totalizers.pull-right {
     display: none;
   }
-}
-
-.iframe-credit-card-payment-group .ChangeNumberOfPayments {
-    display: none
-}
-
-.iframe-credit-card-payment-group .PaymentInstallments {
-    display: none
-}
-.iframe-credit-card-payment-group. BillingAddress {
-    display: none
 }
