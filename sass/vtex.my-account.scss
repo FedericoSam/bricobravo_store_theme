@@ -12,6 +12,11 @@
 
 :global(.vtex-account__page-body) {
   padding-inline: 0;
+  div div ul li a{
+    :global(.hover-c-link){
+    display: none;
+    }
+  }
   :global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf) {
     height: 472px;
   }
