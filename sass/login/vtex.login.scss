@@ -235,6 +235,10 @@
               .sendButtonActive {
                 :global(.vtex-button) {
                     background-color: #291660;
+                    transition: 1s;
+                    &:hover {
+                        background: #1B0E41;
+                    }
                 }
               }
           }
@@ -260,10 +264,10 @@
                   font-weight: 500;
                   font-size: 14px;
                   text-transform: initial;
-                  transition: .2s ease-in-out;
+                  transition: 1s ease-in-out;
 
                   &:hover {
-                    background: #8E8E8E;
+                    background: #1B0E41;
                 }
               }
           }
