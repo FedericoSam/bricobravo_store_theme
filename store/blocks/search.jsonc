@@ -10,6 +10,7 @@
       "context": {
         "skusFilter": "ALL",
         "maxItemsPerPage": 12,
+        "hideUnavailableItems": true,
         "simulationBehavior": "skip"
       }
     }
