@@ -7,7 +7,7 @@ import arrowRight from '../../../assets/icons/arrowRightGray.svg'
 import IconExample from '../../../assets/icons/iconExample.svg'
 import { usePixel } from 'vtex.pixel-manager/PixelContext'
 
-const CustomMegaMenu = ({ menuFirstLevel }) => {
+const CustomMegaMenu = ({ menuFirstLevel, LinkUtil }) => {
   const node = useRef()
   const { isMobile } = useDevice()
   const [isOpen, setIsOpen] = useState()
@@ -98,29 +98,18 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
               </li>
             )
           })}
-          <div className={`${style['link-utili-container']}`}>
-            <h3>Link utili</h3>
-            <li>
-              <Link to="#" className={`${style['category-menu-item']}`}>
-                Store Locator
-              </Link>
-            </li>
-            <li>
-              <Link to="#" className={`${style['category-menu-item']}`}>
-                Dov'è il mio ordine?
-              </Link>
-            </li>
-            <li>
-              <Link to="#" className={`${style['category-menu-item']}`}>
-                Effetuare un reso
-              </Link>
-            </li>
-            <li>
-              <Link to="#" className={`${style['category-menu-item']}`}>
-                FAQ e contatti
-              </Link>
-            </li>
-          </div>
+          { LinkUtil?.map(({ titleLinkUtil, links }) => (
+            <div className={`${style['link-utili-container']}`}>
+              <h3>{titleLinkUtil}</h3>
+              {links?.map(({ link, text }) => (
+                <li>
+                  <Link to={link} className={`${style['category-menu-item']}`}>
+                    {text}
+                  </Link>
+                </li>
+            ))}
+            </div>
+          ))}
         </ul>
         {menuFirstLevel?.map(
           ({ menuSecondLevel, menuSecondLevelImage }, index) => {
@@ -212,29 +201,18 @@ const CustomMegaMenu = ({ menuFirstLevel }) => {
                 </li>
               )
             })}
-            <div className={`${style['link-utili-container']}`}>
-              <h3>Link utili</h3>
-              <li>
-                <Link to="#" className={`${style['category-menu-item']}`}>
-                  Store Locator
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className={`${style['category-menu-item']}`}>
-                  Dov'è il mio ordine?
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className={`${style['category-menu-item']}`}>
-                  Effetuare un reso
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className={`${style['category-menu-item']}`}>
-                  FAQ e contatti
-                </Link>
-              </li>
-            </div>
+            { LinkUtil?.map(({ titleLinkUtil, links }) => (
+              <div className={`${style['link-utili-container']}`}>
+                <h3>{titleLinkUtil}</h3>
+                {links?.map(({ link, text }) => (
+                  <li>
+                    <Link to={link} className={`${style['category-menu-item']}`}>
+                      {text}
+                    </Link>
+                  </li>
+                ))}
+              </div>
+          ))}
           </ul>
         </div>
       </nav>
@@ -2911,6 +2889,29 @@ CustomMegaMenu.defaultProps = {
       menuSecondLevelImage: 'https://dummyimage.com/1300x100.jpg',
     },
   ],
+  LinkUtil: [
+    {
+      titleLinkUtil: 'Link utili', 
+      links: [
+        {
+          text: 'Store Locator', 
+          link: '#'
+        },
+        {
+          text: `Dov'è il mio ordine?`, 
+          link: '#'
+        },
+        {
+          text: 'Effetuare un reso', 
+          link: '#'
+        },
+        {
+          text: 'FAQ e contatti', 
+          link: '#'
+        },
+      ]
+    }
+  ]
 }
 
 // Aqui são configurados os schemas pra exibição no site editor
@@ -2992,6 +2993,41 @@ CustomMegaMenu.getSchema = () => {
           },
         },
       },
+      LinkUtil: {
+        type: 'array',
+        title: 'Menu de links utils',
+        items: {
+          type: 'object',
+          title: 'Seção de links',
+          properties: {
+            titleLinkUtil: {
+              type: 'string',
+              title: 'Titulo',
+              default: null
+            },
+            links: {
+              type: 'array',
+              title: 'Links',
+              items: {
+                type: 'object',
+                title: 'Links',
+                properties: {
+                  text: {
+                    type: 'string',
+                    title: 'Texto do link',
+                    default: null
+                  },
+                  link: {
+                    type: 'string',
+                    title: 'Link',
+                    default: null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     },
   }
 }
