@@ -7,7 +7,7 @@ import arrowRight from '../../../assets/icons/arrowRightGray.svg'
 import IconExample from '../../../assets/icons/iconExample.svg'
 import { usePixel } from 'vtex.pixel-manager/PixelContext'
 
-const CustomMegaMenu = ({ menuFirstLevel, LinkUtil }) => {
+const CustomMegaMenu = ({ menuFirstLevel, linkUtil }) => {
   const node = useRef()
   const { isMobile } = useDevice()
   const [isOpen, setIsOpen] = useState()
@@ -98,7 +98,7 @@ const CustomMegaMenu = ({ menuFirstLevel, LinkUtil }) => {
               </li>
             )
           })}
-          { LinkUtil?.map(({ titleLinkUtil, links }) => (
+          { linkUtil?.map(({ titleLinkUtil, links }) => (
             <div className={`${style['link-utili-container']}`}>
               <h3>{titleLinkUtil}</h3>
               {links?.map(({ link, text }) => (
@@ -201,7 +201,7 @@ const CustomMegaMenu = ({ menuFirstLevel, LinkUtil }) => {
                 </li>
               )
             })}
-            { LinkUtil?.map(({ titleLinkUtil, links }) => (
+            { linkUtil?.map(({ titleLinkUtil, links }) => (
               <div className={`${style['link-utili-container']}`}>
                 <h3>{titleLinkUtil}</h3>
                 {links?.map(({ link, text }) => (
@@ -2889,7 +2889,7 @@ CustomMegaMenu.defaultProps = {
       menuSecondLevelImage: 'https://dummyimage.com/1300x100.jpg',
     },
   ],
-  LinkUtil: [
+  linkUtil: [
     {
       titleLinkUtil: 'Link utili', 
       links: [
@@ -2993,7 +2993,7 @@ CustomMegaMenu.getSchema = () => {
           },
         },
       },
-      LinkUtil: {
+      linkUtil: {
         type: 'array',
         title: 'Menu de links utils',
         items: {
