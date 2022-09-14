@@ -4495,7 +4495,7 @@ p.ship-receiverName {
         line-height: 100%;
         color: #111111; 
     }
-    .CardForm > div:nth-child(1) {
+    /* .CardForm > div:nth-child(1) {
       order: 1; }
     .CardForm > div:nth-child(2) {
       order: 3;
@@ -4504,15 +4504,15 @@ p.ship-receiverName {
       order: 2; }
   .CardForm > p {
     order: 4;
-    margin-bottom: 19px; }
+    margin-bottom: 19px; } */
     .CardForm > p label {
       font-style: normal;
       font-weight: 300;
       font-size: 14px;
       line-height: 100%;
       color: #111111; }
-  .CardForm .BillingAddress {
-    order: 5; }
+  /* .CardForm .BillingAddress {
+    order: 5; } */
     .CardForm .BillingAddress .AddressToggle label strong {
       font-weight: 300; }
 
