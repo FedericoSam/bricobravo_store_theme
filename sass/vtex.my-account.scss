@@ -76,6 +76,26 @@
           }
         }
       }
+
+      div div:last-child a {
+        position: relative;
+        &::after{
+          position: absolute;
+          top: 0;
+          left: 10px;
+          width: 110px;
+          height: 44px;
+          display: flex;
+          background-color: #fff;
+          content: 'La mia lista dei desideri';
+          align-items: center;
+          @media screen and (max-width: 48rem) {
+            padding-left: 16px;
+            left: -16px;
+          }
+        }
+      }
+
       :global(.vtex-account_menu-link.b--action-primary) {
         color: #402493;
         border-left: 4px solid #402493;
