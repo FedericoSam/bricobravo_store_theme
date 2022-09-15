@@ -230,13 +230,17 @@
   &--footer-upperFooterCol2 {
     padding: 32px;
     padding-left: 20px;
-
     @media screen and (max-width: 768px) {
       padding: 0;
       margin-bottom: 24px;
     }
   }
-
+  &--footer-upperFooterCol2{
+    height: 234px;
+    @media screen and (max-width: 768px) {
+      height: auto;
+    }
+  }
   &--bottomFooterTechnology {
     flex-direction: row;
     align-items: center;
