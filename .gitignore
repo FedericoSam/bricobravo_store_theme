@@ -37,5 +37,5 @@ lib
 react/package-lock.json
 
 styles/css/*
-styles/iconpacks/*
+# styles/iconpacks/*
 !styles/css/.gitkeep
