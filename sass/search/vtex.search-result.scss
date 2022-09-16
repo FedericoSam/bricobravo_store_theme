@@ -154,29 +154,16 @@
     font-size: 14px;
     font-weight: 400;
     color: #332c32;
-    line-height: 25px;
+    line-height: 30px;
 
-    // &::before {
-    //   content: 'Mostrando ';
-    //   display: inline;
-    //   font-size: 16px;
-    //   font-weight: 400;
-    //   color: #332C32;
-    //   line-height: 19px;
-    // }
     &::after {
-      // content: ' produtos';
-      // display: inline;
-      // font-weight: 400;
-      // color: #332C32;
-      // line-height: 19px;
       content: ' articoli trovati';
     }
   }
 
   @include breakpoint('mobile') {
     position: absolute;
-    transform: translate(-280px, 48px);
+    transform: translate(-275px, 48px);
   }
 }
 
@@ -188,23 +175,8 @@
   @include breakpoint('mobile') {
     margin-block: auto;
     min-width: 180px;
-    //width: auto;
-    //margin: 0 30px;
-    //margin-right: 34px;
   }
-  // &::after {
-  //   @media screen and (max-width: 768px) {
-  //     content: '';
-  //     width: 2px;
-  //     height: 16px;
-  //     display: block;
-  //     background: #ddd;
-  //     top: 50%;
-  //     right: 16px;
-  //     position: absolute;
-  //     transform: translateY(-50%);
-  //   }
-  // }
+
 
   .orderByDropdown {
     justify-content: flex-end;
@@ -227,8 +199,6 @@
     padding: 12px 0 12px;
     border: none;
     @include breakpoint('mobile') {
-      //width: auto;
-      //margin: 0 30px;
       margin-right: 34px;
       display: flex;
       flex-direction: row;
@@ -241,12 +211,18 @@
       }
 
       .caretIcon {
-        width: 20px;
-        height: 20px;
+        position: absolute;
+        top: 20px;
+        right: 16px;
+        height: 14px;
+        width: 17px;
+        @include breakpoint('mobile') {
+          top: 16px;
+          right: 30px;
+        }
       }
     }
     .filterPopupTitle {
-      //visibility: hidden;
       font-size: 16px;
       font-weight: 400;
       line-height: 19px;
@@ -278,10 +254,9 @@
         font-weight: 400;
         line-height: 19px;
         color: #332c32;
-        //margin-right: 60px;
         position: absolute;
         text-transform: lowercase;
-        left: 82px;
+        left: 58px;
 
         @include breakpoint('mobile') {
           left: unset;
@@ -295,7 +270,6 @@
       }
       &::before {
         border-radius: 8px;
-        //border: 2px solid silver;
         content: '';
         display: block;
         height: 40px;
@@ -331,10 +305,6 @@
 }
 
 .filter__container--priceRange {
-  // :global(.vtex-slider__base-internal) {
-  //   background-color: var(--secondary-default);
-  // }
-
   padding-bottom: 28px;
   @include breakpoint('mobile') {
     border-bottom: none;
@@ -372,31 +342,6 @@
   :global(.vtex-slider__dash) {
     display: none;
   }
-  // &::after {
-  //   content: 'Arraste a barra vermelha';
-  //   font-size: 12px;
-  //   font-weight: 400;
-  //   color: var(--secondary-default);
-  //   position: relative;
-  //   bottom: 35px;
-
-  //   @media screen and (max-width: 768px) {
-  //     bottom: 26px;
-  //     }
-
-  //   }
-
-  //   &::before {
-  //     @media screen and (max-width: 768px) {
-  //       bottom: 14px;
-  //       content: "e defina uma faixa de valores para filtrar.";
-  //       text-indent: 136px;
-  //       position: absolute;
-  //       font-weight: 400;
-  //       font-size: 12px;
-  //       color: #444;
-  //   }
-  // }
 }
 
 .seeMoreButton {
@@ -407,14 +352,12 @@
 }
 
 .filters--layout {
-  //width: 332px;
   padding: 16px;
   padding-top: 0;
   background: #fff;
 
   @media screen and (max-width: 768px) {
     padding: 0;
-    //margin-right: 64px;
   }
 
   .filterItem {
@@ -431,11 +374,11 @@
   .filterPopupArrowIcon {
     @include breakpoint('mobile') {
       visibility: hidden;
-
-      &::after {
+      &::before{
         visibility: visible;
         content: url('assets/icons/icon_filter.svg');
         padding-right: 8px;
+
       }
     }
   }
@@ -473,8 +416,9 @@
     padding: 0;
 
     .caretIcon {
-      width: 20px;
-      height: 20px;
+      transform: translateX(-12px);
+      width: 17px;
+      height: 14px;
     }
   }
 
@@ -541,14 +485,6 @@
       display: none;
     }
 
-    // :global(.vtex-checkbox__line-container) {
-    //   &::after {
-    //     content: url("assets/icons/icon_close.svg");
-    //     padding-top: 5px;
-    //     transform: translateX(-22px);
-    //   }
-    // }
-
     .filterTitleSpan {
       &::before {
         visibility: hidden;
@@ -586,8 +522,6 @@
       }
 
       :global(.vtex-slider__values-container) {
-        //padding-bottom: 45px;
-
         :global(.vtex-slider__left-value),
         :global(.vtex-slider__right-value) {
           font-size: 16px;
@@ -608,26 +542,10 @@
     display: flex;
     flex-direction: column;
   }
-  // .filtersWrapper {
-  //   @include desktop {
-  //     &:last-child {
-  //       &::after {
-  //         content: 'e defina uma faixa de valores para filtrar.';
-  //         font-size: 12px;
-  //         font-weight: 400;
-  //         color: var(--primary-default);
-  //         position: relative;
-  //         bottom: 73px;
-  //         margin-left: 135px;
-  //       }
-  //     }
-  //   }
-  // }
 }
 
 @include breakpoint('mobile') {
   .sidebar {
-    //max-width: 312px;
     min-width: 312px;
 
     .accordionFilter {
@@ -659,10 +577,8 @@
       }
 
       .filterAccordionBreadcrumbs {
-        //margin-top: 3rem;
         border: none;
         display: none;
-        //margin-bottom: 1rem;
 
         .filterBreadcrumbsContent--filterMobile {
           display: none;
@@ -729,7 +645,6 @@
           }
 
           :global(.vtex-checkbox__inner-container) {
-            //border: 2px solid #DDD;
             border-radius: 2px;
             height: 20px;
             width: 20px;
@@ -900,8 +815,8 @@
 
 .caretIcon--filterMobile {
   @include breakpoint('mobile') {
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 14px;
   }
 }
 
