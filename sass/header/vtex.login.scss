@@ -45,8 +45,9 @@
 
   .profile {
     padding: 0;
+    padding-right: 5px;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -54,8 +55,9 @@
     line-height: 14px;
     text-align: left;
     margin-right: 20px;
-    max-width: 75px;
+    max-width: 69px;
     color: $primary-default;
+    text-transform: capitalize;
     &::after {
       content: "";
       position: absolute;
