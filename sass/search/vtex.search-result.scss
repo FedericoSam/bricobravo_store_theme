@@ -243,9 +243,9 @@
       .caretIcon {
         width: 20px;
         height: 20px;
-        transform: scaleY(0.7);
+        transform: scaleY(0.6);
         color: #332C32;
-        opacity: 0.7;
+        opacity: 0.6;
       }
     }
     .filterPopupTitle {
@@ -478,9 +478,9 @@
     .caretIcon {
       width: 20px;
       height: 20px;
-      transform: scaleY(0.7);
+      transform: scaleY(0.6);
       color: #332C32;
-      opacity: 0.7;
+      opacity: 0.6;
     }
   }
 
@@ -581,9 +581,9 @@
   }
   .filter__container {
     .caretIcon {
-      transform: scaleY(0.7);
+      transform: scaleY(0.6);
       color: #332C32;
-      opacity: 0.7;
+      opacity: 0.6;
     }
 
     .filterTemplateOverflow {
@@ -917,9 +917,9 @@
   @include breakpoint('mobile') {
     width: 20px;
     height: 20px;
-    transform: scaleY(0.7);
+    transform: scaleY(0.6);
     color: #332C32;
-    opacity: 0.7;
+    opacity: 0.6;
   }
 }
 
