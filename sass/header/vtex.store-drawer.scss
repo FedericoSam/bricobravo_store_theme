@@ -7,6 +7,9 @@
   height: 41px;
   width: 54px;
   justify-content: center;
+  @media(min--moz-device-pixel-ratio:0) {
+    height:40px;
+  }
   &::before {
     content: "";
     width: 35px;
