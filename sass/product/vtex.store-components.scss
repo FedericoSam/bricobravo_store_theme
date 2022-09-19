@@ -352,5 +352,13 @@
     margin-right: 0.5rem;
     text-transform: initial;
     background-color: $white;
+
+    @include breakpoint('mobile') {
+      margin: 1rem 0;
+    }
   }
 }
+
+// .container--pdp {
+//   max-height: 50px;
+// }
