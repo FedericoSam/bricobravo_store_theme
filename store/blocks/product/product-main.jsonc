@@ -27,7 +27,7 @@
       "showNavigationArrows": false,
       "showPaginationDots": false,
       "zoomMode": "in-place-hover",
-      "maxHeight": 400,
+      "maxHeight": 500,
       "zoomFactor": 2
     }
   },
