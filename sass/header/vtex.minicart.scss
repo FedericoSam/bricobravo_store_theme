@@ -4,6 +4,7 @@
 .drawer{
   &--minicart-background{
     max-width: 440px !important;
+    max-height: 90vh;
   }
 }
 .minicartWrapperContainer {
@@ -70,6 +71,9 @@
 }
 .drawerContent--minicart-background {
   background-color: #FFF;
+  @include breakpoint('desktop') {
+    overflow-y: clip;
+  }
 }
 
 .minicartCheckoutButton {
