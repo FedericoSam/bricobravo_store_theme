@@ -18,5 +18,8 @@
       "component": "CollapseText",
       "composition": "children",
       "allowed": "*"
+    },
+    "login-button-check": {
+        "component": "LoginButtonCheck"
     }
 }
