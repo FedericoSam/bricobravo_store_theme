@@ -66,6 +66,8 @@
 .productImage--pdp {
   border-radius: 16px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .productImagesGallerySwiperContainer--pdp {
@@ -114,6 +116,8 @@
   border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
+  min-width: 400px;
+  max-width: 401px;
 }
 .productNameContainer--product-page {
   font-size: 28px;
