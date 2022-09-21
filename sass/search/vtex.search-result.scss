@@ -573,27 +573,29 @@
     width: 20px;
     height: 20px;
   }
-
-  .filterTemplateOverflow {
-    @include desktop {
-      :global(.vtex-slider-container) {
-        transform: translateY(43px);
-
-        :global(.vtex-slider) {
-          width: 282px;
-          transform: translateX(10px);
+  .filter__container {
+    .filterTemplateOverflow {
+      max-height: 216px !important;
+      @include desktop {
+        :global(.vtex-slider-container) {
+          transform: translateY(43px);
+  
+          :global(.vtex-slider) {
+            width: 282px;
+            transform: translateX(10px);
+          }
         }
-      }
-
-      :global(.vtex-slider__values-container) {
-        //padding-bottom: 45px;
-
-        :global(.vtex-slider__left-value),
-        :global(.vtex-slider__right-value) {
-          font-size: 16px;
-          line-height: 19px;
-          color: #332c32;
-          text-decoration: underline;
+  
+        :global(.vtex-slider__values-container) {
+          //padding-bottom: 45px;
+  
+          :global(.vtex-slider__left-value),
+          :global(.vtex-slider__right-value) {
+            font-size: 16px;
+            line-height: 19px;
+            color: #332c32;
+            text-decoration: underline;
+          }
         }
       }
     }
