@@ -959,10 +959,17 @@
 
 .filterTotalProducts--filterMobile {
   color: white;
-  transform: translate(234px, -42px);
+  //transform: translate(234px, -42px);
   max-width: 136px;
   font-weight: 500;
   padding-bottom: 20px;
+  position: fixed;
+  bottom: -18px;
+  right: calc( calc( calc(159 * 100vw) - 60350px) / 340 );
+  
+  @media screen and (min-width: 540px) {
+    right: calc(calc(calc(18 * 100vw) - 7820px) / 25);
+  }
 
   &::after {
     content: ")";
