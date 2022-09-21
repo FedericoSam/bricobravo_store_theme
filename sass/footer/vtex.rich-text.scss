@@ -21,7 +21,7 @@
     color: $white;
     padding: 10px 15px 10px 0;
     @include breakpoint('mobile') {
-      padding-left: 0;
+      padding-inline: 0;
     }
   }
 
