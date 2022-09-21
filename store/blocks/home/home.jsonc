@@ -3,6 +3,7 @@
     "blocks": [
       "flex-layout.row#submenu-categories",
       "flex-layout.row#home-main-slider",
+      "product-card-logged",
       "flex-layout.row#home-categories",
       "flex-layout.row#home-shelf-01",
       "flex-layout.row#home-shelf-02",
@@ -10,7 +11,8 @@
       "flex-layout.row#home-blog",
       // "flex-layout.row#home-reviews",
       "flex-layout.row#home-services",
-      "flex-layout.row#homeBottomSection"
+      "flex-layout.row#homeBottomSection",
+      "client-info-logged"
     ]
   },
   "flex-layout.row#submenu-categories": {
