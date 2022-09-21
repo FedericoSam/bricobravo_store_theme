@@ -337,6 +337,7 @@
         flex-wrap: wrap;
         gap: 15px;
         width: 100%;
+        position: relative;
         &::before {
           content: 'Aggiungi nuovo indirizzo';
           color: #332C32;
@@ -346,10 +347,12 @@
           letter-spacing: 0;
           line-height: 33px;
           position: absolute;
-          transform: translateY(-84px) translateX(-12px);
+          top: -60px;
+          left: -2px;
           background-color: white;
           @media screen and (max-width: 48rem) {
-            transform: translateY(-65px) translateX(4px);
+            top: -46px;
+            left: 14px;
             font-size: 24px;
           }
         }
