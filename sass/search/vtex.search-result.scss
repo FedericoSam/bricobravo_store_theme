@@ -156,20 +156,7 @@
     color: #332c32;
     line-height: 25px;
 
-    // &::before {
-    //   content: 'Mostrando ';
-    //   display: inline;
-    //   font-size: 16px;
-    //   font-weight: 400;
-    //   color: #332C32;
-    //   line-height: 19px;
-    // }
     &::after {
-      // content: ' produtos';
-      // display: inline;
-      // font-weight: 400;
-      // color: #332C32;
-      // line-height: 19px;
       content: ' articoli trovati';
     }
   }
@@ -188,23 +175,7 @@
   @include breakpoint('mobile') {
     margin-block: auto;
     min-width: 180px;
-    //width: auto;
-    //margin: 0 30px;
-    //margin-right: 34px;
   }
-  // &::after {
-  //   @media screen and (max-width: 768px) {
-  //     content: '';
-  //     width: 2px;
-  //     height: 16px;
-  //     display: block;
-  //     background: #ddd;
-  //     top: 50%;
-  //     right: 16px;
-  //     position: absolute;
-  //     transform: translateY(-50%);
-  //   }
-  // }
 
   .orderByDropdown {
     justify-content: flex-end;
@@ -243,6 +214,9 @@
       .caretIcon {
         width: 20px;
         height: 20px;
+        transform: scaleY(0.6);
+        color: #332C32;
+        opacity: 0.6;
       }
     }
     .filterPopupTitle {
@@ -475,6 +449,9 @@
     .caretIcon {
       width: 20px;
       height: 20px;
+      transform: scaleY(0.6);
+      color: #332C32;
+      opacity: 0.6;
     }
   }
 
@@ -488,6 +465,9 @@
   .filter__container {
     margin-bottom: 1.2rem;
     order: 4;
+    &--category-3{
+      display: none;
+    }
   }
 
   .filter__container--selectedFilters,
@@ -573,30 +553,42 @@
     width: 20px;
     height: 20px;
   }
+  .filter__container {
+    .caretIcon {
+      transform: scaleY(0.6);
+      color: #332C32;
+      opacity: 0.6;
+    }
 
-  .filterTemplateOverflow {
-    scrollbar-width: thin;
-    scrollbar-color: #B8B8B8 transparent;
-
-    @include desktop {
-      :global(.vtex-slider-container) {
-        transform: translateY(43px);
-
-        :global(.vtex-slider) {
-          width: 282px;
-          transform: translateX(10px);
-        }
+    .filterTemplateOverflow {
+      max-height: 214px !important;
+      scrollbar-width: thin;
+      scrollbar-color: #B8B8B8 transparent;
+      
+      .seeMoreButton {
+        color: #1B0E41;
       }
-
-      :global(.vtex-slider__values-container) {
-        //padding-bottom: 45px;
-
-        :global(.vtex-slider__left-value),
-        :global(.vtex-slider__right-value) {
-          font-size: 16px;
-          line-height: 19px;
-          color: #332c32;
-          text-decoration: underline;
+      
+    @include desktop {
+        :global(.vtex-slider-container) {
+          transform: translateY(43px);
+  
+          :global(.vtex-slider) {
+            width: 282px;
+            transform: translateX(10px);
+          }
+        }
+  
+        :global(.vtex-slider__values-container) {
+          //padding-bottom: 45px;
+  
+          :global(.vtex-slider__left-value),
+          :global(.vtex-slider__right-value) {
+            font-size: 16px;
+            line-height: 19px;
+            color: #332c32;
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -699,7 +691,9 @@
       .accordionFilterContainer--filterMobile {
         padding-left: 1rem;
         margin-right: 1rem;
-
+        &--subcategory{
+          display: none;
+        }
         .accordionFilterItem--filterMobile {
           border-bottom-style: none;
         }
@@ -720,7 +714,9 @@
       .accordionFilterOpen--filterMobile {
         transform: translateX(-3rem);
         padding-bottom: 1rem;
-
+        &--subcategory{
+          display: none;
+        }
         .filterAccordionItemBox {
           min-height: 1.5rem;
           border: none;
@@ -731,6 +727,7 @@
             font-weight: 400;
             line-height: 19px;
             color: #332c32;
+            margin-bottom: 10px;
           }
 
           :global(.vtex-checkbox__inner-container) {
@@ -907,6 +904,9 @@
   @include breakpoint('mobile') {
     width: 20px;
     height: 20px;
+    transform: scaleY(0.6);
+    color: #332C32;
+    opacity: 0.6;
   }
 }
 
@@ -1034,6 +1034,7 @@
   transform: translate(234px, -42px);
   max-width: 136px;
   font-weight: 500;
+  padding-bottom: 20px;
 
   &::after {
     content: ")";

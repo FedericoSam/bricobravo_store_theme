@@ -1017,8 +1017,9 @@
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 7;
       text-overflow: ellipsis;
-      white-space: pre-line;
+      //white-space: pre-line;
       overflow: hidden;
+      max-height: 98px;
     }
 
     :global(.vtex-store-link-0-x-link--completeDescriptionAnchor) {

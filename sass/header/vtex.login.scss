@@ -45,15 +45,19 @@
 
   .profile {
     padding: 0;
+    padding-right: 5px;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    white-space: pre-line;
+    white-space: pre-wrap;
     line-height: 14px;
     text-align: left;
     margin-right: 20px;
+    max-width: 55px;
+    color: $primary-default;
+    text-transform: capitalize;
     &::after {
       content: "";
       position: absolute;

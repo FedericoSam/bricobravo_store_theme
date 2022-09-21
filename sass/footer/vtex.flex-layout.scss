@@ -123,8 +123,9 @@
     @include breakpoint('mobile') {
       display: flex;
       flex-flow: row wrap;
-      justify-content: center !important;
+      //justify-content: center !important;
       column-gap: 10px;
+      row-gap: 10px;
       .stretchChildrenWidth {
         width: max-content !important;
         margin: 1px;
@@ -165,6 +166,7 @@
     }
     @include breakpoint('mobile') {
       justify-content: center;
+      margin: 0
     }
   }
 
@@ -230,13 +232,17 @@
   &--footer-upperFooterCol2 {
     padding: 32px;
     padding-left: 20px;
-
     @media screen and (max-width: 768px) {
       padding: 0;
       margin-bottom: 24px;
     }
   }
-
+  &--footer-upperFooterCol2{
+    height: 234px;
+    @media screen and (max-width: 768px) {
+      height: auto;
+    }
+  }
   &--bottomFooterTechnology {
     flex-direction: row;
     align-items: center;

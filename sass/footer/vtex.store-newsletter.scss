@@ -5,10 +5,9 @@
   &--footer-newsletter {
     :global(.vtex-input-prefix__group) {
       height: 44px;
-      border-radius: 8px;
+      border-radius: 3px;
       border: 2px solid #ccc;
       width: 350px;
-
       @include breakpoint("mobile") {
         width: 232px;
       }
@@ -19,8 +18,8 @@
   .formSubmitContainer {
     :global(.vtex-button) {
       background-color: transparent;
-      border: none;
-      padding: 5px;
+      width: 0px;
+      position: relative;
       &:hover {
         background-color: transparent;
       }
@@ -32,11 +31,11 @@
         &::before {
           content: "";
           width: 24px;
-          height: 24px;
+          height: 20px;
           background-repeat: no-repeat;
-          background-size: 30px;
-          top: -6px;
-          position: inherit;
+          top: -11px;
+          right: -32px;
+          position: absolute;
           background-image: url("data:image/svg+xml,%3Csvg width='22' height='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='%232B126B' fill='none' fill-rule='evenodd' stroke-linecap='round'%3E%3Cpath d='M1 8.17307646h16'/%3E%3Cpath stroke-linejoin='round' d='m10 15.3846149 8-7.17259295L10 .961538'/%3E%3C/g%3E%3C/svg%3E");
         }
         &:hover {
@@ -64,12 +63,13 @@
 
 .emailInputContainer{
   :global(.vtex-styleguide-9-x-input) {
-    padding-left: 24px;
+    padding-left: 20px;
     line-height: 24px;
+    border-radius: 0px;
   }
   :global(.vtex-styleguide-9-x-input)::placeholder {
-    color: #555;
-    font-size: 18px;
+    color: #878787;
+    font-size: 15px;
   }
 }
 .defaultSuccessMessage--footer-newsletter {
