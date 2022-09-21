@@ -97,6 +97,7 @@
 .bannerSubCategory {
   width: 100%;
   height: auto;
+  max-width: 870px;
 }
 
 .category-menu-item-icon {
@@ -119,6 +120,7 @@
   width: 100%;
   columns: 3 200px;
   column-gap: 3rem;
+  max-width: 764px;
 }
 
 .submenu-item {
