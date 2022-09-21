@@ -74,6 +74,18 @@
   @include breakpoint('desktop') {
     overflow-y: clip;
   }
+
+  .childrenContainer--minicart-background {
+    @include breakpoint('desktop') {
+      height: calc(90vh - 59px);
+    }
+
+    .minicartSideBarContentWrapper--minicart-background {
+      @include breakpoint('desktop') {
+        height: inherit !important;
+      }
+    }
+  }
 }
 
 .minicartCheckoutButton {
