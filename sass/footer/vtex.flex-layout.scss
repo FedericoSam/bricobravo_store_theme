@@ -123,8 +123,9 @@
     @include breakpoint('mobile') {
       display: flex;
       flex-flow: row wrap;
-      justify-content: center !important;
+      //justify-content: center !important;
       column-gap: 10px;
+      row-gap: 10px;
       .stretchChildrenWidth {
         width: max-content !important;
         margin: 1px;
