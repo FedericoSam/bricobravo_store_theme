@@ -40,12 +40,30 @@ export default function ClientInfoLogged() {
     useEffect(() => {
         async function teste() {
             const response = await getItensWishlist().then(res => res)
-            console.log(response) 
+            // console.log("Olá", response) 
             return response
         } 
         teste().catch((error) => {console.log(error)})
     }, [])
     
+
+// Lógica para o útimo pedido 
+    
+// async function getLastPurchase() {
+//   const options = {
+//       headers: {
+//         'Content-Type': 'application/json'
+//       }
+//     }
+//     try {
+//       const response : any = await fetch(`/api/orders/feed/config`, options).then(res => res.json())
+//       console.log("Ola", response)
+//       // const wishlistUser = filterByEmailWishlist(orderForm.clientProfileData?.email, response.wishLists)
+//       // return getLastProduct(wishlistUser)
+//     } catch(err) {
+//       console.error(err)
+//     }
+//   }
 
   return (
     <div>ClientInfoLogged</div>
