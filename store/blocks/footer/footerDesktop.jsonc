@@ -129,6 +129,7 @@
     ],
     "props": {
       "width": "55%",
+      "preventVerticalStretch": true,
       "blockClass": "footer-upperFooterCol2"
     }
   },

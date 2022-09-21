@@ -145,6 +145,9 @@
 
     &--home-blog {
       margin-bottom: 2rem;
+      :global(.vtex-store-components-3-x-imageElement--home-blog-image) {
+        margin-bottom: 0;
+      }
     }
     &--home-section06-title {
       display: flex;

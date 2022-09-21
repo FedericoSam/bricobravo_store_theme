@@ -55,7 +55,7 @@
 
 .hideFilterButton::after{
     content:url("https://bricobravo.vteximg.com.br/arquivos/icon_close_purple.svg");
-    padding-left: 174px;
+    padding-left: 185px;
 }
 
 /* Filtro Hide */

@@ -123,6 +123,10 @@
           }
         }
 
+        :global(.vtex-store-components-3-x-inputName) {
+          display: none;
+        }
+
         :global(.vtex-store-components-3-x-inputEmail) {
           margin-bottom: 2rem;
 
@@ -165,6 +169,7 @@
   .closeButton {
     padding: 0;
     width: 100%;
+    max-width: 424px;
     border: 1px solid $blue-active;
     border-radius: 2px;
     background-color: $white;
