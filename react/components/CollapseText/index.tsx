@@ -13,7 +13,7 @@ export const CollapseText: StorefrontFunctionComponent<CollapseTextProps> = ({
   contractText,
   collapseLength,
 }: CollapseTextProps) => {
-  const [isContentShow, setIsContentShow] = useState(true)
+  const [isContentShow, setIsContentShow] = useState(false)
 
   const length = Number(collapseLength) || 0
 
