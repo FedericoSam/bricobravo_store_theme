@@ -256,49 +256,57 @@
   "image#payment1": {
     "props": {
       "src": "assets/icons/payments/visa.png",
-      "width": "70px"
+      "width": "58px",
+      "maxHeight": "40px"
     }
   },
   "image#payment2": {
     "props": {
       "src": "assets/icons/payments/mastercard.png",
-      "width": "70px"
+      "width": "58px",
+      "maxHeight": "40px"
     }
   },
   "image#payment3": {
     "props": {
       "src": "assets/icons/payments/maestro.png",
-      "width": "70px"
+      "width": "58px",
+      "maxHeight": "40px"
     }
   },
   "image#payment4": {
     "props": {
       "src": "assets/icons/payments/amex.png",
-      "width": "70px"
+      "width": "58px",
+      "maxHeight": "40px"
     }
   },
   "image#payment5": {
     "props": {
       "src": "assets/icons/payments/paypal.png",
-      "width": "70px"
+      "width": "58px",
+      "maxHeight": "40px"
     }
   },
   "image#payment6": {
     "props": {
       "src": "assets/icons/payments/postepay.png",
-      "width": "70px"
+      "width": "58px",
+      "maxHeight": "40px"
     }
   },
   "image#payment7": {
     "props": {
       "src": "assets/icons/payments/contrassegno.png",
-      "width": "70px"
+      "width": "58px",
+      "maxHeight": "40px"
     }
   },
   "image#payment8": {
     "props": {
       "src": "assets/icons/payments/bonifico.png",
-      "width": "70px"
+      "width": "58px",
+      "maxHeight": "40px"
     }
   },
 
