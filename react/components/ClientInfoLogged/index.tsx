@@ -40,7 +40,7 @@ export default function ClientInfoLogged() {
     useEffect(() => {
         async function teste() {
             const response = await getItensWishlist().then(res => res)
-            console.log(response)
+            console.log(response) 
             return response
         } 
         teste().catch((error) => {console.log(error)})
