@@ -134,7 +134,7 @@
     }
   }
   &--home-shelf{
-    // display: block;
+    display: flex;
     justify-content: flex-end;
     text-decoration: none;
     color: $blue-dark-text;
