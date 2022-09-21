@@ -47,7 +47,7 @@
       }
     }
     @media screen and (max-width: 768px) {
-      padding: 0 32px 32px;
+      padding: 0 15px 32px;
     }
   }
 
@@ -134,7 +134,7 @@
       row-gap: 10px;
       .stretchChildrenWidth {
         width: max-content !important;
-        margin: 1px;
+       // margin: 1px;
       }
       :global(.vtex-store-components-3-x-imageElement) {
         max-width: 58px;
