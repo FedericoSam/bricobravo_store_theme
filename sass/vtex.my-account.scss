@@ -674,7 +674,9 @@
             background: transparent;
             color: $blue-active;
             position: absolute;
-            transform: translate(-85px,-348px);
+            // transform: translate(-85px,-348px);
+            top: -30px;
+            left: 120px;
             font-size: 16px;
             line-height: 19px;
             font-weight: 500;
@@ -1054,8 +1056,9 @@
         }
         .boxContainerFooter {
           :global(.vtex-button) {
-            top: -45px;
-            left: 250px;
+            top: -18px;
+            left: unset;
+            right: 6px;
           }
         }
       }
