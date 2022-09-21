@@ -75,6 +75,13 @@
     }
   }
 
+  &--home-blog--visible {
+    @include breakpoint('mobile') {
+      margin-inline: 10px !important;
+      transform: translateX(34px);
+    }
+  }
+
 //   &--homeBottomSectionBrandsMobile {
 //     @include breakpoint('mobile') {
 //       margin: 0 0.625rem !important;

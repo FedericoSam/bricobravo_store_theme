@@ -2891,22 +2891,22 @@ CustomMegaMenu.defaultProps = {
   ],
   linkUtil: [
     {
-      titleLinkUtil: 'Link utili', 
+      titleLinkUtil: 'Link utili',
       links: [
         {
-          text: 'Store Locator', 
+          text: 'Store Locator',
           link: '#'
         },
         {
-          text: `Dov'è il mio ordine?`, 
+          text: `Dov'è il mio ordine?`,
           link: '#'
         },
         {
-          text: 'Effetuare un reso', 
+          text: 'Effetuare un reso',
           link: '#'
         },
         {
-          text: 'FAQ e contatti', 
+          text: 'FAQ e contatti',
           link: '#'
         },
       ]
