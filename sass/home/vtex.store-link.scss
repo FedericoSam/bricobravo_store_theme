@@ -2,7 +2,7 @@
 @import '../_variables.scss';
 
 .link {
-  
+
   &--home-button-default {
     font-size: 14px;
     line-height: 16px;
@@ -134,7 +134,7 @@
     }
   }
   &--home-shelf{
-    display: none;
+    // display: block;
     justify-content: flex-end;
     text-decoration: none;
     color: $blue-dark-text;
