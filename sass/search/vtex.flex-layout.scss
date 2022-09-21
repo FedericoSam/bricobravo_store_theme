@@ -117,12 +117,11 @@
 .flexRowContent--searchControlsMobile {
   @include breakpoint('mobile') {
     display: flex;
-    //align-items: center;
     padding: 0;
     padding: 15px 0;
     justify-content: center;
     flex-direction: row-reverse;
-    height: 78px;
+    height: 96px;
 
     .stretchChildrenWidth {
       width: 50% !important;
