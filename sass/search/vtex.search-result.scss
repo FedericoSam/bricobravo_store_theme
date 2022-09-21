@@ -561,7 +561,10 @@
     }
 
     .filterTemplateOverflow {
-      max-height: 216px !important;
+      max-height: 214px !important;
+      .seeMoreButton {
+        color: #1B0E41;
+      }
       @include desktop {
         :global(.vtex-slider-container) {
           transform: translateY(43px);
