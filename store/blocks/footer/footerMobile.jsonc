@@ -94,13 +94,13 @@
   "image#Icondown": {
     "props": {
       "src": "assets/icons/down-arrow-footer.svg",
-      "width": "25px"
+      "width": "14px"
     }
   },
   "image#IconUp": {
     "props": {
       "src": "assets/icons/up-arrow-footer.svg",
-      "width": "25px"
+      "width": "14px"
     }
   }
 }
