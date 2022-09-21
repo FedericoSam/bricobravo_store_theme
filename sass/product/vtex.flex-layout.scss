@@ -550,6 +550,20 @@
     @include breakpoint('mobile') {
       margin-left: 1rem;
     }
+    :global(.vtex-slider-layout-0-x-caretIcon--shelf-also-view){
+      display: flex!important;
+      @include breakpoint('mobile') {
+        display: none;
+      }
+    }
+  }
+  &--also-view-product-page {
+    :global(.vtex-slider-layout-0-x-caretIcon--shelf-also-view){
+      display: flex!important;
+      @include breakpoint('mobile') {
+        display: none;
+      }
+    }
   }
 
   &--pdp-faq {
