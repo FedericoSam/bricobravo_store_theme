@@ -8,6 +8,9 @@
   margin: 0 auto;
   padding: 0 2rem;
   box-sizing: border-box;
+  @media screen and (max-width: 48rem) {
+    padding: 0 16px;
+  }
 }
 
 :global(.vtex-account__page-body) {
@@ -47,25 +50,28 @@
   .menu {
     :global(.vtex-account_menu-link) {
       margin: 0;
-      padding: 14px 0 14px 10px;
+      padding: 10px 0 10px 10px;
     }
 
     padding-left: 0;
     .menuLink {
       margin: 0;
-      padding-left: 10px;
-      font-weight: 500;
+      padding: 10px 0 10px 10px;
+      font-weight: 400;
       color: $primary-default;
+      @media screen and (max-width: 48rem) {
+        padding: 13px 0;
+      }
     }
     .menuLinks {
-      div div:nth-child(6) a{
+      div div:nth-child(5) a{
         position: relative;
         &::after{
           position: absolute;
-          top: 0;
+          top: 0px;
           left: 10px;
           width: 110px;
-          height: 44px;
+          height: 36px;
           display: flex;
           background-color: #fff;
           content: 'Storico ordini';
@@ -99,11 +105,13 @@
       :global(.vtex-account_menu-link.b--action-primary) {
         color: #402493;
         border-left: 4px solid #402493;
+        font-weight: 400;
+        height: 32px;
       }
 
       :global(.vtex-account_menu-link.b--transparent) {
         color: $primary-default;
-        font-weight: 500;
+        font-weight: 400;
       }
     }
   }
@@ -1005,10 +1013,10 @@
 
   @media screen and (max-width: 48rem) {
     .menu {
-      padding: 4rem 1rem !important;
+      padding: 4rem 0!important;
       width: 100%;
       :global(.vtex-account_menu-link) {
-        padding: 14px 0;
+        padding: 13px 0;
         border-bottom: 1px solid #d8d8d8;
       }
       .menuLink {
