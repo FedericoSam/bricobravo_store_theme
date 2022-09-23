@@ -3,6 +3,7 @@ import { OrderForm } from 'vtex.order-manager'
 import ProductSummary from './ProductSummary'
 import ProductSummaryMin from './ProductSummaryMin'
 import style from './styles.css'
+// import  ClientInfoLogged  from '../ClientInfoLogged'
 
 export default function ProductCardLogged() {
     const { useOrderForm } = OrderForm
@@ -17,11 +18,6 @@ export default function ProductCardLogged() {
     const transformCoinEuroSellingPrice = adjustDecimaisSellingPrice.toLocaleString("de-DE", { style: "currency", currency: "EUR" })
     const transformCoinEuroListPrice = adjustDecimaisListPrice.toLocaleString("de-DE", { style: "currency", currency: "EUR" })
 
-    // useEffect(() => {
-    //     // const lastedWishlistItems = await ClientInfoLogged()
-    // }, [])
-    // console.log("Teste" ,lastProductCart)
-    
     return (
         <div className={isLoggedIn == true ? style.containerMain : style.hideContainerMain}>
             <div className={style.containerCards_productLogged}>
