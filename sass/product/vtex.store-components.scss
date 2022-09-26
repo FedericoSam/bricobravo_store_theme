@@ -66,6 +66,8 @@
 .productImage--pdp {
   border-radius: 16px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .productImagesGallerySwiperContainer--pdp {
@@ -114,6 +116,8 @@
   border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
+  min-width: 500px;
+  max-width: 501px;
 }
 .productNameContainer--product-page {
   font-size: 28px;
@@ -261,7 +265,7 @@
 
 .productImagesContainer {
   &--pdp--carousel {
-    padding-right: 7.75rem;
+    padding-right: 5.75rem;
 
     @include breakpoint('mobile') {
       padding-right: 0;
@@ -352,5 +356,13 @@
     margin-right: 0.5rem;
     text-transform: initial;
     background-color: $white;
+
+    @include breakpoint('mobile') {
+      margin: 1rem 0;
+    }
   }
 }
+
+// .container--pdp {
+//   max-height: 50px;
+// }

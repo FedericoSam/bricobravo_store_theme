@@ -8,6 +8,9 @@
   margin: 0 auto;
   padding: 0 2rem;
   box-sizing: border-box;
+  @media screen and (max-width: 48rem) {
+    padding: 0 16px;
+  }
 }
 
 :global(.vtex-account__page-body) {
@@ -47,25 +50,34 @@
   .menu {
     :global(.vtex-account_menu-link) {
       margin: 0;
-      padding: 14px 0 14px 10px;
+      padding: 10px 0 10px 10px;
     }
 
     padding-left: 0;
     .menuLink {
       margin: 0;
-      padding-left: 10px;
-      font-weight: 500;
+      padding: 10px 0 10px 10px;
+      font-weight: 400;
       color: $primary-default;
+      @media screen and (max-width: 48rem) {
+        padding: 13px 0;
+      }
     }
     .menuLinks {
+
+      .menuLink {
+        font-weight: bold;
+        color: #1d1e2c;
+      }
+      
       div div:nth-child(6) a{
         position: relative;
         &::after{
           position: absolute;
-          top: 0;
+          top: 0px;
           left: 10px;
           width: 110px;
-          height: 44px;
+          height: 36px;
           display: flex;
           background-color: #fff;
           content: 'Storico ordini';
@@ -73,17 +85,44 @@
           @media screen and (max-width: 48rem) {
             padding-left: 16px;
             left: -16px;
+            height: 42px;
           }
         }
       }
+
+      div div:last-child a {
+        position: relative;
+        &::after{
+          position: absolute;
+          top: 0;
+          left: 10px;
+          width: 110px;
+          height: 36px;
+          display: flex;
+          background-color: #fff;
+          content: 'La mia lista dei desideri';
+          align-items: center;
+          @media screen and (max-width: 48rem) {
+            padding-left: 16px;
+            left: -16px;
+            height: 42px;
+          }
+        }
+      }
+
       :global(.vtex-account_menu-link.b--action-primary) {
         color: #402493;
         border-left: 4px solid #402493;
+        //font-weight: 400;
+        font-weight: bold;
+        height: 32px;
       }
 
       :global(.vtex-account_menu-link.b--transparent) {
-        color: $primary-default;
-        font-weight: 500;
+        // color: $primary-default;
+        // font-weight: 400;
+        color: #1d1e2c;
+        font-weight: bold;
       }
     }
   }
@@ -337,6 +376,7 @@
         flex-wrap: wrap;
         gap: 15px;
         width: 100%;
+        position: relative;
         &::before {
           content: 'Aggiungi nuovo indirizzo';
           color: #332C32;
@@ -346,10 +386,12 @@
           letter-spacing: 0;
           line-height: 33px;
           position: absolute;
-          transform: translateY(-84px) translateX(-12px);
+          top: -60px;
+          left: -2px;
           background-color: white;
           @media screen and (max-width: 48rem) {
-            transform: translateY(-65px) translateX(4px);
+            top: -46px;
+            left: 14px;
             font-size: 24px;
           }
         }
@@ -643,7 +685,9 @@
             background: transparent;
             color: $blue-active;
             position: absolute;
-            transform: translate(-85px,-348px);
+            // transform: translate(-85px,-348px);
+            top: -30px;
+            left: 120px;
             font-size: 16px;
             line-height: 19px;
             font-weight: 500;
@@ -944,16 +988,19 @@
 
           :global(.vtex-product-summary-2-x-brandName) {
             width: 100%;
-            text-align: center;
+            max-width: 160px;
+            text-align: start;
             overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
             text-overflow: ellipsis;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
             line-height: 20px;
             color: $primary-default;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
+            margin-bottom: 25px;
           }
         }
 
@@ -982,10 +1029,10 @@
 
   @media screen and (max-width: 48rem) {
     .menu {
-      padding: 4rem 1rem !important;
+      padding: 4rem 0!important;
       width: 100%;
       :global(.vtex-account_menu-link) {
-        padding: 14px 0;
+        padding: 13px 0;
         border-bottom: 1px solid #d8d8d8;
       }
       .menuLink {
@@ -993,6 +1040,12 @@
         border-bottom: 1px solid #d8d8d8;
       }
       .menuLinks {
+
+        .menuLink {
+          font-weight: bold;
+          color: #1d1e2c;
+        }
+
         &::before {
           content: '/ Il mio profilo';
           transform: translateY(-126px);
@@ -1023,8 +1076,9 @@
         }
         .boxContainerFooter {
           :global(.vtex-button) {
-            top: -45px;
-            left: 250px;
+            top: -18px;
+            left: unset;
+            right: -12px;
           }
         }
       }
@@ -1155,7 +1209,7 @@
             font-size: 30px;
             line-height: 20px;
             padding-top: 24px;
-            padding-left: 1rem;
+            padding-left: 4px;
           }
           :global(.vtex-pageHeader__children) {
             position: absolute;
@@ -1313,4 +1367,14 @@
 
 :global(.vtex-my-orders-app-3-x-cancelBtn) {
   display: none!important;
+}
+
+.userName {
+  font-weight: bold;
+}
+
+.userGreeting {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1d1e2c;
 }

@@ -550,6 +550,20 @@
     @include breakpoint('mobile') {
       margin-left: 1rem;
     }
+    :global(.vtex-slider-layout-0-x-caretIcon--shelf-also-view){
+      display: flex!important;
+      @include breakpoint('mobile') {
+        display: none;
+      }
+    }
+  }
+  &--also-view-product-page {
+    :global(.vtex-slider-layout-0-x-caretIcon--shelf-also-view){
+      display: flex!important;
+      @include breakpoint('mobile') {
+        display: none;
+      }
+    }
   }
 
   &--pdp-faq {
@@ -1017,8 +1031,9 @@
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 7;
       text-overflow: ellipsis;
-      white-space: pre-line;
+      //white-space: pre-line;
       overflow: hidden;
+      max-height: 98px;
     }
 
     :global(.vtex-store-link-0-x-link--completeDescriptionAnchor) {

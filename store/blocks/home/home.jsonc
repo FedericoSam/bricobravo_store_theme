@@ -437,8 +437,9 @@
     "props": {
       "href": "#",
       "blockClass": "home-shelf",
-      "label": ""
-    }
+      "label": "Mostra tutto"
+    },
+    "title": "Link vetrina 1"
   },
   "responsive-layout.desktop#shelf-also-view": {
     "children": ["list-context.product-list#also-view"]
@@ -486,8 +487,9 @@
     "props": {
       "href": "#",
       "blockClass": "home-shelf",
-      "label": ""
-    }
+      "label": "Mostra tutto"
+    },
+    "title": "Link vetrina 2"
   },
 
   "flex-layout.row#home-shelf-03": {
@@ -530,8 +532,9 @@
     "props": {
       "href": "#",
       "blockClass": "home-shelf",
-      "label": ""
-    }
+      "label": "Mostra tutto"
+    },
+    "title": "Link vetrina 3"
   },
 
   "flex-layout.row#home-blog": {

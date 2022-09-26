@@ -378,44 +378,10 @@
       "preserveLayoutOnMobile": true
     }
   },
-
-  // "drawer": {
-  //   "children": ["menu#drawer"],
-  //   "blocks": ["drawer-trigger"],
-  //   "props": {
-  //     "blockClass": "filterMobileDrawer",
-  //     "slideDirection": "rightToLeft"
-  //     //"backdropMode": "none"
-  //   }
-  // },
-
-  // "drawer-trigger": {
-  //   "children": ["rich-text#filtra"],
-  //   "props": {
-  //     "blockClass": "filterMobileDrawer"
-  //   }
-  // },
-
-  // "rich-text#filtra": {
-  //   "props": {
-  //     "text": "Filtri",
-  //     "blockClass": "filterMobileDrawer"
-  //   }
-  // },
-
-  // "menu#drawer": {
-  //   "children": ["filter-navigator.v3#mobile"],
-  //   "props": {
-  //     "orientation": "vertical",
-  //     "blockClass": "filterMobileDrawer"
-  //   }
-  // },
-
   "flex-layout.row#searchControlsMobile": {
     "children": [
       "search-products-count-per-page",
       "order-by.v2",
-      //"drawer"
       "filter-navigator.v3#mobile"
     ],
     "props": {
@@ -423,24 +389,13 @@
       "blockClass": "searchControlsMobile"
     }
   },
-  // "flex-layout.col#orderByMobile": {
-  //   "children": ["order-by.v2"],
-  //   "props": {
-  //     "blockClass": "orderByMobileCol"
-  //   }
-  // },
+
   "flex-layout.row#productCountMobile": {
     "children": ["total-products.v2"],
     "props": {
       "blockClass": "productCountMobileRow"
     }
   },
-  // "flex-layout.col#filterMobile": {
-  //   "children": ["filter-navigator.v3#mobile"],
-  //   "props": {
-  //     "blockClass": "filterMobileCol"
-  //   }
-  // },
   "filter-navigator.v3#mobile": {
     "blocks": ["sidebar-close-button"],
     "props": {
@@ -454,7 +409,6 @@
       "updateOnFilterSelectionOnMobile": false,
       "preventRouteChange": true,
       "totalProductsOnMobile": "show"
-      //"showClearAllFiltersOnDesktop": true
     }
   },
   "search-not-found-layout": {

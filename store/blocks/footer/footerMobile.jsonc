@@ -93,14 +93,14 @@
   },
   "image#Icondown": {
     "props": {
-      "src": "assets/icons/arrowDown.svg",
-      "width": "25px"
+      "src": "assets/icons/down-arrow-footer.svg",
+      "width": "14px"
     }
   },
   "image#IconUp": {
     "props": {
-      "src": "assets/icons/arrowUp.svg",
-      "width": "25px"
+      "src": "assets/icons/up-arrow-footer.svg",
+      "width": "14px"
     }
   }
 }
