@@ -349,13 +349,13 @@
   border: 1px solid $blue-dark;
   margin-top: 1rem;
   transition: all 0.3s ease;
-  min-height: 48px;
+  min-height: 40px;
   text-transform: uppercase;
 
   :global(.vtex-button__label) {
     font-size: 14px;
     font-weight: 600;
-    padding: 0;
+    padding: 0!important;
     color: $blue-dark;
     &:hover {
       color: #fff;

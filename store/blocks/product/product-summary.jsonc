@@ -113,7 +113,6 @@
       "blockClass": "savingPercentage"
     }
   },
-
   // "flex-layout.row#productReviews": {
   //   "children": ["product-reviews"],
   //   "props": {
