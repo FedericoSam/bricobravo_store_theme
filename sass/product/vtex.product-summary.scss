@@ -355,7 +355,7 @@
   :global(.vtex-button__label) {
     font-size: 14px;
     font-weight: 600;
-    padding: 0;
+    padding: 0!important;
     color: $blue-dark;
     &:hover {
       color: #fff;
