@@ -4,7 +4,11 @@
 .drawer{
   &--minicart-background{
     max-width: 440px !important;
-    max-height: 90vh;
+    @include breakpoint ('desktop') {
+      max-height: 90vh;
+
+    }
+   
   }
 }
 .minicartWrapperContainer {
