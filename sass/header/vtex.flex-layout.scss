@@ -8,6 +8,16 @@
       @include container-main;
 
       position: relative;
+      //height: 36px;
+      .stretchChildrenWidth:last-child {
+        .flexCol {
+      //     justify-content: center;
+
+          :global(.vtex-disclosure-layout-1-x-trigger--header-disclosureTrigger) {
+            height: 36px;
+          }
+        }
+      }
     }
   }
   &--header-desktop-upper {

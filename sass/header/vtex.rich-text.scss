@@ -27,6 +27,8 @@
     font-size: 1rem;
     font-weight: 500;
     width: max-content;
+    margin-top: 8px;
+    margin-bottom: auto;
   }
   &--minicartEmptyTitle {
     display: flex;
@@ -57,6 +59,10 @@
     align-items: center;
     width: 290px;
   }
+
+  // &--header-titlePromotion {
+  //   align-self: center;
+  // }
 }
 
 
