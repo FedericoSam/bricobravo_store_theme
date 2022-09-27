@@ -1,0 +1,9 @@
+@import '_media-queries.scss';
+@import '_variables.scss';
+
+.stackItem--savingsStack--first {
+    @include breakpoint('mobile') {
+        z-index: 1;
+    }
+    
+  }

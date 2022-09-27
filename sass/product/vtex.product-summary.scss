@@ -62,9 +62,9 @@
 }
 
 .container--summaryComplete
-:global(.vtex-stack-layout-0-x-stackContainer--savingsStack){
-  height: 164px;
-}
+  :global(.vtex-stack-layout-0-x-stackContainer--savingsStack){
+    height: 164px;
+  }
   :global(.vtex-store-components-3-x-installmentsPrice) {
   display: none;
 }
@@ -157,11 +157,22 @@
   @include mobile {
     object-fit: cover !important;
     display: block;
+    top: 0px;
   }
 }
 
 .clearLink--summaryComplete {
   position: relative;
+
+  @include breakpoint('mobile') {
+    width: 200px;
+    height: 130px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: 3;
+  }
+  
 }
 
 .element--summaryComplete {
@@ -527,6 +538,7 @@
 
   @include mobile {
     width: 100%;
+    //overflow: hidden;
   }
 }
 
@@ -602,4 +614,24 @@
       }
     }
   }
+}
+
+.imageContainer {
+  @include breakpoint('mobile') {
+    .slick-track {
+      display: flex;
+    }
+    
+    .slick-slider {
+      max-height: 200px;
+      max-width: 200px;
+    }
+  }
+}
+
+.imageStackContainer {
+  @include breakpoint('mobile') {
+    overflow: hidden;
+  }
+  
 }

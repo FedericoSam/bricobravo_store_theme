@@ -155,11 +155,11 @@
       "blockClass": "home-main-slider-images",
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
-      "showPaginationDots": "never",
-      "autoplay": {
-        "timeout": 2000,
-        "stopOnHover": true
-      }
+      "showPaginationDots": "never"
+      // "autoplay": {
+      //   "timeout": 2000,
+      //   "stopOnHover": true
+      // }
     }
   },
 
