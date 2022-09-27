@@ -1,6 +1,9 @@
-export default async function ClientInfoLogged(
+
+// Função que retorna os produtos do wishlist
+export default async function GetItemsWishlistByEmail(
   emailUserLogged: string
 ): Promise<any> {
+  // Função que filtra pelo email do usuario no wishlists
   // function filterByEmailWishlist(email: string, wishlists: any) {
   //   console.log(wishlists, "PARAMETRO UTILIZADO NO FILTRO", email, 'EMAIL DA CONTA LOGADA')
   //   const wishlistUser = wishlists.filter(
@@ -27,6 +30,7 @@ export default async function ClientInfoLogged(
     }
 
     try {
+      // Verificar um endpoint que retorne as informações já filtradas pelo email ao inves de puxar tudo e fazer o filtro por aqui
       const response: any = await fetch(
         `/api/dataentities/wishlist/search?_email=${emailUserLogged}`,
         options
