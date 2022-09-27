@@ -19,9 +19,6 @@
       "composition": "children",
       "allowed": "*"
     },
-    "client-info-logged":{
-        "component": "ClientInfoLogged"
-    },
     "product-card-logged":{
         "component": "ProductCardLogged"
     }

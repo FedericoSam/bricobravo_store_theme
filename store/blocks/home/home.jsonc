@@ -11,8 +11,7 @@
       "flex-layout.row#home-blog",
       // "flex-layout.row#home-reviews",
       "flex-layout.row#home-services",
-      "flex-layout.row#homeBottomSection",
-      "client-info-logged"
+      "flex-layout.row#homeBottomSection"
     ]
   },
   "flex-layout.row#submenu-categories": {
