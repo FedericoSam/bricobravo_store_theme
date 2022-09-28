@@ -349,6 +349,30 @@
   font-size: 14px;
   font-weight: 500;
 }
+.filterAccordionItemBox--filterMobile--categoria-2, .filter__container--category-2{
+  position: relative;
+  &::after{
+    content:'Sottocategoria';
+    background-color: #FFF;
+    height: 22px;
+    min-width: 100px;
+    position: absolute;
+    left: 0;
+    top: 16px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+    color: #332c32;
+    @media screen and (max-width: 768px) {
+      top: 23px;
+    }
+  }
+}
+// .filterAccordionItemBox--filterMobile--categoria-2{
+//   &::after{
+//     top: 23px;
+//   }
+// }
 
 .filters--layout {
   padding: 16px;
@@ -361,13 +385,6 @@
 
   .filterItem {
     margin-bottom: 0.5rem;
-    // &--premium::after{
-    //   content: url('assets/images/premium.png');
-    //   position: relative;
-    //   top: -18px;
-    //   left: 30px;
-    //   background-color: #fff;
-    // }
   }
 
   .filterPopupArrowIcon {
@@ -516,15 +533,15 @@
       max-height: 214px !important;
       scrollbar-width: thin;
       scrollbar-color: #B8B8B8 transparent;
-      
+
       .seeMoreButton {
         color: #1B0E41;
       }
-      
+
     @include desktop {
         :global(.vtex-slider-container) {
           transform: translateY(43px);
-  
+
           :global(.vtex-slider) {
             width: 282px;
             transform: translateX(10px);
@@ -966,7 +983,7 @@
   position: fixed;
   bottom: -18px;
   right: calc( calc( calc(159 * 100vw) - 60350px) / 340 );
-  
+
   @media screen and (min-width: 540px) {
     right: calc(calc(calc(18 * 100vw) - 7820px) / 25);
   }
