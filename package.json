@@ -12,6 +12,11 @@
     "lint:css": "stylelint ./sass/**/* -q",
     "minify": "imagemin-lint-staged ./assets/**/*.{png,jpeg,jpg,gif,svg}"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [
       "eslint --fix",

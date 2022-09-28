@@ -19,6 +19,9 @@
       "composition": "children",
       "allowed": "*"
     },
+    "product-card-logged":{
+        "component": "ProductCardLogged"
+    },
     "login-button-check": {
         "component": "LoginButtonCheck"
     }
