@@ -14,7 +14,7 @@ export default function ProductSummaryMin({
 }:ProductSummaryMinProps) {
   return (
     <a className={style.linkCardProductLogged} href={`${linkProduct}`}>
-         <img src={`https:${lastProductCart?.imageUrls?.at1x}`} alt={lastProductCart?.name} />
+         <img src={`${lastProductCart}`} alt={lastProductCart?.name} />
     </a>
   )
 }

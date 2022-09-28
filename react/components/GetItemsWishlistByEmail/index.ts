@@ -1,25 +1,23 @@
 
 // Função que retorna os produtos do wishlist
 export default async function GetItemsWishlistByEmail(
-  emailUserLogged: string
+  storeUserEmail: string
 ): Promise<any> {
-  // Função que filtra pelo email do usuario no wishlists
-  // function filterByEmailWishlist(email: string, wishlists: any) {
-  //   console.log(wishlists, "PARAMETRO UTILIZADO NO FILTRO", email, 'EMAIL DA CONTA LOGADA')
-  //   const wishlistUser = wishlists.filter(
-  //     (wishlist: any) => wishlist.email === email
-  //   )
-  //   return wishlistUser[0].ListItemsWrapper[0].ListItems
-  // }
 
   function getLastProduct(listItens: any) {
-    const sizeListItens = listItens.length
+    console.log('listItens', listItens)
 
+    const lastWishlistProducts = listItens[0].ListItemsWrapper[0].ListItems
+    console.log('lastWishlistProducts', lastWishlistProducts);
+    
+    const sizeListItens = lastWishlistProducts.length
+    console.log('sizeListItens', sizeListItens)
+       
     if (sizeListItens === 0) return 'Sem Favoritos'
 
     return sizeListItens > 1
-      ? [listItens[sizeListItens - 1], listItens[sizeListItens - 2]]
-      : listItens[sizeListItens - 1]
+      ? [lastWishlistProducts[sizeListItens - 1], lastWishlistProducts[sizeListItens - 2]]
+      : lastWishlistProducts[sizeListItens - 1]
   }
 
   async function getItensWishlist() {
@@ -31,11 +29,13 @@ export default async function GetItemsWishlistByEmail(
 
     try {
       // Verificar um endpoint que retorne as informações já filtradas pelo email ao inves de puxar tudo e fazer o filtro por aqui
+      console.log('storeUserEmail', storeUserEmail)
       const response: any = await fetch(
-        `/api/dataentities/wishlist/search?_email=${emailUserLogged}`,
+        `/api/dataentities/wishlist/search?_schema=wishlist&email=${storeUserEmail}`,
+        // `/api/dataentities/wishlist/search?${emailUserLogged}`,
         options
       ).then((res) => res.json()).catch((err) => console.log(err))
-      console.log(emailUserLogged, response, 'LISTAAAAAAAAAAAAAAAAA')
+      console.log('response', response)
       // const wishlistUser = filterByEmailWishlist(emailUserLogged, response)
 
       // console.log(wishlistUser, 'WISHLIST DO USUSARIO LOGADO')
@@ -47,34 +47,16 @@ export default async function GetItemsWishlistByEmail(
   }
 
   const resp = await getItensWishlist().then((res) => res)
-  const idproducts = await resp.map((ids: any) => ids.ProductId)
-  const featchWishProduct = await fetch(
-    `api/catalog_system/pub/products/variations/${idproducts[0]}`
-  ).then((res) => res.json())
 
-  console.log(resp, idproducts, featchWishProduct)
+  let listProductsWishAll = []
 
-  return resp
+  
+  for await (const products of await Promise.all(resp
+    .map((e: any) => fetch(`/api/catalog_system/pub/products/variations/${e.ProductId}`)
+    .then((product: (any)) => product.json())))) {
+      listProductsWishAll.push(products)
+  }
+  
+  console.log('listProductsWishAll', listProductsWishAll)
+  return listProductsWishAll
 }
-
-// Lógica para o útimo pedido
-
-// async function getLastPurchase() {
-//   const options = {
-//       headers: {
-//         'Content-Type': 'application/json'
-//       }
-//     }
-//     try {
-//       const resp : any = await fetch(`api/orders/feed/config`, options).then(res => res.json())
-//       console.log("Ola", resp)
-//       // const wishlistUser = filterByEmailWishlist(orderForm.clientProfileData?.email, resp.wishLists)
-//       // return getLastProduct(wishlistUser)
-//     } catch(err) {
-//       console.error(err)
-//     }
-//   }
-
-//   useEffect(() => {
-//     getLastPurchase()
-//   }, [])
