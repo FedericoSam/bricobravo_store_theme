@@ -4,6 +4,11 @@
 .drawer{
   &--minicart-background{
     max-width: 440px !important;
+    @include breakpoint ('desktop') {
+      max-height: 90vh;
+
+    }
+   
   }
 }
 .minicartWrapperContainer {
@@ -70,6 +75,21 @@
 }
 .drawerContent--minicart-background {
   background-color: #FFF;
+  @include breakpoint('desktop') {
+    overflow-y: clip;
+  }
+
+  .childrenContainer--minicart-background {
+    @include breakpoint('desktop') {
+      height: calc(90vh - 59px);
+    }
+
+    .minicartSideBarContentWrapper--minicart-background {
+      @include breakpoint('desktop') {
+        height: inherit !important;
+      }
+    }
+  }
 }
 
 .minicartCheckoutButton {

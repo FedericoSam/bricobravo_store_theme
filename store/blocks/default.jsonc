@@ -11,7 +11,10 @@
   },
 
   "store.login": {
-    "blocks": ["login-content#default"]
+    "blocks": [
+      "login-content#default",
+      "login-button-check"
+    ]
   },
 
   "login-content#default": {
