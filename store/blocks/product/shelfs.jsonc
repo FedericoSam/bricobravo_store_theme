@@ -65,10 +65,10 @@
       "showPaginationDots": "never",
       "showNavigationArrows": "desktopOnly",
       "navigationStep": 2,
-      "autoplay": {
-        "timeout": 3000,
-        "stopOnHover": true
-      },
+      // "autoplay": {
+      //   "timeout": 3000,
+      //   "stopOnHover": true
+      // },
       "infinite": true
       //"centerMode": "to-the-left"
     }
@@ -95,10 +95,10 @@
       "showNavigationArrows": "desktopOnly",
       "navigationStep": 1,
       "centerMode": "to-the-left",
-      "autoplay": {
-        "timeout": 2000,
-        "stopOnHover": true
-      },
+      // "autoplay": {
+      //   "timeout": 2000,
+      //   "stopOnHover": true
+      // },
       "infinite": true
     }
   },
