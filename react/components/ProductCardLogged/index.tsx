@@ -47,11 +47,8 @@ export default function ProductCardLogged() {
   const [lastOrderProduct, setLastOrderProduct] = useState<any>({});
 
   useEffect(() => {
-    
-    console.log('data', data);
-    console.log("isAuthenticated", isAuthenticated);
-    
-    if (isAuthenticated) {
+
+    if (isAuthenticated === 'true') {
       setisAuthenticatedState(true);
       // const storeUserId = namespaces?.authentication?.storeUserId?.value;
       const storeUserEmail = namespaces?.authentication?.storeUserEmail?.value;
@@ -60,12 +57,8 @@ export default function ProductCardLogged() {
       
       GetItemOrder().then((res) => setLastOrderProduct(res))  
 
-
-      console.log(wishlistProducts);
-      console.log(lastOrderProduct);
-
-      console.log("lastProductCart", lastProductCart)
-      
+    } else {
+      setisAuthenticatedState(false);
     }
 
   }, [ data ])
@@ -94,11 +87,8 @@ export default function ProductCardLogged() {
           <div className={style.cardProduct_Wishlist}>
             <p className={style.cardProduct_Title}>La tua lista dei desideri</p>
             <div className={style.cardProduct_WishlistContainerProducts}>
-              {console.log("wishlistProducts", wishlistProducts)}
-              <div className={
-                wishlistProducts.length === 0 ? style.containerMain : style.hideContainerMain
-              }>
-              {wishlistProducts.map(({ skus }: any) => {
+          
+              { wishlistProducts.map(({ skus }: any) => {
                 return (
                   <ProductSummaryWish 
                     name={skus[0].skuname}
@@ -111,17 +101,20 @@ export default function ProductCardLogged() {
                   />
                   )
                 })
-              }              
-              </div>
+              }               
             </div>
           </div>
           <div className={style.cardProduct_lastPurchase}>
             <p className={style.cardProduct_Title}>I miei ordini</p>
-            <ProductSummaryMin
-              style={style}
-              linkProduct={lastOrderProduct.detailUrl}
-              lastProductCart={lastOrderProduct.imageUrl}
-            />
+            <div className={
+              lastOrderProduct.detailUrl !== undefined ? style.containerMain : style.hideContainerMain
+            }>
+              <ProductSummaryMin
+                style={style}
+                linkProduct={lastOrderProduct.detailUrl}
+                lastProductCart={lastOrderProduct.imageUrl}
+              />
+            </div>
           </div>
         </div>
       </div>
