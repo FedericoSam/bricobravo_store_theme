@@ -70,7 +70,7 @@
         color: #1d1e2c;
       }
       
-      div div:nth-child(5) a{
+      div div:nth-child(6) a{
         position: relative;
         &::after{
           position: absolute;
@@ -1078,7 +1078,7 @@
           :global(.vtex-button) {
             top: -18px;
             left: unset;
-            right: 6px;
+            right: -12px;
           }
         }
       }
@@ -1209,7 +1209,7 @@
             font-size: 30px;
             line-height: 20px;
             padding-top: 24px;
-            padding-left: 1rem;
+            padding-left: 4px;
           }
           :global(.vtex-pageHeader__children) {
             position: absolute;
