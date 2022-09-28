@@ -567,6 +567,12 @@
 }
 
 @include breakpoint('mobile') {
+  .accordionFilterContainer--filterMobile--categoria-3{
+    display: none;
+  }
+  .accordionFilterOpen--filterMobile--categoria-3{
+    display: none;
+  }
   .sidebar {
     min-width: 312px;
 
@@ -657,7 +663,7 @@
       .accordionFilterOpen--filterMobile {
         transform: translateX(-3rem);
         padding-bottom: 1rem;
-        &--subcategory{
+        &--subcategory, &--categoria-3{
           display: none;
         }
         .filterAccordionItemBox {
