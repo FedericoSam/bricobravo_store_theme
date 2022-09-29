@@ -70,25 +70,25 @@
         color: #1d1e2c;
       }
       
-      div div:nth-child(6) a{
-        position: relative;
-        &::after{
-          position: absolute;
-          top: 0px;
-          left: 10px;
-          width: 110px;
-          height: 36px;
-          display: flex;
-          background-color: #fff;
-          content: 'Storico ordini';
-          align-items: center;
-          @media screen and (max-width: 48rem) {
-            padding-left: 16px;
-            left: -16px;
-            height: 42px;
-          }
-        }
-      }
+      // div div:nth-child(6) a{
+      //   position: relative;
+      //   &::after{
+      //     position: absolute;
+      //     top: 0px;
+      //     left: 10px;
+      //     width: 110px;
+      //     height: 36px;
+      //     display: flex;
+      //     background-color: #fff;
+      //     content: 'Storico ordini';
+      //     align-items: center;
+      //     @media screen and (max-width: 48rem) {
+      //       padding-left: 16px;
+      //       left: -16px;
+      //       height: 42px;
+      //     }
+      //   }
+      // }
 
       div div:last-child a {
         position: relative;
@@ -852,53 +852,53 @@
     }
   }
 
-  :global(.legacy-orders) {
-    position: relative;
-    &::after {
-      content: 'Storico Ordini';
-      position: absolute;
-      color: $primary-default;
-      font-size: 28px;
-      font-weight: bold;
-      letter-spacing: 0;
-      line-height: 50px;
-      top: -70px;
-      left: -2px;
-      background-color: #fff;
-      width: 200px;
-      height: inherit;
-      @media screen and (min-width: 43rem) and (max-width: 48rem) {
-        height: inherit;
-        top: -55px;
-        left: 14px;
-      }
-      @media screen and (max-width: 43rem) {
-        font-size: 24px;
-        line-height: 24px;
-        top: -44px;
-        left: 13px;
-        height: 42px;
-      }
-    }
-    &::before {
-      content: '/ Storico ordini';
-      transform: translateY(-171px) translateX(-168px);
-      position: absolute;
-      color: #332C32;
-      font-family: Roboto;
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: 0;
-      padding: 2px 0 0 20px;
-      line-height: 14px;
-      background-image: url('assets/icons/home.svg');
-      background-repeat: no-repeat;
-      @media screen and (max-width: 48rem) {
-          display: none;
-      }
-    }
+  // :global(.legacy-orders) {
+  //   position: relative;
+  //   &::after {
+  //     content: 'Storico Ordini';
+  //     position: absolute;
+  //     color: $primary-default;
+  //     font-size: 28px;
+  //     font-weight: bold;
+  //     letter-spacing: 0;
+  //     line-height: 50px;
+  //     top: -70px;
+  //     left: -2px;
+  //     background-color: #fff;
+  //     width: 200px;
+  //     height: inherit;
+  //     @media screen and (min-width: 43rem) and (max-width: 48rem) {
+  //       height: inherit;
+  //       top: -55px;
+  //       left: 14px;
+  //     }
+  //     @media screen and (max-width: 43rem) {
+  //       font-size: 24px;
+  //       line-height: 24px;
+  //       top: -44px;
+  //       left: 13px;
+  //       height: 42px;
+  //     }
+  //   }
+  //   &::before {
+  //     content: '/ Storico ordini';
+  //     transform: translateY(-171px) translateX(-168px);
+  //     position: absolute;
+  //     color: #332C32;
+  //     font-family: Roboto;
+  //     font-size: 14px;
+  //     font-weight: 500;
+  //     letter-spacing: 0;
+  //     padding: 2px 0 0 20px;
+  //     line-height: 14px;
+  //     background-image: url('assets/icons/home.svg');
+  //     background-repeat: no-repeat;
+  //     @media screen and (max-width: 48rem) {
+  //         display: none;
+  //     }
+  //   }
 
-  }
+  // }
 
   :global(.wish-list) {
     &::before {
