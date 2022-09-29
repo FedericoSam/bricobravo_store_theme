@@ -3,6 +3,8 @@
 
 .stackItem--savingsStack--first {
     @include breakpoint('mobile') {
+        display: flex;
+        justify-content: center;
         z-index: 1;
     }
     
