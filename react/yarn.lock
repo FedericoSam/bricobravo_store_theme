@@ -2332,9 +2332,9 @@ braces@^3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-"bricobravo.store-theme@http://bricobravo.vtexassets.com/_v/public/typings/v1/bricobravo.store-theme@3.2.14/public/@types/bricobravo.store-theme":
-  version "3.2.14"
-  resolved "http://bricobravo.vtexassets.com/_v/public/typings/v1/bricobravo.store-theme@3.2.14/public/@types/bricobravo.store-theme#a2deb16465198e885d81c7da70a0691e0aacafd9"
+"bricobravo.store-theme@https://release--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.2.17+build1664415194/public/@types/bricobravo.store-theme":
+  version "3.2.17"
+  resolved "https://release--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.2.17+build1664415194/public/@types/bricobravo.store-theme#0bfe8e467a0de29d0e4afb7203018bed912a19ed"
 
 browser-process-hrtime@^1.0.0:
   version "1.0.0"
@@ -6638,6 +6638,10 @@ verror@1.10.0:
 "vtex.flex-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.flex-layout@0.20.1/public/@types/vtex.flex-layout":
   version "0.20.1"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.flex-layout@0.20.1/public/@types/vtex.flex-layout#dce9424c910091f0ba1f5229ce8ae80c9f7b7765"
+
+"vtex.formatted-price@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.formatted-price@0.5.0/public/@types/vtex.formatted-price":
+  version "0.5.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.formatted-price@0.5.0/public/@types/vtex.formatted-price#83cdbfaaa285def9342c6dc1d0d39e858c06afe5"
 
 "vtex.iframe@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.iframe@0.5.0/public/@types/vtex.iframe":
   version "0.5.0"

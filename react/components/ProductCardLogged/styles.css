@@ -67,15 +67,18 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.cardProduct_priceWish {
+    display: flex;
+}
 
 .cardProduct_Price, 
 .cardProduct_PriceL {
     color: #332C32;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 900;
     letter-spacing: 0;
-    line-height: 24px;
+    line-height: 10px;
 }
 
 .cardProduct_PriceL {
@@ -85,11 +88,11 @@
 .cardProduct_ListPrice {
     color: #332C32;
     font-family: Roboto;
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 0;
     line-height: 14px;
     text-decoration: line-through;
-    margin-right: 15px;
+    margin-right: 8px;
 }
 
 .container_InfoProducts {
