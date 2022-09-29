@@ -51,7 +51,7 @@
     "children": ["stack-layout#summary"]
   },
   "stack-layout#summary": {
-    "children": ["product-summary-image"],
+    "children": ["custom-product-summary-image"],
     "props": {
       "zIndexOffset": 3,
       "blockClass": "savingsStack"
