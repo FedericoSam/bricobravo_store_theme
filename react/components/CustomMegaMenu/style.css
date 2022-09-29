@@ -161,7 +161,7 @@
   display: block;
   height: max-content;
   list-style: none;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem !important;
   padding-right: 20px;
   width: 100%;
   width: max-content;
@@ -177,11 +177,13 @@
   color: #332C32;
   max-width: 240px;
   margin-top: 0;
+  margin-bottom: 10px;
 }
 .subcategory-item {
   text-align: left;
   list-style: none;
-  margin-bottom: 8px;
+  margin-bottom: 0px !important;
+  font-size: 14px !important;
 }
 .subcategory-container a:hover {
   text-decoration: underline;
