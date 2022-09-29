@@ -76,13 +76,11 @@
       "blockClass": "shelf-also-view",
       "showPaginationDots": "never",
       "showNavigationArrows": "desktopOnly",
-      "navigationStep": 2,
+      "navigationStep": 1,
       "autoplay": {
         "timeout": 3000,
         "stopOnHover": true
-      },
-      "infinite": true
-      //"centerMode": "to-the-left"
+      }
     }
   },
   "list-context.product-list#also-view-mobile": {
@@ -110,8 +108,7 @@
       "autoplay": {
         "timeout": 2000,
         "stopOnHover": true
-      },
-      "infinite": true
+      }
     }
   },
 
