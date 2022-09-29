@@ -1,3 +1,28 @@
-.slick-dots {
+/* .slick-dots {
   position: "relative"
+} */
+
+:global(.slick-track) {
+  display: flex;
+  column-gap: 2px;
+}
+
+:global(.slick-slider) {
+  max-height: 192px;
+  max-width: 194px;
+}
+/* :global(.slick-current) {
+  width: 240px;
+} */
+
+:global(.slick-dots) {
+  bottom: -6px !important;
+}
+:global(.slick-dots li){
+  margin: 0!important;
+} 
+:global(.slick-active button:before){
+  font-size: 10px!important;
+  opacity: 1!important;
+  color: #402493!important; 
 }
