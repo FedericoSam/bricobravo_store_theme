@@ -28,10 +28,7 @@
     "title": "Sottomenu categorie"
   },
   "flex-layout.row#category1": {
-    "children": [
-      "image#category1",
-      "link#category1"
-    ]
+    "children": ["image#category1", "link#category1"]
   },
   "image#category1": {
     "props": {
@@ -49,10 +46,7 @@
   },
 
   "flex-layout.row#category2": {
-    "children": [
-      "image#category2",
-      "link#category2"
-    ]
+    "children": ["image#category2", "link#category2"]
   },
   "image#category2": {
     "props": {
@@ -70,10 +64,7 @@
   },
 
   "flex-layout.row#category3": {
-    "children": [
-      "image#category3",
-      "link#category3"
-    ]
+    "children": ["image#category3", "link#category3"]
   },
   "image#category3": {
     "props": {
@@ -91,10 +82,7 @@
   },
 
   "flex-layout.row#category4": {
-    "children": [
-      "image#category4",
-      "link#category4"
-    ]
+    "children": ["image#category4", "link#category4"]
   },
   "image#category4": {
     "props": {
@@ -607,7 +595,7 @@
       },
       "showNavigationArrows": "desktopOnly",
       "showPaginationDots": "never",
-      "autoplay": false,
+      "autoplay": true,
       // "infinity": false,
       "navigationStep": 1,
       "fullWidth": true,
