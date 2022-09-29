@@ -86,6 +86,10 @@
 .priceContainer {
   align-items: center;
   justify-content: center;
+
+  @include breakpoint('mobile') {
+    margin-top: 1.5rem;
+  }
 }
 
 .nameWrapper,
@@ -150,30 +154,30 @@
   padding: 0;
 }
 
-.container--summaryComplete .image {
-  position: relative;
-  top: -24px;
-  z-index: 0;
-  @include mobile {
-    object-fit: cover !important;
-    display: block;
-    top: 0px;
-  }
-}
+// .container--summaryComplete .image {
+//   position: relative;
+//   top: -24px;
+//   z-index: 0;
+//   @include mobile {
+//     object-fit: cover !important;
+//     display: block;
+//     top: 0px;
+//   }
+// }
 
-.clearLink--summaryComplete {
-  position: relative;
+// .clearLink--summaryComplete {
+//   position: relative;
 
-  @include breakpoint('mobile') {
-    width: 200px;
-    height: 130px;
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    z-index: 3;
-  }
-  
-}
+//   // @include breakpoint('mobile') {
+//   //   width: 200px;
+//   //   height: 130px;
+//   //   position: absolute;
+//   //   bottom: -10px;
+//   //   left: 0;
+//   //   z-index: 3;
+//   // }
+
+// }
 
 .element--summaryComplete {
   padding: 0;
@@ -366,7 +370,7 @@
   :global(.vtex-button__label) {
     font-size: 14px;
     font-weight: 600;
-    padding: 0!important;
+    padding: 0 !important;
     color: $blue-dark;
     &:hover {
       color: #fff;
@@ -621,7 +625,7 @@
     .slick-track {
       display: flex;
     }
-    
+
     .slick-slider {
       max-height: 200px;
       max-width: 200px;
@@ -633,5 +637,5 @@
   @include breakpoint('mobile') {
     overflow: hidden;
   }
-  
+
 }

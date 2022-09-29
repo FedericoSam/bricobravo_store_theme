@@ -1,28 +1,31 @@
 {
-    "custom-add-to-cart": {
-        "component": "BuyButton"
-    },
-    "header-mega-menu": {
-        "component": "CustomMegaMenu"
-    },
-    "hide-filter": {
-        "component": "HideFilter"
-    },
-    "infinite-scroll": {
-        "component": "InfiniteScroll"
-    },
-    "header-mobile": {
-        "component": "HeaderMobile"
-    },
-    "collapse-text": {
-      "component": "CollapseText",
-      "composition": "children",
-      "allowed": "*"
-    },
-    "product-card-logged":{
-        "component": "ProductCardLogged"
-    },
-    "login-button-check": {
-        "component": "LoginButtonCheck"
-    }
+  "custom-add-to-cart": {
+    "component": "BuyButton"
+  },
+  "custom-product-summary-image": {
+    "component": "CustomProductSummaryImage"
+  },
+  "header-mega-menu": {
+    "component": "CustomMegaMenu"
+  },
+  "hide-filter": {
+    "component": "HideFilter"
+  },
+  "infinite-scroll": {
+    "component": "InfiniteScroll"
+  },
+  "header-mobile": {
+    "component": "HeaderMobile"
+  },
+  "collapse-text": {
+    "component": "CollapseText",
+    "composition": "children",
+    "allowed": "*"
+  },
+  "product-card-logged": {
+    "component": "ProductCardLogged"
+  },
+  "login-button-check": {
+    "component": "LoginButtonCheck"
+  }
 }

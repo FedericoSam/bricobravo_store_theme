@@ -595,7 +595,7 @@
       },
       "showNavigationArrows": "desktopOnly",
       "showPaginationDots": "never",
-      "autoplay": false,
+      "autoplay": true,
       // "infinity": false,
       "navigationStep": 1,
       "fullWidth": true,
