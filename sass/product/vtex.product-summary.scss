@@ -64,6 +64,9 @@
 .container--summaryComplete
   :global(.vtex-stack-layout-0-x-stackContainer--savingsStack){
     height: 164px;
+    @include breakpoint('desktop'){
+      top: -25px;
+    }
   }
   :global(.vtex-store-components-3-x-installmentsPrice) {
   display: none;
