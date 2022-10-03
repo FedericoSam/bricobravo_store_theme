@@ -27,5 +27,8 @@
   },
   "login-button-check": {
     "component": "LoginButtonCheck"
+  },
+  "show-clear-filter-button":{
+    "component": "ShowClearFilterButton"
   }
 }

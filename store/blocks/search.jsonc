@@ -288,8 +288,8 @@
   },
   "flex-layout.col#filter": {
     "children": [
-      "filter-navigator.v3"
-      // "rich-text#instructions-range-price"
+      "filter-navigator.v3",
+      "show-clear-filter-button"
     ],
     "props": {
       "blockClass": "filterCol"
@@ -302,12 +302,6 @@
       "showClearAllFiltersOnDesktop": true
     }
   },
-  // "rich-text#instructions-range-price": {
-  //   "props": {
-  //     "text": "**Arraste a barra vermelha** e defina uma faixa de valores para filtrar.",
-  //     "blockClass": "search-instructionRangePrice"
-  //   }
-  // },
   "flex-layout.row#searchinfo": {
     "children": [
       "hide-filter",
