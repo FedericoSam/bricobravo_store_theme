@@ -21,6 +21,15 @@
 .galleryItem {
   padding: 0;
   margin: 0;
+  @include breakpoint('mobile') {
+    :global(.vtex-flex-layout-0-x-flexCol--summaryInfo) {
+      transform: translateY(-22px);
+
+      // :global(.vtex-product-summary-2-x-brandName) {
+      //   height: 40px;
+      // }
+    }
+  }
 }
 
 .gallery--Desktop {
@@ -128,7 +137,7 @@
         :global(.vtex-product-summary-2-x-brandName) {
           font-size: 14px;
           @include mobile {
-            height: 20px;
+            height: 40px;
           }
         }
       }
