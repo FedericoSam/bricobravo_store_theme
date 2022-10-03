@@ -27,5 +27,8 @@
   },
   "login-button-check": {
     "component": "LoginButtonCheck"
+  },
+  "seller-spedizione": {
+    "component": "SellerSpedizione"
   }
 }
