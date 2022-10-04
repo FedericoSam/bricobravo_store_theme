@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 
 // This custom is to show the clear filter button when the user click at the first filter Item
 const ShowClearFilterButton = () => {
