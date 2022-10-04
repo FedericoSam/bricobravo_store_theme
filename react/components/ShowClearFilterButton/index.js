@@ -20,11 +20,7 @@ useEffect(() => {
   }, 1500);
 
   },[])
-  return (
-    <>
-    </>
-
-  )
+  return null
 }
 
 export default ShowClearFilterButton
