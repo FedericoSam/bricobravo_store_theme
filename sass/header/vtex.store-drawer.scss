@@ -8,7 +8,13 @@
   width: 54px;
   justify-content: center;
   @media(min--moz-device-pixel-ratio:0) {
-    height:40.5px;
+    height:39.8px;
+    @media screen and (min-width: 2000px) {
+      height: 40.3px;
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1460px) {
+      height: 40.67px;
+    }
   }
   &::before {
     content: "";
