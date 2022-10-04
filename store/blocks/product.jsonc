@@ -6,7 +6,7 @@
     ]
   },
   "responsive-layout.desktop#product": {
-    "title":"Prodotti Desktop",
+    "title": "Prodotti Desktop",
     "children": [
       "flex-layout.row#breadcrumb",
       "flex-layout.row#product-main",
@@ -21,7 +21,7 @@
     ]
   },
   "responsive-layout.mobile#product": {
-    "title":"Prodotti Mobile",
+    "title": "Prodotti Mobile",
     "children": [
       "flex-layout.row#breadcrumb",
       "flex-layout.row#product-main-mobile",
@@ -37,45 +37,48 @@
   },
 
   "flex-layout.row#product-shelf-1-title": {
-    "title":"Prodotti vetrina 1",
+    "title": "Prodotti vetrina 1",
     "children": ["rich-text#product-shelf-1-title"],
     "props": {
       "blockClass": "product-shelf-1-title"
     }
   },
   "rich-text#product-shelf-1-title": {
-    "title":"Riga del titolo vetrina 1",
+    "title": "Riga del titolo vetrina 1",
     "props": {
       "blockClass": "product-shelf-1-title",
       "text": "## Prodotti correlati"
     }
   },
   "flex-layout.row#product-shelf-2-title": {
-    "title":"Prodotti vetrina 2",
+    "title": "Prodotti vetrina 2",
     "children": ["rich-text#product-shelf-2-title"],
     "props": {
       "blockClass": "product-shelf-2-title"
     }
   },
   "rich-text#product-shelf-2-title": {
-    "title":"Riga del titolo vetrina 2",
+    "title": "Riga del titolo vetrina 2",
     "props": {
       "blockClass": "product-shelf-2-title",
       "text": "## Potrebbe interessarti anche"
     }
   },
   "flex-layout.row#product-shelf-3-title": {
-    "title":"Prodotti vetrina 3",
+    "title": "Prodotti vetrina 3",
     "children": ["rich-text#product-shelf-3-title"],
     "props": {
       "blockClass": "product-shelf-3-title"
     }
   },
   "rich-text#product-shelf-3-title": {
-    "title":"Riga del  titolo vetrina 3",
+    "title": "Riga del  titolo vetrina 3",
     "props": {
       "blockClass": "product-shelf-3-title",
       "text": "## Prodotti sponsorizzati"
     }
+  },
+  "store.not-found#product": {
+    "blocks": ["search-not-found-layout"]
   }
 }
