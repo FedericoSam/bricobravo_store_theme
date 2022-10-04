@@ -388,6 +388,7 @@
   "disclosure-content#shipping-info": {
     "title": "Riga del titulo spedizione",
     "children": [
+      "seller-spedizione",
       "rich-text#shipping-info-content",
       "product-seller-name#sellerName"
     ]
@@ -401,7 +402,7 @@
   "rich-text#shipping-info-content": {
     "props": {
       "blockClass": "pdp-shipping-info",
-      "text": "Consegna stimata entro **3 giorni lavorativi**<br/>Spedizione **calcolata al momento del checkout**<br/>Reso **30 giorni**<br/>Garanzia **2 anni sul prodotto**<br/>"
+      "text": "Reso **30 giorni**<br/>Garanzia **2 anni sul prodotto**<br/>"
     }
   },
   "product-seller-name#sellerName": {
