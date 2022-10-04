@@ -3,9 +3,7 @@ import { useProduct } from 'vtex.product-context'
 const SellerSpedizione = () => {
 
     const [shippingInfo, setShippingInfo] = React.useState();
-
-    const productContextValue = useProduct();
-    //console.log(productContextValue);
+    const productContextValue = useProduct();   
 
     async function fetchData(product) {
 
@@ -27,48 +25,38 @@ const SellerSpedizione = () => {
                 const finalData = datajson;
                 return finalData
             } )
-            
-            console.log("fetchData", info)         
+             
             setShippingInfo(info); 
-            //var shipping = info.logisticsInfo[0].slas[0].shippingEstimate
+
             return info
-        // const payload = {
-        //     id:product.productId,
-        //     quantity:1,
-        //     seller:product.items[0].sellers[0].sellerName,
-        //     country:"ITA"
-        // }
-        
-        // const data = await fetch("/api/checkout/pub/orderForms/simulation",{method:"POST", body:payload}).then((response) => {
-        //     if (response.ok) {
-        //       return response.json();
-        //     }
-          
-        //   console.log(response.body.json())
-        //   }).then((d) => d.json())
-        // console.info(data)
+
     }
+
     var toRender = false;
+
     if (productContextValue.product) {
-        const infoData = fetchData(productContextValue.product);
-        // if (info) {
-        //     console.log("info")
-            //  console.log("info", infoData)
+
+        fetchData(productContextValue.product);
+
              if (shippingInfo) {
-                // console.log("ans",shippin.logisticsInfo[0].slas[0].shippingEstimate)
-                var shippingDays = shippingInfo.logisticsInfo[0].slas[0].shippingEstimate.replace("bd", " giorni lavorativi");
+
+                var shippingDays = shippingInfo.logisticsInfo[0].slas[0].shippingEstimate;
+                var toReplace = (shippingDays.includes("bd") ? "bd" : "d");
+                shippingDays = shippingDays.replace(toReplace, " giorni lavorativi");
                 var shippingPrice = shippingInfo.logisticsInfo[0].slas[0].price;
+
                 if (shippingPrice === 0) {
                     shippingPrice = "gratuita";
-                } 
+                } else {
+                    shippingPrice = `${(shippingPrice/100)?.toLocaleString('BR', {
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2,
+                      })} €`
+                }
+
                 toRender = true;
              }
              
-        //     //var shippingEstimate = info.logisticsInfo[0].slas[0].shippingEstimate;
-        // // var shippingEstimateNum = shippingEstimate.replace("bd"," giorni lavorativi");
-        // }
-        
-
     }
     
 
