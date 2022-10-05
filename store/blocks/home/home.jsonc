@@ -550,14 +550,14 @@
   },
   "image#home-blog": {
     "props": {
-      "src": "assets/icons/blog/blogTitle.svg",
+      "src": "assets/icons/blog/blog-title.svg",
       "blockClass": "home-blog-image"
     }
   },
   "rich-text#home-blog-subtitle": {
     "props": {
       "blockClass": "home-blog-subtitle",
-      "text": "Qui troverai tante idee creative e ispirazioni, consigli utili, tutorial e molto altro per la tua casa!",
+      "text": "Qui troverai tante **idee creative** e **ispirazioni, consigli utili, tutorial** e molto altro per la tua casa!",
       "htmlId": "Sottotitolo del blog"
     },
     "title": "Sottotitolo del blog"
