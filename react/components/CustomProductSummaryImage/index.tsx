@@ -35,8 +35,11 @@ const CustomProductSummaryImage: React.FC = () => {
 
   return (
     <div onClick={function (e) {
-      e.preventDefault();
-      e.stopPropagation();}
+      if (window.screen.width <= 1024) {
+        e.preventDefault();
+        e.stopPropagation();}
+      }
+      
       }>
       <Helmet>
         <link
@@ -61,7 +64,7 @@ const CustomProductSummaryImage: React.FC = () => {
       {!isMobile ? (
         <CustomImage
           src={selectedItem.images[0].imageUrl}
-          maxHeight={'194'}
+          maxHeight={'194px'}
           alt={selectedItem.images[0].imageLabel}
           className={''}
           onError={() => {}}
