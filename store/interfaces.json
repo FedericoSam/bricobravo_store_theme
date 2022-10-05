@@ -28,6 +28,9 @@
   "login-button-check": {
     "component": "LoginButtonCheck"
   },
+  "seller-spedizione": {
+    "component": "SellerSpedizione"
+  },
   "show-clear-filter-button":{
     "component": "ShowClearFilterButton"
   }

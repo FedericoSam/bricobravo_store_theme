@@ -2332,9 +2332,9 @@ braces@^3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-"bricobravo.store-theme@http://bricobravo.vtexassets.com/_v/public/typings/v1/bricobravo.store-theme@3.2.14/public/@types/bricobravo.store-theme":
-  version "3.2.14"
-  resolved "http://bricobravo.vtexassets.com/_v/public/typings/v1/bricobravo.store-theme@3.2.14/public/@types/bricobravo.store-theme#a2deb16465198e885d81c7da70a0691e0aacafd9"
+"bricobravo.store-theme@https://bric179--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.2.19+build1664999957/public/@types/bricobravo.store-theme":
+  version "3.2.19"
+  resolved "https://bric179--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.2.19+build1664999957/public/@types/bricobravo.store-theme#4b99fd3ac8d1f4557b3e48474213e271b05644ae"
 
 browser-process-hrtime@^1.0.0:
   version "1.0.0"
@@ -6759,6 +6759,10 @@ verror@1.10.0:
   version "3.118.16"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.118.16/public/@types/vtex.search-result#faaa62bee6fb7661bf4eb6bfda22e066d4bc61b1"
 
+"vtex.search@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search@2.14.0/public/@types/vtex.search":
+  version "2.14.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search@2.14.0/public/@types/vtex.search#4bd4dfee3cbcbad08aee23a4ecd29e21d8853395"
+
 "vtex.seller-selector@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.seller-selector@0.4.0/public/@types/vtex.seller-selector":
   version "0.4.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.seller-selector@0.4.0/public/@types/vtex.seller-selector#f60d09442cb752acbe5790b0b6e8f9ac79cdb0a8"
@@ -6799,9 +6803,9 @@ verror@1.10.0:
   version "0.16.2"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-drawer@0.16.2/public/@types/vtex.store-drawer#3e3a0e07babcf623922f1eb0c85185bcd12b8002"
 
-"vtex.store-footer@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-footer@2.25.0/public/@types/vtex.store-footer":
-  version "2.25.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-footer@2.25.0/public/@types/vtex.store-footer#8a6c11f53c281793609b03b205f5f7cadac70b4f"
+"vtex.store-footer@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-footer@2.26.0/public/@types/vtex.store-footer":
+  version "2.26.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-footer@2.26.0/public/@types/vtex.store-footer#434f87c10fafb4d145dea1c95906a650d9fab04a"
 
 "vtex.store-form@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-form@0.8.0/public/@types/vtex.store-form":
   version "0.8.0"
