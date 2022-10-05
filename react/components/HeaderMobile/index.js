@@ -10,7 +10,7 @@ const HeaderMobile = () => {
     function headerScrollMobile() {
         const trigger_y = 50;
 
-        console.log(document.documentElement.scrollTop)
+        //console.log(document.documentElement.scrollTop)
         if (document.documentElement.scrollTop > trigger_y) {
             document.querySelector('.vtex-flex-layout-0-x-flexRowContent--header-mobile-teste').classList.add('vtex-flex-layout-0-x-flexRowContent--header-mobile-teste--shrink')
             document.querySelector('.vtex-flex-layout-0-x-flexCol--header-logo').classList.add('vtex-flex-layout-0-x-flexCol--header-logo--shrink')

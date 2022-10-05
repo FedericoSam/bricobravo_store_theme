@@ -1,5 +1,6 @@
 {
   "search-bar#desktop": {
+    "blocks":["autocomplete-result-list.v2"],
     "props": {
       "placeholder": "Cerca prodotto, brand…",
       "compactMode": false,
@@ -10,6 +11,7 @@
     }
   },
   "search-bar#mobile": {
+    "blocks":["autocomplete-result-list.v2"],
     "props": {
       "compactMode": false,
       "placeholder": "Cerca prodotto, brand…",
@@ -21,6 +23,12 @@
       "displayMode": "search-button",
       "containerMode": "container",
       "blockClass": "mobile-searchbar"
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary"],
+    "props": {
+      "productLayout": "VERTICAL"
     }
   }
 }

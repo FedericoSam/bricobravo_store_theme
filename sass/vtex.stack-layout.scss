@@ -9,3 +9,10 @@
     }
     
   }
+
+  .stackItem--savingsStack {
+    @include breakpoint('desktop') {
+        height: 204px;
+    }
+    
+  }

@@ -3,7 +3,7 @@
     "blocks": [
       "flex-layout.row#submenu-categories",
       "flex-layout.row#home-main-slider",
-      "product-card-logged",
+      //"product-card-logged",
       "flex-layout.row#home-categories",
       "flex-layout.row#home-shelf-01",
       "flex-layout.row#home-shelf-02",
@@ -550,14 +550,14 @@
   },
   "image#home-blog": {
     "props": {
-      "src": "assets/icons/blog/blogTitle.svg",
+      "src": "assets/icons/blog/blog-title.svg",
       "blockClass": "home-blog-image"
     }
   },
   "rich-text#home-blog-subtitle": {
     "props": {
       "blockClass": "home-blog-subtitle",
-      "text": "Qui troverai tante idee creative e ispirazioni, consigli utili, tutorial e molto altro per la tua casa!",
+      "text": "Qui troverai tante **idee creative** e **ispirazioni, consigli utili, tutorial** e molto altro per la tua casa!",
       "htmlId": "Sottotitolo del blog"
     },
     "title": "Sottotitolo del blog"
