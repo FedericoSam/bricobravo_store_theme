@@ -3,7 +3,7 @@
     "blocks": [
       "flex-layout.row#submenu-categories",
       "flex-layout.row#home-main-slider",
-      "product-card-logged",
+      //"product-card-logged",
       "flex-layout.row#home-categories",
       "flex-layout.row#home-shelf-01",
       "flex-layout.row#home-shelf-02",
