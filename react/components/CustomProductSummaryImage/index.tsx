@@ -25,8 +25,8 @@ const CustomProductSummaryImage: React.FC = () => {
     slidesToScroll: 1,
     variableWidth: true,
     swipeToSlide: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
+    autoplay: false,
+    //autoplaySpeed: 3000,
   }
 
   if (!selectedItem) {
@@ -34,7 +34,10 @@ const CustomProductSummaryImage: React.FC = () => {
   }
 
   return (
-    <>
+    <div onClick={function (e) {
+      e.preventDefault();
+      e.stopPropagation();}
+      }>
       <Helmet>
         <link
           rel="stylesheet"
@@ -82,7 +85,7 @@ const CustomProductSummaryImage: React.FC = () => {
           </Slider>
         </div>
       )}
-    </>
+    </div>
   )
 }
 
