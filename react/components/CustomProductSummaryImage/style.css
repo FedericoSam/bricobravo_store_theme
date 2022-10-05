@@ -5,6 +5,7 @@
 :global(.slick-track) {
   display: flex;
   column-gap: 2px;
+  height: 172px;
 }
 
 :global(.slick-slider) {
