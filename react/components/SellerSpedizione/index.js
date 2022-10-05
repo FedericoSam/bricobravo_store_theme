@@ -1,13 +1,37 @@
+import { useEffect } from 'react';
 import { useProduct } from 'vtex.product-context'
 
 const SellerSpedizione = () => {
 
-    const [shippingInfo, setShippingInfo] = React.useState();
-    const productContextValue = useProduct();   
+    const productContextValue = useProduct();
 
-    async function fetchData(product) {
+    const [shippingDays, setShippingDays] = React.useState();
+    const [shippingPrice, setShippingPrice] = React.useState();
+    
+    function formatShippingData (productShippingInfo) {     
+        
+        let [logisticsInfo] = productShippingInfo.logisticsInfo;
+        let { shippingEstimate, price } = logisticsInfo.slas[0]
+        let substringToReplace = (shippingEstimate.includes("bd") ? "bd" : "d");
+        
+        shippingEstimate = shippingEstimate.replace(substringToReplace, " giorni lavorativi");
+        
+        if (price === 0) {
+            price = "gratuita";
+        } else {
+            price = `${(price/100)?.toLocaleString('BR', {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2,
+            })} €`
+        }
+        
+        setShippingDays(shippingEstimate); 
+        setShippingPrice(price);                 
+    }
 
-        const info = await fetch("/api/checkout/pub/orderForms/simulation", {
+    async function fetchProductShippingData(product) {
+
+        const options = {
             method: "post",
             body: JSON.stringify({
                 items: [{
@@ -19,54 +43,31 @@ const SellerSpedizione = () => {
                 postalCode: '00005021'
             }),
             headers: {'Content-Type': 'application/json'}
-            })
+        }
+        try {
+            const productShippingInfo = await fetch("/api/checkout/pub/orderForms/simulation", options)
             .then( resp => resp.json())
-            .then( function(datajson) {
-                const finalData = datajson;
-                return finalData
-            } )
-             
-            setShippingInfo(info); 
 
-            return info
-
+            return productShippingInfo
+        } catch(err) {
+            console.error(err)
+        }       
     }
 
-    var toRender = false;
-
-    if (productContextValue.product) {
-
-        fetchData(productContextValue.product);
-
-             if (shippingInfo) {
-
-                var shippingDays = shippingInfo.logisticsInfo[0].slas[0].shippingEstimate;
-                var toReplace = (shippingDays.includes("bd") ? "bd" : "d");
-                shippingDays = shippingDays.replace(toReplace, " giorni lavorativi");
-                var shippingPrice = shippingInfo.logisticsInfo[0].slas[0].price;
-
-                if (shippingPrice === 0) {
-                    shippingPrice = "gratuita";
-                } else {
-                    shippingPrice = `${(shippingPrice/100)?.toLocaleString('BR', {
-                        minimumFractionDigits: 2,
-                        maximumFractionDigits: 2,
-                      })} €`
-                }
-
-                toRender = true;
-             }
-             
-    }
+    useEffect(() => {
+        if (productContextValue.product) {
+            fetchProductShippingData(productContextValue.product).then((info) => formatShippingData(info));                 
+        }
+    }, [])
     
 
     return (
         <>
-        {toRender ? (
+        {shippingDays && (
         <div>
             <p class="vtex-rich-text-0-x-paragraph--pdp-shipping-info">Consegna stimata entro <span class="vtex-rich-text-0-x-strong--pdp-shipping-info">{shippingDays}</span><br></br>Spedizione <span class="vtex-rich-text-0-x-strong--pdp-shipping-info">{shippingPrice}</span></p>
         </div>
-        ) : null}
+        )}
         </>
     )
 }
