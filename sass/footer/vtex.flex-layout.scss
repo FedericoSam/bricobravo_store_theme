@@ -10,7 +10,7 @@
 
     @media screen and (max-width: 768px) {
       //padding: 48px 24px 0;
-      padding: 48px 15px 0;
+      padding: 48px 5px 0;
     }
   }
   &--footer-upperFooterDesktop {
@@ -35,7 +35,7 @@
     background-color: $background-footer;
     @include breakpoint('mobile') {
       //padding: 0 28px;
-      padding: 0 15px;
+      padding: 0 5px;
     }
   }
   &--bottomFooterDesktop {
