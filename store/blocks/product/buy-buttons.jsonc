@@ -25,12 +25,16 @@
     "props": {
       "blockClass": "buy-now",
       "isOneClickBuy": true,
-      "text": "Compre Agora!"
+      "text": "Compre Agora!",
+      "customPixelEventId": "add-to-cart-button",
+      "addToCartFeedback": "customEvent"
     }
   },
   "add-to-cart-button#custom-text": {
     "props": {
-      "text": "Adicionar ao carrinho"
+      "text": "Adicionar ao carrinho",
+      "customPixelEventId": "add-to-cart-button",
+      "addToCartFeedback": "customEvent"
     }
   }
 }

@@ -1,8 +1,11 @@
 {
   "minicart.v2": {
-    "children": ["minicart-base-content"],
+    "children": [
+      "minicart-base-content"
+    ],
     "props": {
       "customPixelEventId": "add-to-cart-button",
+      "customPixelEventName": "addToCart",
       "MinicartIcon": "icon-cart#minicart-icon",
       "quantityDisplay": "always",
       "itemCountMode": "totalAvailable",
@@ -12,7 +15,9 @@
     "title": "Minicart"
   },
   "minicart.v2#mobile": {
-    "children": ["minicart-base-content"],
+    "children": [
+      "minicart-base-content"
+    ],
     "props": {
       "customPixelEventId": "add-to-cart-button",
       "MinicartIcon": "icon-cart#minicart-icon",
@@ -27,17 +32,28 @@
     }
   },
   "minicart-base-content": {
-    "blocks": ["minicart-empty-state"],
-    "children": ["minicart-product-list", "flex-layout.row#minicart-footer"]
+    "blocks": [
+      "minicart-empty-state"
+    ],
+    "children": [
+      "minicart-product-list",
+      "flex-layout.row#minicart-footer"
+    ]
   },
   "minicart-product-list": {
-    "blocks": ["product-list#minicart"]
+    "blocks": [
+      "product-list#minicart"
+    ]
   },
   "product-list#minicart": {
-    "blocks": ["product-list-content-mobile"]
+    "blocks": [
+      "product-list-content-mobile"
+    ]
   },
   "product-list-content-mobile": {
-    "children": ["flex-layout.row#cartSummary"]
+    "children": [
+      "flex-layout.row#cartSummary"
+    ]
   },
   "flex-layout.row#cartSummary": {
     "children": [
@@ -56,7 +72,9 @@
     "title": "Cart Summary"
   },
   "flex-layout.col#minicart-product-image": {
-    "children": ["product-list-image#minicart"],
+    "children": [
+      "product-list-image#minicart"
+    ],
     "props": {
       "blockClass": "minicartProductImage",
       "width": "100%"
@@ -77,9 +95,11 @@
       "width": "68%"
     }
   },
-
   "flex-layout.row#productInfo__name": {
-    "children": ["vtex.product-list:product-name#minicart", "price#mobile"],
+    "children": [
+      "vtex.product-list:product-name#minicart",
+      "price#mobile"
+    ],
     "props": {
       "blockClass": "productInfoNameMinicart",
       "preventHorizontalStretch": true,
@@ -93,7 +113,10 @@
     }
   },
   "flex-layout.row#bottomInfo": {
-    "children": ["quantity-selector#minicart", "remove-button#desktop"],
+    "children": [
+      "quantity-selector#minicart",
+      "remove-button#desktop"
+    ],
     "props": {
       "verticalAlign": "middle",
       "blockClass": "bottomInfo",
@@ -108,7 +131,9 @@
     }
   },
   "remove-button#desktop": {
-    "props": { "blockClass": "remove-button-cart" }
+    "props": {
+      "blockClass": "remove-button-cart"
+    }
   },
   "price#mobile": {
     "props": {
@@ -121,19 +146,31 @@
       "blockClass": "minicart-footer",
       "htmlId": "Minicart Footer"
     },
-    "children": ["flex-layout.col#minicart-footer"],
+    "children": [
+      "flex-layout.col#minicart-footer"
+    ],
     "title": "Minicart Footer"
   },
   "flex-layout.col#minicart-footer": {
-    "children": ["minicart-summary", "minicart-checkout-button"]
+    "children": [
+      "minicart-summary",
+      "minicart-checkout-button"
+    ]
   },
   "minicart-summary": {
-    "blocks": ["checkout-summary.compact#minicart"]
+    "blocks": [
+      "checkout-summary.compact#minicart"
+    ]
   },
   "checkout-summary.compact#minicart": {
-    "children": ["summary-totalizers#minicart"],
+    "children": [
+      "summary-totalizers#minicart"
+    ],
     "props": {
-      "totalizersToShow": ["Items", "Discounts"]
+      "totalizersToShow": [
+        "Items",
+        "Discounts"
+      ]
     }
   },
   "summary-totalizers#minicart": {
@@ -142,11 +179,20 @@
       "showDeliveryTotal": false
     }
   },
+  "minicart-checkout-button": {
+    "props": {
+      "finishShoppingButtonLink": "/checkout/#/email"
+    }
+  },
   "minicart-empty-state": {
-    "children": ["flex-layout.row#empty-state"]
+    "children": [
+      "flex-layout.row#empty-state"
+    ]
   },
   "flex-layout.row#empty-state": {
-    "children": ["flex-layout.col#empty-state"],
+    "children": [
+      "flex-layout.col#empty-state"
+    ],
     "props": {
       "htmlId": "Stato vuoto"
     },

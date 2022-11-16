@@ -16,7 +16,9 @@
     }
   },
   "store.not-found#search": {
-    "blocks": ["search-not-found-layout"]
+    "blocks": [
+      "search-not-found-layout"
+    ]
   },
   "store.search#brand": {
     "blocks": [
@@ -121,15 +123,19 @@
       "display": "caret-icon"
     }
   },
-
   "flex-layout.row#searchTitle": {
-    "children": ["flex-layout.col#search-title"],
+    "children": [
+      "flex-layout.col#search-title"
+    ],
     "props": {
       "blockClass": "title-container"
     }
   },
   "flex-layout.col#search-title": {
-    "children": ["search-title.v2", "collapse-text"]
+    "children": [
+      "search-title.v2",
+      "collapsible-layout"
+    ]
   },
   "collapse-text": {
     "props": {
@@ -145,8 +151,24 @@
       "size": 20
     }
   },
+  "collapsible-layout": {
+    "props": {
+      "collapseHeight": 150
+    },
+    "children": [
+      "rich-text#collapsible-category-text"
+    ]
+  },
+  "rich-text#collapsible-category-text": {
+    "props": {
+      "text": "**Se hai una stufa o un camino a bioetanolo** (conosciuto anche come biocamino), qui trovi diversi formati per avere sempre a disposizione il *combustibile necessario*. Sicuro e non tossico, il bioetanolo non rilascia sostanze nocive per la salute o cattivi odori nell’ambiente e abbatte notevolmente le emissioni di CO2, che vengono ridotte di circa il 70% rispetto a quelle causate dall’uso di combustibili fossili. Il bioetanolo è ecologico, completamente inodore e incolore e non produce fumo o fuliggine. I vantaggi del bioetanolo possono essere sfruttati anche con un camino tradizionale grazie all’uso di un bruciatore. Ovviamente, per motivi di sicurezza, l’operazione di installazione deve essere affidata a una persona competente. Con il suo potere calorifico di circa 7Kw, dona una splendida fiamma gialla che illumina l’ambiente in modo omogeneo e crea un’atmosfera avvolgente, proprio come sa fare un camino tradizionale."
+    }
+  },
   "flex-layout.row#searchLayout": {
-    "children": ["flex-layout.row#filter", "flex-layout.col#pageContent"],
+    "children": [
+      "flex-layout.row#filter",
+      "flex-layout.col#pageContent"
+    ],
     "props": {
       "fullWidth": true,
       "preventHorizontalStretch": false,
@@ -155,7 +177,9 @@
   },
   "flex-layout.col#pageContent": {
     "title": "Categoria Prodotto",
-    "children": ["flex-layout.col#search-content"],
+    "children": [
+      "flex-layout.col#search-content"
+    ],
     "props": {
       "blockClass": "pageContent",
       "preventVerticalStretch": true,
@@ -182,34 +206,46 @@
       "blockClass": "banner-sponsored"
     }
   },
-
   "flex-layout.row#searchbread": {
-    "children": ["breadcrumb.search#default"],
+    "children": [
+      "breadcrumb.search#default"
+    ],
     "props": {
-      "blockClass": ["searchbread"],
+      "blockClass": [
+        "searchbread"
+      ],
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
   },
   "breadcrumb.search#default": {
     "props": {
-      "blockClass": ["default"],
+      "blockClass": [
+        "default"
+      ],
       "showOnMobile": true,
       "homeIconSize": 18
     }
   },
   "flex-layout.row#sectionSeo1": {
     "title": "Categoria seo testo 1",
-    "children": ["flex-layout.col#CategorySeo1"],
+    "children": [
+      "flex-layout.col#CategorySeo1"
+    ],
     "props": {
       "blockClass": "container-seo"
     }
   },
   "flex-layout.row#sectionSeoContent1": {
-    "children": ["flex-layout.col#CategorySeo1"]
+    "children": [
+      "flex-layout.col#CategorySeo1"
+    ]
   },
   "flex-layout.col#CategorySeo1": {
-    "children": ["rich-text#CategoryTitleSeo1", "rich-text#CategoryTextSeo1"],
+    "children": [
+      "rich-text#CategoryTitleSeo1",
+      "rich-text#CategoryTextSeo1"
+    ],
     "props": {
       "blockClass": "category-seo"
     }
@@ -229,17 +265,21 @@
       "textAlignment": "CENTER"
     }
   },
-
   // ----------- //
   "flex-layout.row#sectionSeo2": {
     "title": "Categoria seo testo 2",
-    "children": ["flex-layout.col#CategorySeo2"],
+    "children": [
+      "flex-layout.col#CategorySeo2"
+    ],
     "props": {
       "blockClass": "container-seo2"
     }
   },
   "flex-layout.col#CategorySeo2": {
-    "children": ["rich-text#CategoryTitleSeo2", "rich-text#CategoryTextSeo2"]
+    "children": [
+      "rich-text#CategoryTitleSeo2",
+      "rich-text#CategoryTextSeo2"
+    ]
   },
   "rich-text#CategoryTitleSeo2": {
     "props": {
@@ -256,17 +296,21 @@
       "textAlignment": "CENTER"
     }
   },
-
   // ----------- //
   "flex-layout.row#sectionSeo3": {
     "title": "Categoria seo testo 3",
-    "children": ["flex-layout.col#CategorySeo3"],
+    "children": [
+      "flex-layout.col#CategorySeo3"
+    ],
     "props": {
       "blockClass": "container-seo3"
     }
   },
   "flex-layout.col#CategorySeo3": {
-    "children": ["rich-text#CategoryTitleSeo3", "rich-text#CategoryTextSeo3"]
+    "children": [
+      "rich-text#CategoryTitleSeo3",
+      "rich-text#CategoryTextSeo3"
+    ]
   },
   "rich-text#CategoryTitleSeo3": {
     "props": {
@@ -284,7 +328,9 @@
     }
   },
   "flex-layout.row#filter": {
-    "children": ["flex-layout.col#filter"],
+    "children": [
+      "flex-layout.col#filter"
+    ],
     "props": {
       "blockClass": "filterRow"
     }
@@ -299,7 +345,9 @@
     }
   },
   "filter-navigator.v3": {
-    "blocks": ["sidebar-close-button"],
+    "blocks": [
+      "sidebar-close-button"
+    ],
     "props": {
       "truncateFilters": true,
       "showClearAllFiltersOnDesktop": true
@@ -320,23 +368,35 @@
     "props": {
       "marginBottom": 3
     },
-    "children": ["search-fetch-previous"]
+    "children": [
+      "search-fetch-previous"
+    ]
   },
   "flex-layout.row#fetchmore": {
     "props": {
       "marginTop": 7,
       "blockClass": "fetchmore"
     },
-    "children": ["search-fetch-more"]
+    "children": [
+      "search-fetch-more"
+    ]
   },
   "flex-layout.row#products": {
-    "children": ["search-content"]
+    "children": [
+      "search-content"
+    ]
   },
   "search-content": {
-    "blocks": ["gallery", "not-found"]
+    "blocks": [
+      "gallery",
+      "not-found"
+    ]
   },
   "search-content#mobile": {
-    "blocks": ["gallery#mobile", "not-found"]
+    "blocks": [
+      "gallery#mobile",
+      "not-found"
+    ]
   },
   "search-result-layout.mobile": {
     "title": "Categoria Mobile",
@@ -359,7 +419,6 @@
       }
     }
   },
-
   "image#banner-sponsored-mobile": {
     "props": {
       "src": "https://via.placeholder.com/360x281/ccc/fff",
@@ -368,9 +427,10 @@
       "blockClass": "banner-sponsored"
     }
   },
-
   "flex-layout.row#contentmobile": {
-    "children": ["search-content#mobile"],
+    "children": [
+      "search-content#mobile"
+    ],
     "props": {
       "preserveLayoutOnMobile": true
     }
@@ -386,15 +446,18 @@
       "blockClass": "searchControlsMobile"
     }
   },
-
   "flex-layout.row#productCountMobile": {
-    "children": ["total-products.v2"],
+    "children": [
+      "total-products.v2"
+    ],
     "props": {
       "blockClass": "productCountMobileRow"
     }
   },
   "filter-navigator.v3#mobile": {
-    "blocks": ["sidebar-close-button"],
+    "blocks": [
+      "sidebar-close-button"
+    ],
     "props": {
       "showFilterSelectedOnMobile": true,
       "layout": "responsive",
@@ -409,10 +472,14 @@
     }
   },
   "search-not-found-layout": {
-    "children": ["flex-layout.row#notfound"]
+    "children": [
+      "flex-layout.row#notfound"
+    ]
   },
   "flex-layout.row#notfound": {
-    "children": ["flex-layout.col#not-found"],
+    "children": [
+      "flex-layout.col#not-found"
+    ],
     "props": {
       "fullWidth": true
     }
@@ -424,24 +491,47 @@
     ]
   },
   "responsive-layout.desktop#not-found": {
-    "children": ["flex-layout.row#searchbread", "flex-layout.row#mainNotFound"]
+    "children": [
+     //"flex-layout.row#searchbread",
+      "flex-layout.row#mainNotFound"
+    ]
   },
   "responsive-layout.mobile#not-found": {
-    "children": ["flex-layout.row#searchbread", "flex-layout.row#mainNotFound"]
+    "children": [
+      //"flex-layout.row#searchbread",
+      "flex-layout.row#mainNotFound"
+    ]
   },
   "flex-layout.row#mainNotFound": {
-    "children": ["flex-layout.col#mainNotFound"]
+    "children": [
+      "flex-layout.col#mainNotFound"
+    ],
+    "props": {
+      "marginTop": "6"
+    }
   },
   "flex-layout.col#mainNotFound": {
     "title": "pagina non trovata",
-    "children": ["image#notFound", "not-found", "link#notfoundToHome"],
+    "children": [
+      "image#notFound",
+      "not-found",
+      "flex-layout.row#cn_not_found_recommendations",
+      "link#notfoundToHome"
+    ],
     "props": {
       "blockClass": "notfound-containerMain"
     }
   },
   "image#notFound": {
     "props": {
-      "src": "assets/images/notfound.svg"
+      "src": "assets/images/notfound.svg",
+      "maxHeight": 130
+    }
+  },
+  "flex-layout.row#cn_not_found_recommendations": {
+    "props": {
+      "htmlId": "cn_not_found_recommendations",
+      "blockClass": "home-shelf-01-title"
     }
   },
   "link#notfoundToHome": {
@@ -469,6 +559,8 @@
     }
   },
   "gallery#mobile": {
-    "blocks": ["product-summary.shelf#normal"]
+    "blocks": [
+      "product-summary.shelf#normal"
+    ]
   }
 }

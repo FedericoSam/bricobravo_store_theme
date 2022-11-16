@@ -1,7 +1,7 @@
 {
   "vendor": "bricobravo",
   "name": "store-theme",
-  "version": "3.2.21",
+  "version": "3.2.99",
   "builders": {
     "react": "3.x",
     "assets": "0.x",
@@ -20,6 +20,7 @@
     "vtex.shopper-location": "1.x"
   },
   "dependencies": {
+    "vtex.css-handles": "1.x",
     "vtex.store": "2.x",
     "vtex.store-form": "0.x",
     "vtex.auth-challenge": "1.x",

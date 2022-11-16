@@ -129,7 +129,9 @@
     "props": {
       "isOneClickBuy": false,
       "text": "Aggiungi al carrello",
-      "blockClass": ["buyButton"]
+      "blockClass": ["buyButton"],
+      "addToCartFeedback": "customEvent",
+      "customPixelEventId": "add-to-cart-button"
     }
   },
   "responsive-layout.desktop#product-buyButton": {
@@ -149,7 +151,9 @@
   "add-to-cart-button#mobile": {
     "props": {
       "text": "Adicionar",
-      "onClickBehavior": "add-to-cart"
+      "onClickBehavior": "add-to-cart",
+      "addToCartFeedback": "customEvent",
+      "customPixelEventId": "add-to-cart-button"
     }
   },
   "product-summary.shelf#trending": {

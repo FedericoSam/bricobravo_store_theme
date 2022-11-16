@@ -233,7 +233,9 @@
   "add-to-cart-button#pdp": {
     "props": {
       "text": "Aggiungi",
-      "blockClass": "pdp"
+      "blockClass": "pdp",
+      "addToCartFeedback": "customEvent",
+      "customPixelEventId": "add-to-cart-button"
     }
   },
 

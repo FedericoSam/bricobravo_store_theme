@@ -141,6 +141,8 @@
   align-items: center;
   .flexColChild--notfound-containerMain {
     padding: 10px;
+    max-width:100%; // AURE
+   // overflow: hidden; // AURE
     &:last-child {
       padding-bottom: 3rem;
     }

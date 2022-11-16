@@ -33,5 +33,9 @@
   },
   "show-clear-filter-button":{
     "component": "ShowClearFilterButton"
+  },
+  "collapsible-layout": {
+    "component": "CollapsibleLayout",
+    "composition": "children"
   }
 }
