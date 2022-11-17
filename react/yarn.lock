@@ -2337,9 +2337,9 @@ braces@^3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-"bricobravo.store-theme@https://manta--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.2.22+build1668410992/public/@types/bricobravo.store-theme":
-  version "3.2.22"
-  resolved "https://manta--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.2.22+build1668410992/public/@types/bricobravo.store-theme#e279b6bb835a4825ba6c492c812ed75b553195cf"
+"bricobravo.store-theme@https://manta--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.2.99+build1668614300/public/@types/bricobravo.store-theme":
+  version "3.2.99"
+  resolved "https://manta--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.2.99+build1668614300/public/@types/bricobravo.store-theme#50375afac902fe3d035789529b384ea6d3d0ce08"
 
 browser-process-hrtime@^1.0.0:
   version "1.0.0"

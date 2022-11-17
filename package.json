@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@vtex/prettier-config": "^0.3.6",
-    "concurrently": "^6.0.1",
+    "concurrently": "^6.5.1",
     "eslint": "^7.12.1",
     "eslint-config-vtex": "^12.3.2",
     "eslint-config-vtex-react": "^6.3.2",

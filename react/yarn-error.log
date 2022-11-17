@@ -1,25 +1,30 @@
 Arguments: 
-  /Users/sanz/.nvm/versions/node/v14.19.1/bin/node /usr/local/Cellar/vtex/3.0.0/libexec/node_modules/yarn/bin/yarn.js --non-interactive --ignore-engines
+  /usr/local/bin/node /usr/local/lib/node_modules/vtex/node_modules/yarn/bin/yarn.js --non-interactive --ignore-engines
 
 PATH: 
-  /Users/sanz/.nvm/versions/node/v14.19.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/sanz/.nvm/versions/node/v14.19.1/bin
+  /usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
 
 Yarn version: 
-  1.22.10
+  1.22.11
 
 Node version: 
-  14.19.1
+  14.17.0
 
 Platform: 
   darwin x64
 
 Trace: 
-  SyntaxError: /Users/sanz/Downloads/bricobravo.store-theme/react/package.json: Unexpected token } in JSON at position 826
-      at JSON.parse (<anonymous>)
-      at /usr/local/Cellar/vtex/3.0.0/libexec/node_modules/yarn/lib/cli.js:1625:59
-      at Generator.next (<anonymous>)
-      at step (/usr/local/Cellar/vtex/3.0.0/libexec/node_modules/yarn/lib/cli.js:310:30)
-      at /usr/local/Cellar/vtex/3.0.0/libexec/node_modules/yarn/lib/cli.js:321:13
+  Error: https://manta--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.2.22+build1668410992/public/@types/bricobravo.store-theme: Request failed "500 Internal Server Error"
+      at ResponseError.ExtendableBuiltin (/usr/local/lib/node_modules/vtex/node_modules/yarn/lib/cli.js:696:66)
+      at new ResponseError (/usr/local/lib/node_modules/vtex/node_modules/yarn/lib/cli.js:802:124)
+      at Request.<anonymous> (/usr/local/lib/node_modules/vtex/node_modules/yarn/lib/cli.js:67062:16)
+      at Request.emit (events.js:376:20)
+      at Request.module.exports.Request.onRequestResponse (/usr/local/lib/node_modules/vtex/node_modules/yarn/lib/cli.js:141640:10)
+      at ClientRequest.emit (events.js:376:20)
+      at HTTPParser.parserOnIncomingClient (_http_client.js:647:27)
+      at HTTPParser.parserOnHeadersComplete (_http_common.js:126:17)
+      at TLSSocket.socketOnData (_http_client.js:515:22)
+      at TLSSocket.emit (events.js:376:20)
 
 npm manifest: 
   {
@@ -49,9 +54,10 @@ npm manifest:
       "react-transition-group": "^4.3.0",
       "reactstrap": "^9.0.0",
       "recompose": "^0.30.0",
-      "state-pool": "^0.7.1",
+      "state-pool": "^0.7.1"
     },
     "devDependencies": {
+      "@types/debounce": "^1.2.0",
       "@types/node": "^17.0.14",
       "@types/ramda": "^0.28.15",
       "@types/react": "^17.0.38",
@@ -59,7 +65,7 @@ npm manifest:
       "@vtex/test-tools": "^3.4.1",
       "@vtex/tsconfig": "^0.6.0",
       "beightone.buy-together-marketplace": "http://beightone.vtexassets.com/_v/public/typings/v1/beightone.buy-together-marketplace@0.3.0/public/@types/beightone.buy-together-marketplace",
-      "bricobravo.store-theme": "https://sanz--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.2.99+build1667232828/public/@types/bricobravo.store-theme",
+      "bricobravo.store-theme": "https://manta--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.2.22+build1668410992/public/@types/bricobravo.store-theme",
       "eslint-config-vtex-react": "^8.2.1",
       "typescript": "3.9.7",
       "vtex.add-to-cart-button": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.28.0/public/@types/vtex.add-to-cart-button",
@@ -68,6 +74,7 @@ npm manifest:
       "vtex.carousel": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.carousel@2.12.1/public/@types/vtex.carousel",
       "vtex.checkout-summary": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-summary@0.21.0/public/@types/vtex.checkout-summary",
       "vtex.condition-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.condition-layout@2.6.0/public/@types/vtex.condition-layout",
+      "vtex.css-handles": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@1.0.0/public/@types/vtex.css-handles",
       "vtex.device-detector": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.device-detector@0.2.6/public/@types/vtex.device-detector",
       "vtex.disclosure-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.disclosure-layout@1.0.3/public/@types/vtex.disclosure-layout",
       "vtex.flex-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.flex-layout@0.20.1/public/@types/vtex.flex-layout",
@@ -118,7 +125,7 @@ npm manifest:
       "vtex.store-header": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-header@2.28.0/public/@types/vtex.store-header",
       "vtex.store-icons": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-icons@0.18.0/public/@types/vtex.store-icons",
       "vtex.store-image": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-image@0.15.0/public/@types/vtex.store-image",
-      "vtex.store-link": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-link@0.9.0/public/@types/vtex.store-link",
+      "vtex.store-link": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-link@0.9.2/public/@types/vtex.store-link",
       "vtex.store-locator": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-locator@0.10.14/public/@types/vtex.store-locator",
       "vtex.store-newsletter": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-newsletter@1.3.0/public/@types/vtex.store-newsletter",
       "vtex.store-video": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-video@1.4.3/public/@types/vtex.store-video",
@@ -1635,6 +1642,11 @@ Lockfile:
       "@popperjs/core" "^2.9.2"
       "@types/jquery" "*"
   
+  "@types/debounce@^1.2.0":
+    version "1.2.1"
+    resolved "https://registry.yarnpkg.com/@types/debounce/-/debounce-1.2.1.tgz#79b65710bc8b6d44094d286aecf38e44f9627852"
+    integrity sha512-epMsEE85fi4lfmJUH/89/iV/LI+F5CvNIvmgs5g5jYFPfhO2S/ae8WSsLOKWdwtoaZw9Q2IhJ4tQ5tFCcS/4HA==
+  
   "@types/graceful-fs@^4.1.2":
     version "4.1.5"
     resolved "https://registry.yarnpkg.com/@types/graceful-fs/-/graceful-fs-4.1.5.tgz#21ffba0d98da4350db64891f92a9e5db3cdb4e15"
@@ -1956,7 +1968,7 @@ Lockfile:
       "@typescript-eslint/types" "4.33.0"
       eslint-visitor-keys "^2.0.0"
   
-  "@vtex/css-handles@^1.0.0":
+  "@vtex/css-handles@^1.1.3":
     version "1.1.3"
     resolved "https://registry.yarnpkg.com/@vtex/css-handles/-/css-handles-1.1.3.tgz#30bd1010f2907443188738f74dd11d3b6b4ac624"
     integrity sha512-DkqnzMf5jW6lQ1L8wYb9fnXyh0FqZym8qEokGYjeLUqBLBAiVK8XbI4U0ezFswWTOJ3iHZUkUjqPt5WodxR29w==
@@ -2468,9 +2480,9 @@ Lockfile:
     dependencies:
       fill-range "^7.0.1"
   
-  "bricobravo.store-theme@https://sanz--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.2.99+build1667232828/public/@types/bricobravo.store-theme":
-    version "3.2.99"
-    resolved "https://sanz--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.2.99+build1667232828/public/@types/bricobravo.store-theme#f45fa2e4619f8bc61424532a612aa94697a7362e"
+  "bricobravo.store-theme@https://manta--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.2.22+build1668410992/public/@types/bricobravo.store-theme":
+    version "3.2.22"
+    resolved "https://manta--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.2.22+build1668410992/public/@types/bricobravo.store-theme#e279b6bb835a4825ba6c492c812ed75b553195cf"
   
   browser-process-hrtime@^1.0.0:
     version "1.0.0"
@@ -5667,7 +5679,7 @@ Lockfile:
       prop-types "^15.6.2"
       react-lifecycles-compat "^3.0.4"
   
-  react-transition-group@^4.4.2:
+  react-transition-group@^4.3.0, react-transition-group@^4.4.2:
     version "4.4.5"
     resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.4.5.tgz#e53d4e3f3344da8521489fbef8f2581d42becdd1"
     integrity sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==
@@ -6763,6 +6775,10 @@ Lockfile:
     version "2.6.0"
     resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.condition-layout@2.6.0/public/@types/vtex.condition-layout#499861a211a200da6174e2355de934358f3f8339"
   
+  "vtex.css-handles@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@1.0.0/public/@types/vtex.css-handles":
+    version "1.0.0"
+    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@1.0.0/public/@types/vtex.css-handles#336b23ef3a9bcb2b809529ba736783acd405d081"
+  
   "vtex.device-detector@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.device-detector@0.2.6/public/@types/vtex.device-detector":
     version "0.2.6"
     resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.device-detector@0.2.6/public/@types/vtex.device-detector#3219242fa5c2f14023d33c3549c2d8de93c76d1f"
@@ -6959,9 +6975,9 @@ Lockfile:
     version "0.15.0"
     resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-image@0.15.0/public/@types/vtex.store-image#5f96a89b8eccce7ac86e487d4c61d96f770bf785"
   
-  "vtex.store-link@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-link@0.9.0/public/@types/vtex.store-link":
-    version "0.9.0"
-    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-link@0.9.0/public/@types/vtex.store-link#365ec904e9777847d9728db3cd976c56ff8ee8fb"
+  "vtex.store-link@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-link@0.9.2/public/@types/vtex.store-link":
+    version "0.9.2"
+    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-link@0.9.2/public/@types/vtex.store-link#f8c7e8368a830059ab19e501709070e6a1d599b8"
   
   "vtex.store-locator@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-locator@0.10.14/public/@types/vtex.store-locator":
     version "0.10.14"

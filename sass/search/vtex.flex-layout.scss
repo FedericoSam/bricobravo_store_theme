@@ -148,3 +148,13 @@
     }
   }
 }
+
+// search-bar
+@media screen and (max-width: 48rem) {
+  :global(.vtex-search-2-x-itemList--suggestion) {
+    display: none;
+  }
+  :global(.vtex-search-2-x-biggy-autocomplete) {
+    width: 96%;
+  }
+}
