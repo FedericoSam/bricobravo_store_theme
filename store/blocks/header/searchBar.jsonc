@@ -1,17 +1,18 @@
 {
   "search-bar#desktop": {
-    "blocks":["autocomplete-result-list.v2"],
+    "blocks": ["autocomplete-result-list.v2"],
     "props": {
       "placeholder": "Cerca prodotto, brand…",
       "compactMode": false,
       "openAutocompleteOnFocus": true,
       "containerMode": "container",
       "displayMode": "search-button",
-      "blockClass": "desktop-searchbar"
+      "blockClass": "desktop-searchbar",
+      "productLayout": "VERTICAL"
     }
   },
   "search-bar#mobile": {
-    "blocks":["autocomplete-result-list.v2"],
+    "blocks": ["autocomplete-result-list.v2"],
     "props": {
       "compactMode": false,
       "placeholder": "Cerca prodotto, brand…",
@@ -22,13 +23,11 @@
       "autocompleteFullWidth": true,
       "displayMode": "search-button",
       "containerMode": "container",
-      "blockClass": "mobile-searchbar"
+      "blockClass": "mobile-searchbar",
+      "productLayout": "HORIZONTAL"
     }
   },
   "autocomplete-result-list.v2": {
-    "blocks": ["product-summary"],
-    "props": {
-      "productLayout": "VERTICAL"
-    }
+    "blocks": ["product-summary"]
   }
 }

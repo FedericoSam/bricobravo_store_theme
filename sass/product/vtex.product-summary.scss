@@ -49,6 +49,14 @@
   &--minimumSummary {
     padding: 0 0.5rem;
   }
+  @include desktop {
+    .clearLink {
+      padding: 0 5px;
+      .buyButtonText{
+        font-size: 15px;
+      }
+    }
+  }
 }
 
 .container--summaryComplete:hover .buyButtonContainer,
