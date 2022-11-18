@@ -6,12 +6,20 @@
       "flex-layout.row#pdp-rating-and-whishlist",
       "flex-layout.row#pdp-price-and-installments",
       "condition-layout.product#availability",
+      "flex-layout.row#cn_promo",
       "flex-layout.row#pdp-product-and-shipping-description"
     ],
     "props": {
       "blockClass": "product-main-infos",
       "preventVerticalStretch": true,
       "width": "50%"
+    }
+  },
+
+  "flex-layout.row#cn_promo": {
+    "props": {
+      "htmlId": "cn_promo",
+      "blockClass": "container"
     }
   },
 
@@ -42,7 +50,8 @@
   "vtex.store-components:product-brand#pdp": {
     "props": {
       "displayMode": "text",
-      "blockClass": "pdp"
+      "blockClass": "pdp",
+      "withLink": "text"
     }
   },
 

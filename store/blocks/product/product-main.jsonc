@@ -2,7 +2,7 @@
   "flex-layout.row#product-main": {
     "children": [
       "flex-layout.col#product-images",
-      "flex-layout.col#product-main-infos"
+      "flex-layout.col#product-main-infos" // --> file
     ],
     "props": {
       "blockClass": "product-main-content"

@@ -189,7 +189,7 @@
   },
   "flex-layout.col#search-content": {
     "children": [
-      "image#banner-sponsored",
+      //"image#banner-sponsored",
       "flex-layout.row#fetchprevious",
       "flex-layout.row#products",
       "flex-layout.row#fetchmore"

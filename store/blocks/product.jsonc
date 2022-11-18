@@ -9,7 +9,7 @@
     "title": "Prodotti Desktop",
     "children": [
       "flex-layout.row#breadcrumb",
-      "flex-layout.row#product-main",
+      "flex-layout.row#product-main", // --> file
       "flex-layout.row#product-shelf-1-title",
       "flex-layout.row#related-products",
       "flex-layout.row#product-shelf-2-title",
@@ -24,7 +24,7 @@
     "title": "Prodotti Mobile",
     "children": [
       "flex-layout.row#breadcrumb",
-      "flex-layout.row#product-main-mobile",
+      "flex-layout.row#product-main-mobile", // --> file
       "flex-layout.row#product-shelf-1-title",
       "flex-layout.row#related-products",
       "flex-layout.row#product-shelf-2-title",
