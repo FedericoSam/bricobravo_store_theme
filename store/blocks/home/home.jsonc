@@ -575,14 +575,15 @@
       "slider-layout#home-blog-shelf"
     ],
     "props": {
-      "blockClass": "home-blog-shelf"
+      "blockClass": "home-blog-shelf",
+      "width": "60%"
     }
   },
   "rich-text#home-blog-shelf-title": {
     "props": {
       "blockClass": "home-blog-title",
       "text": "Gli articoli più recenti",
-      "htmlId": "Titolo di vetrina del blog"
+      "htmlId": "home-blog-title"
     },
     "title": "Titolo di vetrina del blog"
   },
@@ -593,11 +594,12 @@
         "tablet": 2,
         "phone": 1
       },
+      "label": "slider",
       "showNavigationArrows": "desktopOnly",
       "showPaginationDots": "never",
       "autoplay": true,
       // "infinity": false,
-      "navigationStep": 1,
+      "navigationStep": "page",
       "fullWidth": true,
       "centerMode": "to-the-left",
       "blockClass": "home-blog"

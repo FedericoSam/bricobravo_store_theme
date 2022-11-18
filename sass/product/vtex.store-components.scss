@@ -173,6 +173,16 @@
   }
 }
 
+.productBrandNameLink--pdp {
+  // text-decoration: none;
+  // &:hover {
+  //   text-decoration: underline;
+  // }
+  .productBrandName--pdp {
+    color: $blue-dark;
+  }
+}
+
 .productBrandName {
   &--pdp {
     height: 1.5rem;
