@@ -10,14 +10,15 @@
     "children": [
       "flex-layout.row#breadcrumb",
       "flex-layout.row#product-main", // --> file
-      "flex-layout.row#product-shelf-1-title",
-      "flex-layout.row#related-products",
-      "flex-layout.row#product-shelf-2-title",
-      "flex-layout.row#also-view-pdp",
+      // "flex-layout.row#product-shelf-1-title",
+      // "flex-layout.row#related-products",
+      // "flex-layout.row#product-shelf-2-title",
+      // "flex-layout.row#also-view-pdp",
+      "flex-layout.row#cn_recommendations_product",
       "flex-layout.row#descriptionSpecification",
-      "flex-layout.row#faq",
-      "flex-layout.row#product-shelf-3-title",
-      "flex-layout.row#sponsored-products"
+      "flex-layout.row#faq" //,
+      // "flex-layout.row#product-shelf-3-title",
+      // "flex-layout.row#sponsored-products"
     ]
   },
   "responsive-layout.mobile#product": {
@@ -25,14 +26,15 @@
     "children": [
       "flex-layout.row#breadcrumb",
       "flex-layout.row#product-main-mobile", // --> file
-      "flex-layout.row#product-shelf-1-title",
-      "flex-layout.row#related-products",
-      "flex-layout.row#product-shelf-2-title",
-      "flex-layout.row#also-view-pdp-mobile",
+      // "flex-layout.row#product-shelf-1-title",
+      // "flex-layout.row#related-products",
+      // "flex-layout.row#product-shelf-2-title",
+      // "flex-layout.row#also-view-pdp-mobile",
+      "flex-layout.row#cn_recommendations_product",
       "flex-layout.row#descriptionSpecification",
-      "flex-layout.row#faq",
-      "flex-layout.row#product-shelf-3-title",
-      "flex-layout.row#sponsored-products"
+      "flex-layout.row#faq" //,
+      // "flex-layout.row#product-shelf-3-title",
+      // "flex-layout.row#sponsored-products"
     ]
   },
 
@@ -80,5 +82,12 @@
   },
   "store.not-found#product": {
     "blocks": ["search-not-found-layout"]
+  },
+  "flex-layout.row#cn_recommendations_product": {
+    "title": "cn_recommendations_product",
+    "props": {
+      "htmlId": "cn_recommendations_product",
+      "blockClass": "home-shelf-01-title"
+    }
   }
 }

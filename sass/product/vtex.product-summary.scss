@@ -45,15 +45,20 @@
   }
 }
 
-.containerNormal {
-  &--minimumSummary {
-    padding: 0 0.5rem;
-  }
-  @include desktop {
-    .clearLink {
-      padding: 0 5px;
-      .buyButtonText{
-        font-size: 15px;
+:global(.vtex-search-2-x-biggy-autocomplete) {
+  .containerNormal {
+    &--minimumSummary {
+      padding: 0 0.5rem;
+    }
+    @include desktop {
+      .clearLink {
+        padding: 0 5px;
+        .buyButtonText{
+          font-size: 15px;
+        }
+        .buyButtonContainer{
+          display: none;
+        }
       }
     }
   }
