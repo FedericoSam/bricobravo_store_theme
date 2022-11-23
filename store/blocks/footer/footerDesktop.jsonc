@@ -15,7 +15,7 @@
     "children": [
       "flex-layout.col#upperFooterCol1",
       "flex-layout.col#upperFooterCol2",
-      "flex-layout.col#upperFooterCol4",
+      "flex-layout.col#upperFooterCol4", //colonna vuota
       "flex-layout.row#upperFooterCol3"
     ],
     "props": {
@@ -32,7 +32,7 @@
     ],
     "props": {
       "blockClass": "footer-upperFooterCol1",
-      "width": "25%"
+      "width": "40%"
     }
   },
 
@@ -55,8 +55,8 @@
       "link#upperFooterCol1Link1",
       "link#upperFooterCol1Link2",
       "link#upperFooterCol1Link3",
-      "link#upperFooterCol1Link4",
-      "link#upperFooterCol1Link5"
+      "link#upperFooterCol1Link4"
+      //"link#upperFooterCol1Link5"
     ]
   },
   "flex-layout.col#upperFooterLinksCol1-2": {
@@ -128,7 +128,7 @@
       "flex-layout.col#upperFooterLinksCol2"
     ],
     "props": {
-      "width": "55%",
+      "width": "30%",
       "preventVerticalStretch": true,
       "blockClass": "footer-upperFooterCol2"
     }
@@ -169,6 +169,7 @@
   "flex-layout.row#upperFooterCol3": {
     "children": ["image#Congratulations1", "image#Congratulations2"],
     "props": {
+      "width": "20%",
       "blockClass": "footer-upperFooterCol3"
     }
   },
@@ -190,6 +191,7 @@
   "flex-layout.col#upperFooterCol4": {
     "children": ["link#upperFooterCol4Link1", "link#upperFooterCol4Link2"],
     "props": {
+      "width": "10%",
       "blockClass": "footer-upperFooterCol4"
     }
   },

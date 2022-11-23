@@ -73,6 +73,11 @@
       margin: 1.25rem 0 0 1.25rem;
     }
   }
+
+  &--footer-upperFooterCol3 {
+    align-self: center;
+  }
+  
 }
 
 .flexRowContent {
@@ -83,7 +88,6 @@
     }
   }
   &--footer-upperFooterDesktop {
-    align-items: center;
     padding: 0 10px 5px;
     justify-content: space-between;
 
@@ -277,6 +281,7 @@
     &--upperFooterCol3 {
       display: flex;
       justify-content: flex-end;
+      align-self: center;
     }
 
     &--footer-PaymentMethods {

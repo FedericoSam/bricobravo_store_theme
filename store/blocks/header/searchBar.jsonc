@@ -28,6 +28,6 @@
     }
   },
   "autocomplete-result-list.v2": {
-    "blocks": ["product-summary"]
+    "blocks": ["product-summary.shelf#searchbar"]
   }
 }

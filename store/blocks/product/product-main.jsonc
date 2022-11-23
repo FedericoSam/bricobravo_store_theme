@@ -9,7 +9,7 @@
     }
   },
   "flex-layout.col#product-images": {
-    "title":"immagine prodotta",
+    "title": "immagine prodotta",
     "children": ["product-price-savings#discount", "product-images#desktop"],
     "props": {
       "blockClass": "product-images",
@@ -61,8 +61,8 @@
           "subject": "isProductAvailable"
         }
       ],
-      "Then": "flex-layout.row#pdp-quantity-and-add-to-cart",
-      "Else": "flex-layout.row#availability"
+      "Then": "flex-layout.row#pdp-quantity-and-add-to-cart"
+      // "Else": "flex-layout.row#availability"
     }
   }
 }

@@ -453,7 +453,7 @@
 
   &--container-pdp-quantity-and-add-to-cart {
     position: relative;
-    height: 105px;
+    //height: 105px;
     .flexColChild--container-pdp-quantity-and-add-to-cart {
       &:first-child {
         margin-left: auto;
@@ -558,7 +558,7 @@
       margin-left: 1rem;
     }
     :global(.vtex-slider-layout-0-x-caretIcon--shelf-also-view){
-      display: flex!important;
+      display: flex !important;
       @include breakpoint('mobile') {
         display: none;
       }
@@ -566,7 +566,7 @@
   }
   &--also-view-product-page {
     :global(.vtex-slider-layout-0-x-caretIcon--shelf-also-view){
-      display: flex!important;
+      display: flex !important;
       @include breakpoint('mobile') {
         display: none;
       }

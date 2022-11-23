@@ -7,6 +7,7 @@
       "flex-layout.row#home-categories",
       "flex-layout.row#home-shelf-01",
       "flex-layout.row#home-shelf-02",
+      //"flex-layout.row#cn_homebox",
       "flex-layout.row#home-shelf-03",
       "flex-layout.row#home-blog",
       // "flex-layout.row#home-reviews",
@@ -434,6 +435,7 @@
   "responsive-layout.mobile#shelf-also-view": {
     "children": ["list-context.product-list#also-view-mobile"]
   },
+
   "flex-layout.row#home-shelf-02": {
     "children": ["flex-layout.col#home-shelf-02"],
     "props": {
@@ -450,7 +452,6 @@
       "responsive-layout.mobile#shelf-also-view"
     ]
   },
-
   "flex-layout.row#home-shelf-02-title": {
     "children": [
       "rich-text#home-shelf-02-title",
@@ -524,6 +525,46 @@
     "title": "Link vetrina 3"
   },
 
+  "flex-layout.row#cn_homebox": {
+    "children": [
+      "flex-layout.col#home-shelf1",
+      "flex-layout.col#home-shelf2",
+      "flex-layout.col#home-shelf3"
+    ],
+    "props": {
+      "blockClass": "home-shelf-02",
+      "marginBottom": 10,
+      "paddingTop": "6",
+      "paddingBottom": "6",
+      "htmlId": "cn_homebox"
+    },
+    "title": "cn_homebox"
+  },
+  "flex-layout.col#home-shelf1": {
+    "props": {
+      "blockClass": "homecol-shelf1",
+      "paddingRight": "4",
+      "paddingLeft": "4",
+      "width": "33,33"
+    }
+  },
+  "flex-layout.col#home-shelf2": {
+    "props": {
+      "blockClass": "homecol-shelf2",
+      "paddingRight": "4",
+      "paddingLeft": "4",
+      "width": "33,33"
+    }
+  },
+  "flex-layout.col#home-shelf3": {
+    "props": {
+      "blockClass": "homecol-shelf3",
+      "paddingRight": "4",
+      "paddingLeft": "4",
+      "width": "33,33"
+    }
+  },
+
   "flex-layout.row#home-blog": {
     "children": [
       "flex-layout.col#home-blog",
@@ -592,13 +633,11 @@
       "itemsPerPage": {
         "desktop": 3,
         "tablet": 2,
-        "phone": 1
+        "phone": 1.4
       },
-      "label": "slider",
+      "infinite": false,
       "showNavigationArrows": "never",
       "showPaginationDots": "never",
-      //"infinity": false,
-      "navigationStep": "page",
       "fullWidth": true,
       "centerMode": "to-the-left",
       "blockClass": "home-blog"
@@ -606,9 +645,7 @@
     "children": [
       "flex-layout.col#home-blog-01",
       "flex-layout.col#home-blog-02",
-      "flex-layout.col#home-blog-03" //,
-      //"flex-layout.col#home-blog-04",
-      //"flex-layout.col#home-blog-05"
+      "flex-layout.col#home-blog-03"
     ]
   },
 
@@ -717,76 +754,6 @@
       "blockClass": "home-blog-cta",
       "href": "#",
       "label": "GUIDE ALL'ACQUISTO"
-    }
-  },
-
-  "flex-layout.col#home-blog-04": {
-    "children": [
-      "image#home-blog-04",
-      "link#home-blog-04-cta",
-      "rich-text#home-blog-04-text"
-    ],
-    "props": {
-      "blockClass": "home-blog-col",
-      "horizontalAlign": "center",
-      "preventVerticalStretch": false
-    }
-  },
-  "rich-text#home-blog-04-text": {
-    "props": {
-      "blockClass": "home-blog-text",
-      "text": "Come recintare un giardino: idee e consigli"
-    }
-  },
-  "image#home-blog-04": {
-    "props": {
-      "src": "https://dummyimage.com/200x160/4320A8/ffffff",
-      "blockClass": "home-blog-image",
-      "link": {
-        "url": "#"
-      }
-    }
-  },
-  "link#home-blog-04-cta": {
-    "props": {
-      "blockClass": "home-blog-cta",
-      "href": "#",
-      "label": "FAI DA TE"
-    }
-  },
-
-  "flex-layout.col#home-blog-05": {
-    "children": [
-      "image#home-blog-05",
-      "link#home-blog-05-cta",
-      "rich-text#home-blog-05-text"
-    ],
-    "props": {
-      "blockClass": "home-blog-col",
-      "horizontalAlign": "center",
-      "preventVerticalStretch": false
-    }
-  },
-  "rich-text#home-blog-05-text": {
-    "props": {
-      "blockClass": "home-blog-text",
-      "text": "Come recintare un giardino: idee e consigli"
-    }
-  },
-  "image#home-blog-05": {
-    "props": {
-      "src": "https://dummyimage.com/200x160/4320A8/ffffff",
-      "blockClass": "home-blog-image",
-      "link": {
-        "url": "#"
-      }
-    }
-  },
-  "link#home-blog-05-cta": {
-    "props": {
-      "blockClass": "home-blog-cta",
-      "href": "#",
-      "label": "FAI DA TE"
     }
   },
 
