@@ -350,7 +350,9 @@
     ],
     "props": {
       "truncateFilters": true,
-      "showClearAllFiltersOnDesktop": true
+      "showClearAllFiltersOnDesktop": true,
+      "categoryFiltersMode": "href",
+      "maxItemsCategory": 50
     }
   },
   "flex-layout.row#searchinfo": {
