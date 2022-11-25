@@ -1396,6 +1396,7 @@
 }
 
 :global(.vtex-flex-layout-0-x-flexRowContent--product-whatsapp) {
+  justify-content: center !important;
   :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
     width: auto !important;
     padding-right: 5px;
