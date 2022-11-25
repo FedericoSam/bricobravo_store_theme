@@ -526,9 +526,9 @@
   .filter__container {
     margin-bottom: 1.2rem;
     order: 4;
-    &--category-3{
-      display: none;
-    }
+    // &--category-3{
+    //   display: none;
+    // }
     .filterTemplateOverflow {
       max-height: 214px !important;
       scrollbar-width: thin;
