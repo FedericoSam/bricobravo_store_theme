@@ -397,6 +397,7 @@
   "flex-layout.col#home-shelf-01": {
     "children": [
       "flex-layout.row#home-shelf-01-title",
+      "link#home-shelf-01-allProducts",
       "responsive-layout.desktop#shelf-also-view",
       "responsive-layout.mobile#shelf-also-view"
     ]
@@ -404,8 +405,8 @@
 
   "flex-layout.row#home-shelf-01-title": {
     "children": [
-      "rich-text#home-shelf-01-title",
-      "link#home-shelf-01-allProducts"
+      "rich-text#home-shelf-01-title"
+      //"link#home-shelf-01-allProducts"
     ],
     "props": {
       "blockClass": "home-shelf-01-title",
@@ -448,14 +449,15 @@
   "flex-layout.col#home-shelf-02": {
     "children": [
       "flex-layout.row#home-shelf-02-title",
+      "link#home-shelf-02-allProducts",
       "responsive-layout.desktop#shelf-also-view",
       "responsive-layout.mobile#shelf-also-view"
     ]
   },
   "flex-layout.row#home-shelf-02-title": {
     "children": [
-      "rich-text#home-shelf-02-title",
-      "link#home-shelf-02-allProducts"
+      "rich-text#home-shelf-02-title"
+      // "link#home-shelf-02-allProducts"
     ],
     "props": {
       "blockClass": "home-shelf-02-title",
@@ -465,6 +467,7 @@
   },
   "rich-text#home-shelf-02-title": {
     "props": {
+      // "blockClass": "title-2-test home-section-title",
       "blockClass": "title-2-test home-section-title",
       "text": "Offert del mese",
       "htmlId": "Titolo vetrina 2"
@@ -492,6 +495,7 @@
   "flex-layout.col#home-shelf-03": {
     "children": [
       "flex-layout.row#home-shelf-03-title",
+      "link#home-shelf-03-allProducts",
       "responsive-layout.desktop#shelf-also-view",
       "responsive-layout.mobile#shelf-also-view"
     ]
@@ -499,8 +503,8 @@
 
   "flex-layout.row#home-shelf-03-title": {
     "children": [
-      "rich-text#home-shelf-03-title",
-      "link#home-shelf-03-allProducts"
+      "rich-text#home-shelf-03-title"
+      //"link#home-shelf-03-allProducts"
     ],
     "props": {
       "blockClass": "home-shelf-03-title",

@@ -2337,9 +2337,9 @@ braces@^3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-"bricobravo.store-theme@https://manta--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.3.0+build1669205097/public/@types/bricobravo.store-theme":
-  version "3.3.0"
-  resolved "https://manta--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.3.0+build1669205097/public/@types/bricobravo.store-theme#18016464abaf6dfdb381068a74acf3f3b7e5f004"
+"bricobravo.store-theme@https://manta1--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.3.2+build1669384118/public/@types/bricobravo.store-theme":
+  version "3.3.2"
+  resolved "https://manta1--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.3.2+build1669384118/public/@types/bricobravo.store-theme#71d51d2bb015adefa2927e103aa7de871bac2f82"
 
 browser-process-hrtime@^1.0.0:
   version "1.0.0"
@@ -5879,6 +5879,10 @@ saxes@^3.1.9:
   dependencies:
     xmlchars "^2.1.1"
 
+"scalapay.scalapay-widget@http://scalapay.vtexassets.com/_v/public/typings/v1/scalapay.scalapay-widget@0.4.8/public/@types/scalapay.scalapay-widget":
+  version "0.4.8"
+  resolved "http://scalapay.vtexassets.com/_v/public/typings/v1/scalapay.scalapay-widget@0.4.8/public/@types/scalapay.scalapay-widget#53e76722a4ca4770be6f36fc410d7d33d8063eb6"
+
 scheduler@^0.19.1:
   version "0.19.1"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.19.1.tgz#4f3e2ed2c1a7d65681f4c854fa8c5a1ccb40f196"
@@ -6711,6 +6715,10 @@ verror@1.10.0:
 "vtex.product-details@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-details@1.21.0/public/@types/vtex.product-details":
   version "1.21.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-details@1.21.0/public/@types/vtex.product-details#e1c86843e16576ea6b7140546c88783af3f48ac1"
+
+"vtex.product-identifier@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-identifier@0.4.0/public/@types/vtex.product-identifier":
+  version "0.4.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-identifier@0.4.0/public/@types/vtex.product-identifier#ad8ae45d5816e5424f5156c4a2d4ee98c84a1f6d"
 
 "vtex.product-kit@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-kit@1.10.2/public/_types/react":
   version "0.0.0"

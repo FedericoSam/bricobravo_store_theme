@@ -6,9 +6,10 @@
   max-width: 332px !important;
   height: 320px;
   position: relative;
-  border: none;
-  border-radius: 2px;
-  box-shadow: 0 0 0.6em rgba(135, 135, 135, 0.3);
+ // border-radius: 2px;
+ // box-shadow: 0 0 0.6em rgba(135, 135, 135, 0.3);
+  border-radius: 6px;
+  border: 1px solid #ddd;
   transition: all 0.4s ease;
   background: $white;
 
@@ -43,6 +44,28 @@
   @include mobile {
     padding: 0 4px;
   }
+
+  .image {
+    position: relative;
+    top: 0;
+    padding: 0 20px;
+    z-index: 0;
+    @include mobile {
+      object-fit: cover !important;
+      display: block;
+      top: -20px;
+      padding: 0;
+    }
+  }
+  :global(.vtex-store-components-3-x-discountInsideContainer) {
+    top: -7px;
+    @include mobile {
+      top: -20px;
+      right: -5px;
+      z-index: 4;
+    }
+  }
+  
 }
 
 :global(.vtex-search-2-x-biggy-autocomplete) {
@@ -77,6 +100,7 @@
 .container--summaryComplete
   :global(.vtex-stack-layout-0-x-stackContainer--savingsStack){
     height: 164px;
+    top: -5px;
     @include breakpoint('desktop'){
       top: -25px;
     }
@@ -168,17 +192,6 @@
   margin-top: auto;
   margin-bottom: 16px;
   padding: 0;
-}
-
-.container--summaryComplete .image {
-  position: relative;
-  top: -24px;
-  z-index: 0;
-  @include mobile {
-    object-fit: cover !important;
-    display: block;
-    top: 0;
-  }
 }
 
 // .clearLink--summaryComplete {
@@ -557,6 +570,9 @@
 .element--summaryComplete .imageWrapper {
   max-width: 100%;
   width: 100%;
+  :global(.vtex-store-components-3-x-discountContainer) {
+    width: 100%;
+  }
 
   @include mobile {
     width: 100%;

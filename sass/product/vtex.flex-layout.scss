@@ -418,12 +418,12 @@
 .flexRowContent--summaryTop {
   :global(.vtex-wish-list-1-x-wishlistIconContainer) {
     display: flex;
-    justify-content: flex-end;
+    justify-content: start;
   }
   :global(.vtex-wish-list-1-x-fill) {
-    background: url('assets/icons/icon-wishlist-solid.svg');
-    padding-right: 14px;
-    padding-bottom: 12px;
+    background-image: url('assets/icons/icon-wishlist-fill.svg');
+    background-repeat: no-repeat;
+    margin-left: 5px;
   }
 }
 
@@ -431,7 +431,7 @@
   &--summaryInfo {
     padding: 18px 10px 10px;
     @include breakpoint('mobile') {
-      margin-top: 20px;
+      margin-top: 10px;
     }
   }
 
@@ -1392,6 +1392,38 @@
     width: 100%;
     max-width: 26.75rem;
   }
+
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-whatsapp) {
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: auto !important;
+    padding-right: 5px;
+    :global(.vtex-rich-text-0-x-wrapper){
+      padding-left: 38px;
+      position: relative;
+      &::before {
+        content: "";
+        background-image: url('assets/icons/whatsapp_logo.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 3px;
+        top: 13px;
+      }
+    }
+  }
+  :global(.vtex-store-link-0-x-link){
+    align-self: center;
+    font-weight: 600;
+    color: #2fa33e;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
 }
 
 .flexRow--storeLocator {
@@ -1481,21 +1513,21 @@
 }
 
 
-  .flexRow--breadcrumb-detail {
-    :global(.vtex-rich-text-0-x-container--breadcrumb1) {
-      margin-left: -55px;
-    }
-    @include mobile {
-      visibility: hidden;
-      transform: translateY(-50px);
-    }
+.flexRow--breadcrumb-detail {
+  :global(.vtex-rich-text-0-x-container--breadcrumb1) {
+    margin-left: -55px;
   }
+  @include mobile {
+    visibility: hidden;
+    transform: translateY(-50px);
+  }
+}
 
-  .flexRowContent--product-shelf-1-title,
-  .flexRowContent--product-shelf-2-title,
-  .flexRowContent--product-shelf-3-title {
-    margin-inline: auto;
-    max-width: 1294px;
-  }
+.flexRowContent--product-shelf-1-title,
+.flexRowContent--product-shelf-2-title,
+.flexRowContent--product-shelf-3-title {
+  margin-inline: auto;
+  max-width: 1294px;
+}
 
 

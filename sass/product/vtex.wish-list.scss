@@ -2,21 +2,21 @@
 @import '../_media-queries.scss';
 
 .outline {
-  background-image: url(/arquivos/heartIcon.svg);
-  padding-right: 14px;
-  padding-bottom: 10px;
+  background-image: url('assets/icons/icon-wishlist-stoke.svg');
+  background-repeat: no-repeat;
+  margin-left: 5px;
 
   &:hover {
-    background-image: url('assets/icons/icon-wishlist-solid.svg');
-    padding-right: 12px;
-    padding-bottom: 4px;
+    background-image: url('assets/icons/icon-wishlist-fill.svg');
+    background-repeat: no-repeat;
+    margin-left: 5px;
   }
 }
 
 .fill {
-  background-image: url('assets/icons/icon-wishlist-solid.svg');
-  padding-right: 12px !important;
-  padding-bottom: 4px !important;
+  background-image: url('assets/icons/icon-wishlist-fill.svg');
+  background-repeat: no-repeat;
+  margin-left: 5px;
 }
 
 .wishlistIconContainer {

@@ -16,10 +16,10 @@
   &--home-section-title {
     display: flex;
     justify-content: flex-start;
-    @include breakpoint('mobile') {
-      justify-content: center;
-    }
 
+   /* @include breakpoint('mobile') {
+      justify-content: center;
+    } */
   }
 
   .heading {
@@ -190,10 +190,10 @@
   }
 
   .headingLevel2 {
-    margin: 26px 0 40px;
+    margin: 26px 0 10px;
     &--home-section-title {
       @include breakpoint('mobile') {
-        margin: 20px 0 40px;
+        margin: 20px 0 10px;
       }
     }
   }

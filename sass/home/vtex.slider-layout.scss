@@ -57,7 +57,13 @@
   &--shelf-also-view {
     :global(.vtex-product-summary-2-x-container--summaryComplete) {
       @include breakpoint("mobile") {
-        min-width: 200px;
+        min-width: 210px;
+      }
+      @media (max-width: 330px) {
+        min-width: 190px;
+      }
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        min-width: 190px;
       }
     }
   }

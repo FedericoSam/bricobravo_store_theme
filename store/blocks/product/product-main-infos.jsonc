@@ -7,6 +7,7 @@
       "flex-layout.row#pdp-price-and-installments",
       "condition-layout.product#availability",
       "flex-layout.row#box_usp",
+      "flex-layout.row#whatsapp",
       "flex-layout.row#cn_promo",
       "flex-layout.row#pdp-product-and-shipping-description"
     ],
@@ -40,6 +41,29 @@
     "props": {
       "htmlId": "cn_promo",
       "blockClass": "container"
+    }
+  },
+
+  "flex-layout.row#whatsapp": {
+    "children": ["rich-text#whatsapp", "link#whatsapp"],
+    "props": {
+      "blockClass": "product-whatsapp",
+      "width": "100%"
+    },
+    "title": "whatsapp"
+  },
+  "rich-text#whatsapp": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "left",
+      "text": "Puoi anche ordinare con "
+    }
+  },
+  "link#whatsapp": {
+    "title": "whatsapp link",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "left"
     }
   },
 

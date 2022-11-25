@@ -134,15 +134,18 @@
     }
   }
   &--home-shelf{
-    display: flex;
-    justify-content: flex-end;
     text-decoration: none;
-    color: $blue-dark-text;
+    color: $blue-dark;
     font-weight: 500;
-    padding-right: 2px;
-    align-items: center;
+    padding-left: 2px;
+    display: block;
+    margin-bottom: 20px;
+    &:hover{
+      text-decoration: underline;
+    }
     @media screen and (max-width: 768px) {
-      display: none;
+      //display: none;
+      padding: 0 16px;
     }
   }
 }

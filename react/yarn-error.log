@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://manta--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.2.22+build1668410992/public/@types/bricobravo.store-theme: Request failed "500 Internal Server Error"
+  Error: https://manta--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.3.0+build1669205097/public/@types/bricobravo.store-theme: Request failed "500 Internal Server Error"
       at ResponseError.ExtendableBuiltin (/usr/local/lib/node_modules/vtex/node_modules/yarn/lib/cli.js:696:66)
       at new ResponseError (/usr/local/lib/node_modules/vtex/node_modules/yarn/lib/cli.js:802:124)
       at Request.<anonymous> (/usr/local/lib/node_modules/vtex/node_modules/yarn/lib/cli.js:67062:16)
@@ -65,7 +65,7 @@ npm manifest:
       "@vtex/test-tools": "^3.4.1",
       "@vtex/tsconfig": "^0.6.0",
       "beightone.buy-together-marketplace": "http://beightone.vtexassets.com/_v/public/typings/v1/beightone.buy-together-marketplace@0.3.0/public/@types/beightone.buy-together-marketplace",
-      "bricobravo.store-theme": "https://manta--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.2.22+build1668410992/public/@types/bricobravo.store-theme",
+      "bricobravo.store-theme": "https://manta--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.3.0+build1669205097/public/@types/bricobravo.store-theme",
       "eslint-config-vtex-react": "^8.2.1",
       "typescript": "3.9.7",
       "vtex.add-to-cart-button": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.28.0/public/@types/vtex.add-to-cart-button",
@@ -94,7 +94,6 @@ npm manifest:
       "vtex.product-availability": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-availability@0.3.1/public/@types/vtex.product-availability",
       "vtex.product-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context",
       "vtex.product-details": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-details@1.21.0/public/@types/vtex.product-details",
-      "vtex.product-identifier": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-identifier@0.4.0/public/@types/vtex.product-identifier",
       "vtex.product-kit": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-kit@1.10.2/public/_types/react",
       "vtex.product-list": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-list@0.35.1/public/@types/vtex.product-list",
       "vtex.product-price": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-price@1.29.0/public/@types/vtex.product-price",
@@ -118,7 +117,7 @@ npm manifest:
       "vtex.stack-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.stack-layout@0.1.0/public/@types/vtex.stack-layout",
       "vtex.sticky-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.sticky-layout@0.3.4/public/@types/vtex.sticky-layout",
       "vtex.store": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store@2.127.1/public/@types/vtex.store",
-      "vtex.store-components": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.163.0/public/@types/vtex.store-components",
+      "vtex.store-components": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.163.3/public/@types/vtex.store-components",
       "vtex.store-drawer": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-drawer@0.16.2/public/@types/vtex.store-drawer",
       "vtex.store-footer": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-footer@2.26.0/public/@types/vtex.store-footer",
       "vtex.store-form": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-form@0.8.0/public/@types/vtex.store-form",
@@ -2480,9 +2479,9 @@ Lockfile:
     dependencies:
       fill-range "^7.0.1"
   
-  "bricobravo.store-theme@https://manta--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.2.22+build1668410992/public/@types/bricobravo.store-theme":
-    version "3.2.22"
-    resolved "https://manta--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.2.22+build1668410992/public/@types/bricobravo.store-theme#e279b6bb835a4825ba6c492c812ed75b553195cf"
+  "bricobravo.store-theme@https://manta--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.3.0+build1669205097/public/@types/bricobravo.store-theme":
+    version "3.3.0"
+    resolved "https://manta--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.3.0+build1669205097/public/@types/bricobravo.store-theme#18016464abaf6dfdb381068a74acf3f3b7e5f004"
   
   browser-process-hrtime@^1.0.0:
     version "1.0.0"
@@ -6855,10 +6854,6 @@ Lockfile:
     version "1.21.0"
     resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-details@1.21.0/public/@types/vtex.product-details#e1c86843e16576ea6b7140546c88783af3f48ac1"
   
-  "vtex.product-identifier@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-identifier@0.4.0/public/@types/vtex.product-identifier":
-    version "0.4.0"
-    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-identifier@0.4.0/public/@types/vtex.product-identifier#ad8ae45d5816e5424f5156c4a2d4ee98c84a1f6d"
-  
   "vtex.product-kit@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-kit@1.10.2/public/_types/react":
     version "0.0.0"
     resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-kit@1.10.2/public/_types/react#fa7a0347e046eab3dd768998fc9252b2c0dd5aef"
@@ -6947,9 +6942,9 @@ Lockfile:
     version "0.3.4"
     resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.sticky-layout@0.3.4/public/@types/vtex.sticky-layout#5b786d6f9ab0a40e4997c955a75885eee32515ef"
   
-  "vtex.store-components@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.163.0/public/@types/vtex.store-components":
-    version "3.163.0"
-    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.163.0/public/@types/vtex.store-components#c219f8c0eb47bb25b57a2d1d9b47eb9da3ad8643"
+  "vtex.store-components@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.163.3/public/@types/vtex.store-components":
+    version "3.163.3"
+    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.163.3/public/@types/vtex.store-components#d97e1f5d8f30d70fc4ea0e4321ee8a55c9c32eaf"
   
   "vtex.store-drawer@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-drawer@0.16.2/public/@types/vtex.store-drawer":
     version "0.16.2"

@@ -62,7 +62,8 @@
     "children": ["stack-layout#summary"]
   },
   "stack-layout#summary": {
-    "children": ["custom-product-summary-image"],
+    //"children": ["custom-product-summary-image"],
+    "children": ["product-summary-image"],
     "props": {
       "zIndexOffset": 3,
       "blockClass": "savingsStack"
@@ -89,7 +90,10 @@
     ]
   },
   "flex-layout.row#summary-discount-wishIcon": {
-    "children": ["product-price-savings#discount", "add-to-list-btn"],
+    "children": [
+      // "product-price-savings#discount",
+      "add-to-list-btn"
+    ],
     "props": {
       "blockClass": "summaryTop"
     }
@@ -230,11 +234,11 @@
       "showBadge": true,
       "width": {
         "desktop": 194,
-        "mobile": 194
+        "mobile": 190
       },
       "height": {
         "desktop": 194,
-        "mobile": 194
+        "mobile": 180
       },
       "aspectRatio": "1:1.5"
     }

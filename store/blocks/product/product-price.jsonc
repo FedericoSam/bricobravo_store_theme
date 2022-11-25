@@ -56,7 +56,8 @@
 
   "flex-layout.row#pdp-installments": {
     "children": [
-      "product-installments#pdp"
+      // "product-installments#pdp"
+      "scalapay-product-page-widget"
       //  "image#pdp-scalapay-logo"
     ],
     "props": {
