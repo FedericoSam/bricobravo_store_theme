@@ -45,23 +45,29 @@
   },
 
   "flex-layout.row#whatsapp": {
-    "children": ["rich-text#whatsapp", "link#whatsapp"],
+    "children": ["link#whatsapp_text", "link#whatsapp"],
     "props": {
       "blockClass": "product-whatsapp",
       "width": "100%"
     },
     "title": "whatsapp"
   },
-  "rich-text#whatsapp": {
+  "link#whatsapp_text": {
     "props": {
       "textAlignment": "LEFT",
       "textPosition": "left",
-      "text": "Puoi anche ordinare con "
+      "label": "Puoi anche ordinare con ",
+      "href": "https://wa.me/393204418560",
+      "target": "_blank",
+      "blockClass": "whatsapp_text"
     }
   },
   "link#whatsapp": {
     "title": "whatsapp link",
     "props": {
+      "label": "WhatsApp",
+      "href": "https://wa.me/393204418560",
+      "target": "_blank",
       "textAlignment": "LEFT",
       "textPosition": "left"
     }

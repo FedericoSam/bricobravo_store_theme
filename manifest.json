@@ -1,7 +1,7 @@
 {
   "vendor": "bricobravo",
   "name": "store-theme",
-  "version": "3.3.2",
+  "version": "3.3.4",
   "builders": {
     "react": "3.x",
     "assets": "0.x",
@@ -14,7 +14,6 @@
   },
   "peerDependencies": {
     "beightone.buy-together-marketplace": "0.x",
-    "scalapay.scalapay-widget": "0.x",
     "vtex.location-availability": "0.x",
     "vtex.wish-list": "1.x",
     "vtex.store-locator": "0.x",

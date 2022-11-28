@@ -15,6 +15,7 @@
       "flex-layout.row#pdp-price-and-installments",
       "condition-layout.product#availability",
       "flex-layout.row#box_usp",
+      "flex-layout.row#whatsapp",
       "flex-layout.row#cn_promo",
       "flex-layout.row#pdp-product-and-shipping-description",
       "flex-layout.row#pdp-quantity-and-add-to-cart-fixed"

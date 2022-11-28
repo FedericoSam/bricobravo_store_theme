@@ -1397,12 +1397,19 @@
 
 :global(.vtex-flex-layout-0-x-flexRowContent--product-whatsapp) {
   justify-content: center !important;
+  margin-bottom: 15px;
   :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
     width: auto !important;
     padding-right: 5px;
-    :global(.vtex-rich-text-0-x-wrapper){
-      padding-left: 38px;
+    //:global(.vtex-rich-text-0-x-wrapper){
+    :global(.vtex-store-link-0-x-link--whatsapp_text){
+      padding-left: 34px;
       position: relative;
+      color: black;
+      font-weight: 400;
+      &:hover{
+        text-decoration: none;
+      }
       &::before {
         content: "";
         background-image: url('assets/icons/whatsapp_logo.png');
@@ -1411,8 +1418,8 @@
         position: absolute;
         width: 30px;
         height: 30px;
-        left: 3px;
-        top: 13px;
+        left: 0;
+        top: -6px;
       }
     }
   }
@@ -1424,6 +1431,9 @@
     &:hover{
       text-decoration: underline;
     }
+  }
+  @include mobile {
+    display: flex;
   }
 }
 
