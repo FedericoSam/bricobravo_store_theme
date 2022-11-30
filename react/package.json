@@ -36,7 +36,7 @@
     "@vtex/test-tools": "^3.4.1",
     "@vtex/tsconfig": "^0.6.0",
     "beightone.buy-together-marketplace": "http://beightone.vtexassets.com/_v/public/typings/v1/beightone.buy-together-marketplace@0.3.0/public/@types/beightone.buy-together-marketplace",
-    "bricobravo.store-theme": "https://manta1--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@3.3.2+build1669384118/public/@types/bricobravo.store-theme",
+    "bricobravo.store-theme": "http://bricobravo.vtexassets.com/_v/public/typings/v1/bricobravo.store-theme@5.0.2/public/@types/bricobravo.store-theme",
     "eslint-config-vtex-react": "^8.2.1",
     "scalapay.scalapay-widget": "http://scalapay.vtexassets.com/_v/public/typings/v1/scalapay.scalapay-widget@0.4.8/public/@types/scalapay.scalapay-widget",
     "typescript": "3.9.7",

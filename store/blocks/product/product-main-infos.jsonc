@@ -5,6 +5,7 @@
       "flex-layout.row#pdp-product-name",
       "flex-layout.row#pdp-rating-and-whishlist",
       "flex-layout.row#pdp-price-and-installments",
+      "seller-consegna",
       "condition-layout.product#availability",
       "flex-layout.row#box_usp",
       "flex-layout.row#whatsapp",

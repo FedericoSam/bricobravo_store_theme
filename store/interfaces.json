@@ -31,6 +31,9 @@
   "seller-spedizione": {
     "component": "SellerSpedizione"
   },
+  "seller-consegna": {
+    "component": "SellerConsegna"
+  },
   "show-clear-filter-button":{
     "component": "ShowClearFilterButton"
   },
