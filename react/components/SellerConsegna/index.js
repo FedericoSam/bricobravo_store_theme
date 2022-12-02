@@ -4,7 +4,7 @@ import { useProduct } from 'vtex.product-context'
 const SellerConsegna = () => {
 
     const productContextValue = useProduct();
-
+    console.log(productContextValue);
     const [shippingDays, setShippingDays] = React.useState();
     
     function formatShippingData (productShippingInfo) {     
@@ -16,14 +16,43 @@ const SellerConsegna = () => {
         var shippingEstimateMin = parseInt(shippingEstimate.replace(substringToReplace, ""));
         var shippingEstimateMax = parseInt(shippingEstimate.replace(substringToReplace, ""))+2;
         console.log("Giorni:"+shippingEstimateMin+" "+shippingEstimateMax);
+        
         var d1 = new Date();
         var d2 = new Date();
-        d1.setDate(d1.getDate() + shippingEstimateMin);
-        console.log(d1.toString());
-        d2.setDate(d2.getDate() + shippingEstimateMax);
-        console.log(d2.toString());
 
-        shippingEstimate = shippingEstimate.replace(substringToReplace, " giorni lavorativi");
+        for (let i = 0; i < shippingEstimateMin; i++) {
+            d1.setDate(d1.getDate() + 1);
+            if (d1.getDay()==0) {
+                d1.setDate(d1.getDate() + 1);
+            }
+            else if (d1.getDay()==6) {
+                d1.setDate(d1.getDate() + 2);
+            }
+        }
+
+        for (let i = 0; i < shippingEstimateMax; i++) {
+            d2.setDate(d2.getDate() + 1);
+            if (d2.getDay()==0) {
+                d2.setDate(d2.getDate() + 1);
+            }
+            else if (d2.getDay()==6) {
+                d2.setDate(d2.getDate() + 2);
+            }
+        }
+
+        
+        var day1 = d1.getDate();
+        var month1 = d1.toLocaleString('it-IT', {
+            month: 'long',
+        });
+        var day2 = d2.getDate();
+        var month2 = d2.toLocaleString('it-IT', {
+            month: 'long',
+        });
+
+
+
+        shippingEstimate = "tra il "+day1+" "+month1+" e il "+day2+" "+month2;
         
         setShippingDays(shippingEstimate); 
     }
@@ -64,7 +93,7 @@ const SellerConsegna = () => {
         <>
         {shippingDays && (
         <div>
-            <p class="vtex-rich-text-0-x-paragraph--pdp-shipping-info">Consegna stimata entro <span class="vtex-rich-text-0-x-strong--pdp-shipping-info">{shippingDays}</span></p>
+            <p class="vtex-rich-text-0-x-paragraph--pdp-shipping-info">Se lo compri oggi lo ricevi <span class="vtex-rich-text-0-x-strong--pdp-shipping-info">{shippingDays}</span></p>
         </div>
         )}
         </>
