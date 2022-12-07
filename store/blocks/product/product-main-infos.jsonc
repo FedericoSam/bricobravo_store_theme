@@ -3,14 +3,15 @@
     "title": "acquistare prodotti",
     "children": [
       "flex-layout.row#pdp-product-name",
-      "flex-layout.row#pdp-rating-and-whishlist",
+     // "flex-layout.row#pdp-rating-and-whishlist",
+      "flex-layout.row#pdp-rating",
       "flex-layout.row#pdp-price-and-installments",
-      "seller-consegna",
       "condition-layout.product#availability",
-      "flex-layout.row#box_usp",
+      "flex-layout.col#pdp-shipping",
+      "flex-layout.row#box_light",
       "flex-layout.row#whatsapp",
-      "flex-layout.row#cn_promo",
-      "flex-layout.row#pdp-product-and-shipping-description"
+      "flex-layout.row#cn_promo"
+      //"flex-layout.row#pdp-product-and-shipping-description"
     ],
     "props": {
       "blockClass": "product-main-infos",
@@ -19,13 +20,59 @@
     }
   },
 
-  "flex-layout.row#box_usp": {
-    "title": "box_usp",
-    "children": ["image#box_usp_image"],
+  "flex-layout.row#box_light": {
+    "title": "box_light",
+    "children": [
+      "flex-layout.col#box_light"
+    ],
     "props": {
-      "htmlId": "box_usp",
-      "blockClass": "container",
+      "htmlId": "box_light",
+      "preserveLayoutOnMobile": true,
+      "blockClass": ["container", "bg-light"],
+      "marginTop": "6",
       "marginBottom": "6",
+      "paddingTop": "3",
+      "paddingBottom": "4",
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#box_light": {
+    "children": [
+      //"flex-layout.row#pdp-secure-payment",
+      "flex-layout.row#box_usp"
+    ]
+  },
+  "flex-layout.row#pdp-secure-payment": {
+    "children": [
+      "modal-trigger#pdp-secure-payment"
+    ],
+    "props": {
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#payment": {
+    "children": [
+      "image#payment"
+    ],
+    "props": {
+      "width": "50%",
+      "blockClass": "row-payment",
+      "horizontalAlign": "right"
+    }
+  },
+  "image#payment": {
+    "title": "payment_image",
+    "props": {
+      "src": "https://bricobravo.vtexassets.com/assets/vtex.file-manager-graphql/images/2928d855-5d9f-4f40-b21a-e893ba343d58___e43a915b1ce798a8cf7433cc70fa0ba5.png",
+      "maxHeight": 50,
+      "maxWidth": "100%"
+    }
+  },
+  "flex-layout.row#box_usp": {
+    "children": [
+      "image#box_usp_image"
+    ],
+    "props": {
       "width": "100%"
     }
   },
@@ -33,44 +80,8 @@
     "title": "box_usp_image",
     "props": {
       "src": "https://bricobravo.vtexassets.com/assets/vtex.file-manager-graphql/images/1d9a218c-d63c-4bdb-9df9-6bb94369e578___ecd3f23d8471c28940271e528da3a83f.png",
-      "maxHeight": 80,
+      "maxHeight": 70,
       "maxWidth": "95%"
-    }
-  },
-
-  "flex-layout.row#cn_promo": {
-    "props": {
-      "htmlId": "cn_promo",
-      "blockClass": "container"
-    }
-  },
-
-  "flex-layout.row#whatsapp": {
-    "children": ["link#whatsapp_text", "link#whatsapp"],
-    "props": {
-      "blockClass": "product-whatsapp",
-      "width": "100%"
-    },
-    "title": "whatsapp"
-  },
-  "link#whatsapp_text": {
-    "props": {
-      "textAlignment": "LEFT",
-      "textPosition": "left",
-      "label": "Puoi anche ordinare con ",
-      "href": "https://wa.me/393204418560",
-      "target": "_blank",
-      "blockClass": "whatsapp_text"
-    }
-  },
-  "link#whatsapp": {
-    "title": "whatsapp link",
-    "props": {
-      "label": "WhatsApp",
-      "href": "https://wa.me/393204418560",
-      "target": "_blank",
-      "textAlignment": "LEFT",
-      "textPosition": "left"
     }
   },
 
@@ -95,7 +106,8 @@
   },
   "vtex.store-components:product-name#pdp": {
     "props": {
-      "blockClass": "pdp"
+      "blockClass": "pdp",
+      "tag": "h1"
     }
   },
   "vtex.store-components:product-brand#pdp": {
@@ -106,11 +118,19 @@
     }
   },
 
-  "flex-layout.row#pdp-rating-and-whishlist": {
-    "children": ["product-rating-inline#pdp", "add-to-list-btn#pdp"],
+  // "flex-layout.row#pdp-rating-and-whishlist": {
+  //   "children": ["product-rating-inline#pdp", "add-to-list-btn#pdp"],
+  //   "props": {
+  //     "blockClass": "pdp-rating-and-whishlist",
+  //     "preventVerticalStretch": true
+  //   }
+  // },
+  "flex-layout.row#pdp-rating": {
+    "children": ["product-rating-inline#pdp"],
     "props": {
-      "blockClass": "pdp-rating-and-whishlist",
-      "preventVerticalStretch": true
+      "blockClass": "pdp-rating",
+      "preventVerticalStretch": true,
+      "marginTop":4
     }
   },
   "product-rating-inline#pdp": {
@@ -125,25 +145,52 @@
   },
 
   "flex-layout.row#pdp-quantity-and-add-to-cart-fixed": {
-    "children": ["flex-layout.row#pdp-quantity-and-add-to-cart"],
+    "children": [
+      "flex-layout.row#pdp-quantity-and-add-to-cart"
+    ],
     "props": {
       "blockClass": "pdp-quantity-and-add-to-cart-fixed"
     }
   },
   "flex-layout.row#pdp-quantity-and-add-to-cart": {
-    "children": ["flex-layout.col#pdp-quantity-and-add-to-cart"],
+    "children": [
+      "flex-layout.row#scalapay",
+      "flex-layout.row#pdp-qty-and-add-to-cart"
+    ],
     "props": {
-      "blockClass": "pdp-quantity-and-add-to-cart",
-      "preserveLayoutOnMobile": true,
+      "blockClass": "pdp-sp-qty-and-add-to-cart",
       "preventVerticalStretch": true,
       "width": "100%"
     }
   },
+  "flex-layout.row#scalapay": {
+    "children": [
+      "scalapay-product-page-widget"
+    ],
+    "props": {
+      "blockClass": "pdp-installments",
+      "preventVerticalStretch": true,
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#pdp-qty-and-add-to-cart": {
+    "children": [
+      "flex-layout.col#pdp-quantity-and-add-to-cart"
+    ],
+    "props": {
+      "blockClass": "pdp-quantity-and-add-to-cart",
+      "preserveLayoutOnMobile": true,
+      "preventVerticalStretch": false,
+      "width": "100%",
+      "marginTop": 5,
+      "marginBottom": 4
+    }
+  },
   "flex-layout.col#pdp-quantity-and-add-to-cart": {
     "children": [
-      "product-separator",
+      //"product-separator",
       "flex-layout.col#pdp-quantity-and-add-to-cart-children",
-      "flex-layout.row#pdp-shipping"
+      "flex-layout.row#payment"
     ],
     "props": {
       "blockClass": "pdp-quantity-and-add-to-cart",
@@ -153,7 +200,7 @@
   },
   "flex-layout.col#pdp-quantity-and-add-to-cart-children": {
     "children": [
-      "modal-trigger#pdp-secure-payment",
+      //"modal-trigger#pdp-secure-payment",
       "flex-layout.row#pdp-quantity-and-add-to-cart-children"
     ],
     "props": {
@@ -198,10 +245,12 @@
 
   "modal-trigger#pdp-secure-payment": {
     "props": {
-      "blockClass": "pdp-secure-payment"
+      "blockClass": "pdp-secure-payment",
+      "width":"100%"
     },
     "children": [
       "rich-text#pdp-secure-payment",
+      "flex-layout.row#payment",
       "modal-layout#pdp-secure-payment"
     ]
   },
@@ -299,10 +348,11 @@
     }
   },
 
-  "flex-layout.row#pdp-shipping": {
+  "flex-layout.col#pdp-shipping": {
     "children": [
-      "flex-layout.col#pdp-shipping-type",
-      "flex-layout.col#pdp-estimate-shipping"
+      "seller-consegna",
+      "flex-layout.col#pdp-shipping-type"
+      // "flex-layout.col#pdp-estimate-shipping"
     ],
     "props": {
       "blockClass": "pdp-shipping",
@@ -325,7 +375,9 @@
     "props": {
       "blockClass": "pdp-premium-shipping",
       "preventVerticalStretch": true,
-      "preventHorizontalStretch": true
+      "preventHorizontalStretch": true,
+      "width": "100%",
+      "marginTop": 5
     }
   },
 
@@ -338,7 +390,9 @@
       "modal-layout#pdp-premium-shipping"
     ]
   },
-
+  "product-specification-group": {
+    "children": ["product-specification"]
+  },
   "modal-layout#pdp-premium-shipping": {
     "children": [
       "modal-header#availability",
@@ -368,14 +422,6 @@
       "label": "CHIUDI"
     }
   },
-
-  "product-specification-group": {
-    "children": ["product-specification"]
-  },
-  "product-specification": {
-    "children": ["product-specification-text#specification"]
-  },
-
   "flex-layout.col#pdp-estimate-shipping": {
     "children": ["rich-text#estimate-shipping"],
     "props": {
@@ -503,6 +549,63 @@
     "props": {
       "src": "assets/icons/up.svg",
       "width": "20px"
+    }
+  },
+
+
+  "flex-layout.row#whatsapp": {
+    "children": ["link#whatsapp_text", "flex-layout.col#whatsapp"],
+    "props": {
+      "blockClass": "product-whatsapp",
+      "width": "100%"
+    },
+    "title": "whatsapp"
+  },
+  "link#whatsapp_text": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "left",
+      "label": "Puoi anche ordinare con ",
+      "href": "https://wa.me/393204418560",
+      "target": "_blank",
+      "blockClass": "whatsapp_text"
+    }
+  },
+  "flex-layout.col#whatsapp": {
+    "children": ["link#whatsapp", "link#whatsapp_mobile"],
+    "props": {
+      "blockClass": "product-whatsapp",
+      "width": "100%"
+    },
+    "title": "whatsapp"
+  },
+  "link#whatsapp": {
+    "title": "whatsapp link",
+    "props": {
+      "label": "WhatsApp: +39 3204418560",
+      "href": "https://wa.me/393204418560",
+      "target": "_blank",
+      "textAlignment": "LEFT",
+      "textPosition": "left",
+      "blockClass": "whatsapp_desk"
+    }
+  },
+  "link#whatsapp_mobile": {
+    "title": "whatsapp link mobile",
+    "props": {
+      "label": "WhatsApp",
+      "href": "https://wa.me/393204418560",
+      "target": "_blank",
+      "textAlignment": "LEFT",
+      "textPosition": "left",
+      "blockClass": "whatsapp_mobile"
+    }
+  },
+
+  "flex-layout.row#cn_promo": {
+    "props": {
+      "htmlId": "cn_promo",
+      "blockClass": "container"
     }
   }
 }

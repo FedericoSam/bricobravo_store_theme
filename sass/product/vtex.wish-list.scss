@@ -24,6 +24,11 @@
     .iconSize {
       width: 28px;
       height: 28px;
+      top: -3px;
+      position: relative;
+      @include mobile {
+        top: 0px;
+     }
     }
   }
   :global(.vtex-button) {
@@ -40,32 +45,32 @@
   }
 }
 
-.wishlistIcon {
-  &--pdp {
-    &::after {
-      content: 'Aggiungi alla lista dei desideri';
-      color: #1b0e41;
-      font-size: 14px;
-      line-height: 1rem;
-      text-transform: initial;
-      width: 13rem;
-      height: 1rem;
-      position: absolute;
-      top: 10px;
-      left: 33px;
-      text-align: left;
-      margin-left: 8px;
+// .wishlistIcon {
+//   &--pdp {
+//     &::after {
+//       content: 'Aggiungi alla lista dei desideri';
+//       color: #1b0e41;
+//       font-size: 14px;
+//       line-height: 1rem;
+//       text-transform: initial;
+//       width: 13rem;
+//       height: 1rem;
+//       position: absolute;
+//       top: 10px;
+//       left: 33px;
+//       text-align: left;
+//       margin-left: 8px;
 
-      &:hover {
-        color: #291660;
-      }
-    }
+//       &:hover {
+//         color: #291660;
+//       }
+//     }
 
-      @include mobile {
-        &::after {
-        content: '';
-        width: 0;
-      }
-    }
-  }
-}
+//       @include mobile {
+//         &::after {
+//         content: '';
+//         width: 0;
+//       }
+//     }
+//   }
+// }

@@ -165,6 +165,14 @@
       }
     }
   }
+  &--bg-light {
+    background-color: $light;
+    .flexRowContent--bg-light{
+      @include breakpoint('mobile') {
+        margin-top: 0;
+      }
+    }
+  }
 }
 
 .flexCol {
@@ -296,6 +304,32 @@
     }
   }
 }
-// .flexRow--buyButtonContainer{
-//   display: none;
-// }
+
+.flexRowContent--simple-page-main {
+  @include container-main;
+  :global(.vtex-rich-text-0-x-paragraph--simple-page-title),
+  :global(.vtex-rich-text-0-x-headingLevel1--simple-page-title) {
+    font-size: $headline-h1;
+    margin: 0.5rem 0!important;
+    @include mobile {
+      padding: 0 15px;
+    }
+  }
+  :global(.vtex-rich-text-0-x-paragraph--simple-page-subTitle),
+  :global(.vtex-rich-text-0-x-headingLevel2--simple-page-subTitle) {
+    @include mobile {
+      padding: 0 15px;
+    }
+    font-size: $headline-h2;
+    margin: 0 0 0.5rem!important;
+    font-weight: 500;
+  }
+  :global(.vtex-rich-text-0-x-wrapper--simple-page-paragraph) {
+    @include mobile {
+      padding: 0 15px;
+      margin: 0.5rem 0!important;
+    }
+  }
+
+  margin-bottom: 3rem;
+}

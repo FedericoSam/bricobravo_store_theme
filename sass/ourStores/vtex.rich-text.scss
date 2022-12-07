@@ -3,7 +3,7 @@
 
 .headingLevel1--our-stores-title {
     color: #332C32;
-    font-family: Roboto;
+    font-family: $font-family-text;
     font-size: 28px;
     font-weight: bold;
     letter-spacing: 0;
@@ -16,7 +16,7 @@
 
 .headingLevel3--our-stores-subtitle {
     color: #332C32;
-    font-family: Roboto;
+    font-family: $font-family-text;
     font-size: 16px;
     letter-spacing: 0;
     line-height: 24px;
@@ -28,7 +28,7 @@
 
 .headingLevel4--our-stores-text {
     color: #332C32;
-    font-family: Roboto;
+    font-family: $font-family-text;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0;
@@ -38,7 +38,7 @@
 
 .paragraph--our-stores-text {
     color: #332C32;
-    font-family: Roboto;
+    font-family: $font-family-text;
     font-size: 14px;
     letter-spacing: 0;
     line-height: 20px;

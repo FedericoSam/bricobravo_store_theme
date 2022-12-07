@@ -3,13 +3,13 @@
     "children": ["flex-layout.col#buy-buttons"]
   },
   "flex-layout.col#buy-buttons": {
-    "children": ["flex-layout.row#buy-now", "flex-layout.row#add-to-cart"],
+    "children": ["flex-layout.row#buy-now", "flex-layout.row#add-to-cart-custom"],
     "props": {
       "blockClass": "buy-buttons",
       "rowGap": 0
     }
   },
-  "flex-layout.row#add-to-cart": {
+  "flex-layout.row#add-to-cart-custom": {
     "children": ["add-to-cart-button#custom-text"],
     "props": {
       "blockClass": "add-to-cart"

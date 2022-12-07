@@ -13,12 +13,12 @@
       "flex-layout.row#pdp-product-name",
       "flex-layout.row#pdp-rating-mobile",
       "flex-layout.row#pdp-price-and-installments",
-      "seller-consegna",
       "condition-layout.product#availability",
-      "flex-layout.row#box_usp",
+      "flex-layout.col#pdp-shipping",
+      "flex-layout.row#box_light",
       "flex-layout.row#whatsapp",
       "flex-layout.row#cn_promo",
-      "flex-layout.row#pdp-product-and-shipping-description",
+      //"flex-layout.row#pdp-product-and-shipping-description",
       "flex-layout.row#pdp-quantity-and-add-to-cart-fixed"
     ],
     "props": {
@@ -29,7 +29,7 @@
 
   "flex-layout.col#product-images-mobile": {
     "children": [
-      "product-price-savings#discount",
+      "product-price-savings#discountdetails",
       "add-to-list-btn#pdp",
       "product-images#mobile"
     ],

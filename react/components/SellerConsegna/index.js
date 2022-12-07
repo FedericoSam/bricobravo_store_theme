@@ -93,7 +93,7 @@ const SellerConsegna = () => {
         <>
         {shippingDays && (
         <div>
-            <p class="vtex-rich-text-0-x-paragraph--pdp-shipping-info">Se lo compri oggi lo ricevi <span class="vtex-rich-text-0-x-strong--pdp-shipping-info">{shippingDays}</span></p>
+            <p class="vtex-rich-text-0-x-paragraph--pdp-shipping-info">Se lo compri ora lo ricevi <span class="vtex-rich-text-0-x-strong--pdp-shipping-info">{shippingDays}</span></p>
         </div>
         )}
         </>

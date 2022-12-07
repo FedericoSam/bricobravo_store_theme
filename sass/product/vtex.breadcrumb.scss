@@ -6,6 +6,20 @@
 
   @include breakpoint('mobile') {
     margin-left: 1rem;
+    margin-right: 0.5rem;
+    .link {
+      height: 1.5rem;
+    }
+    .term {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      display: inline-block;
+      width: 160px;
+      max-width: 160px;
+      position: relative;
+      top: 4px;
+    }
   }
 }
 
@@ -34,6 +48,9 @@
     height: 1rem;
     width: 1rem;
     display: inline-block;
+    @include breakpoint('mobile') {
+      margin: 2px 0;
+    }
   }
 
   &:hover {
@@ -46,6 +63,9 @@
       height: 1rem;
       width: 1rem;
       display: inline-block;
+      @include breakpoint('mobile') {
+        margin: 2px 0;
+      }
     }
   }
 }

@@ -111,7 +111,7 @@
 
         @include breakpoint('mobile') {
           position: relative;
-          top: 6px;
+          top: -2px;
           margin-right: 8px;
         }
       }
@@ -131,7 +131,7 @@
           width: auto;
           line-height: 1rem;
           height: 1rem;
-          font-size: $paragraph-small-regular;
+          font-size: $paragraph-medium-regular;
         }
       }
     }
@@ -159,9 +159,11 @@
     :global(.vtex-wish-list-1-x-wishlistIconContainer) {
       @include breakpoint('mobile') {
         position: absolute;
-        top: 0;
-        right: 1rem;
-        z-index: 2;
+        //top: 0;
+        top: -5px;
+        //right: 1rem;
+        left: 0.5rem;
+        z-index: 3;
       }
     }
   }
@@ -450,13 +452,18 @@
       margin-bottom: 10px;
     }
   }
+  &--pdp-shipping-type {
+    @include breakpoint('mobile') {
+      height: 45px;
+    }
+  }
 
   &--container-pdp-quantity-and-add-to-cart {
     position: relative;
     //height: 105px;
     .flexColChild--container-pdp-quantity-and-add-to-cart {
       &:first-child {
-        margin-left: auto;
+        //margin-left: auto;
         //margin-right: 60px;
         @include breakpoint("mobile") {
           margin-right: 20px;
@@ -501,7 +508,7 @@
   &--breadcrumb {
     padding: 0.5rem 0 1.25rem;
     @include mobile {
-      margin-bottom: 1rem;
+      margin-bottom: 0rem;
     }
   }
 
@@ -514,7 +521,7 @@
   }
 
   &--pdp-quantity-and-add-to-cart-children {
-    margin: 0.5rem 0 1rem;
+    margin: 0.5rem 0.3rem;
   }
 
   &--pdp-quantity-and-add-to-cart-fixed {
@@ -537,6 +544,19 @@
   }
 
   &Content {
+    &--pdp-sp-qty-and-add-to-cart {
+      display: block;
+    }
+    &--row-payment {
+      width: 50%;
+      justify-content: flex-end;
+      margin-right: 0;
+      margin-left: auto;
+      @include breakpoint('mobile') {
+        width: 100%;
+        justify-content: center;
+      }
+    }
     &--breadcrumb {
       @include container-main;
     }
@@ -913,15 +933,14 @@
 
   .flexRowContent--product-main-descSpec {
     @include container-main;
-
-    margin: 0 auto 2.5rem;
+    margin: 0 auto 0.5rem;
     @include breakpoint('desktop'){
       padding-top: 150px;
       margin-top: -150px;
     }
 
     @include breakpoint('mobile') {
-      margin: 0 1rem 2.5rem;
+      margin: 0 1rem 0rem;
       width: auto !important;
     }
   }
@@ -1432,8 +1451,17 @@
       text-decoration: underline;
     }
   }
+  :global(.vtex-store-link-0-x-label--whatsapp_mobile){
+    display: none;
+  }
   @include mobile {
     display: flex;
+    :global(.vtex-store-link-0-x-label--whatsapp_desk){
+      display: none;
+    }
+    :global(.vtex-store-link-0-x-label--whatsapp_mobile){
+      display: flex;
+    }
   }
 }
 

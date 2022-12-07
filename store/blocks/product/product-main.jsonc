@@ -10,13 +10,22 @@
   },
   "flex-layout.col#product-images": {
     "title": "immagine prodotta",
-    "children": ["product-price-savings#discount", "product-images#desktop"],
+    "children": [
+      "product-price-savings#discountdetails", 
+      "add-to-list-btn#pdp",
+      "product-images#desktop"
+    ],
     "props": {
       "blockClass": "product-images",
       "preventVerticalStretch": true
     }
   },
-
+  "product-price-savings#discountdetails": {
+    "props": {
+      "blockClass": "savingPerc",
+      "message": "{savingsPercentage}"
+    }
+  },
   "product-images#desktop": {
     "props": {
       "blockClass": "pdp",

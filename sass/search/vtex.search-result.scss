@@ -358,7 +358,7 @@
   font-size: 14px;
   font-weight: 500;
 }
-.filter__container--category-2, .filter__container--category-3 {
+.filter__container--category-1, .filter__container--category-2, .filter__container--category-3 {
   position: relative;
   &::after{
     background-color: #FFF;
@@ -372,6 +372,11 @@
     font-weight: 500;
   }
 }
+.filter__container--category-1 {
+  &::after{
+    content:'Macro categoria';
+  }
+}
 .filter__container--category-2 {
   &::after{
     content:'Categoria';
@@ -382,6 +387,7 @@
     content:'Sottocategoria';
   }
 }
+.accordionFilterContainer--filterMobile--department .accordionFilterItemTitle,
 .accordionFilterContainer--filterMobile--category .accordionFilterItemTitle,
 .accordionFilterContainer--filterMobile--subcategory .accordionFilterItemTitle {
   position: relative;
@@ -395,6 +401,11 @@
     font-size: 18px;
     line-height: 21px;
     font-weight: 500;
+  }
+}
+.accordionFilterContainer--filterMobile--department .accordionFilterItemTitle {
+  &::after{
+    content:'Macro categoria';
   }
 }
 .accordionFilterContainer--filterMobile--category .accordionFilterItemTitle {

@@ -14,5 +14,9 @@
   "store.custom#sandbox": {
     "path": "/sandbox",
     "isSitemapEntry": true
+  },
+  "store.custom#simple-page": {
+    "path": "/simple-page",
+    "isSitemapEntry": true
   }
 }

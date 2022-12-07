@@ -146,7 +146,8 @@
     "children": ["header-mega-menu"],
     "props": {
       "blockClass": "drawer-desktop",
-      "maxWidth": 400
+      "maxWidth": 400,
+      "renderingStrategy": "eager"
     }
   },
 

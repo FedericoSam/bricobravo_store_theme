@@ -455,6 +455,26 @@
 
 
 .element--wishlistProductItem {
+  .brandName {
+    max-width: 190px!important;
+  }
+  :global(.vtex-flex-layout-0-x-flexRow--summaryTop) {
+    left: 0;
+    z-index: 1;
+    position: absolute;
+    :global(.vtex-store-components-3-x-container){
+      padding: 0;
+    }
+  }
+  :global(.vtex-store-components-3-x-discountInsideContainer){
+    top: 10px;
+    right: -20px;
+  }
+  :global(.vtex-store-components-3-x-container){
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
   .price_sellingPrice {
     padding-bottom: 10px;
   }

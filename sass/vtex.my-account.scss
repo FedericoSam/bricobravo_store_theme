@@ -69,7 +69,7 @@
         font-weight: bold;
         color: #1d1e2c;
       }
-      
+
       // div div:nth-child(6) a{
       //   position: relative;
       //   &::after{
@@ -138,7 +138,7 @@
       transform: translateY(-159px) translateX(-226px);
       position: absolute;
       color: #332C32;
-      font-family: Roboto;
+      font-family: $font-family-text;
       font-size: 14px;
       font-weight: 500;
       letter-spacing: 0;
@@ -247,7 +247,7 @@
       transform: translateY(-171px) translateX(-168px);
       position: absolute;
       color: #332C32;
-      font-family: Roboto;
+      font-family: $font-family-text;
       font-size: 14px;
       font-weight: 500;
       letter-spacing: 0;
@@ -319,7 +319,7 @@
       transform: translateY(-160px) translateX(-69px);
       position: absolute;
       color: #332C32;
-      font-family: Roboto;
+      font-family: $font-family-text;
       font-size: 14px;
       font-weight: 500;
       letter-spacing: 0;
@@ -338,7 +338,7 @@
         transform: translateY(-160px) translateX(-168px);
         position: absolute;
         color: #8E8E8E;
-        font-family: Roboto;
+        font-family: $font-family-text;
         font-size: 14px;
         font-weight: 400;
         letter-spacing: 0;
@@ -380,7 +380,7 @@
         &::before {
           content: 'Aggiungi nuovo indirizzo';
           color: #332C32;
-          font-family: Roboto;
+          font-family: $font-family-text;
           font-size: 28px;
           font-weight: bold;
           letter-spacing: 0;
@@ -513,7 +513,7 @@
       transform: translateY(-171px) translateX(-168px);
       position: absolute;
       color: #332C32;
-      font-family: Roboto;
+      font-family: $font-family-text;
       font-size: 14px;
       font-weight: 500;
       letter-spacing: 0;
@@ -535,7 +535,7 @@
       transform: translateY(-171px) translateX(-187px);
       position: absolute;
       color: #332C32;
-      font-family: Roboto;
+      font-family: $font-family-text;
       font-size: 14px;
       font-weight: 500;
       letter-spacing: 0;
@@ -641,7 +641,7 @@
         transform: translateY(-147px) translateX(-168px);
         position: absolute;
         color: #332C32;
-        font-family: Roboto;
+        font-family: $font-family-text;
         font-size: 14px;
         font-weight: 500;
         letter-spacing: 0;
@@ -761,7 +761,7 @@
         transform: translateY(-171px) translateX(-200px);
         position: absolute;
         color: #332C32;
-        font-family: Roboto;
+        font-family: $font-family-text;
         font-size: 14px;
         font-weight: 500;
         letter-spacing: 0;
@@ -821,7 +821,7 @@
         transform: translateY(-171px) translateX(-168px);
         position: absolute;
         color: #332C32;
-        font-family: Roboto;
+        font-family: $font-family-text;
         font-size: 14px;
         font-weight: 500;
         letter-spacing: 0;
@@ -885,7 +885,7 @@
   //     transform: translateY(-171px) translateX(-168px);
   //     position: absolute;
   //     color: #332C32;
-  //     font-family: Roboto;
+  //     font-family: $font-family-text;
   //     font-size: 14px;
   //     font-weight: 500;
   //     letter-spacing: 0;
@@ -906,7 +906,7 @@
       transform: translateY(-171px) translateX(-168px);
       position: absolute;
       color: #332C32;
-      font-family: Roboto;
+      font-family: $font-family-text;
       font-size: 14px;
       font-weight: 500;
       letter-spacing: 0;
@@ -1051,7 +1051,7 @@
           transform: translateY(-126px);
           position: absolute;
           color: #332C32;
-          font-family: Roboto;
+          font-family: $font-family-text;
           font-size: 12px;
           font-weight: 500;
           letter-spacing: 0;
@@ -1295,9 +1295,6 @@
         :global(.vtex-product-summary-2-x-containerNormal),
         :global(.vtex-product-summary-2-x-containerNormal):hover{
           height: 455px;
-        }
-        :global(.vtex-product-summary-2-x-image){
-          max-height: 130px !important;
         }
 
       }

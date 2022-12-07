@@ -117,12 +117,6 @@
       "blockClass": "summaryPrices"
     }
   },
-  "product-specification-group": {
-    "children": ["product-specification"]
-  },
-  "product-specification": {
-    "children": ["product-specification-text#specification"]
-  },
   "product-price-savings#discount": {
     "props": {
       "blockClass": "savingPercentage"

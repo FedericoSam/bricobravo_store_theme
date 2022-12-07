@@ -9,8 +9,8 @@
   },
   "flex-layout.col#pdp-price-and-installments": {
     "children": [
-      "flex-layout.row#pdp-price",
-      "flex-layout.row#pdp-installments"
+      "flex-layout.row#pdp-price"
+     // "flex-layout.row#pdp-installments"
     ],
     "props": {
       "blockClass": "pdp-price-and-installments",

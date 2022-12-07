@@ -10,7 +10,7 @@
   },
   "flex-layout.col#descriptionSpecification": {
     "children": [
-      "rich-text#product-details",
+      //"rich-text#product-details",
       "flex-layout.row#product-details"
     ],
     "props": {
@@ -19,8 +19,9 @@
   },
   "flex-layout.row#product-details": {
     "children": [
-      "flex-layout.row#description",
-      "flex-layout.row#specification"
+      // "flex-layout.row#description",
+      // "flex-layout.row#specification"
+      "flex-layout.col#product-description"
     ],
     "props": {
       "blockClass": "product-details"
@@ -58,7 +59,8 @@
       "product-description"
     ],
     "props": {
-      "blockClass": "product-description"
+      "blockClass": "product-description",
+      "width": "100%"
     }
   },
   "rich-text#anchor-complete-description": {

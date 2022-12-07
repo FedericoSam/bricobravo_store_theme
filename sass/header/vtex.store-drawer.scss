@@ -41,7 +41,7 @@
 
 .drawer--drawer-desktop {
   background: none;
-  top: 145px;
+  top: 128px;
   width: 100% !important;
   max-width: 100% !important;
   @include mobile {
@@ -143,9 +143,9 @@
 }
 
 .overlay--drawer-desktop {
-  background-color: white !important;
+  background-color:rgba(220, 220, 220, 1)!important;
   opacity: 100%;
-  top: 145px;
+  top: 130px;
   @include mobile {
     top: 0;
   }

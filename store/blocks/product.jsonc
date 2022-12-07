@@ -14,8 +14,9 @@
       // "flex-layout.row#related-products",
       // "flex-layout.row#product-shelf-2-title",
       // "flex-layout.row#also-view-pdp",
-      "flex-layout.row#cn_recommendations_product",
       "flex-layout.row#descriptionSpecification",
+      "flex-layout.row#cn_recommendations_product",
+      //"flex-layout.row#cn_recommendations_product_brand",
       "flex-layout.row#faq" //,
       // "flex-layout.row#product-shelf-3-title",
       // "flex-layout.row#sponsored-products"
@@ -30,8 +31,8 @@
       // "flex-layout.row#related-products",
       // "flex-layout.row#product-shelf-2-title",
       // "flex-layout.row#also-view-pdp-mobile",
-      "flex-layout.row#cn_recommendations_product",
       "flex-layout.row#descriptionSpecification",
+      "flex-layout.row#cn_recommendations_product",
       "flex-layout.row#faq" //,
       // "flex-layout.row#product-shelf-3-title",
       // "flex-layout.row#sponsored-products"
@@ -87,6 +88,13 @@
     "title": "cn_recommendations_product",
     "props": {
       "htmlId": "cn_recommendations_product",
+      "blockClass": "home-shelf-01-title"
+    }
+  },
+  "flex-layout.row#cn_recommendations_product_brand": {
+    "title": "cn_recommendations_product",
+    "props": {
+      "htmlId": "cn_recommendations_product_brand",
       "blockClass": "home-shelf-01-title"
     }
   }

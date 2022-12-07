@@ -2,6 +2,26 @@
 @import '../_media-queries.scss';
 
 .savings {
+  &--savingPerc {
+    position: absolute;
+    top: 3px;
+    right: 1rem;
+    font-size: 16px;
+    font-weight: 500;
+    height: 26px;
+    width: 54px !important;
+    background-color: $emphasis;
+    border-radius: 0.2rem;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mobile {
+      right: 0.5rem;
+      z-index: 2;
+    }
+  }
+
   &--savingPercentage {
     position: absolute;
     top: 7px;

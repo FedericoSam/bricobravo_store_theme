@@ -1,0 +1,76 @@
+{
+  "store.custom#simple-page": {
+    "blocks": ["flex-layout.row#simple-page"]
+  },
+  "flex-layout.row#simple-page": {
+    "props": {
+      "width": "100%",
+      "htmlId": "simple-page"
+    },
+    "title": "Contenuto pagina",
+    "children": ["flex-layout.row#main-container-page"]
+  },
+  "flex-layout.row#main-container-page": {
+    "props": {
+      "blockClass": "simple-page-main",
+      "width": "100%",
+      "htmlId": "simple-page-main",
+      "preventVerticalStretch": true,
+      "marginBottom": 8
+    },
+    "children": [
+      "flex-layout.col#about-simple-page"
+    ]
+  },
+  "flex-layout.col#about-simple-page": {
+    "children": [
+      "image#pageBanner",
+      "flex-layout.row#breadcrumb",
+      "rich-text#page-title",
+      "rich-text#page-subTitle",
+      "rich-text#page-description"
+    ],
+    "props": {
+      "blockClass": "simple-page-aboutTitle",
+      "width": "100%"
+    }
+  },
+  "image#pageBanner": {
+    "props": {
+      "src": "https://dummyimage.com/1400x380/"
+    },
+    "title": "banner"
+  },
+  "rich-text#page-title": {
+    "props": {
+      "text": "# Lorem ipsum dolor sit amet consectetur",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": "simple-page-title",
+      "font": "t-heading-3",
+      "htmlId": "titolo"
+    },
+    "title": "titolo"
+  },
+  "rich-text#page-subTitle": {
+    "props": {
+      "text": "## Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": "simple-page-subTitle",
+      "font": "t-heading-4",
+      "htmlId": "sottotitolo"
+    },
+    "title": "sottotitolo"
+  },
+  "rich-text#page-description": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis bibendum venenatis vulputate. Nam sed velit felis. Cras ultricies congue mauris id scelerisque. Maecenas ut scelerisque quam. In hac habitasse platea dictumst. Nullam a urna a lorem imperdiet eleifend quis a nunc.Fusce eget magna a eros pulvinar commodo. Proin aliquam, velit quis tempus congue, felis ipsum lobortis purus, a maximus turpis tortor ut ipsum. Curabitur congue quam sit amet dui posuere, at feugiat leo feugiat. Nunc eu sagittis odio. Sed non libero dolor. Sed lobortis sem sed mauris sollicitudin consectetur. Maecenas eu nulla et odio ultricies consequat eu vulputate neque. Mauris vitae lacus vestibulum, placerat lectus vitae, volutpat ipsum.",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "simple-page-paragraph",
+      "htmlId": "descrizione"
+    },
+    "title": "descrizione"
+  }
+}

@@ -182,7 +182,12 @@
     color: $blue-dark;
   }
 }
-
+.productBrandNameLink {
+  text-decoration: none;
+  :hover {
+    text-decoration: underline;
+  }
+}
 .productBrandName {
   &--pdp {
     height: 1.5rem;
@@ -212,8 +217,8 @@
     margin-bottom: 1.25rem;
 
     @include breakpoint('mobile') {
-      font-size: $headline-h3;
-      line-height: 1.5rem;
+      font-size: $headline-h2;
+      line-height: 1.9rem;
     }
   }
 }
@@ -239,10 +244,12 @@
   font-size: $paragraph-medium-regular;
   line-height: 1.25rem;
   width: 100;
-  max-width: 40rem;
-
+  //max-width: 40rem;
   &--pdp {
     margin: 0 0 1.25rem;
+  }
+  .container{
+    padding: 0;
   }
 }
 
@@ -335,7 +342,7 @@
   font-size: $headline-h3;
   font-weight: 500;
   line-height: 1.5rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.8rem;
 
   @include breakpoint('mobile') {
     height: 1.25rem;
@@ -372,7 +379,3 @@
     }
   }
 }
-
-// .container--pdp {
-//   max-height: 50px;
-// }
