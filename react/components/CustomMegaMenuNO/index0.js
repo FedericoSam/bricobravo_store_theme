@@ -64,130 +64,111 @@ const CustomMegaMenu = ({ menuFirstLevel, linkUtil }) => {
   }
 
   return !isMobile ? (
-    <>
-      <nav className={style['top-navigation']}>
-        <h2 className={style['title-name']}>Prodotti</h2>
-        <div className={style['container']}>
-          <ul className={style['menu-department']}>
-            {menuFirstLevel?.map(({ text, iconMobile }, index) => {
-              return (
-                <li
-                  key={index}
-                  className={`${style['menu-header-category']} ${
-                    megamenu == index && isOpen
-                      ? style['menu-header-category--active']
+    <nav className={style['top-navigation']}>
+      <div className={style['container']}>
+        <ul className={style['menu-department']}>
+          {menuFirstLevel?.map(({ link, text, iconMobile }, index) => {
+            return (
+              <li
+                ref={node}
+                key={index}
+                className={style['menu-header-category']}>
+                <Link
+                  to={link}
+                  onMouseOver={() => handleToggleMenu(index, text)}
+                  className={`${style['category-menu-item']} ${
+                    megamenu === index && isOpen
+                      ? style['category-menu-item--active']
                       : style['']
-                  }`}
-                  onClick={() => mobileHandleToggleMenu(index, text)}>
-                  <div className={style['menu-icon-container']}>
+                  }`}>
+                  <div className={`${style['col1']}`}>
                     <img
-                      src={iconMobile}
                       className={style['category-menu-item-icon']}
+                      src={iconMobile}
+                      alt="icon"
                     />
-                    <p className={style['category-menu-item']}>{text}</p>
+                    {text}
                   </div>
-                  <i
-                    className={`${style['category-menu-arrow']} ${
-                      megamenu == index && isOpen
-                        ? style['category-menu-arrow--active']
-                        : style['']
-                    }`}></i>
+                  <img
+                    className={`${style['col2']}`}
+                    src={arrowRight}
+                    alt="arrow"
+                  />{' '}
+                </Link>
+              </li>
+            )
+          })}
+          { linkUtil?.map(({ titleLinkUtil, links }) => (
+            <div className={`${style['link-utili-container']}`}>
+              <h3>{titleLinkUtil}</h3>
+              {links?.map(({ link, text }) => (
+                <li>
+                  <Link to={link} className={`${style['category-menu-item']}`}>
+                    {text}
+                  </Link>
                 </li>
-              )
-            })}
-          </ul>
-        </div>
-      </nav>
-
-      {menuFirstLevel?.map(({ link, text, iconMobile, menuSecondLevel }, index) => {
-        return isOpen && index == megamenu ? (
-          <div key={index} className={style['mega-menu']}>
-            <div className={style['mega-menu-title-link']}>
-              <h2
-                className={style['mega-menu-title']}
-                onClick={() => setIsOpen(false)}>
-                {text}
-              </h2>
-              <Link to={link} className={style['mega-menu-link']}>Vedi tutti i prodotti</Link>
+            ))}
             </div>
-
-            <ul className={style['mega-menu-items']}>
-              {menuSecondLevel?.map(({ title, link, subCategories }, index) => {
-                if (subCategories?.length > 0) { 
-                  return (
-                    <>
-                      <li
-                        key={index}
-                        className={style['menu-header-category']}
-                        onClick={() => setWhatSubCategoryIsOpen(title)}>
-                        <p className={style['category-menu-item']}>{title}</p>
-                        <i className={style['category-menu-arrow']}></i>
-                      </li>
-                      <div
-                        className={
-                          whatSubCategoryIsOpen === title
-                            ? style['subcategory-menu-items']
-                            : style['subcategory-hidden']
-                        }>
-                        <h5
-                          className={style['mega-menu-title']}
-                          onClick={() => setWhatSubCategoryIsOpen('')}>
-                          {title}
-                        </h5>
-                        <Link to={link} className={style['mega-menu-link']}>Vedi tutti i prodotti</Link>
-                        <ul className={style['subcategory-overflow']}>
-                          {subCategories?.map(({ text, link }, ind) => {
-                            return whatSubCategoryIsOpen &&
-                            title === whatSubCategoryIsOpen ? (
-                              <>
-                                <li
-                                  key={ind}
-                                  className={`${style['menu-header-subcategory']}`}
-                                  onClick={() => {
-                                    setWhatSubCategoryIsOpen('')
-                                    setIsOpen(false)
-                                  }}>
-                                  <Link
-                                    className={style['category-menu-item']}
-                                    to={link}>
-                                    {text}
-                                  </Link>
-                                </li>
-                              </>
-                            ) : null
-                          })}
-                        </ul>
-                      </div>
-                    </>
-                  )
-                } else {
-                  return (
-                    <>
-                      <li
-                        key={index}
-                        className={style['menu-header-category']}
-                        onClick={() => setWhatSubCategoryIsOpen(title)}>
-                          {link ? (
-                              <a alt={title} title={title} href={link} className={style['category-menu-item']}>
-                                <p>{title}</p>
+          ))}
+        </ul>
+        {menuFirstLevel?.map(
+          ({ menuSecondLevel, menuSecondLevelImage }, index) => {
+            return (
+              isOpen && (
+                <div
+                  key={index}
+                  id="megamenu"
+                  className={`${style['megamenu']} ${
+                    megamenu === index && isOpen
+                      ? style['megamenu--active']
+                      : style['megamenu--inactive']
+                  }`}>
+                  {/* onMouseLeave={() => setIsOpen(false)}> */}
+                  <img
+                    src={menuSecondLevelImage}
+                    alt="banner"
+                    className={`${style['bannerSubCategory']}`}
+                  />
+                  <ul className={style['submenu-items']}>
+                    {menuSecondLevel?.map(
+                      ({ title, link, subCategories }, index) => {
+                        return (
+                          <li
+                            key={index}
+                            className={`${style['subcategory-container']}`}>
+                            {link ? (
+                              <a alt={title} title={title} href={link}>
+                                <h5 className={`${style['subcategory-title']}`}>
+                                  {title}
+                                </h5>
                               </a>
                             ) : (
-                              <p className={style['category-menu-item']}>{title}</p>
-                            )}               
-                      </li>
-                    </>
-                  )
-                }
-                
-              })}
-            </ul> 
+                              <h5 className={`${style['subcategory-title']}`}>
+                                {title}
+                              </h5>
+                            )}
 
-
-          </div>
-        ) : null
-      })}
-    </>
-    
+                            {subCategories?.map(({ text, link }, ind) => {
+                              return (
+                                <li
+                                  key={ind}
+                                  className={`${style['subcategory-item']}`}>
+                                  <Link to={link}>{text}</Link>
+                                </li>
+                              )
+                            })}
+                          </li>
+                        )
+                      }
+                    )}
+                  </ul>
+                </div>
+              )
+            )
+          }
+        )}
+      </div>
+    </nav>
   ) : (
     <>
       <nav className={style['mobile-top-navigation']}>
@@ -247,74 +228,55 @@ const CustomMegaMenu = ({ menuFirstLevel, linkUtil }) => {
             <Link to={link} className={style['mobile-mega-menu-link']}>Vedi tutti i prodotti</Link>
             <ul className={style['mobile-mega-menu-items']}>
               {menuSecondLevel?.map(({ title, link, subCategories }, index) => {
-                if (subCategories?.length > 0) { 
-                  return (
-                    <>
-                      <li
-                        key={index}
-                        className={style['mobile-menu-header-category']}
-                        onClick={() => setWhatSubCategoryIsOpen(title)}>
-                        <p className={style['category-menu-item']}>{title}</p>
-                        <i className={style['category-menu-arrow']}></i>
-                      </li>
-                      <div
-                        className={
-                          whatSubCategoryIsOpen === title
-                            ? style['mobile-subcategory-menu-items']
-                            : style['subcategory-hidden']
-                        }>
-                        <h5
-                          className={style['mobile-mega-menu-title']}
-                          onClick={() => setWhatSubCategoryIsOpen('')}>
-                          {title}
-                        </h5>
-                        <Link to={link} className={style['mobile-mega-menu-link']}>Vedi tutti i prodotti</Link>
-                        <ul className={style['mobile-subcategory-overflow']}>
-                          {subCategories?.map(({ text, link }, ind) => {
-                            return whatSubCategoryIsOpen &&
-                            title === whatSubCategoryIsOpen ? (
-                              <>
-                                <li
-                                  key={ind}
-                                  className={`${style['mobile-menu-header-subcategory']}`}
-                                  onClick={() => {
-                                    setWhatSubCategoryIsOpen('')
-                                    setIsOpen(false)
-                                  }}>
-                                  <Link
-                                    className={style['category-menu-item']}
-                                    to={link}>
-                                    {text}
-                                  </Link>
-                                </li>
-                              </>
-                            ) : null
-                          })}
-                        </ul>
-                      </div>
-                    </>
-                  )
-                } else {
-                  return (
-                    <>
-                      <li
-                        key={index}
-                        className={style['mobile-menu-header-category']}
-                        onClick={() => setWhatSubCategoryIsOpen(title)}>
-                          {link ? (
-                              <a alt={title} title={title} href={link} className={style['category-menu-item']}>
-                                <p className={style['category-menu-item']}>{title}</p>
-                              </a>
-                            ) : (
-                              <p className={style['category-menu-item']}>{title}</p>
-                            )}               
-                      </li>
-                    </>
-                  )
-                }
-                
+                return (
+                  <>
+                    <li
+                      key={index}
+                      className={style['mobile-menu-header-category']}
+                      onClick={() => setWhatSubCategoryIsOpen(title)}>
+                      <p className={style['category-menu-item']}>{title}</p>
+                      <i className={style['category-menu-arrow']}></i>
+                    </li>
+                    <div
+                      className={
+                        whatSubCategoryIsOpen === title
+                          ? style['mobile-subcategory-menu-items']
+                          : style['subcategory-hidden']
+                      }>
+                      <h5
+                        className={style['mobile-mega-menu-title']}
+                        onClick={() => setWhatSubCategoryIsOpen('')}>
+                        {title}
+                      </h5>
+                      <Link to={link} className={style['mobile-mega-menu-link']}>Vedi tutti i prodotti</Link>
+                      <ul className={style['mobile-subcategory-overflow']}>
+                        {subCategories?.map(({ text, link }, ind) => {
+                          return whatSubCategoryIsOpen &&
+                          title === whatSubCategoryIsOpen ? (
+                            <>
+                              <li
+                                key={ind}
+                                className={`${style['mobile-menu-header-subcategory']}`}
+                                onClick={() => {
+                                  setWhatSubCategoryIsOpen('')
+                                  setIsOpen(false)
+                                }}>
+                                <Icon id={iconMobile} type="filled" />
+                                <Link
+                                  className={style['category-menu-item']}
+                                  to={link}>
+                                  {text}
+                                </Link>
+                              </li>
+                            </>
+                          ) : null
+                        })}
+                      </ul>
+                    </div>
+                  </>
+                )
               })}
-            </ul>   
+            </ul>
           </div>
         ) : null
       })}

@@ -44,31 +44,22 @@
   top: 128px;
   width: 100% !important;
   max-width: 100% !important;
+  z-index: 9999999999!important;
   @include mobile {
     top: 0;
     max-width: 100% !important;
   }
   .drawerContent--drawer-desktop {
-    position: relative;
     width: 400px !important;
     padding: 12px 0 24px;
     background-color: #fff;
+    position: relative;
     @include mobile {
+      position: relative;
       width: 100% !important;
     }
   }
 }
-.closeIconContainer--drawer-desktop {
-  position: absolute;
-  top: 15px;
-  right: 0px;
-  z-index: 999;
-  transform: scale(0.9);
-  @include mobile {
-    top: 2px;
-  }
-}
-/*
 .closeIconContainer--drawer-desktop {
   position: relative;
   top: 2px;
@@ -83,7 +74,7 @@
     right: 10px;
     display: flex!important;
   }
-}*/
+}
 
 .closeIconButton--drawer-desktop{
   @include mobile {
@@ -164,9 +155,24 @@
 }
 
 .overlay--drawer-desktop {
+  // background-color:rgba(220, 220, 220, 1)!important;
+  background-color:rgba(10, 10, 11, 0.8)!important;
   opacity: 100%;
   top: 130px;
   @include mobile {
     top: 0;
   }
 }
+
+.childrenContainer--drawer-desktop{
+  position: fixed;
+  height: 100%;
+  padding: 12px 0 24px;
+  width: 400px;
+  top: 0;
+  @include breakpoint('mobile') {
+    width: 100%;
+    overflow-y: auto;
+  }
+}
+

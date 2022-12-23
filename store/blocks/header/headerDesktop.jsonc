@@ -147,7 +147,8 @@
     "props": {
       "blockClass": "drawer-desktop",
       "maxWidth": 400,
-      "renderingStrategy": "eager"
+      "renderingStrategy": "eager",
+      "slideDirection":"leftToRight"
     }
   },
 
