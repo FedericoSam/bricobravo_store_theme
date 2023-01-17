@@ -81,6 +81,12 @@
     }
   }
 
+  // &--slider-categories {
+  //   @include breakpoint('mobile') {
+      
+  //   }
+  // }
+
   // &--home-blog--visible {
   //   @include breakpoint('mobile') {
   //     margin-inline: 10px !important;
@@ -102,6 +108,13 @@
 }
 
 .sliderTrack {
+  &--slider-categories {
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      justify-content: normal;
+    }
+  } 
+
   // &--home-services {
   //   @include breakpoint('mobile') {
   //     transform: translate3d(-8.8125%, 0, 0) !important;

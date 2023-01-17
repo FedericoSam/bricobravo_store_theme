@@ -423,6 +423,28 @@
   display: none;
 }
 
+// :global(.vtex-flex-layout-0-x-flexRow--searchbread) {
+//   &:first-child {
+//     display: none;
+//   }
+// }
+.container--layout--page-category1 { //breadcrabs nella search departement
+  :global(.vtex-flex-layout-0-x-flexRow--searchbread) {
+    &:first-child {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: -14.5rem;
+      //top: -70px;
+      height: 70px;
+      @media screen and (max-width: 768px) {
+        top: -215px;
+        height: 60px;
+      }
+    }
+  }
+}
+
 .filters--layout {
   padding: 16px;
   padding-top: 0;
@@ -1104,5 +1126,16 @@
         padding-left: 10px; //visibility: hidden;
       }
     }
+  }
+}
+
+.buttonShowMore {
+  :global(.vtex-button) {
+    padding-left: 1.5rem;
+    line-height: 1;
+    padding-right: 1.5rem;
+    min-height: 2.5rem;
+    min-width: 240px;
+    box-sizing: border-box;
   }
 }

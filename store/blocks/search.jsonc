@@ -9,7 +9,7 @@
     "props": {
       "context": {
         "skusFilter": "ALL",
-        "maxItemsPerPage": 12,
+        "maxItemsPerPage": 30,
         "hideUnavailableItems": true,
         "simulationBehavior": "skip"
       }
@@ -29,7 +29,7 @@
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
-        "maxItemsPerPage": 12,
+        "maxItemsPerPage": 30,
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       },
@@ -38,6 +38,7 @@
   },
   "store.search#department": {
     "blocks": [
+      "flex-layout.row#department-categories",
       "search-result-layout",
       "flex-layout.row#sectionSeo1",
       "flex-layout.row#sectionSeo2",
@@ -47,8 +48,9 @@
       "context": {
         "skusFilter": "ALL",
         "simulationBehavior": "skip",
-        "maxItemsPerPage": 12,
-        "hideUnavailableItems": true
+        "maxItemsPerPage": 30,
+        "hideUnavailableItems": true,
+        "hiddenFacets": "specificationFilters"
       },
       "fullWidth": true,
       "blockClass": "page-category1"
@@ -65,7 +67,7 @@
       "context": {
         "skusFilter": "ALL",
         "simulationBehavior": "skip",
-        "maxItemsPerPage": 12,
+        "maxItemsPerPage": 30,
         "hideUnavailableItems": true
       },
       "fullWidth": true,
@@ -83,7 +85,7 @@
       "context": {
         "skusFilter": "ALL",
         "simulationBehavior": "skip",
-        "maxItemsPerPage": 12,
+        "maxItemsPerPage": 30,
         "hideUnavailableItems": true
       },
       "fullWidth": true,
@@ -110,7 +112,8 @@
       "back-to-top-button"
     ],
     "props": {
-      "pagination": "infiniteScroll",
+      //"pagination": "infiniteScroll",
+      "pagination": "show-more",
       "preventRouteChange": true,
       "mobileLayout": {
         "mode1": "small",
@@ -362,7 +365,8 @@
       //"infinite-scroll"
     ],
     "props": {
-      "pagination": "infiniteScroll",
+      //"pagination": "infiniteScroll",
+      "pagination": "show-more",
       "mobileLayout": {
         "mode1": "small",
         "mode2": "normal"
@@ -498,5 +502,212 @@
   },
   "gallery#mobile": {
     "blocks": ["product-summary.shelf#normal"]
+  },
+
+  //categorie top
+  "flex-layout.row#department-categories": {
+    "children": ["flex-layout.col#department-categories"],
+    "props": {
+      "blockClass": "department-categories",
+      "htmlId": "menu-categorie"
+    },
+    "title": "Menu categorie"
+  },
+
+  "flex-layout.col#department-categories": {
+    "children": ["slider-layout#department-categories-showcase"],
+    "props": {
+      "blockClass": ""
+    }
+  },
+  "slider-layout#department-categories-showcase": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 5,
+        "phone": 2
+      },
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "autoplay": false,
+      "navigationStep": "page",
+      "infinite": false,
+      "fullWidth": true,
+      "centerMode": "to-the-left",
+      "blockClass": "slider-categories",
+      "centerModeSlidesGap": "20"
+    },
+    "children": [
+      "flex-layout.col#categories-showcase-01",
+      "flex-layout.col#categories-showcase-02",
+      "flex-layout.col#categories-showcase-03",
+      "flex-layout.col#categories-showcase-04",
+      "flex-layout.col#categories-showcase-05"
+    ]
+  },
+
+  // "flex-layout.row#department-categories-showcase": {
+  //   "children": [
+  //     "flex-layout.col#categories-showcase-01",
+  //     "flex-layout.col#categories-showcase-02",
+  //     "flex-layout.col#categories-showcase-03",
+  //     "flex-layout.col#categories-showcase-04",
+  //     "flex-layout.col#categories-showcase-05"
+  //   ],
+  //   "props": {
+  //     "horizontalAlign": "around",
+  //     "preventHorizontalStretch": true,
+  //     "preventVerticalStretch": true
+  //   }
+  // },
+
+  "flex-layout.col#categories-showcase-01": {
+    "children": ["image#categories-showcase-01", "link#categories-showcase-01"],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "department-categories-showcase"
+    }
+  },
+  "image#categories-showcase-01": {
+    "props": {
+      "src": "",
+      "alt": "",
+      "title": "",
+      "link": {
+        "url": "#"
+      }
+    },
+    "title": "image01"
+  },
+  "link#categories-showcase-01": {
+    "props": {
+      "label": "",
+      "target": "_self",
+      "blockClass": "department-categories-showcase-cta",
+      "href": "#"
+    },
+    "title": "link01"
+  },
+
+  "flex-layout.col#categories-showcase-02": {
+    "children": ["image#categories-showcase-02", "link#categories-showcase-02"],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "department-categories-showcase"
+    }
+  },
+  "image#categories-showcase-02": {
+    "props": {
+      "src": "",
+      "alt": "",
+      "title": "",
+      "link": {
+        "url": "#"
+      }
+    },
+    "title": "image02"
+  },
+  "link#categories-showcase-02": {
+    "props": {
+      "label": "",
+      "target": "_self",
+      "blockClass": "department-categories-showcase-cta",
+      "href": "#"
+    },
+    "title": "link02"
+  },
+
+  "flex-layout.col#categories-showcase-03": {
+    "children": ["image#categories-showcase-03", "link#categories-showcase-03"],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "department-categories-showcase"
+    }
+  },
+  "image#categories-showcase-03": {
+    "props": {
+      "src": "",
+      "alt": "",
+      "title": "",
+      "link": {
+        "url": "#"
+      }
+    },
+    "title": "image03"
+  },
+  "link#categories-showcase-03": {
+    "props": {
+      "label": "",
+      "target": "_self",
+      "blockClass": "department-categories-showcase-cta",
+      "href": "#"
+    },
+    "title": "link03"
+  },
+
+  "flex-layout.col#categories-showcase-04": {
+    "children": ["image#categories-showcase-04", "link#categories-showcase-04"],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "department-categories-showcase"
+    }
+  },
+  "image#categories-showcase-04": {
+    "props": {
+      "src": "",
+      "alt": "",
+      "title": "",
+      "link": {
+        "url": "#"
+      }
+    },
+    "title": "image04"
+  },
+  "link#categories-showcase-04": {
+    "props": {
+      "label": "",
+      "target": "_self",
+      "blockClass": "department-categories-showcase-cta",
+      "href": "#"
+    },
+    "title": "link04"
+  },
+
+  "flex-layout.col#categories-showcase-05": {
+    "children": ["image#categories-showcase-05", "link#categories-showcase-05"],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "department-categories-showcase"
+    }
+  },
+  "image#categories-showcase-05": {
+    "props": {
+      "src": "",
+      "alt": "",
+      "title": "",
+      "link": {
+        "url": "#"
+      }
+    },
+    "title": "image05"
+  },
+  "link#categories-showcase-05": {
+    "props": {
+      "label": "",
+      "target": "_self",
+      "blockClass": "department-categories-showcase-cta",
+      "href": "#"
+    },
+    "title": "link05"
   }
 }
