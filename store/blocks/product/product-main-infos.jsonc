@@ -3,10 +3,11 @@
     "title": "acquistare prodotti",
     "children": [
       "flex-layout.row#pdp-product-name",
-     // "flex-layout.row#pdp-rating-and-whishlist",
+      // "flex-layout.row#pdp-rating-and-whishlist",
       "flex-layout.row#pdp-rating",
       "flex-layout.row#pdp-price-and-installments",
       "condition-layout.product#availability",
+      "flex-layout.row#availability-pdp",
       "flex-layout.col#pdp-shipping",
       "flex-layout.row#box_light",
       "flex-layout.row#whatsapp",
@@ -22,9 +23,7 @@
 
   "flex-layout.row#box_light": {
     "title": "box_light",
-    "children": [
-      "flex-layout.col#box_light"
-    ],
+    "children": ["flex-layout.col#box_light"],
     "props": {
       "htmlId": "box_light",
       "preserveLayoutOnMobile": true,
@@ -43,17 +42,13 @@
     ]
   },
   "flex-layout.row#pdp-secure-payment": {
-    "children": [
-      "modal-trigger#pdp-secure-payment"
-    ],
+    "children": ["modal-trigger#pdp-secure-payment"],
     "props": {
       "width": "100%"
     }
   },
   "flex-layout.row#payment": {
-    "children": [
-      "image#payment"
-    ],
+    "children": ["image#payment"],
     "props": {
       "width": "50%",
       "blockClass": "row-payment",
@@ -69,9 +64,7 @@
     }
   },
   "flex-layout.row#box_usp": {
-    "children": [
-      "image#box_usp_image"
-    ],
+    "children": ["image#box_usp_image"],
     "props": {
       "width": "100%"
     }
@@ -130,7 +123,7 @@
     "props": {
       "blockClass": "pdp-rating",
       "preventVerticalStretch": true,
-      "marginTop":4
+      "marginTop": 4
     }
   },
   "product-rating-inline#pdp": {
@@ -145,9 +138,7 @@
   },
 
   "flex-layout.row#pdp-quantity-and-add-to-cart-fixed": {
-    "children": [
-      "flex-layout.row#pdp-quantity-and-add-to-cart"
-    ],
+    "children": ["flex-layout.row#pdp-quantity-and-add-to-cart"],
     "props": {
       "blockClass": "pdp-quantity-and-add-to-cart-fixed"
     }
@@ -164,9 +155,7 @@
     }
   },
   "flex-layout.row#scalapay": {
-    "children": [
-      "scalapay-product-page-widget"
-    ],
+    "children": ["scalapay-product-page-widget"],
     "props": {
       "blockClass": "pdp-installments",
       "preventVerticalStretch": true,
@@ -174,9 +163,7 @@
     }
   },
   "flex-layout.row#pdp-qty-and-add-to-cart": {
-    "children": [
-      "flex-layout.col#pdp-quantity-and-add-to-cart"
-    ],
+    "children": ["flex-layout.col#pdp-quantity-and-add-to-cart"],
     "props": {
       "blockClass": "pdp-quantity-and-add-to-cart",
       "preserveLayoutOnMobile": true,
@@ -246,7 +233,7 @@
   "modal-trigger#pdp-secure-payment": {
     "props": {
       "blockClass": "pdp-secure-payment",
-      "width":"100%"
+      "width": "100%"
     },
     "children": [
       "rich-text#pdp-secure-payment",
@@ -345,6 +332,14 @@
       "blockClass": "pdp",
       "addToCartFeedback": "customEvent",
       "customPixelEventId": "add-to-cart-button"
+    }
+  },
+
+  "flex-layout.row#availability-pdp": {
+    "props": {
+      "blockClass": "availability-pdp",
+      "htmlId": "availability-pdp",
+      "width": "100%"
     }
   },
 
@@ -551,7 +546,6 @@
       "width": "20px"
     }
   },
-
 
   "flex-layout.row#whatsapp": {
     "children": ["link#whatsapp_text", "flex-layout.col#whatsapp"],

@@ -14,6 +14,7 @@
       "flex-layout.row#pdp-rating-mobile",
       "flex-layout.row#pdp-price-and-installments",
       "condition-layout.product#availability",
+      "flex-layout.row#availability-pdp",
       "flex-layout.col#pdp-shipping",
       "flex-layout.row#box_light",
       "flex-layout.row#whatsapp",
