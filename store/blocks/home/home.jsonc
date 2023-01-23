@@ -1,6 +1,7 @@
 {
   "store.home": {
     "blocks": [
+      "flex-layout.row#feedaty-png",
       "flex-layout.row#submenu-categories",
       "flex-layout.row#home-main-slider",
       //"product-card-logged",
@@ -15,6 +16,45 @@
       "flex-layout.row#homeBottomSection"
     ]
   },
+  "flex-layout.row#feedaty-png": {
+    "children": [
+      "flex-layout.col#mobile-feedaty-png",
+      "flex-layout.col#desk-feedaty-png"
+    ],
+    "props": {
+      "blockClass": "feedaty"
+    },
+    "title": "feedaty"
+  },
+  "flex-layout.col#mobile-feedaty-png": {
+    "children": ["image#mobile-feedaty-png"],
+    "props": {
+      "blockClass": "feedaty-mobile"
+    }
+  },
+  "flex-layout.col#desk-feedaty-png": {
+    "children": ["image#desk-feedaty-png"],
+    "props": {
+      "blockClass": "feedaty-desk"
+    }
+  },
+  "image#mobile-feedaty-png": {
+    "props": {
+      "src": "assets/images/feedaty-mobile.png",
+      "width": "auto",
+      "height": "auto"
+    },
+    "title": "mobile-image"
+  },
+  "image#desk-feedaty-png": {
+    "props": {
+      "src": "assets/images/feedaty.png",
+      "width": "auto",
+      "height": "auto"
+    },
+    "title": "desk-image"
+  },
+
   "flex-layout.row#submenu-categories": {
     "children": [
       "flex-layout.row#category1",

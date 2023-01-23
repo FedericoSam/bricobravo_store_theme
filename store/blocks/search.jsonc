@@ -1,6 +1,7 @@
 {
   "store.search": {
     "blocks": [
+      "flex-layout.row#feedaty-png",
       "search-result-layout",
       "flex-layout.row#sectionSeo1",
       "flex-layout.row#sectionSeo2",
@@ -20,6 +21,7 @@
   },
   "store.search#brand": {
     "blocks": [
+      "flex-layout.row#feedaty-png",
       "search-result-layout",
       "flex-layout.row#sectionSeo1",
       "flex-layout.row#sectionSeo2",
@@ -38,6 +40,7 @@
   },
   "store.search#department": {
     "blocks": [
+      "flex-layout.row#feedaty-png",
       "flex-layout.row#department-categories",
       "search-result-layout",
       "flex-layout.row#sectionSeo1",
@@ -58,6 +61,7 @@
   },
   "store.search#category": {
     "blocks": [
+      "flex-layout.row#feedaty-png",
       "search-result-layout",
       "flex-layout.row#sectionSeo1",
       "flex-layout.row#sectionSeo2",
@@ -76,6 +80,7 @@
   },
   "store.search#subcategory": {
     "blocks": [
+      "flex-layout.row#feedaty-png",
       "search-result-layout",
       "flex-layout.row#sectionSeo1",
       "flex-layout.row#sectionSeo2",

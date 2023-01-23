@@ -1,6 +1,7 @@
 {
   "store.product": {
     "children": [
+      "flex-layout.row#feedaty-png",
       "responsive-layout.desktop#product",
       "responsive-layout.mobile#product"
     ]

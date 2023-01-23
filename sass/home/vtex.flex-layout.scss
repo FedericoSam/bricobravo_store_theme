@@ -215,6 +215,48 @@
       }
     }
   }
+  &--feedaty {
+    background-color: #232946;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 767.98px) {
+      height: 60px;
+      padding-top: 3px;
+    }
+    .flexRowContent {
+      display: block;
+      text-align: center;
+    }
+    .stretchChildrenWidth {
+      width: 100% !important;
+    }
+    :global(.vtex-store-components-3-x-imageElement) {
+      max-height: 34px;
+      padding-top: 2px;
+      @media screen and (max-width: 767.98px) {
+        max-height: 55px;
+        padding-top: 0;
+      }
+    }
+    @media screen and (max-width: 767.98px) {
+      .flexCol--feedaty-mobile {
+        display: block;
+      }
+      .flexCol--feedaty-desk {
+        display: none;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      .flexCol--feedaty-mobile {
+        display: none;
+      }
+      .flexCol--feedaty-desk {
+        display: block;
+      }
+    }
+  }
 }
 
 .flexCol {
