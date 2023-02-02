@@ -3,8 +3,9 @@ import style from './style.css'
 
 function PageBrands(props) {
   const [brands, setUser] = useState([]);
+  
   const fetchData = () => {
-    return fetch("/api/catalog_system/pvt/brand/list")
+    return fetch("https://bricobravo.myvtex.com/api/catalog_system/pvt/brand/list")
           .then((response) => response.json())
           .then((data) => setUser(data));
   }

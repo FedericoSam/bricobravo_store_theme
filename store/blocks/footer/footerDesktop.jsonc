@@ -143,7 +143,7 @@
   "flex-layout.col#upperFooterLinksCol2": {
     "children": [
       "link#upperFooterCol2Link1",
-      "link#upperFooterCol2Link4",
+      //"link#upperFooterCol2Link4",
       "link#upperFooterCol2Link2",
       "link#upperFooterCol2Link3"
     ]
