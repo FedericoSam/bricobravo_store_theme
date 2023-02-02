@@ -148,4 +148,22 @@
       padding: 0 16px;
     }
   }
+
+  &--breadcrumbBrandsLink {
+    text-decoration: none;
+    color: #8E8E8E;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    &::before {
+      content: "/";
+      width: 15px;
+      height: 15px;
+      position: relative;
+      margin-right: 5px;
+    }
+    &:hover .label--breadcrumbBrandsLink {
+      color: $blue-hover;
+    }
+  }
 }

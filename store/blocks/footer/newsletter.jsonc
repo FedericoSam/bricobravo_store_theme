@@ -9,8 +9,7 @@
     "props": {
       "blockClass": "newsletterRow",
       "htmlId": "Newsletter"
-    },
-    "title": "Newsletter"
+    }
   },
   "flex-layout.col#newsTitle": {
     "children": ["rich-text#newsTitle", "rich-text#newsSubTitle"],
@@ -20,7 +19,7 @@
   },
   "rich-text#newsTitle": {
     "props": {
-      "text": "Desideri conoscere le ultime novità e offerte?",
+      "text": "Ricevi in anteprima news e promozioni!",
       "textPosition": "LEFT",
       "textAlignment": "LEFT",
       "blockClass": "newsTitle",
@@ -30,7 +29,7 @@
   },
   "rich-text#newsSubTitle": {
     "props": {
-      "text": "Ti basterà inserire il tuo indirizzo email e riceverai **5€ di sconto** sul tuo primo ordine.",
+      "text": "Desideri conoscere le ultime **novità e offerte**? Inserisci il tuo indirizzo email e riceverai tante promozioni in anteprima.",
       "textPosition": "LEFT",
       "textAlignment": "LEFT",
       "blockClass": "newsSubTitle",
@@ -39,7 +38,10 @@
     "title": "Sottotitolo della newsletter"
   },
   "flex-layout.col#submit": {
-    "children": ["newsletter-form#footer"]
+    "children": ["newsletter-form#footer"],
+    "props": {
+      "blockClass": "cn_newsletter-footer"
+    }
   },
   "newsletter-form#footer": {
     "children": ["flex-layout.row#newsletter-form"],

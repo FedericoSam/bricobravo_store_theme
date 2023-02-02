@@ -1,6 +1,9 @@
 {
   "store.custom#editorial": {
-    "blocks": ["flex-layout.row#editorial"]
+    "blocks": [
+      "flex-layout.row#editorial",
+      "flex-layout.row#newsletter"
+    ]
   },
   "flex-layout.row#editorial": {
     "props": {

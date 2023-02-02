@@ -13,7 +13,8 @@
       "flex-layout.row#home-blog",
       // "flex-layout.row#home-reviews",
       "flex-layout.row#home-services",
-      "flex-layout.row#homeBottomSection"
+      "flex-layout.row#homeBottomSection",
+      "flex-layout.row#newsletter"
     ]
   },
   "flex-layout.row#feedaty-png": {

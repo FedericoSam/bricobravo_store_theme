@@ -68,7 +68,21 @@
 }
 
 .imageElementLink {
+  &--breadcrumbHomeLink {
+    position: relative;
+    display: block;
+    width: 20px;
+  }
   &--home-categories-showcase {
     display: flex;
+  }
+}
+.imageElement {
+  &--breadcrumbHomeLink {
+    position: absolute;
+    top: 7px;
+    @media screen and (max-width: 639.98px) {
+      top: -13px;
+    }
   }
 }

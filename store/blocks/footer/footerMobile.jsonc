@@ -1,7 +1,7 @@
 {
   "footer-layout.mobile": {
     "children": [
-      "flex-layout.row#newsletter",
+      //"flex-layout.row#newsletter",
       "flex-layout.row#FooterLinksMobile",
       "flex-layout.row#footerPaymentMethods",
       "flex-layout.row#bottomFooterDesktop"

@@ -1,6 +1,9 @@
 {
   "store.custom#simple-page": {
-    "blocks": ["flex-layout.row#simple-page"]
+    "blocks": [
+      "flex-layout.row#simple-page",
+      "flex-layout.row#newsletter"
+    ]
   },
   "flex-layout.row#simple-page": {
     "props": {

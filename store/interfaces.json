@@ -37,6 +37,9 @@
   "show-clear-filter-button":{
     "component": "ShowClearFilterButton"
   },
+  "page-brands": {
+    "component": "PageBrands"
+  },
   "collapsible-layout": {
     "component": "CollapsibleLayout",
     "composition": "children"

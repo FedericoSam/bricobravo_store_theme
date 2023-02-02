@@ -1,6 +1,9 @@
 {
   "store.custom#rich-text": {
-    "blocks": ["flex-layout.row#rich-text"]
+    "blocks": [
+      "flex-layout.row#rich-text",
+      "flex-layout.row#newsletter"
+    ]
   },
   "flex-layout.row#rich-text": {
     "title": "Rich Text Content",

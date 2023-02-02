@@ -4,7 +4,10 @@
   },
 
   "store.account": {
-    "blocks": ["my-account"],
+    "blocks": [
+      "my-account",
+      "flex-layout.row#newsletter"
+    ],
     "parent": {
       "challenge": "challenge.profile"
     }
@@ -13,7 +16,8 @@
   "store.login": {
     "blocks": [
       "login-content#default",
-      "login-button-check"
+      "login-button-check",
+      "flex-layout.row#newsletter"
     ]
   },
 

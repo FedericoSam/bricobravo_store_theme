@@ -1,6 +1,7 @@
 {
   "store.custom#sandbox": {
-    "blocks": ["flex-layout.row#sandbox"]
+    "blocks": ["flex-layout.row#sandbox",
+    "flex-layout.row#newsletter"]
   },
 
   "flex-layout.row#sandbox": {

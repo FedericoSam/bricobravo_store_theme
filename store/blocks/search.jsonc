@@ -5,7 +5,8 @@
       "search-result-layout",
       "flex-layout.row#sectionSeo1",
       "flex-layout.row#sectionSeo2",
-      "flex-layout.row#sectionSeo3"
+      "flex-layout.row#sectionSeo3",
+      "flex-layout.row#newsletter"
     ],
     "props": {
       "context": {
@@ -25,7 +26,8 @@
       "search-result-layout",
       "flex-layout.row#sectionSeo1",
       "flex-layout.row#sectionSeo2",
-      "flex-layout.row#sectionSeo3"
+      "flex-layout.row#sectionSeo3",
+      "flex-layout.row#newsletter"
     ],
     "props": {
       "context": {
@@ -45,7 +47,8 @@
       "search-result-layout",
       "flex-layout.row#sectionSeo1",
       "flex-layout.row#sectionSeo2",
-      "flex-layout.row#sectionSeo3"
+      "flex-layout.row#sectionSeo3",
+      "flex-layout.row#newsletter"
     ],
     "props": {
       "context": {
@@ -65,7 +68,8 @@
       "search-result-layout",
       "flex-layout.row#sectionSeo1",
       "flex-layout.row#sectionSeo2",
-      "flex-layout.row#sectionSeo3"
+      "flex-layout.row#sectionSeo3",
+      "flex-layout.row#newsletter"
     ],
     "props": {
       "context": {
@@ -84,7 +88,8 @@
       "search-result-layout",
       "flex-layout.row#sectionSeo1",
       "flex-layout.row#sectionSeo2",
-      "flex-layout.row#sectionSeo3"
+      "flex-layout.row#sectionSeo3",
+      "flex-layout.row#newsletter"
     ],
     "props": {
       "context": {

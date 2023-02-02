@@ -362,6 +362,13 @@
       align-items: center;
     }
   }
+  &--breadcrumbHomediv {
+    display: block;
+    padding: 1.1rem 0;
+    @include breakpoint('mobile') {
+      padding: 1.1rem 15px;
+    }
+  }
 
   .flexColChild {
     &--home-categories-showcase,
@@ -421,6 +428,14 @@
       @include breakpoint('mobile') {
         margin-bottom: 2.5rem;
       }
+    }
+
+    &--footer-upperFooterCol1:nth-child(odd) {
+      height: auto!important;
+    }
+
+    &--breadcrumbHomediv {
+      display: inline-block;
     }
   }
 }

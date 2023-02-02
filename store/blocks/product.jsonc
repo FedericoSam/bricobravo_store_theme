@@ -3,7 +3,8 @@
     "children": [
       "flex-layout.row#feedaty-png",
       "responsive-layout.desktop#product",
-      "responsive-layout.mobile#product"
+      "responsive-layout.mobile#product",
+      "flex-layout.row#newsletter"
     ]
   },
   "responsive-layout.desktop#product": {

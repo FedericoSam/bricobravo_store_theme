@@ -1,7 +1,7 @@
 {
   "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#newsletter",
+      //"flex-layout.row#newsletter",
       "flex-layout.row#FooterLinksDesktop",
       "flex-layout.row#footerPaymentMethods",
       "flex-layout.row#bottomFooterDesktop"
@@ -143,6 +143,7 @@
   "flex-layout.col#upperFooterLinksCol2": {
     "children": [
       "link#upperFooterCol2Link1",
+      "link#upperFooterCol2Link4",
       "link#upperFooterCol2Link2",
       "link#upperFooterCol2Link3"
     ]
@@ -152,6 +153,13 @@
       "href": "#",
       "label": "l´azienda"
     }
+  },
+  "link#upperFooterCol2Link4": {
+    "props": {
+      "href": "#",
+      "label": "Brands"
+    },
+    "title": "Link Brands"
   },
   "link#upperFooterCol2Link2": {
     "props": {

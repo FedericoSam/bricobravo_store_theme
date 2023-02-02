@@ -1,6 +1,9 @@
 {
   "store.custom#our-stores": {
-    "blocks": ["flex-layout.row#our-stores"]
+    "blocks": [
+      "flex-layout.row#our-stores",
+      "flex-layout.row#newsletter"
+    ]
   },
   "flex-layout.row#our-stores": {
     "props": {
