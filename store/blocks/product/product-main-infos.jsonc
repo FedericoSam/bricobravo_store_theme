@@ -345,8 +345,8 @@
 
   "flex-layout.col#pdp-shipping": {
     "children": [
-      "seller-consegna",
-      "flex-layout.col#pdp-shipping-type"
+      "seller-consegna"
+     // "flex-layout.col#pdp-shipping-type"
       // "flex-layout.col#pdp-estimate-shipping"
     ],
     "props": {

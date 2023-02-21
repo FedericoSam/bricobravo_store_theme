@@ -5,7 +5,7 @@ function PageBrands(props) {
   const [brands, setUser] = useState([]);
   
   const fetchData = () => {
-    return fetch("https://bricobravo.myvtex.com/api/catalog_system/pvt/brand/list")
+    return fetch("/_v/brands")
           .then((response) => response.json())
           .then((data) => setUser(data));
   }
@@ -14,7 +14,7 @@ function PageBrands(props) {
   },[])
 
 brands.sort((a, b) => a.name.localeCompare(b.name)); //ordine alfabetico
-console.log('brands: ', brands);
+//console.log('brands: ', brands);
 // Create a primative hashtable with the Alphabetized letter as your key.
 // Your value for that key, is a collection of the Names.
 var brandList = brands.reduce((brandList, brand) => {
