@@ -101,10 +101,10 @@
   "flex-layout.col#summaryInfo": {
     "children": [
       "flex-layout.row#summary-prices",
-      "product-summary-name",
-      "product-installments",
+      "product-summary-name"
+      //"product-installments",
       // "flex-layout.row#productReviews",
-      "flex-layout.row#add-to-cart"
+      //"flex-layout.row#add-to-cart"
     ],
     "props": {
       "preventVerticalStretch": true,

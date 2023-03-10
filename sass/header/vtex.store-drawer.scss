@@ -1,14 +1,13 @@
 @import 'sass/_media-queries.scss';
 
-
 .openIconContainer {
   display: flex;
   align-items: center;
   height: 41px;
   width: 54px;
   justify-content: center;
-  @media(min--moz-device-pixel-ratio:0) {
-    height:39.8px;
+  @media (min--moz-device-pixel-ratio: 0) {
+    height: 39.8px;
     @media screen and (min-width: 2000px) {
       height: 40.3px;
     }
@@ -17,14 +16,14 @@
     }
   }
   &::before {
-    content: "";
+    content: '';
     width: 35px;
     height: 38px;
     display: inline-block;
     background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M0 0h40v40H0z'/%3E%3Cg stroke='%236B4DC4' stroke-linecap='round'%3E%3Cpath d='M9 11.33548229h22M9 28.1590117h22M9 19.747247l21.9999998.00269223'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   }
   &::after {
-    content: "|";
+    content: '|';
     font-size: 20px;
     height: 41px;
     padding-left: 2px;
@@ -85,7 +84,7 @@
   }
 }*/
 
-.closeIconButton--drawer-desktop{
+.closeIconButton--drawer-desktop {
   @include mobile {
     position: absolute;
   }
@@ -107,7 +106,7 @@
     border-radius: 3px;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: #B8B8B8;
+    background-color: #b8b8b8;
     border-radius: 3px;
   }
 }
@@ -116,12 +115,11 @@
   height: 100vh;
 }
 
-
 @media screen and (max-width: 760px) {
   .openIconContainer--filterMobileDrawer {
     &::before {
       visibility: visible;
-      content: url("assets/icons/icon_filter.svg");
+      content: url('assets/icons/icon_filter.svg');
       padding-right: 8px;
       display: inline-block;
       background: none;

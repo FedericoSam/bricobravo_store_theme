@@ -277,11 +277,11 @@
 }
 
 /* format Reviews */
-:global(.vtex-reviews-and-ratings-3-x-stars){
+:global(.vtex-reviews-and-ratings-3-x-stars) {
   height: 22px;
   padding-bottom: 14px;
 }
-:global(.vtex-reviews-and-ratings-3-x-star--empty){
+:global(.vtex-reviews-and-ratings-3-x-star--empty) {
   color: #d8d8d8;
   font-size: 20px;
   font-weight: normal;
@@ -410,7 +410,7 @@
 .flexCol--table-row:nth-child(odd) .flexRow--table-heading {
   background-color: transparent;
 }
-.flexRow--summaryTop{
+.flexRow--summaryTop {
   z-index: 1;
   @include breakpoint('mobile') {
     z-index: 3;
@@ -465,11 +465,11 @@
       &:first-child {
         //margin-left: auto;
         //margin-right: 60px;
-        @include breakpoint("mobile") {
+        @include breakpoint('mobile') {
           margin-right: 20px;
         }
       }
-      @include breakpoint("mobile") {
+      @include breakpoint('mobile') {
         &:last-child {
           position: absolute;
           height: 4500px !important;
@@ -486,8 +486,8 @@
           padding: 0.5rem 0 0.6rem;
           padding-inline: 8px;
           background: white;
-          border-top: 2px solid #DFDFDF;
-    transform: translateY(-11px);
+          border-top: 2px solid #dfdfdf;
+          transform: translateY(-11px);
         }
       }
     }
@@ -527,7 +527,7 @@
   &--pdp-quantity-and-add-to-cart-fixed {
     display: none;
     .flexRow--pdp-shipping {
-      display: none
+      display: none;
     }
     .flexCol--pdp-quantity-and-add-to-cart {
       .flexColChild--pdp-quantity-and-add-to-cart:first-child {
@@ -539,7 +539,7 @@
       padding: 10px 10px 10px;
     }
     :global(.vtex-modal-layout-0-x-triggerContainer--pdp-secure-payment) {
-      display: none
+      display: none;
     }
   }
 
@@ -577,7 +577,7 @@
     @include breakpoint('mobile') {
       margin-left: 1rem;
     }
-    :global(.vtex-slider-layout-0-x-caretIcon--shelf-also-view){
+    :global(.vtex-slider-layout-0-x-caretIcon--shelf-also-view) {
       display: flex !important;
       @include breakpoint('mobile') {
         display: none;
@@ -585,7 +585,7 @@
     }
   }
   &--also-view-product-page {
-    :global(.vtex-slider-layout-0-x-caretIcon--shelf-also-view){
+    :global(.vtex-slider-layout-0-x-caretIcon--shelf-also-view) {
       display: flex !important;
       @include breakpoint('mobile') {
         display: none;
@@ -934,7 +934,7 @@
   .flexRowContent--product-main-descSpec {
     @include container-main;
     margin: 0 auto 0.5rem;
-    @include breakpoint('desktop'){
+    @include breakpoint('desktop') {
       padding-top: 150px;
       margin-top: -150px;
     }
@@ -1016,7 +1016,7 @@
   .flexRowContent--add-to-cart-button {
     :global(.vtex-button) {
       border: none;
-      background-color: $primary-default;
+      background-color: $pink-active;
       height: 40px;
       border-radius: 4px;
       font-weight: 700;
@@ -1411,7 +1411,6 @@
     width: 100%;
     max-width: 26.75rem;
   }
-
 }
 
 :global(.vtex-flex-layout-0-x-flexRowContent--product-whatsapp) {
@@ -1421,16 +1420,16 @@
     width: auto !important;
     padding-right: 5px;
     //:global(.vtex-rich-text-0-x-wrapper){
-    :global(.vtex-store-link-0-x-link--whatsapp_text){
+    :global(.vtex-store-link-0-x-link--whatsapp_text) {
       padding-left: 34px;
       position: relative;
       color: black;
       font-weight: 400;
-      &:hover{
+      &:hover {
         text-decoration: none;
       }
       &::before {
-        content: "";
+        content: '';
         background-image: url('assets/icons/whatsapp_logo.png');
         background-repeat: no-repeat;
         background-size: contain;
@@ -1442,24 +1441,24 @@
       }
     }
   }
-  :global(.vtex-store-link-0-x-link){
+  :global(.vtex-store-link-0-x-link) {
     align-self: center;
     font-weight: 600;
     color: #2fa33e;
     text-decoration: none;
-    &:hover{
+    &:hover {
       text-decoration: underline;
     }
   }
-  :global(.vtex-store-link-0-x-label--whatsapp_mobile){
+  :global(.vtex-store-link-0-x-label--whatsapp_mobile) {
     display: none;
   }
   @include mobile {
     display: flex;
-    :global(.vtex-store-link-0-x-label--whatsapp_desk){
+    :global(.vtex-store-link-0-x-label--whatsapp_desk) {
       display: none;
     }
-    :global(.vtex-store-link-0-x-label--whatsapp_mobile){
+    :global(.vtex-store-link-0-x-label--whatsapp_mobile) {
       display: flex;
     }
   }
@@ -1474,9 +1473,9 @@
   }
 }
 
-.flexRow--storeLocator-container{
-  &::before{
-    content: "/ Store locator";
+.flexRow--storeLocator-container {
+  &::before {
+    content: '/ Store locator';
   }
 }
 
@@ -1504,7 +1503,6 @@
 }
 
 @include mobile {
-
   .flexRowContent--rowTitleStore {
     width: auto;
   }
@@ -1516,11 +1514,10 @@
       margin-bottom: 20px;
     }
     .flexCol--moreInfo {
-        width: 100% !important;
-        margin-inline: 16px;
+      width: 100% !important;
+      margin-inline: 16px;
     }
   }
-
 }
 
 .flexCol--colTitleStore {
@@ -1551,7 +1548,6 @@
   }
 }
 
-
 .flexRow--breadcrumb-detail {
   :global(.vtex-rich-text-0-x-container--breadcrumb1) {
     margin-left: -55px;
@@ -1568,5 +1564,3 @@
   margin-inline: auto;
   max-width: 1294px;
 }
-
-

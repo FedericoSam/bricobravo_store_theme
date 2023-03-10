@@ -548,47 +548,47 @@
   },
 
   "flex-layout.row#whatsapp": {
-    "children": ["link#whatsapp_text", "flex-layout.col#whatsapp"],
+    "children": ["link.product#whatsapp_text", "flex-layout.col#whatsapp"],
     "props": {
       "blockClass": "product-whatsapp",
       "width": "100%"
     },
     "title": "whatsapp"
   },
-  "link#whatsapp_text": {
+  "link.product#whatsapp_text": {
     "props": {
       "textAlignment": "LEFT",
       "textPosition": "left",
-      "label": "Puoi anche ordinare con ",
-      "href": "https://wa.me/393204418560",
+      "label": "Lasciati consigliare dai nostri esperti (lun-ven 9.00-18.00) ",
+      "href": "https://wa.me/393204418560?text=Ciao%2C%20avrei%20bisogno%20di%20alcune%20informazioni%20per%20l%27acquisto%20del%20prodotto%0Ahttps://bricobravo.com/{slug}/p",
       "target": "_blank",
       "blockClass": "whatsapp_text"
     }
   },
   "flex-layout.col#whatsapp": {
-    "children": ["link#whatsapp", "link#whatsapp_mobile"],
+    "children": ["link.product#whatsapp", "link.product#whatsapp_mobile"],
     "props": {
       "blockClass": "product-whatsapp",
       "width": "100%"
     },
     "title": "whatsapp"
   },
-  "link#whatsapp": {
+  "link.product#whatsapp": {
     "title": "whatsapp link",
     "props": {
-      "label": "WhatsApp: +39 3204418560",
-      "href": "https://wa.me/393204418560",
+      "label": "WhatsApp",
+      "href": "https://wa.me/393204418560?text=Ciao%2C%20avrei%20bisogno%20di%20alcune%20informazioni%20per%20l%27acquisto%20del%20prodotto%0Ahttps://bricobravo.com/{slug}/p",
       "target": "_blank",
       "textAlignment": "LEFT",
       "textPosition": "left",
       "blockClass": "whatsapp_desk"
     }
   },
-  "link#whatsapp_mobile": {
+  "link.product#whatsapp_mobile": {
     "title": "whatsapp link mobile",
     "props": {
       "label": "WhatsApp",
-      "href": "https://wa.me/393204418560",
+      "href": "https://wa.me/393204418560?text=Ciao%2C%20avrei%20bisogno%20di%20alcune%20informazioni%20per%20l%27acquisto%20del%20prodotto%0Ahttps://bricobravo.com/{slug}/p",
       "target": "_blank",
       "textAlignment": "LEFT",
       "textPosition": "left",

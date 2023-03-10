@@ -35,7 +35,7 @@
   "rich-text#promotion": {
     "props": {
       "blockClass": "header-titlePromotion",
-      "text": "OFFERTA SPECIALE sui prodotti per arredare il tuo giardino",
+      "text": "OTTIENI UNO SCONTO EXTRA FINO A 50€",
       "htmlId": "Promozione"
     },
     "title": "Promozione"
@@ -61,7 +61,7 @@
   "rich-text#moreInfoPromotion": {
     "props": {
       "text": "Scopri di più",
-      "htmlId": "Promozione - Maggiori informazioni"
+      "blockClass": "header-moreInfoPromotion"
     },
     "title": "Promozione - Maggiori informazioni"
   },
@@ -91,7 +91,7 @@
   },
   "rich-text#InfoPromotion": {
     "props": {
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "text": "UNICA5 : 5€ di sconto su un carrello minimo di 150€ / UNICA10 : 10€ di sconto su un carrello minimo di 250€ / UNICA15 : 15€ di sconto su un carrello minimo di 350€. UNICA20 : 20€ di sconto su un carrello minimo di 600€ / UNICA30 : 30€ di sconto su un carrello minimo di 1000€ / UNICA50 : 50€ di sconto su un carrello minimo di 1500€. TI RICORDIAMO CHE SU BRICOBRAVO.COM LA SPEDIZIONE E' SEMPRE GRATUITA",
       "htmlId": "Info promozione"
     },
     "title": "Info promozione"
@@ -148,7 +148,7 @@
       "blockClass": "drawer-desktop",
       "maxWidth": 400,
       "renderingStrategy": "eager",
-      "slideDirection":"leftToRight"
+      "slideDirection": "leftToRight"
     }
   },
 

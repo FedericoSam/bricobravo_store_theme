@@ -1,6 +1,7 @@
 {
   "header-layout.mobile": {
     "children": [
+      "flex-layout.row#header-promotion",
       "sticky-layout#mobile-header",
       "flex-layout.row#menu-mobile",
       "header-mobile"

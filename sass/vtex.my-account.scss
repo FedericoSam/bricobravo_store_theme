@@ -1,7 +1,6 @@
 @import '_media-queries.scss';
 @import '_variables.scss';
 
-
 :global(.vtex-account) {
   width: 100%;
   max-width: 1313px;
@@ -15,9 +14,9 @@
 
 :global(.vtex-account__page-body) {
   padding-inline: 0;
-  div div ul li a{
-    :global(.hover-c-link){
-    display: none;
+  div div ul li a {
+    :global(.hover-c-link) {
+      display: none;
     }
   }
   :global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf) {
@@ -41,8 +40,7 @@
   }
 }
 
-:global(.vtex-pageHeader__title
-[data-specification-name='Indirizzi']){
+:global(.vtex-pageHeader__title [data-specification-name='Indirizzi']) {
   border: 1px solid red;
 }
 
@@ -64,7 +62,6 @@
       }
     }
     .menuLinks {
-
       .menuLink {
         font-weight: bold;
         color: #1d1e2c;
@@ -92,7 +89,7 @@
 
       div div:last-child a {
         position: relative;
-        &::after{
+        &::after {
           position: absolute;
           top: 0;
           left: 10px;
@@ -111,8 +108,8 @@
       }
 
       :global(.vtex-account_menu-link.b--action-primary) {
-        color: #402493;
-        border-left: 4px solid #402493;
+        color: $pink-active;
+        border-left: 4px solid $pink-active;
         //font-weight: 400;
         font-weight: bold;
         height: 32px;
@@ -137,7 +134,7 @@
       content: '/ Modifica Profilo';
       transform: translateY(-159px) translateX(-226px);
       position: absolute;
-      color: #332C32;
+      color: #332c32;
       font-family: $font-family-text;
       font-size: 14px;
       font-weight: 500;
@@ -175,8 +172,8 @@
         :global(.vtex-button) {
           height: 40px;
           transition: all ease-in-out 0.3s;
-          background-color:#8E8E8E !important;
-          border-color: #8E8E8E;
+          background-color: #8e8e8e !important;
+          border-color: #8e8e8e;
           &:hover {
             background: $blue-dark-text;
           }
@@ -233,7 +230,7 @@
       }
     }
   }
-  .dataEntryLabel{
+  .dataEntryLabel {
     font-size: 12px;
     font-weight: 600;
     @include mobile {
@@ -246,7 +243,7 @@
       content: '/ Indirizzi';
       transform: translateY(-171px) translateX(-168px);
       position: absolute;
-      color: #332C32;
+      color: #332c32;
       font-family: $font-family-text;
       font-size: 14px;
       font-weight: 500;
@@ -318,7 +315,7 @@
       content: '/ Aggiungi nuovo indirizzo';
       transform: translateY(-160px) translateX(-69px);
       position: absolute;
-      color: #332C32;
+      color: #332c32;
       font-family: $font-family-text;
       font-size: 14px;
       font-weight: 500;
@@ -337,7 +334,7 @@
         content: '/ I miei indirizzi';
         transform: translateY(-160px) translateX(-168px);
         position: absolute;
-        color: #8E8E8E;
+        color: #8e8e8e;
         font-family: $font-family-text;
         font-size: 14px;
         font-weight: 400;
@@ -355,7 +352,7 @@
     :global(.vtex-address-form-4-x-input),
     :global(.vtex-input-prefix__group),
     :global(.vtex-address-form-4-x-container) {
-      border-color: #DFDFDF;
+      border-color: #dfdfdf;
     }
 
     :global(.flex-auto) {
@@ -379,7 +376,7 @@
         position: relative;
         &::before {
           content: 'Aggiungi nuovo indirizzo';
-          color: #332C32;
+          color: #332c32;
           font-family: $font-family-text;
           font-size: 28px;
           font-weight: bold;
@@ -441,13 +438,13 @@
       }
 
       :global(.bg-action-primary) {
-        background-color: $blue-active;
+        background-color: $pink-active;
         text-transform: capitalize;
         height: 40px;
         width: 360px;
 
         &:hover {
-          background-color: $blue-dark-text;
+          background-color: $pink-hover;
         }
       }
     }
@@ -479,7 +476,7 @@
           gap: 15px;
 
           :global(.vtex-address-form__street)
-          :global(.vtex-address-form__receiverName) {
+            :global(.vtex-address-form__receiverName) {
             width: 40%;
           }
 
@@ -512,7 +509,7 @@
       content: '/ Carte di credito';
       transform: translateY(-171px) translateX(-168px);
       position: absolute;
-      color: #332C32;
+      color: #332c32;
       font-family: $font-family-text;
       font-size: 14px;
       font-weight: 500;
@@ -534,7 +531,7 @@
       content: '/ Autenticazione';
       transform: translateY(-171px) translateX(-187px);
       position: absolute;
-      color: #332C32;
+      color: #332c32;
       font-family: $font-family-text;
       font-size: 14px;
       font-weight: 500;
@@ -597,11 +594,8 @@
     border-color: #d8d8d8;
   }
 
-
-
   :global(.vtex-account__page) {
     width: 100%;
-
 
     :global(.vtex-pageHeader__title) {
       color: $primary-default;
@@ -623,13 +617,13 @@
         }
 
         :global(.vtex-button.bg-action-primary) {
-          background: #402493 !important;
-          border: 2px solid #402493;
+          background: $pink-active !important;
+          border: 2px solid $pink-active;
           color: $white;
 
           &:hover {
-            background: $blue-dark-text !important;
-            border: 2px solid $blue-dark-text;
+            background: $pink-hover !important;
+            border: 2px solid $pink-hover;
           }
         }
       }
@@ -640,7 +634,7 @@
         content: '/ Profilo';
         transform: translateY(-147px) translateX(-168px);
         position: absolute;
-        color: #332C32;
+        color: #332c32;
         font-family: $font-family-text;
         font-size: 14px;
         font-weight: 500;
@@ -679,20 +673,20 @@
       .boxContainerFooter {
         justify-content: center;
         padding-bottom: 24px;
-          :global(.vtex-button) {
-            padding: 0;
-            border: none;
-            background: transparent;
-            color: $blue-active;
-            position: absolute;
-            // transform: translate(-85px,-348px);
-            top: -30px;
-            left: 120px;
-            font-size: 16px;
-            line-height: 19px;
-            font-weight: 500;
-            text-transform: capitalize;
-          }
+        :global(.vtex-button) {
+          padding: 0;
+          border: none;
+          background: transparent;
+          color: $blue-active;
+          position: absolute;
+          // transform: translate(-85px,-348px);
+          top: -30px;
+          left: 120px;
+          font-size: 16px;
+          line-height: 19px;
+          font-weight: 500;
+          text-transform: capitalize;
+        }
       }
 
       .newsletterBoxContainer {
@@ -704,8 +698,8 @@
         }
 
         :global(.vtex-checkbox__inner-container.b--action-primary) {
-          background: $blue-active;
-          border: 2px solid $blue-active;
+          background: $pink-active;
+          border: 2px solid $pink-active;
           width: 20px;
           height: 20px;
         }
@@ -717,13 +711,13 @@
             padding-top: 0;
           }
         }
-        :global(.vtex-checkbox__label){
+        :global(.vtex-checkbox__label) {
           font-size: 14px;
           line-height: 16px;
           color: #fff;
-          &::after{
-            content: "Voglio restare aggiornato sulle offerte e promozioni in corso";
-            color: #332C32;
+          &::after {
+            content: 'Voglio restare aggiornato sulle offerte e promozioni in corso';
+            color: #332c32;
             font-size: 14px;
             letter-spacing: 0;
             line-height: 16px;
@@ -760,7 +754,7 @@
         content: '/ Nuova carta';
         transform: translateY(-171px) translateX(-200px);
         position: absolute;
-        color: #332C32;
+        color: #332c32;
         font-family: $font-family-text;
         font-size: 14px;
         font-weight: 500;
@@ -820,7 +814,7 @@
         content: '/ Ordini';
         transform: translateY(-171px) translateX(-168px);
         position: absolute;
-        color: #332C32;
+        color: #332c32;
         font-family: $font-family-text;
         font-size: 14px;
         font-weight: 500;
@@ -905,7 +899,7 @@
       content: '/ La mia lista dei desideri';
       transform: translateY(-171px) translateX(-168px);
       position: absolute;
-      color: #332C32;
+      color: #332c32;
       font-family: $font-family-text;
       font-size: 14px;
       font-weight: 500;
@@ -925,13 +919,13 @@
       right: -36px;
     }
     :global(.vtex-flex-layout-0-x-flexColChild--specificationNameCol
-    [data-specification-name='Premium'])::after{
+        [data-specification-name='Premium'])::after {
       top: -10px;
       left: -4px;
       position: relative;
     }
     :global(.vtex-flex-layout-0-x-flexColChild--specificationNameCol
-    [data-specification-name='Spedizione gratuita'])::after {
+        [data-specification-name='Spedizione gratuita'])::after {
       top: -16px;
       left: -4px;
     }
@@ -942,7 +936,7 @@
       :global(.vtex-product-summary-2-x-element) {
         padding: 0 5px 5px;
       }
-      :global(.vtex-product-summary-2-x-image){
+      :global(.vtex-product-summary-2-x-image) {
         max-height: 170px !important;
       }
       :global(.vtex-product-summary-2-x-containerNormal) {
@@ -968,13 +962,13 @@
             //padding-bottom: 10px;
           }
           :global(.vtex-store-components-3-x-sellingPrice:nth-child(even)) {
-            color:$blue-dark;
+            color: $blue-dark;
           }
           :global(.vtex-store-components-3-x-listPriceLabel) {
             display: none;
           }
         }
-        :global(.vtex-product-price-1-x-installments){
+        :global(.vtex-product-price-1-x-installments) {
           font-size: 14px;
           font-weight: 300;
           padding: 0 0.8rem;
@@ -1004,22 +998,22 @@
           }
         }
 
-        :global(.vtex-flex-layout-0-x-flexRow--buyButtonContainer){
+        :global(.vtex-flex-layout-0-x-flexRow--buyButtonContainer) {
           display: flex;
           height: 100%;
           align-items: flex-end;
         }
         :global(.vtex-button.bg-action-primary) {
-          color: $blue-dark;
+          color: $pink-active;
           border-radius: 4px;
-          border: 1px solid $blue-dark;
+          border: 1px solid $pink-active;
           margin-top: 0.5rem;
           transition: all 0.3s ease;
           min-height: 48px;
           text-transform: uppercase;
           background-color: transparent;
           &:hover {
-            background: $blue-dark !important;
+            background: $pink-hover !important;
             color: $white;
           }
         }
@@ -1029,7 +1023,7 @@
 
   @media screen and (max-width: 48rem) {
     .menu {
-      padding: 4rem 0!important;
+      padding: 4rem 0 !important;
       width: 100%;
       :global(.vtex-account_menu-link) {
         padding: 13px 0;
@@ -1040,7 +1034,6 @@
         border-bottom: 1px solid #d8d8d8;
       }
       .menuLinks {
-
         .menuLink {
           font-weight: bold;
           color: #1d1e2c;
@@ -1050,7 +1043,7 @@
           content: '/ Il mio profilo';
           transform: translateY(-126px);
           position: absolute;
-          color: #332C32;
+          color: #332c32;
           font-family: $font-family-text;
           font-size: 12px;
           font-weight: 500;
@@ -1176,7 +1169,7 @@
         }
         :global(.vtex-button.bg-action-primary) {
           height: 40px;
-          background-color: $blue-active;
+          background-color: $pink-active;
         }
         :global(.vtex-button.bg-danger) {
           height: 40px;
@@ -1226,7 +1219,7 @@
               background-size: auto;
               background-repeat: no-repeat;
               background-position: left;
-              color: #402493;
+              color: $pink-active;
               text-transform: capitalize;
               :global(.vtex-button__label) {
                 padding-left: 2rem;
@@ -1293,28 +1286,24 @@
       }
       :global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf) {
         :global(.vtex-product-summary-2-x-containerNormal),
-        :global(.vtex-product-summary-2-x-containerNormal):hover{
+        :global(.vtex-product-summary-2-x-containerNormal):hover {
           height: 455px;
         }
-
       }
 
-
       :global(.vtex-flex-layout-0-x-flexColChild--specificationNameCol
-      [data-specification-name='Premium'])::after{
+          [data-specification-name='Premium'])::after {
         content: url(/arquivos/premium-shipping-mobile.svg);
         top: -48px;
         left: 84px;
-
       }
 
       :global(.vtex-flex-layout-0-x-flexColChild--specificationNameCol
-      [data-specification-name='Spedizione gratuita'])::after {
+          [data-specification-name='Spedizione gratuita'])::after {
         content: url(/arquivos/free-shipping-mobile.svg);
         top: -40px;
         left: 64px;
       }
-
 
       :global(.vtex-product-summary-2-x-priceContainer) {
         align-items: start;
@@ -1331,13 +1320,13 @@
   }
 
   :global(.hover-b-action-primary) {
-    border-color: $blue-dark-text;
+    border-color: $pink-hover;
   }
 
   :global(.hover-b--muted-3) {
     border-color: #8e8e8e;
   }
-  :global(.vtex-flex-layout-0-x-flexRowContent--summaryPrices){
+  :global(.vtex-flex-layout-0-x-flexRowContent--summaryPrices) {
     padding-top: 10px;
   }
   :global(.vtex-product-summary-2-x-priceContainer) {
@@ -1345,25 +1334,25 @@
   }
 }
 
-:global(.vtex-my-account-1-x-addressBox){
+:global(.vtex-my-account-1-x-addressBox) {
   transform: translateY(26px);
 }
 
-.addressList{
-  :global(.t-heading-4){
+.addressList {
+  :global(.t-heading-4) {
     position: absolute;
     transform: translateY(123px);
   }
 }
 
 :global(.vtex-my-cards-1-x-paymentsList) {
-  @include breakpoint("desktop") {
+  @include breakpoint('desktop') {
     padding-left: 280px;
   }
 }
 
 :global(.vtex-my-orders-app-3-x-cancelBtn) {
-  display: none!important;
+  display: none !important;
 }
 
 .userName {

@@ -29,7 +29,9 @@
     width: max-content;
     margin-top: 8px;
     margin-bottom: auto;
+    text-align: center;
   }
+
   &--minicartEmptyTitle {
     display: flex;
     justify-content: center;
@@ -50,6 +52,13 @@
     text-align: center;
     color: #111;
   }
+  &--header-titlePromotion {
+    text-align: center;
+  }
+}
+
+.container--header-titlePromotion {
+  justify-content: center;
 }
 
 .wrapper {
@@ -65,14 +74,18 @@
   // }
 }
 
-
 @media screen and (max-width: 760px) {
-  .container--filterMobileDrawer,  .wrapper--filterMobileDrawer {
-    height: 40px;
+  .container--filterMobileDrawer,
+  .wrapper--filterMobileDrawer {
+    height: 100px;
   }
 
   .paragraph--filterMobileDrawer {
     margin-top: 8px;
     margin-bottom: 0;
+  }
+
+  .paragraph--header-moreInfoPromotion {
+    display: none;
   }
 }

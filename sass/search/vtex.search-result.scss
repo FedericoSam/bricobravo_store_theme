@@ -47,13 +47,14 @@
     transition: none;
 
     &:hover {
-      position: absolute;
-      left: 0 !important;
-      top: 0;
-      z-index: 7;
-      height: 420px;
-      background: $white;
-      transition: all 0.3s ease-in-out;
+      // position: absolute;
+      // left: 0 !important;
+      // top: 0;
+      // z-index: 7;
+      // height: 420px;
+      // background: $white;
+      // transition: all 0.3s ease-in-out;
+      text-decoration: underline;
     }
 
     :global(.vtex-product-summary-2-x-productNameContainer) {
@@ -164,7 +165,6 @@
     font-weight: 400;
     color: #332c32;
     line-height: 30px;
-
 
     &::after {
       content: ' articoli trovati';
@@ -358,10 +358,12 @@
   font-size: 14px;
   font-weight: 500;
 }
-.filter__container--category-1, .filter__container--category-2, .filter__container--category-3 {
+.filter__container--category-1,
+.filter__container--category-2,
+.filter__container--category-3 {
   position: relative;
-  &::after{
-    background-color: #FFF;
+  &::after {
+    background-color: #fff;
     height: 22px;
     min-width: 100px;
     position: absolute;
@@ -373,26 +375,26 @@
   }
 }
 .filter__container--category-1 {
-  &::after{
-    content:'Macro categoria';
+  &::after {
+    content: 'Macro categoria';
   }
 }
 .filter__container--category-2 {
-  &::after{
-    content:'Categoria';
+  &::after {
+    content: 'Categoria';
   }
 }
 .filter__container--category-3 {
-  &::after{
-    content:'Sottocategoria';
+  &::after {
+    content: 'Sottocategoria';
   }
 }
 .accordionFilterContainer--filterMobile--department .accordionFilterItemTitle,
 .accordionFilterContainer--filterMobile--category .accordionFilterItemTitle,
 .accordionFilterContainer--filterMobile--subcategory .accordionFilterItemTitle {
   position: relative;
-  &::after{
-    background-color: #FFF;
+  &::after {
+    background-color: #fff;
     height: 22px;
     min-width: 100px;
     position: absolute;
@@ -404,22 +406,23 @@
   }
 }
 .accordionFilterContainer--filterMobile--department .accordionFilterItemTitle {
-  &::after{
-    content:'Macro categoria';
+  &::after {
+    content: 'Macro categoria';
   }
 }
 .accordionFilterContainer--filterMobile--category .accordionFilterItemTitle {
-  &::after{
-    content:'Categoria';
+  &::after {
+    content: 'Categoria';
   }
 }
 .accordionFilterContainer--filterMobile--subcategory .accordionFilterItemTitle {
-  &::after{
-    content:'Sottocategoria';
+  &::after {
+    content: 'Sottocategoria';
   }
 }
-.container--layout--page-category1 .accordionFilterContainer--filterMobile--subcategory, 
-.container--layout--page-category1 .filter__container--category-3{
+.container--layout--page-category1
+  .accordionFilterContainer--filterMobile--subcategory,
+.container--layout--page-category1 .filter__container--category-3 {
   display: none;
 }
 
@@ -428,7 +431,8 @@
 //     display: none;
 //   }
 // }
-.container--layout--page-category1 { //breadcrabs nella search departement
+.container--layout--page-category1 {
+  //breadcrabs nella search departement
   :global(.vtex-flex-layout-0-x-flexRow--searchbread) {
     &:first-child {
       display: block;
@@ -461,11 +465,10 @@
   .filterPopupArrowIcon {
     @include breakpoint('mobile') {
       visibility: hidden;
-      &::before{
+      &::before {
         visibility: visible;
         content: url('assets/icons/icon_filter.svg');
         padding-right: 8px;
-
       }
     }
   }
@@ -487,7 +490,7 @@
     font-weight: 500;
 
     &::before {
-      content: "Filtri";
+      content: 'Filtri';
       font-size: 16px;
       font-weight: 400;
     }
@@ -598,20 +601,36 @@
     // &--category-3{
     //   display: none;
     // }
+
     .filterTemplateOverflow {
       max-height: 214px !important;
+      //padding-top: 1rem;
       scrollbar-width: thin;
-      scrollbar-color: #B8B8B8 transparent;
+      scrollbar-color: #b8b8b8 transparent;
 
-      .seeMoreButton {
-        color: #1B0E41;
+      :global(.vtex-slider__base-internal) {
+        background-color: $blue-active !important;
+      }
+      :global(.vtex-slider) {
+        z-index: 1;
       }
 
-    @include desktop {
+      :global(.vtex-slider__tooltip--active) {
+        background-color: $blue-active !important;
+        border-color: $blue-active !important;
+      }
+
+      .seeMoreButton {
+        color: #1b0e41;
+      }
+
+      @include desktop {
         :global(.vtex-slider-container) {
           transform: translateY(43px);
+          padding-top: 0rem;
 
           :global(.vtex-slider) {
+            padding-top: 0rem;
             width: 282px;
             transform: translateX(10px);
           }
@@ -659,7 +678,7 @@
       overflow-x: hidden;
       padding-bottom: 1rem;
       scrollbar-width: thin;
-      scrollbar-color: #B8B8B8 transparent;
+      scrollbar-color: #b8b8b8 transparent;
 
       &::-webkit-scrollbar {
         width: 6px;
@@ -982,7 +1001,7 @@
       transform: translate(-1px, -22px);
 
       @include mobile {
-        transform: translate(-1px,-69px);
+        transform: translate(-1px, -69px);
       }
 
       :global(.vtex-slider__left-value) {
@@ -1061,14 +1080,14 @@
   padding-bottom: 20px;
   position: fixed;
   bottom: -18px;
-  right: calc( calc( calc(159 * 100vw) - 60350px) / 340 );
+  right: calc(calc(calc(159 * 100vw) - 60350px) / 340);
 
   @media screen and (min-width: 540px) {
     right: calc(calc(calc(18 * 100vw) - 7820px) / 25);
   }
 
   &::after {
-    content: ")";
+    content: ')';
     text-align: left;
     background: #2b126b;
     transform: translate(-51px, 0);
@@ -1084,16 +1103,16 @@
 @include mobile {
   .filterAccordionItemBox--premio {
     :global(.vtex-checkbox__label) {
-        visibility: hidden;
-        padding-left: 16px;
-        &::after {
-          visibility: visible;
-          content: url('assets/images/premium.png');
-          width: 30px;
-          padding-top: 2px;
-          transform: translateX(-54px);
-          display: inline-block;
-        }
+      visibility: hidden;
+      padding-left: 16px;
+      &::after {
+        visibility: visible;
+        content: url('assets/images/premium.png');
+        width: 30px;
+        padding-top: 2px;
+        transform: translateX(-54px);
+        display: inline-block;
+      }
     }
   }
 
