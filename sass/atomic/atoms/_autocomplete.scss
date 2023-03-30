@@ -12,20 +12,21 @@
       @include desktop() {
         border-bottom: 2px solid $primary-dark;
       }
-    
+
       @include mobile() {
         top: 51px;
       }
-      
+
       /**
        * Biggy Autocomplete Wrapper
        * HTML Element: div
        * CSS Namespace: .vtex-search-2-x-biggy-autocomplete-wrapper
        */
       &-wrapper {
-        @include ns {
-          max-width: 336px;
-        }
+        //z-index: 99;
+        // @include ns {
+        //   max-width: 336px;
+        // }
       }
 
       /**
@@ -114,7 +115,6 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
           }
-          
         }
         &Title {
           //

@@ -555,3 +555,9 @@
     padding: 0px !important;
   }
 }
+
+:global(.vtex-login-2-x-container) {
+  display: flex;
+  justify-content: end;
+  //padding-top: 10px;
+}

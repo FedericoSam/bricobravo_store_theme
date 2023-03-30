@@ -2,7 +2,6 @@
 @import '../_variables.scss';
 
 .link {
-
   &--home-button-default {
     font-size: 14px;
     line-height: 16px;
@@ -52,26 +51,30 @@
   }
   &--home-categories-showcase-cta,
   &--categories-showcase-cta {
-    position: absolute;
+    position: relative;
     width: 100%;
     top: 0;
     left: 0;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    border-radius: 16px;
+    //border-radius: 16px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
     text-align: center;
-    line-height: 21px;
+    line-height: 20px;
     color: #332c32;
-    margin-top: 20px;
+    margin-top: 6px;
+    //padding: 10px 0 20px;
 
     &:hover {
       color: #332c32;
       font-weight: 700;
     }
+  }
+  &--home-categories-showcase-cta {
+    margin-top: 25px;
   }
 
   &--mobile-home-categories-showcase-cta {
@@ -133,14 +136,14 @@
       color: #291660;
     }
   }
-  &--home-shelf{
+  &--home-shelf {
     text-decoration: none;
     color: $blue-dark;
     font-weight: 500;
     padding-left: 2px;
     display: block;
     margin-bottom: 20px;
-    &:hover{
+    &:hover {
       text-decoration: underline;
     }
     @media screen and (max-width: 768px) {
@@ -151,12 +154,12 @@
 
   &--breadcrumbBrandsLink {
     text-decoration: none;
-    color: #8E8E8E;
+    color: #8e8e8e;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500;
     &::before {
-      content: "/";
+      content: '/';
       width: 15px;
       height: 15px;
       position: relative;

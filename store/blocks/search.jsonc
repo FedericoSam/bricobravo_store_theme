@@ -20,6 +20,7 @@
   "store.not-found#search": {
     "blocks": ["search-not-found-layout"]
   },
+
   "store.search#brand": {
     "blocks": [
       "flex-layout.row#feedaty-png",
@@ -40,6 +41,7 @@
       "blockClass": "page-brand"
     }
   },
+
   "store.search#department": {
     "blocks": [
       "flex-layout.row#feedaty-png",
@@ -62,6 +64,7 @@
       "blockClass": "page-category1"
     }
   },
+
   "store.search#category": {
     "blocks": [
       "flex-layout.row#feedaty-png",
@@ -82,6 +85,7 @@
       "blockClass": "page-category2"
     }
   },
+
   "store.search#subcategory": {
     "blocks": [
       "flex-layout.row#feedaty-png",
@@ -102,6 +106,7 @@
       "blockClass": "page-category3"
     }
   },
+
   "search-result-layout": {
     "blocks": [
       "search-result-layout.desktop",
@@ -116,6 +121,7 @@
     "title": "Categoria Desktop",
     "children": [
       "flex-layout.row#searchbread",
+      "flex-layout.row#categories",
       "flex-layout.row#searchTitle",
       "flex-layout.row#searchinfo",
       "flex-layout.row#searchLayout",
@@ -169,7 +175,7 @@
   },
   "rich-text#collapsible-category-text": {
     "props": {
-      "text": "**Se hai una stufa o un camino a bioetanolo** (conosciuto anche come biocamino), qui trovi diversi formati per avere sempre a disposizione il *combustibile necessario*. Sicuro e non tossico, il bioetanolo non rilascia sostanze nocive per la salute o cattivi odori nell’ambiente e abbatte notevolmente le emissioni di CO2, che vengono ridotte di circa il 70% rispetto a quelle causate dall’uso di combustibili fossili. Il bioetanolo è ecologico, completamente inodore e incolore e non produce fumo o fuliggine. I vantaggi del bioetanolo possono essere sfruttati anche con un camino tradizionale grazie all’uso di un bruciatore. Ovviamente, per motivi di sicurezza, l’operazione di installazione deve essere affidata a una persona competente. Con il suo potere calorifico di circa 7Kw, dona una splendida fiamma gialla che illumina l’ambiente in modo omogeneo e crea un’atmosfera avvolgente, proprio come sa fare un camino tradizionale."
+      "text": ""
     }
   },
   "flex-layout.row#searchLayout": {
@@ -365,6 +371,7 @@
     "title": "Categoria Mobile",
     "children": [
       "flex-layout.row#searchbread",
+      "flex-layout.row#categories",
       "flex-layout.row#searchTitle",
       "flex-layout.row#searchControlsMobile",
       "flex-layout.row#fetchprevious",
@@ -385,7 +392,7 @@
   },
   "image#banner-sponsored-mobile": {
     "props": {
-      "src": "https://via.placeholder.com/360x281/ccc/fff",
+      "src": "",
       "alt": "banner-sponsored",
       "maxWidth": "360px",
       "blockClass": "banner-sponsored"
@@ -530,6 +537,7 @@
       "blockClass": ""
     }
   },
+
   "slider-layout#department-categories-showcase": {
     "props": {
       "itemsPerPage": {
@@ -556,20 +564,47 @@
     ]
   },
 
-  // "flex-layout.row#department-categories-showcase": {
-  //   "children": [
-  //     "flex-layout.col#categories-showcase-01",
-  //     "flex-layout.col#categories-showcase-02",
-  //     "flex-layout.col#categories-showcase-03",
-  //     "flex-layout.col#categories-showcase-04",
-  //     "flex-layout.col#categories-showcase-05"
-  //   ],
-  //   "props": {
-  //     "horizontalAlign": "around",
-  //     "preventHorizontalStretch": true,
-  //     "preventVerticalStretch": true
-  //   }
-  // },
+  "flex-layout.row#categories": {
+    "children": ["flex-layout.col#categories"],
+    "props": {
+      "blockClass": "categories",
+      "htmlId": "menu-categorie-2"
+    },
+    "title": "Menu categorie"
+  },
+
+  "flex-layout.col#categories": {
+    "children": ["slider-layout#categories-showcase"],
+    "props": {
+      "blockClass": "categories-showcase"
+    }
+  },
+
+  "slider-layout#categories-showcase": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 5,
+        "phone": 2
+      },
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "autoplay": false,
+      "navigationStep": "page",
+      "infinite": false,
+      "fullWidth": true,
+      "centerMode": "to-the-left",
+      "blockClass": "slider-categories",
+      "centerModeSlidesGap": "20"
+    },
+    "children": [
+      "flex-layout.col#categories-showcase-01",
+      "flex-layout.col#categories-showcase-02",
+      "flex-layout.col#categories-showcase-03",
+      "flex-layout.col#categories-showcase-04",
+      "flex-layout.col#categories-showcase-05"
+    ]
+  },
 
   "flex-layout.col#categories-showcase-01": {
     "children": ["image#categories-showcase-01", "link#categories-showcase-01"],
@@ -577,7 +612,7 @@
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "blockClass": "department-categories-showcase"
+      "blockClass": "categories-showcase"
     }
   },
   "image#categories-showcase-01": {
@@ -595,7 +630,7 @@
     "props": {
       "label": "",
       "target": "_self",
-      "blockClass": "department-categories-showcase-cta",
+      "blockClass": "categories-showcase-cta",
       "href": "#"
     },
     "title": "link01"
@@ -607,7 +642,7 @@
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "blockClass": "department-categories-showcase"
+      "blockClass": "categories-showcase"
     }
   },
   "image#categories-showcase-02": {
@@ -625,7 +660,7 @@
     "props": {
       "label": "",
       "target": "_self",
-      "blockClass": "department-categories-showcase-cta",
+      "blockClass": "categories-showcase-cta",
       "href": "#"
     },
     "title": "link02"
@@ -637,7 +672,7 @@
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "blockClass": "department-categories-showcase"
+      "blockClass": "categories-showcase"
     }
   },
   "image#categories-showcase-03": {
@@ -655,7 +690,7 @@
     "props": {
       "label": "",
       "target": "_self",
-      "blockClass": "department-categories-showcase-cta",
+      "blockClass": "categories-showcase-cta",
       "href": "#"
     },
     "title": "link03"
@@ -667,7 +702,7 @@
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "blockClass": "department-categories-showcase"
+      "blockClass": "categories-showcase"
     }
   },
   "image#categories-showcase-04": {
@@ -685,7 +720,7 @@
     "props": {
       "label": "",
       "target": "_self",
-      "blockClass": "department-categories-showcase-cta",
+      "blockClass": "categories-showcase-cta",
       "href": "#"
     },
     "title": "link04"
@@ -697,7 +732,7 @@
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "blockClass": "department-categories-showcase"
+      "blockClass": "categories-showcase"
     }
   },
   "image#categories-showcase-05": {
@@ -715,7 +750,7 @@
     "props": {
       "label": "",
       "target": "_self",
-      "blockClass": "department-categories-showcase-cta",
+      "blockClass": "categories-showcase-cta",
       "href": "#"
     },
     "title": "link05"

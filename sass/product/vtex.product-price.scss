@@ -10,7 +10,7 @@
     font-weight: 500;
     height: 26px;
     width: 54px !important;
-    background-color: $emphasis;
+    background-color: $pink-active;
     border-radius: 0.2rem;
     color: $white;
     display: flex;
@@ -35,7 +35,7 @@
     }
 
     &::before {
-      content: url("/arquivos/tag_saving.svg");
+      content: url('/arquivos/tag_saving.svg');
       display: block;
       color: $white;
       font-weight: 400;

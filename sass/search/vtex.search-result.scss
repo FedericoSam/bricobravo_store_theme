@@ -11,10 +11,9 @@
   line-height: 33px;
   color: #332c32;
   margin: 20px 0 10px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1023px) {
     font-size: 24px;
     line-height: 28px;
-    margin: 24px 0 20px;
   }
 }
 
@@ -33,16 +32,17 @@
 }
 
 .gallery--Desktop {
-  padding: 30px 0 30px 20px;
+  //padding: 30px 0 30px 20px;
 
   :global(.vtex-search-result-3-x-galleryItem) {
     position: relative;
-    height: 350px;
+    height: 335px;
+    padding: 0 5px;
   }
 
   :global(.vtex-product-summary-2-x-container--summaryComplete) {
     max-width: 300px;
-    width: 300px;
+    //width: 300px;
     margin: 0 0 30px 0;
     transition: none;
 
@@ -198,7 +198,7 @@
       border: 1px solid #d8d8d8;
       border-left: none;
       transform: translateY(-1px);
-      z-index: 3;
+      z-index: 5;
     }
   }
 
@@ -438,7 +438,7 @@
       display: block;
       position: absolute;
       width: 100%;
-      top: -14.5rem;
+      top: -13.5rem;
       //top: -70px;
       height: 70px;
       @media screen and (max-width: 768px) {
@@ -475,7 +475,9 @@
 
   .filterPopupButton {
     padding: 8px 16px;
-    border: 2px solid #e30613;
+    //border: 2px solid #e30613;
+    border: 2px solid #f71a63;
+
     border-radius: 8px;
     height: auto;
 
@@ -631,7 +633,9 @@
 
           :global(.vtex-slider) {
             padding-top: 0rem;
-            width: 282px;
+            //width: 282px;
+            width: 93%;
+            flex-grow: 1;
             transform: translateX(10px);
           }
         }
@@ -981,7 +985,7 @@
 
       &::after {
         content: url('assets/icons/icon_close.svg');
-        transform: translateX(-145px);
+        transform: translateX(-130px);
       }
     }
   }
@@ -1073,6 +1077,7 @@
 }
 
 .filterTotalProducts--filterMobile {
+  display: none; //Fra
   color: white;
   //transform: translate(234px, -42px);
   max-width: 136px;

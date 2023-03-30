@@ -2,6 +2,10 @@
 @import '../_variables.scss';
 .flexRow {
   &--home-page-main-slider {
+    @include breakpoint('desktop') {
+      padding-top: 25px;
+    }
+
     :global(.vtex-store-components-3-x-container) {
       @include container-main;
 
@@ -206,10 +210,13 @@
     }
   }
   &--bg-light {
+    @include breakpoint('mobile') {
+      margin: 0 -1.2em;
+    }
     background-color: $light;
     .flexRowContent--bg-light {
       @include breakpoint('mobile') {
-        margin-top: 0;
+        margin: 30px 0 35px 0;
       }
     }
   }
@@ -219,9 +226,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 1px 5px 30px 0 rgba(0, 0, 0, 0.2);
     @media screen and (max-width: 767.98px) {
-      height: 60px;
-      padding-top: 3px;
+      height: 40px;
+      padding: 0 10px 0;
     }
     .flexRowContent {
       display: block;
@@ -233,10 +241,10 @@
     :global(.vtex-store-components-3-x-imageElement) {
       max-height: 34px;
       padding-top: 2px;
-      @media screen and (max-width: 767.98px) {
-        max-height: 55px;
-        padding-top: 0;
-      }
+      // @media screen and (max-width: 767.98px) {
+      //   max-height: 55px;
+      //   padding-top: 0;
+      // }
     }
     @media screen and (max-width: 767.98px) {
       .flexCol--feedaty-mobile {
@@ -252,6 +260,57 @@
       }
       .flexCol--feedaty-desk {
         display: block;
+      }
+    }
+  }
+  &--department-categories {
+    .flexCol--categories-showcase {
+      padding: 0 16px 0 16px;
+
+      &:first-child {
+        max-height: 10rem;
+        max-width: 7rem;
+        border-radius: 6px;
+        @media screen and (max-width: 768px) {
+          // width: 180px;
+        }
+        :global(.vtex-store-components-3-x-imageElement) {
+          border-radius: 6px;
+          //min-width: 130px;
+        }
+        :global(.vtex-store-link-0-x-link--categories-showcase-cta) {
+          position: relative;
+          border-radius: 16px;
+          font-weight: 500;
+          font-size: 16px;
+          text-decoration: none;
+          text-align: center;
+          line-height: 21px;
+          color: #332c32;
+          //padding-top: 5px;
+          display: inline-block;
+          //height: 50px;
+          @media screen and (max-width: 768px) {
+            font-size: 14px;
+            line-height: 18px;
+            // white-space: nowrap;
+            // overflow-x: hidden;
+            // text-overflow: ellipsis;
+          }
+        }
+
+        &:hover {
+          opacity: 0.95;
+          transition: ease-in-out 0.2s;
+          :global(.vtex-store-link-0-x-link--categories-showcase-cta) {
+            color: #4320a8;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .flexColChild--categories-showcase {
+        text-align: center;
       }
     }
   }
@@ -290,49 +349,6 @@
       &:hover {
         opacity: 0.95;
         transition: ease-in-out 0.2s;
-      }
-    }
-  }
-
-  &--department-categories-showcase {
-    &:first-child {
-      max-height: 10rem;
-      max-width: 7rem;
-      border-radius: 6px;
-      @media screen and (max-width: 768px) {
-        // width: 180px;
-      }
-      :global(.vtex-store-components-3-x-imageElement) {
-        border-radius: 6px;
-        //min-width: 130px;
-      }
-      :global(.vtex-store-link-0-x-link--department-categories-showcase-cta) {
-        border-radius: 16px;
-        font-weight: 500;
-        font-size: 16px;
-        text-decoration: none;
-        text-align: center;
-        line-height: 21px;
-        color: #332c32;
-        padding-top: 5px;
-        display: inline-block;
-        height: 50px;
-        @media screen and (max-width: 768px) {
-          font-size: 14px;
-          line-height: 18px;
-          // white-space: nowrap;
-          // overflow-x: hidden;
-          // text-overflow: ellipsis;
-        }
-      }
-
-      &:hover {
-        opacity: 0.95;
-        transition: ease-in-out 0.2s;
-        :global(.vtex-store-link-0-x-link--department-categories-showcase-cta) {
-          color: #4320a8;
-          text-decoration: underline;
-        }
       }
     }
   }
@@ -377,6 +393,9 @@
       @include breakpoint('mobile') {
         transform: translateY(14px);
       }
+      @include breakpoint('tablet') {
+        transform: translateY(14px);
+      }
 
       :global(.vtex-store-components-3-x-imageElement) {
         margin: 0 auto;
@@ -403,10 +422,6 @@
         transform: translateY(25px);
         text-align: center;
       }
-    }
-
-    &--department-categories-showcase {
-      text-align: center;
     }
 
     &--home-services-col,
@@ -478,4 +493,10 @@
   }
 
   margin-bottom: 3rem;
+}
+
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--slider-categories) {
+  .flexCol--categories-showcase {
+    padding: 0 16px 10px 16px;
+  }
 }

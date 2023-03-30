@@ -1,0 +1,38 @@
+{
+  "store.custom#offerte-imperdibili": {
+    "blocks": [
+      "flex-layout.row#feedaty-png",
+      "image#landingbanner",
+      "search-result-layout.customQuery#offerte-imperdibili",
+      "flex-layout.row#newsletter"
+    ]
+  },
+
+  "image#landingbanner": {
+    "props": {
+      "minWidth": "100%",
+      "src": "https://user-images.githubusercontent.com/18701182/69889938-64b16180-12d2-11ea-8d8a-e3089cbeaffd.png",
+      "blockClass": "landingbannerImperdibili"
+    },
+    "title": "Banner"
+  },
+
+  "search-result-layout.customQuery#offerte-imperdibili": {
+    "props": {
+      "querySchema": {
+        "queryField": "144",
+        "mapField": "productClusterIds",
+        "skusFilter": "ALL_AVAILABLE",
+        "maxItemsPerPage": 30,
+        "orderByField": "OrderByTopSaleDESC",
+        "hideUnavailableItems": true,
+        "simulationBehavior": "skip"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  }
+}

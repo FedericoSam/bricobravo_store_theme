@@ -17,6 +17,8 @@
       "flex-layout.row#newsletter"
     ]
   },
+
+  //feedaty Originale
   "flex-layout.row#feedaty-png": {
     "children": [
       "flex-layout.col#mobile-feedaty-png",
@@ -41,7 +43,7 @@
   },
   "image#mobile-feedaty-png": {
     "props": {
-      "src": "assets/images/feedaty-mobile.png",
+      "src": "assets/images/feedaty-mobile-new.png",
       "width": "auto",
       "height": "auto"
     },
@@ -56,6 +58,7 @@
     "title": "desk-image"
   },
 
+  //submenu categories
   "flex-layout.row#submenu-categories": {
     "children": [
       "flex-layout.row#category1",

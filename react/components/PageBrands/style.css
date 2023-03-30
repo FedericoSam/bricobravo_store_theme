@@ -1,120 +1,243 @@
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto, .col-xxl-1, .col-xxl-2, .col-xxl-3, .col-xxl-4, .col-xxl-5, .col-xxl-6, .col-xxl-7, .col-xxl-8, .col-xxl-9, .col-xxl-10, .col-xxl-11, .col-xxl-12, .col-xxl, .col-xxl-auto, .col-xxxl-1, .col-xxxl-2, .col-xxxl-3, .col-xxxl-4, .col-xxxl-5, .col-xxxl-6, .col-xxxl-7, .col-xxxl-8, .col-xxxl-9, .col-xxxl-10, .col-xxxl-11, .col-xxxl-12, .col-xxxl, .col-xxxl-auto{
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-bottom: 30px;
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12,
+.col,
+.col-auto,
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm,
+.col-sm-auto,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md,
+.col-md-auto,
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg,
+.col-lg-auto,
+.col-xl-1,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl,
+.col-xl-auto,
+.col-xxl-1,
+.col-xxl-2,
+.col-xxl-3,
+.col-xxl-4,
+.col-xxl-5,
+.col-xxl-6,
+.col-xxl-7,
+.col-xxl-8,
+.col-xxl-9,
+.col-xxl-10,
+.col-xxl-11,
+.col-xxl-12,
+.col-xxl,
+.col-xxl-auto,
+.col-xxxl-1,
+.col-xxxl-2,
+.col-xxxl-3,
+.col-xxxl-4,
+.col-xxxl-5,
+.col-xxxl-6,
+.col-xxxl-7,
+.col-xxxl-8,
+.col-xxxl-9,
+.col-xxxl-10,
+.col-xxxl-11,
+.col-xxxl-12,
+.col-xxxl,
+.col-xxxl-auto {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 30px;
 }
 .h2 {
-    font-size: 26px;
+  font-size: 26px;
 }
 .px-3 {
-    padding-right: 15px;
-    padding-left: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .text-link-brand {
-    text-decoration: none;
-    padding: 10px;
-    color:#000000;
-    display: block;
+  text-decoration: none;
+  padding: 10px;
+  color: #000000;
+  display: block;
 }
 .col-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 .brandLink {
-    color: #1d1e2c;
-    text-decoration: none;
-    text-align: center;
+  color: #1d1e2c;
+  text-decoration: none;
+  text-align: center;
 }
 .brandLink:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 .brandLink .brand-box {
-    border-radius: 6px;
-    border: 1px solid rgb(235, 235, 235);
-    margin: 0;
-    padding: 15px 15px 13px;
-    font-size: 16px;
-    font-weight: 500;
-    /* height: 115px; */
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
+  border-radius: 6px;
+  border: 1px solid rgb(235, 235, 235);
+  margin: 0;
+  padding: 15px 15px 13px;
+  font-size: 16px;
+  font-weight: 500;
+  /* height: 115px; */
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
 }
 .brandLink:hover .brand-box {
-    border-radius: 6px;
-    border: 1px solid #ddd;
+  border-radius: 6px;
+  border: 1px solid #ddd;
 }
 .img-brand {
-    max-width: 100%;
-    width: auto;
-    height: 45px;
+  max-width: 100%;
+  width: auto;
+  height: 45px;
 }
 .without-image {
-    max-width: 100%;
-    width: auto;
-    height: 45px;
-    color: rgb(210, 210, 210);
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 18px;
+  max-width: 100%;
+  width: auto;
+  height: 45px;
+  color: rgb(210, 210, 210);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 18px;
 }
 .brand-p {
-    margin-bottom: 0;
-    margin-top: 8px;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: capitalize;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+  margin-bottom: 0;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .brandLink:hover .brand-p {
-    color: #4320a8;
+  color: #4320a8;
 }
 .brandLink:hover .without-image {
-    color: rgb(130, 130, 130);
+  color: rgb(130, 130, 130);
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.test {
+  content: '';
+  background-image: url('../../../assets/icons/spin.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media (min-width: 768px) {
-    .col-md-4 {
-        flex: 0 0 33.33333%;
-        max-width: 33.33333%;
-    }
-    .px-md-0 {
-        padding-right: 0;
-        padding-left: 0;
-    }
+  .col-md-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  .px-md-0 {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 @media (min-width: 992px) {
-    .col-lg-3 {
-        flex: 0 0 25%;
-        max-width: 25%;
-    }
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
 }
 
 @media (min-width: 1200px) {
-    .col-xl-2 {
-        flex: 0 0 16.66667%;
-        max-width: 16.66667%;
-    }
+  .col-xl-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
 }
 
-
 @media (max-width: 768px) {
-    .h2 {
-        font-size: 22px;
-    }
+  .h2 {
+    font-size: 22px;
+  }
 }

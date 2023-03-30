@@ -53,13 +53,14 @@
     padding: 0 20px;
     z-index: 0;
     @include mobile {
-      object-fit: cover !important;
+      //object-fit: cover !important;
       display: block;
-      top: -20px;
+      top: -10px;
       padding: 0;
     }
   }
   :global(.vtex-store-components-3-x-discountInsideContainer) {
+    background-color: $pink-active;
     top: -7px;
     @include mobile {
       top: -20px;
@@ -69,7 +70,28 @@
   }
 }
 
+:global(.vtex-search-2-x-tileList) {
+  z-index: 10;
+  background-color: white;
+  :global(.vtex-search-2-x-tileListTitle) {
+    display: none !important;
+  }
+}
+
+:global(.vtex-search-2-x-tileListSeeMore) {
+  @media screen and (max-width: 1023px) {
+    line-height: 0 !important;
+    height: 30px !important;
+  }
+}
+
 :global(.vtex-search-2-x-biggy-autocomplete) {
+  @media screen and (min-width: 1023px) {
+    :global(.vtex-search-2-x-tileListItem) {
+      max-width: 33.3%;
+    }
+  }
+
   .containerNormal {
     &--minimumSummary {
       padding: 0 0.5rem;
@@ -589,12 +611,15 @@
   width: 100%;
   :global(.vtex-store-components-3-x-discountContainer) {
     width: 100%;
+    @media screen and (max-width: 64rem) {
+      width: none;
+    }
   }
+}
 
-  @include mobile {
-    width: 100%;
-    //overflow: hidden;
-  }
+@include mobile {
+  width: 100%;
+  //overflow: hidden;
 }
 
 .container--buyTogetherCard {
@@ -687,5 +712,13 @@
 .imageStackContainer {
   @include breakpoint('mobile') {
     overflow: hidden;
+  }
+}
+
+:global(.vtex-search-result-3-x-galleryItem) {
+  :global(.vtex-product-summary-2-x-container--summaryComplete) {
+    &:hover {
+      left: 0 !important;
+    }
   }
 }

@@ -28,10 +28,15 @@
       font-size: $paragraph-large-regular;
       border: none;
       background-color: $white;
-      height: 2.5rem;
+      height: 38px;
 
       @include breakpoint('mobile') {
         width: 33%;
+      }
+    }
+    @include breakpoint('mobile') {
+      :global(.vtex-numeric-stepper-container) {
+        justify-content: space-between !important;
       }
     }
   }

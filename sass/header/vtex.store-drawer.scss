@@ -5,7 +5,8 @@
   align-items: center;
   height: 41px;
   width: 54px;
-  justify-content: center;
+  justify-content: left;
+  padding: 0.75rem 0.25rem !important;
   @media (min--moz-device-pixel-ratio: 0) {
     height: 39.8px;
     @media screen and (min-width: 2000px) {
@@ -29,7 +30,7 @@
     padding-left: 2px;
     margin-right: -10px;
 
-    @media screen and (max-width: 760px) {
+    @media screen and (max-width: 1024px) {
       display: none;
     }
   }
@@ -40,13 +41,15 @@
 
 .drawer--drawer-desktop {
   background: none;
-  top: 128px;
+  top: 121px;
   width: 100% !important;
   max-width: 100% !important;
+
   @include mobile {
     top: 0;
     max-width: 100% !important;
   }
+
   .drawerContent--drawer-desktop {
     position: relative;
     width: 400px !important;
@@ -85,7 +88,7 @@
 }*/
 
 .closeIconButton--drawer-desktop {
-  @include mobile {
+  @media screen and (max-width: 1023px) {
     position: absolute;
   }
 }

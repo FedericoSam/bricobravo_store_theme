@@ -1,10 +1,12 @@
 {
   "header-layout.mobile": {
     "children": [
-      "flex-layout.row#header-promotion",
-      "sticky-layout#mobile-header",
-      "flex-layout.row#menu-mobile",
-      "header-mobile"
+      //"flex-layout.row#tip-bar", //test barra codici slider
+      "flex-layout.row#header-promotion", // barra codici promozioni
+      //"sticky-layout#mobile-header",      //old sticky
+      "flex-layout.row#menu-mobile", // nuova barra con icone
+      "flex-layout.row#header-mobile" // nuova barra solo search
+      //"header-mobile"                     // no idea
     ],
     "props": {
       "htmlId": "Header layout Mobile"
@@ -12,11 +14,58 @@
     "title": "Header layout Mobile"
   },
 
-  "sticky-layout#mobile-header": {
+  "flex-layout.row#tip-bar": {
     "props": {
-      "blockClass": "sticky-header"
+      "title": "Header tip bar",
+      "verticalAlign": "middle",
+      "preventVerticalStretch": true,
+      "blockClass": "main-tip-bar"
     },
-    "children": ["flex-layout.row#header-mobile"]
+    "children": ["flex-layout.col#header-tip-bar"]
+  },
+  "flex-layout.col#header-tip-bar": {
+    "props": {
+      "verticalAlign": "middle",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": ["slider-layout#tipbar"]
+  },
+  // "rich-text#tip-bar-text": {
+  //   "props": {
+  //     "textAlignment": "CENTER",
+  //     "textPosition": "CENTER",
+  //     "text": "Newsletter 15% di sconto sul tuo primo ordine"
+  //   }
+  // },
+  "slider-layout#tipbar": {
+    "props": {
+      "autoplay": {
+        "timeout": 5000
+      },
+      "showPaginationDots": "never",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "carousel"
+    },
+    "children": ["image#mobile-feedaty-png", "rich-text#2", "rich-text#3"]
+  },
+  "rich-text#2": {
+    "props": {
+      "text": "Spedizione sempre gratis!",
+      "blockClass": "tipbar-text"
+    }
+  },
+  "rich-text#3": {
+    "props": {
+      "text": "TEXT 3",
+      "blockClass": "tipbar-text"
+    }
   },
 
   "flex-layout.row#header-mobile": {
@@ -30,7 +79,7 @@
 
   "flex-layout.col#header-mobile": {
     "children": [
-      "flex-layout.col#header-logo",
+      //"flex-layout.col#header-logo",
       "flex-layout.row#header-logo-mobile"
     ],
     "props": {
@@ -39,7 +88,7 @@
   },
   "flex-layout.row#header-logo-mobile": {
     "children": [
-      "flex-layout.col#header-small-logo",
+      //"flex-layout.col#header-small-logo",
       "flex-layout.col#header-searchBar"
     ],
     "props": {
@@ -77,6 +126,8 @@
       //"colSizing": "100%"
     }
   },
+
+  // nuova barra con icone
   "flex-layout.row#menu-mobile": {
     "children": ["flex-layout.col#menu-mobile"],
     "props": {
@@ -88,8 +139,9 @@
   "flex-layout.col#menu-mobile": {
     "children": [
       "drawer#menu-desktop",
-      "link#personal-shopper",
-      "link#home-mobile",
+      "link#header-logo-new", // logo nuovo
+      //"link#personal-shopper",
+      //"link#home-mobile",
       "login",
       "minicart.v2"
     ],
@@ -97,40 +149,18 @@
       "blockClass": "menu-container-icons"
     }
   },
-  "link#home-mobile": {
-    "children": ["image#menu-mobile-home"],
+  "link#header-logo-new": {
     "props": {
-      "blockClass": "menu-header-mobile-home",
-      "href": "/"
-    }
+      "href": "/",
+      "label": ""
+    },
+    "children": ["image#header-logo-new"]
   },
-  "image#menu-mobile-home": {
+  "image#header-logo-new": {
     "props": {
-      "alt": "menu iniziale",
-      "src": "assets/icons/menu-mobile/icon-home.svg",
-      "blockClass": "icon-menu-home-mobile"
-    }
-  },
-  "link#personal-shopper": {
-    "children": ["image#menu-mobile-personalShopper"],
-    "props": {
-      "blockClass": "menu-header-mobile-personalShopper",
-      "href": "#"
-    }
-  },
-  "image#menu-mobile-personalShopper": {
-    "props": {
-      "alt": "menu iniziale",
-      "src": "assets/icons/menu-mobile/icon-personal-shopper.svg",
-      "blockClass": "icon-menu-shopper-mobile"
-    }
+      "blockClass": "header-logo-new",
+      "src": "assets/icons/logo2.svg"
+    },
+    "title": "Logotipo Header"
   }
-
-  // "drawer#menu-mobile": {
-  //   "children": ["header-mega-menu"],
-  //   "props": {
-  //     "blockClass": "drawer-desktop",
-  //     "width": "100%"
-  //   }
-  // }
 }

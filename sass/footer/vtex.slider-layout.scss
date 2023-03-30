@@ -2,9 +2,12 @@
 @import '../_variables.scss';
 
 .sliderLayoutContainer {
-
   &--home-main-slider-images {
-    border-radius: 0;
+    :global(.vtex-store-components-3-x-imageElement) {
+      @include breakpoint('desktop') {
+        border-radius: 40px;
+      }
+    }
   }
 
   .sliderArrows {

@@ -28,6 +28,10 @@
     }
   },
   "autocomplete-result-list.v2": {
-    "blocks": ["product-summary.shelf#searchbar"]
+    "blocks": ["product-summary.shelf#searchbar"],
+    "props": {
+      "hideUnavailableItems": true,
+      "simulationBehavior": "skip"
+    }
   }
 }

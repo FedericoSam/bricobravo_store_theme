@@ -472,7 +472,7 @@
       @include breakpoint('mobile') {
         &:last-child {
           position: absolute;
-          height: 4500px !important;
+          //height: 4500px !important;
           top: 25px;
           left: -19px;
           pointer-events: none;
@@ -480,14 +480,17 @@
           z-index: 4;
         }
         .flexRow--pdp-quantity-and-add-to-cart-children {
-          position: sticky;
-          top: calc(100% - 110px);
+          position: fixed;
+          //top: calc(100% - 110px);
+          right: 0;
+          left: 0;
+          bottom: 0;
           pointer-events: fill;
-          padding: 0.5rem 0 0.6rem;
+          padding: 1rem 0 1rem;
           padding-inline: 8px;
           background: white;
-          border-top: 2px solid #dfdfdf;
-          transform: translateY(-11px);
+          //border-top: 2px solid #dfdfdf;
+          //transform: translateY(-11px);
         }
       }
     }
@@ -520,9 +523,9 @@
     margin-bottom: 0.5rem;
   }
 
-  &--pdp-quantity-and-add-to-cart-children {
-    margin: 0.5rem 0.3rem;
-  }
+  // &--pdp-quantity-and-add-to-cart-children {
+  //   margin: 0.5rem 0.3rem;
+  // }
 
   &--pdp-quantity-and-add-to-cart-fixed {
     display: none;
@@ -544,14 +547,26 @@
   }
 
   &Content {
-    &--pdp-sp-qty-and-add-to-cart {
-      display: block;
-    }
+    // &--pdp-sp-qty-and-add-to-cart {
+    //   display: block;
+
+    //   &-children {
+    //     &:first-child {
+    //       width: 30% !important;
+    //     }
+
+    //     &:last-child {
+    //       width: 70% !important;
+    //     }
+    //   }
+    // }
+
     &--row-payment {
       width: 50%;
       justify-content: flex-end;
       margin-right: 0;
       margin-left: auto;
+      padding-top: 5px;
       @include breakpoint('mobile') {
         width: 100%;
         justify-content: center;
@@ -1564,3 +1579,39 @@
   margin-inline: auto;
   max-width: 1294px;
 }
+
+@media screen and (max-width: 768px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--pdp-quantity-and-add-to-cart-children) {
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+      &:first-child {
+        width: 35% !important;
+      }
+
+      &:last-child {
+        //width: 65% !important;
+        display: flex;
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--pdp-sp-qty-and-add-to-cart) {
+    display: block;
+  }
+}
+
+// @media screen and (min-width: 768px) {
+//   :global(.vtex-flex-layout-0-x-flexRowContent--pdp-quantity-and-add-to-cart-children) {
+//     :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+//       &:first-child {
+//         width: 100% !important;
+//       }
+
+//       &:last-child {
+//         width: 100% !important;
+//       }
+//     }
+//   }
+// }

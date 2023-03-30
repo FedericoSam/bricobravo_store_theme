@@ -10,21 +10,34 @@
 .backToTopButtonActive {
   transform: translateY(-40px);
 
-    :global(.vtex-button) {
-        height: 45px;
-        width: 45px;
+  :global(.vtex-button) {
+    height: 45px;
+    width: 45px;
+  }
+  :global(.vtex-button__label) {
+    content: '';
+    &::after {
+      content: url(/arquivos/back-up-icon.svg);
+      transform: translate(-4px, 1px);
+      height: 45px;
+      width: 45px;
     }
-    :global(.vtex-button__label) {
-        content: "";
-        &::after {
-            content: url(/arquivos/back-up-icon.svg);
-            transform: translate(-4px, 1px);
-            height: 45px;
-            width: 45px;
-        }
-    }
-
+  }
 }
 
+.searchBarInnerContainer--mobile-searchbar--filled {
+  @media screen and (min-width: 640px) and (max-width: 1023px) {
+    position: initial !important;
 
+    :global(.vtex-search-2-x-biggy-autocomplete) {
+      padding: 0;
+      z-index: 4;
+    }
+  }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  :global(.vtex-search-2-x-biggy-autocomplete) {
+    width: 95%;
+  }
+}

@@ -73,13 +73,13 @@
 .productImagesGallerySwiperContainer--pdp {
   &::after {
     content: "Scorri sopra l'immagine per ingrandire";
-    color: #FFF;
+    color: #fff;
     font-size: 14px;
     letter-spacing: 0;
     line-height: 16px;
-    border: 1px solid #332C32;
+    border: 1px solid #332c32;
     border-radius: 2px;
-    background-color: #5D5D5D;
+    background-color: #5d5d5d;
     padding: 3px 7px;
     z-index: 3;
     display: block;
@@ -92,20 +92,20 @@
   &:hover {
     &::after {
       opacity: 0;
-      transition: all .3s ease-in-out;
+      transition: all 0.3s ease-in-out;
     }
   }
 }
 .productImagesGallerySwiperContainer--pdp-mobile {
   &::after {
     content: "Scorri sopra l'immagine per ingrandire";
-    color: #FFF;
+    color: #fff;
     font-size: 14px;
     letter-spacing: 0;
     line-height: 16px;
-    border: 1px solid #332C32;
+    border: 1px solid #332c32;
     border-radius: 2px;
-    background-color: #5D5D5D;
+    background-color: #5d5d5d;
     padding: 3px 7px;
     display: block;
     width: fit-content;
@@ -171,6 +171,11 @@
   @include mobile {
     margin: 20px 8px;
   }
+}
+
+.imageElement--landingbannerImperdibili {
+  max-height: 370px;
+  object-fit: contain;
 }
 
 .productBrandNameLink--pdp {
@@ -248,7 +253,7 @@
   &--pdp {
     margin: 0 0 1.25rem;
   }
-  .container{
+  .container {
     padding: 0;
   }
 }

@@ -18,5 +18,9 @@
   "store.custom#simple-page": {
     "path": "/simple-page",
     "isSitemapEntry": true
+  },
+  "store.custom#offerte-imperdibili": {
+    "path": "/offerte-imperdibili",
+    "isSitemapEntry": true
   }
 }

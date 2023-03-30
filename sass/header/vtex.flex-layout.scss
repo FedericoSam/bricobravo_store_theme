@@ -55,24 +55,28 @@
     }
   }
 
-  &--header-mobile {
-    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.3);
-  }
+  // &--header-mobile {
+  //   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.3);
+  // }
 
   &--header-menu-mobile {
-    position: fixed;
-    bottom: 0;
+    // position: fixed;
+    // bottom: 0;
     background: $white;
     width: 100%;
-    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
-    padding: 0 15px;
-    height: 60px;
+    //box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+    //padding: 0 15px;
+    //height: 60px;
     transition: all ease-in-out;
     z-index: 5;
   }
 
   &--header-categories {
     background-color: #f4f7fa;
+
+    @include breakpoint('desktop') {
+      box-shadow: 1px 5px 30px 0 rgba(0, 0, 0, 0.2);
+    }
     @include breakpoint('mobile') {
       display: none;
     }
@@ -93,15 +97,32 @@
         display: flex;
         :global(.vtex-store-link-0-x-label--header-category) {
           padding: 10px;
+          @media screen and (max-width: 1124px) {
+            font-size: 0.8rem;
+            padding: 10px 0;
+          }
         }
       }
     }
+  }
+  .flexRowContent--header-logo-mobile {
+    display: flex;
+    align-items: center;
+    width: 100%;
   }
 }
 
 .flexRowContent--header-mobile-teste {
   background-color: $white;
   padding: 0 10px 0;
+
+  @media screen and (max-width: 768px) {
+    background-color: #d82f94;
+  }
+
+  @media screen and (max-width: 1023px) {
+    height: 58px;
+  }
 
   &--shrink {
     padding: 0 8px 0;
@@ -166,11 +187,13 @@
   }
 
   &--menu-container-icons {
+    height: 54px;
+    padding-top: 0;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     :global(.vtex-store-drawer-0-x-openIconContainer--drawer-desktop) {
-      padding-top: 6px;
+      padding-top: 4px;
       &::after {
         display: none;
       }
@@ -179,7 +202,7 @@
     :global(.vtex-login-2-x-profile) {
       color: transparent;
       width: 1px;
-      margin: 8px 1px;
+      margin: 0;
       visibility: hidden;
 
       &::after {
@@ -206,6 +229,7 @@
     :global(.vtex-minicart-2-x-minicartContainer--minicart-background) {
       :global(.vtex-minicart-2-x-openIconContainer--minicart-background) {
         padding-top: 20px;
+        padding-bottom: 0;
         &::before {
           background-size: 26px 26px !important;
         }
@@ -222,6 +246,10 @@
 
 .flexColChild--header-drawer-menu-col {
   margin-bottom: 0;
+}
+
+.flexColChild--menu-container-icons {
+  height: auto !important;
 }
 
 .flexColChild--drawer-menu-departments {
@@ -276,8 +304,11 @@
   }
   .flexCol--header-mobile-searchBar {
     :global(.vtex-input-prefix__group) {
-      border: 1.5px solid $blue-dark;
-      border-radius: 4px;
+      position: relative;
+      //z-index: 100;
+      background-color: white;
+      border: 1.5px solid #d82f94;
+      border-radius: 20px;
     }
   }
 }

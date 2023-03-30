@@ -56,7 +56,7 @@
   }
   &--shelf-also-view {
     :global(.vtex-product-summary-2-x-container--summaryComplete) {
-      @include breakpoint("mobile") {
+      @include breakpoint('mobile') {
         min-width: 210px;
       }
       @media (max-width: 330px) {
@@ -83,7 +83,7 @@
 
   // &--slider-categories {
   //   @include breakpoint('mobile') {
-      
+
   //   }
   // }
 
@@ -94,17 +94,17 @@
   //   }
   // }
 
-//   &--homeBottomSectionBrandsMobile {
-//     @include breakpoint('mobile') {
-//       margin: 0 0.625rem !important;
-//     }
-//   }
+  //   &--homeBottomSectionBrandsMobile {
+  //     @include breakpoint('mobile') {
+  //       margin: 0 0.625rem !important;
+  //     }
+  //   }
 
-//   &--homeBottomSectionCategoriesMobile {
-//     @include breakpoint('mobile') {
-//       margin: 0 2rem !important;
-//     }
-//   }
+  //   &--homeBottomSectionCategoriesMobile {
+  //     @include breakpoint('mobile') {
+  //       margin: 0 2rem !important;
+  //     }
+  //   }
 }
 
 .sliderTrack {
@@ -113,7 +113,7 @@
     @media screen and (max-width: 768px) {
       justify-content: normal;
     }
-  } 
+  }
 
   // &--home-services {
   //   @include breakpoint('mobile') {
@@ -135,5 +135,9 @@
 
   &--mobile-home-categories-showcase-slider {
     height: 170px;
+  }
+
+  :global(.vtex-slider-layout-0-x-slide--slider-categories--visible) {
+    max-width: 140px;
   }
 }
