@@ -25,17 +25,18 @@
     display: none;
     color: #4320a8;
   }
-  @include desktop {
-    &:hover {
-      text-decoration: underline;
+  //@include desktop {
+  // &:hover {
+  //  text-decoration: underline;
+  // text-decoration-color: $blue-dark;
 
-      // height: 430px;
-      // transition: all 0.3s ease;
-      // :global(.vtex-product-price-1-x-installments){
-      //   display: inline-block;
-      // }
-    }
-  }
+  // height: 430px;
+  // transition: all 0.3s ease;
+  // :global(.vtex-product-price-1-x-installments){
+  //   display: inline-block;
+  // }
+  //}
+  //}
   .clearLink {
     margin-bottom: 0.7rem;
     background: var(--white);
@@ -60,10 +61,11 @@
     }
   }
   :global(.vtex-store-components-3-x-discountInsideContainer) {
-    background-color: $pink-active;
+    background-color: $pink-hover;
+    font-weight: 600;
     top: -7px;
     @include mobile {
-      top: -20px;
+      top: -25px;
       right: -5px;
       z-index: 4;
     }
@@ -118,6 +120,13 @@
 .container--summaryComplete:hover
   :global(.vtex-modal-layout-0-x-triggerContainer) {
   opacity: 1;
+}
+
+:global(.vtex-product-summary-2-x-container--summaryComplete) {
+  &:hover {
+    text-decoration: underline;
+    color: $blue-dark;
+  }
 }
 
 .container--summaryComplete

@@ -2,13 +2,23 @@
 @import '../_variables.scss';
 
 .sliderLayoutContainer {
-  &--home-main-slider-images {
-    :global(.vtex-store-components-3-x-imageElement) {
-      @include breakpoint('desktop') {
-        border-radius: 40px;
-      }
-    }
-  }
+  //&--home-main-slider-images {
+  //background-color: #f4f7fa;
+
+  // background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+
+  // --tw-gradient-from: #f4f7fa var(--tw-gradient-from-position);
+  // --tw-gradient-from-position: ;
+  // --tw-gradient-to: #ffffff var(--tw-gradient-to-position);
+  // --tw-gradient-to-position: ;
+  // --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+
+  // :global(.vtex-store-components-3-x-imageElement) {
+  //   @include breakpoint('desktop') {
+  //     border-radius: 40px;
+  //   }
+  // }
+  //}
 
   .sliderArrows {
     &.sliderLeftArrow {
@@ -52,4 +62,21 @@
       }
     }
   }
+}
+
+:global(.vtex-store-components-3-x-imageElement--home-main-slider-images) {
+  max-height: 370px;
+  object-fit: contain;
+
+  @include desktop {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 40px;
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--home-main-slider-col) {
+  border-radius: 40px;
+  overflow: hidden;
 }

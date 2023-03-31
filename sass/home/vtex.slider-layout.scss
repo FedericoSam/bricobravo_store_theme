@@ -74,6 +74,13 @@
     margin: 0;
   }
 
+  &--shelf-also-view--visible {
+    box-shadow: 1px 5px 5px 0 rgba(0, 0, 0, 0.2);
+    &:hover {
+      box-shadow: 1px 5px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+
   &--home-services {
     @include breakpoint('mobile') {
       margin: 0 0.625rem !important;

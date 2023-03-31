@@ -28,6 +28,7 @@
     :global(.vtex-store-components-3-x-container) {
       position: absolute;
       top: -7rem;
+      //background-color: #f4f7fa;
 
       @include breakpoint('mobile') {
         top: -4rem;
@@ -51,29 +52,60 @@
   }
 
   &--home-shelf-01 {
-    @include container-main;
+    //background-color: #f5f7fa;
+
+    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+
+    // --tw-gradient-from: #ffffff var(--tw-gradient-from-position);
+    // --tw-gradient-from-position: ;
+    // --tw-gradient-to: #ded5fc var(--tw-gradient-to-position);
+    // --tw-gradient-to-position: ;
+    // --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    // background-size: cover;
+
+    //@include container-main;
+    width: 100%;
   }
   &--home-shelf-02 {
-    background-image: url(assets/images/bg-home-section2-desktop.svg);
-    background-repeat: no-repeat;
-    padding: 0;
+    //background-color: #f5f7fa;
+
+    // background-image: url(assets/images/bg-home-section2-desktop.svg);
+    // background-repeat: no-repeat;
+    // background-color: #f6f6f6;
+
     width: 100%;
     height: 540px;
-    background-color: #f6f6f6;
+
+    background-image: linear-gradient(to top, var(--tw-gradient-stops));
+
+    --tw-gradient-from: #e9e5fe var(--tw-gradient-from-position);
+    --tw-gradient-from-position: ;
+    --tw-gradient-to: #f6f4ff var(--tw-gradient-to-position);
+    --tw-gradient-to-position: ;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 
     @include breakpoint('mobile') {
-      background-image: url(assets/images/bg-home-section2-mobile.svg);
+      //background-image: url(assets/images/bg-home-section2-mobile.svg);
       height: 505px;
       max-width: 100vw;
     }
+
     :global(.vtex-store-components-3-x-container) {
       @include container-main;
     }
   }
   &--home-shelf-03 {
+    // background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+
+    // --tw-gradient-from: #ded5fc var(--tw-gradient-from-position);
+    // --tw-gradient-from-position: ;
+    // --tw-gradient-to: #f6f7f7 var(--tw-gradient-to-position);
+    // --tw-gradient-to-position: ;
+    // --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+
     @include container-main;
     @include mobile {
-      margin-top: 30px;
+      padding-top: 10px;
     }
   }
 
@@ -202,7 +234,7 @@
       :global(.vtex-rich-text-0-x-headingLevel2) {
         color: $background-blue-black;
         font-weight: 500;
-        font-size: 40px;
+        font-size: 32px;
         @include breakpoint('mobile') {
           font-size: 28px;
         }
@@ -231,6 +263,7 @@
       height: 40px;
       padding: 0 10px 0;
     }
+
     .flexRowContent {
       display: block;
       text-align: center;
@@ -449,18 +482,6 @@
 
     &--breadcrumbHomediv {
       display: inline-block;
-    }
-  }
-}
-
-.flexRowContent--home-shelf-02-title {
-  :global(.vtex-rich-text-0-x-headingLevel2) {
-    font-size: 40px;
-    font-weight: 500;
-    @include mobile {
-      font-size: 28px;
-      color: #291660;
-      padding: 0 15px;
     }
   }
 }
