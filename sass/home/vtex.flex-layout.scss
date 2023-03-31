@@ -63,8 +63,8 @@
     // --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
     // background-size: cover;
 
-    //@include container-main;
-    width: 100%;
+    @include container-main;
+    // width: 100%;
   }
   &--home-shelf-02 {
     //background-color: #f5f7fa;
@@ -84,15 +84,15 @@
     --tw-gradient-to-position: ;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 
-    @include breakpoint('mobile') {
-      //background-image: url(assets/images/bg-home-section2-mobile.svg);
-      height: 505px;
-      max-width: 100vw;
-    }
+    // @include breakpoint('mobile') {
+    //   //background-image: url(assets/images/bg-home-section2-mobile.svg);
+    //   height: 505px;
+    //   max-width: 100vw;
+    // }
 
-    :global(.vtex-store-components-3-x-container) {
-      @include container-main;
-    }
+    // :global(.vtex-store-components-3-x-container) {
+    //   @include container-main;
+    // }
   }
   &--home-shelf-03 {
     // background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
@@ -235,8 +235,10 @@
         color: $background-blue-black;
         font-weight: 500;
         font-size: 32px;
+        margin-left: 1rem;
+
         @include breakpoint('mobile') {
-          font-size: 28px;
+          font-size: 24px;
         }
       }
     }

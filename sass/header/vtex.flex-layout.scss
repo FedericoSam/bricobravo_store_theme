@@ -55,9 +55,13 @@
     }
   }
 
-  // &--header-mobile {
-  //   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.3);
-  // }
+  &--header-mobile {
+    :global(.vtex-store-components-3-x-container) {
+      @include breakpoint('mobile') {
+        padding: 0;
+      }
+    }
+  }
 
   &--header-menu-mobile {
     // position: fixed;

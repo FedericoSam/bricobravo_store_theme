@@ -77,6 +77,8 @@
 }
 
 :global(.vtex-flex-layout-0-x-flexColChild--home-main-slider-col) {
-  border-radius: 40px;
-  overflow: hidden;
+  @include desktop {
+    border-radius: 40px;
+    overflow: hidden;
+  }
 }
