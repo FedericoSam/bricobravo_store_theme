@@ -9,7 +9,7 @@
   // border-radius: 2px;
   // box-shadow: 0 0 0.6em rgba(135, 135, 135, 0.3);
   border-radius: 6px;
-  border: 1px solid #ddd;
+  //border: 1px solid #ddd;
   transition: all 0.4s ease;
   background: $white;
 
@@ -726,8 +726,10 @@
 
 :global(.vtex-search-result-3-x-galleryItem) {
   :global(.vtex-product-summary-2-x-container--summaryComplete) {
+    box-shadow: 1px 5px 5px 0 rgba(0, 0, 0, 0.2);
     &:hover {
       left: 0 !important;
+      box-shadow: 1px 5px 5px 0 rgba(0, 0, 0, 0.3);
     }
   }
 }
