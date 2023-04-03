@@ -54,21 +54,10 @@
   &--home-shelf-01 {
     //background-color: #f5f7fa;
 
-    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-
-    // --tw-gradient-from: #ffffff var(--tw-gradient-from-position);
-    // --tw-gradient-from-position: ;
-    // --tw-gradient-to: #ded5fc var(--tw-gradient-to-position);
-    // --tw-gradient-to-position: ;
-    // --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-    // background-size: cover;
-
     @include container-main;
     // width: 100%;
   }
   &--home-shelf-02 {
-    //background-color: #f5f7fa;
-
     // background-image: url(assets/images/bg-home-section2-desktop.svg);
     // background-repeat: no-repeat;
     // background-color: #f6f6f6;
@@ -76,13 +65,7 @@
     width: 100%;
     height: 540px;
 
-    background-image: linear-gradient(to top, var(--tw-gradient-stops));
-
-    --tw-gradient-from: #e9e5fe var(--tw-gradient-from-position);
-    --tw-gradient-from-position: ;
-    --tw-gradient-to: #f6f4ff var(--tw-gradient-to-position);
-    --tw-gradient-to-position: ;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    background: linear-gradient(#e9e5fe, #f6f4ff);
 
     // @include breakpoint('mobile') {
     //   //background-image: url(assets/images/bg-home-section2-mobile.svg);
@@ -95,14 +78,6 @@
     // }
   }
   &--home-shelf-03 {
-    // background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-
-    // --tw-gradient-from: #ded5fc var(--tw-gradient-from-position);
-    // --tw-gradient-from-position: ;
-    // --tw-gradient-to: #f6f7f7 var(--tw-gradient-to-position);
-    // --tw-gradient-to-position: ;
-    // --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-
     @include container-main;
     @include mobile {
       padding-top: 10px;
