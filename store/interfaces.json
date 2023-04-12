@@ -34,7 +34,7 @@
   "seller-consegna": {
     "component": "SellerConsegna"
   },
-  "show-clear-filter-button":{
+  "show-clear-filter-button": {
     "component": "ShowClearFilterButton"
   },
   "page-brands": {
@@ -43,5 +43,8 @@
   "collapsible-layout": {
     "component": "CollapsibleLayout",
     "composition": "children"
+  },
+  "manta-custom-slider": {
+    "component": "MantaCustomSlider"
   }
 }

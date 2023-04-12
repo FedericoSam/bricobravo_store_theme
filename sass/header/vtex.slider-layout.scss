@@ -1,0 +1,13 @@
+@import '../_variables.scss';
+
+.sliderLayoutContainer {
+  &--carousel {
+    color: white;
+    background-color: $background-blue-black;
+  }
+}
+
+.sliderTrack--carousel {
+  max-height: 35px;
+  padding-top: 3px;
+}

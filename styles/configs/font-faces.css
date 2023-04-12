@@ -54,13 +54,13 @@
   font-style: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'AnekTamil';
   src: url('assets/fonts/AnekTamil-Light.ttf') format('truetype'),
     url('assets/fonts/AnekTamil-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
-}
+} */
 
 @font-face {
   font-family: 'AnekTamil';
@@ -70,13 +70,13 @@
   font-style: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'AnekTamil';
   src: url('assets/fonts/AnekTamil-Medium.ttf') format('truetype'),
     url('assets/fonts/AnekTamil-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
-}
+} */
 
 @font-face {
   font-family: 'AnekTamil';
@@ -86,10 +86,10 @@
   font-style: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'AnekTamil';
   src: url('assets/fonts/AnekTamil-ExtraBold.ttf') format('truetype'),
     url('assets/fonts/AnekTamil-ExtraBold.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
-}
+} */

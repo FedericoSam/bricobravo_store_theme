@@ -11,7 +11,8 @@
       "blockClass": "sticky-header"
     },
     "children": [
-      "flex-layout.row#header-promotion",
+      "flex-layout.row#tip-bar", //barra codici slider
+      //"flex-layout.row#header-promotion",
       "flex-layout.row#header-desktop-upper"
     ]
   },

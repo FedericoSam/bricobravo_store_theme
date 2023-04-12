@@ -21,7 +21,7 @@
     line-height: 16px;
     text-decoration: none;
     font-weight: 700;
-    color: #2B126B;
+    color: #2b126b;
   }
 }
 
@@ -122,4 +122,10 @@
   font-size: 1rem;
   letter-spacing: 0.01em;
   font-weight: 400;
+}
+
+.container {
+  :global(.vtex-rich-text-10-x-paragraph--text-bottom-page) {
+    padding: 10px 0;
+  }
 }

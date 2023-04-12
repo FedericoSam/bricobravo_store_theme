@@ -72,7 +72,7 @@
   "image#box_usp_image": {
     "title": "box_usp_image",
     "props": {
-      "src": "https://bricobravo.vtexassets.com/assets/vtex.file-manager-graphql/images/1d9a218c-d63c-4bdb-9df9-6bb94369e578___ecd3f23d8471c28940271e528da3a83f.png",
+      "src": "assets/images/bannerSpedizione.png",
       "maxHeight": 70,
       "maxWidth": "95%"
     }
@@ -346,7 +346,7 @@
   "flex-layout.col#pdp-shipping": {
     "children": [
       "seller-consegna"
-     // "flex-layout.col#pdp-shipping-type"
+      // "flex-layout.col#pdp-shipping-type"
       // "flex-layout.col#pdp-estimate-shipping"
     ],
     "props": {

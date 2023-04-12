@@ -36,13 +36,13 @@
     }
   }
   :global(.vtex-product-summary-2-x-container--summaryComplete) {
-    height: 360px;
+    max-height: 360px;
   }
 }
 
-.sliderLayoutContainer--mobile-home-categories-showcase-slider {
-  transform: translateY(-12px);
-}
+// .sliderLayoutContainer--mobile-home-categories-showcase-slider {
+//   transform: translateY(-12px);
+// }
 
 .slideChildrenContainer {
   &--home-blog {
@@ -54,19 +54,16 @@
     height: 8.5rem;
     align-items: flex-start;
   }
-  &--shelf-also-view {
-    :global(.vtex-product-summary-2-x-container--summaryComplete) {
-      @include breakpoint('mobile') {
-        min-width: 210px;
-      }
-      @media (max-width: 330px) {
-        min-width: 190px;
-      }
-      @media (min-width: 576px) and (max-width: 767.98px) {
-        min-width: 190px;
-      }
-    }
-  }
+  // &--shelf-also-view {
+  //   :global(.vtex-product-summary-2-x-container--summaryComplete) {
+  //     @media (max-width: 330px) {
+  //       min-width: 190px;
+  //     }
+  //     @media (min-width: 576px) and (max-width: 767.98px) {
+  //       min-width: 190px;
+  //     }
+  //   }
+  // }
 }
 
 .slide {
@@ -75,9 +72,14 @@
   }
 
   &--shelf-also-view--visible {
-    box-shadow: 1px 5px 5px 0 rgba(0, 0, 0, 0.2);
+    //margin: 30px 0 !important;
+    border-radius: 15px !important;
+    box-shadow: 0px 3px 10px 0 rgba(0, 0, 0, 0.1);
+
     &:hover {
-      box-shadow: 1px 5px 5px 0 rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 3px 20px 0 rgba(0, 0, 0, 0.2);
+      opacity: 0.95;
+      transition: ease-in-out 0.2s;
     }
   }
 
@@ -121,6 +123,12 @@
       justify-content: normal;
     }
   }
+  &--slider-categories-products {
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      justify-content: normal;
+    }
+  }
 
   // &--home-services {
   //   @include breakpoint('mobile') {
@@ -141,7 +149,7 @@
   // }
 
   &--mobile-home-categories-showcase-slider {
-    height: 170px;
+    height: 200px;
   }
 
   :global(.vtex-slider-layout-0-x-slide--slider-categories--visible) {

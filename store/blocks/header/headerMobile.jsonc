@@ -1,8 +1,8 @@
 {
   "header-layout.mobile": {
     "children": [
-      //"flex-layout.row#tip-bar", //test barra codici slider
-      "flex-layout.row#header-promotion", // barra codici promozioni
+      "flex-layout.row#tip-bar", //barra codici slider
+      //"flex-layout.row#header-promotion", // barra codici promozioni
       //"sticky-layout#mobile-header",      //old sticky
       "flex-layout.row#menu-mobile", // nuova barra con icone
       "flex-layout.row#header-mobile" // nuova barra solo search
@@ -63,7 +63,7 @@
   },
   "rich-text#3": {
     "props": {
-      "text": "TEXT 3",
+      "text": "Non basta un Brico, serve un BricoBravo!",
       "blockClass": "tipbar-text"
     }
   },

@@ -432,8 +432,11 @@
 .flexCol {
   &--summaryInfo {
     padding: 18px 10px 10px;
-    @include breakpoint('mobile') {
+    @media screen and (max-width: 640px) {
       margin-top: 10px;
+    }
+    @media screen and (min-width: 640px) and (max-width: 768px) {
+      padding: 0 5px 5px;
     }
   }
 
@@ -1428,6 +1431,14 @@
   }
 }
 
+:global(.vtex-flex-layout-0-x-flexCol--product-whatsapp) {
+  :global(.vtex-flex-layout-0-x-flexColChild--product-whatsapp) {
+    &:first-child {
+      display: none;
+    }
+  }
+}
+
 :global(.vtex-flex-layout-0-x-flexRowContent--product-whatsapp) {
   justify-content: center !important;
   margin-bottom: 15px;
@@ -1452,7 +1463,10 @@
         width: 30px;
         height: 30px;
         left: 0;
-        top: -6px;
+        top: 0;
+        @media screen and (min-width: 570px) and (max-width: 640px) {
+          top: -7px;
+        }
       }
     }
   }
@@ -1475,6 +1489,9 @@
     }
     :global(.vtex-store-link-0-x-label--whatsapp_mobile) {
       display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
     }
   }
 }

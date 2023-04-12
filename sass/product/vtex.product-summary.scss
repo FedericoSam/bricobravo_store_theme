@@ -4,7 +4,7 @@
 
 .container--summaryComplete {
   max-width: 332px !important;
-  height: 320px;
+  //height: 320px;
   position: relative;
   // border-radius: 2px;
   // box-shadow: 0 0 0.6em rgba(135, 135, 135, 0.3);
@@ -63,11 +63,26 @@
   :global(.vtex-store-components-3-x-discountInsideContainer) {
     background-color: $pink-hover;
     font-weight: 600;
-    top: -7px;
-    @include mobile {
-      top: -25px;
-      right: -5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    @media screen and (max-width: 768px) {
+      top: -20px;
       z-index: 4;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+      top: -30px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1079px) {
+      top: -29px;
+    }
+    @media screen and (min-width: 1080px) {
+      top: -9px;
     }
   }
 }
@@ -122,12 +137,14 @@
   opacity: 1;
 }
 
-:global(.vtex-product-summary-2-x-container--summaryComplete) {
-  &:hover {
-    text-decoration: underline;
-    color: $blue-dark;
-  }
-}
+// :global(.vtex-product-summary-2-x-container--summaryComplete) {
+//   &:hover {
+//     text-decoration: underline;
+//     color: $blue-dark;
+//     opacity: 0.95;
+//     transition: ease-in-out 0.2s;
+//   }
+// }
 
 .container--summaryComplete
   :global(.vtex-stack-layout-0-x-stackContainer--savingsStack) {
@@ -626,6 +643,20 @@
   }
 }
 
+:global(.vtex-product-summary-2-x-imageWrapper) {
+  :global(.vtex-store-components-3-x-discountContainer) {
+    :global(.vtex-store-components-3-x-discountInsideContainer) {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      font-weight: 600;
+    }
+  }
+}
+
 @include mobile {
   width: 100%;
   //overflow: hidden;
@@ -680,7 +711,7 @@
   :global(.vtex-search-result-3-x-gallery) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: #f2f2f2;
+    //background: #f2f2f2;
     padding-top: 8px !important;
 
     :global(.vtex-search-result-3-x-galleryItem) {
@@ -726,10 +757,16 @@
 
 :global(.vtex-search-result-3-x-galleryItem) {
   :global(.vtex-product-summary-2-x-container--summaryComplete) {
-    box-shadow: 1px 5px 5px 0 rgba(0, 0, 0, 0.2);
+    @include mobile {
+      height: 340px !important;
+    }
+
+    box-shadow: 0px 3px 10px 0 rgba(0, 0, 0, 0.1);
     &:hover {
       left: 0 !important;
-      box-shadow: 1px 5px 5px 0 rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 3px 20px 0 rgba(0, 0, 0, 0.2);
+      opacity: 0.95;
+      transition: ease-in-out 0.2s;
     }
   }
 }

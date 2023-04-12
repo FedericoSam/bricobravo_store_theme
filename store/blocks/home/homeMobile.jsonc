@@ -24,13 +24,15 @@
       "itemsPerPage": {
         "desktop": 3,
         "tablet": 3,
-        "phone": 3
+        "phone": 2
       },
       "infinite": true,
       "showNavigationArrows": "never",
       "showPaginationDots": "never",
       "fullWidth": true,
-      // "centerMode": "to-the-left",
+      "centerMode": "to-the-left",
+      "navigationStep": "page",
+
       "blockClass": "mobile-home-categories-showcase-slider"
     },
     "children": [

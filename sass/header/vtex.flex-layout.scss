@@ -154,6 +154,17 @@
   }
 }
 
+.flexRow--main-tip-bar {
+  :global(.vtex-store-components-3-x-container) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: none !important;
+  }
+  :global(.vtex-store-components-3-x-imageElement) {
+    max-height: 35px;
+  }
+}
+
 .flexCol {
   &--header-small-logo {
     max-width: 0;

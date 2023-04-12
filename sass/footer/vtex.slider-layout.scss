@@ -72,13 +72,13 @@
     display: flex;
     margin-left: 0;
     margin-right: 0;
-    border-radius: 40px;
+    border-radius: 25px;
   }
 }
 
 :global(.vtex-flex-layout-0-x-flexColChild--home-main-slider-col) {
   @include desktop {
-    border-radius: 40px;
+    border-radius: 25px;
     overflow: hidden;
   }
 }

@@ -10,6 +10,11 @@
   }
 }
 .minicartWrapperContainer {
+  &--minicart-background {
+    @media screen and (min-width: 1025px) and (max-width: 1080px) {
+      top: 5px;
+    }
+  }
   :global(.vtex-button) {
     &:hover {
       background: none;

@@ -1,7 +1,7 @@
 {
   "store.custom#offerte-imperdibili": {
     "blocks": [
-      "flex-layout.row#feedaty-png",
+      //"flex-layout.row#feedaty-png",
       "image#landingbanner",
       "search-result-layout.customQuery#offerte-imperdibili",
       "flex-layout.row#newsletter"

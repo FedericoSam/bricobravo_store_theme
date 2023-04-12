@@ -2,7 +2,6 @@
 @import '../_media-queries.scss';
 
 .container {
-
   &--pdp-secure-payment {
     width: 308px;
     margin-right: auto;
@@ -89,13 +88,13 @@
   &--pdp-shipping-info {
     color: $primary-default;
     font-size: $paragraph-medium-regular;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0;
     line-height: 1.5;
 
     .strong {
       &--pdp-shipping-info {
-        font-weight: 500;
+        font-weight: 600;
       }
     }
   }

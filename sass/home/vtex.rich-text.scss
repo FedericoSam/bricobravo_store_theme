@@ -195,6 +195,27 @@
       }
     }
   }
+  &--home-title-main-slogan-sottotitolo,
+  &--home-title-main-slogan {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &--home-title-main-slogan {
+    font-size: 24px;
+    :global(.vtex-rich-text-0-x-strong--home-title-main-slogan) {
+      padding: 0 10px;
+    }
+  }
+  &--home-title-main-slogan-sottotitolo {
+    margin-top: -40px;
+    font-size: 16px;
+
+    :global(.vtex-rich-text-0-x-paragraph--home-title-main-slogan-sottotitolo) {
+      padding: 0 10px;
+    }
+  }
 }
 
 .headingLevel2--product-shelf-1-title,

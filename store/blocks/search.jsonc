@@ -1,7 +1,7 @@
 {
   "store.search": {
     "blocks": [
-      "flex-layout.row#feedaty-png",
+      //"flex-layout.row#feedaty-png",
       "search-result-layout",
       "flex-layout.row#sectionSeo1",
       "flex-layout.row#sectionSeo2",
@@ -23,7 +23,7 @@
 
   "store.search#brand": {
     "blocks": [
-      "flex-layout.row#feedaty-png",
+      //"flex-layout.row#feedaty-png",
       "search-result-layout",
       "flex-layout.row#sectionSeo1",
       "flex-layout.row#sectionSeo2",
@@ -44,7 +44,7 @@
 
   "store.search#department": {
     "blocks": [
-      "flex-layout.row#feedaty-png",
+      //"flex-layout.row#feedaty-png",
       "flex-layout.row#department-categories",
       "search-result-layout",
       "flex-layout.row#sectionSeo1",
@@ -67,7 +67,7 @@
 
   "store.search#category": {
     "blocks": [
-      "flex-layout.row#feedaty-png",
+      //"flex-layout.row#feedaty-png",
       "search-result-layout",
       "flex-layout.row#sectionSeo1",
       "flex-layout.row#sectionSeo2",
@@ -88,7 +88,7 @@
 
   "store.search#subcategory": {
     "blocks": [
-      "flex-layout.row#feedaty-png",
+      //"flex-layout.row#feedaty-png",
       "search-result-layout",
       "flex-layout.row#sectionSeo1",
       "flex-layout.row#sectionSeo2",
@@ -122,9 +122,10 @@
     "children": [
       "flex-layout.row#searchbread",
       "flex-layout.row#categories",
-      "flex-layout.row#searchTitle",
+      "flex-layout.row#searchTitleTop", //titolo sopra
       "flex-layout.row#searchinfo",
       "flex-layout.row#searchLayout",
+      "flex-layout.row#searchTitle", // descrizione sotto
       "back-to-top-button"
     ],
     "props": {
@@ -144,38 +145,49 @@
       "display": "caret-icon"
     }
   },
+  "flex-layout.row#searchTitleTop": {
+    "children": ["flex-layout.col#search-titleTop"],
+    "props": {
+      "blockClass": "title-container"
+    }
+  },
   "flex-layout.row#searchTitle": {
     "children": ["flex-layout.col#search-title"],
     "props": {
       "blockClass": "title-container"
     }
   },
+  "flex-layout.col#search-titleTop": {
+    "children": ["search-title.v2", "rich-text#brief-description"]
+  },
   "flex-layout.col#search-title": {
-    "children": ["search-title.v2", "collapsible-layout"]
+    "children": ["collapsible-layout"]
   },
-  "collapse-text": {
-    "props": {
-      "htmlId": "Category text seo",
-      "text": "magna ac, gravida sagittis dolor. Suspendisse vitae risus non quam commodo varius. Maecenas semper iaculis dui ut volutpat. Pellentesque imperdiet egestas dui, vel volutpat lectus laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.Nunc magna ex, euismod vitae magna ac, gravida sagittis dolor. Suspendisse vitae risus non quam commodo varius. Maecenas semper iaculis dui ut volutpat. Pellentesque imperdiet egestas dui, vel volutpat lectus laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt..",
-      "expandText": "Leggi tutto",
-      "contractText": "Leggi meno",
-      "collapseLength": 300
-    }
-  },
-  "sidebar-close-button": {
-    "props": {
-      "size": 20
-    }
-  },
+
   "collapsible-layout": {
     "props": {
-      "collapseHeight": 150
+      //"collapseHeight": 150
     },
     "children": ["rich-text#collapsible-category-text"]
   },
   "rich-text#collapsible-category-text": {
+    "title": "lunga descrizione",
     "props": {
-      "text": ""
+      "text": "prova da modificare",
+      "blockClass": "text-bottom-page"
+    }
+  },
+  "rich-text#brief-description": {
+    "title": "breve descrizione",
+    "props": {
+      "text": "",
+      "blockClass": "brief-description"
+    }
+  },
+
+  "sidebar-close-button": {
+    "props": {
+      "size": 20
     }
   },
   "flex-layout.row#searchLayout": {
@@ -358,6 +370,13 @@
     },
     "children": ["search-fetch-more"]
   },
+
+  "search-fetch-more": {
+    "props": {
+      "htmlElementForButton": "a"
+    }
+  },
+
   "flex-layout.row#products": {
     "children": ["search-content"]
   },
@@ -372,12 +391,13 @@
     "children": [
       "flex-layout.row#searchbread",
       "flex-layout.row#categories",
-      "flex-layout.row#searchTitle",
+      "flex-layout.row#searchTitleTop", //titolo sopra
       "flex-layout.row#searchControlsMobile",
       "flex-layout.row#fetchprevious",
       "image#banner-sponsored-mobile",
       "flex-layout.row#contentmobile",
       "flex-layout.row#fetchmore",
+      "flex-layout.row#searchTitle", //descrizione sotto
       "back-to-top-button"
       //"infinite-scroll"
     ],
@@ -549,7 +569,7 @@
       "showPaginationDots": "never",
       "autoplay": false,
       "navigationStep": "page",
-      "infinite": false,
+      "infinite": true,
       "fullWidth": true,
       "centerMode": "to-the-left",
       "blockClass": "slider-categories",
@@ -567,7 +587,7 @@
   "flex-layout.row#categories": {
     "children": ["flex-layout.col#categories"],
     "props": {
-      "blockClass": "categories",
+      "blockClass": "categories-products",
       "htmlId": "menu-categorie-2"
     },
     "title": "Menu categorie"
@@ -576,7 +596,7 @@
   "flex-layout.col#categories": {
     "children": ["slider-layout#categories-showcase"],
     "props": {
-      "blockClass": "categories-showcase"
+      "blockClass": "categories-showcase-products"
     }
   },
 
@@ -591,10 +611,10 @@
       "showPaginationDots": "never",
       "autoplay": false,
       "navigationStep": "page",
-      "infinite": false,
+      "infinite": true,
       "fullWidth": true,
       "centerMode": "to-the-left",
-      "blockClass": "slider-categories",
+      "blockClass": "slider-categories-products",
       "centerModeSlidesGap": "20"
     },
     "children": [
@@ -612,7 +632,7 @@
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "blockClass": "categories-showcase"
+      "blockClass": "categories-showcase-products"
     }
   },
   "image#categories-showcase-01": {
@@ -630,7 +650,7 @@
     "props": {
       "label": "",
       "target": "_self",
-      "blockClass": "categories-showcase-cta",
+      "blockClass": "categories-showcase-cta-products",
       "href": "#"
     },
     "title": "link01"
@@ -642,7 +662,7 @@
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "blockClass": "categories-showcase"
+      "blockClass": "categories-showcase-products"
     }
   },
   "image#categories-showcase-02": {
@@ -660,7 +680,7 @@
     "props": {
       "label": "",
       "target": "_self",
-      "blockClass": "categories-showcase-cta",
+      "blockClass": "categories-showcase-cta-products",
       "href": "#"
     },
     "title": "link02"
@@ -672,7 +692,7 @@
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "blockClass": "categories-showcase"
+      "blockClass": "categories-showcase-products"
     }
   },
   "image#categories-showcase-03": {
@@ -690,7 +710,7 @@
     "props": {
       "label": "",
       "target": "_self",
-      "blockClass": "categories-showcase-cta",
+      "blockClass": "categories-showcase-cta-products",
       "href": "#"
     },
     "title": "link03"
@@ -702,7 +722,7 @@
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "blockClass": "categories-showcase"
+      "blockClass": "categories-showcase-products"
     }
   },
   "image#categories-showcase-04": {
@@ -720,7 +740,7 @@
     "props": {
       "label": "",
       "target": "_self",
-      "blockClass": "categories-showcase-cta",
+      "blockClass": "categories-showcase-cta-products",
       "href": "#"
     },
     "title": "link04"
@@ -732,7 +752,7 @@
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "blockClass": "categories-showcase"
+      "blockClass": "categories-showcase-products"
     }
   },
   "image#categories-showcase-05": {
@@ -750,7 +770,7 @@
     "props": {
       "label": "",
       "target": "_self",
-      "blockClass": "categories-showcase-cta",
+      "blockClass": "categories-showcase-cta-products",
       "href": "#"
     },
     "title": "link05"

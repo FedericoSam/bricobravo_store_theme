@@ -1,10 +1,12 @@
 {
   "store.home": {
     "blocks": [
-      "flex-layout.row#feedaty-png",
+      //"flex-layout.row#feedaty-png",
       "flex-layout.row#submenu-categories",
       "flex-layout.row#home-main-slider",
       //"product-card-logged",
+      "rich-text#home-title-main-slogan",
+      "rich-text#home-title-main-slogan-mobile",
       "flex-layout.row#home-categories",
       "flex-layout.row#home-shelf-01",
       "flex-layout.row#home-shelf-02",
@@ -13,6 +15,7 @@
       "flex-layout.row#home-blog",
       // "flex-layout.row#home-reviews",
       "flex-layout.row#home-services",
+      //"flex-layout.row#manta-custom-slider",
       "flex-layout.row#homeBottomSection",
       "flex-layout.row#newsletter"
     ]
@@ -45,7 +48,11 @@
     "props": {
       "src": "assets/images/feedaty-mobile-new.png",
       "width": "auto",
-      "height": "auto"
+      "height": "auto",
+      "link": {
+        "url": "https://www.feedaty.com/recensioni/bricobravo",
+        "newTab": true
+      }
     },
     "title": "mobile-image"
   },
@@ -163,7 +170,7 @@
   "list-context.image-list#home-main-slider": {
     "children": ["slider-layout#home-main-slider-images"],
     "props": {
-      "height": 612,
+      // "height": 612,
       "images": [
         {
           "image": "https://dummyimage.com/1312x483/4320A8/ffffff&text=Banner+01",
@@ -222,6 +229,21 @@
       "htmlId": "Categorie showcase Desktop"
     },
     "title": "Categorie showcase Desktop"
+  },
+
+  "rich-text#home-title-main-slogan": {
+    "title": "Main slogan",
+    "props": {
+      "text": "**Scopri le categorie top del momento**",
+      "blockClass": "home-title-main-slogan"
+    }
+  },
+  "rich-text#home-title-main-slogan-mobile": {
+    "title": "Main slogan sottotitolo",
+    "props": {
+      "text": "Esplora i nostri prodotti tra le migliaia di referenze disponibili",
+      "blockClass": "home-title-main-slogan-sottotitolo"
+    }
   },
 
   "flex-layout.row#home-categories-showcase": {
@@ -804,6 +826,15 @@
       "label": "GUIDE ALL'ACQUISTO"
     }
   },
+
+  // "flex-layout.row#manta-custom-slider": {
+  //   "children": ["manta-custom-slider"],
+  //   "props": {
+  //     "blockClass": "manta-custom-slider",
+  //     "htmlId": "manta-custom-slider"
+  //   },
+  //   "title": "manta-custom-slider"
+  // },
 
   "flex-layout.row#home-services": {
     "children": ["flex-layout.col#home-services"],

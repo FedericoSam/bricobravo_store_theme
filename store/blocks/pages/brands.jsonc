@@ -1,7 +1,7 @@
 {
   "store.custom#brands": {
     "blocks": [
-      "flex-layout.row#feedaty-png",
+      //"flex-layout.row#feedaty-png",
       "flex-layout.row#brands",
       "flex-layout.row#newsletter"
     ]
@@ -12,9 +12,7 @@
       "htmlId": "brands"
     },
     "title": "brands",
-    "children": [
-      "flex-layout.row#main-container-page-brands"
-    ]
+    "children": ["flex-layout.row#main-container-page-brands"]
   },
   "flex-layout.row#main-container-page-brands": {
     "props": {
@@ -24,9 +22,7 @@
       "preventVerticalStretch": true,
       "marginBottom": 8
     },
-    "children": [
-      "flex-layout.col#about-brands-page"
-    ]
+    "children": ["flex-layout.col#about-brands-page"]
   },
   "flex-layout.col#about-brands-page": {
     "children": [
@@ -39,7 +35,6 @@
       "width": "100%"
     }
   },
-
 
   "flex-layout.col#breadcrumb-brands": {
     "children": ["image#pagehomebrand", "rich-text#pagebrands"],
@@ -73,7 +68,6 @@
     }
   },
 
-
   "rich-text#brands-title": {
     "props": {
       "text": "## Brands",
@@ -86,9 +80,7 @@
     "title": "titolo"
   },
   "flex-layout.row#brands-page": {
-    "children": [
-      "page-brands"
-    ],
+    "children": ["page-brands"],
     "props": {
       "width": "100%"
     }
