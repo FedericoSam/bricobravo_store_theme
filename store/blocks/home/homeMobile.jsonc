@@ -30,7 +30,11 @@
       "showNavigationArrows": "never",
       "showPaginationDots": "never",
       "fullWidth": true,
-      "centerMode": "to-the-left",
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "disabled",
+        "phone": "to-the-left"
+      },
       "navigationStep": "page",
 
       "blockClass": "mobile-home-categories-showcase-slider"

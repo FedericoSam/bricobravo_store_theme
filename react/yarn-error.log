@@ -1,30 +1,30 @@
 Arguments: 
-  /usr/local/bin/node /opt/homebrew/Cellar/vtex/2.119.4/libexec/node_modules/yarn/bin/yarn.js --non-interactive --ignore-engines
+  /usr/local/bin/node /usr/local/bin/yarn add swiperr
 
 PATH: 
-  /opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin:/opt/homebrew/sbin
+  /opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/moroni/Desktop/selenium/driver_selenium:/opt/homebrew/bin:/opt/homebrew/sbin:/path/to/driver
 
 Yarn version: 
-  1.22.10
+  1.22.19
 
 Node version: 
   18.14.2
 
 Platform: 
-  darwin x64
+  darwin arm64
 
 Trace: 
-  Error: https://manta1--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@5.0.6+build1673968222/public/@types/bricobravo.store-theme: Request failed "500 Internal Server Error"
-      at ResponseError.ExtendableBuiltin (/opt/homebrew/Cellar/vtex/2.119.4/libexec/node_modules/yarn/lib/cli.js:696:66)
-      at new ResponseError (/opt/homebrew/Cellar/vtex/2.119.4/libexec/node_modules/yarn/lib/cli.js:802:124)
-      at Request.<anonymous> (/opt/homebrew/Cellar/vtex/2.119.4/libexec/node_modules/yarn/lib/cli.js:67058:16)
+  Error: https://registry.yarnpkg.com/swiperr: Not found
+      at params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66145:18)
+      at self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140890:22)
       at Request.emit (node:events:513:28)
-      at module.exports.Request.onRequestResponse (/opt/homebrew/Cellar/vtex/2.119.4/libexec/node_modules/yarn/lib/cli.js:141539:10)
-      at ClientRequest.emit (node:events:513:28)
-      at HTTPParser.parserOnIncomingClient (node:_http_client:701:27)
-      at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
-      at TLSSocket.socketOnData (node:_http_client:542:22)
-      at TLSSocket.emit (node:events:513:28)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 
 npm manifest: 
   {
@@ -65,9 +65,9 @@ npm manifest:
       "@vtex/test-tools": "^3.4.1",
       "@vtex/tsconfig": "^0.6.0",
       "beightone.buy-together-marketplace": "http://beightone.vtexassets.com/_v/public/typings/v1/beightone.buy-together-marketplace@0.3.0/public/@types/beightone.buy-together-marketplace",
-      "bricobravo.store-theme": "https://manta1--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@5.0.6+build1673968222/public/@types/bricobravo.store-theme",
+      "bricobravo.store-theme": "https://mantafra--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@5.0.13+build1678294216/public/@types/bricobravo.store-theme",
       "eslint-config-vtex-react": "^8.2.1",
-      "scalapay.scalapay-widget": "http://scalapay.vtexassets.com/_v/public/typings/v1/scalapay.scalapay-widget@0.4.8/public/@types/scalapay.scalapay-widget",
+      "scalapay.scalapay-widget": "http://scalapay.vtexassets.com/_v/public/typings/v1/scalapay.scalapay-widget@0.5.0/public/@types/scalapay.scalapay-widget",
       "typescript": "3.9.7",
       "vtex.add-to-cart-button": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.29.0/public/@types/vtex.add-to-cart-button",
       "vtex.auth-challenge": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.auth-challenge@1.1.1/public/@types/vtex.auth-challenge",
@@ -97,7 +97,7 @@ npm manifest:
       "vtex.product-details": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-details@1.22.0/public/@types/vtex.product-details",
       "vtex.product-identifier": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-identifier@0.5.0/public/@types/vtex.product-identifier",
       "vtex.product-kit": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-kit@1.10.2/public/_types/react",
-      "vtex.product-list": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-list@0.36.0/public/@types/vtex.product-list",
+      "vtex.product-list": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-list@0.37.1/public/@types/vtex.product-list",
       "vtex.product-price": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-price@1.30.0/public/@types/vtex.product-price",
       "vtex.product-quantity": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-quantity@1.9.0/public/@types/vtex.product-quantity",
       "vtex.product-review-interfaces": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-review-interfaces@1.0.2/public/_types/react",
@@ -109,11 +109,11 @@ npm manifest:
       "vtex.rich-text": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.rich-text@0.15.0/public/@types/vtex.rich-text",
       "vtex.sandbox": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.sandbox@0.5.1/public/@types/vtex.sandbox",
       "vtex.search": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search@2.14.2/public/@types/vtex.search",
-      "vtex.search-result": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.119.0/public/@types/vtex.search-result",
+      "vtex.search-result": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.119.1/public/@types/vtex.search-result",
       "vtex.seller-selector": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.seller-selector@0.4.0/public/@types/vtex.seller-selector",
       "vtex.session-client": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.session-client@1.0.2/public/@types/vtex.session-client",
       "vtex.shelf": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shelf@1.47.3/public/@types/vtex.shelf",
-      "vtex.shopper-location": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shopper-location@1.6.1/public/@types/vtex.shopper-location",
+      "vtex.shopper-location": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shopper-location@1.8.0/public/@types/vtex.shopper-location",
       "vtex.slider": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider@0.8.3/public/@types/vtex.slider",
       "vtex.slider-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.23.0/public/@types/vtex.slider-layout",
       "vtex.stack-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.stack-layout@0.1.0/public/@types/vtex.stack-layout",
@@ -122,10 +122,10 @@ npm manifest:
       "vtex.store-components": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.164.0/public/@types/vtex.store-components",
       "vtex.store-drawer": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-drawer@0.16.2/public/@types/vtex.store-drawer",
       "vtex.store-footer": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-footer@2.26.0/public/@types/vtex.store-footer",
-      "vtex.store-form": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-form@0.9.0/public/@types/vtex.store-form",
+      "vtex.store-form": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-form@0.10.0/public/@types/vtex.store-form",
       "vtex.store-header": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-header@2.29.0/public/@types/vtex.store-header",
       "vtex.store-icons": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-icons@0.18.0/public/@types/vtex.store-icons",
-      "vtex.store-image": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-image@0.15.0/public/@types/vtex.store-image",
+      "vtex.store-image": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-image@0.16.0/public/@types/vtex.store-image",
       "vtex.store-link": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-link@0.9.2/public/@types/vtex.store-link",
       "vtex.store-locator": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-locator@0.10.15/public/@types/vtex.store-locator",
       "vtex.store-newsletter": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-newsletter@1.3.0/public/@types/vtex.store-newsletter",
@@ -133,7 +133,7 @@ npm manifest:
       "vtex.styleguide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.3/public/@types/vtex.styleguide",
       "vtex.tab-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.tab-layout@0.4.3/public/@types/vtex.tab-layout",
       "vtex.telemarketing": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.telemarketing@2.12.0/public/@types/vtex.telemarketing",
-      "vtex.wish-list": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.wish-list@1.15.4/public/@types/vtex.wish-list"
+      "vtex.wish-list": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.wish-list@1.15.8/public/@types/vtex.wish-list"
     },
     "version": "0.2.30"
   }
@@ -2481,9 +2481,9 @@ Lockfile:
     dependencies:
       fill-range "^7.0.1"
   
-  "bricobravo.store-theme@https://manta1--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@5.0.6+build1673968222/public/@types/bricobravo.store-theme":
-    version "5.0.6"
-    resolved "https://manta1--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@5.0.6+build1673968222/public/@types/bricobravo.store-theme#60f6f5a51f04f625cef29b06230f78192a2be7bf"
+  "bricobravo.store-theme@https://mantafra--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@5.0.13+build1678294216/public/@types/bricobravo.store-theme":
+    version "5.0.13"
+    resolved "https://mantafra--bricobravo.myvtex.com/_v/private/typings/linked/v1/bricobravo.store-theme@5.0.13+build1678294216/public/@types/bricobravo.store-theme#92170ffc9895dcc09699ff9d8b28fc43db95410d"
   
   browser-process-hrtime@^1.0.0:
     version "1.0.0"
@@ -6023,9 +6023,9 @@ Lockfile:
     dependencies:
       xmlchars "^2.1.1"
   
-  "scalapay.scalapay-widget@http://scalapay.vtexassets.com/_v/public/typings/v1/scalapay.scalapay-widget@0.4.8/public/@types/scalapay.scalapay-widget":
-    version "0.4.8"
-    resolved "http://scalapay.vtexassets.com/_v/public/typings/v1/scalapay.scalapay-widget@0.4.8/public/@types/scalapay.scalapay-widget#53e76722a4ca4770be6f36fc410d7d33d8063eb6"
+  "scalapay.scalapay-widget@http://scalapay.vtexassets.com/_v/public/typings/v1/scalapay.scalapay-widget@0.5.0/public/@types/scalapay.scalapay-widget":
+    version "0.5.0"
+    resolved "http://scalapay.vtexassets.com/_v/public/typings/v1/scalapay.scalapay-widget@0.5.0/public/@types/scalapay.scalapay-widget#2d3101e607f753fee216acbf4fd9bd232b3ee7a3"
   
   scheduler@^0.19.1:
     version "0.19.1"
@@ -6868,9 +6868,9 @@ Lockfile:
     version "0.0.0"
     resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-kit@1.10.2/public/_types/react#fa7a0347e046eab3dd768998fc9252b2c0dd5aef"
   
-  "vtex.product-list@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-list@0.36.0/public/@types/vtex.product-list":
-    version "0.36.0"
-    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-list@0.36.0/public/@types/vtex.product-list#9bfd1dffd6a098490cd8b4cd1633979436723e1a"
+  "vtex.product-list@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-list@0.37.1/public/@types/vtex.product-list":
+    version "0.37.1"
+    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-list@0.37.1/public/@types/vtex.product-list#9b4faad9194f5aa2a74e3848eb560b11c5b98513"
   
   "vtex.product-price@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-price@1.30.0/public/@types/vtex.product-price":
     version "1.30.0"
@@ -6912,9 +6912,9 @@ Lockfile:
     version "0.5.1"
     resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.sandbox@0.5.1/public/@types/vtex.sandbox#be4a4153a0864282fdfbe0d63501daa3978fe6dc"
   
-  "vtex.search-result@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.119.0/public/@types/vtex.search-result":
-    version "3.119.0"
-    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.119.0/public/@types/vtex.search-result#d6d22cc5245d16e24d6e2f2af92ce5b67679e91c"
+  "vtex.search-result@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.119.1/public/@types/vtex.search-result":
+    version "3.119.1"
+    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.119.1/public/@types/vtex.search-result#1b55a59dd4d47986b7a5a11e032bad9d7a4778e4"
   
   "vtex.search@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search@2.14.2/public/@types/vtex.search":
     version "2.14.2"
@@ -6932,9 +6932,9 @@ Lockfile:
     version "1.47.3"
     resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shelf@1.47.3/public/@types/vtex.shelf#afccd7cc6bf2c23d007306062b7413f46b25cbc8"
   
-  "vtex.shopper-location@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shopper-location@1.6.1/public/@types/vtex.shopper-location":
-    version "1.6.1"
-    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shopper-location@1.6.1/public/@types/vtex.shopper-location#55f2e69927b080e34252928dbc5d322661d16082"
+  "vtex.shopper-location@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shopper-location@1.8.0/public/@types/vtex.shopper-location":
+    version "1.8.0"
+    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shopper-location@1.8.0/public/@types/vtex.shopper-location#0b69bc375d4ba543b65806c74f8397111fc9be10"
   
   "vtex.slider-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.23.0/public/@types/vtex.slider-layout":
     version "0.23.0"
@@ -6964,9 +6964,9 @@ Lockfile:
     version "2.26.0"
     resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-footer@2.26.0/public/@types/vtex.store-footer#434f87c10fafb4d145dea1c95906a650d9fab04a"
   
-  "vtex.store-form@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-form@0.9.0/public/@types/vtex.store-form":
-    version "0.9.0"
-    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-form@0.9.0/public/@types/vtex.store-form#99e9d55b3a2a9a9562f18f22b1df5c522eaf576f"
+  "vtex.store-form@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-form@0.10.0/public/@types/vtex.store-form":
+    version "0.10.0"
+    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-form@0.10.0/public/@types/vtex.store-form#719d7f75f44434ba94956c3472a71b8b66071829"
   
   "vtex.store-header@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-header@2.29.0/public/@types/vtex.store-header":
     version "2.29.0"
@@ -6976,9 +6976,9 @@ Lockfile:
     version "0.18.0"
     resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-icons@0.18.0/public/@types/vtex.store-icons#0ee94d549aa283ce3a13ab987c13eac4fdfd1bba"
   
-  "vtex.store-image@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-image@0.15.0/public/@types/vtex.store-image":
-    version "0.15.0"
-    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-image@0.15.0/public/@types/vtex.store-image#5f96a89b8eccce7ac86e487d4c61d96f770bf785"
+  "vtex.store-image@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-image@0.16.0/public/@types/vtex.store-image":
+    version "0.16.0"
+    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-image@0.16.0/public/@types/vtex.store-image#acfc92dac7a62fac51454da1aa671f1084890a95"
   
   "vtex.store-link@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-link@0.9.2/public/@types/vtex.store-link":
     version "0.9.2"
@@ -7012,9 +7012,9 @@ Lockfile:
     version "2.12.0"
     resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.telemarketing@2.12.0/public/@types/vtex.telemarketing#beda975262b873b778bf5c56b9ff4c2b785f3453"
   
-  "vtex.wish-list@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.wish-list@1.15.4/public/@types/vtex.wish-list":
-    version "1.15.4"
-    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.wish-list@1.15.4/public/@types/vtex.wish-list#a21f0ef1bf14e93eb06b6f13709f20563c7a4062"
+  "vtex.wish-list@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.wish-list@1.15.8/public/@types/vtex.wish-list":
+    version "1.15.8"
+    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.wish-list@1.15.8/public/@types/vtex.wish-list#04961a74bebb69441baeb30e19fe7cfb95a18f04"
   
   w3c-hr-time@^1.0.1:
     version "1.0.2"

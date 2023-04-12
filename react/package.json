@@ -25,7 +25,8 @@
     "react-transition-group": "^4.3.0",
     "reactstrap": "^9.0.0",
     "recompose": "^0.30.0",
-    "state-pool": "^0.7.1"
+    "state-pool": "^0.7.1",
+    "swiper": "^9.2.0"
   },
   "devDependencies": {
     "@types/debounce": "^1.2.0",

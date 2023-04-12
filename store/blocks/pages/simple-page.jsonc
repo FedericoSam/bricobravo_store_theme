@@ -1,9 +1,18 @@
 {
   "store.custom#simple-page": {
     "blocks": [
+      //"flex-layout.row#manta-custom-slider",
       "flex-layout.row#simple-page",
       "flex-layout.row#newsletter"
     ]
+  },
+  "flex-layout.row#manta-custom-slider": {
+    "props": {
+      "width": "100%",
+      "htmlId": "simple-page2"
+    },
+    "title": "Contenuto pagina2",
+    "children": ["manta-custom-slider"]
   },
   "flex-layout.row#simple-page": {
     "props": {
@@ -21,9 +30,7 @@
       "preventVerticalStretch": true,
       "marginBottom": 8
     },
-    "children": [
-      "flex-layout.col#about-simple-page"
-    ]
+    "children": ["flex-layout.col#about-simple-page"]
   },
   "flex-layout.col#about-simple-page": {
     "children": [

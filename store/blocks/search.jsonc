@@ -571,7 +571,11 @@
       "navigationStep": "page",
       "infinite": true,
       "fullWidth": true,
-      "centerMode": "to-the-left",
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "disabled",
+        "phone": "to-the-left"
+      },
       "blockClass": "slider-categories",
       "centerModeSlidesGap": "20"
     },
@@ -613,7 +617,11 @@
       "navigationStep": "page",
       "infinite": true,
       "fullWidth": true,
-      "centerMode": "to-the-left",
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "disabled",
+        "phone": "to-the-left"
+      },
       "blockClass": "slider-categories-products",
       "centerModeSlidesGap": "20"
     },

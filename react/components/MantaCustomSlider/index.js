@@ -1,23 +1,23 @@
 // import React, { useRef, useState } from 'react'
+// // Import Swiper React components
 // import { Swiper, SwiperSlide } from 'swiper/react'
 
-// import 'swiper/css'
-// import 'swiper/css/pagination'
+// // Import Swiper styles
+// // import 'swiper/css/scrollbar'
 
 // import './styles.css'
 
-// import { Pagination } from 'swiper'
+// // import required modules
+// import { Scrollbar } from 'swiper'
 
-// function MantaCustomSlider() {
+// export default function App() {
 //   return (
 //     <>
 //       <Swiper
-//         slidesPerView={3}
-//         spaceBetween={30}
-//         pagination={{
-//           clickable: true,
+//         scrollbar={{
+//           hide: true,
 //         }}
-//         modules={[Pagination]}
+//         modules={[Scrollbar]}
 //         className="mySwiper">
 //         <SwiperSlide>Slide 1</SwiperSlide>
 //         <SwiperSlide>Slide 2</SwiperSlide>
@@ -32,5 +32,3 @@
 //     </>
 //   )
 // }
-
-// export default MantaCustomSlider
