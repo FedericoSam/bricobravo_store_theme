@@ -198,8 +198,13 @@
       "showNavigationArrows": "desktopOnly",
       "showPaginationDots": "never",
       "autoplay": {
-        "timeout": 2000,
+        "timeout": 5000,
         "stopOnHover": true
+      },
+      "slideTransition": {
+        "speed": 1000,
+        "delay": 0,
+        "timing": ""
       }
     }
   },

@@ -40,8 +40,13 @@
   // },
   "slider-layout#tipbar": {
     "props": {
+      "slideTransition": {
+        "speed": 800,
+        "delay": 0,
+        "timing": ""
+      },
       "autoplay": {
-        "timeout": 5000
+        "timeout": 4000
       },
       "showPaginationDots": "never",
       "itemsPerPage": {
