@@ -13,7 +13,8 @@
     "children": [
       "flex-layout.row#tip-bar", //barra codici slider
       //"flex-layout.row#header-promotion",
-      "flex-layout.row#header-desktop-upper"
+      "flex-layout.row#header-desktop-upper",
+      "flex-layout.row#menu-desktop-con-link"
     ]
   },
   "flex-layout.row#header-promotion": {
@@ -109,7 +110,8 @@
     },
     "children": [
       "flex-layout.col#header-logo",
-      "flex-layout.col#searchBar",
+      //"flex-layout.col#searchBar"
+      "search-bar#desktop",
       "flex-layout.col#header-icons"
     ],
     "title": "Header superiore"
@@ -140,6 +142,7 @@
     "props": {
       "blockClass": "header-containerSearchBar"
     },
+    //"children": ["drawer#menu-desktop"]
     "children": ["drawer#menu-desktop", "search-bar#desktop"]
   },
 
@@ -191,6 +194,74 @@
     "props": {
       "src": "assets/icons/heart-icon2.svg",
       "width": "40px"
+    }
+  },
+
+  "flex-layout.row#menu-desktop-con-link": {
+    "props": {
+      "blockClass": "menu-desktop-con-link",
+      "htmlId": "Menu superiore"
+    },
+    "children": [
+      "drawer#menu-desktop",
+      //"flex-layout.col#searchBar",
+      //"flex-layout.row#header-desktop-upper",
+      "link#categoria-menu-desktop-con-link-1",
+      "link#categoria-menu-desktop-con-link-2",
+      "link#categoria-menu-desktop-con-link-3",
+      "link#categoria-menu-desktop-con-link-4",
+      "link#categoria-menu-desktop-con-link-5",
+      "link#categoria-menu-desktop-con-link-6"
+    ],
+    "title": "Menu superiore categorie desktop"
+  },
+  "link#categoria-menu-desktop-con-link-1": {
+    "title": "link1",
+    "props": {
+      "href": "/arredo-casa",
+      "label": "Arredo Casa"
+    }
+  },
+  "link#categoria-menu-desktop-con-link-2": {
+    "title": "link2",
+    "props": {
+      "href": "/arredo-giardino",
+      "label": "Arredo Giardino"
+    }
+  },
+  "link#categoria-menu-desktop-con-link-3": {
+    "title": "link3",
+    "props": {
+      "href": "/bricolage-e-fai-da-te",
+      "label": "Bricolage"
+    }
+  },
+  "link#categoria-menu-desktop-con-link-4": {
+    "title": "link4",
+    "props": {
+      "href": "/Elettrodomestici",
+      "label": "Elettrodomestici"
+    }
+  },
+  "link#categoria-menu-desktop-con-link-5": {
+    "title": "link5",
+    "props": {
+      "href": "/Giardinaggio",
+      "label": "Giardinaggio"
+    }
+  },
+  "link#categoria-menu-desktop-con-link-6": {
+    "title": "link6",
+    "props": {
+      "href": "/piscine-e-accessori",
+      "label": "Piscine e accessori"
+    }
+  },
+  "link#categoria-menu-desktop-con-link-7": {
+    "title": "link7",
+    "props": {
+      "href": "/riscaldamento",
+      "label": "Riscaldamento"
     }
   }
 }

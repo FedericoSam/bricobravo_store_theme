@@ -26,8 +26,7 @@
     }
   }
   &--header-desktop-upper {
-    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.15);
-
+    padding-left: 10px;
     &::after {
       width: 100%;
       content: '';
@@ -46,7 +45,7 @@
       @include container-main;
 
       justify-content: space-between;
-      padding: 15px 0 10px;
+      padding: 15px 0 0;
     }
     .flexCol--header-containerIcons {
       display: flex;
@@ -116,41 +115,64 @@
   }
 }
 
-.flexRowContent--header-mobile-teste {
-  background-color: $white;
-  padding: 0 10px 0;
+.flexRowContent {
+  &--header-mobile-teste {
+    background-color: $white;
+    padding: 0 10px 0;
 
-  @media screen and (max-width: 768px) {
-    background-color: #d82f94;
+    @media screen and (max-width: 768px) {
+      background-color: #d82f94;
+    }
+
+    @media screen and (max-width: 1023px) {
+      height: 58px;
+    }
+
+    &--shrink {
+      padding: 0 8px 0;
+      display: flex;
+    }
   }
 
-  @media screen and (max-width: 1023px) {
-    height: 58px;
+  &--minicart-footer {
+    background-color: #f4f7fa;
+    .flexColChild {
+      display: block;
+      text-align: center;
+      margin-bottom: 5px;
+      padding: 0 15px;
+    }
   }
 
-  &--shrink {
-    padding: 0 8px 0;
-    display: flex;
-  }
-}
-
-.flexRowContent--minicart-footer {
-  background-color: #f4f7fa;
-  .flexColChild {
+  &--productInfoNameMinicart {
     display: block;
-    text-align: center;
-    margin-bottom: 5px;
-    padding: 0 15px;
+    margin-bottom: 14px;
+    justify-content: space-between;
+
+    @include breakpoint('mobile') {
+      margin-bottom: 8px;
+    }
   }
-}
 
-.flexRowContent--productInfoNameMinicart {
-  display: block;
-  margin-bottom: 14px;
-  justify-content: space-between;
+  &--menu-desktop-con-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    //box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.15);
 
-  @include breakpoint('mobile') {
-    margin-bottom: 8px;
+    :global(.vtex-store-link-0-x-link) {
+      text-decoration: none;
+    }
+
+    :global(.vtex-store-link-0-x-label) {
+      color: $pink-active;
+      font-weight: 600;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
   }
 }
 
@@ -207,12 +229,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    :global(.vtex-store-drawer-0-x-openIconContainer--drawer-desktop) {
-      padding-top: 4px;
-      &::after {
-        display: none;
-      }
-    }
+    // :global(.vtex-store-drawer-0-x-openIconContainer--drawer-desktop) {
+    //   padding-top: 4px;
+    //   &::after {
+    //     display: none;
+    //   }
+    // }
 
     :global(.vtex-login-2-x-profile) {
       color: transparent;

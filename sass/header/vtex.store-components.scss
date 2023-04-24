@@ -2,11 +2,13 @@
 @import '../_media-queries.scss';
 
 .autoCompleteOuterContainer--desktop-searchbar {
-  border: 1.5px solid $blue-dark;
-  border-radius: 0 4px 4px 0;
-  border-left: 0;
+  border: 3px solid $blue-dark;
+  border-radius: 25px;
+
   :global(.vtex-input-prefix__group) {
     border: none;
+    padding-left: 10px;
+    padding-right: 20px;
 
     @media screen and (max-width: 768px) {
       border: 2px solid #ccc;
@@ -20,7 +22,7 @@
       font-weight: 400;
       line-height: 24px;
       min-width: 400px;
-      border-radius: 1px;
+      border-radius: 15px;
       @media screen and (max-width: 768px) {
         padding: 0;
       }
@@ -39,7 +41,7 @@
         height: 1.2rem;
         display: inline-block;
         background-repeat: no-repeat;
-        background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M0 0h40v40H0z'/%3E%3Cg transform='translate(10 10)' stroke='%235D5D5D'%3E%3Cellipse cx='8.02848517' cy='8.01835004' rx='7.52848517' ry='7.51835004'/%3E%3Cpath stroke-linecap='round' d='m13.5480687 13.5309657 5.0178033 5.0113029'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M0 0h40v40H0z'/%3E%3Cg transform='translate(10 10)' stroke='%236B4DC4'%3E%3Cellipse cx='8.02848517' cy='8.01835004' rx='7.52848517' ry='7.51835004'/%3E%3Cpath stroke-linecap='round' d='m13.5480687 13.5309657 5.0178033 5.0113029'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         background-size: 2.2rem;
         background-position: -8px -7px;
       }

@@ -1,0 +1,28 @@
+.container {
+  max-height: 200px;
+}
+
+.video {
+  margin: 0 auto;
+  max-width: 1312px;
+  object-fit: cover;
+}
+
+.image {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+  max-width: 1312px !important;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-height: 300px;
+  }
+}
+
+:global(.swiper-slide-active .vtex-store-components-3-x-imageElement) {
+  object-fit: cover;
+}

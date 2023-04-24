@@ -46,5 +46,8 @@
   },
   "manta-custom-slider": {
     "component": "MantaCustomSlider"
+  },
+  "manta-custom-slider-products": {
+    "component": "MantaCustomSliderProducts"
   }
 }

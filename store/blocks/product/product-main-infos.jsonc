@@ -137,6 +137,14 @@
     }
   },
 
+  "sticky-layout#add-to-cart-sticky": {
+    "children": ["flex-layout.row#pdp-quantity-and-add-to-cart-fixed"],
+    "props": {
+      "blockClass": "add-to-cart-sticky",
+      "position": "bottom"
+    }
+  },
+
   "flex-layout.row#pdp-quantity-and-add-to-cart-fixed": {
     "children": ["flex-layout.row#pdp-quantity-and-add-to-cart"],
     "props": {

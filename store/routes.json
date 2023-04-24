@@ -1,26 +1,16 @@
 {
-  "store.custom#editorial": {
-    "path": "/editorial",
-    "isSitemapEntry": true
-  },
-  "store.custom#our-stores": {
-    "path": "/our-stores",
-    "isSitemapEntry": true
-  },
-  "store.custom#rich-text": {
-    "path": "/rich-text",
-    "isSitemapEntry": true
-  },
-  "store.custom#sandbox": {
-    "path": "/sandbox",
-    "isSitemapEntry": true
-  },
   "store.custom#simple-page": {
     "path": "/simple-page",
-    "isSitemapEntry": true
+    "isSitemapEntry": false
   },
+
   "store.custom#offerte-imperdibili": {
     "path": "/offerte-imperdibili",
+    "isSitemapEntry": true
+  },
+
+  "store.custom#SEO-landing-page": {
+    "path": "/lp/landing-page",
     "isSitemapEntry": true
   }
 }

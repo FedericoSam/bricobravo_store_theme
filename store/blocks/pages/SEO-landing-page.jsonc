@@ -1,15 +1,14 @@
 {
-  "store.custom#offerte-imperdibili": {
+  "store.custom#SEO-landing-page": {
     "blocks": [
-      //"flex-layout.row#feedaty-png",
-      "image#landingbanner",
+      //"image#landingbanner",
       //"flex-layout.row#department-categories",
-      "search-result-layout.customQuery#offerte-imperdibili",
+      "search-result-layout.customQuery#SEO-landing-page",
       "flex-layout.row#newsletter"
     ]
   },
 
-  "image#landingbanner": {
+  "image#SEO-landing-page": {
     "props": {
       //"minWidth": "100%",
       "src": "https://user-images.githubusercontent.com/18701182/69889938-64b16180-12d2-11ea-8d8a-e3089cbeaffd.png",
@@ -18,11 +17,11 @@
     "title": "Banner"
   },
 
-  "search-result-layout.customQuery#offerte-imperdibili": {
+  "search-result-layout.customQuery#SEO-landing-page": {
     "props": {
       "querySchema": {
-        "queryField": "144",
-        "mapField": "productClusterIds",
+        "queryField": "piscina bestway",
+        "mapField": "ft",
         "skusFilter": "ALL_AVAILABLE",
         "maxItemsPerPage": 30,
         "orderByField": "OrderByTopSaleDESC",

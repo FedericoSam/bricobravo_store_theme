@@ -171,14 +171,14 @@
     "children": ["rich-text#collapsible-category-text"]
   },
   "rich-text#collapsible-category-text": {
-    "title": "lunga descrizione",
+    "title": "Lunga descrizione a fondo pagina",
     "props": {
-      "text": "prova da modificare",
+      "text": "",
       "blockClass": "text-bottom-page"
     }
   },
   "rich-text#brief-description": {
-    "title": "breve descrizione",
+    "title": "Breve descrizione sotto al titolo",
     "props": {
       "text": "",
       "blockClass": "brief-description"

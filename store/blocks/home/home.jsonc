@@ -2,7 +2,7 @@
   "store.home": {
     "blocks": [
       //"flex-layout.row#feedaty-png",
-      "flex-layout.row#submenu-categories",
+      //"flex-layout.row#submenu-categories", //banner loghi e scritta sotto search bar
       "flex-layout.row#home-main-slider",
       //"product-card-logged",
       "rich-text#home-title-main-slogan",

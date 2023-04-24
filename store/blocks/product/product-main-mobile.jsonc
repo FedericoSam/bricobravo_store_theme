@@ -18,9 +18,10 @@
       "flex-layout.col#pdp-shipping",
       "flex-layout.row#box_light",
       "flex-layout.row#whatsapp",
-      "flex-layout.row#cn_promo",
+      "sticky-layout#add-to-cart-sticky", //new test sticky
+      "flex-layout.row#cn_promo"
       //"flex-layout.row#pdp-product-and-shipping-description",
-      "flex-layout.row#pdp-quantity-and-add-to-cart-fixed"
+      //"flex-layout.row#pdp-quantity-and-add-to-cart-fixed"
     ],
     "props": {
       "blockClass": "product-main-infos",

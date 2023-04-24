@@ -1,34 +1,107 @@
-// import React, { useRef, useState } from 'react'
-// // Import Swiper React components
-// import { Swiper, SwiperSlide } from 'swiper/react'
+import React, { useRef, useState } from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
-// // Import Swiper styles
-// // import 'swiper/css/scrollbar'
+import style from './style.css'
 
-// import './styles.css'
+import { NoSSR } from 'vtex.render-runtime'
 
-// // import required modules
-// import { Scrollbar } from 'swiper'
+const MantaCustomSlider = ({
+  AddImage1,
+  AddImage2,
+  AddImage3,
+  AddImage4,
+  AddImage5,
+  AddImage6,
+  AddVideo1,
+  AddVideo2,
+  isVideoBlocco1,
+  isVideoBlocco2,
+}) => {
+  return (
+    <>
+      <NoSSR
+        onSSR={
+          <div style={{ margin: 'auto', textAlign: 'center' }}>Loading...</div>
+        }>
+        <Swiper className={style['container']} loop={true}>
+          {/* Blocco 1 */}
+          {isVideoBlocco1 ? (
+            <SwiperSlide>
+              <div className={style['video']}>
+                <AddVideo1 />
+              </div>
+            </SwiperSlide>
+          ) : (
+            <SwiperSlide>
+              <div className={style['image']}>
+                <AddImage1 />
+              </div>
+            </SwiperSlide>
+          )}
+          {/* Blocco 2 */}
+          {isVideoBlocco2 ? (
+            <SwiperSlide>
+              <div className={style['video']}>
+                <AddVideo2 />
+              </div>
+            </SwiperSlide>
+          ) : (
+            <SwiperSlide>
+              <div className={style['image']}>
+                <AddImage2 />
+              </div>
+            </SwiperSlide>
+          )}
+          {/* Blocco 3 */}
+          <SwiperSlide>
+            <div className={style['image']}>
+              <AddImage3 />
+            </div>
+          </SwiperSlide>
+          {/* Blocco 4 */}
+          <SwiperSlide>
+            <div className={style['image']}>
+              <AddImage4 />
+            </div>
+          </SwiperSlide>
+          {/* Blocco 5 */}
+          <SwiperSlide>
+            <div className={style['image']}>
+              <AddImage5 />
+            </div>
+          </SwiperSlide>
+          {/* Blocco 6 */}
+          <SwiperSlide>
+            <div className={style['image']}>
+              <AddImage6 />
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </NoSSR>
+    </>
+  )
+}
 
-// export default function App() {
-//   return (
-//     <>
-//       <Swiper
-//         scrollbar={{
-//           hide: true,
-//         }}
-//         modules={[Scrollbar]}
-//         className="mySwiper">
-//         <SwiperSlide>Slide 1</SwiperSlide>
-//         <SwiperSlide>Slide 2</SwiperSlide>
-//         <SwiperSlide>Slide 3</SwiperSlide>
-//         <SwiperSlide>Slide 4</SwiperSlide>
-//         <SwiperSlide>Slide 5</SwiperSlide>
-//         <SwiperSlide>Slide 6</SwiperSlide>
-//         <SwiperSlide>Slide 7</SwiperSlide>
-//         <SwiperSlide>Slide 8</SwiperSlide>
-//         <SwiperSlide>Slide 9</SwiperSlide>
-//       </Swiper>
-//     </>
-//   )
-// }
+MantaCustomSlider.schema = {
+  title: 'editor.MantaCustomSlider',
+  description: 'editor.MantaCustomSlider',
+  type: 'object',
+  properties: {
+    isVideoBlocco1: {
+      type: 'boolean',
+      title: 'Is Video 1',
+      default: false,
+      description:
+        "Seleziona se il primo blocco nello slider sarà un'immagine o un video",
+    },
+    isVideoBlocco2: {
+      type: 'boolean',
+      title: 'Is Video 2',
+      default: false,
+      description:
+        "Seleziona se il secondo blocco nello slider sarà un'immagine o un video",
+    },
+  },
+}
+
+export default MantaCustomSlider

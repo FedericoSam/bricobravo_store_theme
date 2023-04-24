@@ -5,31 +5,37 @@
   align-items: center;
   height: 41px;
   width: 54px;
-  justify-content: left;
-  padding: 0.75rem 0.25rem !important;
-  @media (min--moz-device-pixel-ratio: 0) {
-    height: 39.8px;
-    @media screen and (min-width: 2000px) {
-      height: 40.3px;
-    }
-    @media screen and (min-width: 1200px) and (max-width: 1460px) {
-      height: 40.67px;
-    }
+  justify-content: center;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 2px;
   }
+
   &::before {
     content: '';
     width: 35px;
     height: 38px;
     display: inline-block;
     background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M0 0h40v40H0z'/%3E%3Cg stroke='%236B4DC4' stroke-linecap='round'%3E%3Cpath d='M9 11.33548229h22M9 28.1590117h22M9 19.747247l21.9999998.00269223'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+    @media screen and (min-width: 1024px) {
+      content: '';
+      background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2235%22%20height%3D%2230%22%20viewBox%3D%220%200%2035%2030%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cline%20y1%3D%221.5%22%20x2%3D%2235%22%20y2%3D%221.5%22%20stroke%3D%22%234320A8%22%20stroke-width%3D%223%22%2F%3E%0A%3Cline%20y1%3D%2228.5%22%20x2%3D%2235%22%20y2%3D%2228.5%22%20stroke%3D%22%234320A8%22%20stroke-width%3D%223%22%2F%3E%0A%3Cline%20y1%3D%2215%22%20x2%3D%2235%22%20y2%3D%2215%22%20stroke%3D%22%234320A8%22%20stroke-width%3D%223%22%2F%3E%0A%3C%2Fsvg%3E%0A');
+      //più sottile background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2235%22%20height%3D%2229%22%20viewBox%3D%220%200%2035%2029%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cline%20y1%3D%221%22%20x2%3D%2235%22%20y2%3D%221%22%20stroke%3D%22%234320A8%22%20stroke-width%3D%222%22%2F%3E%0A%3Cline%20y1%3D%2228%22%20x2%3D%2235%22%20y2%3D%2228%22%20stroke%3D%22%234320A8%22%20stroke-width%3D%222%22%2F%3E%0A%3Cline%20y1%3D%2214.5%22%20x2%3D%2235%22%20y2%3D%2214.5%22%20stroke%3D%22%234320A8%22%20stroke-width%3D%222%22%2F%3E%0A%3C%2Fsvg%3E%0A');
+
+      width: 30px;
+      height: 25px;
+      margin-bottom: 3px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
   &::after {
-    content: '|';
-    font-size: 20px;
-    height: 41px;
-    padding-left: 2px;
-    margin-right: -10px;
+    content: 'Menu';
+    padding-left: 8px;
+    //padding-bottom: 1px;
 
+    font-weight: 600;
+    color: #4320a8;
     @media screen and (max-width: 1024px) {
       display: none;
     }
@@ -41,7 +47,7 @@
 
 .drawer--drawer-desktop {
   background: none;
-  top: 121px;
+  top: 115px;
   width: 100% !important;
   max-width: 100% !important;
 
@@ -166,7 +172,7 @@
 
 .overlay--drawer-desktop {
   opacity: 100%;
-  top: 130px;
+  top: 116px;
   @include mobile {
     top: 0;
   }
