@@ -1,10 +1,10 @@
 {
   "store.custom#simple-page": {
     "blocks": [
-      "manta-custom-slider#banner",
+      //"manta-custom-slider#banner",
       "flex-layout.row#simple-page",
-      "manta-custom-slider-products#products1",
-      "manta-custom-slider-products#products2",
+      //"manta-custom-slider-products#products1",
+      //"manta-custom-slider-products#products2",
       "flex-layout.row#newsletter"
     ]
   },
