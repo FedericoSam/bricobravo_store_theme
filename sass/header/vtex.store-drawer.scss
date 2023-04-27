@@ -5,9 +5,9 @@
   align-items: center;
   height: 41px;
   width: 54px;
-  justify-content: center;
   @media screen and (min-width: 1024px) {
     margin-bottom: 2px;
+    justify-content: center;
   }
 
   &::before {
