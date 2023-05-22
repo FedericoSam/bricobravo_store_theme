@@ -53,6 +53,8 @@
 
   &--newsletterRow {
     background-color: $blue-active;
+    z-index: 5;
+    position: relative;
   }
 
   &--quemSomos-main {

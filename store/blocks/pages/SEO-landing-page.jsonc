@@ -3,6 +3,7 @@
     "blocks": [
       //"image#landingbanner",
       //"flex-layout.row#department-categories",
+      "manta-custom-banner",
       "search-result-layout.customQuery#SEO-landing-page",
       "flex-layout.row#newsletter"
     ]

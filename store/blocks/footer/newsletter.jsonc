@@ -19,7 +19,7 @@
   },
   "rich-text#newsTitle": {
     "props": {
-      "text": "Ricevi in anteprima news e promozioni!",
+      "text": "Subito un **regalo** per te!",
       "textPosition": "LEFT",
       "textAlignment": "LEFT",
       "blockClass": "newsTitle",
@@ -29,7 +29,7 @@
   },
   "rich-text#newsSubTitle": {
     "props": {
-      "text": "Desideri conoscere le ultime **novità e offerte**? Inserisci il tuo indirizzo email e riceverai tante promozioni in anteprima.",
+      "text": "Iscriviti alla newsletter per ricevere in anteprima le offerte e uno **sconto del 5%** da utilizzare sul tuo primo ordine.",
       "textPosition": "LEFT",
       "textAlignment": "LEFT",
       "blockClass": "newsSubTitle",
