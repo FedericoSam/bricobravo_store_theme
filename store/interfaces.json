@@ -52,5 +52,8 @@
   },
   "manta-custom-banner": {
     "component": "MantaCustomBanner"
+  },
+  "manta-custom-textarea": {
+    "component": "MantaCustomTextAreaOptional"
   }
 }

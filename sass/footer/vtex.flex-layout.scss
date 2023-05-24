@@ -323,3 +323,25 @@
     }
   }
 }
+
+:global(.vtex-reviews-and-ratings-3-x-container) {
+  margin: 0;
+}
+
+:global(.vtex-reviews-and-ratings-3-x-inlineContainer) {
+  :global(.vtex-reviews-and-ratings-3-x-stars) {
+    color: #f5d25c;
+    &::before {
+      content: 'Recensioni positive';
+      transform: translateY(2px) translateX(104px);
+      position: absolute;
+      color: #332c32;
+      font-family: $font-family-text;
+      font-size: 14px;
+    }
+  }
+}
+
+:global(.vtex-reviews-and-ratings-3-x-stars) {
+  color: #f5d25c;
+}

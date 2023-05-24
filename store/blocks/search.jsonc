@@ -168,8 +168,20 @@
     "props": {
       //"collapseHeight": 150
     },
-    "children": ["rich-text#collapsible-category-text"]
+    "children": [
+      "manta-custom-textarea#search-page",
+      "rich-text#collapsible-category-text"
+    ]
   },
+
+  "manta-custom-textarea#search-page": {
+    "title": "Categorie consigliate link SEO",
+    "props": {
+      "TextArea": "rich-text",
+      "blockClass": "manta-custom-textarea"
+    }
+  },
+
   "rich-text#collapsible-category-text": {
     "title": "Lunga descrizione a fondo pagina",
     "props": {

@@ -4,7 +4,9 @@
       //"flex-layout.row#feedaty-png",
       "responsive-layout.desktop#product",
       "responsive-layout.mobile#product",
-      "flex-layout.row#newsletter"
+      "product-reviews", //mantafra rating
+      "flex-layout.row#newsletter",
+      "product-rating-summary" //mantafra rating solo stelline e Scrivi una recensione
     ]
   },
   "responsive-layout.desktop#product": {

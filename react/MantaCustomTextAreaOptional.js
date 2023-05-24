@@ -1,0 +1,2 @@
+import MantaCustomTextAreaOptional from './components/MantaCustomTextAreaOptional'
+export default MantaCustomTextAreaOptional
