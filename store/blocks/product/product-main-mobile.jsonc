@@ -11,13 +11,14 @@
   "flex-layout.col#product-main-infos-mobile": {
     "children": [
       "flex-layout.row#pdp-product-name",
-      "flex-layout.row#pdp-rating-mobile",
+      //"flex-layout.row#pdp-rating-mobile", //mantafra rating
       "flex-layout.row#pdp-price-and-installments",
       "condition-layout.product#availability",
+      "manta-availability-products",
       "flex-layout.row#availability-pdp",
       "flex-layout.col#pdp-shipping",
       "flex-layout.row#box_light",
-      "flex-layout.row#whatsapp",
+      "manta-working-hours#whatsapp",
       "sticky-layout#add-to-cart-sticky", //new test sticky
       "flex-layout.row#cn_promo"
       //"flex-layout.row#pdp-product-and-shipping-description",

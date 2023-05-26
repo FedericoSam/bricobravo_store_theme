@@ -55,5 +55,11 @@
   },
   "manta-custom-textarea": {
     "component": "MantaCustomTextAreaOptional"
+  },
+  "manta-working-hours": {
+    "component": "MantaVisibilityConditionalHour"
+  },
+  "manta-availability-products": {
+    "component": "MantaAvailability"
   }
 }

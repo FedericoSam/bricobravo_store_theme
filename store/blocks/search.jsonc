@@ -169,16 +169,25 @@
       //"collapseHeight": 150
     },
     "children": [
-      "manta-custom-textarea#search-page",
+      //"manta-custom-textarea#search-page",
+      "rich-text#SEO-pages-text",
       "rich-text#collapsible-category-text"
     ]
   },
 
-  "manta-custom-textarea#search-page": {
+  // "manta-custom-textarea#search-page": {
+  //   "title": "Categorie consigliate link SEO",
+  //   "props": {
+  //     "TextArea": "rich-text",
+  //     "blockClass": "manta-custom-textarea"
+  //   }
+  // },
+
+  "rich-text#SEO-pages-text": {
     "title": "Categorie consigliate link SEO",
     "props": {
-      "TextArea": "rich-text",
-      "blockClass": "manta-custom-textarea"
+      "text": "",
+      "blockClass": "SEO-pages-text"
     }
   },
 

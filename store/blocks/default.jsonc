@@ -4,10 +4,7 @@
   },
 
   "store.account": {
-    "blocks": [
-      "my-account",
-      "flex-layout.row#newsletter"
-    ],
+    "blocks": ["my-account", "flex-layout.row#newsletter"],
     "parent": {
       "challenge": "challenge.profile"
     }
@@ -36,7 +33,7 @@
     "children": [
       "product-summary-add-to-list-button",
       "product-summary-name",
-      "product-rating-inline",
+      //"product-rating-inline", //mantafra rating
       "product-summary-space",
       "product-summary-price",
       "product-identifier.summary",

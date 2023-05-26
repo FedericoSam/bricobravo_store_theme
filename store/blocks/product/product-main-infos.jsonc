@@ -4,13 +4,15 @@
     "children": [
       "flex-layout.row#pdp-product-name",
       // "flex-layout.row#pdp-rating-and-whishlist",
-      "flex-layout.row#pdp-rating",
+      //"flex-layout.row#pdp-rating", //mantafra rating
       "flex-layout.row#pdp-price-and-installments",
       "condition-layout.product#availability",
+      "manta-availability-products",
       "flex-layout.row#availability-pdp",
       "flex-layout.col#pdp-shipping",
       "flex-layout.row#box_light",
-      "flex-layout.row#whatsapp",
+      //"flex-layout.row#whatsapp",
+      "manta-working-hours#whatsapp",
       "flex-layout.row#cn_promo"
       //"flex-layout.row#pdp-product-and-shipping-description"
     ],
@@ -552,6 +554,14 @@
     "props": {
       "src": "assets/icons/up.svg",
       "width": "20px"
+    }
+  },
+
+  "manta-working-hours#whatsapp": {
+    "props": {
+      "title": "Orari di apertura",
+      "blockClass": "manta-working-hours",
+      "WhatsAppComponente": "flex-layout.row#whatsapp"
     }
   },
 

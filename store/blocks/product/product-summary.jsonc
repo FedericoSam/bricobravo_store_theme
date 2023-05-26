@@ -27,7 +27,7 @@
     "children": [
       "product-summary-image",
       "product-summary-name",
-      "product-rating-inline",
+      //"product-rating-inline", //mantafra rating
       "product-summary-price"
     ]
   },

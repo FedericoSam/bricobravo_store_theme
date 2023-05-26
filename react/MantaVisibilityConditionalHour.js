@@ -1,0 +1,2 @@
+import MantaVisibilityConditionalHour from './components/MantaVisibilityConditionalHour'
+export default MantaVisibilityConditionalHour
