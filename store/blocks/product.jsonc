@@ -4,9 +4,9 @@
       //"flex-layout.row#feedaty-png",
       "responsive-layout.desktop#product",
       "responsive-layout.mobile#product",
-      //"product-reviews", //mantafra rating
+      "product-reviews", //mantafra rating recensioni in basso 1
       "flex-layout.row#newsletter"
-      //"product-rating-summary" //mantafra rating solo stelline e Scrivi una recensione
+      //"product-rating-summary" //mantafra rating riassunto da NON usare
     ]
   },
   "responsive-layout.desktop#product": {

@@ -597,22 +597,6 @@
     }
   }
 
-  .element--minimumSummary
-    :global(.vtex-reviews-and-ratings-1-x-inlineContainer) {
-    margin: 0;
-  }
-
-  .element--minimumSummary
-    :global(.vtex-reviews-and-ratings-2-x-stars)
-    :global(.vtex-reviews-and-ratings-2-x-star--filled) {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='13' viewBox='0 0 14 13' fill='none'%3E%3Cpath d='M7 1L8.854 4.6204L13 5.20452L10 8.02103L10.708 12L7 10.1204L3.292 12L4 8.02103L1 5.20452L5.146 4.6204L7 1Z' fill='%23FFF100' stroke='%23FFF100' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-  }
-
-  :global(.vtex-reviews-and-ratings-2-x-stars)
-    :global(.vtex-reviews-and-ratings-2-x-star--empty) {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='13' viewBox='0 0 14 13' fill='none'%3E%3Cpath d='M7 1L8.854 4.6204L13 5.20452L10 8.02103L10.708 12L7 10.1204L3.292 12L4 8.02103L1 5.20452L5.146 4.6204L7 1Z' stroke='%23CCCCCC' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-  }
-
   .element--minimumSummary .priceContainer {
     align-items: flex-start;
   }
@@ -646,6 +630,7 @@
 :global(.vtex-product-summary-2-x-imageWrapper) {
   :global(.vtex-store-components-3-x-discountContainer) {
     :global(.vtex-store-components-3-x-discountInsideContainer) {
+      background-color: $pink-hover;
       width: 36px;
       height: 36px;
       display: flex;
@@ -758,7 +743,7 @@
 :global(.vtex-search-result-3-x-galleryItem) {
   :global(.vtex-product-summary-2-x-container--summaryComplete) {
     @include mobile {
-      height: 340px !important;
+      height: 355px !important;
     }
 
     box-shadow: 0px 3px 10px 0 rgba(0, 0, 0, 0.1);

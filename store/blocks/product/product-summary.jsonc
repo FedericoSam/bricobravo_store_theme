@@ -26,11 +26,26 @@
     },
     "children": [
       "product-summary-image",
-      "product-summary-name",
-      //"product-rating-inline", //mantafra rating
-      "product-summary-price"
+      "product-summary-price",
+      "product-rating-inline#search-bar", //solo nella tendina searchbar Desktop 4
+      "product-summary-name"
     ]
   },
+
+  // "flex-layout.row#rating-search-bar": {
+  //   "children": ["product-rating-inline#search-bar"],
+  //   "props": {
+  //     "blockClass": "row-rating-search-bar",
+  //     "preventVerticalStretch": true
+  //   }
+  // },
+
+  "product-rating-inline#search-bar": {
+    "props": {
+      "blockClass": "rating-search-bar"
+    }
+  },
+
   "product-location-availability": {
     "props": {
       "maxItems": 3,
@@ -101,7 +116,9 @@
   "flex-layout.col#summaryInfo": {
     "children": [
       "flex-layout.row#summary-prices",
+      "product-rating-inline#search-bar",
       "product-summary-name"
+
       //"product-installments",
       // "flex-layout.row#productReviews",
       //"flex-layout.row#add-to-cart"

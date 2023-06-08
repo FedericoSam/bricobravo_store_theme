@@ -257,34 +257,8 @@
 
 /* Product summary */
 
-.flexRowContent--productReviews-reviews {
-  :global(.vtex-reviews-and-ratings-3-x-reviewsHeading),
-  :global(.vtex-reviews-and-ratings-3-x-writeReviewContainer),
-  :global(.vtex-reviews-and-ratings-3-x-reviewsOrderBy),
-  :global(.vtex-reviews-and-ratings-3-x-reviewCommentsContainer),
-  :global(.vtex-reviews-and-ratings-3-x-reviewsRatingAverage),
-  :global(.vtex-reviews-and-ratings-3-x-reviewsRatingCount) {
-    display: none;
-  }
-  :global(.vtex-reviews-and-ratings-3-x-starsContainer) {
-    display: flex;
-    justify-content: center;
-  }
-}
-
 .flexRow--cartSummary:last-child {
   margin-bottom: 0;
-}
-
-/* format Reviews */
-:global(.vtex-reviews-and-ratings-3-x-stars) {
-  height: 22px;
-  padding-bottom: 14px;
-}
-:global(.vtex-reviews-and-ratings-3-x-star--empty) {
-  color: #d8d8d8;
-  font-size: 20px;
-  font-weight: normal;
 }
 
 /* Product Page */
@@ -669,25 +643,8 @@
     }
 
     &--pdp-rating-and-whishlist {
-      :global(.vtex-reviews-and-ratings-3-x-star) {
-        margin-right: 0.25rem;
-        color: #e3c963;
-        font-weight: bold;
-      }
-
-      :global(.vtex-reviews-and-ratings-3-x-stars) {
-        margin-right: 1.25rem;
-        padding-right: 1rem;
-        border-right: solid 1px #bebebe;
-        color: #e3c963;
-      }
-
       :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
         width: auto !important;
-      }
-
-      :global(.vtex-reviews-and-ratings-3-x-inlineContainer) {
-        align-self: center;
       }
     }
 

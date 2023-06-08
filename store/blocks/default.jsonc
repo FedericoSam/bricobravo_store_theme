@@ -33,7 +33,7 @@
     "children": [
       "product-summary-add-to-list-button",
       "product-summary-name",
-      //"product-rating-inline", //mantafra rating
+      "product-rating-inline", //mantafra rating-inline 1
       "product-summary-space",
       "product-summary-price",
       "product-identifier.summary",

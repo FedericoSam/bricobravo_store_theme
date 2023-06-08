@@ -323,27 +323,3 @@
     }
   }
 }
-
-:global(.vtex-reviews-and-ratings-3-x-container) {
-  border: 1px solid #d92f95;
-  border-radius: 25px;
-  padding: 10px;
-}
-
-:global(.vtex-reviews-and-ratings-3-x-inlineContainer) {
-  :global(.vtex-reviews-and-ratings-3-x-stars) {
-    color: #f5d25c;
-    &::before {
-      content: 'Vedi tutte le Recensioni';
-      transform: translateY(2px) translateX(104px);
-      position: absolute;
-      color: #332c32;
-      font-family: $font-family-text;
-      font-size: 14px;
-    }
-  }
-}
-
-:global(.vtex-reviews-and-ratings-3-x-stars) {
-  color: #f5d25c;
-}

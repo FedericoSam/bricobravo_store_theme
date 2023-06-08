@@ -3,8 +3,7 @@
     "title": "acquistare prodotti",
     "children": [
       "flex-layout.row#pdp-product-name",
-      // "flex-layout.row#pdp-rating-and-whishlist",
-      //"flex-layout.row#pdp-rating", //mantafra rating
+      "flex-layout.row#pdp-rating", //mantafra rating inline pagina prodotto 3
       "flex-layout.row#pdp-price-and-installments",
       "condition-layout.product#availability",
       "manta-availability-products",
@@ -113,13 +112,6 @@
     }
   },
 
-  // "flex-layout.row#pdp-rating-and-whishlist": {
-  //   "children": ["product-rating-inline#pdp", "add-to-list-btn#pdp"],
-  //   "props": {
-  //     "blockClass": "pdp-rating-and-whishlist",
-  //     "preventVerticalStretch": true
-  //   }
-  // },
   "flex-layout.row#pdp-rating": {
     "children": ["product-rating-inline#pdp"],
     "props": {
@@ -133,6 +125,7 @@
       "blockClass": "pdp"
     }
   },
+
   "add-to-list-btn#pdp": {
     "props": {
       "blockClass": "pdp"

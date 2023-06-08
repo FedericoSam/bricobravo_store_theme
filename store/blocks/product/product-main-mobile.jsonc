@@ -11,7 +11,7 @@
   "flex-layout.col#product-main-infos-mobile": {
     "children": [
       "flex-layout.row#pdp-product-name",
-      //"flex-layout.row#pdp-rating-mobile", //mantafra rating
+      "flex-layout.row#pdp-rating-mobile", //mantafra rating pagina prodotto mobile 2
       "flex-layout.row#pdp-price-and-installments",
       "condition-layout.product#availability",
       "manta-availability-products",
