@@ -61,5 +61,8 @@
   },
   "manta-availability-products": {
     "component": "MantaAvailability"
+  },
+  "manta-custom-link-products": {
+    "component": "MantaCustomLinkPageProducts"
   }
 }

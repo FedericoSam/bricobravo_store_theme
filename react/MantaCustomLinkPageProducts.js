@@ -1,0 +1,2 @@
+import MantaCustomLinkPageProducts from './components/MantaCustomLinkPageProducts'
+export default MantaCustomLinkPageProducts

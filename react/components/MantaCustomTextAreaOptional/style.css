@@ -1,6 +1,39 @@
 .containerTextArea {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  margin-top: -20px;
 }
 
-.titleTextArea {
-  font-weight: 600;
+.single-link {
+  color: #d82f94;
+  text-decoration: none;
+  background-color: #f3f3f3;
+  border-radius: 25px;
+  font-size: 16px;
+  padding: 5px 12px;
+  margin: 10px 5px 0 0;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-grow: 1; */
+}
+
+.single-link:hover {
+  background-color: #d82f94;
+  color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+@media screen and (min-width: 1024px) {
+  .containerTextArea {
+  }
+
+  .single-link {
+    font-size: 20px;
+    padding: 7px 21px;
+    transition: all 0.2s ease-in-out;
+  }
 }

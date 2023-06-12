@@ -169,19 +169,27 @@
       //"collapseHeight": 150
     },
     "children": [
-      //"manta-custom-textarea#search-page",
-      "rich-text#SEO-pages-text",
+      "manta-custom-textarea#search-page",
+      //"rich-text#SEO-pages-text", //link old Giovanna
       "rich-text#collapsible-category-text"
     ]
   },
 
-  // "manta-custom-textarea#search-page": {
-  //   "title": "Categorie consigliate link SEO",
-  //   "props": {
-  //     "TextArea": "rich-text",
-  //     "blockClass": "manta-custom-textarea"
-  //   }
-  // },
+  "manta-custom-textarea#search-page": {
+    "title": "Categorie consigliate link SEO - nuova versione",
+    "props": {
+      "TitleAreaConsigliate": "rich-text#title-categorie-consigliate",
+      "blockClass": "manta-custom-textarea"
+    }
+  },
+
+  "rich-text#title-categorie-consigliate": {
+    "props": {
+      "title": "Categorie consigliate title",
+      "text": "#### Categorie consigliate",
+      "blockClass": "title-categorie-consigliate"
+    }
+  },
 
   "rich-text#SEO-pages-text": {
     "title": "Categorie consigliate link SEO",
