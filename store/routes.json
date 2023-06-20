@@ -12,5 +12,9 @@
   "store.custom#SEO-landing-page": {
     "path": "/lp/landing-page",
     "isSitemapEntry": true
+  },
+  "store.custom#offerte-esclusive": {
+    "path": "/lp/offerte-esclusive",
+    "isSitemapEntry": true
   }
 }

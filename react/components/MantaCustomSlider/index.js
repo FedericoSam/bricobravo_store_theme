@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { Helmet } from 'vtex.render-runtime'
 
 import style from './style.css'
 
@@ -19,6 +20,12 @@ const MantaCustomSlider = ({
 }) => {
   return (
     <>
+      <Helmet>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
+      </Helmet>
       <NoSSR
         onSSR={
           <div style={{ margin: 'auto', textAlign: 'center' }}>Loading...</div>

@@ -166,23 +166,23 @@
     "title": "descrizione"
   },
 
-  "manta-custom-slider-products#products1": {
-    "props": {
-      "TitleProducts": "rich-text#custom-slider-product-title",
-      "SubtitleProducts": "rich-text#custom-slider-product-subtitle",
-      "SliderProductImage1": "image#custom-slider-product-image-1",
-      "SliderProductImage2": "image#custom-slider-product-image-2",
-      "SliderProductImage3": "image#custom-slider-product-image-3",
-      "SliderProductImage4": "image#custom-slider-product-image-4",
-      "SliderProductImage5": "image#custom-slider-product-image-5",
-      "SliderProductImage6": "image#custom-slider-product-image-6",
-      "SliderProductVideo1": "video#custom-slider-product-video-1",
-      "SliderProductVideo2": "video#custom-slider-product-video-2",
-      "SliderProductVideo3": "video#custom-slider-product-video-3",
-      "SliderProductVideo4": "video#custom-slider-product-video-4"
-    },
-    "title": "Manta Custom Slider Products 1"
-  },
+  // "manta-custom-slider-products#products1": {
+  //   "props": {
+  //     "TitleProducts": "rich-text#custom-slider-product-title",
+  //     "SubtitleProducts": "rich-text#custom-slider-product-subtitle",
+  //     "SliderProductImage1": "image#custom-slider-product-image-1",
+  //     "SliderProductImage2": "image#custom-slider-product-image-2",
+  //     "SliderProductImage3": "image#custom-slider-product-image-3",
+  //     "SliderProductImage4": "image#custom-slider-product-image-4",
+  //     "SliderProductImage5": "image#custom-slider-product-image-5",
+  //     "SliderProductImage6": "image#custom-slider-product-image-6",
+  //     "SliderProductVideo1": "video#custom-slider-product-video-1",
+  //     "SliderProductVideo2": "video#custom-slider-product-video-2",
+  //     "SliderProductVideo3": "video#custom-slider-product-video-3",
+  //     "SliderProductVideo4": "video#custom-slider-product-video-4"
+  //   },
+  //   "title": "Manta Custom Slider Products 1"
+  // },
 
   "rich-text#custom-slider-product-title": {
     "props": {
@@ -293,23 +293,23 @@
       "src": "https://fragments.production.calzedonia.coremedia.cloud/resource/blob/205158/d88bbebbd280898d757727495185cdc4/all-homepage-mainfocus-cw1223-athleisure-clz-data.mp4"
     },
     "title": "Video 4"
-  },
-  "manta-custom-slider-products#products2": {
-    "props": {
-      //"Test": "product-summary.shelf#normal",
-      "TitleProducts": "rich-text#custom-slider-product-title",
-      "SubtitleProducts": "rich-text#custom-slider-product-subtitle",
-      "SliderProductImage1": "image#custom-slider-product-image-1",
-      "SliderProductImage2": "image#custom-slider-product-image-2",
-      "SliderProductImage3": "image#custom-slider-product-image-3",
-      "SliderProductImage4": "image#custom-slider-product-image-4",
-      "SliderProductImage5": "image#custom-slider-product-image-5",
-      "SliderProductImage6": "image#custom-slider-product-image-6",
-      "SliderProductVideo1": "video#custom-slider-product-video-1",
-      "SliderProductVideo2": "video#custom-slider-product-video-2",
-      "SliderProductVideo3": "video#custom-slider-product-video-3",
-      "SliderProductVideo4": "video#custom-slider-product-video-4"
-    },
-    "title": "Manta Custom Slider Products 2"
   }
+  // "manta-custom-slider-products#products2": {
+  //   "props": {
+  //     //"Test": "product-summary.shelf#normal",
+  //     "TitleProducts": "rich-text#custom-slider-product-title",
+  //     "SubtitleProducts": "rich-text#custom-slider-product-subtitle",
+  //     "SliderProductImage1": "image#custom-slider-product-image-1",
+  //     "SliderProductImage2": "image#custom-slider-product-image-2",
+  //     "SliderProductImage3": "image#custom-slider-product-image-3",
+  //     "SliderProductImage4": "image#custom-slider-product-image-4",
+  //     "SliderProductImage5": "image#custom-slider-product-image-5",
+  //     "SliderProductImage6": "image#custom-slider-product-image-6",
+  //     "SliderProductVideo1": "video#custom-slider-product-video-1",
+  //     "SliderProductVideo2": "video#custom-slider-product-video-2",
+  //     "SliderProductVideo3": "video#custom-slider-product-video-3",
+  //     "SliderProductVideo4": "video#custom-slider-product-video-4"
+  //   },
+  //   "title": "Manta Custom Slider Products 2"
+  // }
 }

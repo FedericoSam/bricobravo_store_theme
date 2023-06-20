@@ -9,14 +9,14 @@
     ]
   },
 
-  "image#SEO-landing-page": {
-    "props": {
-      //"minWidth": "100%",
-      "src": "https://user-images.githubusercontent.com/18701182/69889938-64b16180-12d2-11ea-8d8a-e3089cbeaffd.png",
-      "blockClass": "landingbannerImperdibili"
-    },
-    "title": "Banner"
-  },
+  // "image#SEO-landing-page": {
+  //   "props": {
+  //     //"minWidth": "100%",
+  //     "src": "https://user-images.githubusercontent.com/18701182/69889938-64b16180-12d2-11ea-8d8a-e3089cbeaffd.png",
+  //     "blockClass": "landingbannerImperdibili"
+  //   },
+  //   "title": "Banner"
+  // },
 
   "search-result-layout.customQuery#SEO-landing-page": {
     "props": {

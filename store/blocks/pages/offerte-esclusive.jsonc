@@ -1,0 +1,30 @@
+{
+  "store.custom#offerte-esclusive": {
+    "blocks": [
+      "manta-custom-banner",
+      "search-result-layout.customQuery#offerte-esclusive",
+      "flex-layout.row#newsletter"
+    ]
+  },
+
+
+
+  "search-result-layout.customQuery#offerte-esclusive": {
+    "props": {
+      "querySchema": {
+        "queryField": "144",
+        "mapField": "productClusterIds",
+        "skusFilter": "ALL_AVAILABLE",
+        "maxItemsPerPage": 30,
+        "orderByField": "OrderByTopSaleDESC",
+        "hideUnavailableItems": true,
+        "simulationBehavior": "skip"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  }
+}

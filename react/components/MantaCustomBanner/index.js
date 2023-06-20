@@ -1,4 +1,4 @@
-import react from 'react'
+import React from 'react'
 import style from './style.css'
 
 const MantaCustomBanner = ({ bannerDesktop, bannerMobile, bannerON_OFF }) => {

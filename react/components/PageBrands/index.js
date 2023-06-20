@@ -12,21 +12,21 @@ function PageBrands(props) {
     setSelectedLetter(letter)
   }
 
-  const handleLoading = () => {
-    setLoading(false)
-  }
+  // const handleLoading = () => {
+  //   setLoading(false)
+  // }
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false)
-    }, 3000)
-    return () => clearTimeout(timer)
-  }, [])
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setLoading(false)
+  //   }, 4000)
+  //   return () => clearTimeout(timer)
+  // }, [])
 
   const fetchData = () => {
     return fetch('/_v/brands')
       .then((response) => response.json())
-      .then((data) => setUser(data))
+      .then((data) => setUser(data), setLoading(false))
   }
 
   useEffect(() => {
@@ -70,12 +70,17 @@ function PageBrands(props) {
 
   return (
     <div className={`${style['px-3']} ${style['px-md-0']}`}>
+      <p
+        onClick={() => window.scrollTo(0, 0)}
+        className={style['back-to-top']}></p>
+
       {loading && (
         <div className={style['loading']}>
           <p>Caricamento... </p>
           <div className={style['test']}></div>
         </div>
       )}
+      {/* Riassunto rubrica sopra */}
       <div className={style['alphabet-row']}>
         {alphabet.map((letter) => (
           <a
@@ -90,7 +95,7 @@ function PageBrands(props) {
         ))}
       </div>
       {Object.keys(brandList).map((key) => (
-        <div key={key} onLoad={handleLoading}>
+        <div key={key}>
           <h3 className={style['h2']}>{key}</h3>
           <div id={key} className={style['row']}>
             <>

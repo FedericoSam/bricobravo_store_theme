@@ -852,7 +852,8 @@
   "flex-layout.col#home-services": {
     "children": [
       "rich-text#home-services-title",
-      "slider-layout#home-services"
+      //"manta-custom-slider-products#servizi-a-disposizione" //da terminare
+      "slider-layout#home-services" //vecchio slider con componente vtex
     ],
     "props": {
       "blockClass": "home-services"
@@ -866,6 +867,14 @@
     },
     "title": "Titolo dei servizi"
   },
+
+  "manta-custom-slider-products#servizi-a-disposizione": {
+    "title": "Manta Custom Slider Servizi a disposizione",
+    "props": {
+      "blockClass": "manta-custom-servizi-a-disposizione"
+    }
+  },
+
   "slider-layout#home-services": {
     "props": {
       "itemsPerPage": {

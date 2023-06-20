@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -203,9 +207,53 @@
   animation: spin 0.8s linear infinite;
 }
 
+.alphabet-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .letter-link {
-  font-size: 14px;
+  font-size: 18px;
+  padding: 1px 3px;
   color: #d82f94;
+  text-decoration: none;
+}
+.letter-link:hover {
+  color: #eb0299;
+  text-decoration: underline;
+}
+
+.intestazioneRiga {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-decoration: none;
+  padding: 12px;
+  background-color: #d82f94;
+  color: #fff;
+  border-radius: 10px;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.back-to-top::before {
+  content: '\2191';
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+}
+.back-to-top:hover {
+  background-color: #eb0299;
+  color: #fefefe;
 }
 
 @keyframes spin {
@@ -234,8 +282,8 @@
   }
 
   .letter-link {
-    font-size: 28px;
-    padding: 0 2px;
+    font-size: 30px;
+    padding: 1px 6px;
   }
 }
 

@@ -56,12 +56,12 @@ MantaCustomTextAreaOptional.schema = {
       type: 'string',
       title: 'Inserisci i link nel formato TESTO1#LINK1*TESTO2#LINK2',
       default: '',
-      description: 'Inserisci il titolo della sezione',
+      description: 'Inserisci il link nel formato TESTO#LINK*',
     },
   },
 }
 
 export default MantaCustomTextAreaOptional
 
-//ciao#/ciao ciao2#ciao2
+//esempio link
 //Piscine fuori terra#/piscine-e-accessori/piscine-fuori-terra*Piscina fuori terra legno#Piscinefuoriterrarivestite.it*Piscine per bambini#sbidds

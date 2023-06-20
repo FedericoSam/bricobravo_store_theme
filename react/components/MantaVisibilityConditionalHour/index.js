@@ -26,7 +26,8 @@ const MantaVisibilityConditionalHour = ({ WhatsAppComponente }) => {
     currentDay <= 5 &&
     prezzoVendita2 > 498 // Monday to Friday > 500
 
-  return <>{isVisible && <WhatsAppComponente />}</>
+  //return <>{isVisible && <WhatsAppComponente />}</>
+  return <>{false && <WhatsAppComponente />}</>
 }
 
 MantaVisibilityConditionalHour.schema = {
