@@ -1,17 +1,37 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useProduct } from 'vtex.product-context'
 
 const MantaAvailability = () => {
   const productContextValue = useProduct()
-  const quantity =
-    productContextValue?.product?.items?.[0]?.sellers?.[0]?.commertialOffer
-      ?.AvailableQuantity ?? 1
+  const [quantity, setQuantity] = useState(null)
 
-  // const quantity2 =
-  //   productContextValue?.product?.items?.[0]?.sellers?.[1]?.commertialOffer
-  //     ?.AvailableQuantity ?? 0
+  useEffect(() => {
+    if (
+      productContextValue &&
+      productContextValue.product &&
+      productContextValue.product.items &&
+      productContextValue.product.items[0]
+    ) {
+      let localQuantity =
+        productContextValue.product.items[0].sellers &&
+        productContextValue.product.items[0].sellers[0]
+          ? productContextValue.product.items[0].sellers[0].commertialOffer
+              .AvailableQuantity
+          : 0
 
-  // const quantity = quantity1 + quantity2
+      if (
+        localQuantity === 0 &&
+        productContextValue.product.items[1].sellers &&
+        productContextValue.product.items[1].sellers[0]
+      ) {
+        localQuantity =
+          productContextValue.product.items[1].sellers[0].commertialOffer
+            .AvailableQuantity
+      }
+
+      setQuantity(localQuantity)
+    }
+  }, [productContextValue])
 
   let message = 'Prodotto non disponibile'
   let messageStyle = { color: 'grey' }
@@ -33,6 +53,10 @@ const MantaAvailability = () => {
     fontSize: '1.5rem',
     paddingBottom: '2px',
   }
+
+  console.log('quantity', quantity)
+  console.log('type quantity', typeof quantity)
+  console.log('product context value', productContextValue.product)
 
   return (
     <>
