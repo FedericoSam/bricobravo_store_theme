@@ -60,11 +60,12 @@ const MantaAvailability = () => {
 
   return (
     <>
-      {/* {quantity} */}
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-        <span style={dotStyle}>&#9679;</span>
-        <p style={messageStyle}>{message}</p>
-      </div>
+      {quantity !== null && (
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <span style={dotStyle}>&#9679;</span>
+          <p style={messageStyle}>{message}</p>
+        </div>
+      )}
     </>
   )
 }
