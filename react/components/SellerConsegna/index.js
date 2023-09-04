@@ -88,7 +88,7 @@ const SellerConsegna = () => {
         formatShippingData(info)
       )
     }
-  }, [])
+  }, [productContextValue])
 
   return (
     <>

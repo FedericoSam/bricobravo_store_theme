@@ -10,23 +10,16 @@ const MantaAvailability = () => {
       productContextValue &&
       productContextValue.product &&
       productContextValue.product.items &&
-      productContextValue.product.items[0]
+      productContextValue.product.items.length > 0
     ) {
-      let localQuantity =
-        productContextValue.product.items[0].sellers &&
-        productContextValue.product.items[0].sellers[0]
-          ? productContextValue.product.items[0].sellers[0].commertialOffer
-              .AvailableQuantity
-          : 0
+      let localQuantity = 0
 
-      if (
-        localQuantity === 0 &&
-        productContextValue.product.items[1].sellers &&
-        productContextValue.product.items[1].sellers[0]
-      ) {
-        localQuantity =
-          productContextValue.product.items[1].sellers[0].commertialOffer
-            .AvailableQuantity
+      for (const item of productContextValue.product.items) {
+        if (item.sellers && item.sellers[0]) {
+          const availableQuantity =
+            item.sellers[0].commertialOffer?.AvailableQuantity || 0
+          localQuantity += availableQuantity
+        }
       }
 
       setQuantity(localQuantity)
@@ -54,9 +47,9 @@ const MantaAvailability = () => {
     paddingBottom: '2px',
   }
 
-  console.log('quantity', quantity)
-  console.log('type quantity', typeof quantity)
-  console.log('product context value', productContextValue.product)
+  // console.log('quantity', quantity)
+  // console.log('type quantity', typeof quantity)
+  // console.log('product context value', productContextValue.product)
 
   return (
     <>
