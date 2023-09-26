@@ -117,7 +117,8 @@
     "children": [
       "flex-layout.row#summary-prices",
       "product-rating-inline#search-bar",
-      "product-summary-name"
+      "product-summary-name",
+      "icona-e-testo#spedizione-gratuita"
 
       //"product-installments",
       // "flex-layout.row#productReviews",
@@ -128,6 +129,13 @@
       "blockClass": "summaryInfo"
     }
   },
+
+  "icona-e-testo#spedizione-gratuita": {
+    "props": {
+      "blockClass": "spedizione-gratuita-text"
+    }
+  },
+
   "flex-layout.row#summary-prices": {
     "children": ["product-summary-price", "product-specification-group"],
     "props": {

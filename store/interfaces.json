@@ -64,5 +64,8 @@
   },
   "manta-custom-link-products": {
     "component": "MantaCustomLinkPageProducts"
+  },
+  "icona-e-testo": {
+    "component": "MantaCustomIconaETesto"
   }
 }

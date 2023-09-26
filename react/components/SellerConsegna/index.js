@@ -1,13 +1,28 @@
-import { useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useProduct } from 'vtex.product-context'
 
 const SellerConsegna = () => {
   const productContextValue = useProduct()
   //console.log(productContextValue);
-  const [shippingDays, setShippingDays] = React.useState()
+  const [shippingDays, setShippingDays] = useState()
 
   function formatShippingData(productShippingInfo) {
+    if (
+      !productShippingInfo ||
+      !productShippingInfo.logisticsInfo ||
+      productShippingInfo.logisticsInfo.length === 0
+    ) {
+      console.log('No shipping info - 1')
+      return
+    }
+
     let [logisticsInfo] = productShippingInfo.logisticsInfo
+
+    if (!logisticsInfo.slas || logisticsInfo.slas.length === 0) {
+      console.log('No shipping info - 2')
+      return
+    }
+
     let { shippingEstimate, price } = logisticsInfo.slas[0]
     let substringToReplace = shippingEstimate.includes('bd') ? 'bd' : 'd'
 
@@ -51,6 +66,8 @@ const SellerConsegna = () => {
     shippingEstimate =
       'tra il ' + day1 + ' ' + month1 + ' e il ' + day2 + ' ' + month2
 
+    console.log('shippingEstimate', shippingEstimate)
+
     setShippingDays(shippingEstimate)
   }
 
@@ -76,6 +93,8 @@ const SellerConsegna = () => {
         options
       ).then((resp) => resp.json())
 
+      console.log('productShippingInfo', productShippingInfo)
+
       return productShippingInfo
     } catch (err) {
       console.error(err)
@@ -84,6 +103,8 @@ const SellerConsegna = () => {
 
   useEffect(() => {
     if (productContextValue.product) {
+      console.log('productContextValue.product', productContextValue.product)
+
       fetchProductShippingData(productContextValue.product).then((info) =>
         formatShippingData(info)
       )
@@ -94,9 +115,9 @@ const SellerConsegna = () => {
     <>
       {shippingDays && (
         <div>
-          <p class="vtex-rich-text-0-x-paragraph--pdp-shipping-info">
+          <p className="vtex-rich-text-0-x-paragraph--pdp-shipping-info">
             Se lo compri ora lo ricevi{' '}
-            <span class="vtex-rich-text-0-x-strong--pdp-shipping-info">
+            <span className="vtex-rich-text-0-x-strong--pdp-shipping-info">
               {shippingDays}
             </span>
           </p>

@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 5px 0 0 0;
+}
+
+.icona {
+  width: 18px;
+  height: 18px;
+}
+
+.testo {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 4px 0 0 6px;
+  margin: 0;
+  color: #4320a8;
+}
+
+@media screen and (min-width: 600px) {
+  .testo {
+    font-size: 14px;
+    padding: 7px 0 0 10px;
+  }
+}
