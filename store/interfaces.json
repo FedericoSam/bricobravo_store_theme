@@ -67,5 +67,8 @@
   },
   "icona-e-testo": {
     "component": "MantaCustomIconaETesto"
+  },
+  "componente-articolo-blog": {
+    "component": "MantaCustomArticoloBlog"
   }
 }

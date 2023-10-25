@@ -16,5 +16,9 @@
   "store.custom#offerte-esclusive": {
     "path": "/lp/offerte-esclusive",
     "isSitemapEntry": true
+  },
+  "store.custom#bestOf": {
+    "path": "/best",
+    "isSitemapEntry": true
   }
 }

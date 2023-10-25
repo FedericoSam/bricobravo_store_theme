@@ -868,12 +868,12 @@
     "title": "Titolo dei servizi"
   },
 
-  "manta-custom-slider-products#servizi-a-disposizione": {
-    "title": "Manta Custom Slider Servizi a disposizione",
-    "props": {
-      "blockClass": "manta-custom-servizi-a-disposizione"
-    }
-  },
+  // "manta-custom-slider-products#servizi-a-disposizione": {
+  //   "title": "Manta Custom Slider Servizi a disposizione",
+  //   "props": {
+  //     "blockClass": "manta-custom-servizi-a-disposizione"
+  //   }
+  // },
 
   "slider-layout#home-services": {
     "props": {

@@ -1,0 +1,801 @@
+{
+  "store.custom#bestOf": {
+    "blocks": [
+      "manta-custom-banner", //banner custom
+      "flex-layout.row#titleWrap", //titolo e sottotitolo
+      "flex-layout.row#connectif-banner-1-newsletter",
+      "componente-articolo-blog", //articoli
+      "flex-layout.row#connectif-banner-2-most-viewed",
+      "flex-layout.row#connectif-banner-3-discount-today",
+      "rich-text#titolo-best-template",
+      "flex-layout.row#home-categories-bestof-template", //slider offerte imperdibili
+      "flex-layout.row#home-services-category-template", //slider servizi
+      "flex-layout.row#newsletter"
+    ]
+  },
+
+  "flex-layout.row#titleWrap": {
+    "title": "Titolo e Sottotitolo",
+    "children": ["flex-layout.col#titleWrap"],
+    "props": {
+      "blockClass": "blog-title-wrap",
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#titleWrap": {
+    "title": "Titolo e Sottotitolo",
+    "children": ["rich-text#titleMain", "rich-text#subTitleMain"],
+    "props": {
+      "blockClass": "blog-title-wrap-2"
+    }
+  },
+
+  "rich-text#titleMain": {
+    "props": {
+      "blockClass": "blog-title-main",
+      "text": "# I migliori camini a **bioetanolo**"
+    }
+  },
+  "rich-text#subTitleMain": {
+    "props": {
+      "blockClass": "blog-subtitle-main",
+      "text": " Scopri i migliori camini a bioetanolo per riscaldare la tua casa in modo ecologico e senza fumo."
+    }
+  },
+  "flex-layout.row#connectif-banner-1-newsletter": {
+    "title": "Banner 1 Connectif Newsletter",
+    "props": {
+      "blockClass": "connectif-banner-1-newsletter",
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#connectif-banner-2-most-viewed": {
+    "title": "Banner 2 Connectif Most Viewed",
+    "props": {
+      "blockClass": "connectif-banner-2-most-viewed",
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#connectif-banner-3-discount-today": {
+    "title": "Banner 3 Connectif Discount Today",
+    "props": {
+      "blockClass": "connectif-banner-3-discount-today",
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#home-services-category-template": {
+    "children": ["flex-layout.col#home-services-category-template"],
+    "props": {
+      "blockClass": "home-services",
+      "htmlId": "Servizi"
+    },
+    "title": "Servizi"
+  },
+  "flex-layout.col#home-services-category-template": {
+    "children": [
+      "rich-text#home-services-title-category-template",
+      //"manta-custom-slider-products#servizi-a-disposizione" //da terminare
+      "slider-layout#home-services-category-template"
+    ],
+    "props": {
+      "blockClass": "home-services"
+    }
+  },
+  "rich-text#home-services-title-category-template": {
+    "props": {
+      "blockClass": "home-section-title",
+      "text": "## Perchè comprare su Bricobravo",
+      "htmlId": "Titolo dei servizi"
+    },
+    "title": "Titolo dei servizi"
+  },
+
+  "slider-layout#home-services-category-template": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "autoplay": false,
+      "navigationStep": "page",
+      //"infinite": true,
+      "fullWidth": true,
+      "centerMode": "to-the-left",
+      "blockClass": "home-services"
+    },
+    "children": [
+      "flex-layout.col#home-services-01-category-template",
+      "flex-layout.col#home-services-02-category-template",
+      "flex-layout.col#home-services-03-category-template",
+      "flex-layout.col#home-services-04-category-template",
+      "flex-layout.col#home-services-05-category-template",
+      "flex-layout.col#home-services-06-category-template"
+    ]
+  },
+
+  "flex-layout.col#home-services-01-category-template": {
+    "children": [
+      "rich-text#home-services-01-text-category-template",
+      "image#home-services-01-category-template",
+      "link#home-services-01-cta-category-template"
+    ],
+    "props": {
+      "blockClass": "home-services-col",
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#home-services-01-text-category-template": {
+    "props": {
+      "blockClass": "home-services-text",
+      "text": "Paga in 3 comode rate senza interessi"
+    }
+  },
+  "image#home-services-01-category-template": {
+    "props": {
+      "src": "https://bricobravo.vtexassets.com/assets/vtex.file-manager-graphql/images/e3cc8af5-b280-46f6-98ab-606556716336___229481b6d16a73a36cbe19592de5510a.png",
+      "blockClass": "home-services-image",
+      "width": 200,
+      "link": {
+        "url": "https://www.bricobravo.com/pagamento-rateale"
+      }
+    }
+  },
+  "link#home-services-01-cta-category-template": {
+    "props": {
+      "blockClass": "home-services-cta",
+      "href": "#",
+      "label": ""
+    }
+  },
+
+  "flex-layout.col#home-services-02-category-template": {
+    "children": [
+      "rich-text#home-services-02-text-category-template",
+      "image#home-services-02-category-template",
+      "link#home-services-02-cta-category-template"
+    ],
+    "props": {
+      "blockClass": "home-services-col",
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#home-services-02-text-category-template": {
+    "props": {
+      "blockClass": "home-services-text",
+      "text": "Garantito al 100% grazie al programma BravoSafe"
+    }
+  },
+  "image#home-services-02-category-template": {
+    "props": {
+      "src": "https://bricobravo.vtexassets.com/assets/vtex.file-manager-graphql/images/3e7de57a-00c5-45cb-be83-3df8a6045721___883674ee7e3024cdb2a5dd5cfa320167.png",
+      "blockClass": "home-services-image",
+      "width": 200,
+      "link": {
+        "url": "https://www.bricobravo.com/bravo-safe"
+      }
+    }
+  },
+  "link#home-services-02-cta-category-template": {
+    "props": {
+      "blockClass": "home-services-cta",
+      "href": "#",
+      "label": ""
+    }
+  },
+
+  "flex-layout.col#home-services-03-category-template": {
+    "children": [
+      "rich-text#home-services-03-text-category-template",
+      "image#home-services-03-category-template",
+      "link#home-services-03-cta-category-template"
+    ],
+    "props": {
+      "blockClass": "home-services-col",
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#home-services-03-text-category-template": {
+    "props": {
+      "blockClass": "home-services-text",
+      "text": "Hai bisogno di assistenza? Apri un ticket"
+    }
+  },
+  "image#home-services-03-category-template": {
+    "props": {
+      "src": "https://bricobravo.vtexassets.com/assets/vtex.file-manager-graphql/images/419e22af-2ad1-4aaa-aaf5-5a6df26d36e8___623efbe9f50fe69c419607cc4c23f56e.png",
+      "blockClass": "home-services-image",
+      "width": 200,
+      "link": {
+        "url": "https://assistenza.bricobravo.com/"
+      }
+    }
+  },
+  "link#home-services-03-cta-category-template": {
+    "props": {
+      "blockClass": "home-services-cta",
+      "href": "#",
+      "label": ""
+    }
+  },
+
+  "flex-layout.col#home-services-04-category-template": {
+    "children": [
+      "rich-text#home-services-04-text-category-template",
+      "image#home-services-04-category-template",
+      "link#home-services-04-cta-category-template"
+    ],
+    "props": {
+      "blockClass": "home-services-col",
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#home-services-04-text-category-template": {
+    "props": {
+      "blockClass": "home-services-text",
+      "text": "Punti di ritiro in tutta Italia. Sempre più vicini a te"
+    }
+  },
+  "image#home-services-04-category-template": {
+    "props": {
+      "src": "https://bricobravo.vtexassets.com/assets/vtex.file-manager-graphql/images/018cec5f-c117-4a76-b801-86b9d04a2240___bf25e3efaeb3075c0c4397e0e7f9f4aa.png",
+      "blockClass": "home-services-image",
+      "width": 200,
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-services-04-cta-category-template": {
+    "props": {
+      "blockClass": "home-services-cta",
+      "href": "#",
+      "label": ""
+    }
+  },
+
+  "flex-layout.col#home-services-05-category-template": {
+    "children": [
+      "rich-text#home-services-05-text-category-template",
+      "image#home-services-05-category-template",
+      "link#home-services-05-cta-category-template"
+    ],
+    "props": {
+      "blockClass": "home-services-col",
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#home-services-05-text-category-template": {
+    "props": {
+      "blockClass": "home-services-text",
+      "text": "Migliaia di prodotti sempre a tua disposizione"
+    }
+  },
+  "image#home-services-05-category-template": {
+    "props": {
+      "src": "https://bricobravo.vtexassets.com/assets/vtex.file-manager-graphql/images/17e56e93-7ff7-4b40-8440-22b128d4c622___e6adb501f19c543d78b20adafb24d168.png",
+      "blockClass": "home-services-image",
+      "width": 200,
+      "link": {
+        "url": ""
+      }
+    }
+  },
+  "link#home-services-05-cta-category-template": {
+    "props": {
+      "blockClass": "home-services-cta",
+      "href": "#",
+      "label": ""
+    }
+  },
+
+  "flex-layout.col#home-services-06-category-template": {
+    "children": [
+      "rich-text#home-services-06-text-category-template",
+      "image#home-services-06-category-template",
+      "link#home-services-06-cta-category-template"
+    ],
+    "props": {
+      "blockClass": "home-services-col",
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#home-services-06-text-category-template": {
+    "props": {
+      "blockClass": "home-services-text",
+      "text": "Ricerca e selezione dei prezzi più bassi sul mercato"
+    }
+  },
+  "image#home-services-06-category-template": {
+    "props": {
+      "src": "https://bricobravo.vtexassets.com/assets/vtex.file-manager-graphql/images/2458d7f4-1920-4043-b817-b20a830d5e78___c0073532d7b7323fde54d4efed27c913.png",
+      "blockClass": "home-services-image",
+      "width": 200,
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-services-06-cta-category-template": {
+    "props": {
+      "blockClass": "home-services-cta",
+      "href": "#",
+      "label": ""
+    }
+  },
+
+  //slider come home page stile offerte imperdibili
+  "flex-layout.row#home-categories-bestof-template": {
+    "children": ["flex-layout.col#home-categories-bestof-template"],
+    "props": {
+      "blockClass": "home-categories",
+      "htmlId": "Menu di categoria"
+    },
+    "title": "Menu di categoria"
+  },
+  "rich-text#titolo-best-template": {
+    "props": {
+      "blockClass": "home-section-title-best-of-template",
+      "text": "## Cerca il tuo camino ideale"
+    },
+    "title": "Cerca il tuo articolo ideale"
+  },
+
+  "flex-layout.col#home-categories-bestof-template": {
+    "children": [
+      "responsive-layout.desktop#home-categories-showcase-bestof-template",
+      "responsive-layout.mobile#home-categories-showcase-bestof-template"
+    ],
+    "props": {
+      "blockClass": "home-categories"
+    }
+  },
+
+  "responsive-layout.desktop#home-categories-showcase-bestof-template": {
+    "children": ["flex-layout.row#home-categories-showcase-bestof-template"],
+    "props": {
+      "htmlId": "Categorie showcase Desktop"
+    },
+    "title": "Categorie showcase Desktop"
+  },
+  "responsive-layout.mobile#home-categories-showcase-bestof-template": {
+    "children": [
+      "flex-layout.row#mobile-home-categories-showcase-bestof-template"
+    ],
+    "props": {
+      "htmlId": "Categorie showcase Mobile"
+    },
+    "title": "Categorie showcase Mobile"
+  },
+
+  "flex-layout.row#mobile-home-categories-showcase-bestof-template": {
+    "children": [
+      "slider-layout#mobile-home-categories-showcase-bestof-template"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "mobile-home-categories-showcase-main",
+      "htmlId": "Categorie showcase"
+    },
+    "title": "Categorie showcase"
+  },
+  //mobile
+  "slider-layout#mobile-home-categories-showcase-bestof-template": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "fullWidth": true,
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "disabled",
+        "phone": "to-the-left"
+      },
+      "navigationStep": "page",
+
+      "blockClass": "mobile-home-categories-showcase-slider"
+    },
+    "children": [
+      "flex-layout.col#mobile-home-categories-showcase-01-bestof-template",
+      "flex-layout.col#mobile-home-categories-showcase-02-bestof-template",
+      "flex-layout.col#mobile-home-categories-showcase-03-bestof-template",
+      "flex-layout.col#mobile-home-categories-showcase-04-bestof-template",
+      "flex-layout.col#mobile-home-categories-showcase-05-bestof-template",
+      "flex-layout.col#mobile-home-categories-showcase-06-bestof-template"
+    ]
+  },
+
+  "flex-layout.col#mobile-home-categories-showcase-01-bestof-template": {
+    "children": [
+      "image#mobile-home-categories-showcase-01-bestof-template",
+      "link#mobile-home-categories-showcase-01-bestof-template"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "image#mobile-home-categories-showcase-01-bestof-template": {
+    "props": {
+      "src": "https://bricobravo.vtexassets.com/assets/vtex.file-manager-graphql/images/f1a859a0-dae0-435a-8902-cc66ebed570e___01b88eb5d1520b0e12e34adf72d19f1c.png",
+      "link": {
+        "url": "/offerte-imperdibili"
+      },
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "link#mobile-home-categories-showcase-01-bestof-template": {
+    "props": {
+      "label": "Offerte imperdibili",
+      "blockClass": "mobile-home-categories-showcase-cta",
+      "href": "/offerte-imperdibili"
+    }
+  },
+
+  "flex-layout.col#mobile-home-categories-showcase-02-bestof-template": {
+    "children": [
+      "image#mobile-home-categories-showcase-02-bestof-template",
+      "link#mobile-home-categories-showcase-02-bestof-template"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "image#mobile-home-categories-showcase-02-bestof-template": {
+    "props": {
+      "src": "https://bricobravo.vtexassets.com/assets/vtex.file-manager-graphql/images/77b2c604-1d11-4cda-bf4f-bd369b19710b___e1079ec1ca5f3f190a8a833e798849bf.jpg",
+      "link": {
+        "url": "/arredo-casa/camera-da-letto/materassi"
+      },
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "link#mobile-home-categories-showcase-02-bestof-template": {
+    "props": {
+      "label": "Materassi",
+      "blockClass": "mobile-home-categories-showcase-cta",
+      "href": "/arredo-casa/camera-da-letto/materassi"
+    }
+  },
+
+  "flex-layout.col#mobile-home-categories-showcase-03-bestof-template": {
+    "children": [
+      "image#mobile-home-categories-showcase-03-bestof-template",
+      "link#mobile-home-categories-showcase-03-bestof-template"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "image#mobile-home-categories-showcase-03-bestof-template": {
+    "props": {
+      "src": "https://bricobravo.vtexassets.com/assets/vtex.file-manager-graphql/images/1c88031e-e48c-4239-9e32-975620d91530___61eb1e7ddca289e0d8148047127a3f46.jpg",
+      "link": {
+        "url": "/arredo-casa/arredo-sala-da-pranzo/sedie"
+      },
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "link#mobile-home-categories-showcase-03-bestof-template": {
+    "props": {
+      "label": "Sedie da interno",
+      "blockClass": "mobile-home-categories-showcase-cta",
+      "href": "/arredo-casa/arredo-sala-da-pranzo/sedie"
+    }
+  },
+
+  "flex-layout.col#mobile-home-categories-showcase-04-bestof-template": {
+    "children": [
+      "image#mobile-home-categories-showcase-04",
+      "link#mobile-home-categories-showcase-04"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "image#mobile-home-categories-showcase-04-bestof-template": {
+    "props": {
+      "src": "https://bricobravo.vtexassets.com/assets/vtex.file-manager-graphql/images/60418116-63bb-4ddf-920f-084449008200___e1ef57b0c930baa6a274fb1c6bbafac6.png",
+      "link": {
+        "url": "/arredo-casa/arredo-bagno/box-doccia"
+      },
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "link#mobile-home-categories-showcase-04-bestof-template": {
+    "props": {
+      "label": "Box doccia",
+      "blockClass": "mobile-home-categories-showcase-cta",
+      "href": "/arredo-casa/arredo-bagno/box-doccia"
+    }
+  },
+
+  "flex-layout.col#mobile-home-categories-showcase-05-bestof-template": {
+    "children": [
+      "image#mobile-home-categories-showcase-05-bestof-template",
+      "link#mobile-home-categories-showcase-05-bestof-template"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "image#mobile-home-categories-showcase-05-bestof-template": {
+    "props": {
+      "src": "https://bricobravo.vtexassets.com/assets/vtex.file-manager-graphql/images/2026cca0-7076-4277-beb0-790760db255d___42090c46b6043104581738df3e49601a.png",
+      "link": {
+        "url": "/casette-e-box"
+      },
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "link#mobile-home-categories-showcase-05-bestof-template": {
+    "props": {
+      "label": "Casette da giardino",
+      "blockClass": "mobile-home-categories-showcase-cta",
+      "href": "/casette-e-box"
+    }
+  },
+  "flex-layout.col#mobile-home-categories-showcase-06-bestof-template": {
+    "children": [
+      "image#mobile-home-categories-showcase-06-bestof-template",
+      "link#mobile-home-categories-showcase-06-bestof-template"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "image#mobile-home-categories-showcase-06-bestof-template": {
+    "props": {
+      "src": "https://bricobravo.vtexassets.com/assets/vtex.file-manager-graphql/images/14c6eac6-e923-4443-8086-b605a6a9a0f0___e88ddac889159441b4afab413b5ef5cd.jpg",
+      "link": {
+        "url": "/194?map=productClusterIds&order=OrderByTopSaleDESC"
+      },
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "link#mobile-home-categories-showcase-06-bestof-template": {
+    "props": {
+      "label": "Raccolta olive",
+      "blockClass": "mobile-home-categories-showcase-cta",
+      "href": "/194?map=productClusterIds&order=OrderByTopSaleDESC"
+    }
+  },
+
+  //Desktop slider
+  "flex-layout.row#home-categories-showcase-bestof-template": {
+    "children": [
+      "flex-layout.col#home-categories-showcase-01-bestof-template",
+      "flex-layout.col#home-categories-showcase-02-bestof-template",
+      "flex-layout.col#home-categories-showcase-03-bestof-template",
+      "flex-layout.col#home-categories-showcase-04-bestof-template",
+      "flex-layout.col#home-categories-showcase-05-bestof-template",
+      "flex-layout.col#home-categories-showcase-06-bestof-template"
+    ],
+    "props": {
+      "horizontalAlign": "around",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "home-categories-showcase",
+      "htmlId": "Categorie showcase"
+    },
+    "title": "Categorie showcase"
+  },
+
+  "flex-layout.col#home-categories-showcase-01-bestof-template": {
+    "children": [
+      "image#home-categories-showcase-01-bestof-template",
+      "link#home-categories-showcase-01-bestof-template"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "image#home-categories-showcase-01-bestof-template": {
+    "props": {
+      "src": "https://bricobravo.vtexassets.com/assets/vtex.file-manager-graphql/images/f1a859a0-dae0-435a-8902-cc66ebed570e___01b88eb5d1520b0e12e34adf72d19f1c.png",
+      "link": {
+        "url": "/offerte-imperdibili"
+      },
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "link#home-categories-showcase-01-bestof-template": {
+    "props": {
+      "label": "Offerte imperdibili",
+      "blockClass": "home-categories-showcase-cta",
+      "href": "/offerte-imperdibili"
+    }
+  },
+
+  "flex-layout.col#home-categories-showcase-02-bestof-template": {
+    "children": [
+      "image#home-categories-showcase-02-bestof-template",
+      "link#home-categories-showcase-02-bestof-template"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "image#home-categories-showcase-02-bestof-template": {
+    "props": {
+      "src": "https://bricobravo.vtexassets.com/assets/vtex.file-manager-graphql/images/77b2c604-1d11-4cda-bf4f-bd369b19710b___e1079ec1ca5f3f190a8a833e798849bf.jpg",
+      "link": {
+        "url": "/arredo-casa/camera-da-letto/materassi"
+      },
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "link#home-categories-showcase-02-bestof-template": {
+    "props": {
+      "label": "Materassi",
+      "blockClass": "home-categories-showcase-cta",
+      "href": "/arredo-casa/camera-da-letto/materassi"
+    }
+  },
+
+  "flex-layout.col#home-categories-showcase-03-bestof-template": {
+    "children": [
+      "image#home-categories-showcase-03-bestof-template",
+      "link#home-categories-showcase-03-bestof-template"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "image#home-categories-showcase-03-bestof-template": {
+    "props": {
+      "src": "https://bricobravo.vtexassets.com/assets/vtex.file-manager-graphql/images/1c88031e-e48c-4239-9e32-975620d91530___61eb1e7ddca289e0d8148047127a3f46.jpg",
+      "link": {
+        "url": "/arredo-casa/arredo-sala-da-pranzo/sedie"
+      },
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "link#home-categories-showcase-03-bestof-template": {
+    "props": {
+      "label": "Sedie da interno",
+      "blockClass": "home-categories-showcase-cta",
+      "href": "/arredo-casa/arredo-sala-da-pranzo/sedie"
+    }
+  },
+
+  "flex-layout.col#home-categories-showcase-04-bestof-template": {
+    "children": [
+      "image#home-categories-showcase-04-bestof-template",
+      "link#home-categories-showcase-04-bestof-template"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "image#home-categories-showcase-04-bestof-template": {
+    "props": {
+      "src": "https://bricobravo.vtexassets.com/assets/vtex.file-manager-graphql/images/60418116-63bb-4ddf-920f-084449008200___e1ef57b0c930baa6a274fb1c6bbafac6.png",
+      "link": {
+        "url": "/arredo-casa/arredo-bagno/box-doccia"
+      },
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "link#home-categories-showcase-04-bestof-template": {
+    "props": {
+      "label": "Box doccia",
+      "blockClass": "home-categories-showcase-cta",
+      "href": "/arredo-casa/arredo-bagno/box-doccia"
+    }
+  },
+
+  "flex-layout.col#home-categories-showcase-05-bestof-template": {
+    "children": [
+      "image#home-categories-showcase-05-bestof-template",
+      "link#home-categories-showcase-05-bestof-template"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "image#home-categories-showcase-05-bestof-template": {
+    "props": {
+      "src": "https://bricobravo.vtexassets.com/assets/vtex.file-manager-graphql/images/2026cca0-7076-4277-beb0-790760db255d___42090c46b6043104581738df3e49601a.png",
+      "link": {
+        "url": "/casette-e-box"
+      },
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "link#home-categories-showcase-05-bestof-template": {
+    "props": {
+      "label": "Casette da giardino",
+      "blockClass": "home-categories-showcase-cta",
+      "href": "/casette-e-box"
+    }
+  },
+
+  "flex-layout.col#home-categories-showcase-06-bestof-template": {
+    "children": [
+      "image#home-categories-showcase-06-bestof-template",
+      "link#home-categories-showcase-06-bestof-template"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "image#home-categories-showcase-06-bestof-template": {
+    "props": {
+      "src": "https://bricobravo.vtexassets.com/assets/vtex.file-manager-graphql/images/14c6eac6-e923-4443-8086-b605a6a9a0f0___e88ddac889159441b4afab413b5ef5cd.jpg",
+      "link": {
+        "url": "/194?map=productClusterIds&order=OrderByTopSaleDESC"
+      },
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "link#home-categories-showcase-06-bestof-template": {
+    "props": {
+      "label": "Raccolta olive",
+      "blockClass": "home-categories-showcase-cta",
+      "href": "/194?map=productClusterIds&order=OrderByTopSaleDESC"
+    }
+  }
+}

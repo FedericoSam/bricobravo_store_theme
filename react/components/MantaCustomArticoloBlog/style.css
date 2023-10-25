@@ -1,0 +1,126 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 82rem;
+  margin: auto;
+  padding: 10px 20px;
+  align-items: stretch;
+}
+
+@media screen and (min-width: 1024px) {
+  .blog {
+    padding: 0 20px;
+    max-height: 440px;
+    flex-direction: row;
+  }
+}
+
+.imageDivBlog {
+  min-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.imageBlogDesktop {
+  width: 100%;
+  object-fit: cover;
+  max-width: 80%;
+  border-radius: 25px;
+  aspect-ratio: 1;
+  /* display: none; */
+}
+
+@media screen and (min-width: 600px) {
+  .imageBlogDesktop {
+    /* display: flex; */
+    max-width: 65%;
+  }
+}
+
+/* .imageBlogMobile {
+  width: 100%;
+  object-fit: cover;
+  max-width: 80%;
+  border-radius: 25px;
+  display: flex;
+}
+
+@media screen and (min-width: 1024px) {
+  .imageBlogMobile {
+    max-width: 60%;
+    display: none;
+  }
+} */
+
+.containerBlog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .containerBlog {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.numerazioneClassifica {
+  font-weight: 700;
+}
+
+.titleBlog {
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 80%;
+  line-height: 1.4rem;
+  margin: 1rem 0 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .titleBlog {
+    text-align: justify;
+  }
+}
+
+.descriptionBlog {
+  text-align: justify;
+  max-width: 80%;
+  line-height: 1.2rem;
+}
+
+.buttonLinkBlog {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  background-color: #d82f94;
+  border-radius: 0.25rem;
+}
+
+.buttonLinkBlog:hover {
+  background-color: #d82f94e3;
+}
+
+.divider {
+  width: 50%;
+  height: 1px;
+  background-color: #d82f94;
+  margin: 15px auto 10px;
+}
+
+@media (max-width: 768px) {
+  .desktopImage {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobileImage {
+    display: none;
+  }
+}

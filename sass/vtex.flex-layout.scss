@@ -1,0 +1,13 @@
+.flexCol {
+  &--blog-title-wrap-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  :global(.vtex-rich-text-0-x-heading--blog-title-main),
+  :global(.vtex-rich-text-0-x-wrapper--blog-subtitle-main) {
+    text-align: center;
+  }
+}
