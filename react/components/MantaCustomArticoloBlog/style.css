@@ -84,7 +84,7 @@
 
 @media screen and (min-width: 1024px) {
   .titleBlog {
-    text-align: justify;
+    text-align: start;
   }
 }
 
