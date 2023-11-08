@@ -36,8 +36,9 @@
 
 @media screen and (min-width: 600px) {
   .imageBlogDesktop {
-    /* display: flex; */
-    max-width: 65%;
+    /* display: flex; 
+    max-width: 65%;*/
+    max-width: 430px;
   }
 }
 
@@ -89,7 +90,7 @@
 }
 
 .descriptionBlog {
-  text-align: justify;
+  /*text-align: justify;*/
   max-width: 80%;
   line-height: 1.2rem;
 }
