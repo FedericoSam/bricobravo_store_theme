@@ -15,6 +15,9 @@
     max-height: 440px;
     flex-direction: row;
   }
+  .containerBlog {
+    width: 530px;
+  }
 }
 
 .imageDivBlog {
