@@ -51,6 +51,17 @@
 .heading-level-3 {
   display: none;
 }
+.headingLevel3--assistenza-page-paragraph{
+  display: block !important;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+.paragraph--assistenza-page-paragraph{
+  margin-top: 5px;
+}
+.wrapper--assistenzaLink-text {
+  text-align: center;
+}
 
 .container--breadcrumb2 {
   margin-left: -1210px;
@@ -141,5 +152,12 @@
 @media screen and (min-width: 1024px) {
   .heading--blog-title-main {
     font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 640px) {  
+  .container--assistenza-page-paragraph {
+    margin-bottom: 4rem;
+    padding: 0 15px;
   }
 }

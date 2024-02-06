@@ -1,0 +1,94 @@
+{
+  "store.custom#assistenza": {
+    "blocks": ["flex-layout.row#assistenza-page", "flex-layout.row#newsletter"]
+  },
+  "flex-layout.row#assistenza-page": {
+    "props": {
+      "width": "100%",
+      "htmlId": "assistenza-page"
+    },
+    "title": "Contenuto pagina",
+    "children": ["flex-layout.row#main-container-assistenza"]
+  },
+  "flex-layout.row#main-container-assistenza": {
+    "props": {
+      "blockClass": ["simple-page-main", "assistenza-page"],
+      "width": "100%",
+      "htmlId": "assistenza-page",
+      "preventVerticalStretch": true,
+      "marginBottom": 8
+    },
+    "children": ["flex-layout.row#assistenza"]
+  },
+  "flex-layout.row#assistenza": {
+    "title": "Content page",
+    "children": [
+      "flex-layout.col#assistenza",
+      "flex-layout.col#assistenzaLink"
+    ],
+    "props": {
+      "horizontalAlign": "left",
+      "fullWidth": "false",
+      "htmlId": "assistenza-page",
+      "blockClass": "assistenza-page"
+    }
+  },
+  "flex-layout.col#assistenza": {
+    "title": "Centro assistenza",
+    "children": [
+      "rich-text#assistenza-title",
+      "rich-text#assistenza-descriptio"
+    ],
+    "props": {
+      "blockClass": "simple-page-page",
+      "horizontalAlign": "left",
+      "fullWidth": "false"
+    }
+  },
+  "rich-text#assistenza-title": {
+    "props": {
+      "text": "# Centro Assistenza",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": "simple-page-title",
+      "font": "t-heading-3",
+      "htmlId": "titolo"
+    },
+    "title": "titolo"
+  },
+  "rich-text#assistenza-descriptio": {
+    "props": {
+      "text": "### Centro Assistenza Online: \nIl cliente può accedere al Centro Assistenza di BricoBravo, dove troverà una vasta gamma di risposte e soluzioni immediate per le proprie domande. Con pochi clic, è possibile ottenere supporto in tempo reale per risolvere i propri problemi.\n ### Servizio di Messaggistica Diretta: \nGrazie al servizio di messaggistica, il cliente può connettersi direttamente con il seller che ha gestito la vendita. Questa comunicazione diretta e immediata assicura una risoluzione rapida e personalizzata delle questioni sollevate.\n ### Apertura di Reclamo: \nDopo 5 giorni dall'apertura di un ticket senza trovare una soluzione, il cliente ha la possibilità di aprire un reclamo formale. Questo passaggio aggiuntivo garantisce che ogni problema venga affrontato con la dovuta attenzione e che venga cercata una soluzione efficace.\n ### Intervento del Team BricoBravo Safe: \nIl team BricoBravo Safe è il punto di riferimento per la risoluzione di casi più complessi e delicati. In caso di difficoltà o insoddisfazione nel processo di assistenza, il team BricoBravo Safe interverrà per garantire una risoluzione adeguata e soddisfacente per il cliente.",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": ["assistenza-page-paragraph"],
+      "htmlId": "descrizion"
+    },
+    "title": "descrizione"
+  },
+  "flex-layout.col#assistenzaLink": {
+    "title": "Link",
+    "children": ["link#assistenzaLink", "rich-text#assistenzaLink"],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "fullWidth": "false"
+    }
+  },
+  "link#assistenzaLink": {
+    "props": {
+      "href": "https://assistenza.bricobravo.com/",
+      "label": "Centro assistenza",
+      "blockClass": "assistenzaLink",
+      "target": "_blank"
+    }
+  },
+  "rich-text#assistenzaLink": {
+    "props": {
+      "text": "Verrai reindirizzato alla pagina<br>Assistenza Bricobravo",
+      "textAlignment": "center",
+      "textPosition": "center",
+      "blockClass": "assistenzaLink-text"
+    }
+  }
+}
