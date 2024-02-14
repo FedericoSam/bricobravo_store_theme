@@ -1,8 +1,8 @@
 {
   "search-bar#desktop": {
-    // "blocks": ["autocomplete-result-list.v2"],
+    "blocks": ["autocomplete-result-list.v2"],
     "props": {
-      // "htmlId": "header-searchbar-accela",
+      "htmlId": "header-searchbar-accela",
       "placeholder": "Cerca prodotto, brand…",
       "compactMode": false,
       "openAutocompleteOnFocus": true,
@@ -13,9 +13,9 @@
     }
   },
   "search-bar#mobile": {
-    // "blocks": ["autocomplete-result-list.v2"],
+    "blocks": ["autocomplete-result-list.v2"],
     "props": {
-      // "htmlId": "header-searchbar-mob-accela",
+      "htmlId": "header-searchbar-mob-accela",
       "compactMode": false,
       "placeholder": "Cerca prodotto, brand…",
       "autoFocus": false,

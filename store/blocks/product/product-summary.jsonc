@@ -26,7 +26,7 @@
     },
     "children": [
       "product-summary-image",
-      "product-summary-price",
+      //"product-summary-price",
       "product-rating-inline#search-bar", //solo nella tendina searchbar Desktop 4
       "product-summary-name"
     ]
