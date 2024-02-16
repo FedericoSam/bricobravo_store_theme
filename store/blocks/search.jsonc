@@ -3,6 +3,7 @@
     "blocks": [
       //"flex-layout.row#feedaty-png",
       "search-result-layout",
+      "flex-layout.row#cn_page_category",
       "flex-layout.row#sectionSeo1",
       "flex-layout.row#sectionSeo2",
       "flex-layout.row#sectionSeo3",
@@ -25,6 +26,7 @@
     "blocks": [
       //"flex-layout.row#feedaty-png",
       "search-result-layout",
+      "flex-layout.row#cn_page_category",
       "flex-layout.row#sectionSeo1",
       "flex-layout.row#sectionSeo2",
       "flex-layout.row#sectionSeo3",
@@ -41,11 +43,11 @@
       "blockClass": "page-brand"
     }
   },
-
   "store.search#department": {
     "blocks": [
       //"flex-layout.row#feedaty-png",
       "flex-layout.row#department-categories",
+      "flex-layout.row#cn_page_category",
       "search-result-layout",
       "flex-layout.row#sectionSeo1",
       "flex-layout.row#sectionSeo2",
@@ -69,6 +71,7 @@
     "blocks": [
       //"flex-layout.row#feedaty-png",
       "search-result-layout",
+      "flex-layout.row#cn_page_category",
       "flex-layout.row#sectionSeo1",
       "flex-layout.row#sectionSeo2",
       "flex-layout.row#sectionSeo3",
@@ -90,6 +93,7 @@
     "blocks": [
       //"flex-layout.row#feedaty-png",
       "search-result-layout",
+      "flex-layout.row#cn_page_category",
       "flex-layout.row#sectionSeo1",
       "flex-layout.row#sectionSeo2",
       "flex-layout.row#sectionSeo3",
@@ -811,5 +815,11 @@
       "href": "#"
     },
     "title": "link05"
+  },
+  "flex-layout.row#cn_page_category": {
+    "props": {
+      "htmlId": "cn_page_category"
+    },
+    "children": ["cn_page_category"]
   }
 }

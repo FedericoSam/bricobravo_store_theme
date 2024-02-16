@@ -70,5 +70,8 @@
   },
   "componente-articolo-blog": {
     "component": "MantaCustomArticoloBlog"
+  },
+  "cn_page_category": {
+    "component": "CnPageCategory"
   }
 }
