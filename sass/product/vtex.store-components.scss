@@ -185,6 +185,18 @@
     display: flex;
   }
 }
+.imageElement--searchbanner {
+  max-height: 370px;
+  object-fit: contain;
+
+  @include desktop {
+    border-radius: 25px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+}
 
 .productBrandNameLink--pdp {
   // text-decoration: none;

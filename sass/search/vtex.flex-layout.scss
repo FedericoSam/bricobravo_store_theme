@@ -79,7 +79,8 @@
 
 .flexRow--title-container {
   max-width: 1310px;
-  margin: 20px auto;
+  //margin: 20px auto;
+  margin: 0 auto 10px;
   width: 100%;
   @include mobile {
     padding: 0 16px;

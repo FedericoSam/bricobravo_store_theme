@@ -438,7 +438,7 @@
 .container--layout--page-category1 {
   //breadcrabs nella search departement
   :global(.vtex-flex-layout-0-x-flexRow--searchbread) {
-    &:first-child {
+
       display: block;
       position: absolute;
       width: 100%;
@@ -448,7 +448,7 @@
       @media screen and (max-width: 768px) {
         top: -215px;
         height: 60px;
-      }
+ 
     }
   }
 }

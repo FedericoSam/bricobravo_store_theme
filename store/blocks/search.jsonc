@@ -124,6 +124,7 @@
   "search-result-layout.desktop": {
     "title": "Categoria Desktop",
     "children": [
+      "image#searchbanner",
       "flex-layout.row#searchbread",
       "flex-layout.row#categories",
       "flex-layout.row#searchTitleTop", //titolo sopra
@@ -422,6 +423,7 @@
   "search-result-layout.mobile": {
     "title": "Categoria Mobile",
     "children": [
+      "image#searchbanner",
       "flex-layout.row#searchbread",
       "flex-layout.row#categories",
       "flex-layout.row#searchTitleTop", //titolo sopra
@@ -821,5 +823,13 @@
       "htmlId": "cn_page_category"
     },
     "children": ["cn_page_category"]
+  },
+  "image#searchbanner": {
+    "props": {
+      //"minWidth": "100%",
+      "src": "",
+      "blockClass": "searchbanner"
+    },
+    "title": "Banner"
   }
 }
